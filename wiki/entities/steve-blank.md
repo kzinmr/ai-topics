@@ -2,15 +2,67 @@
 title: Steve Blank
 type: entity
 created: 2026-04-09
-updated: 2026-10-25
+updated: 2026-11-16
 tags:
   - person
   - blogger
   - hn-popular
   - company
   - ai-agents
-sources: []
+sources:
+  - raw/articles/steveblank.com--2026-11-15-whats-next-for-nvidia--a8d1ffab.md
 ---
+
+## "What's Next For Nvidia?" (November 15, 2026)
+
+Two days after NVIDIA's board announced [[entities/jensen-huang|Jensen Huang]]'s
+resignation ([[events/nvidia-ceo-transition-2026]]), Blank published an
+analyst-grade essay on what visionary-CEO succession actually does to a company,
+using NVIDIA as the extreme case.
+
+Core claims:
+
+- **Huang reinvented NVIDIA three times** — CUDA (2006, graphics chip → general
+  computing platform, funded years ahead of revenue), deep learning (2012, after
+  the ImageNet win), and integrated AI datacenter racks (2020, via the Mellanox
+  acquisition). These were *business-model* transitions (new channels, customers,
+  markets), not product transitions, and no execution-focused CEO would have
+  funded CUDA that way.
+- **The visionary-vs-execution CEO frame**: Microsoft under Ballmer tripled
+  revenue to $78B while missing search, smartphones, mobile OSes, media, and
+  cloud; Nadella saved it by reorganizing around Azure. Apple under Cook grew
+  revenue $108B → $416B and market cap $350B → ~$4T, but Apple silicon was "a
+  better engine for existing products," Vision Pro stumbled, and Apple "missed
+  badly on AI" (Siri was first with a chatbot, then OpenAI/Google had to be
+  brought in to fix it); Cook handed off to John Ternus in September 2026. Blank's
+  verdict: Cook was "the new Steve Ballmer."
+- **NVIDIA is the hard case**: Huang ran ~60 direct reports, discouraged
+  one-on-ones, kept no long-term plans, and "didn't believe in succession
+  planning" — he left the board the same day he left the job, anointing no
+  successor. The next CEO must add management layers just to function, which is
+  precisely the "creative death spiral" trigger: execution CEOs buy stability,
+  creatives leave, executors replace them, the mission becomes "just another
+  job." Amazon is his counterexample because Andy Jassy had already *built* AWS.
+- **The strategic question for the board**: do we want an innovative, risk-taking
+  company or an execution-of-core-business company? Boards in crisis reach for
+  stability — which gets you an execution CEO by a different road. Blank's test:
+  ask candidates what they have *built under uncertainty*.
+- **Four specific hazards**: (1) promoting the best executor guarantees the
+  #2/#3 leaves feeling entitled to the job; (2) the CEO is the brand *and* the
+  internal decision touchstone ("What would Jensen have done?" replaces figuring
+  out what to do now); (3) Huang personally set NVIDIA's foreign policy in
+  Washington/Beijing/Taipei — the successor inherits congressional investigators
+  asking how many restricted chips reached China; (4) the tighter you hold the
+  current product in the 21st century, the likelier you are disrupted — and
+  NVIDIA's biggest customers (Google, Amazon, Microsoft, Meta, OpenAI, Tesla) are
+  all building their own chips, while his ~$50B of AI-lab investments are exactly
+  the bets an execution CEO trims first.
+- **Closing heuristics**: the order book and CUDA make the next 2–3 years look
+  fine regardless of who is CEO; innovation CEOs are almost always replaced by an
+  execution VP; that yields years of gains until the market/business model shifts,
+  then obsolescence. "Execution pays your salary, innovation pays your pension."
+
+Raw: [[raw/articles/steveblank.com--2026-11-15-whats-next-for-nvidia--a8d1ffab.md]]
 
 ## Related Entities
 

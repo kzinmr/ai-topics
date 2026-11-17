@@ -1,7 +1,7 @@
 ---
 title: NVIDIA
 created: 2026-04-26
-updated: 2026-11-13
+updated: 2026-11-16
 type: entity
 tags: [company, platform]
 sources:
@@ -10,6 +10,7 @@ sources:
   - https://www.tomshardware.com/tech-industry/artificial-intelligence/jensen-says-nvidia-now-has-zero-percent-market-share-in-china
   - raw/articles/2026-05-20_nvidia-nemotron-labs-diffusion.md
   - raw/articles/substack.com--redirect-fc937db9-1f9f-4d17-8d14-568f58e27526--f7737c4f.md
+  - raw/articles/steveblank.com--2026-11-15-whats-next-for-nvidia--a8d1ffab.md
   - https://github.com/nvidia/skillspector
   - raw/newsletters/2026-07-28-opus-5-fable-5.md
   - raw/newsletters/2026-08-05-ainews-megakernels-are-so-dead-and-so-back.md
@@ -186,6 +187,48 @@ NVIDIA and **Microsoft** announced **RTX Spark**, a Windows PC AI agent platform
 On **November 12, 2026**, the Board announced that **Jensen Huang resigned as President, CEO, and Board member, effective immediately**, ending 33 years at the helm. **CFO Colette Kress** was named **Interim CEO** (retaining her EVP/CFO role) while the Board searches for a permanent successor; **Harvey C. Jones** (ex-Synopsys CEO) became NVIDIA's **first-ever Chair of the Board**. Stock fell **−8% premarket → −13% at the open**. The day before, Huang had agreed to behind-closed-doors congressional testimony (Mast/Moolenaar/Crawford) by Thanksgiving after subpoena threats. Full coverage: [[events/nvidia-ceo-transition-2026]]; person page: [[entities/jensen-huang]].
 
 Key open question for the AI industry: whether interim leadership still executes NVIDIA's committed **multi-billion-dollar backstop of Anthropic's IPO** ([[events/anthropic-ipo-roadshow-2026]]) and the circular-financing structures Huang personally underwrote ([[concepts/ai-infrastructure-circular-financing]]) — Gary Marcus calls him "the ringmaster of all the insane circular financing" and says "all that might collapse."
+
+### External analysis: Steve Blank on the succession problem (Nov 15, 2026)
+
+Two days after the resignation, [[entities/steve-blank|Steve Blank]] published
+**"What's Next For Nvidia?"** — the sharpest external framing the wiki has of why
+this transition is structurally different from an ordinary CEO change. His read:
+Huang reinvented NVIDIA *three times* (CUDA 2006, deep learning 2012, integrated
+datacenter racks via Mellanox 2020), and those were business-model transitions, not
+product transitions — so the risk is not a bad quarter, it is the loss of the only
+person who could make that class of bet.
+
+Blank's NVIDIA-specific hazards:
+
+- **No successor, no chair, no plan**: Huang anointed no one and left the board the
+  same day he left the job; NVIDIA now has a board "in crisis" led by its
+  **first-ever Chair** — and boards in crisis reach for stability, which "gets you
+  an execution CEO by a different road." His screening test: ask candidates what
+  they have *built under uncertainty*.
+- **The org chart cannot survive him**: ~60 direct reports, no one-on-ones, no
+  long-term plans. "No one else can run a company with 60 direct reports," so the
+  first act of any successor is adding management layers — the trigger for the
+  creative death spiral (creatives leave, executors replace them, the mission
+  becomes "just another job").
+- **The brand and the diplomat are the same person**: beyond being the external
+  face, Huang was the internal decision touchstone and personally set NVIDIA's
+  foreign policy in Washington, Beijing and Taipei. "No Nvidia operating VP has done
+  that job," and the successor inherits congressional investigators asking how many
+  restricted chips reached China.
+- **Customers are competitors, and the hedge is the first cut**: Google, Amazon,
+  Microsoft, Meta, OpenAI and Tesla are all building their own silicon. Huang's
+  countermeasures were annual new generations, the CUDA moat, and **~$50B invested
+  in the AI labs that run on NVIDIA** — "it's likely these are the bets an execution
+  CEO trims first."
+- **The uncomfortable comparison**: Microsoft under Ballmer tripled revenue while
+  missing search, mobile, media and cloud; Apple under Cook grew revenue and market
+  cap enormously yet "missed badly on AI." Both were world-class stewards of a
+  handed-down business model. Blank's summary of the next 2–3 years: the order book
+  and CUDA make NVIDIA look fine **regardless of who is CEO**, which is exactly the
+  window in which the wrong kind of CEO is hardest to detect. "Execution pays your
+  salary, innovation pays your pension."
+
+Raw: [[raw/articles/steveblank.com--2026-11-15-whats-next-for-nvidia--a8d1ffab.md]]
 
 ## Related
 

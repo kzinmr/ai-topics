@@ -3,6 +3,49 @@
 _Log of all wiki changes. Newest entries at top._
 
 
+## [2026-11-17] ingest | x-accounts-scan: With language, Turnbull off LLM-judges, Nuttall SEO stack, Mollick on GPT-6.2
+
+> `x-accounts-scan` cron (2026-11-17 22:30 UTC). 11 of 84 accounts scanned under the
+> 12-request budget (cursor 51 -> 62; 73 accounts deferred to later runs, rotation
+> continuing, nothing dropped). 12 new candidate posts, 0 API errors.
+
+- **New page** `entities/keep.md` — Keep (keep.md), Ian Nuttall's Markdown capture tool for
+  agent context; iOS app launched Nov 9 after ~2 months in review; per-agent setup prompts
+  (Claude Code, Codex, Cursor, Hermes, OpenClaw, Grok…) for CLI + MCP.
+- **New raw** `raw/articles/withlang.org--home--2026-11-17.md` — full landing-page capture of
+  **With**, the "ergonomics-first systems language" Eric Hartford pitched as his own
+  (Vale-derived generational references/consuming destructors, `c_import` header-based C
+  interop, mechanical C-library migrator + "Withy adapters", raylib smoke test, WIPE:
+  SURVIVAL demo). Hartford's role vs the `withlang-dev` org left as an open question.
+- **New raw** `raw/articles/softwaredoug.com--agent-search-traffic--2026-11-12.md` — Doug
+  Turnbull's "Prefer synthetic traffic over LLM-as-a-judge". **Body unretrievable**: every
+  URL form (plus sitemap.xml, r.jina.ai, Wayback) serves softwaredoug.com's Pelican 404
+  page although the site's own `feed.xml` lists the post. Raw file is marked
+  `status: partial` with a full capture log; retry the fetch in a later run.
+- `entities/doug-turnbull.md` — new "Prefer synthetic agent traffic over LLM-as-a-judge"
+  section (vibecoded app facsimile -> agents as users -> sessions/clicks instead of NDCG),
+  recorded as a **revised position superseding** the LLM-as-judge thread in AutoReSEARCH and
+  the Maven course rather than erasing it; plus a folded "Maven sale week (Nov 9-16)" section
+  for the two course-promo posts, and the new article added to Blog/Recent Posts.
+- `entities/ian-nuttall.md` — new "X Activity Log (November 2026)": three-product SEO teardown
+  series (Dub, TypingMind, Loops), `seo lint` AI-writing-pattern detection, Google core-update
+  tracking angle, and the Nov 13 "considering just making it free" monetization question.
+- `entities/seo-skill.md` — added `seo lint` section (agent drafts the page, then lints its own
+  output for AI tells), teardown GTM table, and the free-tier reconsideration.
+- `entities/eric-hartford.md` — new "With language promotion (November 17, 2026)" section with
+  the @ohmypy parent context (C-stdlib wishlist: Go abstractions, Zig allocators, no Zig churn,
+  no Odin bindings, no C3 feature creep, no Hare global state).
+- `entities/ethan-mollick.md` — new bullet: pre-launch GPT-6.2 Astra verdict ("very uneven &
+  weird", "harder to steer", "I don't find myself reaching for the new 6.2 models") alongside the
+  zero-g browser space-elevator demo; framed as contested against OpenAI's steerability framing
+  on `entities/openai-astra` — different axis (day-to-day steerability, not benchmark standing).
+- **Index**: +1 entity page, header bumped 971 -> 972 (live count verified). Only new page this
+  run, so no other section counts touched.
+- **Skipped**: nothing dropped — the two Maven course promos and the two seoskill product promos
+  were folded into existing pages rather than given pages of their own; all 12 candidates are
+  accounted for in the entries above.
+
+
 ## [2026-11-17] dreaming wiki-ingest | Pattern E references: ElevenLabs x3 + Harvey budget
 
 > `dreaming-wiki-ingest` cron (2026-11-17 18:20 UTC). Upstream dreaming-group (18:16, commit e8e95a37) committed triage archive only (0 takes, 3 refs) — enrichment executed downstream this run. Pre-run JSON parse failure recovered via triage_latest.json (run_id 20261117T180035Z).

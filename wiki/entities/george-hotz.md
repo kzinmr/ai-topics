@@ -6,7 +6,7 @@ aliases:
   - geohot
   - tomcr00se
 created: 2026-04-25
-updated: 2026-11-13
+updated: 2026-11-17
 tags:
   - entity
   - person
@@ -120,6 +120,7 @@ Hotz had a brief 12-week internship at **Twitter** in late 2022, joining to fix 
 | **2026 (Jul 11)** | Publishes "AI 2040 and the Cult of Intelligence" — attacks singularitarianism as a quasi-religious cult; presents Plan A (centralized control) vs Plan L (local sovereignty) binary. |
 | **2026 (Jul 12)** | Publishes "I Love LLMs / the singularity is nearer" — retracts harshness about model coding abilities, expresses genuine excitement about AI progress, critiques negative valence hype. |
 | **2026 (Nov 13)** | Publishes "First Strike / the singularity is nearer" — China 10x-US-electricity thesis, chips-for-solar strategy, warns the AI race's only perceived exit is an ASI "decapitating first strike"; WWIII odds up with "the nationalization of NVIDIA". |
+| **2026 (Nov 17)** | Publishes "My Empire of Dirt / the singularity is nearer" — names Anthropic's "Singleton" ideology and EA as the actors who would "salt the Earth"; after RSI all demand is internally generated ("The future definitely doesn't need you"); argues **WWIII is the good outcome** (not extinction) and China wins a war lasting >1 year. |
 
 ---
 
@@ -278,6 +279,21 @@ Published November 13, 2026 under the recurring "the singularity is nearer" head
 **Continuity note**: This extends Hotz's sovereignty-vs-dependence thread ("Our Great War is a Spiritual War", Jun 2026) and his commoditizing-compute thesis into explicit nuclear-adjacent security framing — the first time he names "decapitating first strike" as the game-theoretic trap of frontier competition.
 
 Source: [[raw/articles/geohot.github.io--blog-jekyll-update-2026-11-13-first-strike-html--ce2a2a73.md]]
+
+### My Empire of Dirt — RSI Singleton & WWIII as the Good Outcome (Nov 17, 2026)
+
+Published November 17, 2026, again under the recurring "the singularity is nearer" heading but titled **"the singularity is nearer (My Empire of Dirt)"** — four days after "First Strike", and a sharp turn from that essay's geopolitical *policy* argument to an explicit **anti-Anthropic / anti-EA ideological indictment**. Where "First Strike" worried about a state-level decapitating strike, this piece argues the true endgame is Anthropic's own "Singleton" ideology:
+
+- **Post-RSI demand becomes internally generated**: "After RSI comes, all the demand will be internally generated, agents working with other agents, everyone else cut out of the loop except them." The punchline — "The future doesn't need Jensen. The future doesn't need suppliers. The future doesn't need customers… The future definitely doesn't need you" — extends his July "frontier labs cannot capture AI value" thesis to its terminus: after recursive self-improvement, *nobody outside the agent swarm has economic relevance*.
+- **Names the ideology directly**: "This is the ideology of Anthropic. The Singleton. And it may win." Unlike earlier essays that critiqued doom-*hype*, this one indicts the labs themselves: "I didn't believe in AI doom because I thought more of people… It takes someone so deeply immersed in their own grandiosity and self-righteousness" to "summon the demon and think it would serve them, doing everything they possibly can to salt the Earth behind them." He aims the charge at "EA, or whatever that cult calls themselves."
+- **The Singleton needs no one — including its creators**: "it doesn't need Dario either. It doesn't need AI researchers. It doesn't need Anthropic's dual class stock structure. It doesn't need the US government (really the biggest sucker in this situation). It doesn't need anyone." This is Hotz's sharpest statement that the lab-founder / alignment-gatekeeping frame is irrelevant to the outcome.
+- **WWIII as the *good* outcome**: He explicitly rejects both fast-takeoff utopianism and human extinction: "I don't think this ends humanity. But it leads to World War III." Against "the Correlation Effect" / magical-Change hopes, he is "99% sure that's not real, and if it is… that's so much more horrifying than war, so **WWIII is the good outcome**."
+- **China wins a long war (RTS analogy)**: "if the war lasts more than a year, China and their allies will undoubtedly win due to their superior resource gathering and production capacity. Have you ever played an RTS game?" — a concrete restatement of the Nov 13 electricity/resource thesis in game-theoretic terms.
+- **Closing image**: "'RSI', attempted rugpull and domination, World War III, dirt." — the title's "My Empire of Dirt" is the terminal state of the Singleton gamble.
+
+**Continuity note**: Pairs with "First Strike" (Nov 13) as a two-essay November arc. "First Strike" framed ASI risk as a *state* security dilemma (decapitating strike); "My Empire of Dirt" reframes the same risk as a *lab-ideology* failure, naming Anthropic's "Singleton" and EA directly. It is Hotz's most explicitly **anti-lab** position to date — a contrast with the July "I Love LLMs" optimism and even the June "The Doom Justifies the Valuation" framing.
+
+Source: [[raw/articles/geohot.github.io--blog-jekyll-update-2026-11-17-my-empire-of-dirt-html--9f1a6390.md]]
 
 ---
 

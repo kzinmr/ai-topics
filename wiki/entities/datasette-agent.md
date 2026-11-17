@@ -14,13 +14,15 @@ tags:
 status: active
 description: "Extensible AI assistant for Datasette/SQLite by Simon Willison. Launched May 2026. Conversational interface for querying databases, generating charts, and building plugins. Powered by the LLM Python library."
 created: 2026-05-22
-updated: 2026-11-01
+updated: 2026-11-16
 sources:
   - raw/articles/simonwillison.net--2026-may-21-datasette-agent--9fcb051d.md
   - raw/articles/simonwillison.net--2026-may-21-datasette-agent-2--8297d2dd.md
   - raw/articles/datasette-io--2026-jun-12-datasette-agent--release.md
   - raw/articles/simonw-substack--2025-jul-08-datasette-agent--precursor.md
   - raw/articles/simonwillison.net--2026-oct-31-datasette-llm--d7ef0b33.md
+  - raw/articles/simonwillison.net--2026-nov-15-datasette-agent--00814a21.md
+  - raw/articles/simonwillison.net--2026-nov-15-datasette-apps--d02e796b.md
 related: []
 ---
 
@@ -143,6 +145,11 @@ While bigger Datasette Agent upgrades are in the pipeline, the underlying `datas
 
 
 ### GitHub AuthUsers sign into [agent.datasette.io](https://agent.datasette.io) using their GitHub account.
+
+### Homepage agent prompt with hash-mentions (0.6a0, 2026-11-15)
+Datasette Agent 0.6a0 is an accumulated small-fixes release whose headline change moves the agent to the front door: an **agent prompt now sits directly on the Datasette homepage**, and it accepts **hash-mentions of tables and queries** — a question can be scoped to specific data inline (mentioning a table or stored query the way you would @-mention a colleague) instead of describing it in prose. It shipped the same day as `datasette-apps` 0.4a0, which reports an app's supported URL schemes back to Datasette Agent so the agent can author apps that deep-link to each other via `#fragments`.
+^[raw/articles/simonwillison.net--2026-nov-15-datasette-agent--00814a21.md]
+^[raw/articles/simonwillison.net--2026-nov-15-datasette-apps--d02e796b.md]
 
 
 ## Ecosystem Context

@@ -1,7 +1,7 @@
 ---
 title: "TypeSafe AI"
 created: 2026-09-20
-updated: 2026-10-07
+updated: 2026-11-16
 type: entity
 tags: [company, ai-company, model, structured-outputs, inference-speed, jev, sgnt, small-models, decision-centric, real-time, evaluation]
 sources:
@@ -9,6 +9,7 @@ sources:
   - raw/articles/seangoedecke.com--jev-means-structured-output-is-interesting-again--e24ec7ee.md
   - raw/newsletters/2026-09-19-ainews-here-are-6-clones-of-jev-in-2-days.md
   - raw/articles/2026-10-06_omarsar0_jev-as-a-judge-for-agent-evaluations.md
+  - raw/articles/youtube.com--watch--0e26b0d2.md
 confidence: medium
 ---
 
@@ -31,6 +32,23 @@ Sean Goedecke argues Jev has **no substantial technical moat** — the speed com
 ## Diffusion signal
 
 Within 2 days of launch, 6 independent clones appeared; SGNT published a first-principles reproduction ([[entities/sgnt-jev-article|SGNT — You Could Have Built Jev]]), Samuel Colvin benchmarked Jev vs. Claude Sonnet, and [[entities/parallel-web-systems|Parallel Web Systems]] ran the most substantive independent eval to date — against the fine-tuned rerankers/classifiers they run "billions of times a day": comparable NDCG@10 (0.7) on search reranking with competitive latency, but losses on large-label-set topic classification and suspected out-of-distribution freshness classification. Verdict: strong zero-shot starting point for teams without their own trained classifiers/serving infra. See raw/articles/2026-09-19_parallel-web-systems_testing-jev.md.
+
+## Diogo Almeida on Jev (AI Engineer, November 2026)
+
+Almeida gave a talk titled **"I love you so jevving much"** on the **AI Engineer**
+channel ([[entities/ai-engineer-youtube]]) — his first major conference treatment
+of Jev since the September launch and the ensuing clone wave. The title is his own
+wordplay on the model name, i.e. an founder-voice, affectionate-register framing of
+the product rather than a neutral technical title.
+
+**Status: metadata only.** The wiki currently holds just the RSS link card
+([[raw/articles/youtube.com--watch--0e26b0d2.md]]) — the talk itself has not been
+transcribed, so no claims from it are recorded here. It is flagged rather than
+summarized deliberately: the pages above already contain contested material (the
+"no technical moat" objection, the calibration claim, the Parallel Web Systems
+evaluation), and adding an unrecoverable speaker-side narrative to that mix would
+degrade rather than improve the record. See the raw stub's *Next step* section for
+the transcription task.
 
 ## Related
 - [[concepts/system-one-models|System One Models]] — the model class TypeSafe created

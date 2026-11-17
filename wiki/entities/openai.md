@@ -2,7 +2,7 @@
 title: "OpenAI"
 type: entity
 created: 2026-04-16
-updated: 2026-11-06
+updated: 2026-11-16
 tags:
   - company
   - model
@@ -57,6 +57,9 @@ sources:
   - raw/newsletters/2026-08-14-glm-5-3-released-nobody-taught-it-to-hack.md
   - raw/articles/2026-08-17_jensenhuang_securing-infrastructure-intelligence.md
   - raw/articles/openai.com--index-bringing-chatgpt-for-teachers-to-more-us-school-distri--7e008cb7.md
+  - raw/articles/openai.com--index-lvmh-media-division-partnership--b73c6d7b.md
+  - raw/articles/openai.com--index-step-toward-defining-the-standard-model--df3e44b9.md
+  - raw/articles/openai.com--index-our-new-blog-for-science--e1f75517.md
 ---
 
 # OpenAI
@@ -714,6 +717,35 @@ Reported with commentary by [[entities/the-signal|Alex Banks]] (The Signal, 2026
 
 - **Images 2.6** adds **animated GIF** generation from a prompt or a photo, and can follow **reference images** to keep a look consistent across frames. Available in ChatGPT on **every plan**, alongside two new image models for developers. Reported by [[entities/the-signal|The Signal]] (2026-11-08), whose reviewer's practical read is that the delight factor is disproportionately high for the effort ("I spent 3 seconds thinking of this prompt… and the final result turned out to be this beauty") — the same "cheap, immediately shareable output" pattern that drove earlier image-model adoption waves.
 - **Pierre Computer Company** (see acquisition note above) builds **storage for the code that AI agents write and edit** — i.e. the versioning/artifact layer that agent-generated code needs, and an open-source stack that already ran parts of Codex. Price undisclosed. Reads as OpenAI internalising the agent-code plumbing rather than depending on a third party (compare the artifact/versioning layer discussed in [[concepts/model-training-as-code]]).
+
+### LVMH Media Division partnership + a dedicated science blog (Nov 15–16, 2026)
+
+- **LVMH's Media Division strategic partnership (Nov 16)** — the first
+  luxury-group *media* deal rather than a retail/marketing one: OpenAI will
+  "support journalism with AI" and make LVMH's publications "more accessible
+  through ChatGPT." The announcement page is 403 to scrapers; only the RSS
+  description was captured, so the commercial terms (licensing vs. distribution,
+  which titles, whether content is licensed or merely surfaced) are not yet in the
+  record. Treat the deal shape as unresolved — it is the pattern to watch for
+  whether ChatGPT becomes a distribution surface for premium publishing.
+  Raw: [[raw/articles/openai.com--index-lvmh-media-division-partnership--b73c6d7b.md]]
+- **A new OpenAI science blog (Nov 15)** — OpenAI launched a separate blog for
+  science, publishing "new findings, practical methods, and firsthand accounts
+  from researchers using AI to advance scientific discovery." Institutionally
+  significant: it separates science communications from the product-release
+  firehose, which is the posture of a lab that intends research output to be
+  citable on its own terms. Raw: [[raw/articles/openai.com--index-our-new-blog-for-science--e1f75517.md]]
+- **First science-blog flagship: a lattice Standard Model (Nov 15)** — "A step
+  toward defining the Standard Model on a lattice" presents a *candidate
+  nonperturbative lattice definition of the Standard Model*, with the announcement
+  credit going to **GPT-6 Astra** for "help[ing] turn the idea into a detailed
+  proof." This is the first high-profile physics claim on the Astra ledger
+  (previous headline results were pure mathematics) and should be read against the
+  standing skepticism about Astra's math results — selective reporting,
+  undisclosed methodology, and Alpöge's partial replication with Anthropic's
+  Fable (see [[entities/openai-astra]]). The wiki currently holds only the RSS
+  abstract; the proof itself has not been captured.
+  Raw: [[raw/articles/openai.com--index-step-toward-defining-the-standard-model--df3e44b9.md]]
 
 ## Sources
 - **OpenAI Agents SDK Blog (2026-04-15)** — [openai.com](https://openai.com/index/the-next-evolution-of-the-agents-sdk/)

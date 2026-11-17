@@ -2,7 +2,7 @@
 title: Doug Turnbull
 type: entity
 created: 2026-04-10
-updated: 2026-11-05
+updated: 2026-11-17
 tags:
   - person
   - developer-tooling
@@ -283,6 +283,22 @@ Posted a short-time **late-signup** window for the current cohort of **AI-Powere
 Search: Modern Retrieval for Humans & Agents** (his month-long Maven course with
 Trey Grainger, running Nov 3 – Dec 4). https://maven.com/search-school/ai-powered-search
 
+### AI-Powered Search: Maven sale week (November 9–16, 2026)
+
+Folded into one promotion cycle for the same course:
+
+- **Nov 9** — "Maven is running a sale this week, including our AI-Powered Search course.
+  It's a great time to get training with leftover training funds."
+  ([tweet](https://x.com/softwaredoug/status/2122352089477079098))
+- **Nov 12** — last-call post for that day's live session.
+  ([tweet](https://x.com/softwaredoug/status/2120906921997967506))
+
+Course page: https://maven.com/search-school/ai-powered-search. The promo-code link
+`?promoCode=softwaredougblog` is now the canonical entry point from his own site.
+This is the same course whose syllabus still teaches **LLM-as-judge** — worth reading
+against his Nov 12 "Prefer synthetic traffic over LLM-as-a-judge" section further below,
+where he reports his consulting practice has moved off judges entirely.
+
 ## Community Shout-outs
 
 - **Sep 4, 2026:** promoted his "good friend" **Kim Falk**'s second book, *AI
@@ -300,6 +316,38 @@ Turnbull is a regular speaker at search industry conferences:
 - **Relevance Cornucopia** workshops: Intensive small-group training on "Think Like a Relevance Engineer" and "Hello LTR"
 
 He maintains an active blog at softwaredoug.com with regular "daily search tips" — concise, practical observations about search engineering — and a newsletter with thousands of subscribers.
+
+### Prefer synthetic agent traffic over LLM-as-a-judge (November 12–16, 2026)
+
+Turnbull announced that **his search consulting has moved away from LLM judges**:
+
+> "My search consulting moved away from LLM judges. Now I: * Vibecode a facsimile of my
+> clients application * Let agents act as users to use the app to solve search use-cases
+> When using agent evals, I stay in the lane of sessions, clicks, etc - not NDCG"
+> — [tweet](https://x.com/softwaredoug/status/2122367009761497352), Nov 16
+
+The write-up is **"Prefer synthetic traffic over LLM-as-a-judge"**
+(softwaredoug.com, Nov 12 2026), subtitled in the site's own RSS: *"We don't need to stay
+married to an old model of evaluation that silos the UI from ranking."*
+⚠️ The article body could not be scraped on 2026-11-17 — every URL form returns the site's
+Pelican 404 page even though `feed.xml` lists the post; see
+[[raw/articles/softwaredoug.com--agent-search-traffic--2026-11-12]] for the capture log.
+
+Method as described in the tweet, three moves:
+
+1. **Vibecode a facsimile** of the client's real application — a working stand-in UI
+   rather than a ranking-only harness.
+2. **Let agents act as users**, driving that app through genuine search use-cases.
+3. **Score sessions and clicks, not NDCG** — behavioural, session-level telemetry as the
+   eval signal.
+
+Why it matters: this is the same argument as his earlier "relevance judgments derived from
+A/B tests" and "Search golden sets are anything but" posts, now taken to its conclusion —
+the judge model is removed entirely and replaced by *agentic synthetic traffic* against a
+UI replica. It also cuts against the LLM-as-judge thread running through his own Maven
+course and AutoReSEARCH material, so the wiki should read it as a **revised position
+(superseding, not erasing)** rather than a contradiction to discard. See
+[[concepts/llm-evaluation]], [[concepts/evaluation/ndcg]], [[concepts/agentic-retrieval]].
 
 ### AI-Powered Search course promotion (October 22–23, 2026)
 
@@ -353,7 +401,9 @@ Sources: [tweet](https://x.com/softwaredoug/status/2113362280461320592),
 
 - **[Semantic Search Without Embeddings](https://softwaredoug.com/blog/2026/01/08/semantic-search-without-embeddings)** (Jan 2026) — Decomposes semantic search into three pillars: representation, similarity, and match criteria. Argues embeddings fail at the third pillar (explicit inclusion/exclusion). Proposes hierarchical taxonomies as the alternative — tokenizing category paths and feeding them into BM25 for natural specificity scoring. Demonstrates LLM-augmented taxonomy building: prompting small models to "creatively generate" plausible taxonomy paths before mapping to real ones.
 
-- **[Three kinds of agentic search](https://softwaredoug.com/blog/2026/06/08/three-kinds-of-agentic-search)** (Jun 2026) — Proposes a practitioner taxonomy of three agentic search paradigms by degree of agent agency: (1) **Agent-Assisted** — agent improves queries, search engine unchanged (where most "AI search" is today); (2) **Agent-Driven** — agent orchestrates multi-step retrieval loops, mixing search with computation (Perplexity, AI Overviews); (3) **Agent-Native** — search infrastructure designed from scratch for agent consumption: structured results, APIs over scraping, semantic indexing at the fact level, provenance tracking, composable primitives. Key insight: organizations need all three simultaneously, and "search quality becomes agent quality" in the agent-driven paradigm.
+- **[Three kinds of agentic search](https://softwaredoug.com/blog/2026-06-08/three-kinds-of-agentic-search)** (Jun 2026) — Proposes a practitioner taxonomy of three agentic search paradigms by degree of agent agency: (1) **Agent-Assisted** — agent improves queries, search engine unchanged (where most "AI search" is today); (2) **Agent-Driven** — agent orchestrates multi-step retrieval loops, mixing search with computation (Perplexity, AI Overviews); (3) **Agent-Native** — search infrastructure designed from scratch for agent consumption: structured results, APIs over scraping, semantic indexing at the fact level, provenance tracking, composable primitives. Key insight: organizations need all three simultaneously, and "search quality becomes agent quality" in the agent-driven paradigm.
+
+- **[Prefer synthetic traffic over LLM-as-a-judge](https://softwaredoug.com/blog/2026-11-12/agent-search-traffic)** (Nov 12 2026) — "We don't need to stay married to an old model of evaluation that silos the UI from ranking." Body not yet retrievable (404 on every URL form as of 2026-11-17; indexed in `feed.xml`). See [[#Prefer synthetic agent traffic over LLM-as-a-judge (November 12–16, 2026)]].
 
 ## Related
 - [[concepts/elasticsearch]] — Primary search engine in his early work

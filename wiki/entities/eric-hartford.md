@@ -3,7 +3,7 @@ title: Eric Hartford
 type: entity
 handle: "@QuixiAI"
 created: 2026-04-10
-updated: 2026-09-07
+updated: 2026-11-17
 tags:
   - person
   - model
@@ -128,6 +128,32 @@ datasets, explicitly denying they are OpenAI distillation products:
 https://huggingface.co/QuixiAI/datasets — consistent with his long-standing position
 that open fine-tuning datasets are independently built, not scraped from frontier-lab
 outputs.
+
+## With language promotion (November 17, 2026)
+
+Hartford used a reply in a systems-language thread to pitch **With**
+([withlang.org](https://withlang.org), [withlang-dev/with](https://github.com/withlang-dev/with))
+as his own project — the first public signal on file here that he is building a programming
+language alongside his fine-tuning work:
+
+> "@ohmypy I think u would like my programming language. You could help me build out the
+> standard library? I have a really slick system where I mechanically migrate c libraries
+> to with and then wire up Withy adapters to them."
+> — [tweet](https://x.com/quixiai/status/2122738133309505750)
+
+The parent he answered is @ohmypy's wishlist post ("I want a high-level standard library
+for C with powerful abstractions like those in Go and allocator-based memory management
+like in Zig… Please talk me out of releasing an alternative stdlib for C",
+[tweet](https://x.com/ohmypy/status/2122599554910437790)) — Hartford positions With's
+mechanical C-library migrator plus "Withy adapters" as the answer to exactly that gap.
+With bills itself as "an ergonomics-first systems language… native by default, exactly as
+safe as Rust, and allergic to ceremony", with **generational references and consuming
+destructors borrowed from Vale**, zero-ceremony inference, and `c_import` header-based C
+interop. Full landing-page capture: [[raw/articles/withlang.org--home--2026-11-17]].
+
+Open questions for a later run: Hartford's actual role in With (author vs early
+contributor — the tweet says "my programming language" but the GitHub org is
+`withlang-dev`), and whether "Withy" is With's FFI/adapter layer or a separate tool.
 
 ## X Activity Themes
 

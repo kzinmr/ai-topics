@@ -3,7 +3,7 @@ title: "Ian Nuttall"
 tags: [person]
 sources: []
 created: 2026-04-24
-updated: 2026-11-05
+updated: 2026-11-17
 type: entity
 ---
 
@@ -123,6 +123,75 @@ Nuttall's approach to AI agent state management is distinctly file-based rather 
 
 > "For deep work, slow down. Understanding your code is 100x better."
 > — 10xDevelopers.dev tips
+
+## X Activity Log (November 2026)
+
+Seven posts in the Nov 9–17 window, all product-marketing for his own stack; the volume
+itself is the signal — Nuttall is running SEO Skill and Keep as a paired funnel.
+
+### SEO Skill teardown series
+
+A repeatable format: pick a named SaaS product, publish a public SEO teardown on
+seoskill.dev, and post it as a reply to the founder. Each teardown doubles as a demo of
+the tool.
+
+- **Nov 10** — *How I'd grow TypingMind with SEO*: "The pricing, API key and comparison
+  pages it has, and why they don't rank." Targeting his own adjacent product category.
+  https://seoskill.dev/blog/how-id-grow-typingmind
+  [tweet](https://x.com/iannuttall/status/2120143186576470332)
+- **Nov 9** — *How I'd grow Dub with SEO, a full teardown*: leads with the asset angle —
+  "It has a higher Domain Rating than Rewardful, 399 affiliate programs and payout data
+  from $20 million. Here's how I'd use them."
+  https://seoskill.dev/blog/how-id-grow-dub
+  [tweet](https://x.com/iannuttall/status/2119781300844556781)
+- **Nov 15** — *How I'd grow Loops, the SaaS email platform, with SEO*, posted as a reply
+  to the founders: "some SEO ideas that won't cost you 10k" — pitching against agency
+  spend. https://seoskill.dev/blog/how-id-grow-loops
+  [tweet](https://x.com/iannuttall/status/2121906589103690136)
+
+### `seo lint` — AI-slop detection as a CLI subcommand (Nov 11)
+
+Announced in progress as a reply to @AlexReibman: "Working on `seo lint` for this" with a
+docs link and an in-action example.
+
+- `seo lint` "find[s] the lines in a blog post, landing page, title or meta description
+  that read as AI-written, with a fix for each" — i.e. AI-writing-pattern detection
+  packaged as a lint step an agent can run before publishing.
+  https://seoskill.dev/docs/lint
+- Paired with a companion explainer, *What is AI slop? How to spot it and fix it* —
+  "AI slop is AI-made content published without a careful read. The writing patterns that
+  give it away, the research behind them, and a free check for your drafts."
+  https://seoskill.dev/blog/ai-slop
+- [tweet](https://x.com/iannuttall/status/2120449713426354623)
+
+Worth flagging as a crossover: an SEO tool shipping an AI-text detector means the
+agent-written-content and agent-audited-content loops are now closed inside one product —
+the agent drafts, then lints its own output for AI tells before publishing. Same territory
+as the "humanizer" style of post-processing writing, but here framed as a searchable,
+fixable lint report rather than a rewrite.
+
+### Google core update tracking (Nov 10)
+
+"Google's core algorithm update is currently rolling out. If you want to track it and
+compare before/after performance, you can do that with [seoskill.dev] to help recover your
+site or double down on what's working." — the algorithm-update-date dataset is being sold
+as the differentiator for the timing question ("did the update do this to me?").
+[tweet](https://x.com/iannuttall/status/2120227530896732273)
+
+### Monetization reconsideration (Nov 13)
+
+Reply to @michael_chomsky: "[seoskill.dev] does this and I am considering just making it
+free and finding another way to sustain it." Open question on record; if it happens, it
+reinforces the pattern that these agent-native SEO tools monetize via the audience and
+courses rather than the tool.
+[tweet](https://x.com/iannuttall/status/2121160175759302767)
+
+### Keep iOS app launch (Nov 9)
+
+After ~2 months in App Store review, **Keep** ([keep.md](https://keep.md)) shipped an iOS
+app — his Markdown capture layer for later agent use (SEO/AEO/ASO tips, design
+inspiration, competitor research, product ideas, viral tweets). Full page:
+[[entities/keep]]. [tweet](https://x.com/iannuttall/status/2119721859302535604)
 
 ## Key Projects
 

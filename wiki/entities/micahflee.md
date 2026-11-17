@@ -6,8 +6,9 @@ sources:
   - raw/articles/micahflee.com--mandatory-update-a-short-story--a332b287.md
   - raw/articles/micahflee.com--sandboxing-coding-agents--2355e89c.md
   - raw/articles/micahflee.com--just-say-no-to-openai-and-anthropic--f2eedf0a.md
+  - raw/articles/micahflee.com--heres-how-anyone-can-easily-use-private-open-weight-models--6b63251c.md
 created: 2026-04-24
-updated: 2026-10-12
+updated: 2026-11-17
 type: entity
 ---
 
@@ -39,6 +40,7 @@ Previously: Director of Information Security at [[concepts/the-intercept]] (wher
 | 2025 | Founds **Lockdown Systems Collective**; develops [[concepts/cyd]] app; reports on [[concepts/iceblock]] app security failures; delivers BSidesPDX keynote on "Technofascism" |
 | 2026 | Publishes Epstein files analysis on ; builds DHS Contracts Explorer from hacked data; writes extensively on Signal group nicknames, mercenary spyware, and app censorship |
 | **2026-10-08** (approx.) | Publishes *"Just say no to OpenAI and Anthropic"* — his most explicit model-vendor boycott essay to date. Argues frontier-lab access is a **gatekeeping** problem (Trusted Access for Cyber / Cyber Verification Program hand "the ultimate power to decide who gets access" to Altman and Amodei "with consultation from the Trump Administration"), that ChatGPT/Claude "will **never** be private" even with the training opt-out ticked, and that the open-weight gap is now only **~4 months** — "Four months is nothing." Names GLM-5.3 as "basically on par with Claude Opus 5.5 for software engineering" and points security-minded users at [[concepts/privacy-preserving-computing\|secure-enclave providers]] (Tinfoil) as the middle path between self-hosting and proprietary APIs. |
+| **2026-11-17** | Publishes *\"Here's how anyone can easily use private, open weight models\"* — operational follow-up to the Oct boycott essay: a consumer tutorial endorsing **Maple AI** (TEE-hosted open weights, accepts Bitcoin, incl. an uncensored DeepSeek V4.1 Flash), Maple Work desktop agent, and **GhostVM** sandboxing; names OpenCode/Pi as alternatives; warns frontier $20 plans are bubble-subsidized so Maple tokens run out faster. |
 
 ---
 
@@ -114,6 +116,21 @@ This makes Lee a useful counterweight in the [[concepts/open-weight-vs-closed-ll
 
 Source: [[raw/articles/micahflee.com--just-say-no-to-openai-and-anthropic--f2eedf0a.md]]
 
+### A Consumer Playbook for Private Open-Weight Models (November 2026)
+
+In *\"Here's how anyone can easily use private, open weight models\"* (November 17, 2026), Lee turns the October boycott thesis into a **step-by-step consumer tutorial** — the practical counterpart to his polemical \"Just say no\" essay. Rather than argue *why* to leave the frontier labs, he shows a non-expert how to do it in ~15 minutes, and uses the walkthrough to make a substantive capability + privacy argument:
+
+- **The frame**: \"despite all the slop/data centers/environmental destruction/theft, LLMs are incredibly useful\" — but \"OpenAI and Anthropic suck and you can't trust them with your data.\" He targets the assumption, created by the AI bubble's subsidy economics, that the frontier labs are the only \"good\" options: \"there are tons of models and providers and a diverse ecosystem of open source tools.\"
+- **Provider choice — Maple AI (TEE-based)**: Lee endorses **Maple**, which \"runs open weight models in TEEs\" so \"unlike OpenAI and Anthropic, they can't spy on your conversations.\" He is explicit it is not a paid endorsement (\"I don't get money from them\") and mentions alternatives he also likes (**OpenCode**, **Pi**). Available models at time of writing: DeepSeek V4.1 Flash, GLM-5.3 Flash, GLM 5.3, Kimi K3.1 Pro, \"and others\" — including **DeepSeek V4.1 Flash Uncensored**, \"a version of DeepSeek V4.1 with all cyber safeguards removed from the weights,\" which he pitches for **security research** (\"you can use it for security research and it won't constantly tell you no\"). He notes Maple accepts **Bitcoin**, enabling pseudonymous use if OPSEC is clean.
+- **Agentic use + sandboxing**: He recommends the **Maple Work** desktop app for agentic coding \"complete with agent skills,\" reading document folders, troubleshooting, and IoT firmware reverse-engineering — but warns to run any agent (\"Maple Work… or Claude, or Codex\") in an **isolated sandbox**, naming **GhostVM** on Mac to spin up throwaway macOS VMs. This is a direct carry-over of his earlier coding-agent sandboxing guidance into the consumer tutorial.
+- **The honest cost caveat**: Unlike his capability cheerleading, Lee flags a real economic downside tied to the bubble — frontier labs can sell $20/month plans at a loss because they're \"drowning in billions,\" so \"you'll run out of tokens in Maple much quicker than running out in OpenAI or Anthropic.\" He frames subsidized frontier pricing as bubble-dependent, a point that connects to the broader [[concepts/ai-bubble-economics]] critique.
+
+**Significance for Lee's arc**: This is the first time Lee publishes an *operational* migration path (provider, models, sandboxing, payment) rather than a refusal argument — closing the loop on his October claim that the open-weight gap is \"only four months\" and therefore an affordable switching cost. It also concretizes his abstract \"secure-enclave providers as the middle path\" recommendation (Tinfoil, Oct) with a named, reviewed product (**Maple**, TEE-hosted, uncensored DeepSeek variant).
+
+> \"You really can use powerful AI without giving your money and data to Trump-aligned anti-competitive Silicon Valley tech oligarchs that insist on their right to spy on you.\"
+
+Source: [[raw/articles/micahflee.com--heres-how-anyone-can-easily-use-private-open-weight-models--6b63251c.md]]
+
 ---
 
 ## Key Quotes
@@ -172,6 +189,7 @@ Cellebrite — Device extraction company analyzed in Lee's technofascism framewo
 - *"Why hack the DHS? I can think of a couple Pretti Good reasons!"* (March 2026)
 - *Agentic coding techniques* (August 2026)
 - *Just say no to OpenAI and Anthropic* (October 2026)
+- *Here's how anyone can easily use private, open weight models* (November 2026)
 - *I spoke about ICEBlock and Trump's app censorship on the kill switch podcast* (October 2025)
 - *Hacks, Leaks, and Revelations: The Art of Analyzing Hacked and Leaked Data* (No Starch Press, 2024)
 - [OnionShare](https://onionshare.org) — Open-source file sharing tool

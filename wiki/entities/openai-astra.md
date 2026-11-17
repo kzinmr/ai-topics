@@ -2,7 +2,7 @@
 title: "OpenAI Astra"
 type: entity
 created: 2026-08-03
-updated: 2026-09-05
+updated: 2026-11-16
 tags:
   - model
   - openai
@@ -22,6 +22,7 @@ sources:
   - raw/articles/garymarcus.substack.com--p-hot-take-on-gpt-6-astra--fbf12bd8.md
   - raw/articles/2026-09-04_pvncher_rethinking-skills-and-prompts-for-gpt-6-astra.md
   - raw/articles/openai.com--index-gpt-6-astra--gpt-6-astra-new-generation-of-intelligence.md
+  - raw/articles/openai.com--index-step-toward-defining-the-standard-model--df3e44b9.md
 related:
   - entities/openai
   - concepts/gpt/gpt-5-6
@@ -96,6 +97,31 @@ A postscript illustrates Brandolini's law, with engineer Wouter Vreugdenhil's ob
 - Military strategy or open-ended world reasoning
 - Autoformalization (turning human math into Lean/Coq formal proofs)
 - General AGI/ASI
+
+## Physics: lattice Standard Model (November 15, 2026)
+
+OpenAI's newly launched science blog led with **"A step toward defining the
+Standard Model on a lattice"** — a candidate **nonperturbative lattice definition
+of the Standard Model**, where OpenAI states "GPT-6 Astra helped turn the idea
+into a detailed proof."
+
+Why this matters more than it looks:
+
+- It moves Astra's claim ledger from pure mathematics into **theoretical physics**,
+  the domain where results are hardest to verify quickly and where "a detailed
+  proof" carries the most weight.
+- The framing is careful — *"a step toward"*, *"candidate"* — which is a different
+  register from the August 2026 "solved 10 open conjectures" announcement. Worth
+  tracking whether that caution reflects genuine epistemic humility or simply a
+  less quotable result.
+- The standing Astra caveats apply unchanged: no published methodology, unknown
+  failure rate, and Levent Alpöge's demonstration that Anthropic's already-released
+  Fable reproduced roughly half the earlier math results autonomously. Until the
+  proof itself is published and independently checked, this is an
+  **OpenAI-asserted** result, not a community-accepted one.
+
+Only the RSS abstract has been captured (openai.com returns 403 to scrapers).
+Raw: [[raw/articles/openai.com--index-step-toward-defining-the-standard-model--df3e44b9.md]]
 
 ## Soft Release as GPT-6 Astra (September 3, 2026)
 

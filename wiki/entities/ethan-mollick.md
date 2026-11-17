@@ -5,7 +5,7 @@ aliases: [emollick]
 tags: [person, education, developer-tooling, ai-adoption]
 sources: []
 created: 2026-04-24
-updated: 2026-11-05
+updated: 2026-11-17
 type: entity
 ---
 
@@ -205,6 +205,21 @@ Mollick consistently raises questions about the ethical implications of AI in wo
   See [[concepts/vlm-visual-semiotics]] and
   [[raw/papers/2026-11-05_2610.36449_a-heart-means-recursion-vlm-visual-semiotics]].
   Source: [tweet](https://x.com/emollick/status/2118012530215854477).
+- **"Hard to steer" verdict on GPT-6.2 Astra (Nov 17):** from a pre-launch hands-on
+  window, Mollick found **GPT-6.2 Astra** "*very uneven & weird. On one hand, it was
+  harder to steer & work with than other models. On the other, when given an ambitious
+  project (make a space elevator ride from scratch with Blender & Unity) it could deliver
+  well.*" He shipped a browser-playable, zero-g-physics space-elevator walkthrough
+  ([upwell-tetherline.netlify.app/unity](https://upwell-tetherline.netlify.app/unity/) —
+  "Walk through Car 07", 6-minute guided passage vs 58 h 43 m of real ship time, WASD +
+  mouse + E) as the proof artifact, then added the operative judgement: "*this impressive
+  (& it is), I don't find myself reaching for the new 6.2 models. They really are hard to
+  work with & take more guidance and pushing to get work done.*"
+  Worth noting against OpenAI's own framing of Astra as its most steerable family and the
+  vendor-DevRel enthusiasm recorded on [[entities/openai-astra]] — Mollick's axis is
+  day-to-day steerability in agentic work, not benchmark standing.
+  Sources: [tweet](https://x.com/emollick/status/2122755693191287009),
+  [reply with demo link](https://x.com/emollick/status/2122756233291821250).
 
 ## Notable X Posts (October 2026)
 

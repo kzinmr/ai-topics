@@ -1,9 +1,9 @@
 ---
 title: "Fernando Borretti"
 tags: [person]
-sources: [raw/articles/borretti.me--article-taking-ai-seriously--4126dcb1.md]
+sources: [raw/articles/borretti.me--article-taking-ai-seriously--4126dcb1.md, raw/articles/borretti.me--article-asi-as-a-black-box--f06c0ea4.md]
 created: 2026-04-24
-updated: 2026-11-15
+updated: 2026-11-16
 type: entity
 ---
 
@@ -303,6 +303,51 @@ people (especially programmers) discuss AI progress itself.
 
 Raw: [[raw/articles/borretti.me--article-taking-ai-seriously--4126dcb1.md]]
 
+## "ASI as a Black Box" (November 2026)
+
+Follow-up to "Taking AI Seriously," aimed not at timelines but at **what the word
+"ASI" can and cannot mean**. Borretti grants the standard definition — an AI much
+better than the top humans at almost all cognitive tasks — then argues that from
+that definition plus our current web of knowledge "we can deduce very little about
+what an ASI would actually look like."
+
+- **Geniuses are a lower bound, not an upper bound.** Human capability tells us
+  what ASI is *at least* as good at; it constrains nothing above that line.
+- **Deductive theories are the only real constraints.** Where we possess them we
+  can say what even a superintelligence cannot do — it cannot travel faster than
+  light or back in time, because those theories prohibit it. "In most areas of
+  life, we don't have such theories, and so we don't have solid reasons to say
+  what is or is not possible."
+- **Superpersuasion as the test case.** Some humans are extremely charismatic, but
+  without a deductive theory of belief-change and communication there is no way to
+  bound charisma from above. "Superpersuasion" is loosely defined and thrown
+  around as though it referred to something — its possibility is "an empirical
+  question," not a conceptual one. He applies the same move to scientific
+  discovery (whether ASI vastly accelerates science is likewise underdetermined).
+- **Methodological payoff**: capability claims about ASI that ignore whether a
+  relevant deductive theory exists are category errors. Debates about what ASI
+  "must" or "cannot" do are only tractable inside domains where we have
+  theory-backed possibility bounds; everywhere else, the honest answer is that we
+  do not know what is on the table.
+- **The "What can an ASI do X?" diagnosis**: most such questions are unanswerable
+  because of what we don't know about *X*, not about ASI. "Things an ASI can do"
+  is a subset of "things it is possible to do," so knowing the former deductively
+  requires a complete deductive theory of whatever domain X belongs to.
+- **The Bayesian-rationality caveat**: the standard doctrine holds that
+  superintelligence converges on perfect Bayesian rationality — in which case the
+  decision-theory literature (including Newcomb's problem) "will finally pay off."
+  If instead those theories are "just an unreachable, abstract normative standard,
+  then we know nothing."
+- **Conclusion**: "we can't predict the specific cognitive abilities an ASI would
+  have, and we also can't predict the higher-order consequences of those cognitive
+  abilities."
+
+Reads as the epistemic groundwork for his AI essays: "Taking AI Seriously" fixes
+*how much progress to assume*, this fixes *how much of the ASI vocabulary is
+actually meaningful*.
+
+Raw: [[raw/articles/borretti.me--article-asi-as-a-black-box--f06c0ea4.md]]
+
 ## Related
 
 - [[concepts/austral]] — Systems programming language with linear types and capabilities
@@ -344,5 +389,6 @@ Raw: [[raw/articles/borretti.me--article-taking-ai-seriously--4126dcb1.md]]
 - "Language Pragmatics Engineering"
 - "There Is No New Aesthetics"
 - "Taking AI Seriously"
+- "ASI as a Black Box"
 - raw/newsletters/2026-06-29-import-ai-463-self-improving-robots-a-10k-chinese-gpu-cluster-and-an-elegiac-ess.md
 - Func Prog Podcast #6, Glasp Talk #12, The Stewart Mackenzie Indaba #31

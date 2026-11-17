@@ -3,7 +3,7 @@
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Last updated: 2026-11-17
 
-## Entities (971 pages)
+## Entities (972 pages)
 
 - [[entities/_index]] — Directory hub / overview for entities pages
 - [[entities/0xjeff]] — 0xJeff
@@ -492,6 +492,7 @@
 - [[entities/kore-ai]] — Kore.ai
 - [[entities/koylan-ai]] — Muratcan Koylan (Koylan AI)
 - [[entities/krebsonsecurity-com]] — Brian Krebs
+- [[entities/keep]] — Keep (keep.md) — Ian Nuttall's capture tool: pages, posts, files, images, video, PDFs and audio normalized to clean Markdown for AI agents to search/read/update; free iPhone app + MCP/CLI setup prompts for Claude Code, Codex, Cursor, Hermes and others
 - [[entities/ken-klippenstein]] — Ken Klippenstein — Investigative journalist; broke the Sept 2026 DHS C&TIS "AI skeptic radicalization" assessment story
 - [[entities/kyle-corbett]] — Kyle Corbett — Redirect → [[entities/kyle-corbitt]] (misspelled duplicate; verification note 2026-08-07)
 - [[entities/kyle-corbitt]] — Kyle Corbitt
