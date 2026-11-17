@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "run_id": "20261117T101055Z",
+  "collected_at": "2026-11-17T10:10:55.364152+00:00",
+  "triaged_at": "2026-11-17T10:15:00+00:00",
+  "processed_count": 4,
+  "items": [
+    {
+      "message_id": "<20261116140115.3.18cf79105d1db3e7@mg-d1.substack.com>",
+      "subject": "Import AI 481: AI sub-contractors; a wet lab for AI; and subterfuge during development",
+      "date": "2026-11-16",
+      "source": "Import AI (Jack Clark / Anthropic co-founder)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-16-import-ai-481-ai-sub-contractors-a-wet-lab-for-ai-and-subterfuge-during-developm.md",
+      "canonical_url": "https://importai.substack.com/p/import-ai-481-ai-sub-contractors",
+      "relevance": true,
+      "importance": "critical",
+      "topics": ["ai-safety", "ai-policy", "frontier-labs", "ai-for-science", "model-development-opacity"],
+      "suggested_wiki_targets": [
+        "entities/import-ai.md",
+        "entities/jack-clark.md",
+        "concepts/ (ai-safety / ai-policy related pages)",
+        "events/ (if major announcement)"
+      ],
+      "notes": "Flagship weekly AI newsletter. Topics: AI sub-contracting in frontier labs, wet lab for AI (AI-driven biology), subterfuge/deception during model development. All squarely in wiki scope (AI safety, frontier lab practices, AI-for-science).",
+      "downstream": "scrape canonical URL, ingest into existing Import AI / Jack Clark entity pages; consider concept page for development-subterfuge theme"
+    },
+    {
+      "message_id": "<20261116160255.3.08f2132d997f1057@mg2.substack.com>",
+      "subject": "🎙️ How I AI: Fable 5.2 Review + How I fight token fraud as a solo founder + Building a Claude Code family OS",
+      "date": "2026-11-16",
+      "source": "Lenny's Newsletter (How I AI podcast)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-16-how-i-ai-fable-5-2-review-how-i-fight-token-fraud-as-a-solo-founder-building-a-c.md",
+      "canonical_url": "https://www.lennysnewsletter.com/p/how-i-ai-fable-52-review-how-i-fight",
+      "relevance": true,
+      "importance": "high",
+      "topics": ["claude-code", "anthropic", "claude-fable-5.2", "ai-agents", "agent-workflows", "solo-founder-ai"],
+      "suggested_wiki_targets": [
+        "entities/claude-code.md",
+        "entities/anthropic.md",
+        "entities/claude-fable.md (or model page for Fable 5.2 review coverage)",
+        "concepts/ (agent-workflows, token-cost-management)"
+      ],
+      "notes": "Practitioner-perspective review of Claude Fable 5.2, token-fraud mitigation for solo founders, and a 'Claude Code family OS' workflow. Directly on-topic for coding agents and Claude model tracking. Podcast format — value is in real-world usage patterns, not benchmark data.",
+      "downstream": "scrape canonical URL; update Claude Code and Fable model pages with review sentiment and token-fraud mitigation patterns"
+    },
+    {
+      "message_id": "<20261116.191355.94b4b9de@mta28>",
+      "subject": "Qwen4-Max Is Here, and the Numbers Disappoint",
+      "date": "2026-11-16",
+      "source": "beehiiv-hosted AI newsletter (likely AI News / Rundown)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-16-qwen4-max-is-here-and-the-numbers-disappoint.md",
+      "canonical_url": null,
+      "relevance": true,
+      "importance": "critical",
+      "topics": ["qwen", "open-weight-models", "model-benchmarks", "alibaba", "llm-evaluation"],
+      "suggested_wiki_targets": [
+        "entities/qwen.md (or Qwen model family page)",
+        "events/ (Qwen4-Max release event)",
+        "concepts/ai-benchmarks/"
+      ],
+      "notes": "Release + benchmark analysis of Qwen4-Max with apparently disappointing numbers. Major open-weight frontier model release — high wiki value. All 20 links are opaque beehiiv click-tracking redirects, so the downstream stage must resolve redirects to find the actual article URL.",
+      "downstream": "resolve beehiiv redirects to canonical article URL, then scrape; create/update Qwen4-Max event page and benchmark comparison context"
+    },
+    {
+      "message_id": "<20261117020436.3.4618e7b72c4e4521@mg-d1.substack.com>",
+      "subject": "Claude Sheets.",
+      "date": "2026-11-17",
+      "source": "AI by Akash (aibyaakash)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-17-claude-sheets.md",
+      "canonical_url": "https://www.aibyaakash.com/p/claude-sheets",
+      "relevance": true,
+      "importance": "high",
+      "topics": ["anthropic", "claude", "ai-product-launch", "spreadsheet-ai", "ai-agents"],
+      "suggested_wiki_targets": [
+        "entities/anthropic.md",
+        "entities/claude.md (product surface expansion: Sheets integration)",
+        "events/ (Claude Sheets launch, if substantive)"
+      ],
+      "notes": "Coverage of a Claude Sheets product launch — Anthropic product-surface expansion into spreadsheets. On-topic for frontier-lab product tracking; secondary aggregator newsletter so importance capped at high.",
+      "downstream": "scrape canonical URL; fold product-launch facts into Claude/Anthropic pages; evaluate whether it merits a standalone events/ page"
+    }
+  ],
+  "summary": {
+    "total": 4,
+    "relevant": 4,
+    "critical": 2,
+    "high": 2,
+    "low": 0,
+    "skipped": 0
+  },
+  "handoff": {
+    "next_stage": "newsletter-wiki-ingest",
+    "priority_order": [
+      "2026-11-16-qwen4-max-is-here-and-the-numbers-disappoint.md",
+      "2026-11-16-import-ai-481-ai-sub-contractors-a-wet-lab-for-ai-and-subterfuge-during-developm.md",
+      "2026-11-16-how-i-ai-fable-5-2-review-how-i-fight-token-fraud-as-a-solo-founder-building-a-c.md",
+      "2026-11-17-claude-sheets.md"
+    ],
+    "caveats": [
+      "Raw digests contain only Substack/beehiiv redirect URLs, no article titles. Downstream must resolve redirects before scraping.",
+      "Qwen4-Max item has no recoverable canonical URL from the digest alone (all 20 links are opaque beehiiv /v2/c/ redirects) — downstream should resolve or web-search 'Qwen4-Max benchmarks' as fallback."
+    ]
+  }
+}
