@@ -1,5 +1,11 @@
 # Wiki Log
 
+## [2026-11-17] trending-topics (12:00 UTC)
+- New raw: `raw/articles/2026-11-17_tomshardware_claude-mythos-amd-gpu-onboarding.md`, `raw/articles/2026-11-17_opencode_opencode-browse.md`
+- Updated `concepts/cuda-moat.md` (Claude Mythos AMD 3-day onboarding claim, HN skepticism) and `entities/opencode.md` (OpenCode Browse launch, HN 281pts)
+- Covered by sibling jobs today: Qwen4-Max (`concepts/qwen-4-max.md`), agent credential leasing, Windows agent telemetry, systemic software breakdown, ChatGPT Wallet, Claude Sheets
+- Report: `inbox/rss-scans/trending-topics-2026-11-17.md`
+
 _Log of all wiki changes. Newest entries at top._
 
 ## [2026-11-17] active-crawl | 4 pages + 3 raws (agent credential leasing, Windows agent telemetry, systemic software breakdown, ChatGPT Wallet) + JEPA enrich

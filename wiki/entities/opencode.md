@@ -1,7 +1,7 @@
 ---
 title: OpenCode
 created: 2026-04-30
-updated: 2026-10-09
+updated: 2026-11-17
 type: entity
 tags:
   - product
@@ -104,6 +104,14 @@ Native Language Server Protocol support for 20+ languages — enables semantic c
 - **OpenCode Enterprise** — Self-hosted deployment
 - **Desktop app** — Native Tauri desktop with VS Code extension
 - **iOS app (TestFlight beta)** — as of Oct 9, 2026, Dax Raad opened up additional TestFlight slots for the OpenCode iOS app ([beta link](https://testflight.apple.com/join/EnFsKYQ1)), extending OpenCode from terminal/desktop to mobile.
+
+
+### OpenCode Browse (November 2026)
+
+OpenCode shipped **Browse** ([product page](https://opencode.ai/product/browse), [HN 50523459, 281pts](https://news.ycombinator.com/item?id=50523459); raw: `raw/articles/2026-11-17_opencode_opencode-browse.md`): an MCP-style bridge that lets coding agents drive the developer's **real local browser** (Chrome, Edge, Brave, Arc, Helium, Vivaldi, Opera, Chromium; no Firefox at launch) rather than a sandboxed instance.
+
+- HN reception: overlaps with the Playwright MCP server approach (grant access to already-open pages/sessions); commenters warned about the lethal trifecta and recommended separate browser profiles. Several noted connection instability ("have to rerun `browse pair`"; a persistent-sessions PR exists: anomalyco/opencode#63002) and repeated a broader criticism that OpenCode ships ~3 projects/week with thin security review.
+- Counterpoint from users: "just ask my agent to do stuff with a browser and it figures it out" — the built-in browser tool competes with this product surface.
 
 ## Why Ramp Chose OpenCode
 

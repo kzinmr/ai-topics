@@ -2,7 +2,7 @@
 title: "CUDA Moat"
 type: concept
 created: 2026-07-25
-updated: 2026-07-25
+updated: 2026-11-17
 tags:
   - vendor-lock-in
   - hardware
@@ -112,6 +112,17 @@ This approach could dramatically accelerate ROCm development if it works well, b
 - Producing functionally correct but suboptimally performing kernels
 - Missing subtle CUDA-specific optimizations (warp-level intrinsics, Tensor Cores)
 - Creating maintenance burden if agent-generated code is not human-readable
+
+
+## Anthropic Claude Mythos AMD Onboarding Claim (November 2026)
+
+Anthropic told IPO investors that its **Claude Mythos Preview** model completed the software work to run an Anthropic model on **AMD MI355X GPUs** "at a useful level of performance" in about **three days**, with "basically no human intervention" — a job it says historically took **6-12 months** with "dozens of engineers". Mythos reportedly ported or wrote "almost 100% of the kernels" ([Tom's Hardware, 2026-11-16](https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropic-says-claude-mythos-slashed-software-work-to-onboard-amd-gpus-from-up-to-12-months-to-around-three-days-writing-almost-100-percent-of-kernels-autonomously-chips-away-at-nvidias-cuda-moat), [HN 50526264](https://news.ycombinator.com/item?id=50526264); raw: `raw/articles/2026-11-17_tomshardware_claude-mythos-amd-gpu-onboarding.md`).
+
+- Tom Brown (Anthropic co-founder / chief compute officer) framed the original cost via "historical experience bringing up new accelerators using traditional engineering approaches". Anthropic already runs on Nvidia GPUs, AMD GPUs, Google TPUs and AWS Trainium as "one fungible pool of compute"; an up-to-2GW AMD agreement is in place.
+- AMD VP of AI software Anush Elangovan (April, EE Times): "Claude is better than HIPify because it has web search built in" — HIPify being AMD's own CUDA->HIP conversion tool.
+- **Skepticism (HN)**: timing just before Anthropic's IPO and amid Nvidia-woes narratives invites "convenient claim" objections; one commenter noted kernel development is a banned topic in public-facing Anthropic models, so the capability is asymmetric (labs + hyperscalers get it, others are locked out); another argued the real moat shifts to *which* models non-trillion-dollar companies can access. The claim does not by itself dissolve CUDA's ~20-year ecosystem gravity.
+- Directly relevant to the *Agentic Kernel Generation* section above and the SemiAnalysis AMD thesis.
+
 
 ## Related Concepts
 
