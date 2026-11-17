@@ -2,7 +2,7 @@
 title: "Harvey"
 type: entity
 created: 2026-05-08
-updated: 2026-11-16
+updated: 2026-11-17
 tags:
   - security
   - company
@@ -59,6 +59,7 @@ sources:
   - raw/articles/2026-10-28_harvey_legal-engineer-help-legal-teams-apply-expertise-with-ai.md
   - raw/articles/2026-11-06_harvey_forum-chicago-product-announcements.md
   - raw/articles/2026-11-14_harvey_building-ethical-wall-enforcement-into-harvey.md
+  - raw/articles/2026-11-17_harvey_law-firm-technology-budget.md
 ---
 
 # Harvey
@@ -1114,3 +1115,18 @@ Harvey published an engineering deep-dive on how it enforces law-firm **ethical 
 **Read**: the design generalizes beyond legal tech — it is a worked example of policy-in-data-plane enforcement for enterprise agents: derived artifacts (conversations, memories, agent runs) inherit source-document ACLs transitively, the search index is advisory while the stored policy is authoritative, and every sync failure path is fail-closed. Connects to [[concepts/enterprise-agents]], [[concepts/context-engineering/context-graph]] (the graph side of the same "respect existing permissions" requirement), and [[concepts/lifelong-agent-memory]].
 
 Source: [[raw/articles/2026-11-14_harvey_building-ethical-wall-enforcement-into-harvey.md]]
+## 2027 law firm technology budget planning methodology (Nov 17, 2026)
+
+Harvey published a budget-planning guide for law firms preparing 2027 technology budgets. No proprietary numbers — the value is the framework, aimed at the finance/technology/practice-leader triad that owns the budget conversation:
+
+- **Three-horizon framing**: requests split into keeping core systems reliable vs. enabling new work/services vs. testing unproven ideas — each class needs a different justification, so a system replacement and an experiment cannot be defended with the same business case.
+- **Spend inventory across three channels**: central IT purchases, practice-group direct buys, and individually-expensed subscriptions — viewed together they reveal overlapping tools the firm already owns.
+- **Contract-window arithmetic**: renewal notice deadlines and replacement timing can create double-paying windows (existing contract through September vs. replacement starting January); the real number is what the firm can *actually stop spending* in the budget year after transition costs.
+- **Hidden internal cost**: vendor price excludes migration, integration, permissions work — and AI rollouts contend for the *same* IT/knowledge teams as a concurrent DMS upgrade; assigning an owner does not create the hours. Practices requesting tools must name the lawyers who will test them.
+- **Usage-data caveats**: low adoption may signal a training gap or a small specialist practice doing high-value work, not a bad tool.
+- **Ring-fenced experimentation**: a limited test needs a specific question, a spending limit, and a review date; experimental funding stays visible so leadership deliberately chooses its exploration budget.
+
+Context: this lands two days after the Ethical Wall deep-dive (above) and extends the legal-ops content line ([[entities/harvey]] legal ops / optimization guides, June 2026) — Harvey is building an authority position in legal *budget and operations* discourse, not only product marketing. Related: [[concepts/enterprise-agents]], [[concepts/ai-adoption-failures-and-enterprise-psychosis]].
+
+**Source:** [[raw/articles/2026-11-17_harvey_law-firm-technology-budget]]
+

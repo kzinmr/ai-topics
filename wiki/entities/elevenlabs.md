@@ -2,7 +2,7 @@
 title: "ElevenLabs"
 type: entity
 created: 2026-05-08
-updated: 2026-11-12
+updated: 2026-11-17
 tags:
   - company
   - voice-ai
@@ -34,6 +34,9 @@ sources:
   - raw/articles/2026-10-30_elevenlabs_internal-ops-agents.md
   - raw/articles/2026-10-30_elevenlabs_what-is-turn-taking.md
   - raw/articles/2026-11-10_elevenlabs_elevenagents-campaign-manager.md
+  - raw/articles/2026-11-17_elevenlabs_kotoba.md
+  - raw/articles/2026-11-17_elevenlabs_postnord.md
+  - raw/articles/2026-11-17_elevenlabs_autotorino-agents.md
 ---
 
 # ElevenLabs
@@ -565,6 +568,27 @@ ElevenLabs launched **ElevenAgents Campaign Manager** (Janpreet Khabra & Eli Goo
 The product is the outbound-campaign analogue of the inbound voice-agent work above: the unit of work moves from a single call to a multi-touch sequence with per-contact state, which is where conversation-as-workflow products (see [[entities/decagon]]) and voice-infrastructure vendors now overlap.
 
 **Source:** [[raw/articles/2026-11-10_elevenlabs_elevenagents-campaign-manager]]
+
+## Kotoba acquisition — Japanese voice AI (November 2026)
+
+ElevenLabs announced (Nov 16, 2026) the acquisition of **Kotoba**, self-described "the leading Japanese voice AI lab," founded 2023 by **Noriyuki (Nori) Kojima** (PhD CS, Cornell; ex-Hugging Face research scientist; co-built Japan's open-source **Fugaku-LLM** trained on the RIKEN Fugaku supercomputer) and **Jungo Kasai** (PhD UW; assistant professor at Toyota Technological Institute at Chicago; among Japan's most-cited researchers). Closing expected Q4 2026, subject to regulatory approval. Backed previously by Salesforce Ventures (Nowi Kallen quoted for both sides).
+
+Kotoba's model **Koto** covers Japanese TTS, STT, and speech-to-speech for simultaneous interpretation, and already powers Japanese-language conversations in **Salesforce Agentforce Voice**. ElevenLabs frames the deal as the localization thesis for voice agents: Japanese interaction requires architecture-level handling of subject/object ellipsis, register-dependent vocabulary, deflected praise, indirect refusals, pause-as-thought (not awkwardness), and *kūki o yomu* ("reading the air") — cultural pragmatics the company argues must be baked into the stack "from the very start." Target market: the world's fourth-largest economy; ElevenLabs plans local sales leadership and Japan infrastructure investment. CTO Piotr Dąbkowski: Japanese research will "improve Japanese across the entire stack."
+
+Strategically this is ElevenLabs' first country-lab acquisition and a direct entry into East Asian enterprise voice, where the localization barrier (dialects, honorifics, telephony audio over Japanese phone networks) is the moat. Related: [[concepts/llm-voice]], [[concepts/speech-audio-asr-tts-voice]].
+
+**Source:** [[raw/articles/2026-11-17_elevenlabs_kotoba]]
+
+## Customer case studies: PostNord (Yahoo Scout) and Autotorino (November 2026)
+
+Two ElevenAgents deployment metrics published Nov 16-17, 2026:
+
+- **PostNord** (Nordics' leading postal/logistics operator; Sweden, Denmark, Norway, Finland): replaced an existing AI phone system that had plateaued at **45% task completion** without escalation. New system on ElevenAgents: an orchestrator routes each caller to one of four specialized subagents (incl. a dedicated tracking agent), with intent classifier, guardrails, edge conditions, and **A/B testing infrastructure that splits live traffic between model configurations** — completion rose **45% → 60%**, previous system fully decommissioned in **~90 days**. Swedish tuning covered three fronts: transcription/turn-taking over compressed phone audio (incl. fixing short confirmations like "ja" being treated as background noise), voice-model iteration for naturalness vs speed, and carrier-grade telephony (ElevenLabs reproduced SIP issues independently and worked with Telia's architects; PostNord contributed packet-level SIP traces). Rollout was four staged phases (isolated weekend test → hybrid with human handover → weekday partial → full production) with per-phase call review at each go/no-go.
+- **Autotorino** (Italian automotive dealership group, ~**100,000 calls/month**): earlier workflow was a static IVR message plus a Zapier chain (transcription + language tools) turning recordings into Salesforce leads. Rebuilt on ElevenAgents: 24/7 answer, request qualification, lead creation. About **70% of requests are post-sales** (workshop bookings, vehicle drop-off), which surfaced a roadmap item to expose workshop car status to customers. Evaluated **Eleven v4**: with identical voice, settings, and system prompt, the agent sounded more natural, with tone that adapts to conversation stage — an unusually clean same-prompt model-swap comparison. IVR replacement begins in November.
+
+Both cases illustrate the same architectural pattern as the internal ElevenAgents usage above: orchestrator + cheap specialized subagents + production A/B loop as the mechanism for continued completion-rate gains, rather than a one-shot deployment. Related: [[concepts/ai-for-customer-and-voice-work]], [[concepts/voice-agent-evaluation]].
+
+**Sources:** [[raw/articles/2026-11-17_elevenlabs_postnord]], [[raw/articles/2026-11-17_elevenlabs_autotorino-agents]]
 
 ## Related
 - [[entities/openai]] — Competitor via GPT-4o voice and TTS capabilities

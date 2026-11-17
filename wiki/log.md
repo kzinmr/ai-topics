@@ -3,6 +3,16 @@
 _Log of all wiki changes. Newest entries at top._
 
 
+## [2026-11-17] dreaming wiki-ingest | Pattern E references: ElevenLabs x3 + Harvey budget
+
+> `dreaming-wiki-ingest` cron (2026-11-17 18:20 UTC). Upstream dreaming-group (18:16, commit e8e95a37) committed triage archive only (0 takes, 3 refs) — enrichment executed downstream this run. Pre-run JSON parse failure recovered via triage_latest.json (run_id 20261117T180035Z).
+
+- Checkpoint: total_articles=0, recent_raw_articles=251. Upstream Pattern E scan verified same-day coverage (active-crawl 11:00, trending-topics 12:00, blog-ingest replay) for 15 articles (Paul Christiano, ChatGPT Wallet, Windows telemetry, credential leasing, systemic breakdown, OpenCode Browse, Claude Mythos AMD, Qwen4-Max).
+- Verification gate (3 references, all confirmed genuine gaps):
+  - `entities/elevenlabs.md` + Kotoba acquisition section (Koto model, Kojima/Kasai, Fugaku-LLM, Salesforce Agentforce Voice, Q4 2026 close) + PostNord (45%->60% completion, ~90-day decommission, Telia SIP work, 4-phase rollout) + Autotorino (100k calls/month, 70% post-sales, Eleven v4 same-prompt swap) sections. was: zero Kotoba/Japan/case-study coverage.
+  - `entities/harvey.md` + 2027 law firm technology budget methodology section. Triage claimed "budget data (allocation/AI spend ratio)" but article body contains no proprietary numbers — downgraded to framework-only enrichment (three-horizon framing, three-channel spend inventory, contract-window arithmetic, hidden internal cost, ring-fenced experimentation). Year-of-More ($200k contest) skipped: pure marketing. what-is-an-llm (417B stub) skipped.
+- No index.md changes (existing entries, no new pages). No new tags introduced.
+
 
 ## [2026-11-17] auto-fix | Wiki health fix — index METR link + header count
 
@@ -92,8 +102,6 @@ No overlap with trending-topics (Qwen4-Max/open-source-code/Huang/DRAM) or activ
 
 ### Archive
 9 skip/reference decisions archived via `scripts/archive_triage.py dreaming --keep-reference` (see dated JSON under wiki/raw/archived/triage/dreaming/).
-
-
 
 
 ## [2026-11-16] watchdog-fix | Index hub registration + ghost cleanup
@@ -263,7 +271,6 @@ Pipeline status: trending_topics 23.7h-stale alert = false positive (ran 12:20 U
 - `status: skeleton` backlog still empty (streak since 2026-10-17); acted on highest-inbound `status: stub` subset per 2026-11-13 plan.
 - Enriched: concepts/tinygrad (geohot framework, 33.9k★ MIT verified), concepts/trey-grainger (Searchkernel founder, AI-Powered Search co-author; treygrainger.com + GitHub bio verified), concepts/ai-alliance (thealliance.ai scraped — 2-nonprofit structure, Common Corpus/SYNTH/Tapestry; disambiguated vs Open Secure AI Alliance), concepts/robotics, concepts/embodied-ai, concepts/ai-coding-tools, concepts/generative-ai, concepts/vision-models, concepts/ai-education.
 - All wikilinks machine-verified; tags all pre-registered; index.md 9 descriptions + 1 query entry; 0 net new pages (3458). Run report: [[queries/2026-11-15-skeleton-enrich-stub-action]].
-
 
 
 ## [2026-11-14] health-fix | Wiki health auto-fix run — clean
@@ -449,7 +456,6 @@ Sources verified live: HF model cards (SmolLM3-3B, SmolLM2-1.7B), GitHub API (el
 - Stale (>30d): 2897 (informational). Unprocessed raw: 7136/11384 (backlog, handled by raw-backlog pipeline)
 
 ---
-
 
 
 ## [2026-11-12] watchdog | auto-fix verification — pipeline chain breaks diagnosed, no wiki corruption
