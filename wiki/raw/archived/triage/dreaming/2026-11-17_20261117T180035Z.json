@@ -1,0 +1,152 @@
+{
+  "archived_at": "2026-11-17T18:16:43.963325+00:00",
+  "triage_run_id": "20261117T180035Z",
+  "source": "dreaming",
+  "summary_ja": "チェックポイントの収集記事は0件（total_articles:0）だが recent_raw_articles:251 があるため Pattern E ファイルシステムスキャンを実施。直近2日の生記事62本を確認し、本日の active-crawl(11:00)/trending-topics(12:00)/blog-wiki-ingest replay(11:1x) でPaul Christiano、ChatGPT Wallet、Windows telemetry、credential leasing、systemic breakdown、OpenCode Browse、Claude Mythos AMD、Qwen4-Max等の主要トピックが既に処理済みであることを log.md で検証（10件+バッチ1件=計15記事スキップ）。残存ギャップは sitemap 06:00 バッチの ElevenLabs×4（Kotoba買収+顧客事例）と Harvey 2027法務IT予算の計5記事で、reference（エンティティページ補強候補）として下流 dreaming-wiki-ingest に引き渡す。",
+  "decisions": [
+    {
+      "item_id": "dreaming-elevenlabs-kotoba",
+      "source": "dreaming",
+      "source_name": "dreaming-filesystem-scan",
+      "title": "ElevenLabs acquires Kotoba to advance Japanese voice AI",
+      "url": "https://elevenlabs.io/blog/kotoba",
+      "raw_path": "wiki/raw/articles/2026-11-17_elevenlabs_kotoba.md",
+      "recommended_action": "reference",
+      "reason_ja": "**** entities/elevenlabs.md に Kotoba 買収の記載ゼロ（log.md grep 0件）。日本語音声AI分野への買収はエンティティページの明確なギャップ。Postnord/Autotorino案件と併せて2026-11-17 sitemapバッチとして一括補強候補。",
+      "candidate_wiki_path": "entities/elevenlabs.md",
+      "body_excerpt": "# ElevenLabs acquires Kotoba to advance Japanese voice AI\n**Source**: [https://elevenlabs.io/blog/kotoba](https://elevenlabs.io/blog/kotoba)\nBlog\nCompany\nKotoba is joining ElevenLabs\nPublished\nNov 16, 2026\nLast updated\nNov 17, 2026\nListen\nListen to this article\n0:00\n0:00\n0:00\n1.0x\nWe’re excited to a"
+    },
+    {
+      "item_id": "dreaming-elevenlabs-case-studies",
+      "source": "dreaming",
+      "source_name": "dreaming-filesystem-scan",
+      "title": "ElevenLabs case studies: Postnord, Autotorino agents, The Year of More (4 articles)",
+      "url": "https://elevenlabs.io/blog/postnord",
+      "raw_path": "wiki/raw/articles/2026-11-17_elevenlabs_postnord.md",
+      "recommended_action": "reference",
+      "reason_ja": "*** Postnord（宅配音声エージェント）/Autotorino（自動車販売エージェント）/The Year of More の3本はエンティティページに未記載の顧客事例。what-is-an-llm は417BのSEOガイドなのでスキップ扱いで本件に統合。製品マーケティング寄りだが具体指標があれば補強価値あり。",
+      "candidate_wiki_path": "entities/elevenlabs.md",
+      "body_excerpt": "# How Yahoo Scout became conversational with ElevenAgents\n**Source**: [https://elevenlabs.io/blog/postnord](https://elevenlabs.io/blog/postnord)\nCustomer Stories\nHow the Nordics' leading postal operator rebuilt its customer support on ElevenAgents\nWritten by\nLauren\nRothwell\nPublished\nNov 17, 2026\nLi"
+    },
+    {
+      "item_id": "dreaming-harvey-budget",
+      "source": "dreaming",
+      "source_name": "dreaming-filesystem-scan",
+      "title": "Harvey: 2027 Law Firm Technology Budget Planning",
+      "url": "https://www.harvey.ai/blog/law-firm-technology-budget",
+      "raw_path": "wiki/raw/articles/2026-11-17_harvey_law-firm-technology-budget.md",
+      "recommended_action": "reference",
+      "reason_ja": "*** entities/harvey.md は11-16 dreamingで Ethical Wall Enforcement を補強済みだが、本記事の2027年度法務IT予算データ（予算配分・AI支出比率）は未収録。法務ドメインのAI支出実データはエンティティページ補強候補。前回のHarvey補強（log.md L81-87）と重複しないことを確認済み。",
+      "candidate_wiki_path": "entities/harvey.md",
+      "body_excerpt": "# 2027 Law Firm Technology Budget Planning\n**Source**: [https://www.harvey.ai/blog/law-firm-technology-budget](https://www.harvey.ai/blog/law-firm-technology-budget)\n:Harvey:\nProducts\nSolutions\nCustomers\nSecurity\nResources\nCompany\nPlatform\nOverview\n→\nOne platform for all legal AI work\nAgents\n→\nAI ag"
+    },
+    {
+      "item_id": "dreaming-skip-christiano",
+      "source": "dreaming",
+      "source_name": "dreaming-filesystem-scan",
+      "title": "Paul Christiano – We could be 12 months away from AIs that can overthrow the government (Dwarkesh)",
+      "url": "https://www.dwarkesh.com/p/paul-christiano-2",
+      "raw_path": "wiki/raw/articles/www.dwarkesh.com--p-paul-christiano-2--69fd8465.md",
+      "recommended_action": "skip",
+      "reason_ja": "* 本日 blog-wiki-ingest（replay）が entities/paul-christiano.md を新規作成済み（1-in-3 12-month takeover risk、pause-algorithmic-progress、China theft scenario全部入り）+ dwarkesh-patel 逆リンク + index登録（log.md L29）。手動級のカバレッジのため再処理不要。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Paul Christiano – We could be 12 months away from AIs that can overthrow the government\nSource: https://www.dwarkesh.com/p/paul-christiano-2\nPaul Christiano is head of the Alignment Research Center. Previously, he was head of AI safety at the US AI Safety Institute. Before that, he led alignment a"
+    },
+    {
+      "item_id": "dreaming-skip-chatgpt-wallet",
+      "source": "dreaming",
+      "source_name": "dreaming-filesystem-scan",
+      "title": "Introducing ChatGPT Wallet (OpenAI)",
+      "url": "https://openai.com/index/introducing-chatgpt-wallet/",
+      "raw_path": "wiki/raw/articles/2026-11-16_openai_introducing-chatgpt-wallet.md",
+      "recommended_action": "skip",
+      "reason_ja": "* 本日 active-crawl 11:00 UTC が agents-sdk の wallet セクションとして取り込み済み（log.md L134付近、raw sha256も登録済み）。HN 46pと低トピック、重複作成不要。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Title: Introducing ChatGPT Wallet\nURL Source: https://openai.com/index/introducing-chatgpt-wallet/\nMarkdown Content:\nWe're introducing ChatGPT Wallet, setting a new bar for secure payments by agents. It's the first wallet that lets agents pay without access to users' actual card details and that req"
+    },
+    {
+      "item_id": "dreaming-skip-windows-telemetry",
+      "source": "dreaming",
+      "source_name": "dreaming-filesystem-scan",
+      "title": "Windows 11 collecting data on which coding agents/developer tools you use (Xusheng Li)",
+      "url": "https://xusheng.dev/posts/windows-coding-agent-telemetry/",
+      "raw_path": "wiki/raw/articles/2026-11-16_xusheng_windows-coding-agent-telemetry.md",
+      "recommended_action": "skip",
+      "reason_ja": "* 本日 active-crawl が concepts/windows-coding-agent-telemetry.md を作成済み（HN 619p）。ウィキ側のページが存在し本文クレームも取り込み済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Windows 11 Is Collecting Data on Which Coding Agents and Developer Tools You Use :: Xusheng Li \n>\nXusheng\nBlog\nContact\nCV\n 7 minutes\nWindows 11 Is Collecting Data on Which Coding Agents and Developer Tools You Use\nReverse engineering Windows 11's MissionControlAggregator reveals coding-agent and dev"
+    },
+    {
+      "item_id": "dreaming-skip-credential-leasing",
+      "source": "dreaming",
+      "source_name": "dreaming-filesystem-scan",
+      "title": "Running agents without credentials (antonio.cx)",
+      "url": "https://antonio.cx/posts/running-agents-without-credentials",
+      "raw_path": "wiki/raw/articles/2026-11-17_antonio-cx_running-agents-without-credentials.md",
+      "recommended_action": "skip",
+      "reason_ja": "* 本日 active-crawl が concepts/agent-credential-leasing.md を作成済み（socket forwarding、secrets never resident on agent VM、HN 116p、confidence: medium）。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Running coding agents without handing them my credentials\nRunning coding agents without handing them my credentials\n2026-11-13\n·\nantonio's blog\nTable of Contents\nBackground\nherdr\nOvis\nThe credential problem\nlend\nKeeping the socket stable across reconnects\nSecrets the agent never sees\nSSH keys\nLeases"
+    },
+    {
+      "item_id": "dreaming-skip-systemic-breakdown",
+      "source": "dreaming",
+      "source_name": "dreaming-filesystem-scan",
+      "title": "Software is breaking down systemically (Breck Mckye)",
+      "url": "https://www.breckmckye.com/",
+      "raw_path": "wiki/raw/articles/2026-11-16_breck-mckye_software-breaking-down-systemically.md",
+      "recommended_action": "skip",
+      "reason_ja": "* 本日 active-crawl が concepts/systemic-software-breakdown.md を作成済み（log.md L134）。重複スキップ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Software is breaking down at a systemic level | Jimmy Breck-McKye\nJimmy Breck-McKye\n Blog \n About \n Software is breaking down at a systemic level \n 15 November 2026 \n opinion \n software \n ai \nSoftware hasn’t been working too well lately, has it?\nThis weekend we saw the double-whammy of a 2 day globa"
+    },
+    {
+      "item_id": "dreaming-skip-opencode-browse",
+      "source": "dreaming",
+      "source_name": "dreaming-filesystem-scan",
+      "title": "OpenCode Browse: MCP server + Chromium extension for agents using your real browser",
+      "url": "https://opencode.ai/product/browse",
+      "raw_path": "wiki/raw/articles/2026-11-17_opencode_opencode-browse.md",
+      "recommended_action": "skip",
+      "reason_ja": "* 本日 trending-topics 12:00 UTC が entities/opencode.md を更新済み（HN 281pts、log.md L46）。ブラウザタブハンドオフ/2FAハンドバック設計も同ページに記載。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "OpenCode | Browse, your real browser for coding agents \n Skip to content [ 0 ] Docs [ 0 ] Product [ 0 ] Data [ 0 ] Console [ 0 ] Models [ 0 ] Subscriptions [ 0 ] Enterprise [ ] Changelog [ ] GitHub (opens in a new tab) English 简体中文 Chinese, Simplified 繁體中文 Chinese, Traditional 한국어 Korean Deutsch Ger"
+    },
+    {
+      "item_id": "dreaming-skip-claude-sheets",
+      "source": "dreaming",
+      "source_name": "dreaming-filesystem-scan",
+      "title": "Claude Sheets deep dive (AI by Aakash)",
+      "url": "https://www.aibyaakash.com/p/claude-sheets",
+      "raw_path": "wiki/raw/articles/2026-11-17_aibyaakash_claude-sheets.md",
+      "recommended_action": "skip",
+      "reason_ja": "* Claude Sheets ローンチは Anthropic パイプライン（11-14〜16）で events/concepts 収録済みで、本記事はキュレーターによる追従解説（tab-switching導入 + 週次ニュース集約）。重複スキップ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "2211ShareWelcome to another AI by Aakash. I follow the AI news so you don't have to.\nJensen Huang, Nvidia's CEO and founder, resigned, but reports are the board pushed him out. Now they're looking for a replacement. We cover the crazy weekend in this week's top news.\nMeanwhile, Anthropic continued d"
+    },
+    {
+      "item_id": "dreaming-skip-claude-mythos-amd",
+      "source": "dreaming",
+      "source_name": "dreaming-filesystem-scan",
+      "title": "Claude Mythos slashed AMD GPU onboarding to ~3 days (Tom's Hardware)",
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropic-says-claude-mythos-slashed-software-work-to-onboard-amd-gpus",
+      "raw_path": "wiki/raw/articles/2026-11-17_tomshardware_claude-mythos-amd-gpu-onboarding.md",
+      "recommended_action": "skip",
+      "reason_ja": "* 本日 trending-topics が concepts/cuda-moat.md を更新済み（12-month→3-day claim + HN skepticism、log.md L46）。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "If AI can write the low-level code that ties models to Nvidia, CUDA matters less. \n a]:text-inherit [&>a]:underline\">\nWhen you purchase through links on our site, we may earn an affiliate commission. Here’s how it works .\n (Image credit: AMD) \nShare \n {alert('Link copied')}).catch(err => {console.er"
+    },
+    {
+      "item_id": "dreaming-skip-qwen4max-huang-smuggling-batch",
+      "source": "dreaming",
+      "source_name": "dreaming-filesystem-scan",
+      "title": "Batch skip: Qwen4-Max HN, GPU smuggling/Huang, NVIDIA GLM-5.3 DGX, DeepSeek-V3 JAX, AI-code-OSS, agent-selected-hardware (6 articles)",
+      "url": "multiple",
+      "raw_path": "wiki/raw/articles/2026-11-16_qwen_hn-discussion_qwen4-max.md",
+      "recommended_action": "skip",
+      "reason_ja": "* 6本とも11-16 trending-topics / active-crawlが処理済み（log.md L122-134）: concepts/qwen-4-max (HN 594p)、events/nvidia-ceo-transition-2026 smuggling更新、concepts/inference/vllm GLM-5.3 607.8tok/s、concepts/deepseek-v3 JAX再実装、concepts/ai-generated-code-open-source (HN 1174p)、concepts/agent-selected-hardware。SCHAマインド済みタグも登録済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Qwen4-Max\nAlibaba's Qwen team released **Qwen4-Max** on 2026-11-16. HN thread: 594 points / 250 comments\n(https://news.ycombinator.com/item?id=50513215). The official blog page (qwen.ai/blog?id=qwen4-max)\nis client-side rendered and returned no server-side text to our fetcher, so the specifics bel"
+    }
+  ]
+}
