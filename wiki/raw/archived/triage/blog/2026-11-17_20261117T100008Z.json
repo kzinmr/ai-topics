@@ -1,0 +1,32 @@
+{
+  "archived_at": "2026-11-17T10:28:14.598187+00:00",
+  "triage_run_id": "20261117T100008Z",
+  "source": "blog",
+  "summary_ja": "20件のブログチェックポイントを全件本文読了のうえ評価。take 4件: (1) Dwarkesh × Paul Christiano 対談の全文トランスクリプト114KB — 政府を転覆させうる超知能が12か月以内に出現する確率3分の1、重みと研究秘密を保護できるまでアルゴリズム的進展を暂停せよ、さもなくば中国がインテリジェンス爆発の最中に窃取する、という具体論を持つが、wiki に Christiano 個人ページが不在・Alignment Research Center はシステムカード参照のみ・concepts/superintelligence.md は20行 stub で新規概念ページ必須。 (2) George Hotz 11/17 My Empire of Dirt — RSI 後の需要内部生成化と Anthropic singleton イデオロギー批判、1年超なら資源生産力で中国が勝つ長期WWIII論。george-hotz.md は379行と厚いが11/17項目が不在。 (3) Micah Lee の private open weight モデル実用ガイド — 10月のベンダボイコット論の実装編で Maple AI / OpenCode / Pi を推奨、micahflee.md（更新10/12）に未収録。 (4) Gary Marcus の Game over, man — Oracle 61%下落、暫定CEO Colette Kress が Nvidia の open checkbook を抑制する WSJ 報道、Thompson obituary 引用。ai-bubble-economics.md は11/12 の Economist 社説で停止。 reference 2件（llm 0.37.3 の SQLite 3.54.1 起因バグ修正と D. Richard Hipp の仕様説明、Ben Thompson の Obituaries 28KB一次資料）。 skip 14件（Apple / macOS 27.3 の FDA 権限管理5件、非AIテクニカル・レトロ・文化系6件、Jensengate の X スクショ断片、Anthropic 研究者のゴシップ、Go Proverbs 引用ポスト）。",
+  "decisions": [
+    {
+      "item_id": "blog-7+batch",
+      "source": "blog",
+      "source_name": "daringfireball.net (Apple / macOS 27.3 + App Store)",
+      "title": "batch-skip: blog-7, blog-10, blog-11, blog-12, blog-13",
+      "url": "",
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "* Daring Fireball 経由の Apple エコノミー5件。macOS 27.3 の Full Disk Access / System & App Protection Override に伴う新規プライバシー管理（フォルダ単位制限、アプリ間の制御制限、再許可オプション、メニューバー通知）、iPhone Duo の顔解锁オプション、Ivy (Plan. Do. Reflect.) の App Store リンク。全文を確認したが LLM/エージェント機能への言及は無く、OS の権限管理とガジェット話題が中心で AI 知識ベースのスコープ外。entities/daringfireball-net.md に記録する価値もない。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "macOS 27.3 beta では Full Disk Access の変更が配信され、Mac ユーザーはアプリを Mac 全体ではなく特定フォルダに制限できる。渡される権限の警告がより明確になり、あるツールが制御できるアプリを限定でき、アプリに再許可を要求させる選択肢が得られる。（Apple Support 149699 / 9to5Mac / X 投稿 / MacRumors / App Store）"
+    },
+    {
+      "item_id": "blog-5+batch",
+      "source": "blog",
+      "source_name": "非AIテクニカル・レトロ・文化系（Old New Thing / John Cook / dragas / Terrible Maps / Terrible Techs）",
+      "title": "batch-skip: blog-5, blog-6, blog-9, blog-14, blog-15, blog-17",
+      "url": "",
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "* AI と無関係な6件。Microsoft Old New Thing の GUI プログラムと background プログラム間でのダイアログ所有権（Win32 Tips）、John Cook の NYC タクシーメダイヨン番号を MD5 ハッシュした際のプライバシー再識別問題（衝突と原像攻撃の区別という暗号解説）、Stefano Marinelli の Linux Day 2026 講演記録（BSD / illumos 等の OSS エコノミー概論、28KB）、Terrible Maps の French Leave 文化地図、dfarq の Syquest（着脱式HDD、1982創業-1998破产）レトロ企業史、Terrible Techs の ABBA Voyage ライブレポート。いずれも LLM/エージェント/推論・訓練基盤/開発ツールとしての AI と無関係で wiki スコープ外。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "2つのプログラム、GUI プログラムとバックグラウンドで動くプログラムがあるとしよう。GUI プログラムが background プログラムに仕事を頼むと、その background プログラムはダイアログを出す必要があると気づく。そのダイアログを GUI プログラムが出したように見せるには？（Old New Thing）／ NYC タクシーのライセンス番号を MD5 でハッシュした公開データセットの再識別攻撃解説（John Cook）"
+    }
+  ]
+}
