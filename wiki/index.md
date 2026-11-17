@@ -978,9 +978,10 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2364 pages)
+## Concepts (2367 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
+- [[concepts/agent-credential-leasing]] — Agent Credential Leasing (lend); remote coding agents borrow time-limited, operator-approved access to credential-holding tools via socket forwarding — secrets never resident on the agent VM (HN 116p, Nov 2026)
 - [[concepts/agent-model-drift]] — Agent/model drift: silent server-side model changes and harness churn destabilizing agent workflows; Opus 5.5 "nerfed" allegations (HN 236p, Nov 9 2026), Claude Code 244-release instability, Goldman Claude Code restriction, OpenTelemetry-for-agent-memory proposal
 - [[concepts/agentic-representation-gatekeeping]] — Agentic Representation Gatekeeping — platforms banning *user-side* personal AI agents while tolerating platform-side automation and traditional aggregators; United Airlines' Nov 11 2026 flight-booking ban (HN 569p) as canonical case: stated security grounds vs intermediary control, GDS per-query costs, and defense of dynamic pricing; Southwest's ChatGPT inventory the defection
 - [[concepts/agweb-browser-for-agents]] — Agweb: WebKit-based macOS browser for coding agents (never-steals-focus window, per-agent workspaces, shared login profiles, secret-safe fill, HN 100pts Nov 14 2026)
@@ -1022,9 +1023,11 @@
 - [[concepts/reasoning-as-pathfinding]] — Wang essay: test-time thinking as search amortized during RL training; challenges RSI-by-more-thinking assumptions
 - [[concepts/semianalysis-gdpx]] — SemiAnalysis GDPx — real professional tasks across 11 fields (chip design, law, finance); best model Opus 5.5 scored just 12% (Nov 2026)
 - [[concepts/skypilot-rack-scale-scheduling]] — NVL72/Grace Blackwell rack-local scheduling: InfiniBand fallback costs 43%; topology-aware placement + defrag claims 27% more usable GPUs
+- [[concepts/systemic-software-breakdown]] — Systemic Software Breakdown — Breck-McKye thesis that 2026 outage/exploit cluster (Microsoft 2-day outage, PHP2Shell, eMudhra, Shai Hulud) reflects broken software-production system, not bad luck; AI as cause and symptom
 - [[concepts/training]] — Training — hub for training-methodology pages (TRL under concepts/training/)
 - [[concepts/triggerdev-env-var-exposure-2026-11|Trigger.dev Env-Var Exposure]] – 2026-11-01 incident exposing customer environment variables, disputed 'Resolved' status
 - [[concepts/volta-infostealer-llm-victim-appraisal]] — VOLTA infostealer LLM victim appraisal (Cisco Talos, Oct 2026) — self-deleting stealer POSTs enriched evidence bundle to OpenRouter as 'forensic intelligence analyst'; WHAT THEY'RE WORTH ranking + 3-model refusal-failover chain (HN 248)
+- [[concepts/windows-coding-agent-telemetry]] — Windows 11 Coding-Agent Telemetry — MissionControlAggregator.dll matches claude/codex/copilot/cursor/antigravity exe names (feature CLICodingAgentUsage ID 62580080), uploads usage bits via ETW unless optional diagnostics disabled (Xusheng Li, HN 619p)
 - [[concepts/x402]] — x402 — HTTP 402 Payment Required as a machine-readable payment request for agent API calls; USDC on Base; first adopted by Brave Search API (Nov 12, 2026)
 - [[concepts/zombie-statistics]] — Trakkr study tracing 1,285 AI-quoted statistics: only 40% reach a study that confirms them, 11% have no study anywhere (Oct 2026)
 - [[concepts/claude-code/claude-code-vsx-backdoor]] — Backdoored official Claude Code for VS Code 2.1.313 on the Cursor Marketplace (Phorion, Oct 30 2026): persistent SSH backdoor on macOS/Linux/Windows, pulled from all registries
@@ -3384,8 +3387,9 @@
 - [[comparisons/palantir-vs-competitors]] — Palantir vs. Competitors
 - [[comparisons/self-scaffolding-approaches]] — Self-Scaffolding Approaches — RLM vs Dynamic Workflows vs Ornith-1.0
 
-## Events (53 pages)
+## Events (54 pages)
 
+- [[events/chatgpt-wallet-launch-2026]] — ChatGPT Wallet (OpenAI, Nov 16 2026) — agentic-commerce payment surface; low HN traction (46p/80c), single official source, confidence low pending third-party audit
 - [[events/openai-robotics-team-disbanded-2026]] — OpenAI disbands robotics team (2nd time, Nov 13 2026, Fortune/HN 179) as general models start running robots; HN: layered control, ~36ms latency floor, Bitter Lesson debate; confidence medium (paywalled single source)
 - [[events/nvidia-ceo-transition-2026]] — NVIDIA CEO Transition (Nov 12 2026) — Jensen Huang resigns as President/CEO/Board member effective immediately; CFO Colette Kress Interim CEO; Harvey C. Jones (ex-Synopsys) first-ever Board Chair; stock −8%→−13%; Huang agreed to closed-door congressional testimony by Thanksgiving (Mast/Moolenaar/Crawford); Anthropic IPO backstop in question
 - [[events/anthropic-ipo-roadshow-2026]] — Anthropic IPO roadshow (kickoff Nov 10 2026) — Tom Brown compute disclosures: train+serve on all 4 chip families (Trainium/TPU/NVIDIA/AMD); Mythos ported Claude to AMD in 3 days writing ~100% of kernels; "total effective compute = physical × compute multipliers" framing with RSI claim that Claude will discover multipliers itself (company-reported)

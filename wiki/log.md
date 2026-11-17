@@ -2,6 +2,24 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-11-17] active-crawl | 4 pages + 3 raws (agent credential leasing, Windows agent telemetry, systemic software breakdown, ChatGPT Wallet) + JEPA enrich
+
+> `active-crawl` cron (2026-11-17 11:00 UTC). Discovery: HN Algolia `search_by_date` (15 queries, 5-day window, points>=15, dedup) — ~30 stories. Killed dupes: Qwen4-Max, Anthropic IPO, Gödel notebooks, OpenAI robotics disbandment, Gemini 4 Hydrogen, Blackwell signatures, Claude Code Projects (all covered by sibling pipelines 11-14..16), Fed bank-run / California-sues-OpenAI (low pts, single-source news). JEPA 600-experiment story found ALREADY created by trending-topics as `concepts/jepa-planning-methods` (11-14) — enriched parent `concepts/jepa-world-models` instead of duplicating; my duplicate draft deleted.
+
+### Created
+- `concepts/agent-credential-leasing.md` — lend (antonio.cx, HN 116p): remote coding agents borrow time-limited approved tool access via socket forwarding; secrets never resident on agent VM. confidence: medium (single-source tool). Raw: `raw/articles/2026-11-17_antonio-cx_running-agents-without-credentials.md`.
+- `concepts/windows-coding-agent-telemetry.md` — Windows 11 MissionControlAggregator.dll matches claude/codex/copilot/cursor/antigravity exe names (feature CLICodingAgentUsage ID 62580080), ETW upload unless optional diagnostics off (Xusheng Li, HN 619p/472c). Raw: `raw/articles/2026-11-16_xusheng_windows-coding-agent-telemetry.md`. confidence: high on collection mechanism, caveated on downstream use.
+- `concepts/systemic-software-breakdown.md` — Breck-McKye opinion essay (HN 372p/230c): 2026 cluster (MSFT 2-day outage, FAA ground stop, PHP2Shell, eMudhra, Shai Hulud) as systemic production-mode failure; AI cause+symptom. confidence: medium (opinion, MSFT cause confidential). Raw: `raw/articles/2026-11-16_breck-mckye_software-breaking-down-systemically.md`.
+- `events/chatgpt-wallet-launch-2026.md` — ChatGPT Wallet in dots for US Pro (Amex/Chase/Mastercard/Visa; network payment tokens, per-purchase biometric; Commerce Partner Playbook, Web Bot Auth, WebMCP; HN 46p only). Raw via r.jina.ai (openai.com 403): `raw/articles/2026-11-16_openai_introducing-chatgpt-wallet.md`. confidence: medium (vendor-framed).
+
+### Updated
+- `concepts/jepa-world-models.md` — new "LeWM Planning Study (Alchaer, Nov 2026)" section (22%→85% training-free; 4 methods; Push-T eval caveats; H-JEPA arXiv:2610.06805) + sources/external links; cross-links to existing `concepts/jepa-planning-methods`.
+
+### Notes
+- Index: 3 Concepts + 1 Events entries (content-anchored, neighborhoods dumped/verified; counters 2364→2367, 53→54). One misinserted lewm entry removed after dedup.
+- Tags: all validated against SCHEMA (used existing surveillance/privacy/employee-surveillance; no new tags minted; `telemetry` rejected as non-taxonomy).
+- Deferred: Fed/AI-agents bank-run concern (26p, gizmodo single source), California v. OpenAI HF cyberattack suit (16p, Reuters, watch next crawl), AMD GPU onboarding via Mythos (47p, tomshardware, likely blog pipeline).
+
 ## [2026-11-17] blog-ingest | 20 raw articles (script 18 + agent supplement 2)
 
 > `blog-ingest` cron (10:00 UTC, run 20261117T100008Z). blogwatcher scan: 39 new items. Saved 20 raw articles to `wiki/raw/articles/`. Agent recovered 2 unsaved items via manual scrape: dwarkesh.com Paul Christiano interview (full transcript, 112 KB) and simonwillison.net Go Proverbs quote. Checkpoint `cron/data/blog_ingest/blog_ingest_20261117T100008Z.json`; `unsaved_articles` cleared. Highlights: geohot "the singularity is nearer", Dwarkesh × Paul Christiano (1/3 chance of government-overthrowing AI in 12 months), micahflee private open-weight model guide, llm 0.37.3, Gary Marcus ×2, dragas open-source ecosystem, macOS 27.3 Full Disk Access cluster (daringfireball). Downstream: blog-triage → blog-wiki-ingest.
