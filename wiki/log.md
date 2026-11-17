@@ -2,6 +2,9 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-11-17] blog-ingest | 20 raw articles (script 18 + agent supplement 2)
+
+> `blog-ingest` cron (10:00 UTC, run 20261117T100008Z). blogwatcher scan: 39 new items. Saved 20 raw articles to `wiki/raw/articles/`. Agent recovered 2 unsaved items via manual scrape: dwarkesh.com Paul Christiano interview (full transcript, 112 KB) and simonwillison.net Go Proverbs quote. Checkpoint `cron/data/blog_ingest/blog_ingest_20261117T100008Z.json`; `unsaved_articles` cleared. Highlights: geohot "the singularity is nearer", Dwarkesh × Paul Christiano (1/3 chance of government-overthrowing AI in 12 months), micahflee private open-weight model guide, llm 0.37.3, Gary Marcus ×2, dragas open-source ecosystem, macOS 27.3 Full Disk Access cluster (daringfireball). Downstream: blog-triage → blog-wiki-ingest.
 
 ## [2026-11-16] dreaming wiki-ingest | upstream render-fail recovered; 2 references enriched, 2 verified-skips
 
