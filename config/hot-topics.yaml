@@ -156,11 +156,12 @@ topics:
   - code execution sandbox gVisor MicroVM WASM
   wiki_pages:
   - concepts/sandbox
+  - concepts/agent-credential-leasing
   - comparisons/agent-sandboxing
   - concepts/capability-based-security
-  notes: '横方向: capability-based security, seccomp, Firecracker等。2026-10-24: frontier training environment security + Omnara sandbox mesh追加。2026-11-01: ChatGPT HTML Preview sandbox escape→account takeover (Parameter Labs)'
+  notes: '横方向: capability-based security, seccomp, Firecracker等。2026-10-24: frontier training environment security + Omnara sandbox mesh追加。2026-11-01: ChatGPT HTML Preview sandbox escape→account takeover (Parameter Labs)。2026-11-17: agent-credential-leasing (lend, HN 116p) 追加'
   added: 2026-04-14
-  last_crawled: '2026-11-01'
+  last_crawled: '2026-11-17'
 - slug: neurosymbolic-ai
   title: Neurosymbolic AI
   crawl_policy: prerequisites
