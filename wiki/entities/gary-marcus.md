@@ -2,7 +2,7 @@
 title: "Gary Marcus"
 type: entity
 created: 2026-05-11
-updated: 2026-11-13
+updated: 2026-11-17
 tags:
   - lab
   - benchmark
@@ -44,6 +44,7 @@ sources:
   - raw/articles/garymarcus.substack.com--p-googles-biggest-mistake--72e491b0.md
   - raw/articles/garymarcus.substack.com--p-leopolds-folly--46f3d5d4.md
   - raw/articles/garymarcus.substack.com--p-openais-egregious-pattern-of-misconduct--ebaf2381.md
+  - raw/articles/garymarcus.substack.com--p-game-over-man--969f0a1b.md
 ---
 
 # Gary Marcus
@@ -530,6 +531,21 @@ Same-day commentary on the NVIDIA CEO transition ([[events/nvidia-ceo-transition
 - **Geopolitical read**: "China is perhaps the biggest immediate winner here"; congressional investigations continue; "Lutnick and Trump may be caught in the crossfire. The main thing to expect is chaos."
 
 Source: [[raw/articles/garymarcus.substack.com--p-jensen-huang-resigns--4a2c07c7.md]]
+
+### "Game over, man" — the bubble pops (Nov 17, 2026)
+
+Four days after the NVIDIA CEO transition, Marcus declared the current AI bubble effectively over. Core claims:
+
+- **Oracle down ~61%** since he called its OpenAI deal "peak bubble" last September; **Ben Thompson (Stratechery)** wrote an "obituary" framing Jensen Huang's demise as the end of Nvidia's long-term prospects, the AI bubble, and US exceptionalism. Tech stocks continued to drop sharply after the prior week's rout; even **Axios** acknowledged "the jig is up."
+- **Nvidia as the financer of last resort is closing up shop**: citing a Wall Street Journal report, Marcus notes interim CEO **Colette Kress** is expected to rein in the deals through which Nvidia had aggressively financed computing and startup investments — "Nvidia's Days as an Open Checkbook for the AI Economy Are Numbered." He endorses Dave Troy's characterization of Huang's style as all-in "YOLO bets" with no risk mitigation until collapse.
+- **No technical moat, hence no profits** — his standing thesis since 2023: LLM companies still lack a moat and can't be profitable, which always meant Nvidia couldn't sell chips endlessly to money-losing buyers.
+- **Hints of "funny business in Asia"** making conditions look better than they were; with all the circular financing it was always hard to tell what was really happening.
+- **Politics**: he reads the midterm outcome as ending the free pass AI companies had in the first half of the Trump era.
+- **The open question**: whether any of this derails **Thursday's planned Anthropic IPO** — financial fundamentals "don't justify the hoped-for valuation once the liabilities are factored in," and selling a deeply speculative IPO mid-crash "won't be easy."
+
+Extends the [[concepts/ai-bubble-economics]] and [[concepts/ai-infrastructure-circular-financing]] threads and the [[events/nvidia-ceo-transition-2026]] / [[events/anthropic-ipo-roadshow-2026]] coverage.
+
+Source: [[raw/articles/garymarcus.substack.com--p-game-over-man--969f0a1b.md]]
 
 ## References
 

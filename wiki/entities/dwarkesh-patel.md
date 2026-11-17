@@ -184,6 +184,7 @@ In January 2026, GMO's research division cited Patel alongside Lex Fridman as ke
 
 ## Related
 
+- [[entities/paul-christiano]] — Nov 2026 interview: 12-month superintelligence takeover-risk claim, pause-algorithmic-progress argument
 - [[concepts/scaling-without-slop]] — Related analysis of AI capability limits
 - [[concepts/post-training/rlvr-science-limitations]] — Dwarkesh's thesis on RLVR's inability to handle scientific verification loops
 - [[concepts/intelligence-conflation]] — Dwarkesh's critique of conflating intelligence with power

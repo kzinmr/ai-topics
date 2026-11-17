@@ -1,8 +1,7 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Last updated: 2026-11-15
-> Last updated: 2026-11-14
+> Last updated: 2026-11-17
 
 ## Entities (970 pages)
 
@@ -679,6 +678,7 @@
 - [[entities/parallel-web-systems]] — Parallel Web Systems Inc. — Search/Extract/Monitor APIs for AI agents; ran an independent eval of Jev (System One model) vs. production rerankers (Sep 2026)
 - [[entities/parchi]] — Parchi — AI browser copilot extension by 0xSero (MIT); #6 harness for local models; maintenance mode since Apr 2026
 - [[entities/parsagon]] — Parsagon
+- [[entities/paul-christiano]] — Paul Christiano — ARC director; invented RLHF at OpenAI, ex-US AISI safety head, OpenAI board member; Nov 2026 Dwarkesh interview: ~1-in-3 chance of uncontrollable superintelligence within 12 months, pause-algorithmic-progress-until-weights-secure argument, China theft-during-explosion scenario
 - [[entities/paul-hoekstra]] — Paul Hoekstra — Agentic Engineering 4-layer framework, Context Rot mechanistic explanation (Paul's Pipeline)
 - [[entities/paul-iuzstin]] — Paul Iusztin
 - [[entities/paulgraham-com]] — Paul Graham; Startup = Growth definitional essay (growth rate as the one number founders must know), YC weekly 5-7% benchmark, growth-as-compass methodology (Sep 2012); Great Hackers essay — programmer productivity variation, design paradox, clumping (Jul 2004)
@@ -3387,7 +3387,7 @@
 - [[comparisons/palantir-vs-competitors]] — Palantir vs. Competitors
 - [[comparisons/self-scaffolding-approaches]] — Self-Scaffolding Approaches — RLM vs Dynamic Workflows vs Ornith-1.0
 
-## Events (54 pages)
+## Events (55 pages)
 
 - [[events/chatgpt-wallet-launch-2026]] — ChatGPT Wallet (OpenAI, Nov 16 2026) — agentic-commerce payment surface; low HN traction (46p/80c), single official source, confidence low pending third-party audit
 - [[events/openai-robotics-team-disbanded-2026]] — OpenAI disbands robotics team (2nd time, Nov 13 2026, Fortune/HN 179) as general models start running robots; HN: layered control, ~36ms latency floor, Bitter Lesson debate; confidence medium (paywalled single source)
@@ -3448,7 +3448,7 @@
 - [[events/trustfall-symlink-rce-2026]] — TrustFall + Symlink RCE — AI Coding Agent Security Crisis (2026)
 - [[events/vercel-agent-desktop-launch-2026]] — Vercel Labs agent-desktop launch (Oct 31, 2026) — Rust-based computer-use tool ("agent-browser, for your whole computer"): reliable desktop automation via OS accessibility trees (stable refs, retry-safe, headless multi-agent), built by @mdlahfir; amplified by Chris Tate
 
-## Queries (58 pages)
+## Queries (59 pages)
 
 - [[queries/2026-11-15-skeleton-enrich-stub-action]] — Daily skeleton-enrich run 2026-11-15: 9 AI umbrella stubs enriched (tinygrad, trey-grainger, ai-alliance, robotics, embodied-ai, ai-coding-tools, generative-ai, vision-models, ai-education)
 - [[queries/2026-09-27_local-llm-ops-log]] — Local LLM ops log: Hermes backend migration to hermes-llm-serial-gate, GATE_REAL_URLS downstream layout, llm-gateway model_list state and recovery checklist

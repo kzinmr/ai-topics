@@ -1,12 +1,34 @@
 # Wiki Log
 
+_Log of all wiki changes. Newest entries at top._
+
+
+## [2026-11-17] watchdog | auto-fix | blog-ingest replay + index health
+
+> `wiki-watchdog-fix` cron (17:35 UTC). Verified pipeline-watchdog alerts and repaired the day's dropped ingestion work.
+
+### Auto-fixed
+- **Replayed blog-wiki-ingest backlog** (job died 10:48 UTC, `Response truncated due to output length limit`; 3rd consecutive day): Marcus "Game over, man" → new section in `entities/gary-marcus.md` + subsection in `concepts/ai-bubble-economics.md` (Oracle -61%, WSJ Nvidia financing pullback under Colette Kress, circular financing, Anthropic IPO test). Paul Christiano × Dwarkesh transcript → NEW `entities/paul-christiano.md` (1-in-3 12-month takeover risk, pause-algorithmic-progress, China theft scenario) + backlink from `entities/dwarkesh-patel.md` + index entry.
+- **index.md header counts**: Events 54→55, Queries 58→59 (recomputed from index lines).
+- **index.md duplicate "Last updated" lines** (11-15 + 11-14) → single 2026-11-17.
+
+### Verified healthy (no action)
+- Index corruption: pipe/line-number/triple-bracket = 0; `validate_index.py` clean (3516 lines).
+- Empty `[[]]` links: 0 (was 47 last week). Top-level unindexed pages ≥300B: 0 (metR resolves via `[[entities/met|entities/metR]]` alias entry).
+- Newsletter chain: triage "503 fail" is soft — 3/4 items already covered by sibling jobs today (qwen-4-max, claude-sheets raw+coverage, Import AI log line); Muse digest fully scraped at 10:57 during retry.
+
+### Needs human (recurring)
+- `newsletter-wiki-ingest` + `blog-wiki-ingest` truncating 3 days straight (skeleton-enrich, jp-to-en, llm-pricing same symptom); `newsletter-triage`/Weekly-digest HTTP 503 no-fallback. Router/model output-limit config, not watchdog-fixable.
+- 269 empty-wikilink `## Related` artifacts (known residual; no reliable mapping — leave per skill guidance).
+
+---
+
 ## [2026-11-17] trending-topics (12:00 UTC)
 - New raw: `raw/articles/2026-11-17_tomshardware_claude-mythos-amd-gpu-onboarding.md`, `raw/articles/2026-11-17_opencode_opencode-browse.md`
 - Updated `concepts/cuda-moat.md` (Claude Mythos AMD 3-day onboarding claim, HN skepticism) and `entities/opencode.md` (OpenCode Browse launch, HN 281pts)
 - Covered by sibling jobs today: Qwen4-Max (`concepts/qwen-4-max.md`), agent credential leasing, Windows agent telemetry, systemic software breakdown, ChatGPT Wallet, Claude Sheets
 - Report: `inbox/rss-scans/trending-topics-2026-11-17.md`
 
-_Log of all wiki changes. Newest entries at top._
 
 ## [2026-11-17] active-crawl | 4 pages + 3 raws (agent credential leasing, Windows agent telemetry, systemic software breakdown, ChatGPT Wallet) + JEPA enrich
 

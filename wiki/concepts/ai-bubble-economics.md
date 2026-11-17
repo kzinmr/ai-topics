@@ -2,12 +2,12 @@
 title: "AI Bubble Economics"
 type: concept
 created: 2026-04-10
-updated: 2026-11-13
+updated: 2026-11-17
 tags:
   - economics
   - company
 aliases: ["subprime-ai-crisis", "ai-economics-2026", "ai-bubble-burst"]
-sources: [raw/articles/wheresyoured.at--ai-doesnt-have-roi--02bc55ce.md, raw/articles/pluralistic.net--2026-05-26-the-ai-will-continue--a6fcdb02.md, raw/articles/garymarcus.substack.com--p-if-enough-other-companies-report--0cc8aaec.md, raw/articles/wheresyoured.at--the-revenge-of-the-business-idiot--1bd92b92.md, raw/articles/wheresyoured.at--premium-what-if-were-in-an-ai-bubble-part-3--ee8cde2e.md, raw/articles/garymarcus.substack.com--p-what-happens-next-after-the-decline--84d0fc20.md, raw/articles/wheresyoured.at--ai-is-slowing-down--1b78f0d2.md, raw/articles/garymarcus.substack.com--p-an-entire-industry-is-being-propped--a0b002ca.md, raw/articles/garymarcus.substack.com--p-data-center-madness--f2a6f7a3.md, raw/articles/wheresyoured.at--concentration-risk--80837245.md, raw/articles/2026-10-24_irrational-analysis_market-memo-dancing-in-the-rain.md]
+sources: [raw/articles/wheresyoured.at--ai-doesnt-have-roi--02bc55ce.md, raw/articles/pluralistic.net--2026-05-26-the-ai-will-continue--a6fcdb02.md, raw/articles/garymarcus.substack.com--p-if-enough-other-companies-report--0cc8aaec.md, raw/articles/wheresyoured.at--the-revenge-of-the-business-idiot--1bd92b92.md, raw/articles/wheresyoured.at--premium-what-if-were-in-an-ai-bubble-part-3--ee8cde2e.md, raw/articles/garymarcus.substack.com--p-what-happens-next-after-the-decline--84d0fc20.md, raw/articles/wheresyoured.at--ai-is-slowing-down--1b78f0d2.md, raw/articles/garymarcus.substack.com--p-an-entire-industry-is-being-propped--a0b002ca.md, raw/articles/garymarcus.substack.com--p-data-center-madness--f2a6f7a3.md, raw/articles/wheresyoured.at--concentration-risk--80837245.md, raw/articles/2026-10-24_irrational-analysis_market-memo-dancing-in-the-rain.md, raw/articles/garymarcus.substack.com--p-game-over-man--969f0a1b.md]
 ---
 
 
@@ -449,7 +449,21 @@ documents the epistemic loop rather than the argument:
 
 No new primary evidence; recorded because the timing (same week as the Anthropic IPO pricing day, the
 Nvidia transition and the House AI-bubble-bailout resolution above) makes the mainstream-media
-framing shift itself a data point.
+framing shift itself as a data point.
+
+## Gary Marcus, "Game over, man" (Nov 17, 2026)
+
+In "Game over, man," written four days after the NVIDIA CEO transition ([[events/nvidia-ceo-transition-2026]]), Gary Marcus declared "it pretty much looks like game over for the current AI bubble." Bubble-relevant claims:
+
+- **Oracle down ~61%** since Marcus declared its OpenAI deal "peak bubble" last September — the bellwether for the deal-collapse pattern documented above.
+- **Nvidia closing the checkbook**: citing the Wall Street Journal, interim CEO **Colette Kress** is expected to rein in the deals in which Nvidia aggressively financed computing purchases and startup investments. This is the concrete turn on the long-running circular-financing thesis ([[concepts/ai-infrastructure-circular-financing]]) — the "bank" of the AI economy pulling back. Marcus quotes Dave Troy on Huang's "YOLO bets until he blows up" management style.
+- **Circular financing obscuring reality**: "hints in the last few days that some funny business in Asia may already have been making things look better than they really were. With all the circular financing, it was always hard to tell what was really happening."
+- **No moat → no profits → chips can't keep selling**: his standing claim since 2023 that LLM companies lack a technical moat and aren't profitable, so Nvidia's growth was never sustainable.
+- **Anthropic's Thursday IPO as the test case** ([[events/anthropic-ipo-roadshow-2026]]): "the financial fundamentals don't justify the hoped-for valuation, once the liabilities are factored in," and selling a "deeply speculative IPO in the midst of what looks like a crash of AI stocks won't be easy."
+
+Consistent with the November bubble-signal cluster (Anthropic S-1, off-balance-sheet debt doubling to ~$3.2T, Economist crash editorial) above; the new primary signal is the WSJ-sourced Nvidia financing pullback.
+
+Source: [[raw/articles/garymarcus.substack.com--p-game-over-man--969f0a1b.md]]
 
 ## Related Concepts
 
