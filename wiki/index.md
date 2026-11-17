@@ -3,7 +3,7 @@
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Last updated: 2026-11-17
 
-## Entities (970 pages)
+## Entities (971 pages)
 
 - [[entities/_index]] — Directory hub / overview for entities pages
 - [[entities/0xjeff]] — 0xJeff
@@ -566,7 +566,7 @@
 - [[entities/mem0]] — Mem0 — open-source agent memory layer; its engineering team framed the cache-stable vs live-search memory tradeoff (see concepts/cache-stable-vs-live-search-memory)
 - [[entities/mercor]] — Mercor
 - [[entities/merge]] — Merge
-- [[entities/met|entities/metR]] — METR (Model Evaluation & Threat Research) — independent lab measuring AI capability pacing and LLM contribution to discoveries; key source for AI evals timelines
+- [[entities/metR]] — METR (Model Evaluation & Threat Research) — independent lab measuring AI capability pacing and LLM contribution to discoveries; key source for AI evals timelines
 - [[entities/merge-dev]] — Merge.dev (Merge Agent Handler)
 - [[entities/meridian-labs]] — Meridian Labs — 501(c)(3) nonprofit behind Inspect AI (UK AISI eval framework) + Petri alignment auditing (donated by Anthropic May 2026)
 - [[entities/meta]] — Meta

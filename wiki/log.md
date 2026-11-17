@@ -3,6 +3,24 @@
 _Log of all wiki changes. Newest entries at top._
 
 
+
+## [2026-11-17] auto-fix | Wiki health fix — index METR link + header count
+
+### Changes
+- `wiki/index.md`: fixed malformed wikilink `[[entities/met|entities/metR]]` → `[[entities/metR]]` (stray `R` from a botched `metR` slug patch; file is `entities/metR.md`).
+- `wiki/index.md`: reconciled Entities header count 970 → 971 to match actual index-line count.
+
+### Verified clean (no action needed)
+- index corruption (pipe / line-number / triple-bracket / space-prefix): 0
+- L2 pipe-prefix corruption: 0
+- validate_index.py: clean (3515 lines)
+- no-frontmatter pages: 0
+- tag audit: 0 non-SCHEMA tags, 0 composite tags
+- orphan pages: 0
+- ghost entries: 0 (8 dir-hub links confirmed valid; 1 real ghost = METR, fixed)
+
+---
+
 ## [2026-11-17] watchdog | auto-fix | blog-ingest replay + index health
 
 > `wiki-watchdog-fix` cron (17:35 UTC). Verified pipeline-watchdog alerts and repaired the day's dropped ingestion work.
