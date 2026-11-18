@@ -1,0 +1,80 @@
+{
+  "archived_at": "2026-11-18T10:27:09.389059+00:00",
+  "triage_run_id": "20261118T100050Z",
+  "source": "blog",
+  "summary_ja": "2026-11-18 blog-triage（run 20261118T100050Z, 20 candidates）。take 6 / reference 5 / skip 9。最大の収穫は GPT-6.2 Astra / Sol リリース初動（Simon Willisonが価格 $8/$40・$2/$10、pelican比較、Theo Browneのsteerability批評まで報告。wiki全体に6.2系の実体なし=グリーンフィールド）と、Ed ZitronのNVIDIAバブル56KB長文（Megaspeed $12B/Alice Huang/Culper $43B+/Supermicro Liaw逮捕はwiki一致ゼロ、既存 nvidia-ceo-transition-2026 イベントページの大型補強材料）。さらにGeorge Hotz singularityエッセー4連投の締め、Gary MarcusのAIインフラ崩壊3ベクトル論、Prime Radiantとのexternal sandboxパターン（既存sandboxing-patternsページはBrowser Use 2パターンのみ）、Datasette Lite完全書き直し。参考保存はOptimizelyマルウェア事件（systemic-software-breakdown追記候補）、OpenAI公式RSSフォールバック、ChatGPT for Sales/Le Figaro提携（情報量不足）、Doctorow enshittifier論。10件は非AI/速報/手順メモ/広告としてバッチskip。",
+  "decisions": [
+    {
+      "item_id": "blog-18",
+      "source": "blog",
+      "source_name": "OpenAI News",
+      "title": "Introducing GPT-6.2 Astra and Sol",
+      "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/openai.com--index-introducing-gpt-6-2-astra-sol--b02ac3a3.md",
+      "recommended_action": "reference",
+      "reason_ja": "*** OpenAI公式リリース本体。scrape_status は rss-fallback（openai.com がスクレイパーUAに403、RSS説明1文のみ: professional outputs / coding / computer use / efficiency at lower cost、ChatGPT Work / Codex / APIで提供、2026-11-17 17:45 GMT公開）。実体内容はblog-1のSimon Willisonが richer なため単独takeではないが、GPT-6.2系ページ作成時の一次情報（公式フレーミング・公開日時）として sources に添付すべき。",
+      "candidate_wiki_path": "entities/openai-astra.md",
+      "body_excerpt": "# Introducing GPT-6.2 Astra and Sol\nSource: https://openai.com/index/introducing-gpt-6-2-astra-sol\nCategory: Product | Published: Tue, 17 Nov 2026 17:45:00 GMT\nIntroducing GPT‑6.2 Astra and Sol, with better professional outputs, coding, computer use, and efficiency at lower cost across ChatGPT Work,"
+    },
+    {
+      "item_id": "blog-16",
+      "source": "blog",
+      "source_name": "krebsonsecurity.com",
+      "title": "Attackers Used Optimizely to A/B Test Malware on Top Websites",
+      "url": "https://krebsonsecurity.com/2026/11/attackers-used-optimizely-to-a-b-test-malware-on-top-websites/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/krebsonsecurity.com--2026-11-attackers-used-optimizely-to-a-b-test-malware-on-top--c077b9ee.md",
+      "recommended_action": "reference",
+      "reason_ja": "*** Krebs on Security の信頼できる一次報道。Optimizely（A/Bテスト・体験カスタマイズ基盤）の脆弱性経由で少なくとも178の主要サイト（BBC, CNN, Equifax, Ledger, Zoom, Fox News, Salesforce, 大手航空）にデータ窃取マルウェアが注入された11/16の事件。Report URI の Scott Helme による解析: ペイロードは1日で26回再ビルド、スティーラー＋スクリプトキットで決済カード情報・cookie・スクリーンショット窃取、暗号資産アドレスのすり替え、旧iPhone/iPad既知脆弱性向けエクスプロイトまで配信。第3者サードパーティコンテンツのソース制限を課すサイトが少ないことが被害を拡大した。AI直接テーマではない（vibe coding/agent起因は未確定）が、concepts/systemic-software-breakdown.md の2026年障害クラスタ（MSFT outage, FAA ground stop, PHP2Shell, eMudhra）の最重要メンバーとして追記価値あり。wikiにOptimizely事件の記録はゼロ。",
+      "candidate_wiki_path": "concepts/systemic-software-breakdown.md",
+      "body_excerpt": "# Attackers Used Optimizely to A/B Test Malware on Top Websites\nSource: https://krebsonsecurity.com/2026/11/attackers-used-optimizely-to-a-b-test-malware-on-top-websites/\nAt least 178 top web destinations unwittingly served a variety of malware exploits against visitors over the past 24 hours thanks"
+    },
+    {
+      "item_id": "blog-17",
+      "source": "blog",
+      "source_name": "pluralistic.net",
+      "title": "Pluralistic: Enshittifiers groom us for scammers (18 Nov 2026)",
+      "url": "https://pluralistic.net/2026/11/18/malice-v-incompetence/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/pluralistic.net--2026-11-18-malice-v-incompetence--0e84a19b.md",
+      "recommended_action": "reference",
+      "reason_ja": "** Cory Doctorowのリンク集。主軸は「悪質なエンシュリットメントと詐欺の区別がつかなくなると詐欺師が生きやすくなる」という論考で、AI文脈では blog-16 のOptimizely事件と blog-6 のMarcus論（malice v incompetence の区別不能、黑客と劣化実装の境界消失）を横断する論点として意味がある。単独ページを作るほどではなく、既存の systemic software breakdown / AI安全性議論への相互参照情報として保持。",
+      "candidate_wiki_path": "concepts/systemic-software-breakdown.md",
+      "body_excerpt": "# Pluralistic: Enshittifiers groom us for scammers (18 Nov 2026)\nSource: https://pluralistic.net/2026/11/18/malice-v-incompetence/\nToday's links\nEnshittifiers groom us for scammers\n: The harder it is to tell a scam from a shitty business practice, the easier life gets for scammers.\nHey look at this\n"
+    },
+    {
+      "item_id": "blog-19",
+      "source": "blog",
+      "source_name": "OpenAI News",
+      "title": "Introducing ChatGPT for Sales",
+      "url": "https://openai.com/index/introducing-chatgpt-for-sales",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/openai.com--index-introducing-chatgpt-for-sales--16328160.md",
+      "recommended_action": "reference",
+      "reason_ja": "** OpenAI公式の Sales plugin 発表（RSS説明のみ）。Salesforce等CRM系パートナーの30以上の新規・拡張プラグインで、見込み客リサーチ・ピッチ準備・CRM更新・deal推進をChatGPT内で行う、という enterprise-agents / ChatGPTプラグインエコシステム展開の一環。RSS説明1文以上が取得できず、具体的なベンチマークやアーキテクチャ情報なし。既存 enterprise-agents 系ページへの1行注記に留める。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Introducing ChatGPT for Sales\nSource: https://openai.com/index/introducing-chatgpt-for-sales\nCategory: Product | Published: Tue, 17 Nov 2026 08:00:00 GMT\nExplore the new Sales plugin and 30+ new and expanded partner plugins in ChatGPT to research prospects, prepare pitches, update your CRM, and mo"
+    },
+    {
+      "item_id": "blog-20",
+      "source": "blog",
+      "source_name": "OpenAI News",
+      "title": "Le Groupe Figaro and OpenAI partner to bring Le Figaro journalism to ChatGPT",
+      "url": "https://openai.com/index/le-groupe-figaro-and-openai-announce-partnership",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/openai.com--index-le-groupe-figaro-and-openai-announce-partnership--a2f695ac.md",
+      "recommended_action": "reference",
+      "reason_ja": "** OpenAIと仏 Groupe Figaro の出版社提携（RSS説明のみ・2026-11-18公開）。ChatGPT に Le Figaro の要約と抜粋を掲載し原文リンクを付与。ニュースコンテンツ提携（既存の出版社契約系トピック）の1事例であり、単独ページ化には情報量が不足。将来の「ニュースコンテンツ提携」集約ページのデータポイントとしてアーカイブ保持。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Le Groupe Figaro and OpenAI partner to bring Le Figaro journalism to ChatGPT\nSource: https://openai.com/index/le-groupe-figaro-and-openai-announce-partnership\nCategory: Company | Published: Wed, 18 Nov 2026 00:00:00 GMT\nLe Groupe Figaro and OpenAI partner to bring Le Figaro’s journalism to ChatGPT"
+    },
+    {
+      "item_id": "blog-7,8,9,10,11,12,13,14,15,17b",
+      "source": "blog",
+      "source_name": "mixed (daringfireball links / shkspr / Raymond Chen / entropicthoughts / dfarq / pluralistic)",
+      "title": "Batch skip: SetShot 1.0 / Apple outage / HAOS qcow2 / BASIC price list / Maiao stacked diffs / Paul Brainerd / Semantical ad / iPhone Duo / Pluralistic 11-17",
+      "url": "",
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "* 2 非AIまたは一次情報価値なしのバッチスキップ（本文確認済み）: blog-7 SetShot 1.0=macOS設定スナップショットユーティリティ（Claude Code使用の言及のみ）。blog-8 Appleアカウント/App Store障害=一時的サービス障害速報。blog-9 HAOS qcow2スパース化=ホームラボ手順メモ。blog-10 Old New Thing=1987年MS BASIC価格リストの歴史解説。blog-11 Stacked diffs with Maiao=汎用git/コードレビューツール解説。blog-12 Paul Brainerd追悼=デスクトップ出版史（AI無関係）。blog-13 Semantical=DF広告リンク。blog-14 Greg Joswiak iPhone Duo=AppleハードウェアのX投稿。blog-15 Pluralistic 11/17=タンパク質回顧中心のリンク集。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "SetShot scans 20 sources of macOS system data, including over 500 preference files... | Most of these are notes to myself: virt-sparsify --in-place haos.qcow2 | Why is the MS-DOS BASIC Compiler cheaper than the MS-DOS BASIC Interpreter?... I bet the manual is thinner. | Over 200,000 apps are now optimized for iPhone Duo! That number DOUBLED in just over a week."
+    }
+  ]
+}
