@@ -3,7 +3,7 @@
 - run_id: 20261118T100050Z
 - scanned blogs: 84 (scan reported 33 new items; 20 deduped new articles surfaced)
 - saved to `wiki/raw/articles/`: 17
-- unsaved (filter-excluded): 3
+- unsaved (recovered by agent): 3 → 0 (OpenAI News via RSS fallback)
 
 ## Saved (AI-relevant highlights)
 - simonwillison.net — GPT‑6.2 Astra and GPT‑6.2 Sol (OpenAI model release commentary)
