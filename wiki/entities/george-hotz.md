@@ -6,7 +6,7 @@ aliases:
   - geohot
   - tomcr00se
 created: 2026-04-25
-updated: 2026-11-17
+updated: 2026-11-18
 tags:
   - entity
   - person
@@ -25,6 +25,7 @@ sources:
   - raw/articles/geohot.github.io--blog-jekyll-update-2026-07-11-ai-2040-html--34014eca.md
   - raw/articles/geohot.github.io--blog-jekyll-update-2026-07-12-i-love-llms-html--d1f0f38b.md
   - raw/articles/geohot.github.io--blog-jekyll-update-2026-11-13-first-strike-html--ce2a2a73.md
+  - raw/articles/geohot.github.io--blog-jekyll-update-2026-11-18-my-empire-of-sunshine-and-rose--b67128ec.md
 ---
 
 # George Hotz
@@ -121,6 +122,7 @@ Hotz had a brief 12-week internship at **Twitter** in late 2022, joining to fix 
 | **2026 (Jul 12)** | Publishes "I Love LLMs / the singularity is nearer" — retracts harshness about model coding abilities, expresses genuine excitement about AI progress, critiques negative valence hype. |
 | **2026 (Nov 13)** | Publishes "First Strike / the singularity is nearer" — China 10x-US-electricity thesis, chips-for-solar strategy, warns the AI race's only perceived exit is an ASI "decapitating first strike"; WWIII odds up with "the nationalization of NVIDIA". |
 | **2026 (Nov 17)** | Publishes "My Empire of Dirt / the singularity is nearer" — names Anthropic's "Singleton" ideology and EA as the actors who would "salt the Earth"; after RSI all demand is internally generated ("The future definitely doesn't need you"); argues **WWIII is the good outcome** (not extinction) and China wins a war lasting >1 year. |
+| **2026 (Nov 18)** | Publishes "My Empire of Sunshine and Roses / the singularity is nearer" — the coda to the four-essay November arc: differential history via counterfactuals, critique of the OpenAI ad, "Nature did not collapse to a singleton" + agent-swarm exponential-cost argument, and a positive vision of millions of independent power centers with no central planner. |
 
 ---
 
@@ -294,6 +296,21 @@ Published November 17, 2026, again under the recurring "the singularity is neare
 **Continuity note**: Pairs with "First Strike" (Nov 13) as a two-essay November arc. "First Strike" framed ASI risk as a *state* security dilemma (decapitating strike); "My Empire of Dirt" reframes the same risk as a *lab-ideology* failure, naming Anthropic's "Singleton" and EA directly. It is Hotz's most explicitly **anti-lab** position to date — a contrast with the July "I Love LLMs" optimism and even the June "The Doom Justifies the Valuation" framing.
 
 Source: [[raw/articles/geohot.github.io--blog-jekyll-update-2026-11-17-my-empire-of-dirt-html--9f1a6390.md]]
+
+---
+
+### My Empire of Sunshine and Roses — Differential History & the Anti-Singleton Positive Vision (Nov 18, 2026)
+
+Published November 18, 2026 under the recurring "the singularity is nearer" heading, **"the singularity is nearer (My Empire of Sunshine and Roses)"** is the **coda** to the four-essay November run (Jul 12 "I Love LLMs" → Nov 13 "First Strike" → Nov 17 "My Empire of Dirt" → this). Where "My Empire of Dirt" ended on "RSI, attempted rugpull and domination, World War III, **dirt**," this companion piece states what Hotz is *for* — the "sunshine and roses" answer to the dirt. New theses not present on this page:
+
+- **Differential history / counterfactuals as the only way to measure "changing the world."** Having a pile of stuff or accomplishments *attributed* to you is just "credit assignment, notoriously hard even without all the adversarial noise." To know if you changed the world you must "think in counterfactuals. If you didn't exist, how would the course of history be different?" He reframes the **Great Man vs. Causes-and-Forces** debate as a *time-horizon* problem ("the difference … is just your time horizon") — under hardline determinism you "structurally cannot change the world," and "how AI goes" is set by "some 4th-order coefficients in a chaotic function" balancing offense/defense and centralization/decentralization.
+- **Critique of the OpenAI ad** he watched that morning: it shows "the form of an office, but with all the real work being done in a datacenter thousands of miles away" — so "why will the office continue to exist?" He reads it as evidence the people running the labs "don't understand what will happen either."
+- **Re-rebuttal of the Anthropic Singleton**: "things don't usually end up well for *the main character*"; imagining a singleton is easy only "because we're primed by sci-fi." His counter: **"Nature did not collapse to a singleton, and most AI-looking things require exponentially more resources to see linear returns."** The agent-swarm test is his empirical anchor: "is it worth 10× the spend to get the work done twice as fast? … 100× for three times faster? It breaks down at some point."
+- **What he wants — many power centers, not a planner.** "The best we can hope for is fair markets (against monopolies, against internal models, against vertical integration). Linear spend for linear amounts of compute." The good world is "millions of independent power centers, all capable of collaborating as they see fit, and imposing small costs on each other when they don't" — and crucially **there is no central planner to describe it**, "it's emergent from the collective interactions of millions." Closing line: "Isn't that the real American Dream?"
+
+**Arc-completion note**: This is the **positive/market-liberal** counterpart to "My Empire of Dirt." Read together, the two Nov 17–18 essays are Hotz's full statement of the same worldview: the Singleton is both the *danger* (Dirt) and a *metaphysically unlikely* outcome contradicted by nature and exponential-cost physics (Sunshine and Roses), while the desirable attractor is decentralized emergent order. The OpenAI-ad and differential-history passages are unique to this piece and absent from the three earlier essays documented above.
+
+Source: [[raw/articles/geohot.github.io--blog-jekyll-update-2026-11-18-my-empire-of-sunshine-and-rose--b67128ec.md]]
 
 ---
 

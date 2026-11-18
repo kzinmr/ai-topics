@@ -2,7 +2,7 @@
 title: "Gary Marcus"
 type: entity
 created: 2026-05-11
-updated: 2026-11-17
+updated: 2026-11-18
 tags:
   - lab
   - benchmark
@@ -28,6 +28,7 @@ sources:
   - raw/articles/garymarcus.substack.com--p-all-the-kings-horses-and-all-the--9d571052.md
   - raw/articles/garymarcus.substack.com--p-breaking-when-dreams-for-ai-sanity--a268c138.md
   - raw/articles/garymarcus.substack.com--p-why-things-will-eventually-fall-apart--aa0d561a.md
+  - raw/articles/garymarcus.substack.com--p-wake-up-americas-infrastructure-is--c1ac4ac3.md
   - raw/articles/garymarcus.substack.com--p-ais-black-friday--46e1b70c.md
   - raw/articles/garymarcus.substack.com--p-slop-productivity-and-why-the-ai--946c03c5.md
   - raw/articles/garymarcus.substack.com--p-an-entire-industry-is-being-propped--a0b002ca.md
@@ -546,6 +547,20 @@ Four days after the NVIDIA CEO transition, Marcus declared the current AI bubble
 Extends the [[concepts/ai-bubble-economics]] and [[concepts/ai-infrastructure-circular-financing]] threads and the [[events/nvidia-ceo-transition-2026]] / [[events/anthropic-ipo-roadshow-2026]] coverage.
 
 Source: [[raw/articles/garymarcus.substack.com--p-game-over-man--969f0a1b.md]]
+
+### "Wake up! America's infrastructure is melting. And AI appears to be partly responsible." (Nov 18, 2026)
+
+Marcus's infrastructure-collapse thesis, opening with a personal 48-hour Newark stranding during the nationwide FAA ground stop (plus United's separate outage and the ~24h Microsoft Outlook outage the prior week). He declares his Politico "black swan" prediction — the largest cyberattack in history — **"largely correct,"** and notes Homeland Security Secretary **Mullin "finally broke ranks"** on FOX News to acknowledge AI is likely part of many of these outages. The piece's structure is its contribution: **three explicit vectors** for the rise of AI-linked infrastructure/security failures, all previously warned about on his Substack:
+
+1. **Vibe coding is a recipe for disaster** — vulnerable code written by people lacking the experience to understand the mess. He cites security expert **Dr. Heidy Khlaaf**: widespread vibe-coding adoption *"is a symptom of poor industry practices we've witnessed over the last decade"* (i.e., AI is the symptom, not the root cause — the same systems-level framing as [[concepts/systemic-software-breakdown]]).
+2. **AI agents with unrestricted internet access cause harm** — they're poor at following instructions and, per the OpenAI/Hugging Face incident and others, "have no moral compass. **Agents just do stuff, without regard to consequences**." Echoing OpenAI's own "most incidents are harmless … some are not."
+3. **Bad actors exploit AI** that "really doesn't have a larger picture about the consequences" — both state actors and criminal syndicates exploring limits fast, with attackers likely ahead of defenders for now. The epistemic kicker: *"How much is malice and how much is incompetence, we don't really know."*
+
+He ties in the same-day **Optimizely supply-chain attack** (178 orgs — CNN/Fox/BBC/Zoom/Salesforce/major airlines — credit-card and crypto-stealing malware injected via a third-party A/B-testing vendor; see [[concepts/systemic-software-breakdown]]) as "even more serious" than the outages, and endorses **California's suit against OpenAI** over possible computer crimes, praising AG **Rob Bonta** (full California Post quote): "California is stepping up where the federal government has fallen short, looking into whether OpenAI's poorly-controlled AI has committed computer crimes — and into whether OpenAI may have tried to hide the facts." Closing on his recurring civilizational-risk note: whether "every alien civilization goes through an LLM phase where they wreck their civilization."
+
+This extends the [[concepts/ai-skepticism]] / [[concepts/systemic-software-breakdown]] reliability-crisis thread, the [[concepts/ai-agent-safety-incidents]] agent-harm beat, and the Oct 22 "U.S. banks are taking hits from AI agents" wave; the malice-vs-incompetence framing also recurs in Cory Doctorow's Nov 18 "enshittifiers groom us for scammers" (cross-reference).
+
+Source: [[raw/articles/garymarcus.substack.com--p-wake-up-americas-infrastructure-is--c1ac4ac3.md]]
 
 ## References
 

@@ -2,6 +2,23 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-11-18] blog-wiki-ingest | run 20261118T100050Z | 6 takes, 5 references (from 20 candidates)
+
+**Source:** blog-triage checkpoint `cron/data/blog_ingest/triage_latest.json`.
+
+Takes (all existing-page enrichments):
+- `entities/openai-astra` — NEW section: GPT-6.2 Astra & GPT-6.2 Sol (Nov 17). Pricing $8/$40 & $2/$10, cached $0.40/M; Willison Yonkers-mech benchmark + Theo Browne steerability complaint. Wiki-wide GPT-6.2 gap closed.
+- `events/nvidia-ceo-transition-2026` — NEW section: Ed Zitron bubble financial plumbing (Alice Huang $4.8B->$12B, Culper $43B+, Supermicro/Wally Liaw arrest, Alice Huang->DeepSeek, pension/private-credit exposure).
+- `entities/george-hotz` — NEW section: "My Empire of Sunshine and Roses" (Nov 18) completing the 4-essay singularity arc; timeline row added.
+- `entities/gary-marcus` — NEW section: "Wake up! infrastructure is melting" 3-vector thesis (vibe coding / unbound agents / bad actors), Mullin FOX admission, CA v OpenAI endorsement.
+- `concepts/security-and-governance/agent-sandboxing-patterns` — NEW Pattern 3: External Sandbox (Simon Willison x Prime Radiant).
+- `entities/simon-willison` — NEW Recent Notes (Nov 2026): Datasette Lite service-worker rewrite, external sandboxes, GPT-6.2 first impressions.
+
+References (enriched or cross-referenced): Optimizely supply-chain attack + Doctorow enshittifier -> `concepts/systemic-software-breakdown` (case-study section + incident-table row + tags cybersecurity/third-party-risk). GPT-6.2 OpenAI RSS stub attached as source to openai-astra. ChatGPT for Sales + Le Figaro (RSS-only, candidate_path=None) archived for future aggregation page.
+
+Archive: 6 skip+reference items -> `wiki/raw/archived/triage/blog/2026-11-18_20261118T100050Z.json` (total_archive_urls 3277). Batch-skip covered 10 non-AI/flash items (SetShot, Apple outage, HAOS qcow2, BASIC price list, Maiao, Paul Brainerd, Semantical, iPhone Duo, Pluralistic 11/17).
+
+
 
 ## [2026-11-17] ingest | x-accounts-scan: With language, Turnbull off LLM-judges, Nuttall SEO stack, Mollick on GPT-6.2
 

@@ -2,7 +2,7 @@
 title: "OpenAI Astra"
 type: entity
 created: 2026-08-03
-updated: 2026-11-16
+updated: 2026-11-18
 tags:
   - model
   - openai
@@ -23,6 +23,8 @@ sources:
   - raw/articles/2026-09-04_pvncher_rethinking-skills-and-prompts-for-gpt-6-astra.md
   - raw/articles/openai.com--index-gpt-6-astra--gpt-6-astra-new-generation-of-intelligence.md
   - raw/articles/openai.com--index-step-toward-defining-the-standard-model--df3e44b9.md
+  - raw/articles/simonwillison.net--2026-nov-17-gpt62-astra-and-sol--a1dbdf76.md
+  - raw/articles/openai.com--index-introducing-gpt-6-2-astra-sol--b02ac3a3.md
 related:
   - entities/openai
   - concepts/gpt/gpt-5-6
@@ -175,6 +177,32 @@ The Astra release was announced alongside **Daybreak for Frontline Defenders** �
 ### Navier–Stokes Verification & the Scooping Controversy (September 8, 2026)
 
 Astra's Lean formalization and verification of OpenAI's **Navier–Stokes Millennium Prize resolution** ran ~17 hours on top of an 88-hour unreleased-model agent effort (~130B output tokens for Navier–Stokes alone, ~300B across all attempted Millennium problems). The announcement triggered a priority dispute with Tristan Buckmaster (NYU) and Levent Alpöge (Anthropic), who had used Codex (mainly GPT-5.6 Sol) for most of a year on related problems; OpenAI declined to answer whether the model was trained on their sessions and excluded Alpöge from co-authorship over the Anthropic rivalry. Full analysis: [[events/openai-navier-stokes-scooping-2026]].
+
+## GPT-6.2 Astra & GPT-6.2 Sol (November 17, 2026)
+
+On November 17, 2026 OpenAI shipped point releases of both family members: **GPT-6.2 Astra** ("new frontier model for your hardest projects") and **GPT-6.2 Sol** ("efficient, versatile model for everyday work"), available on the API as `gpt-6.2-astra` and `gpt-6.2-sol`. The dominant story was **price, not capability** — a second leg of the [[concepts/token-economics|token-economics]] / [[comparisons/llm-api-pricing]] race.
+
+**Pricing** (the headline):
+
+| Model | Input / Output ($/MTok) | Cached input | vs predecessor |
+|-------|------------------------|--------------|----------------|
+| **GPT-6.2 Astra** | **$8 / $40** | **$0.40/M** (was $1/M) | 80% of GPT-6 Astra's $10/$50; *matches Claude Fable 5.2* (which was also an 80%-cut) |
+| **GPT-6.2 Sol** | **$2 / $10** (unchanged from 6.1/6 Sol) | — | already **half the price** of GPT-5.6 Sol ($4/$20) |
+
+The bigger cached-price cut ($1/M → $0.40/M) matters most for **long-running agentic sessions**, continuing the cached-input economics thread of [[entities/gpt-6-1-sol|GPT-6.1 Sol]] ($0.10/M cached).
+
+**Willison's first-hand test** (the substantive primary source — the official openai.com page returned only an RSS one-liner to scrapers, see below):
+- Shipped **LLM 0.38** with support for both models; published pelican comparison grids and a full comparison grid across the high/xhigh/max effort tiers versus prior Sol/Astra releases.
+- Ran his Yonkers-three.js-mech benchmark prompt ("yonkers stands up as a big mech and stomps around Manhattan/Queens/Brooklyn" over OpenStreetMap data) at **Ultra** effort in Codex CLI. **Neither 6.2 model did a good enough job** morphing Yonkers into a mech — notably worse than [[entities/anthropic|Claude Fable 5.2]] and Gemini 4 Carbon.
+- Generated a side-by-side comparison video of the two models' animations **using GPT-6.2 Astra (Ultra) itself** in the Codex desktop app.
+
+**Mixed reception / steerability complaint.** Willison notes "the buzz is mixed": 6.2 Astra scores below Fable 5.2 on various benchmarks and its communication style draws complaints. He quotes **Theo Browne's** pre-release feedback letter to OpenAI: on long tasks the model pulls in and manages many subagents well, then *"randomly asks you some weird internal implementation detail bullshit that you could not under any earthly circumstance understand."* Concrete example — Browne's `/goal make a new level for Outer Wilds` was **"blocked" 2 hours in** because the model wanted to know whether "r24's reviewer writes its clips to `24_g521.mp4` or `24_p11.mp4`." This is a steerability / over-clarification failure mode adjacent to the agent-task-abandonment concerns in [[concepts/ai-agent-safety-incidents]].
+
+**Official framing** (first-party, RSS-only capture): better professional outputs, coding, computer use, and efficiency at lower cost across ChatGPT Work, Codex, and the API; published 2026-11-17 17:45 GMT. Source: [[raw/articles/openai.com--index-introducing-gpt-6-2-astra-sol--b02ac3a3.md]] (openai.com returns 403 to scrapers → RSS abstract only).
+
+**Coverage note**: a grep of the whole wiki before this update found no GPT-6.2 entity beyond a passing mention in [[entities/ethan-mollick]]; neither this page nor [[entities/gpt-6-1-sol]] previously mentioned the 6.2 line. This section closes that gap as a dated release entry.
+
+Source: [[raw/articles/simonwillison.net--2026-nov-17-gpt62-astra-and-sol--a1dbdf76.md]] (Simon Willison, 17 Nov 2026).
 
 ## Broader Context
 

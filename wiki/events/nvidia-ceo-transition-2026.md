@@ -1,7 +1,7 @@
 ---
 title: "NVIDIA CEO Transition (November 2026)"
 created: 2026-11-13
-updated: 2026-11-16
+updated: 2026-11-18
 type: event
 tags:
   - nvidia
@@ -17,6 +17,7 @@ sources:
   - raw/articles/techcrunch.com--2026-11-12-jensen-huang-agrees-to-testify-before-congress--d574a06f.md
   - raw/articles/garymarcus.substack.com--p-jensen-huang-resigns--4a2c07c7.md
   - raw/newsletters/2026-11-14-open-source-ai-without-jensen-body.md
+  - raw/articles/wheresyoured.at--the-nvidia-bubble--711785b3.md
 ---
 
 # NVIDIA CEO Transition (November 2026)
@@ -112,6 +113,18 @@ Nvidia's own public press releases" ([anon291]). The **DRAM price-fixing suit su
 dismiss** on Nov 15 (514 pts) — see [[concepts/dram-price-fixing-lawsuit-2026]] — adding a second
 antitrust front to the memory/HBM supply chain underpinning NVIDIA's roadmap. WSJ follow-up (Nov 16):
 "Nvidia's Days as an Open Checkbook for the AI Economy Are Numbered" (https://news.ycombinator.com/item?id=50513876).
+
+## The financial architecture of the bubble (Ed Zitron, Nov 18)
+
+Ed Zitron's long-form "The NVIDIA Bubble" (wheresyoured.at, 707 lines / 56KB) supplies the **financial and smuggling-chain detail** the rest of this page lacks, connecting the personal scandal to a structural revenue-integrity problem. Several of these entities (Megaspeed, Alice Huang, Culper Research, Supermicro/Wally Liaw) had **zero prior coverage anywhere in the wiki**:
+
+- **The Alice Huang / Megaspeed figure escalated fast.** Illegal chip sales routed through Alice Huang's empire moved from $4.8B → "at least" $7.5B → **$12B** (March 2024 – June 2025, per WSJ) within a single week of reporting. Megaspeed bought "nearly $12 billion worth of top-of-the-line NVIDIA chips" — including Blackwell parts it claimed had demand "well above supply" — and shipped them to Chinese firms. Zitron notes Jensen Huang both created demand (via CoreWeave) and dealt directly with Megaspeed.
+- **Culper Research short report (May 2026).** Alleged that **20%+ of NVIDIA's FY2026 revenue ($43B+) came from sales through China**. Zitron's framing — "Megaspeed is just the tip of the iceberg" — makes the smuggling operation a *distribution channel*, not a few rogue salespeople.
+- **Supermicro / Wally Liaw arrest (March 2026).** Culper directly connects Megaspeed to **Supermicro**, the popular AI-server maker. Co-founder and board member **Wally Liaw was arrested** with co-conspirators for trying to sell **over $2.5B in chips** to a Chinese passthrough entity Culper believes is a Megaspeed affiliate. Liaw had previously resigned in 2018 over an accounting scandal, returned in 2021, and was re-elected to the board in 2023. Zitron's point: a co-founder/board member of one of the largest AI-server manufacturers — **70%+ of whose revenue is NVIDIA-GPU-powered servers**, and which was NVIDIA's *third-largest customer* months into Megaspeed's $12B purchases — was arrested selling to the *same* smuggling network Alice Huang ran.
+- **Alice Huang → DeepSeek.** Companies connected to Alice Huang **invested in DeepSeek** — the lab whose Q1 2025 efficiency result "spooked the world" by suggesting fewer NVIDIA GPUs were needed. The smuggler's counterparty and the company undermining the GPU-demand thesis are the same orbit.
+- **Retail / pension / private-credit exposure.** Zitron's broader warning: individual investors, **insurers, pension funds, and private-credit vehicles** are exposed to the AI-infrastructure buildout — and to NVIDIA's revenue-integrity risk — **directly or indirectly**, largely without realizing it. This reframes the resignation from a personal- scandal story into a balance-sheet-contagion story, consistent with the same-day Tom's Hardware GPU-smuggling report (~1.5 GW / ~1.5M banned AI GPUs) above and Marcus's "ringmaster of circular financing" framing.
+
+This section is the **revenue-integrity / financial-plumbing** complement to the political (congressional testimony), personal (affairs), and ecosystem (Lambert) angles already on this page. Raw: [[raw/articles/wheresyoured.at--the-nvidia-bubble--711785b3.md]].
 
 ## Related
 

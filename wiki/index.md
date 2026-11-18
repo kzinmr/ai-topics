@@ -659,7 +659,7 @@
 - [[entities/onehappyfellow]] — Author of the "Simulacrum of Knowledge Work" essay. Head of The Institute for Type Safe Memetic Research. OCaml progr...
 - [[entities/open-athena]] — Open Athena — nonprofit accelerating academia with frontier AI capabilities; Delphi open scaling suite (300× extrapolation, AdamH); David Hall's "no posttraining data commons" thesis (Nov 2026)
 - [[entities/openai]] — OpenAI; July 2026 launches: GPT-5.6 GA (Sol/Terra/Luna), ChatGPT Work agent, Codex merged into ChatGPT desktop, ChatGPT Sites, Fidji Simo departure, GPT-5.6 now preferred model in Microsoft 365 Copilot; ChatGPT for Teachers expansion to 100+ K–12 orgs/30 states + 16-state National Data Privacy Agreement (Aug 26)
-- [[entities/openai-astra]] — OpenAI Astra; next major model family, solved 10 open math problems (Aug 2026), Gary Marcus critiques fallacy of composition
+- [[entities/openai-astra]] — OpenAI Astra; next major model family, solved 10 open math problems (Aug 2026), Gary Marcus critiques fallacy of composition; GPT-6.2 Astra/Sol point releases Nov 17 2026 ($8/$40 & $2/$10, cached $0.40/M)
 - [[entities/openai-codex]] — OpenAI Codex; ChatGPT Work architecture deep-dive (Aug 2026) + Multi-Agent V2 orchestration guide (Scout/Worker/Smart Worker roles, fork_turns context inheritance, skill-based coordination patterns) by Eric Provencher (July 24); non-technical founder case — William Imoh native Swift/Kotlin Mural app built with Codex, epic/user-story prompting, GPT-Live-1 $3-5 per 30-min voice session (How I AI, Nov 9 2026)
 - [[entities/openai-cua]] — OpenAI CUA (Computer-Using Agent)
 - [[entities/openai-deployment-company]] — OpenAI Deployment Company (DeployCo)
