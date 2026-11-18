@@ -291,6 +291,7 @@ ls -lt ~/ai-topics/wiki/entities/ | head -20
 **Example pitfall (keyword present, content absent)**: An entity page may not even mention the article's topic keyword, despite being clearly relevant. In a May 2026 triage, `entities/glean.md` existed but had zero mentions of "Sonnet" — the Sonnet 4.5 evaluation data from Glean's blog was a genuine wiki gap despite the entity page existing. Similarly, `claude-sonnet-4.5.md` existed in concepts but contained no benchmark numbers or evaluation methodology. Always read the entity page's content sections, not just grep for keywords.
 
 **Example pitfall (partial coverage -- concept page misses new variants)**: A product-family concept page (e.g. `concepts/microsoft-mai-models.md`) may cover only earlier releases. June 2026: page covered MAI-Transcribe-1/Voice-1/Image-2 (April) but zero coverage of MAI-Thinking-1 and MAI-Code-1-Flash (June 2). **Page exists for the umbrella ≠ page covers the article's specific content.** Read the page's actual model/tool/dataset listings, not the title or first paragraph. The test: does the page enumerate the specific items the article discusses? If not, it is a genuine coverage gap.
+> 📖 **Model-release variant (Nov 2026)**: for a new version of an existing model family (GPT-6.2 Astra/Sol), grep the WHOLE wiki for the exact version string — if only incidental mentions exist and the ancestor entity pages (`entities/openai-astra.md`, `entities/gpt-6-1-sol.md`) have zero mentions, it is a greenfield take even though rich ancestor pages exist. Companion openai.com RSS-fallback stubs (403 → 1-sentence RSS description) are reference-only, attached as sources to the richer third-party take. Full details: `references/blog-triage-2026-11-18-patterns.md`.
 > 📖 `references/coverage-gap-stub-umbrella-take-signal.md` — stub+absent-sibling take rule, batch-skip grouping.
 
 **Example pitfall (author entity covers one methodology angle, blog covers another — greenfield vs rewrite)**: An entity page may extensively cover an author's work with LLM agents, but only through the lens of one project type. In June 2026, `entities/eli-thegreenplace-net.md` had a comprehensive "LLMs as Collaborative Partners" section (201 lines, 6 subsections) — all based on the pycparser *rewrite* project. A blog article about the same author's *greenfield* project (watgo, a Go WASM tool from scratch) added entirely distinct methodology: design docs in committed Markdown, CL size discipline for new projects, Go as a language optimized for agent-human code review (99% reading vs 1% writing), and junior-vs-senior guidance for agent-assisted development. **Check whether the article's methodology angle (rewrite vs greenfield, maintenance vs new feature, solo vs team) is captured in the entity page even when the author's name and broad topic match.** If only one methodology angle is recorded, the other is a genuine gap.
@@ -434,68 +435,14 @@ This script:
 
 ## Key Patterns to Recognize
 
-> 📖 Recent dated pattern refs live in `references/newsletter-triage-2026-*.md` and `references/blog-triage-2026-*.md` (glob them; do not enumerate here). Key ones: `newsletter-triage-2026-10-22-patterns.md` (beehiiv v2/c/ batch-level Cloudflare-403 → topic-level reference never take; direct-slug yields full body despite Paid badge; embedded ASCII quotes in Japanese reason_ja break /tmp scripts → use 「」), `pricing-umbrella-vs-pricing-war-analysis.md` (pricing table ≠ pricing-war analysis; adjacent-dimension grep proof; never ship a nonexistent candidate_wiki_path), `dominant-publication-yield-pattern.md`, `blog-triage-2026-08-13-patterns.md` (unsaved rescue; hash-variance dedup), `newsletter-triage-2026-08-14-patterns.md` (dual-source take-as-update), `inbox-summary-false-403-claim.md`, `wiki-ingest-log-claim-vs-applied-content.md` (log coverage claim ≠ applied content), `newsletter-wiki-ingest-2026-11-01-patterns.md` (no-op reference → durable lead page in `queries/unresolved-newsletter-leads.md`; negative-corroboration sweep HN-Algolia+DDG; sibling `index.md` write race → string-marker anchoring + verify counts by grep + plain `git push` when `pull --rebase` is blocked by a sibling's unstaged file).
+> 📖 `references/newsletter-triage-2026-11-18-patterns.md` (simonw Substack==blog-triage take → check blog `decisions` array first; Ben's Bites yields 3 takes despite inbox `low` — always scrape the post; pure-promo Substack → split one durable-fact reference from the batch-skip body; beehiiv v2/c batch with no inbox article detail → one ★2 batch-skip; verify `candidate_wiki_path` against the ABSOLUTE `/opt/data/ai-topics/wiki/` root — cwd-relative `os.path.exists` gives false negatives).
+> 📖 `references/newsletter-triage-2026-11-15-patterns.md` — Interconnects/Robotic (pub 48206) full body via `curl https://www.interconnects.ai/p/{slug}` directly (200 first try — skip the Cloudflare-choked `open.substack.com` form); beehiiv-403 digest whose event page is already saturated → one batch-skip entry for all links even when inbox rates it `critical`; pre-commit hook DOES validate `candidate_wiki_path` — verify every path on disk BEFORE saving (entity pages use display-name slugs: `mira-murati.md` not `mira-ai.md`); `python3 -c` conditional-expression KeyError gotcha.
 
-### Non-AI Content to Skip
-- **Business strategy podcasts** (e.g., Lenny's Podcast with Evan Spiegel on distribution moats) — unless they discuss AI specifically
-- **Pure-podcast newsletters** (e.g., Lenny's Podcast Tony Fadell): 100% audio UI links in email, post page has no standalone article body. Skip immediately without URL resolution. Does not apply to hybrid publications (e.g., Latent Space) that write standalone articles alongside audio. See `references/pure-podcast-substack-patterns.md` for full detection criteria.
-- **Pure link digest newsletters** (e.g., AI Weekly / True Positive Weekly): Post body is a shallow bullet list of article titles with 1-line descriptions and no editorial analysis. Skip the digest, but gap-check its curated URLs and take gap-filling primaries (`references/tpw183-curate-link-take-pattern.md`). Also `references/newsletter-triage-2026-10-21-batch-patterns.md` ("noted, not ingested" = take).
-- **General tech news** without AI/agent relevance
-- **Company financial results** without AI product implications
+> Full taxonomy (Agentic Engineering vs AI Agent Engineering vs Harness Engineering vs Agent Team/Swarm 5-level model; OpenAI-vs-Anthropic platform comparison; model-release grouping; security/events; tool ecosystem) — see `references/taxonomy-and-platform-comparison.md`. Match article keywords to those buckets before rating; do NOT create a new concept page when a bucket page exists.
 
-> **⚠️ Nuance: Podcast post pages with substantial body text.** Even when the primary format is audio, the Substack post page for a podcast episode may contain 50+ paragraphs of explanatory text (free, `isAccessibleForFree: true`). This is especially common with AI/Science podcasts (Latent Space AI for Science, etc.). The post page JSON-LD + `<article>` tag extraction can yield wiki-worthy conceptual content (training methodologies, research framing, technical claims). Check the post page body before assuming a podcast link has no wiki value. In June 2026, a Latent Space podcast post about Axiom Math ("Scaling Past Informal AI") had 54 significant paragraphs without any audio transcription — the author wrote a standalone article alongside the podcast.
->
-> **⚠️ Counter-nuance: Pure-podcast pubs** (e.g., Lenny's Podcast): email is 100% audio UI links with no standalone article body — but high-profile AI guests can produce 30-70+ `<p>` tags. DO NOT auto-skip based on email pattern; read first 10 `<article>` paragraphs and check for substantive analysis vs. single-line topic headings. See `references/pure-podcast-substack-patterns.md` for the content-structure heuristic.
+Non-AI content to skip (full criteria + podcast/link-digest nuances quoted there): business-strategy podcasts without AI, pure-podcast pubs (Lenny's), pure link digests (AI Weekly/TPW — but gap-check their curated URLs), general tech news, company financials without AI implications → see `references/non-audio-skip-patterns.md` and `references/pure-podcast-substack-patterns.md`.
 
-### Model Releases
-- Company + model name + "launches", "releases", "announces"
-- Group by company: OpenAI, Anthropic, Meta, Mistral, Google
-
-### Engineering Paradigms — TAXONOMY RULES (CRITICAL)
-
-**Agentic Engineering** (`concepts/agentic-engineering/`) = 開発者のワークフロー
-- Keywords: "how to use agents", "developer patterns", "TDD with agents", "cognitive debt"
-- Sources: Simon Willison guides, practitioner blogs, developer workflow tips
-- Focus: "人間がエージェントをどう活用するか"
-- Examples: Red/Green TDD, First Run the Tests, Showboat, Cognitive Debt, Context Window Management
-
-**AI Agent Engineering** (`concepts/ai-agent-engineering/`) = システムアーキテクチャ
-- Keywords: "orchestration", "execution loop", "harness", "sandbox", "tool design", "computer environment"
-- Sources: OpenAI Engineering blog, Anthropic Engineering blog, platform architecture docs
-- Focus: "エージェント実行基盤をどう構築するか"
-- Examples: Agent Loop Orchestration, Context Compaction, Container Context, Agent Skills, Security Patterns
-
-**Harness Engineering** (`concepts/harness-engineering/`) = 制御・構造化（共通概念）
-- Bridges both: how execution environments are designed to constrain and guide agents
-- Sources: Ryan Lopopolo/Symphony, OpenAI Codex architecture
-- Keywords: "generator-evaluator loop", "critique shadowing", "evaluation-first"
-
-**Agent Team / Swarm** (`concepts/agent-team-swarm/`) = 複数Agent協調・オーケストレーション
-- Keywords: "multi-agent", "agent team", "swarm", "orchestration platform", "managed agents", "autonomous runs", "work management", "dark factory", "software factory"
-- Sources: OpenAI Symphony, Anthropic Managed Agents, StrongDM Attractor, Dan Shapiro's 5-level model
-- Focus: "複数Agentをどう協調させ、作業を自律管理するか"
-- Examples: OpenAI Symphony (WORKFLOW.md駆動), Anthropic Managed Agents (Brain/Hands/Session分離), StrongDM Dark Factory (完全自律開発)
-- **5-Level Model**: L1 Spicy Autocomplete → L2 Chat-Assisted → L3 Agent-Assisted → L4 Engineering Team → L5 Dark Factory
-- **Key distinction**: L4 manages agents (Symphony/Managed Agents), L5 eliminates human review entirely (Dark Factory)
-
-### Security/Events
-- Leaks, controversies, policy changes
-- Connect to existing safety concepts
-
-### Tool Ecosystem
-- New frameworks, libraries, platforms
-- Connect to existing entity pages
-
-## OpenAI vs Anthropic Platform Comparison
-
-When analyzing platform articles, note the architectural approach:
-
-| Dimension | OpenAI | Anthropic |
-|-----------|--------|-----------|
-| 実行環境 | マネージドコンテナ提供 | 開発者自前のharness設計 |
-| スキル | SKILL.mdバンドル（公式API） | ツール定義（JSON schema） |
-| コンテキスト | ネイティブcompaction | 開発者実装 |
-| セキュリティ | サイドカーエグレスプロキシ | 開発者責任 |
+> 📖 Recent dated pattern refs live in `references/newsletter-triage-2026-*.md` and `references/blog-triage-2026-*.md` (glob them; do not enumerate here). Key ones: `blog-triage-2026-11-18-patterns.md` (model-release version-string grep test — ancestor page exists ≠ release covered; openai.com 403 RSS-fallback stubs → reference-not-take; recurring-essay-series installment take; pattern-taxonomy page's pattern-C gap; heterogeneous non-AI batch-skip entry with `|`-joined excerpts; archive_index.json needs its own commit); `newsletter-triage-2026-11-15-patterns.md` (Interconnects/Robotic curl-custom-domain full body; beehiiv-403 saturated-event batch skip; verify candidate_wiki_path on disk — pre-commit enforces it); `newsletter-triage-2026-10-22-patterns.md` (beehiiv v2/c/ batch-level Cloudflare-403 → topic-level reference never take; 「」 for embedded quotes in Japanese reason_ja); `pricing-umbrella-vs-pricing-war-analysis.md` (pricing table ≠ pricing-war analysis; never ship a nonexistent candidate_wiki_path); `dominant-publication-yield-pattern.md`; `blog-triage-2026-08-13-patterns.md` (unsaved rescue; hash-variance dedup); `newsletter-triage-2026-08-14-patterns.md` (dual-source take-as-update); `inbox-summary-false-403-claim.md`; `wiki-ingest-log-claim-vs-applied-content.md` (log coverage claim ≠ applied content); `newsletter-wiki-ingest-2026-11-01-patterns.md` (no-op reference → durable lead in `queries/unresolved-newsletter-leads.md`; negative-corroboration sweep HN-Algolia+DDG; sibling `index.md` write race → string-marker anchoring + grep verify + plain `git push` when `pull --rebase` blocked by sibling's unstaged file).
 
 ## Integration Points
 - **Upstream**: Newsletter-ingest pipeline (provides newsletter candidates from `${HERMES_HOME}/cron/data/newsletter/latest.json`) or Blog-ingest pipeline (provides blog candidates from `${HERMES_HOME}/cron/data/blog_ingest/latest.json`) or direct article discovery from `~/wiki/raw/articles/`
@@ -583,6 +530,12 @@ tasks = [
 **log.md update**: After enrichment, prepend the new log entry (log.md is newest-first, append-only). In cron mode, write a Python script to `/tmp/` via `write_file` and run via `terminal` — `execute_code` is blocked. Do NOT use `sed -i`; insert after the header line. Parallel subagents may append their own — consolidate into ONE pipeline entry. ⚠️ Header-burial + sibling-warning handling: see `references/newsletter-wiki-ingest-log-rebuild-and-parallel-sibling-2026-08-13.md`. **log.md has NO H1 title line**: the file starts with the newest entry heading, so a prepend script anchoring on a line starting with "# " matches that H2 and silently destroys the previous entry heading. Anchor on the "## [" form instead and verify with head -6 wiki/log.md: see `references/log-md-prepend-no-h1-title.md` (validated 2026-10-25).
 
 **⚠️ CJK in the triage BUILDER script itself (three pre-execution blockers)**: `reason_ja` / `summary_ja` / `body_excerpt` are required fields, and builder scripts fail before running for three separate reasons — (a) embedded ASCII double-quotes inside Japanese string literals give a misleading `SyntaxError: invalid decimal literal`; (b) heredocs with CJK trip the homoglyph scanner; (c) heredocs whose literals merely *mention* a hardline keyword (observed: the word `shutdown` quoted from a reference filename) are hard-blocked regardless of intent. Gate every builder with `ast.parse`, route CJK scripts via `write_file`→`terminal` (never heredoc), never build CJK reasons with nested ternaries — use dict lookups. Fixes: `references/cron-builder-script-cjk-pitfalls.md`; new builder pitfalls (helper-param defaults, empty Substack `<title>`/JSON-LD, gossip-beehiiv batch-skip) in `references/newsletter-triage-2026-11-10-patterns.md`.
+
+**⚠️ Star glyphs and ASCII quotes are BOTH banned inside CJK builder literals (blog-triage, 2026-11-17)**: a `make()` helper doing `"★" * stars` as a default arg, and ASCII `"` inside Japanese `reason_ja` (e.g. quoting `Nvidia's Days as an Open Checkbook`), each independently raise `SyntaxError: invalid syntax. Perhaps you forgot a comma?` at lint time. Fixes that worked in one pass: build the rating with `"*" * stars` (ASCII asterisks), and rewrite embedded English quotes as bare text (drop the quotes, or use 「」). Gate with `python3 -c "import ast;ast.parse(open(p).read())"` via terminal BEFORE executing the builder. See `references/blog-triage-2026-11-17-patterns.md`.
+
+**⚠️ `search_files target='files'` on a STUB page silently returns 0 matches** (2026-11-17: `concepts/superintelligence.md`, 20 lines, title "Superintelligence", grep for "Superintelligence" in `concepts/` → 0 total_count). Never conclude "page absent" from that alone — pair with `find <dir> -iname "*keyword*"` and `grep -c "" <file>` for line count. Zero-line-count/stub is a take signal (★★★★★ new page), not an absence signal.
+
+**Coverage-gap shortcut for person-interview checkpoints** (dwarkesh.com / podcast transcripts): grep for the GUEST's name across `entities/ concepts/ events/ queries/` and grep the person's ORGANIZATION name too. Both zero hits while only incidental mentions exist elsewhere (e.g. Christiano appearing only as a 2016-paper coauthor citation, ARC only inside GPT system cards) = greenfield new concept page, even when adjacent concept pages exist. Full recipe + this session's 4 takes: `references/blog-triage-2026-11-17-patterns.md`.
 
 **archive_triage.py at ingest time**: Unlike newsletter/blog pipelines where archiving is part of the triage step (section 8), the dreaming-pipeline runs archiving at ingest time because the triage is done by a separate agent. After enrichment, run:
 ```bash
