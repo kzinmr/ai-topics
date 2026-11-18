@@ -21,7 +21,7 @@
 - [[entities/jan-leike]] — Jan Leike — Anthropic co-lead of agentic safety research; former OpenAI superalignment lead; warns AI research automation is 'the big thing coming in the next year'
 - [[entities/adam-mastroianni]] — Adam Mastroianni — Experimental psychologist and writer; author of Experimental History substack
 - [[entities/adam-rosenthal]] — Redirect: resolves to entities/dshr (David S. H. Rosenthal). No such person in the AI ecosystem; pipeline forename artifact.
-- [[entities/addy-osmani]] — Addy Osmani — Engineering leader at Google Chrome team
+- [[entities/addy-osmani]] — Addy Osmani — Engineering leader at Google Chrome team; agentic-coding X Article series; prominent claude.dev amplifier (verification playbook etc., Nov 2026)
 - [[entities/adept]] — Adept AI — AI agent startup building general-purpose agents
 - [[entities/aditya-bawankule]] — AI-native software engineer, Ex-Meta (Supernatural VR), founder of AIdea Hub, and technical blogger covering AI codin...
 - [[entities/agentcraft]] — AgentCraft
@@ -659,7 +659,7 @@
 - [[entities/onehappyfellow]] — Author of the "Simulacrum of Knowledge Work" essay. Head of The Institute for Type Safe Memetic Research. OCaml progr...
 - [[entities/open-athena]] — Open Athena — nonprofit accelerating academia with frontier AI capabilities; Delphi open scaling suite (300× extrapolation, AdamH); David Hall's "no posttraining data commons" thesis (Nov 2026)
 - [[entities/openai]] — OpenAI; July 2026 launches: GPT-5.6 GA (Sol/Terra/Luna), ChatGPT Work agent, Codex merged into ChatGPT desktop, ChatGPT Sites, Fidji Simo departure, GPT-5.6 now preferred model in Microsoft 365 Copilot; ChatGPT for Teachers expansion to 100+ K–12 orgs/30 states + 16-state National Data Privacy Agreement (Aug 26)
-- [[entities/openai-astra]] — OpenAI Astra; next major model family, solved 10 open math problems (Aug 2026), Gary Marcus critiques fallacy of composition; GPT-6.2 Astra/Sol point releases Nov 17 2026 ($8/$40 & $2/$10, cached $0.40/M)
+- [[entities/openai-astra]] — OpenAI Astra; next major model family, solved 10 open math problems (Aug 2026), Gary Marcus critiques fallacy of composition; GPT-6.2 Astra/Sol point releases Nov 17 2026 ($8/$40 & $2/$10, cached $0.40/M); Claude Fable 5.2 launch-offer context (1–3 Fable resets, Nov 9 2026)
 - [[entities/openai-codex]] — OpenAI Codex; ChatGPT Work architecture deep-dive (Aug 2026) + Multi-Agent V2 orchestration guide (Scout/Worker/Smart Worker roles, fork_turns context inheritance, skill-based coordination patterns) by Eric Provencher (July 24); non-technical founder case — William Imoh native Swift/Kotlin Mural app built with Codex, epic/user-story prompting, GPT-Live-1 $3-5 per 30-min voice session (How I AI, Nov 9 2026)
 - [[entities/openai-cua]] — OpenAI CUA (Computer-Using Agent)
 - [[entities/openai-deployment-company]] — OpenAI Deployment Company (DeployCo)
@@ -895,7 +895,7 @@
 - [[entities/tim-sherratt]] — Tim Sherratt (redirect → [[entities/tim-sh]])
 - [[entities/tobi-lutke]] — Tobi Lütke
 - [[entities/together-ai]] — Together AI; Together Post-Training launch (Oct 2026); Polymorphic Inference research agenda + Together Compiler/TKCC agentic continual compilation with claimed InferenceX SOTA (Nov 2026)
-- [[entities/tom-aarsen]] — Tom Aarsen
+- [[entities/tom-aarsen]] — Tom Aarsen — Sentence Transformers/NLTK maintainer @Hugging Face; amplified MinishLab **blink** static CPU embeddings (8M/64M, MIT, MTEB-eng 55.35, model2vec NumPy path, Nov 18 2026)
 - [[entities/tom-renner]] — Tom Renner
 - [[entities/tomasz-tunguz]] — Tomasz Tunguz
 - [[entities/tristan-hume]] — Tristan Hume — thume.ca researcher/blogger; his 2026-11-01 refreshed YouTube tier list (S5/A14/B12/C33/D92) became the curation corpus for Karpathy's TristanTube

@@ -202,6 +202,10 @@ The bigger cached-price cut ($1/M → $0.40/M) matters most for **long-running a
 
 **Coverage note**: a grep of the whole wiki before this update found no GPT-6.2 entity beyond a passing mention in [[entities/ethan-mollick]]; neither this page nor [[entities/gpt-6-1-sol]] previously mentioned the 6.2 line. This section closes that gap as a dated release entry.
 
+## Claude Fable 5.2 launch offers (November 9, 2026)
+
+Context for the $8/$40 price point above: Anthropic marked the Fable 5.2 launch with a time-limited usage promo, promoted on X by Claude Code's **Boris Cherny** on 2026-11-09 ("Pro users get one reset, and Max, Ultra, and Team Premium get up to three, depending on how long you've subscribed"). Per the official help-center article (`support.claude.com/en/articles/17506494`): plans/seats that include Fable get **1–3 "Fable resets"** (a one-time restore of Fable usage allowance, scaling with subscription tenure); usage-credit seats get **Fable models included free for one week plus one reset**. Offer tiers: Pro, Max, Ultra, Team Premium. Source: `raw/articles/2026-11-09_bcherny_claude-fable-5-2-launch-offers.md` · [tweet](https://x.com/bcherny/status/2119890820186976763).
+
 Source: [[raw/articles/simonwillison.net--2026-nov-17-gpt62-astra-and-sol--a1dbdf76.md]] (Simon Willison, 17 Nov 2026).
 
 ## Broader Context

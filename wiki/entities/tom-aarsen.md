@@ -3,7 +3,7 @@ title: Tom Aarsen
 type: entity
 handle: "@tomaarsen"
 created: 2026-04-10
-updated: 2026-11-07
+updated: 2026-11-18
 tags:
   - person
   - model
@@ -182,6 +182,29 @@ live dashboard. The release ships **one LoRA adapter per (base model × agent ha
 reward-hacking tool calls. Models: `LiquidAI/LFM2.5-24B-A2B`, `LiquidAI/LFM3-1.7B`, and `webAI-Official/TwIL-8B`
 as a never-agentically-trained experiment. See [[events/hf-harness-adapters-launch-2026]].
 Source: [tweet](https://x.com/tomaarsen/status/2118721388873998444) · [blog](https://huggingface.co/blog/harness-hub/harness-adapters).
+
+## MinishLab "blink" — small CPU-runnable embedding models (November 18, 2026)
+
+On 2026-11-18 Aarsen posted a five-tweet thread amplifying **blink**, a new family of small static
+(lexical) embedding models from **MinishLab** by Tom Lulens (`@tulkenss`) and Thomas van Dongen
+(`@thomas_v_dongen`) — "Small, accessible embedding models that you can run on CPU are always welcome."
+
+Mechanics he highlighted:
+
+- **No transformer forward pass**: the models look up token vectors, average them, and normalize — so inference is CPU-only and needs no deep-learning framework when loaded via **model2vec** (NumPy-only). Since blink normalizes its embeddings, a plain dot product gives cosine similarity.
+- **Sizes**: ~31 MB (blink-8M, 7.68M params) and ~256 MB (blink-multilingual-64M) of float32 weights, both **MIT licensed**, evaluated at 256d.
+- **Reported English quality**: 55.35 on MTEB(eng, v2) and 46.70 nDCG@10 on decontaminated BEIR; blink-8M leads the seven static models in that comparison.
+- **Cross-lingual retrieval**: blink-multilingual-64M searches 100+ languages with the same API — Aarsen's demo has an English query matching Dutch and Spanish password-reset instructions above an unrelated English sentence.
+- Loadable via `model2vec`, `model2vec-rs`, or **sentence-transformers** (the library Aarsen maintains) — blink ships in the [minishlab/blink HF collection](https://huggingface.co/collections/minishlab/blink).
+
+Context: static/lexical embeddings are the efficiency extreme of the embedding-model design space Aarsen
+occupies as Sentence Transformers maintainer — see [[entities/embeddings]] for the theoretical limits of
+single-vector retrieval, and his earlier sparse-embedding work under *X Activity Themes*.
+Source: [tweet thread](https://x.com/tomaarsen/status/2123061190209491152) ·
+[blink-8M](https://huggingface.co/minishlab/blink-8M) ·
+[blink-multilingual-64M](https://huggingface.co/minishlab/blink-multilingual-64M) ·
+[model2vec](https://github.com/MinishLab/model2vec).
+Full thread text: `raw/articles/2026-11-18_tomaarsen_minishlab-blink-static-embeddings.md`.
 
 ## X Activity Themes
 

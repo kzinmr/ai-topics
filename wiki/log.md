@@ -1,5 +1,22 @@
 # Wiki Log
 
+## [2026-11-18] x-accounts-scan | 9 new posts → 2 raws, 3 entity updates
+
+Scan of 10 tracked X accounts (cursor 62→73, budget 11/12, 1 error: `realmcore_` user_id unresolved). 9 substantive candidates, all ingested.
+
+**Raw archive (2):**
+- `raw/articles/2026-11-18_tomaarsen_minishlab-blink-static-embeddings.md` — full 5-tweet thread: MinishLab **blink** static/lexical embedding models (blink-8M 7.68M/~31MB, blink-multilingual-64M ~256MB, MIT, 256d; token-vector mean+normalize, no transformer forward pass; model2vec NumPy path; MTEB-eng 55.35 / BEIR nDCG@10 46.70; 100+ languages).
+- `raw/articles/2026-11-09_bcherny_claude-fable-5-2-launch-offers.md` — support.claude.com launch-offer capture (1–3 Fable resets by tenure; usage-credit seats 1 week free + 1 reset).
+
+**Entity updates (3):**
+- `entities/tom-aarsen.md` — new "MinishLab blink" section + updated date + index blurb fix (was bare "Tom Aarsen").
+- `entities/openai-astra.md` — Fable 5.2 launch-offer subsection under the GPT-6.2 release section (pricing context for the $8/$40 comparison).
+- `entities/addy-osmani.md` — claude.dev amplification note under X/Twitter Activity Pattern; index blurb expanded.
+
+**No action (4+1):** simonw Nov 17 posts (GPT-6.2 Astra/Sol first impressions, Datasette Lite rewrite) already ingested today by trending-topics — verified in `entities/openai-astra.md` §GPT-6.2 and `entities/simon-willison.md` Nov 17 notes. bcherny Fable-offer tweet folded into openai-astra rather than bloating boris-cherny (promo mechanics, not Cherny substance). addyosmani claude.dev reply = link-share only, logged as activity note. `dynomight.net--blink--a50a3855.md` in raw/ is an unrelated blog's "blink" post (checked).
+
+**Follow-up candidate:** MinishLab itself has no entity page (only mentioned inside tom-aarsen); a dedicated `entities/minishlab.md` is worth creating if the company resurfaces (docling/marker/model2vec lineage). Deferred — single-thread signal today.
+
 ## [2026-11-18] skeleton-enrich-daily | stub backlog: search/security/OSS cluster — 8 pages enriched
 
 > Snapshot note from the `skeleton-enrich-daily` cron run (2026-11-18 19:0x UTC).

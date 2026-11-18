@@ -2,7 +2,7 @@
 title: Addy Osmani
 type: entity
 created: 2026-04-10
-updated: 2026-11-04
+updated: 2026-11-18
 source: "x-account"
 tags:
   - person
@@ -225,6 +225,10 @@ Osmani uses X to:
 - Respond to **emerging trends** (agent swarms, AGENTS.md debate, multi-agent coordination)
 
 His posting style is **educational and systematic** — he builds frameworks, creates cheat sheets, and produces structured guides rather than hot takes.
+
+### claude.dev amplification (November 2026)
+
+Osmani is a prominent amplifier of **claude.dev** — "Articles, videos, and build logs from Anthropic's developers on building with Claude and Claude Code, including tips, tricks, and points of view" — the official Anthropic developer blog whose posts he has repeatedly distilled for his audience (e.g. the Claude Code team verification playbook, [[concepts/claude-code/verification-playbook]]). On 2026-11-17 he reposted the claude.dev root URL to a follower (@AayanShips) as a pointer to that resource ([tweet](https://x.com/addyosmani/status/2122729535703769416)), continuing a month in which several of his own X Articles appeared on or alongside claude.dev coverage.
 
 ## AI Engineer World's Fair 2026: Agency Ladder
 
