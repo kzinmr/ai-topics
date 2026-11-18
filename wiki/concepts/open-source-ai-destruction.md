@@ -2,7 +2,7 @@
 title: "Open Source AI Destruction"
 type: concept
 created: 2026-04-10
-updated: 2026-07-13
+updated: 2026-11-18
 sources:
   - raw/articles/nesbitt.io--2026-05-27-chaoss-metrics-in-2026-html--c12cd929.md
   - "https://www.jeffgeerling.com/blog/2026/ai-is-destroying-open-source/"
@@ -158,6 +158,10 @@ Source: [[entities/nathan-lambert|Nathan Lambert]], "6 months to live for open m
 These two concepts are linked by a shared thread: **AI is fundamentally changing the economics and ethics of software creation**. Where [[concepts/gnu-ai-reimplementations]] argues that AI-driven reimplementation is a continuation of a legal and historical tradition (just accelerated), [[concepts/open-source-ai-destruction]] documents the externalities of that acceleration on the human maintainers who keep the ecosystem running.
 
 antirez sees AI reimplementations as democratizing and potentially rejuvenating open source. Geerling sees AI agents as parasitic on the open source infrastructure. Both perspectives are valid and represent different vantage points on the same transformation.
+
+## ONNX Runtime disappearance (2026-11-18 update)
+
+The same-week vanishing of microsoft/onnxruntime from GitHub (350 HN points, no explanation, mirrors and Intel fork as lifelines) extends this page's thesis from *economic* destruction of open source to *availability* destruction: even fully healthy, corporate-maintained flagship projects can 404 overnight. See [[concepts/open-source-project-sudden-disappearance]] for the incident record and the missing "temporary takedown notice" norm.
 
 ## Related Concepts
 

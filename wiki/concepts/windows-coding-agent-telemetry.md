@@ -1,7 +1,7 @@
 ---
 title: "Windows 11 Coding-Agent Telemetry (MissionControlAggregator)"
 created: 2026-11-17
-updated: 2026-11-17
+updated: 2026-11-18
 type: concept
 tags:
   - privacy
@@ -44,6 +44,10 @@ Usage is recorded in a diagnostic **ETW** (Event Tracing for Windows) report tha
 
 - Findings come from one reverse engineer's static+dynamic analysis, published on a personal blog and shared to X before the long-form post; HN consensus treated the technical claims as credible, but there is no second independent write-up yet.
 - Microsoft's exact downstream use of the ETW field(s) — retention, joining to other telemetry, competitive use — is not public; the article documents collection and upload, not exploitation.
+
+## See also (same-week infra-trust cluster, 2026-11-18)
+
+The 2026-11-16/17 window formed a coherent software-trust cluster: Windows telemetry of coding agents, Microsoft ONNX Runtime vanishing from GitHub ([[concepts/open-source-project-sudden-disappearance]]), and the Optimizely A/B-test malware injection into top websites ([[concepts/systemic-software-breakdown]]). Read together, they shift the discussion from individual vendor misbehavior to availability/integrity of trusted-infrastructure chokepoints.
 
 ## Related
 

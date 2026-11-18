@@ -1,7 +1,7 @@
 ---
 title: "Xinming Tu"
 created: 2026-05-29
-updated: 2026-05-29
+updated: 2026-11-18
 type: entity
 tags:
   - entity
@@ -48,6 +48,10 @@ See [[concepts/structured-test-time-scaling]] for the full framework.
 ### Systems Analysis
 
 The framework maps 13+ inference patterns (from linear CoT to Aletheia's strict decoupled verification) onto the three mechanisms, revealing that most existing approaches leave at least one mechanism unengaged. The framework predicts convergence toward the full three-layer architecture.
+
+## Claude protein-sequence training audit (2026-11-17)
+
+Tu (with Leo Tianlai Chen) showed that only the latest Claude models (Fable 5.2, Opus 5.5) predict next amino acids on little-studied bacterial/archaeal proteins (668 proteins, 167 unknown-function Pfam families), while shuffled controls collapse — behavioral evidence of large-scale protein-sequence training data. Opus 5.5 is level with ProtGPT3-10B; Fable 5.2 beats every open protein LM tested. Nov-18 update with post-cutoff proteins (first public Aug 2026, no relative at 50% identity) still predicted; GPT-6.2 Sol/Astra show no sign of it. 72 HN points (item 50541619). Raw: raw/articles/2026-11-18_xinmingtu_claude-trained-on-protein-sequences.md
 
 ## Related People
 

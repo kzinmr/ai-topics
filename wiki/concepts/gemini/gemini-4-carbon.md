@@ -2,7 +2,7 @@
 title: "Gemini 4 Carbon"
 type: concept
 created: 2026-10-29
-updated: 2026-10-31
+updated: 2026-11-18
 tags:
   - model
   - frontier-models
@@ -87,6 +87,10 @@ Two things are genuinely new rather than incremental:
 ### Practitioner context (Aakash Gupta, Oct 31, 2026)
 
 Aakash Gupta's weekly review ([[raw/newsletters/2026-10-31-claude-duet.md]]) accepts the AA Intelligence Index frontier claim but adds a practitioner caveat: "the harness around Gemini models is still way behind Anthropic." He also offers a motive reading for the release cadence — two wide launches in two weeks (Argon Oct 13, Carbon Oct 28) encouraged by Alphabet's Q3 results, where **search revenue grew 12%, down from 17% the prior quarter, and the stock fell ~8%** — with Google "displaced from the center of the internet" and needing to make a play back. (Single-analyst speculation on motive; the Q3 search-revenue figures are reported numbers. Cross-ref [[concepts/ai-bubble-economics]] for the search-traffic collapse angle.)
+
+## Slow-velocity reports (2026-11-18)
+
+Kernel.dev benchmarking report (126 HN points, item 50541790): on private evals Carbon spent close to an hour on tasks that take Opus and Astra minutes; at its post-introductory list price a $200 plan is heavily subsidized relative to peers (subscription subsidization: Opus 40x, Astra 13x, Carbon 3x, Hydrogen 17x). Corroborates user reports that the Gemini 4 line optimizes for benchmark performance over wall-clock usability; HN thread generalizes the complaint to all labs ("every LLM company is just making their latest model best at coding benchmarks"). Raw: raw/articles/2026-11-18_kerneldev_gemini-4-carbon-slow.md
 
 ## Related
 

@@ -979,7 +979,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2370 pages)
+## Concepts (2372 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/agent-credential-leasing]] — Agent Credential Leasing (lend); remote coding agents borrow time-limited, operator-approved access to credential-holding tools via socket forwarding — secrets never resident on the agent VM (HN 116p, Nov 2026)
@@ -990,6 +990,8 @@
 - [[concepts/ai-engineering-dekilling]] — AI engineering de-skilling — the erosion of code comprehension and debugging skill from 100% AI-mandate orgs and 'brain fry': r/ClaudeCode one-year retrospective (HN 129pts), Kuhne's manual-coding regimen (HN 306pts), Goldman's engineer-only Claude Code restriction; distinct from cognitive-deskilling (knowledge work) and agent model drift (infra)
 - [[concepts/agent-selected-hardware]] — Agent-Selected Hardware (Geoff Stearns, HN 75): when agents install device firmware, hackability/open firmware become competitive product features; M-Vave FM-1 GPLv3 case; recoverable installs as agent-safety infra
 - [[concepts/ai-generated-code-open-source]] — AI-generated code should be open source — Jankiewicz's license-laundering + uncopyrightability argument (Monkey Selfie / CC0), 1174p HN thread and its 'licenses need copyright' / 'OSS = human-validated code' rebuttals (Nov 2026)
+- [[concepts/anthropic-metr-regulatory-capture]] — Anthropic-METR regulatory-capture allegations (kevinnbass, HN 140p): evaluator funding entanglement debate, contested
+- [[concepts/open-source-project-sudden-disappearance]] — ONNX Runtime vanishing from GitHub (350p): no-notice repo takedown as supply-chain availability failure; mirror/malware hazard
 - [[concepts/claude-code/verification-playbook]] — Claude Code Verification Playbook (Addy Osmani, Nov 16 2026): ~90% agent-written code; E2E/property/differential tests, verify skill, 39-item diff-triggered reliability checklist, changes-can't-modify-checks, observe/enforce commit gates, review-the-reviewers evals (HN 282p)
 - [[concepts/cerebras-disaggregated-inference]] — Cerebras Disaggregated Inference (Nov 17 2026) — AMD GPUs for prefill + Cerebras CS-3 for decode in production; 5× tokens/megawatt vendor-claimed; KV Portal over RDMA, vLLM/SGLang prefill engine, decode-only SDK; AWS/Fireworks/Gimlet/General Compute early access (HN 85p)
 - [[concepts/decision-model-playbook]] — Decision Model Playbook (PostHog, Nov 9 2026) — production patterns for Jev-style decision models: gate LLM calls (98.7% skip; threshold by error cost), model routing, face-value checks after embedding pre-filter, replace overqualified LLMs; Jeeves hybrid reason-then-decide (HN 160p)

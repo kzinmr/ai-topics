@@ -1,5 +1,20 @@
 # Wiki Log
 
+## [2026-11-18] trending-topics | 2 new concepts, 4 enrichments, 6 raws
+
+**Sources:** HN Algolia front-page + keyword scan (12:00 UTC), 9 primaries fetched (8/9 OK; github.com/microsoft/onnxruntime 404 = the story itself), 10 comment trees mined.
+
+- NEW `concepts/anthropic-metr-regulatory-capture.md` — kevinnbass thread: Anthropic-METR regulatory capture allegations (HN 140p, item 50530450). confidence: low, single-source.
+- NEW `concepts/open-source-project-sudden-disappearance.md` — Microsoft ONNX Runtime repo vanished from GitHub without notice (HN 350p, item 50539610); Phrack 73 ORT parser-flaw and agent-framework PyPI compromise as candidate explanations; Intel fork + SourceForge mirrors; malware-on-mirrors hazard.
+- APPENDED `concepts/windows-coding-agent-telemetry.md` — same-week infra-trust cluster cross-ref (ONNX + Optimizely).
+- APPENDED `concepts/open-source-ai-destruction.md` — availability-destruction extension via ONNX incident.
+- APPENDED `concepts/ai-search-visibility.md` — RevScope/DataForSEO randomized experiment: AI Overviews cut outbound clicks 40%, coverage 5.9%->61.4% (HN 459p); Bouliane All About Berlin -75% as publisher case (HN 429p).
+- APPENDED `entities/xinming-tu.md` — Claude protein-sequence training audit (Fable 5.2 / Opus 5.5 next-amino-acid on little-studied proteins; post-cutoff update Nov 18; HN 72p).
+- APPENDED `concepts/gemini/gemini-4-carbon.md` — kernel.dev slow-velocity + subsidization report (HN 126p).
+- 6 raws to `raw/articles/2026-11-18_*` (revscope, bouliane, calif Java4Shell, runta FrontierHarness, xinmingtu protein, kerneldev gemini4) with sha256 + HN highlight appendices.
+- Java4Shell (CVE-2026-114938, OpenJDK Base64 AVX-512 memory corruption, CVSS 9.2, pre-auth RCE in Keycloak/Jira/Jenkins; -XX:UseAVX=2 mitigation) and FrontierHarness v1.1 (22 harnesses x 5 models, 27,280 runs, 83B tokens, model-dependent best harness) raw-archived for cluster pages; report: inbox/rss-scans/trending-topics-2026-11-18.md.
+- SCHEMA minted: java, metr, runta, protein-models, harness-evaluation, openjdk, ai-overviews, publisher-economics, safety-washing, revolving-door, ai-regulation, vendor-benchmark, model-telemetry, avx-512, memory-corruption.
+
 _Log of all wiki changes. Newest entries at top._
 
 ## [2026-11-18] active-crawl | 3 new concepts, 2 enrichments

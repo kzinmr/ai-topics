@@ -1,7 +1,7 @@
 ---
 title: "AI Search Visibility (Answer-Engine Optimization)"
 created: 2026-09-03
-updated: 2026-09-03
+updated: 2026-11-18
 type: concept
 tags: [ai-adoption, ai-slop, search, trust, disinformation, ai-transparency]
 aliases: ["AEO", "Answer-Engine Optimization", "AI Search Optimization", "GEO"]
@@ -58,6 +58,10 @@ Trelly positions the resulting discipline as **AEO (Answer-Engine Optimization)*
 - [[entities/perplexity]] — one of the audited answer engines
 - [[concepts/agentic-browsing]] — agents that consume these same sources downstream
 - [[concepts/ai-slop]] — the low-quality-content problem this audit surfaces
+
+## The demand side: AI Overviews cut clicks 40% (2026-11-18)
+
+RevScope's DataForSEO-based analysis (Nov 9, 459 HN points as "Google's AI answers reducing search traffic by 40%", item 50540178) gives the demand-side complement to this page's citation-manufacturing focus. In a randomized experiment hiding AI Overviews from some US desktop users, an Overview cuts clicks to outside websites by ~40%. Overview coverage of tracked US keywords rose 5.93% (Sep 2024) -> 61.43% (Aug 2026); featured snippets collapsed 8.96% -> 0.44%. GEO shows no evidence of compensating the loss; AI assistants sent sites just 0.3% of their traffic (March). Author disclaimer in-thread: the article's author (slashdev) submitted and defended it. Independent check: Pew's 900-adult panel matched DataForSEO within ~3 points. Publisher first-person case: Nicolas Bouliane's All About Berlin lost ~75% of traffic (429 HN points).
 
 ## Sources
 
