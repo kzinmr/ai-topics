@@ -892,6 +892,7 @@
     "https://krebsonsecurity.com/2026/08/canadian-man-pleads-guilty-in-snowflake-extortions/",
     "https://krebsonsecurity.com/2026/08/microsoft-plugs-nearly-400-security-holes/",
     "https://krebsonsecurity.com/2026/08/whos-tracking-you-use-this-new-service-to-find-out/",
+    "https://krebsonsecurity.com/2026/11/attackers-used-optimizely-to-a-b-test-malware-on-top-websites/",
     "https://krebsonsecurity.com/2026/11/microsoft-fixes-nearly-1100-security-vulnerabilities/",
     "https://krebsonsecurity.com/2026/11/want-to-rent-an-internet-address-at-the-white-house/",
     "https://krebsonsecurity.com/2026/11/who-runs-the-ransomware-group-qilin/",
@@ -1522,13 +1523,16 @@
     "https://openai.com/index/how-agents-are-transforming-work/",
     "https://openai.com/index/hugging-face-model-evaluation-security-incident/",
     "https://openai.com/index/introducing-ai-futures",
+    "https://openai.com/index/introducing-chatgpt-for-sales",
     "https://openai.com/index/introducing-chatgpt-wallet/",
+    "https://openai.com/index/introducing-gpt-6-2-astra-sol",
     "https://openai.com/index/introducing-gpt-live/",
     "https://openai.com/index/introducing-gpt-oss/",
     "https://openai.com/index/introducing-life-sci-bench/",
     "https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind",
     "https://openai.com/index/introducing-openai-partner-network",
     "https://openai.com/index/introducing-openai-presence/",
+    "https://openai.com/index/le-groupe-figaro-and-openai-announce-partnership",
     "https://openai.com/index/mapping-ai-jobs-transition-eu",
     "https://openai.com/index/merge-builds-with-openai",
     "https://openai.com/index/model-ml",
@@ -1637,6 +1641,7 @@
     "https://pluralistic.net/2026/08/19/banaility/",
     "https://pluralistic.net/2026/11/04/genius-scan-is-neither/",
     "https://pluralistic.net/2026/11/12/starvation-wages/",
+    "https://pluralistic.net/2026/11/18/malice-v-incompetence/",
     "https://prefeitura.rio/rio-3.5-open-397b/",
     "https://prismml.com/news/bonsai-27b",
     "https://ptrchm.com/posts/nothing-works-and-everyone-is-euphoric/",
@@ -3264,5 +3269,5 @@
     "substack.com/ui-wrapper (Link 8)",
     "substack.com/ui-wrapper (Link 9)"
   ],
-  "updated": "2026-11-17T18:16:43.964080+00:00"
+  "updated": "2026-11-18T10:27:09.389793+00:00"
 }
