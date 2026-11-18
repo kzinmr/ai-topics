@@ -87,6 +87,18 @@ The approach Microsoft takes with its first-party products serves as a **templat
 
 This extends frontier AI diffusion beyond Microsoft's products into the broader enterprise ecosystem.
 
+## MAI Code 2 & Code 2 Flash (November 17, 2026)
+
+Two new coding models aimed at **everyday enterprise coding tasks at scalable prices**, explicitly *not* tuned for fundamental science or very long-horizon agentic work. Launched in GitHub Copilot; Code 2 Flash in limited-access preview in Microsoft Foundry, with OpenRouter/Vercel/Hermes/OpenCode/Kilo promised soon ([[entities/microsoft]]'s first broad third-party distribution for MAI).
+
+- **MAI Code 2** — frontier price-performance for common enterprise tasks: production-ization, deep debugging, multi-file implementation, repo-wide reasoning, UI. Averaged over DeepSWE 1.1, TerminalBench 2.1, SWE-Atlas and FrontierCode v1.1 (run on MSBench with GitHub Copilot CLI, max reasoning effort): **98% of GPT-6.1 Sol at 40% of the cost; 96% of Claude Opus 5.5 at 5% of the cost**. Blind frontend evals (258 annotators): preferred over GPT-6 Sol 64% of the time.
+- **MAI Code 2 Flash** — high-volume routine work (explanations, targeted edits, fixes): comparable to GPT-6 Luna and Claude Haiku 5.5 at 65% / 20% of the cost across three day-to-day coding benchmarks.
+- **MAI Work Flash** — a Code-2-Flash-derived single model now serving M365 + Fabric IQ: on par with GPT-6 Luna on Excel/PowerPoint internal benchmarks, ~GPT-6.1-Sol quality on Word with ~42% fewer input tokens, beats GPT-6 Luna on Teams instruction-following/tool-calling with up to 28% fewer tokens.
+- Also announced: **MAI Cyber 2 Flash** ("leading security, lower cost") as part of a "seven new world-class models at scalable price-performance" line.
+
+All comparisons are Microsoft-internal (MSBench; Artificial Analysis for FrontierCode; costs at a 50% promotional price) — vendor-reported. Strategically, this is the Frontier Diffusion thesis in action: cheaper task-specific models replacing OpenAI-dependent frontier calls inside Microsoft's own harnesses (see [[concepts/enterprise-rle]]).
+
 ## Sources
 1. [MAI-Thinking-1: Building a Hill-Climbing Machine -- Microsoft AI Technical Report](https://microsoft.ai/wp-content/uploads/2026/06/main_20260602_2.pdf)
 2. [Frontier Diffusion & Control -- Mustafa Suleyman, Microsoft AI](https://x.com/i/article/2080328073724260352) (July 23, 2026)
+3. [MAI Code 2 and Code 2 Flash: Everyday coding at scalable prices](https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash/) (Nov 17, 2026; raw: raw/articles/2026-11-17_microsoft-ai_mai-code-2.md)

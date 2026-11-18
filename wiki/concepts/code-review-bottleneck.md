@@ -1,12 +1,13 @@
 ---
 title: "Code Review Bottleneck — Why More AI Code Has Not Meant More Software"
 created: 2026-10-16
-updated: 2026-10-19
+updated: 2026-11-18
 type: concept
 tags: [developer-tooling, code-quality, ai-industry, ai-economics, coding-agents]
 aliases: [AI code review bottleneck, review bottleneck, human review bottleneck]
 sources:
   - raw/articles/2026-10-16_active-crawl-on-device-moe-and-review-bottleneck.md
+  - raw/articles/2026-11-17_complexdiscovery_harvard-code-review-bottleneck.md
 confidence: medium
 related:
   - "[[concepts/ai-coding-effectiveness-debate]]"
@@ -49,6 +50,34 @@ The gap between "more code" and "no more software" is explained by the review ph
 the code-review process **significantly lengthens**, PRs are **more likely to require
 revisions**, and reviewers **leave more comments**. Production capacity is capped at
 the human review step, not the code-writing step.
+
+### Methodology detail (ComplexDiscovery reconstruction, Nov 17 2026, HN 193p)
+
+A detailed eDiscovery-sector reconstruction of the paper (Fiona Chen & James
+Stratton, Harvard Ph.D. candidates; working paper dated Aug 4 2026, Chen's
+job-market paper — **no evidence of peer review**) adds precision and caveats:
+
+- Exact sample: **725,938 workers at 718 firms** (Jellyfish analytics joined to
+  Revelio Labs LinkedIn records), Jan 2021–Mar 2026; 68.3M Jira issues, 200.9M
+  commits, 49.1M PRs, 21.3M calendar events (calendar from only 213 firms).
+- Headline deltas: **LOC +1,494/worker-month** on a 5,017 baseline (~30%),
+  commits +20%, PRs +23%; **resolved Jira issues moved 0.12 on a 3.67 baseline
+  (SE 0.17) — statistically zero**, with the 95% CI ruling out >~12% growth.
+  Getting code through review took **49% longer**.
+- Design: staggered difference-in-differences on adoption timing driven by
+  procurement (legal/security approvals, pilots: one day to 6–12 months across
+  interviewees); larger firms adopted earlier (controlled). The authors argue
+  residual bias would favor AI, making the flat-output result generous to AI.
+- Robustness: issue-size labels (GPT-4o on 0.5% sample + embedding propagation)
+  show no shift to larger tasks; PRs didn't grow either.
+
+## Response: verification as the unlock
+
+If review is the constraint, the counter-strategy is to make agent output
+machine-checkable — see [[concepts/claude-code/verification-playbook]] (Claude
+Code team, Nov 16 2026): E2E/property/differential tests, verify skills,
+commit-level verification stamps, and "review the reviewers" evals, with humans
+pulled in only after three failed fix rounds.
 
 ## Why it matters
 

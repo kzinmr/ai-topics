@@ -2,6 +2,18 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-11-18] active-crawl | 3 new concepts, 2 enrichments
+
+**Sources:** HN Algolia 5-day scan (18 queries, 22 stories ≥20pts), deduped against concepts/entities/log.
+
+- NEW `concepts/cerebras-disaggregated-inference.md` — Cerebras prefill(GPU)/decode(CS-3) disaggregation, 5× tokens/MW vendor-claimed, KV Portal/RDMA, partner SDKs (Nov 17, HN 85p). Raw: `raw/articles/2026-11-17_cerebras_disaggregated-inference.md`.
+- NEW `concepts/decision-model-playbook.md` — PostHog production playbook for Jev-style decision models: gating, routing, face-value checks, overqualified-LLM replacement; Jeeves hybrid (Nov 9, HN 160p). Raw: `raw/articles/2026-11-09_posthog_not-everything-needs-an-llm.md`.
+- NEW `concepts/claude-code/verification-playbook.md` — Claude Code team verification methodology (Addy Osmani, Nov 16, HN 282p); registered in `concepts/claude-code/_index.md`. Raw: `raw/articles/2026-11-16_claude-dev_claude-code-team-verification.md`.
+- ENRICHED `concepts/code-review-bottleneck.md` — ComplexDiscovery reconstruction of Chen–Stratton paper: exact stats (725,938 workers / 718 firms, +1,494 LOC vs flat resolved issues, review +49%, DiD caveats, unrefereed); added verification-playbook cross-ref. Raw: `raw/articles/2026-11-17_complexdiscovery_harvard-code-review-bottleneck.md`.
+- ENRICHED `entities/microsoft-ai-team.md` — MAI Code 2 / Code 2 Flash / Work Flash / Cyber 2 Flash (Nov 17, HN 367p); vendor-internal MSBench numbers flagged. Raw: `raw/articles/2026-11-17_microsoft-ai_mai-code-2.md`.
+- Killed as covered: GPT-6.2 Astra/Sol (openai-astra §Nov 17), Gödel notebooks (raws exist), Claude Mythos AMD onboarding (tomshardware raw exists), Gemini 4 Carbon (hot-topics), Zigzag browser (death-of-browser cluster).
+- index.md: 3 concept entries inserted, Concepts count 2367→2370.
+
 ## [2026-11-18] blog-wiki-ingest | run 20261118T100050Z | 6 takes, 5 references (from 20 candidates)
 
 **Source:** blog-triage checkpoint `cron/data/blog_ingest/triage_latest.json`.

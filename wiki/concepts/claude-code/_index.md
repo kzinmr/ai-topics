@@ -39,6 +39,7 @@ See also: [[entities/claude-code]] (entity page), [[concepts/claude|Claude]] (mo
 - [[concepts/claude-code/claude-code-goal]] — /goal command and delegation
 - [[concepts/claude-code/claude-code-artifacts]] — Artifacts feature (shareable HTML pages)
 - [[concepts/claude-code/claude-code-sandboxing]] — Sandboxing and isolation
+- [[concepts/claude-code/verification-playbook]] — Verification playbook (E2E/property/differential tests, verify skill, commit gates, review-the-reviewers; Addy Osmani Nov 16 2026)
 
 ## Known Issues
 
