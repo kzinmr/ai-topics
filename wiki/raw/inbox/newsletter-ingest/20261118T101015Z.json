@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "run_id": "20261118T101015Z",
+  "triaged_at": "2026-11-18T10:12:00+00:00",
+  "checkpoint_path": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "processed_count": 4,
+  "note": "All 4 digests contain only Substack/Beehiiv wrapper URLs (redirect/app-link) with generic 'Link N' titles. Article-level titles and content are NOT in the raw files, so classification is based on newsletter subject + publication signal. Downstream wiki-ingest should scrape the open.substack.com canonical post URLs to recover real content before creating pages.",
+  "classifications": [
+    {
+      "message_id": "<20261117232057.3.f77dee5d5c272a35@mg2.substack.com>",
+      "subject": "Running the full server-side Datasette Python app in the browser with service workers and Pyodide",
+      "source_label": "uid=923",
+      "publication": "simonw (Simon Willison)",
+      "canonical_url": "https://open.substack.com/pub/simonw/p/running-the-full-server-side-datasette",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-17-running-the-full-server-side-datasette-python-app-in-the-browser-with-service-wo.md",
+      "importance": "high",
+      "relevant": true,
+      "topics": ["web-ai", "local-execution", "datasette", "pyodide", "developer-tooling", "open-source-ai"],
+      "rationale": "Simon Willison is a core tracked author. Runs a full server-side Python app in-browser via service workers + Pyodide — directly relevant to local/offline AI tooling and the Datasette ecosystem (LLM-adjacent). Worth a wiki update to the simon-willison entity and possibly a pyodide/datasette concept page.",
+      "suggested_action": "scrape canonical post, update entities/simon-willison.md; consider concepts/pyodide or concepts/datasette"
+    },
+    {
+      "message_id": "<20261117.190718.315d0d50@mta15>",
+      "subject": "Plot twist: US says NVIDIA cut off the suspect chip buyer last year",
+      "source_label": "uid=922",
+      "publication": "beehiiv (likely The Information / AI chip newsletter)",
+      "canonical_url": null,
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-17-plot-twist-us-says-nvidia-cut-off-the-suspect-chip-buyer-last-year.md",
+      "importance": "low",
+      "relevant": true,
+      "topics": ["ai-chips", "nvidia", "export-controls", "ai-safety-geopolitics"],
+      "rationale": "NVIDIA / US export-control story touches AI infrastructure & hardware supply-chain geopolitics, which the wiki covers at a trend level. Borderline: not a core LLM/Agent topic, low durable value. All URLs are opaque beehiiv redirects so content is unknown until scraped.",
+      "suggested_action": "optional; only ingest if a concept page on AI export controls / chip supply chain is desired"
+    },
+    {
+      "message_id": "<20261117141418.3.a92cb2aaee1f39eb@mg-d0.substack.com>",
+      "subject": "Productiv-icky",
+      "source_label": "uid=920",
+      "publication": "bensbites (Ben's Bites)",
+      "canonical_url": "https://open.substack.com/pub/bensbites/p/productiv-icky",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-17-productiv-icky.md",
+      "importance": "low",
+      "relevant": true,
+      "topics": ["ai-products", "ai-agents", "startup-news"],
+      "rationale": "Ben's Bites is an AI product roundup; occasionally surfaces notable agent/product launches. Subject 'Productiv-icky' gives no durable signal and the 20 links are all wrapper redirects. Low priority — only worth a pass if a specific tool/agent launch stands out after scraping.",
+      "suggested_action": "skip unless scraping reveals a notable agent/product launch"
+    },
+    {
+      "message_id": "<20261117180203.3.9e6647e271d0e2e6@mg2.substack.com>",
+      "subject": "35 premium tools free for a year—now with OpenRouter, LangChain, Sentry, TextExpander, and Ploy",
+      "source_label": "uid=921",
+      "publication": "lenny (Lenny's Newsletter)",
+      "canonical_url": "https://open.substack.com/pub/lenny/p/35-premium-tools-free-for-a-yearnow",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-17-35-premium-tools-free-for-a-year-now-with-openrouter-langchain-sentry-textexpand.md",
+      "importance": "low",
+      "relevant": true,
+      "topics": ["ai-tools", "openrouter", "langchain", "developer-tooling", "promotions"],
+      "rationale": "Promotional list of 35 free tools; mentions OpenRouter and LangChain (both wiki-relevant entities) but the post itself is a marketing/deals roundup with little durable knowledge. Do not create a page from it; only useful as a passing mention if updating entities/openrouter or entities/langchain with ecosystem context.",
+      "suggested_action": "skip page creation; optional cross-reference note for openrouter/langchain entities"
+    }
+  ],
+  "summary": {
+    "critical": 0,
+    "high": 1,
+    "low": 3,
+    "recommended_for_ingest": 1,
+    "primary_target": "simonw Datasette-in-browser (Pyodide) post"
+  }
+}
