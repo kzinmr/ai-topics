@@ -1,5 +1,31 @@
 # Wiki Log
 
+## [2026-11-18] skeleton-enrich-daily | stub backlog: search/security/OSS cluster — 8 pages enriched
+
+> Snapshot note from the `skeleton-enrich-daily` cron run (2026-11-18 19:0x UTC).
+> `status: skeleton` backlog remains **empty** (streak since 2026-10-17). As in recent runs,
+> productive action went to the `status: stub` backlog — this time the 8 candidates queued by the
+> 2026-11-15 plan (`elasticsearch`, `threat-modeling`, `compiler-explorer`, `searcharray`,
+> `cohereio`, `open-source-sustainability`, `mastodon`, `fuzzing`). All eight last touched
+> 2026-08-15 (stub-era bulk commit) — git-history richness check confirmed no richer versions.
+
+**Actions (8 enriched, 0 new pages, 0 redirects):**
+
+| Page | Before → After | Highlights |
+|------|----------------|-----------|
+| `concepts/elasticsearch.md` | 288 B → ~6.6 KB | Lucene/BM25/shard architecture, timeline (2010 IPO-era → 8.x hybrid kNN), SSPL/OpenSearch fork as licensing case study, comparison table vs OpenSearch/Typesense/vector DBs, Doug Turnbull ltr4es connection |
+| `concepts/threat-modeling.md` | 296 B → ~5.8 KB | STRIDE/PASTA/attack trees table, trust-boundary thesis, agent-era re-derivation (prompt injection as boundary violation, confused deputy, kill chains → existing exfil/red-team pages), tooling + criticism |
+| `concepts/compiler-explorer.md` | 304 B → ~5.1 KB | Godbolt architecture ASCII diagram, addressable-version matrix, AI-agent links: miscompile hunting (carlini-c-compiler-agents, ai-agent-compiler-bug-finding) + assembly-as-verification-signal pattern |
+| `concepts/searcharray.md` | 280 B → ~4.4 KB | Grounded in Doug Turnbull entity pages: pandas ExtensionArray + roaring-bitmap inverted index, Cheat at Search curriculum use, BM25 autoresearch baseline, retrieval-landscape table |
+| `concepts/cohereio.md` | 271 B → ~2.3 KB | Disambiguation from Cohere (cohere.com): YC support-automation startup, Rahul Sengottuvelu co-founder/CTO, $3.5M seed, Jsonformer, Ramp acquisition June 2023 (sourced from `entities/rahul`) |
+| `concepts/open-source-sustainability.md` | 340 B → ~5.9 KB | Tragedy-of-the-maintenance/commons, funding-mechanism scorecard, AI-era stress test (slop PRs, agent-rewritten deps, training-data fights), links to stewardship/disappearance/AI-OSS pages |
+| `concepts/mastodon.md` | 268 B → ~6.4 KB | ActivityPub push-federation ASCII diagram, migration-wave timeline, wiki relevance (tracked-author Mastodon handles, HF instance, ActivityPub-as-agent-protocol precedent), moderation trilemma |
+| `concepts/fuzzing.md` | 264 B → ~5.8 KB | Fuzzer taxonomy table, coverage-guided explainer (AFL→AFL++/libFuzzer), OSS-Fuzz industrialization, sanitizers; LLM-era: agent-written harnesses, differential compiler fuzzing, jailbreak search as fuzzing |
+
+**Verification:** all wikilinks machine-checked (`os.path.exists` sweep) — dead targets replaced with real pages (ai-agent-security, ai-memory-systems, covert-exfiltration-via-web-fetch, security-and-governance/agent-skill-supply-chain-attacks, ai-red-teaming-careers, formal-methods, privacy-engineering, anthropic-copyright-settlement, etc.). All tags pre-registered in SCHEMA.md taxonomy; no SCHEMA edits needed. index.md: 8 description updates (stub placeholders → real summaries), 0 new entries, page count unchanged.
+
+**Remaining backlog:** ~399 `status: stub` pages. Next candidates: entity-shaped stubs misplaced in concepts/ (`alex-hall`, `bozavlado`, `brainchop`, `hack-club`, `colin`, `jay-v`), plus `state-of-open-source-ai-2026` siblings and long-tail devtools stubs.
+
 ## [2026-11-18] trending-topics | 2 new concepts, 4 enrichments, 6 raws
 
 **Sources:** HN Algolia front-page + keyword scan (12:00 UTC), 9 primaries fetched (8/9 OK; github.com/microsoft/onnxruntime 404 = the story itself), 10 comment trees mined.

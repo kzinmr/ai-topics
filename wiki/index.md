@@ -1,7 +1,7 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Last updated: 2026-11-17
+> Last updated: 2026-11-18
 
 ## Entities (972 pages)
 
@@ -1771,7 +1771,7 @@
 - [[concepts/cognitive-load-theory]] — Cognitive Load Theory — Core Concepts
 - [[concepts/cognitive-load-tool-support]] — Cognitive Load Tool Support — Agentic Engineering & Tooling
 - [[concepts/cognitive-surrender]] — Cognitive Surrender
-- [[concepts/cohereio]] — Cohere.io
+- [[concepts/cohereio]] — Cohere.io (YC startup) — AI customer-support automation startup (2020–2023), co-founded by Rahul Sengottuvelu; $3.5M seed, Jsonformer lineage, acquired by Ramp June 2023; disambiguated from Cohere (cohere.com)
 - [[concepts/cohort-based-learning]] — cohort-based-learning
 - [[concepts/colbert]] — ColBERT (Late Interaction Retrieval)
 - [[concepts/colin]] — colin
@@ -1783,7 +1783,7 @@
 - [[concepts/company-vc-foundation-capital-context-graph-investor]] — Company Vc Foundation Capital Context Graph Investor
 - [[concepts/compiler-construction]] — Compiler Construction
 - [[concepts/compiler-design]] — Compiler Design
-- [[concepts/compiler-explorer]] — compiler-explorer
+- [[concepts/compiler-explorer]] — Compiler Explorer (Godbolt) — side-by-side source/assembly web tool by Matt Godbolt; addressable compiler-version matrix, permalinks as reproducible evidence; test bench for LLM compiler-bug hunting and agent code-verification
 - [[concepts/compound-engineering-every]] — Compound Engineering (Every)
 - [[concepts/compound-engineering-loop]] — Compound Engineering Loop
 - [[concepts/comprehensive-ai-services]] — Comprehensive AI Services (CAIS)
@@ -1955,7 +1955,7 @@
 - [[concepts/effective-harnesses-for-long-running-agents]] — Effective Harnesses for Long-Running Agents
 - [[concepts/elastic-ep]] — Elastic EP (Expert Parallelism)
 - [[concepts/elastic-training]] — Elastic Training (Once-For-All)
-- [[concepts/elasticsearch]] — Elasticsearch
+- [[concepts/elasticsearch]] — Elasticsearch — Lucene-based distributed search/analytics engine (Elastic, ESTC); BM25 default, shard/replica architecture, SSPL-era OpenSearch fork; recurring baseline in BM25/LTR/agent-ranking research
 - [[concepts/electronic-frontier-foundation]] — Electronic Frontier Foundation
 - [[concepts/elixir-beam-agent-orchestration]] — Elixir/BEAM for AI Agent Orchestration
 - [[concepts/elixir-beam-agent-orchestration-2026]] — elixir-beam-agent-orchestration-2026
@@ -2085,7 +2085,7 @@
 - [[concepts/functional-emotions-llms]] — Functional Emotions in LLMs
 - [[concepts/future-of-the-firm-org-chart]] — The Future of the Firm (OpenAI "next economy" essay) — three org-chart scenarios for the AI-native firm; labor-economics + prediction analysis of OpenAI's Oct 2026 essay
 - [[concepts/fused-kernels]] — Fused Kernels (Eliminating Intermediate Memory)
-- [[concepts/fuzzing]] — Fuzzing
+- [[concepts/fuzzing]] — Fuzzing — automated adversarial-input testing; coverage-guided (AFL/libFuzzer) taxonomy, OSS-Fuzz industrialization, and the LLM era: agents writing harnesses, differential compiler fuzzing, LLM-mutated jailbreak search
 - [[concepts/gaia]] — Redirect: GAIA benchmark (Meta × HF × AutoGPT, ICLR 2024); canonical page at concepts/ai-benchmarks/gaia-benchmark
 - [[concepts/game-engine-architecture]] — game-engine-architecture
 - [[concepts/gapa]] — Redirect page. GAPA was created as a stub but refers to GEPA (Genetic-Pareto Prompt Evolution). See [[concepts/gepa]]...
@@ -2512,7 +2512,7 @@
 - [[concepts/mark-zuckerberg]] — Mark Zuckerberg — "The Future is for Everyone" essay: personal superintelligence, balance-of-power safety philosophy, open source (Aug 2026)
 - [[concepts/markdown]] — Markdown
 - [[concepts/markdown-based-skills]] — Markdown-Based Skills
-- [[concepts/mastodon]] — Mastodon
+- [[concepts/mastodon]] — Mastodon — federated microblogging over ActivityPub (W3C); instance-based governance, push federation, the 2022 post-Twitter exodus; AI-community second channel and actor-protocol precedent
 - [[concepts/mastra-acp-agents]] — Mastra ACP Agents
 - [[concepts/mathcode]] — MathCode — terminal AI coding agent with a Lean 4 formalization engine (autoformalization); 657 GitHub stars
 - [[concepts/max-irwin]] — Max Irwin
@@ -2704,7 +2704,7 @@
 - [[concepts/open-source-llms]] — Open Source LLMs
 - [[concepts/open-source-metadata]] — Open Source Metadata
 - [[concepts/open-source-stewardship]] — open-source-stewardship
-- [[concepts/open-source-sustainability]] — Open Source Sustainability
+- [[concepts/open-source-sustainability]] — Open Source Sustainability — maintainer economics and the tragedy of the commons (log4shell, burnout, free-riding); funding mechanisms and the AI-era stress test (slop PR queues, training-data fights, agent-rewritten deps)
 - [[concepts/open-source-vs-closed]] — Open-Source vs Closed-Source LLM Gap
 - [[concepts/open-vs-closed-model-gap]] — Open vs. Closed Model Capability Gap
 - [[concepts/price-performance-frontier]] — Village LLM Atlas: open-weight models best-buy at only 3% of price points (41% in June) after GPT-6 Luna/GPT-6.1 Terra swept the frontier; distillation-cycle and TCO rebuttals (HN 75p, Oct 30 2026)
@@ -3024,7 +3024,7 @@
 - [[concepts/search-engines]] — Search Engines
 - [[concepts/search-scaling]] — Extending inference scaling to agent search budgets; parallel > sequential search, early research state shapes outcomes (arXiv:2609.35559)
 - [[concepts/scholarevolve-lifelong-harness-evolution]] — ScholarEvolve — lifelong agent-harness evolution driven by research literature (topic modeling over papers, not just execution failures); fixed weights; AppWorld 49.6→63.6%, Tau2 72.7→81.9% (arXiv:2609.40169, Sept 2026)
-- [[concepts/searcharray]] — SearchArray
+- [[concepts/searcharray]] — SearchArray — Doug Turnbull's pandas extension-array BM25 search library (roaring-bitmap inverted index, numpy corpus-stat access); the notebook-native tool for relevance experimentation and agent BM25-tuning experiments
 - [[concepts/dessa-speech-only-model]] — Dessa (Block) — full-duplex conversation model trained from scratch on speech only, no text/pretrained init; 1x GB200 NVL72, local sub-realtime on M4 Max; emergent laughter/backchanneling; safety framing + early safety-researcher access (Oct 2026)
 - [[concepts/sebastien-ramirez]] — sebastien-ramirez
 - [[concepts/security-and-governance/agent-containment]] — Agent Containment
@@ -3223,7 +3223,7 @@
 - [[concepts/timestral]] — Timestral (Mistral) — first family of time-series foundation models (5M-209M params); #1 on GIFT-Eval/TIME/fev-bench zero-shot; probabilistic multivariate; CPU-only inference (10-140 ms); beats Chronos-2/TimesFM-3/Falcon-2.0 with fewer params
 - [[concepts/thomson-reuters-frontier-model]] — Thomson Reuters Frontier Model — first commercial frontier model (Aug 2026)
 - [[concepts/thunderagent]] — ThunderAgent — High-throughput agentic inference system with program-level scheduling (ICML 2026 Spotlight)
-- [[concepts/threat-modeling]] — Threat Modeling
+- [[concepts/threat-modeling]] — Threat Modeling — structured pre-emptive security analysis (STRIDE, attack trees, trust boundaries); re-derived for LLM agents: prompt injection as boundary violation, confused-deputy tools, agent kill chains
 - [[concepts/throw-away-draft-pattern]] — throw-away-draft-pattern
 - [[concepts/throw-away-first-draft-pattern]] — Throw-Away First Draft Pattern
 - [[concepts/tim-kraska]] — Tim Kraska
@@ -3454,9 +3454,10 @@
 - [[events/trustfall-symlink-rce-2026]] — TrustFall + Symlink RCE — AI Coding Agent Security Crisis (2026)
 - [[events/vercel-agent-desktop-launch-2026]] — Vercel Labs agent-desktop launch (Oct 31, 2026) — Rust-based computer-use tool ("agent-browser, for your whole computer"): reliable desktop automation via OS accessibility trees (stable refs, retry-safe, headless multi-agent), built by @mdlahfir; amplified by Chris Tate
 
-## Queries (59 pages)
+## Queries (60 pages)
 
 - [[queries/2026-11-15-skeleton-enrich-stub-action]] — Daily skeleton-enrich run 2026-11-15: 9 AI umbrella stubs enriched (tinygrad, trey-grainger, ai-alliance, robotics, embodied-ai, ai-coding-tools, generative-ai, vision-models, ai-education)
+- [[queries/2026-11-18-skeleton-enrich-stub-action]] — Daily skeleton-enrich run 2026-11-18: 8 search/security/OSS stubs enriched (elasticsearch, threat-modeling, compiler-explorer, searcharray, cohereio, open-source-sustainability, mastodon, fuzzing)
 - [[queries/2026-09-27_local-llm-ops-log]] — Local LLM ops log: Hermes backend migration to hermes-llm-serial-gate, GATE_REAL_URLS downstream layout, llm-gateway model_list state and recovery checklist
 - [[queries/2026-10-04-uncommitted-wip-snapshot-query]] — Uncommitted WIP snapshot (2026-10-04): working-tree state — 1453-line diff dump of modified/untracked wiki files from active-crawl/newsletter pipelines
 - [[queries/2026-10-05-authority-converges-on-tool-call]] — PACE/OverAct/Retire convergence: enforceable agent authority lives at the tool call + versioned runtime state, not admission-time gates
