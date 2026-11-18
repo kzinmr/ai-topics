@@ -1,7 +1,7 @@
 ---
 title: Warp Terminal
 created: 2026-05-01
-updated: 2026-08-16
+updated: 2026-11-18
 type: entity
 tags: [product, tool, coding-agents, open-source, platform]
 sources:
@@ -16,6 +16,8 @@ sources:
   - raw/articles/2026-08-04_warp_how-to-build-a-cloud-software-factory-computer-use-verification.md
   - raw/articles/2026-08-05_warp_introducing-the-warp-agent-cli-coding-agent.md
   - raw/articles/2026-05-10_warp_what-happens-when-you-open-a-terminal-and-enter-ls.md
+  - raw/articles/2026-11-17_warp_software-factory-adoption-challenges.md
+  - raw/articles/2026-11-18_warp_warp-now-supports-linked-billing-with-claude-platform.md
 ---
 
 # Warp Terminal
@@ -287,6 +289,26 @@ Warp is competing in the **agentic development environment** space alongside:
 - [[entities/ghostty]] — Mitchell Hashimoto's terminal; Ghostty left GitHub as Warp went open-source
 - [[concepts/agentic-engineering]] — Embodies the agent-first workflow pattern
 - [[concepts/harness-engineering]] — Oz provides the orchestration harness
+
+## Software Factory Adoption & Claude Platform Linked Billing (November 2026)
+
+### "Overcoming challenges in software factory adoption" — Zach Lloyd (Nov 16, 2026)
+
+The fifth post in Warp's software-factory series, and the first aimed at **engineering leaders rolling factories out** rather than at the mechanics. Lloyd names two adoption blockers:
+
+- **The "boring work" misconception.** The term *software factory* implies an assembly line pushing identical commodity output. Lloyd's reframe: *"the job of an engineer going forward is not working on the line — it's designing the factory"* — not a blue jumpsuit pushing slop, but engineering a state-of-the-art Tesla factory for bespoke software. The metaphor is only apt because a real factory optimizes throughput while minimizing cost and holding quality.
+- **Private devtools → public team infrastructure.** Developers have always owned a local "cockpit" (terminal, editor, keybinds); in the agent era that becomes per-developer harness/model/skills/MCP choices. In the devtools paradigm work goes public at the PR; **in a software factory you work in public by default** — and individual bespoke agent setups do not scale. VP Eng / CFO / CISO now care about choices they previously ignored: which model burns millions of dollars in tokens, whether an insecure skill lets a prompt-injected agent act as you, whether one engineer is 100× another.
+- **The hard advice**: expect senior engineers to push back ("my local setup makes me more productive"), acknowledge temporary friction, then take a firm stand that agent systems belong to the team and organization — encoded in code, guarded, collectively measured and improved. He explicitly compares the resistance to developers a year ago still claiming hand-written code was faster than agentic coding.
+
+This is the *change-management* counterpart to the earlier factory posts (self-improving code review, computer-use verification, Agent CLI), and the strongest Warp statement yet that removing developer autonomy is the product, not a cost.
+
+### Linked billing with Claude Platform (Nov 17, 2026)
+
+Warp added **linked billing** with Anthropic's Claude Platform: link your Claude Platform organization to Warp without sharing an API key, authorize the link with a spend cap, and **Anthropic bills Claude API usage directly to your organization**; unlink at any time. Docs: `docs.warp.dev/agents/inference/claude-platform-linked-billing`.
+
+Structurally this is the "bring-your-own-model-account" pattern landing in the terminal/agent layer — the team keeps model billing, budget controls, and entitlements in the provider org while the harness vendor stays out of the token reseller path. Compare the [[concepts/agent-resource-subscriptions|agent-resource-subscriptions]] pattern and the same BYO-license posture in enterprise connectors (e.g. Cohere North's Crunchbase connector, Nov 17, 2026).
+
+**Sources:** [[raw/articles/2026-11-17_warp_software-factory-adoption-challenges|Warp — Overcoming challenges in software factory adoption]]; [[raw/articles/2026-11-18_warp_warp-now-supports-linked-billing-with-claude-platform|Warp — Warp now supports linked billing with Claude Platform]]
 
 ## Sources
 
