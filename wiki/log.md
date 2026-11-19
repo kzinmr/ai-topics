@@ -1,5 +1,15 @@
 # Wiki Log
 
+## [2026-11-19] newsletter-wiki-ingest | run 20261119T101014Z
+
+Processed newsletter triage (1 take, 2 batch-skips). Note: upstream newsletter-triage cron reported "failed to parse JSON" — false alarm; `triage_latest.json` checkpoint was valid and already committed by the triage job.
+
+**Enriched (1):**
+- `entities/dean-ball.md` — added section "The Silent Consensus / Against Forfeiture" (Nov 18, 2026, adapted from Harvard Vik-Bailey Lecture). Covers Ball's named-and-condemned "silent consensus" (gradual handover of company/governance keys via rational delegation, no rebellion required), his "reject the forfeiture of human primacy" thesis grounded in human *past* (not intellect), the intelligence-vs-power conflation critique, and agent-design guidance (intelligible/limited/auditable/withdrawable permissions). Full body fetched from open.substack.com (26 paras). Tags += superintelligence, philosophy; sources += raw/newsletters/2026-11-18-the-silent-consensus.md; added [[concepts/ai-alignment]] wikilink; index.md summary refreshed.
+
+**Skipped (2 batch):** Substack chrome (dup of take, same post_id 225536660); beehiiv "OpenAI's dramatic GPT-6.2 release" (20/20 links HTTP 403 Cloudflare; topic fully covered in entities/openai-astra.md GPT-6.2 Astra & Sol section).
+
+
 ## [2026-11-18] x-accounts-scan | 9 new posts → 2 raws, 3 entity updates
 
 Scan of 10 tracked X accounts (cursor 62→73, budget 11/12, 1 error: `realmcore_` user_id unresolved). 9 substantive candidates, all ingested.

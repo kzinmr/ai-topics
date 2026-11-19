@@ -231,7 +231,7 @@
 - [[entities/dax-raad]] — Dax Raad
 - [[entities/daytona-io]] — Daytona
 - [[entities/daytona-sandbox]] — Daytona Sandbox (Claude Managed Agents)
-- [[entities/dean-ball]] — Dean W. Ball; enriched with "What Should Be Done" — analysis of EO on Cyber and AI as de facto licensing regime, IVO proposal for frontier model governance, Obernolte-Trahan Great American AI Act endorsement (June 27)
+- [[entities/dean-ball]] — Dean W. Ball; Hyperdimensional AI-policy writer (OpenAI Head of Strategic Futures). Mythos governance, IVOs, Aviate-Navigate-Communicate, Physical Intelligence, "What Should Be Done", and "The Silent Consensus / Against Forfeiture" (Vik-Bailey Lecture, human-primacy argument)
 - [[entities/decagon]] — Decagon; added Duet Autopilot — automated A/B testing, simulation, Watchtower QA, redefining forward deployment (June 24) Added Autopilot experiments (A/B testing for AI agents; parallel variants on real traffic; 4 components, no-code builder, guardrails).
 - [[entities/decision-lab]] — Decision Lab
 - [[entities/decision-lens]] — Decision Lens
