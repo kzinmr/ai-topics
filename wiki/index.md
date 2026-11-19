@@ -1,7 +1,7 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Last updated: 2026-11-18
+> Last updated: 2026-11-19
 
 ## Entities (972 pages)
 
@@ -979,7 +979,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2372 pages)
+## Concepts (2376 pages)
 
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/agent-credential-leasing]] — Agent Credential Leasing (lend); remote coding agents borrow time-limited, operator-approved access to credential-holding tools via socket forwarding — secrets never resident on the agent VM (HN 116p, Nov 2026)
@@ -995,6 +995,9 @@
 - [[concepts/claude-code/verification-playbook]] — Claude Code Verification Playbook (Addy Osmani, Nov 16 2026): ~90% agent-written code; E2E/property/differential tests, verify skill, 39-item diff-triggered reliability checklist, changes-can't-modify-checks, observe/enforce commit gates, review-the-reviewers evals (HN 282p)
 - [[concepts/cerebras-disaggregated-inference]] — Cerebras Disaggregated Inference (Nov 17 2026) — AMD GPUs for prefill + Cerebras CS-3 for decode in production; 5× tokens/megawatt vendor-claimed; KV Portal over RDMA, vLLM/SGLang prefill engine, decode-only SDK; AWS/Fireworks/Gimlet/General Compute early access (HN 85p)
 - [[concepts/decision-model-playbook]] — Decision Model Playbook (PostHog, Nov 9 2026) — production patterns for Jev-style decision models: gate LLM calls (98.7% skip; threshold by error cost), model routing, face-value checks after embedding pre-filter, replace overqualified LLMs; Jeeves hybrid reason-then-decide (HN 160p)
+- [[concepts/energy-based-reasoners]] — Energy-Based Reasoners (EBR) — looped reasoner doing gradient descent on a learned energy function; self-scores candidates + native stopping signal, no external verifier; 1.8M-param EBR = 99.9% Sudoku-Extreme at ~345-385x less inference compute (Chen/Gladstone/Li/Ji/Du, HN 311 Nov 18 2026; author-reported)
+- [[concepts/frontierharness-eval]] — FrontierHarness Eval v1.1 — Runta+Baseten harness leaderboard (22 harnesses x 5 models x 62 tasks x 4 attempts, 27,280 runs); key result: the harness materially changes cost-per-pass, so model migration is also a harness-migration decision (HN 418 Nov 17 2026; vendor-published)
+- [[concepts/llm-assisted-reverse-engineering]] — LLM-Assisted Reverse Engineering — 2026 practitioner workflow: point a cheap agent (DeepSeek Flash) at a binary + custom RE agent skills, drive Ghidra via MCP / radare2 via CLI; human supplies judgment (ioma8, Slow Chronicle, HN 223 Nov 18 2026)
 - [[concepts/openai]] — OpenAI Platform & APIs — hub for OpenAI platform/API pages
 - [[concepts/gpt]] — GPT Models — hub index for GPT model-family pages (43 pages under concepts/gpt/)
 - [[concepts/gemini]] — Google Gemini — hub index for Gemini model-family pages (14 pages under concepts/gemini/)
@@ -1032,6 +1035,7 @@
 - [[concepts/systemic-software-breakdown]] — Systemic Software Breakdown — Breck-McKye thesis that 2026 outage/exploit cluster (Microsoft 2-day outage, PHP2Shell, eMudhra, Shai Hulud) reflects broken software-production system, not bad luck; AI as cause and symptom
 - [[concepts/training]] — Training — hub for training-methodology pages (TRL under concepts/training/)
 - [[concepts/triggerdev-env-var-exposure-2026-11|Trigger.dev Env-Var Exposure]] – 2026-11-01 incident exposing customer environment variables, disputed 'Resolved' status
+- [[concepts/trnrt-trainium-inference-engine]] — TrnRT — open-source AWS Trainium2 inference engine by RunanywhereAI; NKI megakernels (~1/layer-half), 1M ctx sparse+linear attention, FP8 radix prefix cache w/ host tier; GLM-5.3-Flash day-1; ~$0.04/M tokens spot on one trn2.48xlarge (HN 54 Nov 17 2026; vendor-reported)
 - [[concepts/volta-infostealer-llm-victim-appraisal]] — VOLTA infostealer LLM victim appraisal (Cisco Talos, Oct 2026) — self-deleting stealer POSTs enriched evidence bundle to OpenRouter as 'forensic intelligence analyst'; WHAT THEY'RE WORTH ranking + 3-model refusal-failover chain (HN 248)
 - [[concepts/windows-coding-agent-telemetry]] — Windows 11 Coding-Agent Telemetry — MissionControlAggregator.dll matches claude/codex/copilot/cursor/antigravity exe names (feature CLICodingAgentUsage ID 62580080), uploads usage bits via ETW unless optional diagnostics disabled (Xusheng Li, HN 619p)
 - [[concepts/x402]] — x402 — HTTP 402 Payment Required as a machine-readable payment request for agent API calls; USDC on Base; first adopted by Brave Search API (Nov 12, 2026)

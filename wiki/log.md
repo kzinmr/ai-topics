@@ -1,5 +1,23 @@
 # Wiki Log
 
+## [2026-11-19] active-crawl | 4 new concepts + 2 enrichments, 6 raws
+
+HN Algolia scan (18 queries, 5-day window, >=20 pts; checkpoint `cron/data/active_crawl/hn_scan.json`, 39 stories). Killed as sibling-covered before writing: GPT-6.2 Astra/Sol (openai-astra), Gemini 4 Neon (blog pipeline), Unsloth Qwen3.8-27B v3.1 (concepts/unsloth covers it — only HN points differ), DeepSeek-V3-JAX (low source quality), partial-evaluation (not AI).
+
+**Created (4):**
+- `concepts/energy-based-reasoners.md` — EBR: looped reasoner = gradient descent on a learned energy function; self-scores + native stopping, no external verifier; 1.8M-param Sudoku-Extreme 99.9% at ~345-385x less compute (HN 311, Nov 18). confidence:medium (author-reported).
+- `concepts/frontierharness-eval.md` — Runta+Baseten harness leaderboard v1.1 (22 harnesses x 5 models x 62 tasks x 4 attempts); harness materially changes cost-per-pass → co-optimize model+harness (HN 418, Nov 17). confidence:medium (vendor).
+- `concepts/llm-assisted-reverse-engineering.md` — practitioner RE workflow: cheap DeepSeek-Flash agent + custom RE skills driving Ghidra-via-MCP / radare2 (ioma8, HN 223, Nov 18).
+- `concepts/trnrt-trainium-inference-engine.md` — open-source AWS Trainium2 engine (RunanywhereAI): NKI megakernels, 1M ctx, FP8 radix prefix cache w/ host tier, GLM-5.3-Flash day-1, ~$0.04/M tok spot (HN 54, Nov 17). Deferred from 11-18, now ingested. confidence:medium (vendor).
+
+**Enriched (2):**
+- `concepts/openai-jalapeno-inference-chip.md` — new "Model-Assisted Chip Design (Nov 18 2026)" section: model-proposed PPA gains (vector −13% / matrix −10% area, silicon-proven), AMD 14% GPU-IP gain (<5 mo vs ~1 yr), RISC-V PicoRV32/Ibex evals (GPT-6.2 Astra best), GPT-Synopsys EDA partnership.
+- `concepts/computer-use.md` — new "OpenAI Computer-Use for Healthcare Teams (Nov 17 2026)" section: 99% safe / 93% helpful (OpenAI review), HealthAdminBench Astra 94.3% / Luna 91.8% @ 8.5¢ task, CVS/Abridge/Cigna/Ambience, CVS Agent Kit OSS.
+
+**Raws (6):** energy-based-reasoners, runta frontierharness, slowchronicle RE, runanywhere trnrt README, openai chip-design + openai healthcare (both via r.jina.ai after direct 403).
+
+index.md: 4 concept entries inserted in the recent-additions neighborhood, Concepts counter 2372→2376, Last updated 11-18→11-19. Wikilink existence loop passed (all targets exist). Tags all SCHEMA-valid.
+
 ## [2026-11-19] newsletter-wiki-ingest | run 20261119T101014Z
 
 Processed newsletter triage (1 take, 2 batch-skips). Note: upstream newsletter-triage cron reported "failed to parse JSON" — false alarm; `triage_latest.json` checkpoint was valid and already committed by the triage job.

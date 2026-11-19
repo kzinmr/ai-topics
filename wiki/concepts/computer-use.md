@@ -1,7 +1,7 @@
 ---
 title: "Computer Use Agents"
 created: 2026-05-31
-updated: 2026-06-25
+updated: 2026-11-19
 type: concept
 tags:
   - ai-agents
@@ -12,6 +12,7 @@ tags:
 sources:
   - https://www.pointer.ai/blog/sota
   - https://uncensoredhub.ai/news/2026-05-29-claude-opus-4-8-orchestrates-hundreds-of-parallel-subagents-hits-84-on-browser-a
+  - raw/articles/2026-11-17_openai.com_computer-use-healthcare-teams.md
 ---
 
 # Computer Use Agents
@@ -80,6 +81,20 @@ Google implemented several safety measures specifically for computer use agents 
 Developers and enterprises can access computer use in Gemini 3.5 Flash via the Gemini API and [[concepts/gemini/gemini-enterprise-agent-platform|Gemini Enterprise Agent Platform]].
 
 See [[concepts/gemini-computer-use]] for the Android-specific implementation guide with the complete screenshot→model→function_call→ADB loop, 10 mobile actions, and ADBBridge class (Philipp Schmid, June 2026).
+
+## OpenAI Computer-Use for Healthcare Teams (Nov 17, 2026)
+
+OpenAI's *"Advancing computer-use agents for healthcare teams"* (HN 53 pts) reports GPT-6 Astra operating clinical and administrative workflows in real EHR/insurer software — clicking, typing, and moving between apps for prior authorizations, referrals, discharge planning, and inter-visit outreach (HN ids 50535898, 50519201).
+
+**Evaluation (all OpenAI-reported):**
+- **Clinical EHR-inbox tasks** shaped by physicians: **99% of 325 reviewed tasks rated safe** (reviewers checked whether inaccuracies/omissions could plausibly cause patient harm); physicians rated **93% of 646 helpfulness assessments** "very" or "extremely helpful."
+- **HealthAdminBench** (independent Stanford benchmark for administrative workflows): **GPT-6 Astra 94.3%** of rubric points, **GPT-6 Luna 91.8%** at **98% lower cost — 8.5¢/task** — both at maximum reasoning effort. A clean model-routing data point: a near-matching cheaper model for high-volume admin work.
+
+**Deployment partners:** CVS Health (cleared a months-long document-sending backlog over one weekend; tens of thousands of consult steps/day; open-sourcing its **Agent Kit** built on OpenAI's Agents SDK), Abridge (inpatient discharge-barrier coordination), Cigna Healthcare, and Ambience. Access via OpenAI API, ChatGPT for Healthcare, and ChatGPT for Clinicians, with HIPAA-compliant workflows, configurable approvals, and audit logs.
+
+**Confidence caveat:** safety/helpfulness figures are OpenAI's own review methodology; the one genuinely third-party number is Stanford's HealthAdminBench. The "99% safe" rating is on a curated 325-task sample, not production-wide safety.
+
+This is the most concrete *regulated-industry* deployment of [[concepts/computer-use]] yet, contrasting with the consumer/desktop demos above — and CVS's open-sourced CUA agent kit is an early reusable pattern for production computer-use.
 
 ## Related Pages
 - [[entities/pointer-ai]] — Pointer AI, SOTA computer use agent developer

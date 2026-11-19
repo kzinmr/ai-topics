@@ -1,7 +1,7 @@
 ---
 title: "OpenAI Jalapeño Inference Chip"
 created: 2026-06-25
-updated: 2026-08-26
+updated: 2026-11-19
 type: concept
 tags:
   - openai
@@ -17,6 +17,7 @@ sources:
   - raw/articles/2026-06-25_techcrunch-openai-broadcom-jalapeno.md
   - raw/articles/2026-08-25_openai_jalapeno-first-results.md
   - raw/articles/wheresyoured.at--the-ai-haters-manifesto--64310e6c.md
+  - raw/articles/2026-11-18_openai.com_advancing-chip-design-with-models.md
   - https://news.ycombinator.com/item?id=49432879
 ---
 
@@ -90,6 +91,23 @@ Jalapeño's efficiency story lands against a demand backdrop that is simultaneou
 - Ed Zitron's "AI Hater's Manifesto" (Aug 26, https://www.wheresyoured.at/the-ai-haters-manifesto/) reads the pattern: token-billed enterprise customers cut budgets; subsidized consumer plans are evidence "regular people won't pay the actual cost of AI"; and GPT-5.6 Sol "burns more than twice the amount of tokens" at the same sticker price as GPT-5.5. (Zitron's broader bubble claims — NVIDIA +17% price hikes, $1.1T in open commitments, $10T/yr revenue requirement per BCA Research — are his analysis, not established fact.)
 
 Net: the custom-silicon bet is a supply-side answer to exactly the demand-side squeeze visible in these three moves. See [[concepts/deepseek-v4]] for the competing cost path (open weights on commodity hardware) that bypasses custom silicon entirely.
+
+## Model-Assisted Chip Design (Nov 18, 2026)
+
+OpenAI's follow-up post *"Advancing chip design with OpenAI models"* (HN 212 pts, Nov 18 2026) details how its frontier models were used as **RTL co-designers** on Jalapeño and beyond — reframing the chip as both a *product of* and a *testbed for* model capability. All figures are OpenAI-reported.
+
+**Jalapeño PPA gains attributed to model-proposed edits** (since early 2025, starting with GPT-o3-mini):
+- **Vector unit** ~13% standard-cell area reduction — from floating-point adders/multipliers, conversion functions, reduction logic, special-function unit; the model explored alternative logic implementations and pipeline-stage splits to share hardware and cut intermediate storage.
+- **Matrix unit** ~10% area reduction — one multiplier redesign used ~15% less cell area while cutting latency 2 cycles → 1; a separate adder redesign cut ~15% area at 2-cycle latency.
+- These optimizations were **silicon-proven during Jalapeño's bring-up**.
+
+**AMD partnership:** up to **14% PPA improvement** over heavily-optimized baselines on AMD's flagship GPU IP by rewriting SystemVerilog RTL (verified with Synopsys tools for behavior preservation + PPA trade-offs). AMD claims this compressed ~a year of progress into <5 months and has already fabbed some model-written changes. Single-digit-percentage PPA gains also verified on AMD's next-gen flagship CPU blocks.
+
+**RISC-V evals (capability tracking):** successive model generations scored on two open 32-bit cores (PicoRV32, OpenTitan/Ibex) across ~112k-token budgets and 9,881 scored runs. GPT-6.2 Astra had the highest mean on both cores (~2× GPT-6 Astra on PicoRV32). Notably, models scored *higher designing a core from a spec* than improving an existing one — partly because from-spec runs can drop low-value features (perf counters, extra instructions).
+
+**Synopsys:** OpenAI + Synopsys announced **GPT-Synopsys**, a model trained to use Synopsys EDA tools the way expert designers do, grounding chip-design capability development in a trusted evaluator.
+
+This positions chip design as a flagship "expert-level reasoning" benchmark for frontier models, alongside the Jalapeño inference-efficiency story above. See [[concepts/custom-ai-silicon]].
 
 ## Open Questions
 
