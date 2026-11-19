@@ -1,0 +1,32 @@
+{
+  "archived_at": "2026-11-19T10:33:49.522227+00:00",
+  "triage_run_id": "20261119T101014Z",
+  "source": "newsletter",
+  "summary_ja": "2ニュースレター (The Silent Consensus / OpenAI's dramatic GPT-6.2 release) を triage。Dean W. Ball (OpenAI) の Vik-Bailey Lecture 版エッセイ 'The Silent Consensus / Against Forfeiture' は entities/dean-ball.md に中心命題 (silent consensus への断罪・human primacy・過去根拠のPrimacy論) が未収録のため 既存ページ更新として take 1件。OpenAI GPT-6.2 release は entities/openai-astra.md の Nov 17 節で完全にカバー済みかつ beehiiv 全20リンクが 403/Cloudflare で解決不能のため batch skip。サブスタック chrome リンクも batch skip。",
+  "decisions": [
+    {
+      "item_id": "<20261118180207.3.74b6b9817e006129@mg2.substack.com>-2",
+      "source": "newsletter",
+      "source_name": "The Silent Consensus (Hyperdimensional / Dean W. Ball)",
+      "title": "The Silent Consensus (残リンク: app-link/share/comment/subscribe/@deanwball)",
+      "url": "https://hyperdimensional.substack.com/p/the-silent-consensus",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-18-the-silent-consensus.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 同一投稿 (publication_id=2244049/post_id=225536660) の UI/共有/コメント/購読/プロフィール系サブスタックchrome。実体記事は上記 take 1件に全文収録済み。重複エンティティ不要。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-11-18\n**Subject:** The Silent Consensus\n**Collected:** 2026-11-19T10:10:10.944135+00:00\n**Articles linked:** 14\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuaHlwZXJkaW1lbnNpb25hbC5jby9zdWJzY3JpYmU_dXRtX3NvdXJjZT1lbWFpbCZ1dG1fY2FtcGFpZ249ZW1"
+    },
+    {
+      "item_id": "<20261118.190811.688607aa@mta29>-1",
+      "source": "newsletter",
+      "source_name": "OpenAI's dramatic GPT-6.2 release (beehiiv)",
+      "title": "OpenAI's dramatic GPT-6.2 release (全20リンク)",
+      "url": "https://link.mail.beehiiv.com/v2/c/7dbe7679b679e4f552b97f770ea9b7c31399e145c7eb1e17c9fe3e6902a0f0c9.../5597cdd3903e6117",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-18-openai-s-dramatic-gpt-6-2-release.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 件名 'OpenAI's dramatic GPT-6.2 release' のトピックは既に entities/openai-astra.md:181 『GPT-6.2 Astra & GPT-6.2 Sol (November 17, 2026)』節で詳細カバー済み (API価格 $8/$40・$2/$10、input token 60%値下げ、Fable 5.2 と同率、Willison の Yonkers three.js ベンチ、Theo Browne の steerability 苦情、coverage note まで収録)。さらに beehiiv v2/c/ トラッカーURL 全20本が HTTP 403 / Cloudflare 'Just a moment...' で解決不能 (実測)。重複 take 不要。インボックス の 'Create events/gpt-6-2-release-2026.md' 提案は openai-astra 既存節により冗長。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-11-18\n**Subject:** OpenAI's dramatic GPT-6.2 release\n**Collected:** 2026-11-19T10:10:12.569405+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v2/c/7dbe7679b679e4f552b97f770ea9b7c31399e145c7eb1e17c9fe3e6902a0f0c97849f748be00f17b1431dc67e9c"
+    }
+  ]
+}
