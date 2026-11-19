@@ -1,5 +1,28 @@
 # Wiki Log
 
+_Log of all wiki changes. Newest entries at top._
+
+
+## [2026-11-19] watchdog | auto-fix | commit orphaned working-tree changes
+
+### Context
+Daily watchdog run (17:35 UTC). Pipeline watchdog: 0 alerts (report 2026-11-19_12-00-10, 5.6h old). wiki_health: null (no issues reported). Graph analysis: 6 days old, stable per 2026-11-13 weekly report.
+
+### Verified clean (no action needed)
+- index.md: 0 pipe-prefix, 0 line-number, 0 triple/quad bracket; validate_index.py exit 0 (3,528 lines)
+- Header counts match index lines exactly: Entities 972, Concepts 2,378, Comparisons 35, Events 55, Queries 60
+- log.md: single `# Wiki Log` header at line 1, no burial
+- L2 pipe-prefix scan (entities/+concepts/): 0
+
+### Actions taken
+- Committed + pushed 46 uncommitted files left in working tree by today's active-crawl (11:00 UTC) and trending-topics (12:00 UTC) jobs: 6 modified L2 pages (jensen-huang, nvidia-ceo-transition-2026, merge-dev, sierra, voyage-ai, code-search-indexing) + 42 raw articles/newsletters. All raw refs verified on disk; pre-commit hooks passed. Commit 3445e865.
+
+### Residual (reported, not fixed)
+- 278 empty `- — ` Related-line wikilinks (known residual; fix_empty_wikilinks_safe.py has no reliable target mapping for these — human review)
+- 2,581 true broken links / 460 orphans per 2026-11-13 ground truth — stable, tracked by weekly wiki-graph-analysis
+
+---
+
 ## [2026-11-19] trending-topics
 - NEW concepts/gemini/gemini-4-neon.md (Gemini 4 Neon launch, HN 866p)
 - NEW concepts/nginx-http2-rce.md (CVE-2026-123633/123007, HN 1412p)
@@ -94,7 +117,6 @@ Scan of 10 tracked X accounts (cursor 62→73, budget 11/12, 1 error: `realmcore
 - Java4Shell (CVE-2026-114938, OpenJDK Base64 AVX-512 memory corruption, CVSS 9.2, pre-auth RCE in Keycloak/Jira/Jenkins; -XX:UseAVX=2 mitigation) and FrontierHarness v1.1 (22 harnesses x 5 models, 27,280 runs, 83B tokens, model-dependent best harness) raw-archived for cluster pages; report: inbox/rss-scans/trending-topics-2026-11-18.md.
 - SCHEMA minted: java, metr, runta, protein-models, harness-evaluation, openjdk, ai-overviews, publisher-economics, safety-washing, revolving-door, ai-regulation, vendor-benchmark, model-telemetry, avx-512, memory-corruption.
 
-_Log of all wiki changes. Newest entries at top._
 
 ## [2026-11-18] active-crawl | 3 new concepts, 2 enrichments
 
