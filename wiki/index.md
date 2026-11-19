@@ -3464,6 +3464,7 @@
 
 - [[queries/2026-11-15-skeleton-enrich-stub-action]] — Daily skeleton-enrich run 2026-11-15: 9 AI umbrella stubs enriched (tinygrad, trey-grainger, ai-alliance, robotics, embodied-ai, ai-coding-tools, generative-ai, vision-models, ai-education)
 - [[queries/2026-11-18-skeleton-enrich-stub-action]] — Daily skeleton-enrich run 2026-11-18: 8 search/security/OSS stubs enriched (elasticsearch, threat-modeling, compiler-explorer, searcharray, cohereio, open-source-sustainability, mastodon, fuzzing)
+- [[queries/2026-11-19-skeleton-enrich-stub-action]] — Daily skeleton-enrich run 2026-11-19: 5 AI-core concept stubs enriched (how-coding-agents-work, just-large-models, prompt-driven-development, agent-security-patterns, retrieval-augmented-generation)
 - [[queries/2026-09-27_local-llm-ops-log]] — Local LLM ops log: Hermes backend migration to hermes-llm-serial-gate, GATE_REAL_URLS downstream layout, llm-gateway model_list state and recovery checklist
 - [[queries/2026-10-04-uncommitted-wip-snapshot-query]] — Uncommitted WIP snapshot (2026-10-04): working-tree state — 1453-line diff dump of modified/untracked wiki files from active-crawl/newsletter pipelines
 - [[queries/2026-10-05-authority-converges-on-tool-call]] — PACE/OverAct/Retire convergence: enforceable agent authority lives at the tool call + versioned runtime state, not admission-time gates
