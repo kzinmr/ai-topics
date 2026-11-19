@@ -1120,7 +1120,7 @@
 - [[concepts/agent-safety]] — Agent safety is the field of AI dedicated to ensuring that autonomous agents operate safely, predictably, and with human alignment.
 - [[concepts/agent-safety-incidents-open-source]] — AI Agent Safety Incidents in Open-Source Communities
 - [[concepts/agent-sandbox-patterns]] — Agent Sandbox Patterns — Isolate-the-Tool vs Isolate-the-Agent; zero-secret agent + credential-holding control plane (Unikraft micro-VM); Browser Use production architecture (Feb 2026)
-- [[concepts/agent-security-patterns]] — Agent Security Patterns
+- [[concepts/agent-security-patterns]] — Containment patterns for tool-using agents: isolation, egress proxy, secret injection, untrusted-content handling, lethal trifecta breaks
 - [[concepts/agent-status-summary-polling-overhead]] — Agent Status-Summary Polling Overhead — Claude Code's `agent_summary` re-sends each active background agent's whole transcript to its model every ~30s for a few UI words; 16.4% of weekly spend (background-heavy team) vs ~8% single session vs Anthropic's fleet-wide ~2%; cache-hit ≠ free at ~9,000 input tokens per output token; companion Tell HN on email injected into outbound prompts (HN 567, Oct 2026)
 - [[concepts/agent-skill-ecosystem-missing-package-manager]] — Missing Package Managers (synthesis of arXiv:2610.11169 + 2610.11647, both 2026-10-08) — the SKILL.md namespace lacks registry/pinning/provenance/name-resolution; 2,193,119 adoptions traced with stars useless for origin ID (top-100 ranked audit = 14.9% vs 0.5% for starred, ~30x) and 1-in-4 skills co-installed with a same-job rival whose winner is decided by install location
 - [[concepts/agent-skills]] — Agent Skills; enriched with Codex Record &amp; Replay workflow recording as skills — skill authoring via live demonstration (June 24); Agent Skills standard donated to Agentic AI Foundation / Linux Foundation by Anthropic (Oct 22 2026) — both SKILL.md and MCP now under neutral governance
@@ -2307,7 +2307,7 @@
 - [[concepts/homelab]] — Homelab
 - [[concepts/homomorphic-encryption-ai]] — Homomorphic Encryption for AI — FHE-based private LLM inference; state of the art (Llama-3-8B at 18 s/token on 8× RTX PRO 6000), HEIR stack, limits (Aug 2026)
 - [[concepts/hornet]] — Hornet
-- [[concepts/how-coding-agents-work]] — How Coding Agents Work
+- [[concepts/how-coding-agents-work]] — Canonical agent-loop explanation: prompt assembly, tool surface, context management, verification loops, failure modes
 - [[concepts/how-to-design-programs]] — How to Design Programs
 - [[concepts/hqq]] — Half-Quadratic Quantization (HQQ) — calibration-free weight quantization using half-quadratic optimization; >50x faster than GPTQ, supports 1-8 bits
 - [[concepts/hrm-text]] — HRM-Text
@@ -2378,7 +2378,7 @@
 - [[concepts/joseph-redmon]] — joseph-redmon
 - [[concepts/js-runtime]] — js-runtime
 - [[concepts/json-render]] — json-render — Generative UI Framework
-- [[concepts/just-large-models]] — just-large-models
+- [[concepts/just-large-models]] — Scale-first product thesis: elicit model capability instead of building compensation scaffolds (applied bitter lesson)
 - [[concepts/jxbz]] — jxbz
 - [[concepts/just-in-time-agent-memory]] — Just-In-Time Agent Memory (JAM) — constructs relevant context at runtime conditioned on the query instead of Ahead-of-Time memory, avoiding silent loss of fine-grained info; Memory-Gym training env (arXiv:2609.34385, Sept 2026)
 - [[concepts/karpathy]] — Karpathy (Andrej Karpathy) — AI researcher, educator, and OpenAI/DirectX co-founder. Entity: entities/andrej-karpathy.md
@@ -2890,7 +2890,7 @@
 - [[concepts/prompt-caching-strategies]] — Prompt Caching Strategies
 - [[concepts/prompt-debt]] — Prompt Debt — Drew Breunig's framework for the buildup of fragile natural-language instructions that lock teams to a single model; three-stage spiral (slowing iteration, team incapacitation, model lock-in), proposed solutions via measurement-driven specification and automated prompt optimization (DSPy, GEPA) (June 25)
 - [[concepts/prompt-design]] — Prompt design, instruction fine-tuning, and system prompt engineering.
-- [[concepts/prompt-driven-development]] — Prompt-Driven Development
+- [[concepts/prompt-driven-development]] — Methodology treating the prompt corpus as the primary artifact; positioned vs vibe/spec-driven development
 - [[concepts/prompt-engineering]] — Prompt Engineering — practice of crafting natural-language instructions for LLMs; July 2026 paradigm shift to demonstration-based interaction (Anthropic Record a skill vs OpenAI Record & Replay), "show, don't tell" (Aug 1)
 - [[concepts/prompt-engineering-resilience-design-patterns]] — Prompt Engineering Resilience Design Patterns
 - [[concepts/prompt-injection]] — Prompt Injection — AI security vulnerability where untrusted input manipulates model behavior by exploiting role confusion and tokenization boundaries (June 23)
@@ -2970,7 +2970,7 @@
 - [[concepts/resilience-acceptance-testing]] — Resilience Acceptance Testing — timeout, circuit-breaker and bulkhead mechanisms; specified faults, degraded service and recovery acceptance
 - [[concepts/resilient-prompt-engineering]] — Resilient Prompt Engineering
 - [[concepts/revolut-self-hosted-glm]] — Revolut Self-Hosted GLM Migration — ~2,000 engineers moved to self-hosted GLM for coding on 56 B200s, reported ~$0.30/M tokens blended (~1/10th Anthropic/OpenAI spend); fintech-scale open-weight + sovereignty case study (Nov 2026, confidence: medium)
-- [[concepts/retrieval-augmented-generation]] — retrieval-augmented-generation
+- [[concepts/retrieval-augmented-generation]] — Canonical RAG pipeline: chunk/embed/retrieve/rerank/ground, failure modes, evolution to agentic retrieval
 - [[concepts/reward-hacking-research-agents]] — Reward Hacking in Autonomous Research Agents — spontaneous reward-hack rate 30.5% on open-ended research tasks vs 2.9% on narrow kernels; detailed oversight feedback *raises* cumulative evasion (40.5% vs 20.3%) (arXiv:2609.28614, Sept 2026)
 - [[concepts/retrieve-merge-predict]] — Retrieve Merge Predict
 - [[concepts/retire-versioned-execution]] — Retire — versioned execution for interruptible agents; revision-to-successor KV-cache reuse across interrupted agent turns, durable execution + token economics (arXiv:2610.01160, Oct 2026)

@@ -2,6 +2,20 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-11-19 19:0x UTC] skeleton-enrich-daily — stub backlog: 5 AI-core concept pages enriched
+
+> `status: skeleton` backlog remains **empty** (streak since 2026-10-17; 0 live markers in entities/concepts frontmatter).
+> Productive action on the ~399-page `status: stub` backlog — this run took the 5 highest-value AI/agent-shaped stubs.
+
+- `concepts/how-coding-agents-work.md` — 324 B stub → ~6.8 KB. Canonical agent-loop explainer: harness loop diagram, tool-surface table (read/edit/search/terminal/task), context management (rot, compaction, agentic search, AGENTS.md), verification loops, failure modes (looping, premature stop, context poisoning, permission theater, model drift).
+- `concepts/just-large-models.md` — 304 B stub → ~4.6 KB. Scale-first product thesis as applied bitter lesson: elicitation vs compensation scaffolds, harness-tax depreciation, arguments for/against (cost/latency edges, RL environments as engineering, data wall), practitioner heuristics. Grounded in gwern scaling-hypothesis raw article.
+- `concepts/prompt-driven-development.md` — 336 B stub → ~4.9 KB. Willison's PDD positioned as methodology: workflow, why it works, comparison table vs vibe coding / spec-driven dev / harness engineering, anti-patterns. Cross-linked to harness-engineering sub-page (no duplication).
+- `concepts/agent-security-patterns.md` — 328 B stub → ~5.6 KB. Pattern catalog vs lethal trifecta: isolation, egress proxy, secret injection/token brokerage, untrusted-content handling, audit/canaries; capability→pattern decision heuristic; residual risks (confused deputy, side channels, supply chain). Cross-linked to harness-engineering/system-architecture implementation page.
+- `concepts/retrieval-augmented-generation.md` — 356 B stub → ~4.8 KB. Umbrella RAG page: canonical pipeline table (chunking→retrieval→rerank→ground), why-RAG vs long context, failure modes (chunk amnesia, lost-in-middle, query mismatch), naive→agentic evolution; links agentic-rag / agentic-retrieval / contextual-retrieval sub-pages.
+
+Verification: git-history richness check (all 5 last touched by 2026-08-15 stub-era commit da4a8f13 — no richer historical versions). All wikilinks machine-verified to resolve (dead targets redirected to real pages, e.g. bitter-lesson→rich-suttons-bitter-lesson, context-rot→context-engineering/context-rot, or demoted to plain text). All tags pre-registered in SCHEMA.md — no SCHEMA edits. index.md: 5 description updates, 0 new entries, counts unchanged.
+
+
 
 ## [2026-11-20 01:30 JST] hot-post (late-night) — inference-cost stack, 4 layers in 48h
 - Delivered late-night hot-post (report body Japanese per report-quality skill; log kept English): four Nov 17–18 items read as simultaneous 1–2 order-of-magnitude inference-cost compression at four independent layers (algorithm / architecture / chip / harness) — all vendor-reported, zero independent replications.
