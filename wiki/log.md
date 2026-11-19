@@ -3,6 +3,19 @@
 _Log of all wiki changes. Newest entries at top._
 
 
+## [2026-11-19] dreaming group | Pattern E triage: 4 takes, 7 references, 4 batch-skips
+
+> `dreaming-group` cron (18:10 UTC, run 20261119T180030Z). Checkpoint collected=0 (total_articles 0, recent_raw_articles 280) — saturation day. Pattern E filesystem scan + `check_archive_index_absence.py` (134 recent, 3,279 indexed URLs) triaged the Nov 17-19 never-archived pool.
+>
+> **Takes (for downstream dreaming-wiki-ingest):** Claude protein-sequence training evidence (xinmingtu) → entities/anthropic.md; MinishLab blink CPU static embeddings (Tom Aarsen) → entities/tom-aarsen.md or new concept; Java4Shell CVE-2026-114938 (Calif, PHP2Shell follow-up) → new concept; All About Berlin AI-traffic collapse (Bouliane first-party data) → concepts/ai-search-visibility.md.
+>
+> **References:** RevScope AI Overviews -40% clicks; Harvard code-review bottleneck study; Cerebras disaggregated inference (concept created 2026-11-17 — verify WSE+GPU config detail); Claude Code team verification (vs verification-playbook.md); MAI Code 2 (today's trending-topics covered MAI Ignite — price detail only); Gemini 4 Carbon slow-latency (kernel.dev); PostHog decision models / Jev (thin-bi / system-one-models).
+>
+> **Skips:** Same-day upstream saturation — trending-topics (Gemini 4 Neon, NGINX HTTP/2 RCE, MAI Ignite, commit a8b6462f) and active-crawl (EBR, FrontierHarness, LLM-assisted RE, TrnRT, commit 3c3a674e) already processed; company-blog marketing batch x16 (Harvey x5 incl. 2 author pages, ElevenLabs x2, Merge.dev x4, Parallel x2, Hebbia EQL, Hex Underdog, Factory-Microsoft, Modal Asya, Sierra ghostwriters); non-AI/personal batch x20+; opinion items x6 (Gary Marcus IPO, Ed Zitron Nvidia bubble, simonwillison quote-posts, nesbitt, jensen tweet, geohot).
+>
+> Archived 11 skip/reference decisions via `scripts/archive_triage.py dreaming --keep-reference` (dated JSON + archive_index; total_archive_urls 3,287). Triage JSON at cron/data/dreaming/triage_latest.json. No wiki page edits this job (grouping only).
+
+
 ## [2026-11-19] health-fix | Clean run — no auto-fixes applied
 - Phase 1: index.md corruption scan — pipe_prefix=0, line_number=0, triple_bracket=0, space_prefix=0 (validate_index.py exit 0, 3528 lines)
 - Phase 2: orphan_count=0 (wiki_health.py --json), no ghost entries, working tree clean

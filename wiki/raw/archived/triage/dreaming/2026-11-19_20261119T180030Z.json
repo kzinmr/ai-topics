@@ -1,0 +1,44 @@
+{
+  "archived_at": "2026-11-19T18:16:58.619480+00:00",
+  "triage_run_id": "20261119T180030Z",
+  "source": "dreaming",
+  "summary_ja": "チェックポイント collected=0 (total_articles 0 / recent_raw 280) の saturation 日。Pattern E + archive-index absence probe で Nov 17-19 の未アーカイブ raw を精査し、take 4 (Claude タンパク配列学習 / MinishLab blink static embeddings / Java4Shell / All About Berlin 崩壊)、reference 7、batch skip 3 エントリに分類。同日の trending-topics (Gemini 4 Neon, NGINX RCE, MAI Ignite) と active-crawl (EBR, FrontierHarness, LLM-assisted RE, TrnRT) は上流パイプラインが処理済みのためスキップ。",
+  "decisions": [
+    {
+      "item_id": "dr-batch-company",
+      "source": "dreaming",
+      "source_name": "dreaming",
+      "title": "Sitemap company-blog batch (marketing/partnerships) x16",
+      "url": "",
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "* Harvey x5 (author page x2 含む)/ElevenLabs x2 (vector-database, ElevenAgents healthcare)/Merge.dev x4/Parallel x2 (healthcare, AcuityMD)/Hebbia x EQL/Hex Underdog/Factory x Microsoft/Modal Asya/Sierra ghostwriter。いずれも製品マーケ・提携発表で new architectural concept なし。factory-microsoft は collaboration news のみ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Batch skip: harvey DPA review/review tables/government lawyers/mid-sized firms; elevenlabs vector db/healthcare; merge.dev x4; parallel healthcare x2; hebbia EQL; hex underdog dbt; factory microsoft; modal asya; sierra ghostwriters"
+    },
+    {
+      "item_id": "dr-batch-nonai",
+      "source": "dreaming",
+      "source_name": "dreaming",
+      "title": "Non-AI blog batch (personal/historical/security-generic) x20+",
+      "url": "",
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "* dfarq (押しボタン電話/Desktop Publishing), shkspr.mobi x2, jim-nielsen email, bernsteinbear PyPy, johndcook, jeffgeerling NTP, oldnewthing x2, daringfireball 50-yard line, pluralistic x2, tidbits/macrumors, xeiaso memory-safety shitpost, lwn, rakhim vibe-coded dualist (雑感), idiallo stackoverflow, semantical (promo)。AI/LLM/agent の durable な知見なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Batch skip: dfarq, shkspr, jim-nielsen, bernsteinbear, johndcook, jeffgeerling, oldnewthing, daringfireball, pluralistic, tidbits, macrumors, xeiaso, lwn, rakhim, idiallo, semantical, garymarcus infra (opinion dup)"
+    },
+    {
+      "item_id": "dr-batch-opinion",
+      "source": "dreaming",
+      "source_name": "dreaming",
+      "title": "Opinion/newsletter items (covered or low novelty) x6",
+      "url": "",
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "** Gary Marcus Anthropic IPO (substack opinion, 同氏のipo論は entities/gary-marcus.md の継続話題で目新しさ低), Ed Zitron Nvidia bubble (同パターン), nesbitt source-control (週次雑感), simonwillison x4 (同日 blog-ingest 対象/quote-post), jensenhuang tweet (promo), geohot empire-of-sunshine (私小説)。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Batch skip: garymarcus IPO, wheresyoured.at nvidia bubble, nesbitt week-in-source-control, simonwillison x4 quote-posts, x.com jensenhuang, geohot blog"
+    }
+  ]
+}
