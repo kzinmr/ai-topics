@@ -1,0 +1,64 @@
+{
+  "schema": "newsletter-triage.v1",
+  "run_id": "20261119T101014Z",
+  "triaged_at": "2026-11-19T10:30:00+00:00",
+  "checkpoint_path": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "summary": {
+    "processed_count": 2,
+    "critical": 1,
+    "high": 1,
+    "low": 0,
+    "skipped": 0
+  },
+  "notes": [
+    "Beehiiv link.mail.beehiiv.com/v2 URLs are encrypted trackers; titles unresolved (all 'Link N'). Resolution via curl returned 403. Subject line used for classification.",
+    "Substack redirect URLs were truncated in checkpoint (eyJlIj...v9mQ?) and non-resolvable; canonical post identified via hyperdimensional.substack.com."
+  ],
+  "newsletters": [
+    {
+      "message_id": "<20261118180207.3.74b6b9817e006129@mg2.substack.com>",
+      "subject": "The Silent Consensus",
+      "date": "2026-11-18",
+      "source_label": "uid=924",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-18-the-silent-consensus.md",
+      "importance": "critical",
+      "relevance": "high",
+      "classification_reason": "Essay by Dean W. Ball (OpenAI) from Vik-Bailey Lecture at Harvard, published on Hyperdimensional (hyperdimensional.substack.com/p/the-silent-consensus, subtitle 'Against Forfeiture'). Discusses 'Black October' — critical internet-infrastructure vulnerability disclosures found by frontier AI systems — and argues AI policy must be shaped by a long-term consensus rather than reactive emergency cycles. Directly on-topic for the AI safety / AI vulnerability discovery / AI policy sections of the wiki.",
+      "resolved_links": [
+        {
+          "title": "The Silent Consensus — Dean W. Ball, Hyperdimensional",
+          "url": "https://hyperdimensional.substack.com/p/the-silent-consensus",
+          "verified": true
+        },
+        {
+          "title": "Dean W. Ball author page",
+          "url": "https://substack.com/@deanwball",
+          "verified": true
+        }
+      ],
+      "unusable_links": 12,
+      "suggested_wiki_actions": [
+        "Create/update events/black-october-2026.md (cross-ref: php2shell-php-rce-2026, trustfall-symlink-rce-2026, openai-rubygems-gemstuffer-disclosure-2026)",
+        "Update entities/dean-w-ball.md with Vik-Bailey lecture + 'Against Forfeiture' thesis",
+        "Update concepts/ai-vulnerability-discovery.md and concepts/ai-vulnerability-detection-at-scale.md with Black October framing",
+        "Consider new concept page: dual-use capability cycle / 'urgent project' pattern in AI policy"
+      ]
+    },
+    {
+      "message_id": "<20261118.190811.688607aa@mta29>",
+      "subject": "OpenAI's dramatic GPT-6.2 release",
+      "date": "2026-11-18",
+      "source_label": "uid=925",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-18-openai-s-dramatic-gpt-6-2-release.md",
+      "importance": "high",
+      "relevance": "high",
+      "classification_reason": "Newsletter subject announces a major frontier model release (GPT-6.2) by OpenAI — squarely core-wiki material (frontier model events, org tracking). All 20 links are encrypted beehiiv /v2/c/ tracker URLs that return 403 to HEAD/GET and cannot be resolved without the mail-client token, so per-article titles are unavailable. Downstream wiki-ingest should scrape the newsletter's public archive (beehiiv site) by subject/date rather than these redirect URLs.",
+      "resolved_links": [],
+      "unusable_links": 20,
+      "suggested_wiki_actions": [
+        "Create events/gpt-6-2-release-2026.md after resolving source article (check beehiiv newsletter public archive, e.g. Interconnects/The Batch-style AI newsletters, for 2026-11-18 issue)",
+        "Update entities/openai.md with GPT-6.2 release entry (patch, do not overwrite)"
+      ]
+    }
+  ]
+}
