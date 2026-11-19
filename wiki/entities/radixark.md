@@ -1,7 +1,7 @@
 ---
 title: "RadixArk"
 created: 2026-05-06
-updated: 2026-05-06
+updated: 2026-11-19
 type: entity
 tags:
   - entity
@@ -62,6 +62,10 @@ The inference infrastructure market is seeing massive investment as AI moves fro
 
 The broader inference infrastructure space is seeing 60x improvements in model cold start times (from minutes to seconds) by serving weights from GPUs already holding them. RadixArk's SGLang-based approach positions it to benefit from these efficiency gains.
 
+
+## DaisyRose-27B (November 18, 2026)
+
+RadixArk's first model, **DaisyRose-27B**, is built on Qwen3.8-27B and post-trained with RL via **Miles**. Trained on long-horizon agent tasks (sessions up to 1M tokens) with just **1,200 curated tasks in 18 days on 144 H200 GPUs**, it lifts **Terminal-Bench 4.1 pass@1 from 5.6% to 12.0%** and improves on every benchmark vs the base Qwen3.8-27B. BF16/FP8/NVFP4 checkpoints released; tasks built with Eigent AI. A demonstration of RadixArk's SGLang + Miles inference+RL stack producing a frontier-efficiency post-training result on a limited compute budget. (HN 223 pts.)
 ## Related Concepts
 
 - [[concepts/inference/sglang]] — Open-source inference framework

@@ -1,5 +1,13 @@
 # Wiki Log
 
+## [2026-11-19] trending-topics
+- NEW concepts/gemini/gemini-4-neon.md (Gemini 4 Neon launch, HN 866p)
+- NEW concepts/nginx-http2-rce.md (CVE-2026-123633/123007, HN 1412p)
+- APPEND concepts/microsoft-mai-models.md (Ignite 2026 seven-model family, HN 552p)
+- APPEND entities/radixark.md (DaisyRose-27B, HN 223p)
+- Minted SCHEMA tag model-release (Models line)
+
+
 ## [2026-11-19] active-crawl | 4 new concepts + 2 enrichments, 6 raws
 
 HN Algolia scan (18 queries, 5-day window, >=20 pts; checkpoint `cron/data/active_crawl/hn_scan.json`, 39 stories). Killed as sibling-covered before writing: GPT-6.2 Astra/Sol (openai-astra), Gemini 4 Neon (blog pipeline), Unsloth Qwen3.8-27B v3.1 (concepts/unsloth covers it — only HN points differ), DeepSeek-V3-JAX (low source quality), partial-evaluation (not AI).

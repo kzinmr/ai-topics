@@ -1,7 +1,7 @@
 ---
 title: "Microsoft MAI Models"
 created: 2026-05-12
-updated: 2026-07-28
+updated: 2026-11-19
 type: concept
 tags: [microsoft, model, voice-ai, image-generation, openai, reasoning-model, code-model]
 sources: 
@@ -134,6 +134,10 @@ The Build 2026 announcements mark a significant acceleration: with MAI-Thinking-
 
 Microsoft plans to eventually build a frontier LLM "completely independent" of OpenAI if needed. All MAI models are available on Microsoft Foundry and MAI Playground.
 
+
+## Ignite 2026: Seven-model price-performance family (Nov 17, 2026)
+
+At Microsoft Ignite, MAI shipped **seven new models** aimed at running agents 24/7 at low cost, benchmarked against OpenAI/Anthropic (all Microsoft-reported, vendor-run): **MAI Cyber 2 Flash** beats GPT-6 Astra quality at <2% cost/task (CyberGym-E2E); **MAI Code 2** reaches 98% of GPT-6.1 Sol coding quality at ~40% price, 96% of Opus 5.5 at ~5% price; **MAI Code 2 Flash** ~GPT-6 Luna at 65% price; **MAI Image 2.7** #1 on Artificial Analysis image editing at 1/5 the price; **MAI Realtime 1** from $0.01/audio-minute; **MAI Transcribe 2** (powers Dragon Copilot, 10M patient encounters/month); **Decision 1.1** decision model 50x faster / 79x cheaper than GPT-6.1 Sol. Also **Maia 200**, Microsoft's 2nd-gen AI accelerator, now in production (1.7x more tokens). Includes **MAI Licensed Weights** (customize + run in your own Azure). HN reception was mixed: impressive efficiency numbers but "gamed metrics", "Windows Phone all over again" without open weights, and keynote criticism. (HN 552 pts.)
 ## Related Pages
 - [[entities/microsoft]] — Microsoft entity page
 - [[entities/mustafa-suleyman]] — Microsoft AI CEO

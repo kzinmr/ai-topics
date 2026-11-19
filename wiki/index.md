@@ -979,8 +979,10 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2376 pages)
+## Concepts (2378 pages)
 
+- [[concepts/nginx-http2-rce]] — Two critical CVSS 9.2 unauthenticated HTTP/2 RCEs in NGINX (CVE-2026-123633/123007), 5 teams, 225M+ sites; same-week AI-assisted vuln-discovery cluster
+- [[concepts/gemini/gemini-4-neon]] — Google DeepMind Gemini 4 fast price-efficient tier; #3 AI Index (61), $3/$15 per 1M, 1M context, projected to rival Opus 5.5 on speed
 - [[concepts/_index]] — Directory hub / overview for concepts pages
 - [[concepts/agent-credential-leasing]] — Agent Credential Leasing (lend); remote coding agents borrow time-limited, operator-approved access to credential-holding tools via socket forwarding — secrets never resident on the agent VM (HN 116p, Nov 2026)
 - [[concepts/agent-model-drift]] — Agent/model drift: silent server-side model changes and harness churn destabilizing agent workflows; Opus 5.5 "nerfed" allegations (HN 236p, Nov 9 2026), Claude Code 244-release instability, Goldman Claude Code restriction, OpenTelemetry-for-agent-memory proposal

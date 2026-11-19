@@ -2,7 +2,7 @@
 title: "Google Gemini"
 type: concept
 created: 2026-04-19
-updated: 2026-10-29
+updated: 2026-11-19
 tags:
   - concept
   - google
@@ -308,6 +308,10 @@ Gemini-powered image generation (NB2) competes directly with OpenAI's GPT Image 
 | Iteration | Natural language only | Select lasso + aspect ratio |
 | Hallucinations | Higher | Significantly lower |
 
+
+## Gemini 4 Neon (November 18, 2026)
+
+Google DeepMind released **Gemini 4 Neon**, the fast price-efficient Gemini 4 tier: #3 on the Artificial Analysis Intelligence Index (61), #2 on Vals (70.9%), #1 on Legal Research Bench / Tax Agent Bench / AutomationBench / Vending-Bench 2, #2 on Arena Agent Arena (1336). Priced $3/$15 per 1M (cached input $0.15, 95% off) with a 1M-token context. Third-party leaderboard modeling (micjm) projects Elo ~1,066 vs Opus 5.5's 1,078, driven by 127 tok/s on OpenRouter (vs Carbon's 46). HN reception flagged naming confusion and Antigravity entitlement friction. See [[concepts/gemini/gemini-4-neon]].
 ## Related
 
 - [[concepts/gemini/gemini-3-5-flash]] — Gemini 3.5 Flash detailed model page
