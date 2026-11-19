@@ -4,7 +4,7 @@ type: concept
 aliases:
   - unsloth
 created: 2026-04-25
-updated: 2026-11-14
+updated: 2026-11-19
 tags:
   - concept
   - fine-tuning
@@ -15,6 +15,7 @@ sources:
   - raw/articles/2026-07-15_danielhanchen_inkling-1bit-gguf-quants.md
   - raw/articles/2026-07-15_danielhanchen_inkling-unsloth-studio.md
   - raw/articles/unsloth.ai--docs-models-qwen3.8-next--2026-11-04.md
+  - raw/articles/2026-11-19_unsloth_amd-npu-desktop.md
 
 ---
 
@@ -24,6 +25,7 @@ Open-source LLM fine-tuning and inference framework by [[entities/daniel-han|Dan
 
 ## Recent
 
+- **Nov 2026 (11-19)**: **Unsloth Desktop supports AMD NPUs** — collab with AMD to run local models on Ryzen AI PCs with **XDNA 2 NPUs** (Ryzen AI 300 Strix/Krackan Point, Ryzen AI Max Strix Halo, Ryzen AI 400 Gorgon Point, + future AMD NPU devices out of the box). Key claim: NPUs use **2–4× less energy per token** than GPUs for local models. Uses AMD's **FastFlowLM** runtime with **Q4NX (4-bit)** model format; GGUF→Q4NX conversion runs on CPU. OpenAI-compatible `/v1/chat/completions` + Anthropic-compatible `/v1/messages` endpoints; managed Lemonade/FastFlowLM runtimes pinned + SHA-256 verified. Sample throughput: LFM3-1.7B 40.7 tok/s, Qwen3-VL-4B 20.5 tok/s, Qwen3.6-35B-A3B 17.2 tok/s. Windows 11 / Linux x64 (kernel 7.0+ w/ `amdxdna`). See [[raw/articles/2026-11-19_unsloth_amd-npu-desktop|raw article]].
 - **Nov 2026 (11-11)**: **Unsloth Dynamic V3.1 (preview) GGUFs for Qwen3.8-27B** (HN 151 pts, item 50491980) — claims **5–10% accuracy gain at the same size** across Terminal-Bench 2.1, DeepSWE v1.1, LiveCodeBench v6, GPQA Diamond, MMLU-Pro, AIME25 (256K context for agentic suites, 128K for the rest; temp 1.0/top_p 0.95/top_k 20, xhigh reasoning). Most 2–6-bit quants updated; 3-bit UD3 left as-is (UD3.1 gains judged insignificant; KLD reduced across most domains). Quants add Developer-Role support for agentic tools (Codex), MTP for fast inference, and improved nested-object tool-call parsing. The post doubles as a **benchmark-integrity rebuttal**: Unsloth argues competitor ISTA's GSQ-RCO comparison is misleading — Exllama-v3 keeps token embeddings in BF16 (excluded from the comparison's x-axis), GSQ-RCO likely ran at a 96K context budget (at 128K Unsloth's older UD3 wins), and ISTA's "100% accuracy recovery" on AIME25 looks like a single trial vs Unsloth's 14 runs (real recovery 93–96%; GPUs are non-deterministic even under greedy decoding). See [[raw/articles/2026-11-11_unsloth_qwen3.8-dynamic-v3.1|raw article]]. Qwen3.8-27B itself: 27B dense, vision + reasoning, 256K context, ~17 GB RAM/VRAM to run locally.
 - **Nov 2026**: **Unsloth Dynamic V3.1 GGUFs for Qwen3.8-Flash-Next** — claim 15% higher accuracy on Terminal Bench / DeepSWE at 256K context (32GB+ RAM). New guide lets users **mix-n-match engram precisions** (BF16 / Q8_0 / Q5_1 / IQ4_NL) independently of the main GGUF quant. See [[raw/articles/unsloth.ai--docs-models-qwen3.8-next--2026-11-04|raw article]].
 - **Jul 2026**: Collab with [[entities/thinking-machines-lab|Thinking Machines]] — 1-bit GGUF quants for [[concepts/inkling|Inkling]] (86% smaller, 270GB vs 1.9TB)

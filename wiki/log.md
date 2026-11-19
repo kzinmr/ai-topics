@@ -2,6 +2,14 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-11-19 22:30 UTC] x-accounts-scan — Unsloth Desktop AMD NPU support
+
+- Scan: 11 accounts (budget cursor 73->0), 1 new post, 0 errors. Source: `@danielhanchen` (Daniel Han).
+- Post: Unsloth Desktop now supports AMD NPUs (XDNA 2) -- collab with AMD, 2-4x less energy/token vs GPU. Link: unsloth.ai/docs/get-started/install/amd/amd-npu.
+- NEW `raw/articles/2026-11-19_unsloth_amd-npu-desktop.md` -- full docs scrape (FastFlowLM/Q4NX, supported Ryzen AI chips, throughput table, security model).
+- UPDATE `concepts/unsloth.md` -- new Recent bullet (Nov 19 NPU support), source + updated bumped.
+- UPDATE `entities/daniel-han.md` -- Blog/Recent Posts row for AMD NPU guide, source + updated bumped.
+
 ## [2026-11-19 19:0x UTC] skeleton-enrich-daily — stub backlog: 5 AI-core concept pages enriched
 
 > `status: skeleton` backlog remains **empty** (streak since 2026-10-17; 0 live markers in entities/concepts frontmatter).
