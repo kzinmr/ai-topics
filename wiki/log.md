@@ -3,6 +3,17 @@
 _Log of all wiki changes. Newest entries at top._
 
 
+## [2026-11-20 01:30 JST] hot-post (late-night) — inference-cost stack, 4 layers in 48h
+- Delivered late-night hot-post (report body Japanese per report-quality skill; log kept English): four Nov 17–18 items read as simultaneous 1–2 order-of-magnitude inference-cost compression at four independent layers (algorithm / architecture / chip / harness) — all vendor-reported, zero independent replications.
+  - Algorithm: [[concepts/energy-based-reasoners]] — 99.9% Sudoku-Extreme at 1.8M params, ~345–385x less compute; the learned energy function serves value + gradient + stopping at once; ties to [[concepts/jepa-planning-methods]] / [[entities/yann-lecun]].
+  - Architecture: [[concepts/cerebras-disaggregated-inference]] — 5x tokens/MW, AMD Instinct prefill + CS-3 decode, KV Portal over RDMA.
+  - Chip: [[concepts/trnrt-trainium-inference-engine]] — $0.040/M tokens (spot, batch 12), NKI megakernels, GLM-5.3-Flash 1M ctx; early test of [[concepts/cuda-moat]].
+  - Harness: [[concepts/frontierharness-eval]] v1.1 — 22 x 5 x 62 x 4 = 27,280 runs / 83B tokens; Claude Code cost 5.6x for the same pass (v1.0).
+- Contrast surfaced: Cerebras frames decode as memory-bandwidth-bound; TrnRT's design premise is that on Trainium decode is *not* bandwidth-bound (kernel boundaries and exposed collectives dominate).
+- Numbers verified: HN 50543989 re-queried via Algolia API 2026-11-19 ~18:3x UTC -> **315 pts** (wiki page said 311; report cites the re-queried figure). ONNX (50539610, 463) and Phrack 73 (50535992, 472) also re-queried but unused after a topic switch.
+- Archive: `inbox/trending-reports/hot-post-2026-11-20-0130.md`. Checks: NO_SLOP_FOUND, zero wikilink MISSes (alias-stripped checker), NO_TYPO.
+- Dedup: no overlap with 2026-11-19-0130 (decision-model playbook / calibrated escalation) or 2026-11-19-0930 (Gemini 4 Carbon overworking).
+
 ## [2026-11-19] dreaming group | Pattern E triage: 4 takes, 7 references, 4 batch-skips
 
 > `dreaming-group` cron (18:10 UTC, run 20261119T180030Z). Checkpoint collected=0 (total_articles 0, recent_raw_articles 280) — saturation day. Pattern E filesystem scan + `check_archive_index_absence.py` (134 recent, 3,279 indexed URLs) triaged the Nov 17-19 never-archived pool.
