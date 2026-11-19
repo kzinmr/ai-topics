@@ -3,7 +3,7 @@ title: "Jensen Huang"
 tags: [person]
 sources: []
 created: 2026-04-24
-updated: 2026-11-16
+updated: 2026-11-19
 type: entity
 ---
 
@@ -218,6 +218,25 @@ external hire, making a return "extremely unlikely"; [waximabbax] notes Nvidia i
 board cannot simply reverse course, and cites Bessent's 10-day export-control questionnaire. Community
 astroturfing suspicion recurred ([marginalia_nu], [cyanydeez] proposing a sentiment-analysis test). See
 [[events/nvidia-ceo-transition-2026]].
+
+## Public statement signaling a return (November 18)
+
+Huang's first public post since resigning (`@JensenHuang` on X, Nov 18) converted the *reported* comeback
+talks into his **own stated willingness to return**: *"If the Board of Directors decides that my return is in
+the best interest of our shareholders, our employees, the company, and America, I would be honored to answer
+these calls and return as CEO."* He also **publicly owned the personal scandal** for the first time — *"I have
+made serious mistakes in my personal life... I own my mistakes completely, and I am committed to cooperating
+with the Board's independent investigation"* (the first confirmation of an active Board independent probe) —
+and used patriotic framing (*"I came to the United States 53 years ago... Nowhere but in America could a
+company like NVIDIA be possible"*), read as courting political support amid export-control scrutiny. Raw:
+[[raw/articles/x.com--jensenhuang-status-2122726005219737649--f161af35.md]]. Full event context:
+[[events/nvidia-ceo-transition-2026]].
+
+**Daring Fireball political read.** John Gruber ("The 50-Yard Line," Nov 18) revisited Huang's March 2026
+*"America's unique advantage... is President Trump"* quote, arguing Huang *"broke for Trump's end zone"*
+instead of staying near the political midfield Tim Cook maintains — leaving NVIDIA (unlike Apple) exposed to
+corruption/national-security exposure; Gruber notes Trump floated **Tim Cook** as Huang's successor. Raw:
+[[raw/articles/daringfireball.net--2026-11-the-50-yard-line--1dbb4704.md]]. See [[entities/daringfireball-net]].
 
 ## Related
 

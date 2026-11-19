@@ -2,7 +2,7 @@
 title: Merge.dev (Merge Agent Handler)
 type: entity
 created: 2026-05-24
-updated: 2026-10-13
+updated: 2026-11-19
 tags:
   - entity
   - company
@@ -89,6 +89,13 @@ Merge Agent Handler uses a CLI-based MCP pattern:
 
 - **"Context engineering: from individual prompts to company-wide context"** (Oct 12, 2026) — Merge's marketing framing of the context-engineering trend: individual prompting is a personal skill, but enterprises need **unified, governed context** — one place defining "the Salesforce account object," shared across humans, AI tools, and integration flows. Notably, Merge's answer to "how should context grow as you add tools, teams, and agents?" is **"connectors"** — i.e., sold as an integration problem, not a model or orchestration problem. Weakly aligned: the unified-context argument is legit, the connector-as-answer is vendor framing. ^[raw/articles/merge.dev--blog-context-engineering-from-individual-prompts-to-company---ef7a18ab.md]
 - **"Bring Meta Muse to work with Merge for Workforce"** (Oct 12, 2026) — Merge lists Meta Muse as supported in its Workforce enterprise layer (40+ unified APIs, 50+ tools). Signals Meta's Muse assistant entering the enterprise-integration race via third-party unified-API vendors. ^[raw/articles/merge.dev--blog-use-meta-muse-with-merge--8806cd32.md]
+
+## Internal AI-engineering practices (November 2026)
+
+Merge published how its own engineering org embeds AI, a useful first-party datapoint on agent-assisted dev workflows at a MCP-gateway vendor:
+
+- **"How Merge empowers its engineers to leverage AI effectively"** (Nov 2026) — a per-engineer **monthly AI budget** allocated across a deliberately short tool menu (Windsurf, Claude Code) so teams can still learn from each other; recurring AI demos at all-hands selected from usage telemetry; an internal "Chainathon" hackathon on chained-LLM/agentic workflows (Claude, n8n, Devin, Merge Agent Handler). Concrete patterns: **custom Claude subagents** with detailed prompts (where to look, how to model, which tests) to automate repetitive Django API field/param additions; **Windsurf auto-PR-review** (analyzes diff, flags missing tests/inconsistent impl/inefficient queries, leaves inline comments); **Devin** triaging nit bugs flagged in a Slack channel via an async workflow (pull repo → set up env → change → PR). ^[raw/articles/merge.dev--blog-empowering-engineers-to-use-ai--69bb2c03.md]
+- **"3 AI agent management platforms to consider in 2026"** (Nov 2026) — Merge's competitor framing of the MCP-gateway / agent-management category (Merge Agent Handler vs **Composio** vs **Zapier MCP**): Tool Packs (connector bundles per use case), data-sharing rules with redact/log/block + violation alerts, audit trails, an Evaluation Suite for pre-prod tool-call testing. Cites **Perplexity** (Enterprise Pro) and **Telnyx** (voice agents → Greenhouse/Zendesk/Salesforce MCP servers) as Merge Agent Handler customers. Vendor-authored comparison — treat the Cons of Composio/Zapier claims as competitive framing. ^[raw/articles/merge.dev--blog-ai-agent-management-platform--e677da71.md]
 
 ## Related
 

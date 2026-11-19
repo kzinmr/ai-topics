@@ -1,7 +1,7 @@
 ---
 title: "NVIDIA CEO Transition (November 2026)"
 created: 2026-11-13
-updated: 2026-11-18
+updated: 2026-11-19
 type: event
 tags:
   - nvidia
@@ -125,6 +125,20 @@ Ed Zitron's long-form "The NVIDIA Bubble" (wheresyoured.at, 707 lines / 56KB) su
 - **Retail / pension / private-credit exposure.** Zitron's broader warning: individual investors, **insurers, pension funds, and private-credit vehicles** are exposed to the AI-infrastructure buildout — and to NVIDIA's revenue-integrity risk — **directly or indirectly**, largely without realizing it. This reframes the resignation from a personal- scandal story into a balance-sheet-contagion story, consistent with the same-day Tom's Hardware GPU-smuggling report (~1.5 GW / ~1.5M banned AI GPUs) above and Marcus's "ringmaster of circular financing" framing.
 
 This section is the **revenue-integrity / financial-plumbing** complement to the political (congressional testimony), personal (affairs), and ecosystem (Lambert) angles already on this page. Raw: [[raw/articles/wheresyoured.at--the-nvidia-bubble--711785b3.md]].
+
+## Huang's first public statement: "would be honored" to return (November 18)
+
+Five days after resigning, Huang broke his silence with a **first-person post on X** (`@JensenHuang`, Nov 18) — the first public, on-the-record confirmation of the comeback speculation that had until then been only *reported* via allies ([[#Comeback speculation and smuggling probe (November 15-16)|above]]). Key admissions and signals:
+
+- **Ownership of the personal scandal:** *"I did not live up to the standards expected of everyone at NVIDIA, and I have made serious mistakes in my personal life. I created problems for the Board that I deeply regret. I own my mistakes completely, and I am committed to cooperating with the Board's independent investigation."* This is the first time Huang publicly acknowledged wrongdoing *and* confirmed an **active Board independent investigation**.
+- **Explicit return ambition:** *"Since my departure, I've seen an outpouring of calls from NVIDIA's employees, investors, business partners, and customers for me to return as CEO... If the Board of Directors decides that my return is in the best interest of our shareholders, our employees, the company, and America, I would be honored to answer these calls and return as CEO."*
+- **Patriotic framing:** *"I came to the United States 53 years ago, and becoming an American citizen is one of the greatest gifts... Nowhere but in America could a company like NVIDIA be possible."* — widely read as courting political/Trump-side support amid the export-control scrutiny.
+
+The post materially upgrades the wiki's coverage from *reported* comeback talks to **Huang's own stated willingness to return**, while the Board search and Treasury's demand for an *external* CEO remain unresolved. Raw: [[raw/articles/x.com--jensenhuang-status-2122726005219737649--f161af35.md]].
+
+### Daring Fireball: the "50-Yard Line" political read
+
+Around the same moment, **Daring Fireball (John Gruber, "The 50-Yard Line," Nov 18)** reframed the scandal's political dimension, revisiting Huang's March 2026 quote that *"America's unique advantage that no country could possibly have is President Trump."* Gruber's thesis: corporate leaders normally stay near the political "50-yard line" (Tim Cook's Obama→Trump→Biden→Trump survival strategy) so they can "just turn around" after each election; Huang instead *"broke for Trump's end zone"* — million-dollar inauguration tickets, the gold trophy, an appointment to the President's Council of Advisors on Science and Technology — an alignment that was *"unprecedented in modern U.S. history"* and that now leaves NVIDIA (unlike Apple) exposed to *"charges of corruption and/or breaches of national security."* Gruber credits Huang with at least believing what he said, and notes Trump had floated **Tim Cook's name to succeed Huang at Nvidia**. Raw: [[raw/articles/daringfireball.net--2026-11-the-50-yard-line--1dbb4704.md]]. See [[entities/daringfireball-net]].
 
 ## Related
 

@@ -1,7 +1,7 @@
 ---
 title: "Code Search Indexing for Agent Tools"
 created: 2026-08-14
-updated: 2026-08-14
+updated: 2026-11-19
 type: concept
 tags:
   - concept
@@ -122,7 +122,9 @@ This section informs graph queries: implemented by [[entities/cursor-ai]], embod
 - [[concepts/code-intelligence-for-llms]] — Broader practice of pre-computed code analysis data for LLMs
 - [[concepts/semantic-ids]] — Embedding-based approach contrasted with exact text indexing
 - [[concepts/rlm-for-indexing]] — Recursive language model applied to indexing tasks
+- [[entities/voyage-ai]] — **Wayfinder** (Nov 2026): hybrid semantic+BM25 index + a fine-tuned 35B search model; the semantic-side complement to Cursor's purely lexical grep index. Reports ~74% recall@12 at ~$0.01/search vs Sonnet-class 76–78% at $0.07–0.12; grep and index found to be *complementary* (each adds recall the other misses).
 
 ## Sources
 
 - [Fast regex search: indexing text for agent tools — Cursor Blog](https://cursor.com/blog/fast-regex-search) (Vicent Marti, Mar 23 2026) — raw: `raw/articles/2026-05-10_cursor_fast-regex-search.md`
+- [Wayfinder: Frontier-level Code Search at a Fraction of the Cost — Voyage AI Blog](https://blog.voyageai.com/2026-11-18/wayfinder-code-search/) (Henry Weller, Nov 18 2026) — raw: `raw/articles/blog.voyageai.com--2026-11-18-wayfinder-code-search--19e0ee36.md`

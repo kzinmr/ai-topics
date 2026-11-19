@@ -2,7 +2,7 @@
 title: "Voyage AI"
 type: entity
 created: 2026-05-08
-updated: 2026-08-14
+updated: 2026-11-19
 tags:
   - company
   - rag
@@ -86,6 +86,22 @@ On August 13, 2026, Voyage AI released **voyage-code-4**, a next-generation code
 **Why agents need semantic retrieval:** most agents today rely on full-text search (grep), which works when the agent knows the identifier it seeks but returns no useful hits for symptom-based queries (e.g., a bug report). Semantic retrieval with voyage-code-4 complements full-text search and significantly reduces wasted token usage — an agent may issue dozens of retrieval queries per task, each consuming prompt tokens, output tokens, and wall-clock time.
 
 **Availability:** via the Voyage API and MongoDB Atlas Embedding and Reranking API; first 200 million tokens free.
+
+## Wayfinder — Indexed Code Search for Coding Agents (November 2026)
+
+On November 18, 2026, Voyage AI (Henry Weller) open-sourced **Wayfinder**, a research project (explicitly *"not a MongoDB product"*) that pairs a small fine-tuned model with a **hybrid (semantic + BM25) search index** to make coding-agent code search both cheaper and more accurate than frontier grep-based search. Model weights, training data and harness are published so agent builders can evaluate the approach. Raw: [[raw/articles/blog.voyageai.com--2026-11-18-wayfinder-code-search--19e0ee36.md]].
+
+**The problem:** the coding-agent industry default is `grep`/`cat`, which degrades as codebases grow. In a haystack test (Agents-A1 35B, 421 tasks from real commits), expanding from one repo to 205M LOC saw search time rise **0.3s → 51s per task** and recall fall **0.39 → 0.14**. An index cut wall time at 205M LOC from 110s → 67s.
+
+**The model:** `wayfinder-qwen-35B-a3b` — a LoRA fine-tune of Qwen3.6-35B-A3B produced in **~$28** (2 epochs, 4× H200, 88 min), trained from 1,383 labeled agentic-search examples distilled off-policy from a teacher (`Muse Spark Open`, 816B; 5,683 rollouts filtered to 1,383). New 35B models can be fine-tuned in under $300 using the 1,300+ collected traces.
+
+**Cascading retrieval spec:** (1) broad grep by a ~30B agentic model, run in parallel with (1b) hybrid vector search over treesitter-chunked files embedded with **voyage-code-4** (80% semantic / 20% BM25); (2) merge + rerank with **rerank-3**; (3) follow-up greps. Like Cursor's secure-indexing approach, the index stores only hashes and embeddings on object storage — raw code never leaves the developer's machine.
+
+**Headline result (recall@12, 200 held-out tasks):** the indexed open models reach **~74%** of the right files at **~$0.01/search**, within 2 points of Sonnet 5.5 high-effort (76%, $0.12) and 4 of GPT-6.1 Sol medium-effort (78%, $0.07). Grep and index are **complementary** (model adds 12–13 pts over the index; index adds 5–9 pts over the model). Pooling two Wayfinder runs closes the gap to GPT-6.1 Sol at 78% for ~$0.02/search. End-to-end (42 tasks, Opus 5.5 as parent coder), search raises pass rate from **14% → 51–61%**.
+
+**Cost caveat:** inference cost ≠ total cost — embedding the median repo (≈8,800 chunks / 2.6M tokens) costs ~$0.31 once plus ~$0.16/month sync; an index breaks even against a default Sonnet search (~$0.11) after ~2 searches per repo per month, favoring frequently-searched repos.
+
+The project directly builds on Voyage's code-retrieval line ([[#Voyage-code-4 — Code Retrieval for Coding Agents (August 2026)|voyage-code-4]]) and rerankers, repackaging them into a reference agent harness. Cross-reference: [[concepts/code-search-indexing]], [[concepts/coding-agents/agentic-coding]].
 
 ## Related
 

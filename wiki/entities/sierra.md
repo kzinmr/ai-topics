@@ -1,7 +1,7 @@
 ---
 title: "Sierra"
 created: 2026-05-05
-updated: 2026-11-15
+updated: 2026-11-19
 type: entity
 tags:
   - company
@@ -54,6 +54,8 @@ Sierra is an AI-powered customer service platform that deploys conversational AI
 ### Ghostwriter (Agent as a Service, April 2026)
 
 Sierra launched **Ghostwriter**, an "agent as a service" tool. Users describe what they need in natural language, and Ghostwriter autonomously creates and deploys a specialized agent. This extends Sierra's platform beyond customer-facing agents into internal business process automation.
+
+**"Ghostwriter's performance review" (Nov 2026)** — a five-customer feedback piece positioning Ghostwriter as an always-on *AI teammate* embedded in Slack/Teams that watches agent performance and drafts fixes before humans report problems, with named-customer evidence: **ShipStation Global** (continuous review against team-set goals cut manual review load; fixes arrive pre-tested); **Carta** (Ghostwriter proactively posted that the chat agent was failing to create support cases, pre-identified the likely cause + affected customers, and confirmed recovery); **Tilt** (a phone-sent question was enough to diagnose and hand off a root cause); **Imprint** (tracks each experiment/release and reports whether it moved the metric, maintaining quality as more people touch the agent). The recurring theme: *"by the time someone sits down to look at a problem, Ghostwriter has usually found it, understood the cause, or drafted a change to fix it."* ^[raw/articles/sierra.ai--blog-ghostwriters-performance-review--66258859.md]
 
 ### ARR trajectory to $400M+ (October 30, 2026)
 
