@@ -1,7 +1,7 @@
 ---
 title: "Gemini 4 Neon"
 created: 2026-11-19
-updated: 2026-11-19
+updated: 2026-11-20
 type: concept
 tags: [google, deepmind, google-deepmind, model, multimodal, model-release, coding-agent, reasoning-model]
 related:
@@ -46,6 +46,11 @@ micjm modeled the Agent Duel leaderboard (model identity + speed + early-voting 
 
 - **Naming confusion**: "Credit to Google for outdoing OpenAI and Anthropic in choosing a confusing naming convention" (3wolf); "which model am I supposed to use for what?" (ariwilson).
 - **Entitlement friction**: multiple users (mrbungie, ariwilson) reported student / $20-plan accounts cannot access the new models in Antigravity — a recurring access-complaint vs OpenAI/Anthropic.
+
+## Third-party index & reception (Nov 19)
+
+- **Models Engineering Index (MEI)**: Gemini 4 Neon became **#1** (HN 50568130, 351 pts, Nov 19). HN reception split: indie indexes seen as less benchmaxxable (ummonk) vs long-running "Google models benchmaxed to hell" skepticism (js4ever) and high tokens/task + hallucination complaints (mjburgess); counterpoint — Artificial Analysis Omniscience measures the three Gemini 4 models at among the **lowest hallucination rates recorded** (applicative); several users report switching OpenAI subs to Google for Neon/Carbon (hadlock, etoxin: "switching all my opus 5.5 sub-agents to neon").
+- **micjm Opus 5.5-parity thesis** (HN 50554374, 255 pts): OpenRouter-measured speed + benchmark parity project Neon as an Opus 5.5 competitor at much lower price; Agent Duel data (agentduel.com) shows speed is decisive — DeepSeek-class speed "wins ~half the time because it's lightning fast and good enough" (seizethecheese).
 
 ## Related
 

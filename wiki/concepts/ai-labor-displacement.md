@@ -1,7 +1,7 @@
 ---
 title: "AI Labor Displacement & Economic Impact"
 created: 2026-06-11
-updated: 2026-06-11
+updated: 2026-11-20
 type: concept
 tags: [concept, economics, labor, policy, safety, anthropic, prediction]
 sources:
@@ -71,6 +71,10 @@ Beyond economic provision, any response must address **meaning, purpose, and age
 ## International Dimension
 
 Employment crises are contagious across borders. Amodei proposes macroeconomic cooperation among democratic AI coalition members to coordinate stabilization policies (see [[concepts/us-china-ai-competition]]).
+
+## Gig-ification of credentialed work (Nov 2026)
+
+Rest of World (Julián Posada, Nov 19, HN 50562500, 139 pts): "AI isn't replacing your job. It's turning it into low-paid gig work." The gig economy has arrived for cardiologists — **Outlier (Scale AI)** advertises up to **$180/hr** for US physicians to design cardiac scenarios, review AI-generated reports and rank model outputs, but **$7.50/hr for the same Tagalog work in the Philippines, $12.50/hr Swahili in Tanzania**. Pattern: platforms pay well to recruit credentialed workers (physicians, lawyers, PhDs), then cut rates and move on; the platform controls payment and working conditions throughout. HN frame: "evolving" skilled labor into **fungible operators of AI** is a management win that avoids the political optics of unemployment (add-sub-mul-div); counter-argument that this is just industrialization was rejected by practitioners who say AI lets them carry *bigger* tasks (borzi). Raw: `raw/articles/2026-11-19_restofworld_ai-gig-work.md`. See [[entities/scale-ai]].
 
 ## Related Pages
 

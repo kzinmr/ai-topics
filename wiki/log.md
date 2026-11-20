@@ -2,6 +2,16 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-11-20 12:30 UTC] trending-topics | Anthropic Nasdaq debut, AI-designed chips wave, Claude black-hole physics
+
+- NEW `events/anthropic-nasdaq-debut-2026.md` — ANT listing Nov 19: $83/share, $81.3B raised ($107.3B Bloomberg incl. greenshoe), largest IPO ever (tops SpaceX), ~$1.5T valuation, Amazon+Google ~30% ownership; HN 1,095p reception (engineered pop, lockup watch, market-cap share comparison vs Google IPO) + contestation context (misanthropic statement coalition, no-bailout protests, Ed Zitron/Gary Marcus skepticism).
+- NEW `concepts/frostbite-ai-designed-cpu.md` — Architect Labs: agent swarms discover/design/verify a general-purpose interaction-net CPU end-to-end; ASL formal spec -> 800k+ lines Lean contracts; vendor-reported 4.59x perf/W geomean vs area-matched in-order core (3.83x on 15 held-out workloads), emergent hardware work-stealing "never specified by any human".
+- NEW `concepts/claude-black-hole-physics.md` — Claude Fable 5.2 solves two open quantum-gravity problems (black-hole formation transition persists without definite spacetime shape; exact central-charge mass bound); sits in the 2026 AI-math wave next to Jacobian counterexample, PSI/Aaronson-Ambainis, OpenAI Lean program.
+- RAW (8 files, sha256 computed): frostbite, claude-black-hole, openai advancing-chip-design (Jalapeño/AMD/Synopsys), deepmind-institute what-comes-after-agi, contralabs frontier-design stealth "Gestalt" model, restofworld AI gig work, pete-warden moonshine local-AI interview, HN reconstruction of "Fuck Your AI Safeguards" (primary 404).
+- INDEX: 2 concept + 1 event entries, counts synced; SCHEMA: `chip-design` minted on Models line.
+- Report: `inbox/rss-scans/trending-topics-2026-11-20.md`. Coverage notes: Gemini 4 Neon (already `concepts/gemini/gemini-4-neon.md`, appended third-party index data), token fraud (raw saved by blog-ingest; Willison coverage pending), MAI Ignite/Gemini Tasks/Unsloth AMD NPU covered by morning jobs.
+
+
 ## [2026-11-20 10:45 UTC] newsletter-triage | run 20261120T101025Z — 4 newsletters -> 4 takes, 3 refs, 5 batch-skips
 
 - Sources: Ben's Bites "My wife thinks AI is a person" / Superintel-track "Google is back: Gemini 4 Neon" (beehiiv v2, 20 encrypted trackers unresolved) / True Positive Weekly #186 / Growth-Scoop "How did Lovable grow so fast?".

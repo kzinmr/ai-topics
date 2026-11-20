@@ -979,8 +979,10 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2378 pages)
+## Concepts (2380 pages)
 
+- [[concepts/claude-black-hole-physics]] — Claude Fable 5.2 solves two open black-hole/quantum-gravity problems (Nov 19 2026): 20-year-old formation-transition calculation completed; exact central-charge upper bound on black-hole mass; Anthropic notes neither result describes our universe (HN 512p)
+- [[concepts/frostbite-ai-designed-cpu]] — Frostbite (Architect Labs, Nov 20 2026): agent swarms discover/design/verify a general-purpose interaction-net CPU end-to-end; ASL spec lowered to 800k+ Lean lines; vendor-reported 4.59x perf/W vs area-matched in-order core, emergent hardware work-stealing (HN 143p)
 - [[concepts/nginx-http2-rce]] — Two critical CVSS 9.2 unauthenticated HTTP/2 RCEs in NGINX (CVE-2026-123633/123007), 5 teams, 225M+ sites; same-week AI-assisted vuln-discovery cluster
 - [[concepts/gemini/gemini-4-neon]] — Google DeepMind Gemini 4 fast price-efficient tier; #3 AI Index (61), $3/$15 per 1M, 1M context, projected to rival Opus 5.5 on speed
 - [[concepts/_index]] — Directory hub / overview for concepts pages
@@ -3399,8 +3401,9 @@
 - [[comparisons/palantir-vs-competitors]] — Palantir vs. Competitors
 - [[comparisons/self-scaffolding-approaches]] — Self-Scaffolding Approaches — RLM vs Dynamic Workflows vs Ornith-1.0
 
-## Events (55 pages)
+## Events (56 pages)
 
+- [[events/anthropic-nasdaq-debut-2026]] — Anthropic Nasdaq debut (ANT, Nov 19 2026) — priced $83/share above range, $81.3B raised ($107.3B incl. greenshoe per Bloomberg), largest IPO ever topping SpaceX, ~$1.5T valuation; HN 1,095p: engineered-pop, lockup-watch, 2.7% of US market cap vs Google's 0.16% at IPO; same-week 'Not a Safe AI Company' coalition + no-bailout protests
 - [[events/chatgpt-wallet-launch-2026]] — ChatGPT Wallet (OpenAI, Nov 16 2026) — agentic-commerce payment surface; low HN traction (46p/80c), single official source, confidence low pending third-party audit
 - [[events/openai-robotics-team-disbanded-2026]] — OpenAI disbands robotics team (2nd time, Nov 13 2026, Fortune/HN 179) as general models start running robots; HN: layered control, ~36ms latency floor, Bitter Lesson debate; confidence medium (paywalled single source)
 - [[events/nvidia-ceo-transition-2026]] — NVIDIA CEO Transition (Nov 12 2026) — Jensen Huang resigns as President/CEO/Board member effective immediately; CFO Colette Kress Interim CEO; Harvey C. Jones (ex-Synopsys) first-ever Board Chair; stock −8%→−13%; Huang agreed to closed-door congressional testimony by Thanksgiving (Mast/Moolenaar/Crawford); Anthropic IPO backstop in question
