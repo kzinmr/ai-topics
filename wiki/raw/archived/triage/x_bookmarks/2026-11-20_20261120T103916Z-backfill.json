@@ -1,0 +1,152 @@
+{
+  "checkpoint_run_id": "20261120T103916Z-xbookmarks-backfill",
+  "pipeline": "x_bookmarks",
+  "triage_timestamp": "2026-11-20T10:40:44.559725+00:00",
+  "summary_ja": "2026-11-20のx-bookmarks-ingestは processed_x_bookmarks.json の526 tweet_idsにより0件のみ取得(stop_reason=already_processed_page)となり、raw記事0件・wikiページ更新0件・コミットなしで終了していた。内12件(Harvey 4本/Pinecone 3本/Warp 2本/Hex 1本/ElevenLabs 2本)はraw記事がwiki/raw/articlesに存在する一方でアーカイブ判定が記録されていない不整合状態だった。本パスで12件をskipとしてアーカイブし、tweet_idsキャッシュはクリア済み(次回実行でブックマーク一式を再取得・再判定する)。",
+  "decisions": [
+    {
+      "item_id": "x-bookmarks-20261120-how-harvey-is-building-reviews-and-verif",
+      "source": "x_bookmarks",
+      "source_name": "harvey",
+      "title": "harvey reviews & verification",
+      "url": "https://www.harvey.ai/blog/how-harvey-is-building-reviews-and-verification",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/2026-11-20_harvey_how-harvey-is-building-reviews-and-verification.md",
+      "recommended_action": "skip",
+      "reason_ja": "* 2026-11-20のx-bookmarks-ingest実行でrawは保存済みだったがwikiページ更新が0件だった分を、後付けでskip判定として正式アーカイブ。本文はharvey公式blogの製品/運用記事(legal)で、LLM/エージェント技術の新概念としては薄い。既存のentities/harvey系ページで十分カバーされる製品告知・ケーススタディ類。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Source: [https://www.harvey.ai/blog/how-harvey-is-building-reviews-and-verification](https://www.harvey.ai/blog/how-harvey-is-building-reviews-and-verification) :Harvey: Products Solutions Customers Security Resources Company Platform Overview → One platform for all legal AI work"
+    },
+    {
+      "item_id": "x-bookmarks-20261120-how-we-built-agentic-retrieval-for-paten",
+      "source": "x_bookmarks",
+      "source_name": "harvey",
+      "title": "Harvey agentic retrieval for patent research",
+      "url": "https://www.harvey.ai/blog/how-we-built-agentic-retrieval-for-patent-research",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/2026-11-20_harvey_how-we-built-agentic-retrieval-for-patent-research.md",
+      "recommended_action": "skip",
+      "reason_ja": "* 2026-11-20のx-bookmarks-ingest実行でrawは保存済みだったがwikiページ更新が0件だった分を、後付けでskip判定として正式アーカイブ。本文はharvey公式blogの製品/運用記事(legal)で、LLM/エージェント技術の新概念としては薄い。既存のentities/harvey系ページで十分カバーされる製品告知・ケーススタディ類。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Source: [https://www.harvey.ai/blog/how-we-built-agentic-retrieval-for-patent-research](https://www.harvey.ai/blog/how-we-built-agentic-retrieval-for-patent-research) :Harvey: Products Solutions Customers Security Resources Company Platform Overview → One platform for all legal A"
+    },
+    {
+      "item_id": "x-bookmarks-20261120-legal-triage",
+      "source": "x_bookmarks",
+      "source_name": "harvey",
+      "title": "Harvey legal triage",
+      "url": "https://www.harvey.ai/blog/legal-triage",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/2026-11-20_harvey_legal-triage.md",
+      "recommended_action": "skip",
+      "reason_ja": "* 2026-11-20のx-bookmarks-ingest実行でrawは保存済みだったがwikiページ更新が0件だった分を、後付けでskip判定として正式アーカイブ。本文はharvey公式blogの製品/運用記事(legal)で、LLM/エージェント技術の新概念としては薄い。既存のentities/harvey系ページで十分カバーされる製品告知・ケーススタディ類。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Source: [https://www.harvey.ai/blog/legal-triage](https://www.harvey.ai/blog/legal-triage) :Harvey: Products Solutions Customers Security Resources Company Platform Overview → One platform for all legal AI work Agents → AI agents designed for legal work Vault → Store and analyze "
+    },
+    {
+      "item_id": "x-bookmarks-20261120-apply-institutional-knowledge-to-legal-a",
+      "source": "x_bookmarks",
+      "source_name": "harvey",
+      "title": "Harvey + DeepJudge institutional knowledge",
+      "url": "https://www.harvey.ai/blog/apply-institutional-knowledge-to-legal-ai-workflows-with-harvey-and-deepjudge",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/2026-11-20_harvey_apply-institutional-knowledge-to-legal-ai-workflows-with-harvey-and-deepjudge.md",
+      "recommended_action": "skip",
+      "reason_ja": "* 2026-11-20のx-bookmarks-ingest実行でrawは保存済みだったがwikiページ更新が0件だった分を、後付けでskip判定として正式アーカイブ。本文はharvey公式blogの製品/運用記事(legal)で、LLM/エージェント技術の新概念としては薄い。既存のentities/harvey系ページで十分カバーされる製品告知・ケーススタディ類。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Source: [https://www.harvey.ai/blog/apply-institutional-knowledge-to-legal-ai-workflows-with-harvey-and-deepjudge](https://www.harvey.ai/blog/apply-institutional-knowledge-to-legal-ai-workflows-with-harvey-and-deepjudge) :Harvey: Products Solutions Customers Security Resources Co"
+    },
+    {
+      "item_id": "x-bookmarks-20261120-cost-usage-export",
+      "source": "x_bookmarks",
+      "source_name": "pinecone",
+      "title": "Pinecone cost usage export",
+      "url": "https://www.pinecone.io/blog/cost-usage-export/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/2026-11-20_pinecone_cost-usage-export.md",
+      "recommended_action": "skip",
+      "reason_ja": "* 2026-11-20のx-bookmarks-ingest実行でrawは保存済みだったがwikiページ更新が0件だった分を、後付けでskip判定として正式アーカイブ。本文はpinecone公式blogの製品/運用記事(vector-db)で、LLM/エージェント技術の新概念としては薄い。既存のentities/pinecone系ページで十分カバーされる製品告知・ケーススタディ類。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Source: [https://www.pinecone.io/blog/cost-usage-export/](https://www.pinecone.io/blog/cost-usage-export/) ← Blog Pinecone now exports cost and usage data in FOCUS format Gavin Johnson Nov 19, 2026 Product Share: Share: Subscribe to Pinecone Get the latest updates via email when "
+    },
+    {
+      "item_id": "x-bookmarks-20261120-pg-pinecone-railway",
+      "source": "x_bookmarks",
+      "source_name": "pinecone",
+      "title": "Pinecone pg-pinecone on Railway",
+      "url": "https://www.pinecone.io/blog/pg-pinecone-railway/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/2026-11-20_pinecone_pg-pinecone-railway.md",
+      "recommended_action": "skip",
+      "reason_ja": "* 2026-11-20のx-bookmarks-ingest実行でrawは保存済みだったがwikiページ更新が0件だった分を、後付けでskip判定として正式アーカイブ。本文はpinecone公式blogの製品/運用記事(vector-db)で、LLM/エージェント技術の新概念としては薄い。既存のentities/pinecone系ページで十分カバーされる製品告知・ケーススタディ類。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Source: [https://www.pinecone.io/blog/pg-pinecone-railway/](https://www.pinecone.io/blog/pg-pinecone-railway/) ← Blog pg_pinecone now deploys on Railway in one click Gavin Johnson Nov 18, 2026 Product Share: Share: Subscribe to Pinecone Get the latest updates via email when they'"
+    },
+    {
+      "item_id": "x-bookmarks-20261120-index-conversion",
+      "source": "x_bookmarks",
+      "source_name": "pinecone",
+      "title": "Pinecone index conversion",
+      "url": "https://www.pinecone.io/blog/index-conversion/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/2026-11-20_pinecone_index-conversion.md",
+      "recommended_action": "skip",
+      "reason_ja": "* 2026-11-20のx-bookmarks-ingest実行でrawは保存済みだったがwikiページ更新が0件だった分を、後付けでskip判定として正式アーカイブ。本文はpinecone公式blogの製品/運用記事(vector-db)で、LLM/エージェント技術の新概念としては薄い。既存のentities/pinecone系ページで十分カバーされる製品告知・ケーススタディ類。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Source: [https://www.pinecone.io/blog/index-conversion/](https://www.pinecone.io/blog/index-conversion/) ← Blog Vector-to-document index conversion is now available Gavin Johnson Nov 17, 2026 Product Share: Share: Subscribe to Pinecone Get the latest updates via email when they'r"
+    },
+    {
+      "item_id": "x-bookmarks-20261120-warp-learn-software-factory-course",
+      "source": "x_bookmarks",
+      "source_name": "warp",
+      "title": "Warp Learn software factory course",
+      "url": "https://www.warp.dev/blog/warp-learn-software-factory-course",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/2026-11-20_warp_warp-learn-software-factory-course.md",
+      "recommended_action": "skip",
+      "reason_ja": "* 2026-11-20のx-bookmarks-ingest実行でrawは保存済みだったがwikiページ更新が0件だった分を、後付けでskip判定として正式アーカイブ。本文はwarp公式blogの製品/運用記事(terminal)で、LLM/エージェント技術の新概念としては薄い。既存のentities/warp系ページで十分カバーされる製品告知・ケーススタディ類。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Source: [https://www.warp.dev/blog/warp-learn-software-factory-course](https://www.warp.dev/blog/warp-learn-software-factory-course) Company Introducing Warp Learn: Build your first software factory November 19, 2026 Software factories are changing how software gets built. Develo"
+    },
+    {
+      "item_id": "x-bookmarks-20261120-factory-engineering-software-factories",
+      "source": "x_bookmarks",
+      "source_name": "warp",
+      "title": "Warp factory engineering",
+      "url": "https://www.warp.dev/blog/factory-engineering-software-factories",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/2026-11-20_warp_factory-engineering-software-factories.md",
+      "recommended_action": "skip",
+      "reason_ja": "* 2026-11-20のx-bookmarks-ingest実行でrawは保存済みだったがwikiページ更新が0件だった分を、後付けでskip判定として正式アーカイブ。本文はwarp公式blogの製品/運用記事(terminal)で、LLM/エージェント技術の新概念としては薄い。既存のentities/warp系ページで十分カバーされる製品告知・ケーススタディ類。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Source: [https://www.warp.dev/blog/factory-engineering-software-factories](https://www.warp.dev/blog/factory-engineering-software-factories) Engineering Becoming a factory engineer Ben Holmes | November 19, 2026 Software engineering has quickly become factory engineering. We've p"
+    },
+    {
+      "item_id": "x-bookmarks-20261120-knowledge-engine",
+      "source": "x_bookmarks",
+      "source_name": "hex-technologies",
+      "title": "Hex knowledge engine",
+      "url": "https://www.pinecone.io/blog/introducing-nexus-knowledge-engine/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/2026-05-10_pinecone_introducing-nexus-knowledge-engine.md",
+      "recommended_action": "skip",
+      "reason_ja": "* 2026-11-20のx-bookmarks-ingest実行でrawは保存済みだったがwikiページ更新が0件だった分を、後付けでskip判定として正式アーカイブ。本文はhex-technologies公式blogの製品/運用記事(data)で、LLM/エージェント技術の新概念としては薄い。既存のentities/hex-technologies系ページで十分カバーされる製品告知・ケーススタディ類。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Source: [https://www.pinecone.io/blog/introducing-nexus-knowledge-engine/](https://www.pinecone.io/blog/introducing-nexus-knowledge-engine/) ← Blog Better Models Won’t Save Your Agent Jeff Zhu , Siva Ragavan May 4, 2026 Engineering Share: Jump to section: From Hand-Engineered Con"
+    },
+    {
+      "item_id": "x-bookmarks-20261120-candid-health",
+      "source": "x_bookmarks",
+      "source_name": "elevenlabs",
+      "title": "ElevenLabs Candid Health",
+      "url": "https://elevenlabs.io/blog/candid-health",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/2026-11-20_elevenlabs_candid-health.md",
+      "recommended_action": "skip",
+      "reason_ja": "* 2026-11-20のx-bookmarks-ingest実行でrawは保存済みだったがwikiページ更新が0件だった分を、後付けでskip判定として正式アーカイブ。本文はelevenlabs公式blogの製品/運用記事(voice-ai)で、LLM/エージェント技術の新概念としては薄い。既存のentities/elevenlabs系ページで十分カバーされる製品告知・ケーススタディ類。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Source: [https://elevenlabs.io/blog/candid-health](https://elevenlabs.io/blog/candid-health) Customer Stories How Candid Health automates payer calls with ElevenAgents Written by John Durovsik Published Nov 19, 2026 Listen Listen to this article 0:00 0:00 0:00 1.0x ElevenAgents f"
+    },
+    {
+      "item_id": "x-bookmarks-20261120-how-many-calls-can-an-ai-voice-agent-han",
+      "source": "x_bookmarks",
+      "source_name": "elevenlabs",
+      "title": "ElevenLabs voice agent call capacity",
+      "url": "https://elevenlabs.io/blog/how-many-calls-can-an-ai-voice-agent-handle",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/2026-11-20_elevenlabs_how-many-calls-can-an-ai-voice-agent-handle.md",
+      "recommended_action": "skip",
+      "reason_ja": "* 2026-11-20のx-bookmarks-ingest実行でrawは保存済みだったがwikiページ更新が0件だった分を、後付けでskip判定として正式アーカイブ。本文はelevenlabs公式blogの製品/運用記事(voice-ai)で、LLM/エージェント技術の新概念としては薄い。既存のentities/elevenlabs系ページで十分カバーされる製品告知・ケーススタディ類。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Source: [https://elevenlabs.io/blog/how-many-calls-can-an-ai-voice-agent-handle](https://elevenlabs.io/blog/how-many-calls-can-an-ai-voice-agent-handle) Blog Resources How many calls can an AI voice agent handle at scale? Written by Jack Limebear Published Nov 19, 2026 Listen Lis"
+    }
+  ]
+}
