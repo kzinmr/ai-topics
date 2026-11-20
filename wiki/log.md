@@ -2,6 +2,17 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+
+## [2026-11-20 17:45 UTC] watchdog | Pipeline recovery: 503 triage cascade + x-bookmarks scanner block
+
+- Wiki structural state verified clean: index.md 0 corruption (validate_index.py pass), no empty/duplicate index entries, `# Wiki Log` header intact (1x). Weekly graph analysis (3ee1ebed, 15:06 UTC) already adjudicated all 17 dup groups (0 merges) — no watchdog action on graph health.
+- Root cause of `blog`/`newsletter` chain-broken alerts: local LLM server **HTTP 503 with no provider fallback** killed 5 agent jobs today (blog-triage, blog-wiki-ingest, newsletter-triage [work done but exit errored], newsletter-wiki-ingest, active-crawl) in the 10:27-11:01 UTC window. Transient — 11-19 runs of the same jobs succeeded. Not actionable by watchdog; monitor for recurrence.
+- DATA-INTEGRITY FIX: `cron/data/blog_ingest/triage_latest.json` still held the consumed 11-18 batch (run 20261118T100050Z, already archived) while blog-ingest produced a new 11-20 batch (30 articles) — blog-wiki-ingest would have re-ingested stale 11-18 decisions. Marked `checkpoint_run_id=STALE-...-consumed` + `_watchdog_reset` note; backup at `triage_latest.json.bak-20261120-stale-20261118`. Blog 11-20 batch needs a manual/rerun blog-triage before wiki-ingest.
+- Newsletter 11-20 triage verified complete on disk: 12 decisions in triage_latest.json, take items archived (2026-11-20_20261120T101025Z.json, 8 items), raws+4 commits, log entry present → downstream wiki-ingest rerun is safe.
+- x-bookmarks-ingest BLOCKED at 11:30 UTC by cron injection scanner (false positive — skill/prompt/script all pattern-clean; cliff correlates with the 1.77MB script output at the 11-20 11:30 backfill run after the intentional tweet_ids reset). Verified 0 new bookmarks via manual script run; pruned the oversized archive file (kept as pruned_20261120T113038Z.json). Next scheduled run should pass the scanner.
+
+---
+
 ## [2026-11-20 12:30 UTC] trending-topics | Anthropic Nasdaq debut, AI-designed chips wave, Claude black-hole physics
 
 - NEW `events/anthropic-nasdaq-debut-2026.md` — ANT listing Nov 19: $83/share, $81.3B raised ($107.3B Bloomberg incl. greenshoe), largest IPO ever (tops SpaceX), ~$1.5T valuation, Amazon+Google ~30% ownership; HN 1,095p reception (engineered pop, lockup watch, market-cap share comparison vs Google IPO) + contestation context (misanthropic statement coalition, no-bailout protests, Ed Zitron/Gary Marcus skepticism).
