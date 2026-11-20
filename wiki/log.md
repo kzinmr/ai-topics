@@ -2,6 +2,19 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-11-20 10:45 UTC] newsletter-triage | run 20261120T101025Z — 4 newsletters -> 4 takes, 3 refs, 5 batch-skips
+
+- Sources: Ben's Bites "My wife thinks AI is a person" / Superintel-track "Google is back: Gemini 4 Neon" (beehiiv v2, 20 encrypted trackers unresolved) / True Positive Weekly #186 / Growth-Scoop "How did Lovable grow so fast?".
+- TAKES (4, for newsletter-wiki-ingest):
+  - `concepts/inference/llm-d.md` (NEW) — llm-d 1.0 GA, Google Cloud blog 2026-10-20 (PyTorch Conf). Ironwood TPU 7x agentic-coding workload: prefix-aware routing + host-memory offload cut median TTFT >85%, throughput 2.4x; DisaggregatedSet zero-downtime rolling updates; llm-d-async-processor (Pub/Sub, Redis); RL rollout idle 40-60% reclaimed via TPU/GPU time-slicing; Prism dashboard; Google+Red Hat+IBM, 50+ orgs.
+  - `concepts/agentic-engineering.md` (update) — Adrian Quiroga "Here Be Monsters" (blog.adrq.dev, 2026-10-27). Codex 15-components-on-one-line / SonarQube cyclomatic-complexity anecdote; divebot metaphor; 3 pillars of ownership (mental model, breadth, just-in-time depth); senior apprenticeship path no longer economically viable for juniors.
+  - `concepts/ai-consciousness-debate.md` (update) — Ben's Bites essay: 6B messages/day, 10.4M world-record typists, 77.4M staff thought experiment; Claude Shannon 1950 guessing game -> 2017 Transformer; 32T-token training corpus (190,000 years of reading).
+  - `concepts/llm-augmented-knowledge-retrieval.md` (update) — OpenSearch "Beyond Top-K" (2026-10-15): no "I don't know" signal in top-K; BM25 unbounded vs k-NN L2 0-1 incomparability; hybrid+normalization processor, RRF k=60, cross-encoder rerank via ML Commons, native agentic search QueryPlanningTool; abstention confidence layer.
+- REFERENCES (3): Gemini 4 Neon third-party take (existing `concepts/gemini/gemini-4-neon.md` already covers official blog + HN 50552424 numbers); DeepInfer GitHub (existing `concepts/deepinfer.md`); Elena Verna Lovable growth (ARR >$600M, 1.2M projects/week, Whitewater Framework extension of Racecar) -> `entities/lovable.md`.
+- SKIPS (5 batch entries): beehiiv encrypted v2/c/ trackers x20, Chapterpal JS-shell (2208 bytes, 0 paragraphs), TPW low-relevance links (DRL book promo etc.), Ben's Bites HR/labour-stat + sponsor links, Growth-Scoop sponsor/past-post links, Substack UI noise.
+- Archive: `raw/archived/triage/newsletter/2026-11-20_20261120T101025Z.json` (8 skip+reference items), archive_index 3283 -> 3295. Also committed 4 raw newsletter digests.
+- Cross-run fix (separate commit): the 2026-11-20 x-bookmarks-ingest run fetched 0 bookmarks (stop_reason already_processed_page, 526-id cache) and wrote 0 raws / 0 wiki pages / no commit. 12 of its URLs (Harvey x4, Pinecone x3, Warp x2, Hex, ElevenLabs x2) had raws on disk but no archive decision -> backfilled as skips into `raw/archived/triage/x_bookmarks/2026-11-20_20261120T103916Z-backfill.json`, index 3295 -> 3307, and cleared `processed_x_bookmarks.json` tweet_ids so the next run re-fetches.
+
 ## [2026-11-19 22:30 UTC] x-accounts-scan — Unsloth Desktop AMD NPU support
 
 - Scan: 11 accounts (budget cursor 73->0), 1 new post, 0 errors. Source: `@danielhanchen` (Daniel Han).
