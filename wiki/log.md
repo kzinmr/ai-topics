@@ -2,6 +2,23 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-11-20 19:0x UTC] skeleton-enrich-daily | stub backlog: 2 AI-core umbrella concept pages
+
+**Trigger**: daily skeleton enrichment. `status: skeleton` backlog remains **empty** (0 markers in entities/ and concepts/, streak since 2026-10-17); pivoted to `status: stub` backlog (394 pages) per established pattern. Continued the next-run candidate list flagged in [[queries/2026-11-19-skeleton-enrich-stub-action]].
+
+**Actions (2 enriched, 0 new pages, 0 redirects):**
+- `concepts/ai-evals-people.md`: 296 B stub -> ~6.0 KB. The human-evaluator stratum hub — documents the evals practitioner community (Hamel Husain, Shreya Shankar, David MacIver, Simon Willison + adjacent Percy Liang/METR/Epoch). Organizes recurring methods (error analysis, binary judges, harness-is-the-eval, PBT for AI, evals-vs-monitoring) and ties them to existing concept pages. Grounds the "scarce judgment-capital" framing referenced by [[concepts/benchmark-ceiling]] and [[entities/drmaciver]].
+- `concepts/inference-hardware.md`: 308 B stub -> ~6.3 KB. Umbrella index over the serving-silicon tiers (data-center GPUs / custom ASICs / wafer-scale / consumer GPU / CPU / edge), each row linking to an existing leaf page. Frames hardware as the cost-floor determinant driving [[concepts/llm-cost-crisis]] and the crux of [[concepts/cuda-moat]] vs [[concepts/custom-ai-silicon]]; points engine/serving-software detail to [[concepts/inference]] to avoid duplication.
+
+**Verification:**
+- Git-history richness check: both stuck at stub-era ~25-line commits (`da4a8f13`); no richer historical versions.
+- All wikilink targets machine-verified to resolve (25 leaf/entity/concept pages checked).
+- Tags: `community`, `ai-evaluation`, `human-in-the-loop`, `llm-as-judge`, `ai-hardware`, `asic`, `llm-inference` all pre-registered in SCHEMA.md taxonomy — no SCHEMA edits required.
+- Removed `status: stub`; added `type`/`related`/`updated` frontmatter.
+- index.md: 2 description updates (were placeholders), 0 new entries, page counts unchanged.
+- Both pages remain concept pages in their current location (entity-shaped stubs alex-hall/bozavlado/brainchop/colin/jay-v/hack-club still misplaced in concepts/ — deferred to a dedicated reorg pass).
+
+**Remaining backlog:** ~392 `status: stub`. Next candidates: entity-shaped stubs misplaced in `concepts/` (relocate to `entities/`), long-tail devtools stubs.
 
 ## [2026-11-20 18:12 UTC] dreaming group | Pattern E saturation + backlog scan (3 takes, 3 refs, 5 skips)
 

@@ -1420,7 +1420,7 @@
 - [[concepts/ai-engineering]] — AI Engineering — 5 trends from AIEWF 2026: harness engineering, loop engineering, FDEs/software factories, context engineering, skill engineering
 - [[concepts/ai-engineering-skills-map]] — AI Engineering Skills Map — Andrew Ng's 4-skill framework: building AI apps, software fundamentals, coding agents, shaping the build (Aug 2026)
 - [[concepts/ai-engineering-metrics-vanity]] — AI Engineering Metrics — Vanity vs. Outcome Measurement
-- [[concepts/ai-evals-people]] — ai-evals-people
+- [[concepts/ai-evals-people]] — The human stratum of LLM/agent evals: practitioners (Hamel, Shankar, MacIver, Willison), their methods and disagreements
 - [[concepts/ai-executive-orders]] — AI Executive Orders — U.S. presidential directives governing frontier AI access, including government-mediated model release gatekeeping
 - [[concepts/ai-exponential]] — AI Exponential
 - [[concepts/ai-gateway]] — AI Gateway — centralized LLM API routing with cost controls, rate-limiting, observability (LangSmith, Glean, OpenRouter)
@@ -2336,7 +2336,7 @@
 - [[concepts/industrial-scale-distillation-attacks-accusation]] — Industrial-Scale Distillation Attacks Accusation — 2026 US-lab charge that Chinese labs clone frontier models via distillation at "industrial scale"; 3 conflated meanings (IP theft / safety laundering / export-control workaround); Anthropic→Alibaba + OpenAI→Moonshot incidents; attribution contested (confidence medium)
 - [[concepts/inference]] → [[concepts/inference/_index]] — Inference — LLM inference engine comparison; vLLM, SGLang, TGI, llama.cpp, and their trade-offs
 - [[concepts/inference-engine-security]] — Inference-Engine Security — LLM self-host exploitation surface
-- [[concepts/inference-hardware]] — Inference Hardware
+- [[concepts/inference-hardware]] — Inference Hardware — umbrella index over the serving-silicon tiers (data-center GPUs, custom ASICs, CPU, edge) that set the cost floor
 - [[concepts/inference-speed-development]] — Inference Speed Development — shipping cadence at inference speed; cross-linked to Alderson's 'Making Agents Fast' latency discipline
 - [[concepts/inference-time-compute]] — Inference-Time Compute — compute spent generating answers; the third scaling axis, with economics and negative-returns framing
 - [[concepts/inference-time-scaling]] — Inference-Time Scaling
