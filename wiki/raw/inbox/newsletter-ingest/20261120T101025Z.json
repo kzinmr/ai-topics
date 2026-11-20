@@ -1,0 +1,113 @@
+{
+  "schema": "newsletter-triage.v1",
+  "run_id": "20261120T101025Z",
+  "triaged_at": "2026-11-20T10:35:00+00:00",
+  "checkpoint_path": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "summary": {
+    "processed_count": 4,
+    "critical": 1,
+    "high": 2,
+    "low": 1,
+    "skipped": 0
+  },
+  "notes": [
+    "Beehiiv link.mail.beehiiv.com/v2 URLs are encrypted trackers and were NOT resolvable (opaque hex, no redirect metadata); classification for 'Google is back: Gemini 4 Neon reaches the frontier' relies on the subject line only. Recommend downstream scrape via the publication's public archive if the subject needs verification.",
+    "Substack redirect URLs (UUID form) resolved successfully via curl -sL despite truncated j= tokens; resolved targets recorded per-article below.",
+    "Ben's Bites issue contains mostly gif-image redirects and HR/benchmarking PDFs (theforum.social, Gallup, SHRM, BLS) — likely a sponsor/adjacent segment; only the main essay and sessions.bensbites.com piece are on-topic.",
+    "Growth-Scoop (Lovable) issue is product/growth analysis with an AI-vibe-coding angle; peripheral to the LLM/Agent core wiki."
+  ],
+  "newsletters": [
+    {
+      "message_id": "<20261119.190930.418b95c1@mta13>",
+      "subject": "Google is back: Gemini 4 Neon reaches the frontier",
+      "date": "2026-11-19",
+      "source_label": "uid=927",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-19-google-is-back-gemini-4-neon-reaches-the-frontier.md",
+      "importance": "critical",
+      "relevance": "high",
+      "classification_reason": "Frontier model release announcement: Gemini 4 'Neon' reportedly reaching frontier performance. Directly on-topic (LLM releases, model capability, competitive landscape). Likely warrants updates to entities/google-gemini (or equivalent), an events/ page for the release, and comparison pages (frontier-models / Gemini-vs-GPT-vs-Claude family).",
+      "suggested_actions": [
+        "Resolve Beehiiv redirects manually via publication archive or scrape raw newsletter body; subject-line-only classification is low-confidence on specifics.",
+        "Create/update events/ page for Gemini 4 Neon release; update Gemini entity and frontier-model comparison.",
+        "Cross-check benchmarks claims against official Google DeepMind announcement before ingesting numbers."
+      ],
+      "articles": [
+        {"title": "(all links encrypted Beehiiv trackers; unresolved)", "url": "https://link.mail.beehiiv.com/v2/...", "relevance": "unknown", "note": "subject-line classification only"}
+      ]
+    },
+    {
+      "message_id": "<20261119203555.3.34bea3836804e396@mg-d0.substack.com>",
+      "subject": "True Positive Weekly #186",
+      "date": "2026-11-19",
+      "source_label": "uid=928",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-19-true-positive-weekly-186.md",
+      "importance": "high",
+      "relevance": "high",
+      "classification_reason": "AI Weekly (aiweekly.co) roundup with multiple highly on-topic links: llm-d 1.0 (Google's open-source distributed inference stack), DeepSeek deepinfer (GitHub), agentic-AI search guardrails on OpenSearch, an agentic-engineering essay (adrq.dev 'Here be monsters: what do you still need to know when agents do the work'), and an in-context-learning circuit paper. Strong coverage of inference infrastructure and agents.",
+      "suggested_actions": [
+        "Scrape llm-d 1.0 Google Cloud blog → raw/articles; update/create llm-d entity + distributed-inference concept; cross-ref vLLM/SGLang.",
+        "Scrape github.com/deepseek-ai/deepinfer → update deepseek entity / inference-tooling comparison.",
+        "Scrape opensearch.org agentic-RAG guardrails post → relevant to agentic-rag / retrieval concepts.",
+        "Scrape blog.adrq.dev 'Here be monsters' → agent-engineering concept material.",
+        "Chapterpal 'A circuit for in-context learning' (Interpretability community paper) → consider raw/papers.",
+        "Skip: linktr.ee, thedrlbook.com (book promo), laurenleek/opensearch opinion pieces unless downstream ingest deems otherwise."
+      ],
+      "articles": [
+        {"title": "Here be monsters: what do you still need to know when agents do the work", "url": "https://blog.adrq.dev/here-be-monsters-what-do-you-still-need-to-know-when-agents-do-the-work", "relevance": "high"},
+        {"title": "Beyond top-k: building search confidence guardrails for agentic AI with OpenSearch", "url": "https://opensearch.org/blog/beyond-top-k-building-search-confidence-guardrails-for-agentic-ai-with-opensearch/", "relevance": "high"},
+        {"title": "deepseek-ai/deepinfer (GitHub)", "url": "https://github.com/deepseek-ai/deepinfer", "relevance": "high"},
+        {"title": "llm-d 1.0: an open-source stack for distributed inference (Google Cloud blog)", "url": "https://cloud.google.com/blog/topics/ai-infrastructure/llm-d-1-0-an-open-source-stack-for-distributed-inference", "relevance": "high"},
+        {"title": "The DRL Book (thedrlbook.com)", "url": "https://thedrlbook.com/", "relevance": "low"},
+        {"title": "A circuit for in-context learning (Chapterpal/interpretability community)", "url": "https://www.chapterpal.com/s/704b28f0/a-circuit-for-in-context-learning", "relevance": "medium"},
+        {"title": "AI promised less work (oioannou.com)", "url": "https://oioannou.com/blog/ai-promised-less-work/", "relevance": "low"},
+        {"title": "There's no such thing as society (laurenleek.substack.com)", "url": "https://laurenleek.substack.com/p/theres-no-such-thing-as-society-in", "relevance": "low"},
+        {"title": "CausalML toy cases (philipppro)", "url": "https://philipppro.quarto.pub/blog_philipppro/posts/causalml-toy-cases/", "relevance": "low"}
+      ]
+    },
+    {
+      "message_id": "<20261119140821.3.485173364a3c70cd@mg2.substack.com>",
+      "subject": "My wife thinks AI is a person",
+      "date": "2026-11-19",
+      "source_label": "uid=926",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-19-my-wife-thinks-ai-is-a-person.md",
+      "importance": "high",
+      "relevance": "medium",
+      "classification_reason": "Ben's Bites issue. Main essay is an AI-personhood / parasocial-interaction piece (adjacent to AI-safety and human-AI-interaction concepts); the remaining resolved links are HR/workforce benchmarking (Gallup span-of-control, SHRM, BLS JOLTs, Microsoft Work Trend Index, Zoom webinars) which are mostly off-topic sponsor/business content.",
+      "suggested_actions": [
+        "Scrape bensbites.com/p/my-wife-thinks-ai-is-a-person → raw/articles; consider as material for ai-personhood / parasocial-AI / anthropomorphism concept page (check index.md for existing page first).",
+        "Optionally scrape sessions.bensbites.com/someone-is-replying/ (AI-customer-interaction angle).",
+        "Skip: Gallup/SHRM/BLS/theforum.social HR benchmarking PDFs, Zoom webinar PR."
+      ],
+      "articles": [
+        {"title": "My wife thinks AI is a person (Ben's Bites main essay)", "url": "https://www.bensbites.com/p/my-wife-thinks-ai-is-a-person", "relevance": "medium-high"},
+        {"title": "Someone is replying (sessions.bensbites.com)", "url": "https://sessions.bensbites.com/someone-is-replying/", "relevance": "low-medium"},
+        {"title": "Span of control (Gallup)", "url": "https://www.gallup.com/workplace/700718/span-control-optimal-team-size-managers.aspx", "relevance": "low"},
+        {"title": "Work Trend Index: breaking down the infinite workday (Microsoft)", "url": "https://www.microsoft.com/en-us/worklab/work-trend-index/breaking-down-infinite-workday", "relevance": "low"},
+        {"title": "Zoom unveils 1 million attendee Zoom Webinars", "url": "https://news.zoom.com/zoom-unveils-1-million-attendee-zoom-webinars/", "relevance": "low"},
+        {"title": "BLS JOLTS release", "url": "https://www.bls.gov/news.release/jolts.nr0.htm", "relevance": "low"},
+        {"title": "HR benchmarking PDFs (theforum.social, SHRM) + BLS OOH CSR page", "url": "(multiple)", "relevance": "low"}
+      ]
+    },
+    {
+      "message_id": "<20261119213810.3.8a32a2773db3a0d4@mg2.substack.com>",
+      "subject": "How did Lovable grow so fast?",
+      "date": "2026-11-19",
+      "source_label": "uid=929",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-19-how-did-lovable-grow-so-fast.md",
+      "importance": "low",
+      "relevance": "medium",
+      "classification_reason": "Growth-Scoop (Elena Verna) growth-strategy teardown of Lovable (AI vibe-coding app builder). Peripheral to the LLM/Agent core wiki, but if an entities/lovable page exists or the vibe-coding-tools comparison is maintained, the growth metrics and 'minimum lovable product era' thesis are usable context.",
+      "suggested_actions": [
+        "Check index.md for entities/lovable; if present, append growth-strategy note citing elenaverna.com/p/how-did-lovable-grow-so-fast. Otherwise skip.",
+        "Skip: Lenny's Newsletter promos, Chargebee/Apify sponsor links, NFX essay."
+      ],
+      "articles": [
+        {"title": "How did Lovable grow so fast? (Elena Verna)", "url": "https://www.elenaverna.com/p/how-did-lovable-grow-so-fast", "relevance": "medium"},
+        {"title": "The minimum lovable product era (Elena Verna)", "url": "https://www.elenaverna.com/p/the-minimum-lovable-product-era", "relevance": "low-medium"},
+        {"title": "Your AI strategy has a trust problem (Elena Verna)", "url": "https://www.elenaverna.com/p/your-ai-strategy-has-a-trust-problem", "relevance": "low"},
+        {"title": "Find the fast-moving water (NFX)", "url": "https://www.nfx.com/post/find-the-fast-moving-water", "relevance": "low"},
+        {"title": "Sponsor/misc: Lenny's Newsletter, Chargebee, Apify, Racecar Growth Framework", "url": "(multiple)", "relevance": "low"}
+      ]
+    }
+  ]
+}
