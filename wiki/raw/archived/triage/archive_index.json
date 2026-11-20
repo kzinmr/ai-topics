@@ -3,6 +3,7 @@
     "(multiple HR/business links)",
     "(multiple growth/sponsor links)",
     "(multiple low-relevance links)",
+    "(multiple)",
     "(substack infrastructure links)",
     "...",
     "N/A",
@@ -91,6 +92,7 @@
     "https://apnews.com/article/greece-germany-ryanair-passenger-457c424f541152af1becdb387c90cfdd",
     "https://app.dealroom.co/news/feed/oracle-bans-ai-generated-code-from-openjdk-despite-ellison-s-claim",
     "https://apple.news/Afq6SKrYkTcCEHrCEQmxm5A",
+    "https://architectlabs.com/blog/frostbite",
     "https://arstechnica.com/ai/2026/06/leaked-financial-docs-show-openai-is-losing-billions-of-dollars-a-year/",
     "https://arstechnica.com/ai/2026/07/google-earth-releases-swiftly-retracts-ai-feature-to-make-fake-satellite-images/",
     "https://arstechnica.com/security/2026/05/websites-have-a-new-way-to-spy-on-visitors-analyzing-their-ssd-activity/",
@@ -1525,6 +1527,7 @@
     "https://open.substack.com/users/9714824-kevin-xu?utm_source=mentions",
     "https://openai.com/academy/how-to-use-codex-for-everyday-work",
     "https://openai.com/ads/customers/flipsnack",
+    "https://openai.com/index/advancing-chip-design-with-our-models/",
     "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/",
     "https://openai.com/index/ai-chemist-improves-reaction/",
     "https://openai.com/index/australian-universities-ai-native-graduates",
@@ -1837,6 +1840,7 @@
     "https://sierra.ai/blog/jpmorganchase-hall-of-innovation",
     "https://sierra.ai/blog/our-partnership-with-plaid",
     "https://sierra.ai/blog/outcomemaxxing",
+    "https://sierra.ai/blog/personal-agents-insights",
     "https://sierra.ai/blog/pinecone-harnessing-the-wisdom-of-the-workforce",
     "https://sierra.ai/blog/plaid-partnership",
     "https://sierra.ai/blog/redesigning-agent-studio-around-ghostwriter",
@@ -2105,6 +2109,7 @@
     "https://simonwillison.net/2026/Nov/16/llm/",
     "https://simonwillison.net/2026/Nov/17/go-proverbs/",
     "https://simonwillison.net/2026/Nov/2/census-bureau-super-intelligence/",
+    "https://simonwillison.net/2026/Nov/20/token-fraud-is-here-and-its-bad/",
     "https://simonwillison.net/2026/Nov/3/llm/",
     "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
     "https://simonwillison.net/2026/Nov/4/datasette-llm/",
@@ -2580,6 +2585,7 @@
     "https://www.anthropic.com/news/when-ai-builds-itself",
     "https://www.anthropic.com/research/agentic-misalignment",
     "https://www.anthropic.com/research/agents-judgment-calls",
+    "https://www.anthropic.com/research/claude-black-hole-physics",
     "https://www.anthropic.com/research/global-workspace",
     "https://www.anthropic.com/research/multiagent-systems",
     "https://www.anthropic.com/research/project-fetch-phase-two",
@@ -3296,5 +3302,5 @@
     "substack.com/ui-wrapper (Link 8)",
     "substack.com/ui-wrapper (Link 9)"
   ],
-  "updated": "2026-11-20T10:37:13.326086+00:00"
+  "updated": "2026-11-20T18:19:15.152058+00:00"
 }

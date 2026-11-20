@@ -1,0 +1,80 @@
+{
+  "archived_at": "2026-11-20T18:19:15.151335+00:00",
+  "triage_run_id": "20261120T180051Z",
+  "source": "dreaming",
+  "summary_ja": "dreaming checkpoint の collected_articles=0 / recent_raw=286 のため Pattern E(ファイルシステムスキャン + archive-index URL欠損チェック、3295 URLs照合)を実施。3日分の未アーカイブ ~100 件を精査し、take 3件(DeepMind『What Comes After AGI?』ASI4経路長文エッセイ、Contra Labs×BenchFlow の stealth-design benchmark で Gestalt が Fable 5.2 超え、HN564pt『Fuck Your AI Safeguards』二重基準論)+ reference 3件(anthropic protein学習の未収ギャップ、Sierra personal-agents/Poppy、Willison token-fraud)、skip は OpenAI chip-design 等(本日 trending-topics が消費済み)と sitemap マーケ/非AI の batch に整理。",
+  "decisions": [
+    {
+      "item_id": "dreaming-anthropic-protein-training",
+      "source": "dreaming",
+      "source_name": "filesystem-scan",
+      "title": "Claude was trained on protein sequences at scale",
+      "url": "https://www.anthropic.com/research/claude-black-hole-physics",
+      "raw_path": "wiki/raw/articles/2026-11-19_anthropic_claude-black-hole-physics.md",
+      "recommended_action": "reference",
+      "reason_ja": "***** prior 11-19 triageのtakeだが entities/anthropic.md(981行)本文に protein sequence の言及はゼロ(esmfold2.md側のみ言及)。これは未消費ギャップ。Claudeの事前学習コーパスにタンパク質配列大規模データが含まれる点は、AI数学/科学能力の根拠として entities/anthropic.md に追記すべき。",
+      "candidate_wiki_path": "entities/anthropic.md",
+      "body_excerpt": "Claude has solved two open problems in theoretical physics. Both concern black holes and the search for a theory of quantum gravity. In the first, it completed a calculation that physicists set up more than 20 years ago, but which had never been solved. Claude’s result showed that a sudden transitio"
+    },
+    {
+      "item_id": "dreaming-sierra-personal-agents",
+      "source": "dreaming",
+      "source_name": "filesystem-scan",
+      "title": "How personal agents will change customer experience (Sierra whitepaper)",
+      "url": "https://sierra.ai/blog/personal-agents-insights",
+      "raw_path": "wiki/raw/articles/sierra.ai--blog-personal-agents-insights--60ef4ffd.md",
+      "recommended_action": "reference",
+      "reason_ja": "***** Sierraのパーソナルエージェント白書。Muse 6週間で1000万人(Meta)、エージェント経由の需要/脱中介化、Sarah Guoの『疲弊を忠実な繰返し収益として記録するCRM』引用、『知能は借りて文脈は持つ』、Poppy(Personal Agent Protocol)による認可。 entities/sierra.md はghostwritersを持つがpersonal-agents/Poppy文脈は薄い。",
+      "candidate_wiki_path": "entities/sierra.md",
+      "body_excerpt": "# How personal agents will change customer experience\nSource: https://sierra.ai/blog/personal-agents-insights\nA new Sierra whitepaper on consumer choice, the digital front door, and the compounding value of context.\nPersonal agents have been in consumers’ hands for only a few months, and adoption is"
+    },
+    {
+      "item_id": "dreaming-willison-token-fraud",
+      "source": "dreaming",
+      "source_name": "filesystem-scan",
+      "title": "Token fraud is here and it's BAD (Claire Vo / ChatPRD)",
+      "url": "https://simonwillison.net/2026/Nov/20/token-fraud-is-here-and-its-bad/",
+      "raw_path": "wiki/raw/articles/simonwillison.net--2026-nov-20-token-fraud-is-here-and-its-bad--9b1f48b3.md",
+      "recommended_action": "reference",
+      "reason_ja": "***** Willison経由のClaire Vo(ChatPRD)告発。無料トライアル+プロモコードのループでagentをトンネリングしRoblox/Fortniteマップ制作にタダ乗り、モデル嗅ぎ分けのシグネチャ確認に『自転車に乗るペリカンのSVG』が多用される実態。無料トライアル経済性の悪用という durable な論点は concepts/token-economics.md が薄く、simon-willison entityへの参照として追加価値あり。trending reportは本文取得前。",
+      "candidate_wiki_path": "entities/simon-willison.md",
+      "body_excerpt": "# Token fraud is here and it’s BAD (YouTube)\nSource: https://simonwillison.net/2026/Nov/20/token-fraud-is-here-and-its-bad/\n20th November 2026 - Link Blog\nToken fraud is here and it’s BAD (YouTube)\n. Claire Vo runs\nChatPRD\n, an AI platform that helps product managers \"turn an idea into a spec\". The "
+    },
+    {
+      "item_id": "dreaming-skip-openai-chip-design",
+      "source": "dreaming",
+      "source_name": "filesystem-scan",
+      "title": "Advancing chip design with OpenAI models",
+      "url": "https://openai.com/index/advancing-chip-design-with-our-models/",
+      "raw_path": "wiki/raw/articles/2026-11-18_openai_advancing-chip-design.md",
+      "recommended_action": "skip",
+      "reason_ja": "***** today trending-topics(12:30 UTC, commit 52f7d456)が concepts/openai-jalapeno-inference-chip.md 97-108行に AMD 14% PPA・Synopsys GPT-Synopsys・RISC-V PicoRV32/Ibex 9,881run・GPT-6.2 Astra最高スコア等を書き込み済み。frostbite-ai-designed-cpu.md も同日updated。完全消費済み。",
+      "candidate_wiki_path": "concepts/openai-jalapeno-inference-chip.md",
+      "body_excerpt": "Advancing chip design with OpenAI models | OpenAI OpenAI November 18, 2026 Research Publication Advancing chip design with OpenAI models OpenAI’s models are quickly improving the chips that power AI. In August, ⁠ we shared how OpenAI engineers used our frontier models to accelerate the development o"
+    },
+    {
+      "item_id": "dreaming-skip-frostbite",
+      "source": "dreaming",
+      "source_name": "filesystem-scan",
+      "title": "Frostbite: AI-designed CPU (4.59x perf/W) (Architect Labs)",
+      "url": "https://architectlabs.com/blog/frostbite",
+      "raw_path": "wiki/raw/articles/2026-11-20_architectlabs_frostbite-ai-designed-cpu.md",
+      "recommended_action": "skip",
+      "reason_ja": "***** today trending-topics + hot-post が concepts/frostbite-ai-designed-cpu.md(updated 2026-11-20)を作成済み。AI-designed chip waveの一部としてopenai jalapenoと相互リンク済み。",
+      "candidate_wiki_path": "concepts/frostbite-ai-designed-cpu.md",
+      "body_excerpt": "Abstract In our previous post, Redwood , we showed that given an architecture, our AI systems could implement, verify, and deploy an inference accelerator in record time. However, similar to other scientific domains, we believe that AI systems, given the correct freedom and guardrails, can co-design"
+    },
+    {
+      "item_id": "dreaming-skip-sitemap-batch",
+      "source": "dreaming",
+      "source_name": "filesystem-scan",
+      "title": "sitemap-monitor 06:00 batch (Harvey/Pinecone/ElevenLabs/Warp/Hex product marketing)",
+      "url": "(multiple)",
+      "raw_path": "(multiple)",
+      "recommended_action": "skip",
+      "reason_ja": "***** batch-skip: harvey legal-triage/reviews-verification/patent-research/deepjudge ×4(product、harvey entityはpatent/review-tables既存)、pinecone pg-railway/cost-usage-export/index-conversion ×3(運用系)、elevenlabs voice-agent-calls/candid-health ×2、warp software-factory ×2(entities/warp-terminal.md+concepts/warp-factories.md既存)、hex knowledge-engine(データ分析マーケ)。AI/LLM/agentとしての新規durable知見は各ページの既存カバレッジで不足なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    }
+  ]
+}

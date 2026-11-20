@@ -3,6 +3,21 @@
 _Log of all wiki changes. Newest entries at top._
 
 
+## [2026-11-20 18:12 UTC] dreaming group | Pattern E saturation + backlog scan (3 takes, 3 refs, 5 skips)
+
+- Checkpoint `collected_articles=0` / `recent_raw_articles=286` -> Pattern E: filesystem scan + archive-index URL-absence probe (`check_archive_index_absence.py`, 3295 URLs). ~100 never-archived candidates over 3 days; 11 triage decisions saved.
+- Takes (for downstream dreaming-wiki-ingest):
+  - `concepts/agi-to-asi-pathways.md` (NEW) - DeepMind Institute "What Comes After AGI?" essay: AGI->ASI 4 pathways (scaling/paradigm-shift/agent-coordination/RSI), cognitive industrialization, 10x/yr effective-compute. Existing `concepts/superintelligence.md` is a 20-line stub.
+  - `concepts/ai-benchmarks/frontier-design-benchmark.md` (NEW) - Contra Labs x BenchFlow real-design benchmark; stealth "Gestalt" ELO 1931 (90% win) tops Human (1739) and Claude Fable 5.2 (1713); 33 briefs / 68 designers / 4,311 blind votes / r=0.94 rubric correlation.
+  - `concepts/ai-safeguard-double-standard.md` (NEW) - "Fuck Your AI Safeguards" (HN 564pts, ounapuu.ee, original 404 -> HN reconstruction): labs-as-protection-racket framing, Chinese open-weights workaround, dual-use refusal frustration.
+- References:
+  - `entities/anthropic.md` - Claude trained on protein sequences at scale (prior 11-19 take never consumed; 0 hits in 981-line body, only esmfold2.md mentions it).
+  - `entities/sierra.md` - personal-agents whitepaper + Poppy protocol (Muse 10M/6wk, "rent intelligence own context", Sarah Guo CRM quote).
+  - `entities/simon-willison.md` - token-fraud (Claire Vo / ChatPRD free-trial abuse, pelican-SVG model-sniffing signature).
+- Skips: OpenAI "Advancing chip design" (already written to `concepts/openai-jalapeno-inference-chip.md` lines 97-108 by trending-topics commit 52f7d456 today) + Frostbite/Claude-black-hole (trending-topics today) + sitemap product-marketing batch (Harvey x4 / Pinecone x3 / ElevenLabs x2 / Warp x2 / Hex) + non-AI blog roll.
+- Archive: `raw/archived/triage/dreaming/2026-11-20_20261120T180051Z.json` (5 skip+reference items, 2 dedup-skipped), archive_index -> 3301. Triage JSON at `cron/data/dreaming/triage_latest.json`.
+
+
 ## [2026-11-20 17:45 UTC] watchdog | Pipeline recovery: 503 triage cascade + x-bookmarks scanner block
 
 - Wiki structural state verified clean: index.md 0 corruption (validate_index.py pass), no empty/duplicate index entries, `# Wiki Log` header intact (1x). Weekly graph analysis (3ee1ebed, 15:06 UTC) already adjudicated all 17 dup groups (0 merges) — no watchdog action on graph health.
@@ -55,7 +70,6 @@ _Log of all wiki changes. Newest entries at top._
 - `concepts/retrieval-augmented-generation.md` — 356 B stub → ~4.8 KB. Umbrella RAG page: canonical pipeline table (chunking→retrieval→rerank→ground), why-RAG vs long context, failure modes (chunk amnesia, lost-in-middle, query mismatch), naive→agentic evolution; links agentic-rag / agentic-retrieval / contextual-retrieval sub-pages.
 
 Verification: git-history richness check (all 5 last touched by 2026-08-15 stub-era commit da4a8f13 — no richer historical versions). All wikilinks machine-verified to resolve (dead targets redirected to real pages, e.g. bitter-lesson→rich-suttons-bitter-lesson, context-rot→context-engineering/context-rot, or demoted to plain text). All tags pre-registered in SCHEMA.md — no SCHEMA edits. index.md: 5 description updates, 0 new entries, counts unchanged.
-
 
 
 ## [2026-11-20 01:30 JST] hot-post (late-night) — inference-cost stack, 4 layers in 48h
@@ -233,7 +247,6 @@ Takes (all existing-page enrichments):
 References (enriched or cross-referenced): Optimizely supply-chain attack + Doctorow enshittifier -> `concepts/systemic-software-breakdown` (case-study section + incident-table row + tags cybersecurity/third-party-risk). GPT-6.2 OpenAI RSS stub attached as source to openai-astra. ChatGPT for Sales + Le Figaro (RSS-only, candidate_path=None) archived for future aggregation page.
 
 Archive: 6 skip+reference items -> `wiki/raw/archived/triage/blog/2026-11-18_20261118T100050Z.json` (total_archive_urls 3277). Batch-skip covered 10 non-AI/flash items (SetShot, Apple outage, HAOS qcow2, BASIC price list, Maiao, Paul Brainerd, Semantical, iPhone Duo, Pluralistic 11/17).
-
 
 
 ## [2026-11-17] ingest | x-accounts-scan: With language, Turnbull off LLM-judges, Nuttall SEO stack, Mollick on GPT-6.2
