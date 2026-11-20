@@ -1,0 +1,104 @@
+{
+  "archived_at": "2026-11-20T10:37:13.325331+00:00",
+  "triage_run_id": "20261120T101025Z",
+  "source": "newsletter",
+  "summary_ja": "2026-11-19配信の4ニュースレター(Ben's Bites / Superintel系 Gemini 4 Neon / True Positive Weekly #186 / Growth-Scoop Lovable)をtriage。take 4件: llm-d 1.0 GA(Google Cloud公式、TTFT 85%削減・スループット2.4倍の数値、wikiに専用ページなしの新規概念ページ)、Adrian Quiroga「Here Be Monsters」(エージェント時代のエンジニア所有権3本柱、agentic-engineering概念ページ更新)、Ben's Bites「My wife thinks AI is a person」(60億通/日試算とShannon→Transformer接続の教育記事)、OpenSearch「Beyond Top-K」(agentic searchのconfidence layer/abstention実装)。reference 3件: Gemini 4 Neon第三方記事(既存ページ詳細カバー済み)、DeepInfer GitHub(既存 concepts/deepinfer.md あり)、Lovable成長分析(ARR $600M、entities/lovable.md追記候補)。skip: beehiiv暗号化tracking 20リンク、Chapterpal JS-shell、HR/労働統計・growth/sponsor promo、Substack UIノイズ。",
+  "decisions": [
+    {
+      "item_id": "<20261119.190930.418b95c1@mta13>-1",
+      "source": "newsletter",
+      "source_name": "Google is back: Gemini 4 Neon reaches the frontier",
+      "title": "Google is back: Gemini 4 Neon reaches the frontier (Superintel系 beehiiv、全20リンク暗号化tracking)",
+      "url": "https://link.mail.beehiiv.com/v2/c/ab4fb307...",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-19-google-is-back-gemini-4-neon-reaches-the-frontier.md",
+      "recommended_action": "reference",
+      "reason_ja": "*** beehiiv v2/c/ tracking URLが全て暗号化hexで解決不能(inbox summaryもsubject-line only判定と明記)。しかし Gemini 4 Neon は concepts/gemini/gemini-4-neon.md(60行・created 2026-11-19)として既にGoogle公式blog+HN 50552424をsourceに詳細カバー済み: AA Intelligence Index 61で#3、Vals Index 70.9%で#2、Agent Arena 1336、$3/$15 per 1M、1M context、Koray Kavukcuoglu発表。本ニュースレターは第三方 commentary(「Google is back」= Carbon比での再評価)であり、具体的な新数値は確認できない。専用ページ作成は不要。既存ページへ第三方論調の一文追記にとどめる。",
+      "candidate_wiki_path": "concepts/gemini/gemini-4-neon.md",
+      "body_excerpt": "# Newsletter Digest - 2026-11-19\n**Subject:** Google is back: Gemini 4 Neon reaches the frontier\n**Collected:** 2026-11-20T10:10:19.956123+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v2/c/ab4fb307d423070d5eb6ebc38e1ca63618a237fa07b7e2cc27e91b2f3a1a0829440f57d529"
+    },
+    {
+      "item_id": "<20261119203555.3.34bea3836804e396@mg-d0.substack.com>-13",
+      "source": "newsletter",
+      "source_name": "True Positive Weekly #186",
+      "title": "deepseek-ai/deepinfer (GitHub)",
+      "url": "https://github.com/deepseek-ai/deepinfer",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-19-true-positive-weekly-186.md",
+      "recommended_action": "reference",
+      "reason_ja": "*** DeepInfer (GitHub: deepseek-ai/DeepInfer, High-performance large-scale inference framework for DeepSeek models) は concepts/deepinfer.md が既に存在し、raw/articles/2026-10-20_deepseek-deepinfer-open-source-inference-engine.md をsourceに持つ。TPW #186での掲載は約1ヶ月遅れの再言及であり新規情報は薄い。concepts/inference/ 配下のエンジン一覧(vllm/sglang/tgi/llama-cpp)への相互リンク追加のみ価値あり。",
+      "candidate_wiki_path": "concepts/deepinfer.md",
+      "body_excerpt": "# Newsletter Digest - 2026-11-19\n**Subject:** True Positive Weekly #186\n**Collected:** 2026-11-20T10:10:22.405076+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9haXdlZWtseS5zdWJzdGFjay5jb20vc3Vic2NyaWJlP3V0bV9zb3VyY2U9ZW1haWwmdXRtX2NhbXBhaWduPW"
+    },
+    {
+      "item_id": "<20261119213810.3.8a32a2773db3a0d4@mg2.substack.com>-10",
+      "source": "newsletter",
+      "source_name": "How did Lovable grow so fast?",
+      "title": "How did Lovable grow so fast? (Elena Verna, Growth-Scoop)",
+      "url": "https://www.elenaverna.com/p/how-did-lovable-grow-so-fast",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-19-how-did-lovable-grow-so-fast.md",
+      "recommended_action": "reference",
+      "reason_ja": "*** Lovable共同創業者(成長責任者)Elena Verna本人による首次パーティ分析で一次情報価値は高い: 創業2年でARR $600M超、毎週120万プロジェクト新規作成。Dropbox/SurveyMonkey/Amplitude/Miroでの経験对比として「Lovableの伸び方はこれまでで全く異なる」、Racecar Growth Framework(Lenny & Dan Hockenmaier)の拡張として「Whitewater Framework」を提唱 - 急流では川自体がエンジンであり、raft(商品+組織)が生き残れるかが成長捕捉量を決定。James Currierの「Find the Fast Moving Water」をAIカテゴリの爆発に適用。entities/lovable.md(55行、updated 2026-09-27)はARR/成長戦略を欠いており追記価値あり。ただしドメインはgrowth/businessでありLLM/Agent技術コアからは周辺的なのでtakeにはしない。",
+      "candidate_wiki_path": "entities/lovable.md",
+      "body_excerpt": "# Newsletter Digest - 2026-11-19\n**Subject:** How did Lovable grow so fast?\n**Collected:** 2026-11-20T10:10:24.076827+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/cd4f16e8-b8d7-4696-a7a8-1ab57230c74f?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6"
+    },
+    {
+      "item_id": "<20261119203555.3.34bea3836804e396@mg-d0.substack.com>-16",
+      "source": "newsletter",
+      "source_name": "True Positive Weekly #186",
+      "title": "A circuit for in-context learning (Chapterpal)",
+      "url": "https://www.chapterpal.com/s/704b28f0/a-circuit-for-in-context-learning",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-19-true-positive-weekly-186.md",
+      "recommended_action": "skip",
+      "reason_ja": "** chapterpal.comの共有ページはcurlで200を返すが全文2208バイト・パラグラフ0件(JSレンダリングアプリのshellのみ)で本文を一切取得できず。本文読了 mandates を満たせないため判定不能。interpretabilityコミュニティのin-context learning回路は興味領域だが、验证可能な内容がなく、concepts/transformer-architecture.md・raw/articlesの既存circuit interpretability資料(openai sparse-circuits等)で代替可能。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-11-19\n**Subject:** True Positive Weekly #186\n**Collected:** 2026-11-20T10:10:22.405076+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9haXdlZWtseS5zdWJzdGFjay5jb20vc3Vic2NyaWJlP3V0bV9zb3VyY2U9ZW1haWwmdXRtX2NhbXBhaWduPW"
+    },
+    {
+      "item_id": "<20261119203555.3.34bea3836804e396@mg-d0.substack.com>-17",
+      "source": "newsletter",
+      "source_name": "True Positive Weekly #186",
+      "title": "The DRL Book / AI promised less work / There's no such thing as society / CausalML toy cases",
+      "url": "(multiple low-relevance links)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-19-true-positive-weekly-186.md",
+      "recommended_action": "skip",
+      "reason_ja": "* batch-skip: TPW #186 の残リンク群。thedrlbook.com=書籍プロモーション(DRL教科書)、oioannou.com「AI promised less work」=個人blogの一般論、laurenleek.substack.com「There's no such thing as society」=社会論評、philipppro CausalML toy cases=因果推論のチュートリアル。いずれもLLM/エージェント技術コアに非該当か、一次的情報を欠く随筆。linktr.ee, thedrlbook.com もinbox summaryでlow判定と一致。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-11-19\n**Subject:** True Positive Weekly #186\n**Collected:** 2026-11-20T10:10:22.405076+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9haXdlZWtseS5zdWJzdGFjay5jb20vc3Vic2NyaWJlP3V0bV9zb3VyY2U9ZW1haWwmdXRtX2NhbXBhaWduPW"
+    },
+    {
+      "item_id": "<20261119140821.3.485173364a3c70cd@mg2.substack.com>-11",
+      "source": "newsletter",
+      "source_name": "My wife thinks AI is a person (Ben's Bites)",
+      "title": "Ben's Bites HR/workforce benchmark links: Gallup span of control, Microsoft Work Trend Index, Zoom Webinars 1M, BLS JOLTS, SHRM/theforum.social PDFs, sessions.bensbites.com",
+      "url": "(multiple HR/business links)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-19-my-wife-thinks-ai-is-a-person.md",
+      "recommended_action": "skip",
+      "reason_ja": "* batch-skip: Ben's Bites 2026-11-19 のメインエッセイ以外の全リンク。Gallup「span of control optimal team size」(管理者1人あたり12.1人という統計はメインエッセイの試算根拠として本文に吸収済み)、Microsoft Work Trend Index infinite workday、Zoom 100万人ウェビナー発表、BLS JOLTS労働統計、SHRM/theforum.social HRベンチマーキングPDF、sessions.bensbites.com「Someone is replying」、LuminosAI/Adobe Creators Toolkit 等のスポンサーPR。いずれも人事/労働統計/製品PRでありLLM/Agent技術 wiki に非該当。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-11-19\n**Subject:** My wife thinks AI is a person\n**Collected:** 2026-11-20T10:10:18.448288+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly93d3cuYmVuc2JpdGVzLmNvbS9zdWJzY3JpYmU_dXRtX3NvdXJjZT1lbWFpbCZ1dG1fY2FtcGFpZ249ZW"
+    },
+    {
+      "item_id": "<20261119213810.3.8a32a2773db3a0d4@mg2.substack.com>-11",
+      "source": "newsletter",
+      "source_name": "How did Lovable grow so fast?",
+      "title": "Growth-Scoop auxiliary links: minimum lovable product era, AI strategy trust problem, NFX fast-moving water, Lenny's/Chargebee/Apify sponsors",
+      "url": "(multiple growth/sponsor links)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-19-how-did-lovable-grow-so-fast.md",
+      "recommended_action": "skip",
+      "reason_ja": "* batch-skip: Elena Verna の過去posts(the minimum lovable product era / Your AI strategy has a trust problem)とスポンサー枠。NFX「Find the fast-moving water」(James Currier)は本記事本文で引用・要約済みで個別收录不要。Lenny's Newsletter promo、Chargebee(AI credits課金の曖昧性)、Apify(AI向けウェブデータmarketplace)、Racecar Growth Framework はスポンサー/他社promo。成長戦略論はLovable本体記事(reference)に集約済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-11-19\n**Subject:** How did Lovable grow so fast?\n**Collected:** 2026-11-20T10:10:24.076827+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/cd4f16e8-b8d7-4696-a7a8-1ab57230c74f?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6"
+    },
+    {
+      "item_id": "batch-substack-noise",
+      "source": "newsletter",
+      "source_name": "Ben's Bites / TPW #186 / Growth-Scoop",
+      "title": "Substack UI noise: app-link post pages, play/comment/share/like buttons, @author profiles, read-in-app, UUID redirect duplicates",
+      "url": "(substack infrastructure links)",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/ (3 newsletters)",
+      "recommended_action": "skip",
+      "reason_ja": "* batch-skip: 3つのSubstackニュースレター(Ben's Bites / True Positive Weekly #186 / Growth-Scoop)のLink 1-9に相当するSubstackインフラリンク群。redirect/2/eyJ... OAuth redirect(受信者メールセッション限定)、app-link/post?... の like/comment/share/restack ボタン、@aiweekly・@plgrowth 作者profile、redirect=app-store-no-desktop / utm_campaign=email-read-in-app、既に解決済み外部記事へのUUID redirect重複。スキーマ上の定型ノイズで実体なし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": ""
+    }
+  ]
+}

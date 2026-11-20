@@ -1,5 +1,9 @@
 {
   "urls": [
+    "(multiple HR/business links)",
+    "(multiple growth/sponsor links)",
+    "(multiple low-relevance links)",
+    "(substack infrastructure links)",
     "...",
     "N/A",
     "N/A — 20 beehiiv tracking URLs all return 403 expired token",
@@ -726,6 +730,7 @@
     "https://github.com/benchflow-ai/awesome-agent-evals",
     "https://github.com/bytedance/deer-flow",
     "https://github.com/deepseek-ai/DeepSpec",
+    "https://github.com/deepseek-ai/deepinfer",
     "https://github.com/emilkowalski/skills",
     "https://github.com/facebookresearch/optimizers/blob/main/distributed_shampoo/README.md",
     "https://github.com/huggingface/skills",
@@ -1134,6 +1139,7 @@
     "https://link.mail.beehiiv.com/v2/c/8d0ffbea8f34f60ca2a24b39ef39c909...",
     "https://link.mail.beehiiv.com/v2/c/a1f031904ab85ca105803bbf97f3c4e70e0534e08704c8dbf2821d99fad0e1bf052f6279937381fb45f002f7ea366961c6e92e1ff6a0ff85cba1ca659324d0cc73421881326c7c1bc82773c04684e49cea7c780f6e98f5f4e4984a63aea0ad1c4052fdbe7253c2c795994912e621091b79109d7271ce39325042499ad1c7d9fdb12d378c2ca05180f312f7fd1cef5872fb0cf9efe2ce711bf121393200e34074/3f831987cf6d7703",
     "https://link.mail.beehiiv.com/v2/c/a2444b0086c2d2aca425bde5a1827eee890d54a063f9c33a3c2c3ca774d7fd4622c38d1f6d8374fa10a2d0609b1048cc3406af6d19574c3682ac8968b9d3aa02c9dba46bddec79211422875974c74e19f59413d4f71cd6e8f51b3660fcd31a4d6de84af8d93ca13005d9e9c4aca2c4b850cc46faeaa32e61ce53c907c6493f48a6d983a69991d94a0426a2f05af445c729b079f01b0a1dc26c8abe5734e5e470/1fbf0ab936212c10",
+    "https://link.mail.beehiiv.com/v2/c/ab4fb307...",
     "https://link.mail.beehiiv.com/v2/c/b0203c51097285a0970542b7980a39950756f5b42f9622ff9836e01d2f3dc671da0acbb93a519ca9e52c6f9c8cb474de590a069a9215c1b3cbc200d8a85fcaf4c862923137d87a12f18da6be68a971e03315683d3f100686b9aba1f2e2e382a58451b6741390d7b7a1a00c1490a5d260c12b74daa5df5e0315f70964d8f857da0aab345c09e07d5cd22957f93679ec38345bd95ffd201336917da9c6bce97e04/91b854cbe62cabc2",
     "https://link.mail.beehiiv.com/v2/c/b1b7daf95c9a94b09e5d1a85cf16904c0429d67fbd35d1e2e673606ff0614acd237ddd62cb89ad9455ffb9ea6882148de847378b0140c698cc1b79f3ae992e61226d6df7454513a740f83f54b68d7ee58f83bf2809c5bf2be9a76ea7996ee01017fe2d45214b421ef862853c340d14a304054940ff048c793fd5abdd9f47778d2970bf76284d12f2f75eee157e0f0bd4336b9b390543342bda28155bea0a6d28/c7399ca6de579887",
     "https://link.mail.beehiiv.com/v2/c/c5ce674bb4c520ae7d911ed1d1763c5d...",
@@ -2612,6 +2618,7 @@
     "https://www.capitalone.com/tech/open-source/announcing-vulnhunter/",
     "https://www.cerebras.ai/blog/cerebras-launches-disaggregated-inference",
     "https://www.cerebras.ai/blog/how-we-built-our-knowledge-base",
+    "https://www.chapterpal.com/s/704b28f0/a-circuit-for-in-context-learning",
     "https://www.chatprd.ai/how-i-ai/",
     "https://www.chatprd.ai/how-i-ai/my-gpt-56-sol-benchmark-game-changing-workflows",
     "https://www.chatprd.ai/how-i-ai/workflows/build-native-mobile-app-ai-product-direction",
@@ -2667,6 +2674,7 @@
     "https://www.dwarkesh.com/p/why-compute-might-get-10x-more-expensive",
     "https://www.dwarkesh.com/p/why-compute-might-get-10x-more-expensive-video",
     "https://www.effectivealtruism.org/articles/ea-global-2018-reframing-superintelligence",
+    "https://www.elenaverna.com/p/how-did-lovable-grow-so-fast",
     "https://www.espn.com/nba/story/_/id/48686303/steve-kerr-decision-return-coach-golden-state-warriors-steph-curry",
     "https://www.experimental-history.com/p/incentives-are-for-losers",
     "https://www.experimental-history.com/p/only-insane-people-use-the-internet",
@@ -3288,5 +3296,5 @@
     "substack.com/ui-wrapper (Link 8)",
     "substack.com/ui-wrapper (Link 9)"
   ],
-  "updated": "2026-11-19T18:16:58.620156+00:00"
+  "updated": "2026-11-20T10:37:13.326086+00:00"
 }
