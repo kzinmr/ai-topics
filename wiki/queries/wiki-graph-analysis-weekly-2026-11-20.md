@@ -1,7 +1,7 @@
 ---
 title: Weekly Wiki Graph Analysis
-created: 2026-11-13
-updated: 2026-11-13
+created: 2026-11-20
+updated: 2026-11-20
 type: query
 tags: []
 sources: []
@@ -9,30 +9,30 @@ sources: []
 
 # Weekly Wiki Graph Analysis
 
-**Date**: 2026-11-13 15:01 UTC
+**Date**: 2026-11-20 15:01 UTC
 
 ## Summary
 
 | Metric | Value |
 |--------|-------|
-| Total pages scanned | 3450 |
-| Entities | 969 |
-| Concepts | 2335 |
+| Total pages scanned | 3495 |
+| Entities | 972 |
+| Concepts | 2370 |
 | Comparisons | 35 |
-| Queries | 58 |
-| Events | 53 |
+| Queries | 62 |
+| Events | 56 |
 | Orphans (no inbound links) | 491 |
 | Content-rich orphans | 481 |
-| Broken wikilinks | 3449 |
-| Fixable wikilinks | 149 |
+| Broken wikilinks | 3527 |
+| Fixable wikilinks | 150 |
 | Duplicate groups | 17 |
-| Oversized pages (>200 lines) | 330 |
+| Oversized pages (>200 lines) | 335 |
 | Missing sources | 0 (0%) |
 | Tag violations | 1 |
-| Stale pages (>90 days) | 2558 |
+| Stale pages (>90 days) | 2563 |
 | Skeleton pages | 0 |
-| Not indexed in index.md | 23 |
-| Stale index entries | 27 |
+| Not indexed in index.md | 18 |
+| Stale index entries | 29 |
 
 ## 1. Orphan Pages
 
@@ -62,18 +62,18 @@ sources: []
 
 ## 2. Broken Wikilinks
 
-3449 total broken links.
+3527 total broken links.
 
 | Issue Type | Count | Description |
 |------------|-------|-------------|
-| bare-wikilink-missing | 1746 | Bare name, target page does not exist |
-| missing | 1554 | Namespaced link to a page that does not exist |
-| bare-wikilink | 139 | Bare name without namespace prefix (auto-fixable) |
+| bare-wikilink-missing | 1808 | Bare name, target page does not exist |
+| missing | 1569 | Namespaced link to a page that does not exist |
+| bare-wikilink | 140 | Bare name without namespace prefix (auto-fixable) |
 | cross-namespace | 10 | Entity ↔ concept namespace mismatch (auto-fixable) |
 
 ### Top Broken Targets (pages that need creating)
 
-- [[]] — 47 references
+- [[]] — 53 references
 - [[agent-evaluation]] — 24 references
 - [[entities/cursor]] — 14 references
 - [[concepts/enterprise-ai]] — 13 references
@@ -84,14 +84,14 @@ sources: []
 - [[concepts/bitter-lesson]] — 10 references
 - [[entities/huggingface]] — 10 references
 - [[concepts/claude-opus-4-7]] — 10 references
+- [[concepts/agent-framework]] — 9 references
 - [[concepts/ai-coding]] — 9 references
 - [[entities/ben-clavie]] — 9 references
 - [[ai-governance]] — 9 references
-- [[concepts/agent-framework]] — 8 references
 
 ### Fixable Links (sample)
 
-149 links can be auto-fixed (cross-namespace or bare → namespaced).
+150 links can be auto-fixed (cross-namespace or bare → namespaced).
 
 - `entities/alloomi-ai`: [[context-engineering]] → [[concepts/context-engineering]]
 - `entities/bill-gates`: [[ai-employment-displacement]] → [[concepts/ai-employment-displacement]]
@@ -103,7 +103,7 @@ sources: []
 - `entities/dqwen3-5`: [[qwen]] → [[entities/qwen]]
 - `entities/dqwen3-5`: [[ssm-mamba]] → [[concepts/ssm-mamba]]
 - `entities/fei-fei-li`: [[world-labs]] → [[entities/world-labs]]
-- ... and 139 more
+- ... and 140 more
 
 ## 3. Duplicate / Similar Pages
 
@@ -129,32 +129,33 @@ sources: []
 
 ## 4. Index Reconciliation
 
-- **23 pages** are on disk but not listed in index.md
-- **27 index entries** reference files that no longer exist
+- **18 pages** are on disk but not listed in index.md
+- **29 index entries** reference files that no longer exist
 
 ### Not-Indexed by Category
 
-- concepts: 23
+- concepts: 17
+- queries: 1
 
 ## 5. Oversized Pages (>200 lines)
 
-330 pages exceed the 200-line threshold.
+335 pages exceed the 200-line threshold.
 
 - **queries/2026-10-04-uncommitted-wip-snapshot-query** — 3680 lines
 - **concepts/agentic-search** — 1212 lines
-- **entities/harvey** — 1097 lines
-- **entities/simon-willison** — 1069 lines
+- **entities/harvey** — 1133 lines
+- **entities/simon-willison** — 1121 lines
 - **entities/anthropic** — 982 lines
 - **entities/ed-zitron** — 918 lines
-- **entities/fireworks-ai** — 760 lines
+- **entities/fireworks-ai** — 786 lines
+- **entities/openai** — 760 lines
 - **concepts/rlm-recursive-language-models** — 742 lines
-- **entities/openai** — 728 lines
 - **concepts/dspy-rlm** — 698 lines
-- ... and 320 more
+- ... and 325 more
 
 ## 6. Stale Pages (>90 days since update)
 
-2558 pages have not been updated in over 90 days.
+2563 pages have not been updated in over 90 days.
 
 ## 7. Tag Violations
 
@@ -162,13 +163,13 @@ sources: []
 
 ## 8. Recommended Actions
 
-- [MEDIUM] Fix 149 cross-namespace / bare wikilinks
+- [MEDIUM] Fix 150 cross-namespace / bare wikilinks
 - [MEDIUM] Add inbound links to 481 content-rich orphan pages
 - [HIGH] Review and consolidate 17 potential duplicate groups
-- [LOW] Consider splitting 330 oversized pages (>200 lines)
+- [LOW] Consider splitting 335 oversized pages (>200 lines)
 - [HIGH] Fix 1 pages with non-canonical tags
-- [MEDIUM] Remove 27 stale index entries (files missing)
-- [LOW] 2558 pages stale >90 days - review needed
+- [MEDIUM] Remove 29 stale index entries (files missing)
+- [LOW] 2563 pages stale >90 days - review needed
 
 ---
 *Generated by `scripts/_weekly_graph_report.py`*

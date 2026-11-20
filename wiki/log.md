@@ -3195,3 +3195,14 @@ research-grade pages from genuinely uncovered material:
 - AI-relevant: Hugo Bowne-Anderson ×2 (Anthropic components-of-agent-memory + Block From Hierarchy to Intelligence) → X Activity Log + Reception section in [[concepts/components-of-agent-memory]]. Armin Ronacher → "AI and Irontown" (Princess Mononoke analogy for AI trade-offs; raw already saved 2026-11-10) added to Recent Themes.
 - Skipped: Hynek release tweets ×4 (stamina 26.2.0 / bgt 26.3.0 / argon2-cffi-bindings 26.2.0 / sponsors — Python packaging, no AI relevance), Will McGugan ×2 (otter video, Bluesky reply).
 - Files touched: entities/hugo-bowne-anderson.md, entities/armin-ronacher.md, concepts/components-of-agent-memory.md, log.md. Index: no new pages.
+
+
+## [2026-11-20 15:00 UTC] wiki-graph-analysis (weekly)
+- Generated `queries/wiki-graph-analysis-weekly-2026-11-20.md` via `scripts/_weekly_graph_report.py` + `config/hermes/skills/_overrides/wiki-graph-health/scripts/deep_link_audit.py`.
+- Week-over-week: 3,456 → 3,495 pages (+39); deep-audit orphans 460 → 462 (+2); deep-audit broken links 2,581 → 2,627 (+46); oversized 330 → 335; stale 2,558 → 2,563. All stable.
+- Adjudicated 17 duplicate groups (companion `queries/wiki-graph-analysis-weekly-2026-11-20-annotations.md`): 0 merges. 9 already-redirected stubs, 2 false-positive person collisions (deliberate-coder/deliberatecoder, _index/_index), 6 intentional entity-vs-concept or concept-vs-comparison splits (cline, omnara, qwen, agent-harnesses, nvidia-openshell, alpha-proof-nexus family).
+- Independent index resolver: report's 29 stale + 18 not-indexed → 1 real gap (skeleton-enrich-stub-action query) + 2 dangling prior-week report lines (replaced this run) + rest dir-hub/log-* false positives.
+- Broken-link top targets: 4 genuine creation candidates (entities/huggingface, entities/ben-clavie, concepts/claude-opus-4-7, alias concepts/agent-harness-comparison→comparisons/agent-harnesses); all 11 other top targets nested-resolvable.
+- Tag violations: 0 real per `tag_audit.py` (report's "1" is generator artifact).
+- `llm-wiki` skill skip = name collision (research/ vs _overrides/), not absence.
+- Index: replaced 2 dangling 2026-11-13 report lines with today's report + annotations + the previously-unindexed skeleton-enrich-stub-action query.
