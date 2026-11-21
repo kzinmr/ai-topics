@@ -3,7 +3,7 @@ title: Daniel van Strien
 type: entity
 handle: "@vanstriendaniel"
 created: 2026-04-10
-updated: 2026-11-14
+updated: 2026-11-21
 tags:
   - person
   - model
@@ -27,6 +27,7 @@ sources:
   - https://huggingface.co/spaces/davanstrien/prelinger-moments-space
   - https://github.com/davanstrien/saturate
   - https://github.com/davanstrien/ocr-bench
+  - https://huggingface.co/datasets/biglam/britannica-illustrated-pages/viewer/captions
 ---
 
 ## Related Entities
@@ -169,6 +170,15 @@ Daniel's X activity (@vanstriendaniel) centers on:
 8. **Agent-Ready Tooling** — Building tools designed for both human and AI agent use: UV scripts with `--help`, PEP 723 metadata, and `hf jobs uv run` sandboxing; polars plugins with native LazyFrame APIs; agent skills for recipe discovery and execution. (Colab, Kaggle, HF Jobs) to democratize access to AI capabilities.
 
 ## Recent X Activity
+
+### Nov 18, 2026 — Britannica captions complete: 158,595 illustrated pictures described
+
+Follow-up milestone on `biglam/britannica-illustrated-pages`: every illustration from the **1st (1768)**
+and **11th (1911)** editions now carries a description — **158,595 pictures**, each annotated with *what it
+shows*, its *printed caption*, and *the article it comes from*. This extends the Aug 2026 release (115,293
+illustrated *pages*, 1768–1929) down to the picture level with structured triple metadata, turning the
+corpus into a VLM-research / digital-humanities dataset where each image links back to its source article.
+[dataset viewer](https://huggingface.co/datasets/biglam/britannica-illustrated-pages/viewer/captions).
 
 ### Oct 29, 2026 — Open curation decision model (ultrabert-380m-curation)
 

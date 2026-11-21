@@ -2,6 +2,17 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-11-21] x-accounts-scan — 11/84 scanned, 2 new posts, 1 wiki update
+
+> Cursor 11->22, request budget 12. Both new posts evaluated. `@vanstriendaniel` (Nov 18) reported the
+> **captions-complete milestone** for `biglam/britannica-illustrated-pages` (158,595 illustrated pictures
+> from the 1st/11th Britannica editions, each with subject + printed caption + source article). Dataset
+> already covered since Aug 2026 (raw + entity), so added a reaction-layer **Recent X Activity** entry +
+> source link to `entities/daniel-van-strien.md` rather than re-scraping. `@eugeneyan` (Nov 16) was a
+> LinkedIn referral reply ("have you chatted with Ruimin?") with no standalone value -- skipped.
+
+---
+
 ## [2026-11-21] skeleton-enrich-daily — stub backlog: 6 entity-shaped stubs in concepts/ enriched
 
 > Snapshot: the `status: skeleton` backlog remains **empty** (streak since 2026-10-17; frontmatter scans of `wiki/entities/` and `wiki/concepts/` return 0 live markers). Productive action again on the `status: stub` backlog — this run cleared the 6 entity-shaped stubs misplaced in `concepts/` that prior runs had deferred (first two candidates, `ai-evals-people` and `inference-hardware`, were already enriched on 2026-11-20).
