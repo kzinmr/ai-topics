@@ -152,9 +152,6 @@ Her "Thoughts on working inside a data center suite" essay captures the physical
 - [[concepts/drewdevault-com]] — Shares Rachel's protocol-respect philosophy and critique of wasteful software
 - [[concepts/feed-reader-behavior]] — Rachel's scoring methodology and findings
 - [[concepts/http-conditional-requests]] — If-Modified-Since, If-None-Match, ETag best practices
--  — Passive monitoring, fleet scanning, alert design
--  — Culture of incident documentation and learning
--  — Practical operational wisdom
 
 ## Sources
 

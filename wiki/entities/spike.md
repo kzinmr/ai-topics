@@ -134,9 +134,6 @@ Spike's "spikisms" are aphoristic technical insights that blend computational th
 - [[concepts/brainchop]] — His portable brain segmentation tool
 - [[concepts/work-depth-analysis]] — The computational complexity model Spike advocates for parallel systems
 - [[concepts/software-minimalism]] — The philosophical commitment to small, readable code
--  — His llm.nvim project and views on AI in programming
--  — The instruction set architecture used in the 100K line ML stack proposal
--  — The concept of systems that can build themselves
 ## Influence Metrics
 
 - BrainChop (dingllm.nvim): 865+ GitHub stars, active PyPI package with WebGPU export

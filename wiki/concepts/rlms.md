@@ -138,4 +138,3 @@ DSPy (Declarative Programming)
 - [[concepts/dspy]] — Declarative LM programming framework (compare with RLMs)
 - [[concepts/gepa]] — Khattab's other research direction (compile-time optimization)
 - [[concepts/context-engineering|Context Engineering]] — General context management
--  — Another perspective on inference-time scaling

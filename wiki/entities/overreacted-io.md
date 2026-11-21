@@ -145,9 +145,6 @@ In "A Lean Syntax Primer" (2026) Dan documents his own learning path into the Le
 - [[entities/overreacted-io]] — His primary area of technical contribution
 - [[concepts/redux]] — Co-created this state management library
 - [[concepts/at-protocol]] — Subject of his "Social Filesystem" analysis
--  — Interactive debugging over abstraction
--  — His central teaching methodology
--  — His argument against rigid naming conventions
 
 ## Influence Metrics
 

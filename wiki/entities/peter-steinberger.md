@@ -214,7 +214,6 @@ Source: [[raw/articles/github.com--openclaw-releases-tag-v2026.9.2--14c620a1.md]
 - [[concepts/openclaw-ecosystem]] — The framework he created
 - [[concepts/anthropic/openclaw-conflict]] — The April 2026 policy dispute
 - [[concepts/agentic-engineering]] — AI-assisted software development patterns
--  — The protocol his tooling ecosystem is built on
 - [[concepts/skill-architecture-patterns]] — Skill governance model (OpenClaw's primitives-first approach)
 - [[entities/boris-cherny]] — Anthropic's Head of Claude Code
 - [[entities/simon-willison]] — Fellow opinion leader on agentic engineering

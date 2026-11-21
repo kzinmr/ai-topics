@@ -178,7 +178,6 @@ A recurring theme in Schulman's recent work is **scalable oversight**: how can h
 
 ## Related
 
--  — PhD advisor at UC Berkeley; robotics and RL
 - [[entities/greg-brockman]] — OpenAI co-founder; co-authored OpenAI Gym (2016); collaborated on early RL work
 - [[entities/ilya-sutskever]] — OpenAI co-founder; co-authored "Let's Verify Step by Step"
 - [[entities/dario-amodei]] — Anthropic colleague; co-authored "Concrete Problems in AI Safety"
@@ -188,7 +187,6 @@ A recurring theme in Schulman's recent work is **scalable oversight**: how can h
 - [[concepts/security-and-governance/ai-safety]] — Scalable oversight, alignment research, safety exodus
 - [[entities/openai]] — Company Schulman co-founded (2015–2024)
 - [[entities/anthropic-computer-use]] — Company Schulman briefly joined (2024–2025)
--  — Schulman's current venture (2025–present)
 - [[concepts/ml-research-practice]] — Schulman's research methodology guide (2017)
 
 ## Sources

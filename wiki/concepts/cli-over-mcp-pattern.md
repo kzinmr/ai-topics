@@ -152,7 +152,6 @@ Both patterns share the core principle: **reduce overhead, increase direct engag
 - [[concepts/direct-prompting-philosophy]] — The anti-overengineering mindset this serves
 - [[concepts/claude-code/claude-code-best-practices]] — Practical implementation patterns
 - [[concepts/context-engineering/context-window-management|Context Window Management]] — How CLIs preserve precious context
--  — The broader methodology
 ## Sources
 
 - [Peter Steinberger: My Current AI Dev Workflow](https://steipete.me/posts/2025/optimal-ai-development-workflow/) — CLI-first practices

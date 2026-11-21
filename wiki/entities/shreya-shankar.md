@@ -194,7 +194,7 @@ Her research has been adopted by **OpenAI and Anthropic teams** for their evalua
 - [[entities/eugene-yan]] — Co-author on Applied LLMs guide, shared evals philosophy
 - [[concepts/evaluation/ai-evals]] — The evaluation framework they teach
 - [[concepts/evaluation/llm-as-judge]] — Core evaluation technique
--  — Foundational practice- [[concepts/harness-engineering]] — Connected philosophy
+- [[concepts/harness-engineering]] — Connected philosophy
 - [[comparisons/eval-tools-comparison]] — Tool selection framework
 - [[concepts/evaluation/critique-shadowing]] — Husain's methodology (complementary)
 - [[entities/drmaciver]] — Property-based testing applied to LLM evaluation (`foundational-llm-evals`); PBT methodology for eval design

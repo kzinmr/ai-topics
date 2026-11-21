@@ -1,8 +1,8 @@
 ---
 title: "Agent Security and Governance"
 type: concept
-created: 2026-06-11
-updated: 2026-06-11
+created: 2026-11-21
+updated: 2026-11-21
 tags:
   - agent-safety
   - governance
@@ -74,3 +74,7 @@ Outer control, access management, and enterprise governance. These pages address
 - [[concepts/security-and-governance/agentic-identity]] — Modeling AI agents as financial actors
 - [[concepts/security-and-governance/agentic-security]] — Agentic security patterns
 - [[concepts/security-and-governance/agent-security-landscape-2026]] — Security landscape overview (2026)
+
+### Privacy and Surveillance
+
+- [[concepts/os-agent-capture-privacy]] — OS-level AI agents vs app-layer privacy (Signal screenshot blocking, Recall precedent)

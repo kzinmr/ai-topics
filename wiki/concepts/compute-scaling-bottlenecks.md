@@ -104,7 +104,6 @@ The compute bottleneck has profound economic consequences:
 
 - [[concepts/ai-bubble-economics]] — Whether AI revenue can justify infrastructure spending at constrained supply levels
 - [[concepts/space-gpus]] — Orbital compute as a theoretical bottleneck workaround
--  — The broader physical layer of AI: data centers, networking, power
 - [[concepts/cognitive-cost-of-agents]] — If compute is scarce, inefficient agent usage becomes even more costly
 - [[concepts/harness-engineering/agentic-engineering]] — Efficient use of limited compute through better agent practices
 

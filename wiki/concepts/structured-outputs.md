@@ -78,7 +78,6 @@ OpenAI now offers native structured output via `response_format` parameter, guar
 
 - [[concepts/pydantic]] — Foundation library
 - [[concepts/pydantic-ai]] — Agent-level structured outputs
--  — Constrained decoding with regex/grammars-  — Grammar-constrained generation
 - [[entities/jason-liu]] — Instructor creator
 - [[entities/rahul]] — Guardrails AI / Jsonformer creator
 - [[entities/samuel-colvin]] — Pydantic creator

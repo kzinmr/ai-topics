@@ -161,7 +161,6 @@ His work consistently argues that **digitization is not neutral** — the choice
 - [[concepts/open-data]] — Open cultural data movement
 - [[concepts/digital-humanities]] — Jupyter for humanities research
 - [[concepts/self-hosting-ai-development|Self-hosted, self-documented digital practice]]
--  — Human-centered approach to technology
 - [[concepts/web-accessibility|Web accessibility and standards advocacy]]
 
 ## Sources

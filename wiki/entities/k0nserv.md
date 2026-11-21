@@ -103,7 +103,6 @@ His policy: force push freely on feature branches to clean up history before mer
 ## Related
 
 - [[concepts/great-pendulum]] — Cyclical nature of technology trends
--  — Tokio, sans-IO pattern, crate coloring
 - [[entities/meta]] — Git as the canonical location for project metadata
 - [[entities/xeiaso-net]] — Running services at minimal cost- [[entities/xeiaso-net]] — Shared interest in practical, small-scale infrastructure
 - [[entities/michael-stapelberg]] — Shared interest in declarative infrastructure and Nix

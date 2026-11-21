@@ -181,9 +181,6 @@ His technical writing (brd.la) is:
 - [[concepts/operating-systems]] — QNX, Windows, Unix, DOS, and the battle for the desktop
 - [[concepts/local-llm/self-hosting-ai-development]] — Home infrastructure, cloud free-tier optimization, defense in depth
 - [[concepts/software-history]] — Xerox PARC, SRI/ARC, and the origins of personal computing
--  — Practical systems administration, security hardening, infrastructure automation
--  — Alan Kay, the graphical user interface, and the future that was dismissed
--  — Microkernel architecture, real-time operating systems, embedded computing
 
 ---
 

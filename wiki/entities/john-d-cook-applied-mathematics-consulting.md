@@ -147,8 +147,6 @@ Source: raw/articles/johndcook.com--blog-2026-08-26-what-is-the-quality-of-softw
 
 - [[concepts/formal-methods]] — Proving correctness properties for critical systems
 - [[entities/hillel-wayne]] — Formal methods practitioner and educator, shared interest in practical software verification
--  — The correctness conundrum in AI systems-  — HIPAA expert determination and differential privacy
--  — Mathematician whose work intersects with Cook's analysis of AI-assisted discovery
 
 ## Sources
 

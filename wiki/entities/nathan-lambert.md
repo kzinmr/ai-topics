@@ -381,12 +381,11 @@ The Interconnects analysis [[events/nvidia-ceo-transition-2026|post-Jensen open-
 ## Related
 
 - [[concepts/allen-institute-ai]] — Current employer, OLMo project
--  — Previous employer, Zephyr and TRL work
 - [[concepts/post-training/rlhf]] — Core research area, book author
 - [[concepts/post-training/rlhf-dpo-preference]] — Direct Preference Optimization, Zephyr
 - [[concepts/post-training/_index]] — His primary research focus
 - [[entities/teknium]] — Fellow post-training researcher, Nous Research co-founder
--  — Co-created reward model evaluation benchmark-  — Advocate for fully open AI development- [[concepts/model-distillation]] — Fundamental ML technique; Lambert's "Distillation Panic" defends it from criminalization
+- [[concepts/model-distillation]] — Fundamental ML technique; Lambert's "Distillation Panic" defends it from criminalization
 - [[concepts/ai-api-abuse]] — Term Lambert coined to replace the misleading "distillation attacks" framing
 - [[events/distillation-attacks-2026]] — Anthropic's accusations that prompted Lambert's response
 - [[concepts/post-training/_index]] — His newsletter and podcast-  — Open post-training model family he leads

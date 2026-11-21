@@ -112,7 +112,6 @@ The flywheel's ultimate state is **product-driven virality** — when the produc
 
 ## Related Frameworks
 
--  — Real-time iteration during viral moments (launch strategy)
 - [[entities/elvis]] — Cross-channel amplification system- [[entities/elvis-sun]] — Originator of this framework
 
 ## Sources

@@ -162,5 +162,5 @@ This validated his thesis that **file-based memory is the natural architecture f
 - [[concepts/claude/memory]] — File-based memory architecture
 - [[concepts/gpt/chatgpt-memory-bitter-lesson]] — ChatGPT's memory system analysis
 - [[concepts/multi-agents/multi-agent-orchestration]] — Patterns for coordinating multiple agents
--  — Async agent workflows-  — Optimizing for prompt cache preservation- [[concepts/harness-engineering/agentic-workflows/vibe-coding]] — The approach Khemani's work supports and critiques
+- [[concepts/harness-engineering/agentic-workflows/vibe-coding]] — The approach Khemani's work supports and critiques
 - [[entities/anthropic]] — Creator of Claude, Claude Code, and the memory philosophy Khemani analyzes

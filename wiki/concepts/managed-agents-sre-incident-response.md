@@ -195,4 +195,3 @@ session = client.beta.sessions.create(..., vault_ids=[github_vault.id])
 
 - [[concepts/anthropic/agent-sdk-sre-patterns]] — The same pattern on Claude Agent SDK
 - [[concepts/chief-of-staff-agent-patterns]] — Hooks, subagents, and plan mode
--  — Managing long-running agent context

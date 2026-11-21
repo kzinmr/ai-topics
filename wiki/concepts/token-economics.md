@@ -376,4 +376,3 @@ Author-stated caveats: benchmaxxing, frontier-switching user assumption, and noi
 
 - raw/articles/epoch.ai--publications-the-plunging-price-of-thought--e7c1a0f3.md — "The plunging price of thought" (Epoch AI, Sep 22 2026) — ~47%/quarter cost-of-performance decline
 - raw/articles/dwarkesh.com--p-blog-prize-winners--a4b5d70b.md — Michael Li MTR analogy (July 2026)
--  — Spheron & Introl inference economics analysis- Sebastian Raschka, "A Visual Guide to Attention Variants in Modern LLMs" (Ahead of AI)

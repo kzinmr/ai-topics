@@ -151,9 +151,6 @@ Between middle-class stability and creative resistance, Salis argues there's a *
 - [[concepts/consumerism-and-technology]] — Brand worship, secular religion of products, advertising critique
 - [[concepts/ai-and-authenticity]] — Synthography, simulacra, embodied vs. generated experience
 - [[concepts/privacy-engineering]] — Open firmware, Valetudo, data ownership, smart device hacking
--  — AI-powered production, automating the boring to liberate the creative
--  — Decentralized social web, ActivityPub, algorithm-free engagement
--  — Borgmann's focal practices, Baudrillard's simulacra, Diogenes' asceticism
 
 ---
 

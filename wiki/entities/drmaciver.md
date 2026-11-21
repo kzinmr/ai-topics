@@ -254,13 +254,11 @@ His Substack "Overthinking Everything" is unified by a theme of **empirical curi
 - [[entities/steve-blank]] — Lean Startup creator; AI-driven startup methodology
 - [[entities/mitchell-hashimoto]] — HashiCorp co-founder; coined harness engineering
 - [[entities/daniel-de-laney]] — Designer and developer; AI tools UX critique
--  — His primary domain of expertise
 - [[concepts/evaluation/ai-evals]] — Foundational LLM evaluations using PBT methodology
 - [[concepts/ai-evals-people]] — drmaciver, shreya-shankar, hamel-husain collaborate on eval frameworks
 - [[concepts/harness-engineering]] — Hegel as a test harness for multi-language PBT
 - [[concepts/agentic-engineering]] — AI-assisted coding with rigorous review practices
 - [[concepts/software-correctness]] — 100% coverage mandate, invariant testing
--  — Shrinkray and minimizing failing examples
 - [[concepts/evaluation/ai-evals]] — Current work at Antithesis-  — Critiques of benchmark-based evaluation
 ## Influence Metrics
 

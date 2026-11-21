@@ -354,8 +354,6 @@ Raw: [[raw/articles/borretti.me--article-asi-as-a-black-box--f06c0ea4.md]]
 - [[concepts/programming-languages]] — Type systems, compilers, parsers, semantic analysis
 - [[concepts/ai-agents]] — Cognitive architectures, LLM scaffolding, agent evaluation
 - [[concepts/compiler-construction]] — OCaml, Menhir, bootstrapping, middle-end design
--  — SM-2 algorithm, learning science, productivity
--  — Ontologies, logic, information management
 - [[concepts/security-and-governance/ai-safety]] — Memory safety, resource management, capability-based security
 ## Podcasts & Media
 

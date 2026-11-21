@@ -265,9 +265,8 @@ Karpathy's progression of educational implementations:
 
 ## Related Concepts
 
--  — Neural networks as programs- [[concepts/vibe-coding]] — Natural language programming
--  — Managing AI agents in parallel- [[concepts/local-llm/_index]] — Running LLMs locally (nanochat, llm.c)
--  — Teaching LLMs from first principles
+- [[concepts/vibe-coding]] — Natural language programming
+- [[concepts/local-llm/_index]] — Running LLMs locally (nanochat, llm.c)
 
 ## References
 

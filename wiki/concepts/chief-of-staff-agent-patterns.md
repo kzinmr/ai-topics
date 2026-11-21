@@ -198,4 +198,4 @@ Chief of Staff Agent (claude-opus-4-6)
 
 - [[concepts/anthropic/agent-sdk-sre-patterns]] — MCP integration and safety guardrails
 - [[concepts/managed-agents-sre-incident-response]] — Human-in-the-loop approval patterns
--  — Managing long-running agent context- [[concepts/research-agent-fundamentals]] — Stateless vs stateful agent patterns
+- [[concepts/research-agent-fundamentals]] — Stateless vs stateful agent patterns

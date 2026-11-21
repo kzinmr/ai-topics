@@ -129,9 +129,6 @@ This post exemplifies Potter's method: take a seemingly narrow technical problem
 - [[concepts/toyota-production-system]] — Potter's frequent reference point for understanding process improvement
 - [[concepts/ford-manufacturing]] — historical case study in achieving economies of scale
 - [[concepts/katerra]] — the construction startup whose failure catalyzed Potter's writing
--  — where Potter serves as Senior Infrastructure Fellow
--  — shares Potter's systematic, analytical approach to engineering questions
--  — recommended alongside Construction Physics for industrial analysis
 
 ## Sources
 

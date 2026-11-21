@@ -165,4 +165,3 @@ Tools auto-register when API keys are present (PagerDuty, Datadog, GitHub, etc.)
 
 - [[concepts/managed-agents-sre-incident-response]] — The same pattern on Managed Agents API
 - [[concepts/chief-of-staff-agent-patterns]] — Hooks, subagents, and plan mode
--  — Managing long-running agent context

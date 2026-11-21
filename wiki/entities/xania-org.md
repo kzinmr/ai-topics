@@ -194,8 +194,6 @@ Godbolt's writing is characterized by:
 - [[concepts/compiler-explorer]] — Interactive assembly visualization tool (godbolt.org)
 - [[concepts/ai-as-abstraction-layer]] — Godbolt's semiconductor design analogy for AI coding
 - [[concepts/open-source-stewardship]] — Project governance and community decision-making
--  — How modern compilers transform and optimize code
--  — Fighting link rot as a civilizational responsibility
 - [[entities/mitchell-hashimoto]] — Formal entity for Compiler Explorer governance- [[concepts/harness-engineering]] — Related to Mitchell Hashimoto's AGENTS.md approach
 
 ## Sources

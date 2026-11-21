@@ -470,7 +470,6 @@ Source: [[raw/articles/garymarcus.substack.com--p-game-over-man--969f0a1b.md]]
 - [[concepts/claude/mythos-glasswing]] — Frontier model release and the cost of safety-gated access
 - [[concepts/coding-agents/ai-coding-reliability]] — Whether AI-generated code delivers real productivity or creates technical debt
 - [[concepts/cognitive-cost-of-agents]] — The hidden organizational costs of delegating work to AI
--  — The promise vs. reality of AI-powered software development
 ### Enterprise Token Cost Crisis (June 2026)
 
 Zitron's "AI Doesn't Have ROI" (June 2026) added concrete enterprise data to the bubble economics thesis:

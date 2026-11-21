@@ -95,14 +95,10 @@ MacIver's Claude Code practical report (2026-04):
 
 ## Related Concepts
 
--  — Foundations of testing paradigm
 - [[concepts/harness-engineering]] — Agentic PBT as a Claude Code command
 - [[concepts/evaluation/ai-evals]] — 984 bug reports generated, 86% validity rate
--  — Autonomous code quality assurance by AI agents
--  — Bug discovery via invariants
 - [[entities/drmaciver]] — Hypothesis author, Antithesis Senior Engineer
 - [[concepts/mismanaged-geniuses-hypothesis]] — Python PBT library
--  — Cross-language PBT protocol
 ## Sources
 
 - [Property-Based Testing with Claude](https://red.anthropic.com/2026/property-based-testing/) — Anthropic Research

@@ -222,13 +222,10 @@ Open-source SEO tool for "agent-native teams" ([seoskill.dev](https://seoskill.d
 ## Related Concepts
 
 - [[concepts/programmatic-seo]] — Nuttall's core business methodology
--  — Community he actively participates in
--  — His 2025–2026 focus area
 - [[concepts/model-context-protocol-mcp]] — Model Context Protocol servers as a new product category
 - [[entities/claude-code]] — His primary AI coding tool
 - [[concepts/harness-engineering/system-architecture/agent-skills]] — Playbooks.com is a skill directory for AI agents
 - [[entities/randy-olson]] — Shared focus on agent-skills, MCP ecosystems, and AI agent evaluation
--  — His approach to agent state management
 ## Sources
 
 - Personal website: https://ian.is

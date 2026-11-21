@@ -165,9 +165,6 @@ The Watchdog Timer safety mechanism in his Game of Life build — forcing a rebo
 - [[concepts/passive-reconnaissance]] — Subject of *Silence on the Wire*
 - [[concepts/ai-vulnerability-discovery]] — Big Sleep project and LLM-based bug finding
 - [[concepts/ai-slop]] — His analysis of AI-generated content slop on Amazon aligns with the broader AI slop concept
--  — His book on rational emergency preparedness
--  — His approach to understanding systems from first principles
--  — His stance on AI-generated content and creative authenticity
 
 ## Influence Metrics
 

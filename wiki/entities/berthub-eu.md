@@ -117,9 +117,6 @@ Bert Hubert serves as a part-time technical AI policy advisor to Dutch governmen
 
 - [[concepts/powerdns]] — Open-source DNS software Bert founded in 1999
 - [[concepts/lean-software]] — Software minimalism as security strategy
--  — European infrastructure autonomy
--  — DNS resilience standard Bert co-authored
--  — EU client-side scanning legislation Bert critiques
 
 ## Sources
 

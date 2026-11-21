@@ -99,12 +99,10 @@ Bernstein's commitment to education extends beyond his blog. At Dartmouth, he te
 - [[concepts/zjit]] — Ruby's new method-level JIT compiler; Bernstein's primary current project
 - [[concepts/yjit]] — Ruby's existing basic-block JIT compiler; predecessor to ZJIT
 - [[concepts/maxime-chevalier-boisvert]] — Co-author on type propagation work; compiler researcher
--  — Employer; sponsors Ruby and Rails development
 - [[concepts/recurse-center]] — Self-directed learning community; Bernstein attended Fall 2 2024
 - [[concepts/scrapscript]] — Small language Bernstein is implementing as a learning vehicle
 - [[entities/demis-hassabis]] — Static Single Assignment form; central to ZJIT's IR design
 - [[concepts/python]] — Instagram's performance-oriented CPython fork; one of five Python runtimes Bernstein has contributed to
--  — Where Bernstein is Hacker in Residence and teaches compilers
 - [[entities/geoffrey-litt]] — Fellow programmer-researcher; complementary focus on end-user programming vs. systems-level compilation
 
 ## Sources

@@ -146,7 +146,7 @@ Carmack aligns with Richard Sutton's "Bitter Lesson" thesis: general methods tha
 
 ## Related
 
--  — id Software co-founder- [[entities/richard-sutton]] — Keen Technologies partner; RL pioneer
+- [[entities/richard-sutton]] — Keen Technologies partner; RL pioneer
 - [[concepts/post-training/reinforcement-learning]] — Carmack's preferred AGI approach
 - [[concepts/gpt/chatgpt-memory-bitter-lesson]] — Sutton's thesis that Carmack advocates
 - [[entities/corbett]] — Carmack's AGI company- [[entities/corbett]] — OpenPipe founder; fine-tuning and RL for agents

@@ -201,8 +201,6 @@ In January 2026, GMO's research division cited Patel alongside Lex Fridman as ke
 - [[entities/andrej-karpathy]] — Interviewed Oct 2025: "AGI is still a decade away"
 - [[entities/ilya-sutskever]] — Interviewed Nov 2025: "Age of scaling to age of research"
 - [[entities/dario-amodei]] — Interviewed Feb 2026: "Near the end of the exponential"
-- — Interviewed Feb 2026: "Cheapest AI will be in space"
-- — Orbital datacenter analysis
 
 ## Sources
 

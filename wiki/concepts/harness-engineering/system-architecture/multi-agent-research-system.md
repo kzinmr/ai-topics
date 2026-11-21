@@ -95,5 +95,4 @@ User Query → LeadResearcher (planning, saved to Memory at 200k+ tokens)
 
 - [[concepts/harness-engineering]] — Top-level index
 - [[concepts/building-effective-agents]] — Fundamental principles of agent construction
-- — Orchestrator-worker pattern
 - [[concepts/context-engineering|Context Engineering]] — Context engineering

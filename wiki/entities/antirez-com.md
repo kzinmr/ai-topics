@@ -357,9 +357,6 @@ antirez acknowledges a genuine concern: young programmers without enough experie
 - [[concepts/software-simplicity]] — His core design philosophy
 - [[concepts/ai-assisted-development]] — His nuanced position on LLMs as programming partners
 - [[concepts/open-source-licensing]] — His pragmatic view of sustainability and community
-- — SDS, Rax, and the philosophy of building from first principles
-- — Using documentation as an analytical tool
-- — His distinction between passive and active AI-assisted coding
 
 ## Influence Metrics
 

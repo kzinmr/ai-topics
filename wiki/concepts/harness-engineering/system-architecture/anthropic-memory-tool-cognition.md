@@ -149,7 +149,6 @@ The competition between these two companies will push coding agent memory system
 - [[entities/anthropic]] — Developer of Claude Memory Tool
 - [[concepts/harness-engineering/system-architecture/anthropic-memory-tool-cognition]] — Devin's developer, watching Anthropic's moves
 - [[entities/claude-code]] — Anthropic's coding agent
-- — Cognition's coding agent
 ## Sources
 
 - Shlok Khemani, "Anthropic's Opinionated Memory Bet" (2025-10-14) — https://www.shloked.com/writing/claude-memory-tool

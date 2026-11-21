@@ -86,9 +86,6 @@ Ken's posts consistently translate abstract computer science concepts into concr
 - [[concepts/opcode-collective]] — Distributed group Ken collaborates with on microcode analysis
 - [[concepts/computer-architecture]] — How processors are designed and how they evolved
 - [[concepts/intel-8086]] — The chip that launched x86, extensively analyzed by Ken
--  — Floating-point coprocessor, subject of Ken's recent deep-dive series
--  — Aerospace hardware Ken has reverse-engineered
--  — The practice of photographing and tracing chip layouts
 
 ## Sources
 

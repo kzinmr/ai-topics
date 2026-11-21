@@ -281,9 +281,8 @@ VulnCheck's Nov 9 update (HN 410pts) is the sharpest independent counterweight t
 ## Related Concepts
 
 - [[concepts/ai-alignment]] — Alignment research and the paradox of capable-but-aligned models
--  — AI agents as development partners, including autonomous vulnerability discovery
 - [[concepts/cognitive-cost-of-agents]] — The hidden cost of delegating understanding to AI systems
--  — The economics and implications of AI-powered vulnerability research- [[concepts/ai-bubble-economics]] — The financial structures supporting frontier AI development
+- [[concepts/ai-bubble-economics]] — The financial structures supporting frontier AI development
 
 ## Sources
 

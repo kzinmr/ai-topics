@@ -562,7 +562,5 @@ Shipped hackertube.org end-to-end via Claude Code/Opus 5.5 (~1M Opus tokens for 
 - [[entities/openai]] — Co-founded in 2015
 - [[concepts/tesla-autopilot]] — Led AI team from 2017-2022
 - [[concepts/deep-learning]] — Core research area
--  — PhD research area
 - [[entities/simon-willison]] — Fellow AI educator and blogger
--  — Teaching LLMs from first principles
 - [[concepts/gpt/decoder-only]] — Complete GPT architecture explanation from microgpt

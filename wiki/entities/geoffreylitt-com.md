@@ -117,7 +117,6 @@ The underlying theme: data should be portable, locally accessible, and resilient
 - [[concepts/malleable-software]] — Litt's central research area
 - [[concepts/end-user-programming]] — The broader field Litt works within
 - [[concepts/local-first-software]] — Software that prioritizes user data control and offline capability
--  — Conflict-free replicated data types; central to Peritext
 - [[entities/meta]] — Ubiquitous computing pioneer; source of the HUD metaphor
 - [[entities/simon-willison]] — Fellow AI tooling enthusiast; Litt references his "yak-shaving intern" framing
 - [[entities/max-bernstein]] — Compiler engineer with complementary focus on systems-level tooling

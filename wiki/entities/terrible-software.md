@@ -192,7 +192,6 @@ The blog uses WordPress with email subscription functionality and is distributed
 - [[concepts/career-development]] — Senior skills, promotion strategies, communication
 - [[concepts/ai-and-software-engineering]] — Practical impact of AI on the profession
 - [[concepts/rust]] — Communication patterns, complexity bias-  — Setting standards, building trust, leading by example
--  — The undervalued skill of keeping things simple
 
 ## Influence
 

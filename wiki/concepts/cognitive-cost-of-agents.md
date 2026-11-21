@@ -105,7 +105,6 @@ The most significant risk Willison identified: developers may become **passive r
 - [[concepts/vibe-coding]] — The practice of building software through natural language prompts; cognitive cost is a counterpoint
 - [[concepts/anthropic/managed-agents]] — Managed agent services raise the same cognitive ownership questions
 - [[concepts/multi-agents/agent-orchestration-frameworks]] — Multi-agent systems amplify the cognitive debt problem
--  — More powerful agents increase both productivity gains and cognitive risks
 
 ---
 

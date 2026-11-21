@@ -159,13 +159,10 @@ AINews/Latent Space contextualized Weng's Harness Engineering survey within the 
 - [[concepts/evaluation/reward-hacking]] — Her November 2024 deep-dive topic
 - [[concepts/chain-of-thought-reasoning]] — Central to her analysis of test-time compute
 - [[concepts/post-training/rlhf]] — Reinforcement Learning from Human Feedback, the alignment method she worked on
--  — Her April 2024 analysis of video generation
--  — Her July 2024 survey on extrinsic hallucinations
 - [[concepts/resilient-prompt-engineering]] — Her March 2023 definitive guide
 - [[entities/mira-murati]] — Thinking Machines Lab co-founder and CEO
 - [[entities/john-schulman]] — Thinking Machines Lab co-founder and Chief Scientist
 - [[entities/sam-altman]] — OpenAI CEO during her tenure
--  — The approach used for the Rubik's Cube robot
 ## Influence Metrics
 
 - **Lil'Log blog**: Hundreds of thousands of readers; consistently cited in academic papers, conference talks, and engineering documentation

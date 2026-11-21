@@ -185,9 +185,6 @@ His blog is built on **Ghost CMS** with a custom minimal Handlebars theme. He ch
 - [[concepts/devops]] — Kubernetes, container orchestration, cloud infrastructure
 - [[concepts/open-source]] — Sustainability, maintenance burden, community dynamics
 - [[concepts/search-engines]] — Google's AI overview, knowledge monopolization
--  — AWS, EKS, VPC networking
--  — Non-traditional paths to senior engineering
--  — Macroeconomic forces, monopolization, AI disruption
 
 ## Influence
 

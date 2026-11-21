@@ -218,7 +218,6 @@ A prompt fix (adding company policy info) was expected to improve Brand Alignmen
 
 - [[concepts/evaluation/llm-as-judge]] — Using LLMs to evaluate AI outputs
 - [[concepts/evaluation/critique-shadowing]] — 7-step process for building aligned LLM judges
--  — Systematic categorization of failure modes
 - [[concepts/harness-engineering]] — OpenAI's approach to AI-assisted development
 - [[comparisons/eval-tools-comparison]] — LangSmith vs Braintrust vs Phoenix vs Inspect AI
 - [[comparisons/evals-skills]] — Evals skills for coding agents

@@ -140,7 +140,6 @@ On the High Signal podcast (Dec 2025), Martin articulated a three-part playbook 
 
 - [[entities/andrej-karpathy]] — Frequently cited by Martin for framing LLMs as operating systems and emphasizing context engineering
 - [[entities/nader-dabit]] — Overlapping interests in cloud agent architecture and developer tooling evolution
--  — Martin references Simon's analysis of memory failures in LLM applications
 - [[entities/drew-breunig]] — Cited for work on context failure modes and how they degrade agent performance
 - **Hyung Won Chung** — Referenced by Martin for the original "Bitter Lesson" thinking applied to AI engineering
 - **Sylvain Gugger (sgugger)** — LangChain colleague; collaborated on documentation and framework development

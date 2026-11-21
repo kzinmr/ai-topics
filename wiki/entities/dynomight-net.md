@@ -182,9 +182,6 @@ The willingness to be wrong publicly is a core part of Dynomight's intellectual 
 - [[concepts/prediction-markets]] — Critique of futarchy and causal inference from market data
 - [[entities/eliezer-yudkowsky]] — Referenced on coordination problems and "sponge coordination"
 - [[concepts/nick-bostrom]] — Referenced on the Vulnerable World Hypothesis
--  — Referenced as endorsing the "wanting is hard" view
--  — Referenced on AI motivation and understanding without caring
--  — Referenced alongside Yudkowsky on coordination problems
 
 ## Sources
 

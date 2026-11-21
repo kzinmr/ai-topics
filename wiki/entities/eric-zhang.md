@@ -227,9 +227,7 @@ Photorealistic path tracer for rendering 3D scenes. Won top project out of 100 s
 - [[concepts/rust-programming]] — His primary systems language
 - [[concepts/firecracker]] — Lightweight hypervisor used in ssh-hypervisor
 - [[concepts/datalog]] — Logic programming language used in Percival
--  — Domain of graphics-workshop and rpt
 - [[concepts/rust]] — rustpad, sshx, Percival
--  — His alma mater
 
 ## Sources
 

@@ -101,8 +101,6 @@ Unlike many AI startups that keep their technology proprietary, OpenPipe has con
 
 - [[concepts/post-training/unsloth]] — Model customization via supervised fine-tuning
 - [[concepts/post-training/reinforcement-learning]] — RL training for AI agents
--  — Acquired OpenPipe in 2025
--  — Corbitt's former employer (Startup School Director)
 - [[concepts/gpt/chatgpt-memory-bitter-lesson]] — Philosophy underlying OpenPipe's approach
 - [[entities/john-carmack]] — Keen Technologies founder; AGI via reinforcement learning
 - [[concepts/agents-mcp-rl-course]] — Production-Ready Agent Engineering course (co-instructor)

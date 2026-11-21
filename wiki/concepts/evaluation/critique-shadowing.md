@@ -84,7 +84,6 @@ For independent developers who are also domain experts, working with test data t
 
 - [[concepts/evaluation/ai-evals]] — Main evaluation framework
 - [[concepts/evaluation/llm-as-judge]] — Using LLMs to evaluate AI outputs
--  — Systematic categorization of failure modes
 
 ## Sources
 

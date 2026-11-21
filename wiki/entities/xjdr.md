@@ -124,16 +124,12 @@ This approach has benefits: it invites collaboration, demonstrates genuine resea
 
 ## Related Wikilinks
 
--  — Rose's entropy-based sampling system for language models
 - [[concepts/sampling-strategies]] — The collection of specialized sampling techniques in Entropix
 - [[concepts/chain-of-thought]] — Parallel CoT decoding approach in Entropix
 - [[concepts/inference-time-compute]] — Rose's thesis on smarter inference over bigger models
 - [[concepts/prodng]] — His custom Linux distribution for production environments at PayPal
 - [[concepts/chicago]] — High-performance distributed key-value store
--  — His career focus: building systems that work reliably at scale
--  — The attention-aware sampling that distinguishes Entropix
 - [[concepts/post-training/reinforcement-learning]] — His advocacy for GRPO and RL research
--  — His recommendation for parallel computation study
 
 ## Influence Metrics
 

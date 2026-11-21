@@ -120,4 +120,3 @@ Key connection: Tasteful tokenmaxxing achieves the **FinOps layer** of  through 
 
 ## Sources
 
--  — AINews #21, Latent.Space (April 2026)

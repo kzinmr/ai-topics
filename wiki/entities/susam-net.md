@@ -153,8 +153,7 @@ This connects to his broader view of computation: **the computer is a medium for
 
 ## Related
 
--  — Free software philosophy-  — Literate programming, mathematical writing
--  — Personal websites, self-hosted infrastructure- [[entities/bogdanthegeek-s-blog]] — Self-hosted, no-tracking personal sites
+- [[entities/bogdanthegeek-s-blog]] — Self-hosted, no-tracking personal sites
 - [[entities/shkspr-mobi]] — Web standards advocacy, personal site philosophy
 
 ## Sources

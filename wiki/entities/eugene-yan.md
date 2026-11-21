@@ -315,10 +315,6 @@ This reflects his own career arc: at Amazon, he transitioned from hands-on IC wo
 - [[concepts/applied-ml]] — His most-starred GitHub repository (28.7K stars)
 - [[concepts/open-llms]] — His curated list of commercially usable open LLMs (12.7K stars)
 - [[concepts/defending-code-reference-harness]] — His work on LLM-driven vulnerability detection and remediation
--  — His work on AI-powered products and prototypes
--  — His master's program and the FAQ he wrote for it
--  — His methodology for building AI products
--  — His undergraduate alma mater
 
 ## Influence Metrics
 

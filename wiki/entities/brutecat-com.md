@@ -96,7 +96,6 @@ Payout breakdown: 1st RCE **$60,000** (P0/S0, Dec 2025) + 2nd RCE **$75,000** ("
 - [[concepts/bug-bounty]] — Coordinated vulnerability disclosure and responsible exploitation
 - [[entities/google]] — Open-source intelligence gathering techniques- [[entities/google-tpu]] — Platform under research
 - [[entities/google]] — Google's internal data serialization format
--  — Layered security architecture and its failure modes
 
 ## Sources
 

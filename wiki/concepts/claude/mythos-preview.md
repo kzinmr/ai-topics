@@ -143,7 +143,6 @@ The [[concepts/ai-vulnerability-discovery|Calif team]] leveraged **Claude Mythos
 - [[concepts/ai-vulnerability-discovery]] — AI-assisted exploit development
 - [[concepts/anthropic/openclaw-conflict]] — Anthropic's concurrent restrictions on third-party tool access
 - [[entities/dario-amodei]] — Anthropic CEO, announced Mythos Preview
--  — Dual-use risk management framework-  — Project Vend, Project Fetch
 ## Sources
 
 - https://red.anthropic.com/claude-mythos-preview (Apr 7, 2026) — Full Frontier Red Team Research Summary

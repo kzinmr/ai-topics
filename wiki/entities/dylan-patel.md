@@ -145,7 +145,6 @@ The claim extends Patel's bottleneck framework ([[concepts/compute-scaling-bottl
 
 - [[concepts/compute-scaling-bottlenecks]] — Patel's three-bottleneck framework
 - [[entities/dwarkesh-patel]] — Host of the podcast where Patel delivered his landmark analysis
--  — The broader domain Patel operates in
 - [[concepts/space-gpus]] — Orbital compute as a potential workaround to terrestrial constraints
 
 ## Sources

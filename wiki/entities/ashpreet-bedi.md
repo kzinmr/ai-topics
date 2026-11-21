@@ -160,8 +160,7 @@ Many agentic applications take 30 minutes to 3 hours to complete, spawning thous
 
 - [[entities/agno]] — Bedi's AI agent framework (formerly Phidata)
 - [[concepts/phidata]] — Original name of Agno
--  — Core domain of Bedi's work- [[concepts/ai-agent-memory-middleware]] — Learning Machine and agentic memory systems
--  — 5-year tenure building production data systems
+- [[concepts/ai-agent-memory-middleware]] — Learning Machine and agentic memory systems
 - [[concepts/security-and-governance/ai-safety]] — Community safety and virality algorithms-  — Competing framework; Bedi's philosophy is anti-complexity vs LangChain's abstraction-heavy approach
 
 ## Sources

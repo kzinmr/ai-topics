@@ -129,9 +129,6 @@ Chen understands that **every "fix" has a cost**, and that cost includes not jus
 - [[concepts/windows-nt]] — The codebase that absorbed Windows 95's UI; Chen's writing traces this convergence in detail
 - [[concepts/application-compatibility]] — Chen's primary area of expertise; the practice of preserving working behavior across OS updates
 - [[concepts/the-old-new-thing-book]] — Chen's 2007 book adapting blog content
--  — The central philosophical theme of Chen's entire body of writing
--  — Chen's recent posts on processor-level ABI decisions and their implications
--  — Chen's employer for 30+ years
 
 ## Sources
 

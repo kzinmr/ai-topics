@@ -211,4 +211,3 @@ See also: [[entities/modal-labs]], [[concepts/inference/sglang]], [[concepts/vll
 
 ## Sources
 
--  — vLLM and speculative decoding analysis- Sebastian Raschka, "A Visual Guide to Attention Mechanisms" (Ahead of AI, 2026)

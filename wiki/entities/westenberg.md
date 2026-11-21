@@ -140,9 +140,6 @@ Westenberg's essays are distinguished by:
 - [[concepts/guaranteed-minimum-income]] — Westenberg's 5-pillar policy framework
 - [[concepts/casino-economy]] — Financialization of housing, labor, and identity
 - [[concepts/blogging-as-infrastructure]] — The blog as intellectual commons
--  — Collaborated with Westenberg on "Stay Gold, America" GMI initiative
--  — Cited for "Bullshit Jobs" and critique of meaningless work
--  — Cited for "Utopia for Realists" and UBI advocacy
 
 ## Sources
 

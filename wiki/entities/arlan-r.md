@@ -135,8 +135,7 @@ Rakhmetzhanov's approach to building in public — launching on Product Hunt, co
 
 ## Related
 
--  — Rakhmetzhanov's AI coding product lab- [[entities/xania-org]] — Context tool for AI coding agents
--  — Y Combinator Summer 2025 batch-  — Lead seed investor
+- [[entities/xania-org]] — Context tool for AI coding agents
 - [[entities/cursor-3]] — AI coding agent; target user of Nia
 - [[concepts/github-copilot-billing]] — AI coding tool; target user of Nia
 

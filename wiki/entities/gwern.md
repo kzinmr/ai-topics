@@ -168,9 +168,6 @@ Gwern challenges the Whiggish "expanding circle" narrative of moral progress, ar
 - [[concepts/ambient-agency]] — The extension that agency, like TC, emerges naturally
 - [[entities/dwarkesh-patel]] — Interviewed Gwern on his AI predictions and research methodology
 - [[concepts/ordinary-incompetence]] — Gwern's analysis of why most people fail to improve despite experience
--  — The irreducible noise floor in human survey responses
--  — Gwern's theory of "seeing through" abstractions to underlying reality
--  — Cognitive tool Gwern has extensively advocated and practiced
 
 ## Sources
 

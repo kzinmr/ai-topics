@@ -391,8 +391,6 @@ Breunig's technical work is characterized by:
 - [[concepts/recursive-language-models]] — Pattern Breunig implemented in DSPy and advocates
 - [[concepts/prompts-as-technical-debt]] — Concept page comparing Goedecke's and Breunig's prompt debt frameworks
 - [[concepts/placeiq]] →  — Location intelligence companies where Breunig worked
--  — Company Breunig advises on positioning and strategy
--  — Company Breunig is associated with
 
 ## Sources
 

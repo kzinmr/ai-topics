@@ -61,7 +61,6 @@ These skills are a **starting point** and only encode common mistakes that gener
 - [[concepts/evaluation/ai-evals]] — Main evaluation framework
 - [[concepts/harness-engineering]] — OpenAI's approach to AI-assisted development
 - [[concepts/evaluation/llm-as-judge]] — Using LLMs to evaluate AI outputs
--  — Systematic categorization of failure modes
 
 ## Sources
 

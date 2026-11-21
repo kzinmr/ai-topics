@@ -113,7 +113,7 @@ In ["Implementing OpenSSH certificate support in PuTTY"](https://www.chiark.gree
 
 - [[concepts/unix-philosophy]] — Small tools, clear interfaces, composability
 - [[concepts/code-review]] — Social dynamics of reviewing code
--  — Using Git without GitHub/GitLab-  — Distributed version control system-  — Building tools for developers- [[entities/armin-ronacher]] — Another free-software author with similar philosophy
+- [[entities/armin-ronacher]] — Another free-software author with similar philosophy
 
 ## Monitoring
 

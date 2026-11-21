@@ -159,7 +159,7 @@ Per nader.codes: React Native AI, Eliza (ai16z), CDK, fal.ai, Layer (layer.xyz),
 ## Related
 
 - [[concepts/cognition-devin-philosophy]] — Cognition's approach to building AI agents
--  — Dabit's framework for cloud-first agents- [[entities/scott-wu]] — Cognition CEO
+- [[entities/scott-wu]] — Cognition CEO
 - [[entities/walden-yan]] — Cognition co-founder, context engineering advocate
 
 ## Sources

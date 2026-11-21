@@ -136,7 +136,6 @@ His projects share a common philosophy: **build tools that solve actual problems
 - [[concepts/digital-minimalism]] — Conscious technology use, lightweight websites
 - [[concepts/saas-dependency]] — Risks of entrusting data to proprietary platforms
 - [[concepts/security-and-governance/ai-safety]] — Mattermost, self-hosted alternatives-  — Parasocial AI relationships, user safety, deprecation
--  — Procurement failures, consultancy costs, taxpayer value
 
 ---
 

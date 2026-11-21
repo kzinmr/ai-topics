@@ -3,6 +3,16 @@
 _Log of all wiki changes. Newest entries at top._
 
 
+
+## [2026-11-21] watchdog | Empty wikilink cleanup + orphan hub registration
+
+### Changes
+- Removed 283 empty-wikilink artifacts (`-  — desc` with lost anchor) from 156 entity/concept pages; recovered 29 links where the slug was embedded in merged lines (e.g. arlan-r, multimodal/_index CLIP -> vision-models)
+- Registered orphan `concepts/os-agent-capture-privacy` in `concepts/security-and-governance/_index.md` (new "Privacy and Surveillance" section); main index.md already had it (flat-path report artifact)
+- Index corruption: 0 (pipe/line-number/triple-bracket/space-prefix all clean); validate_index.py pass
+
+---
+
 ## [2026-11-21 17:35 UTC] watchdog | auto-fix — 5 broken wikilinks (slug resolution)
 
 - FIX `[[entities/huggingface]]` → `[[entities/hugging-face]]` in `concepts/ml-intern.md`, `events/openai-huggingface-incident-july-2026.md`, `events/2026-08-26-aws-acquires-ducklabs.md`

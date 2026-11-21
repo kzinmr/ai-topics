@@ -155,4 +155,3 @@ The boundary between model and harness keeps moving. The routing decisions (whic
 - [The Bitter Lesson of Agent Frameworks](https://browser-use.com/posts/bitter-lesson-agent-frameworks) — Gregor Zunic, Browser Use Blog, 2026-01-16
 - [agent-sdk](https://github.com/browser-use/agent-sdk) — Browser Use's minimal agent architecture SDK
 - [browser-harness](https://github.com/browser-use/browser-harness) — Self-healing browser harness
--  — Scraped article digest

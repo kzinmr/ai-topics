@@ -105,7 +105,6 @@ skilled_container = client.containers.create(
 - [[concepts/harness-engineering]] — OpenAI's tool extension approach
 - [[concepts/harness-engineering/system-architecture/container-context]] — Runtime environment where skills are deployed
 - [[concepts/agent-loop-orchestration]] — Skill exploration and execution loop
--  — General concept of AI skills
 
 ## References
 

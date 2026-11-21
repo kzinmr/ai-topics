@@ -190,8 +190,6 @@ These amplify the concerns raised in [[concepts/cognitive-cost-of-agents]] — a
 - [[concepts/agentic-engineering]] — The practice framework that orchestration tools enable
 - [[concepts/cognitive-cost-of-agents]] — Orchestration adds coordination overhead to cognitive load
 - [[concepts/anthropic/managed-agents]] — Managed services may include orchestration capabilities
--  — More powerful models improve individual agent capabilities, reducing need for orchestration in some cases
--  — AI-generated reimplementations may themselves require orchestration
 
 ---
 

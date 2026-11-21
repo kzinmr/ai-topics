@@ -226,9 +226,8 @@ Notable recent publications include his 2024 essay "A Lasting Model for Change: 
 ## Related
 
 - [[concepts/lean-startup]] — Blank and Ries's methodology for building startups under uncertainty
--  — The four-step process for discovering and validating markets
 - [[concepts/harness-engineering]] — Parallels in AI agent configuration as learned failure modes
--  — Co-creator of the Lean Startup movement- [[concepts/harness-engineering/agentic-engineering]] — Agent-first development workflows changing startup dynamics
+- [[concepts/harness-engineering/agentic-engineering]] — Agent-first development workflows changing startup dynamics
 - [[entities/akira-realmcore]] — Random Labs AI engineer; shared focus on agentic-engineering and harness-engineering
 - [[entities/daniel-de-laney]] — Designer/PM; structured AI workflows and tools critique
 - [[entities/drmaciver]] — Hypothesis creator; property-based testing for AI reliability

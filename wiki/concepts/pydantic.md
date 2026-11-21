@@ -70,4 +70,3 @@ Based on StackOverflow 2022 survey (FastAPI at 6.01%) and PyPI download ratios (
 - **[[entities/jason-liu]]** — Instructor library creator; "Pydantic is all you need" advocate; Applied LLMs Guide co-author
 - [[concepts/pydantic-ai]] — Next evolution of Pydantic for AI agents
 - [[entities/samuel-colvin]] — Creator
--  — FastAPI creator, close collaborator

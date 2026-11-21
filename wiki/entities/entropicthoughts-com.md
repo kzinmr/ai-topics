@@ -188,8 +188,6 @@ Chris's interests span an unusually wide range:
 - [[concepts/bayesian-reasoning]] — Odds-form Bayes' rule, forecasting
 - [[concepts/software-delivery]] — Tindall framework, handoff waste, toil
 - [[concepts/haskell]] — Functional programming, Esqueleto, performance
--  — Org mode publishing, Magit, personal workflow
--  — Statistical analysis of code generation benchmarks-  — CLT limitations, Cantelli bounds
 
 ## Influence
 

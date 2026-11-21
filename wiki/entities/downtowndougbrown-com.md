@@ -89,9 +89,7 @@ His work in this area is notable for combining **materials science understanding
 - [[concepts/vintage-computing]] — Preservation and operation of historical computer systems
 - [[concepts/embedded-linux]] — Linux on resource-constrained hardware platforms
 - [[concepts/reverse-engineering]] — Binary and protocol analysis of undocumented systems
--  — Physical diagnostics and component-level repair
 - [[concepts/retrieval-augmented-generation]] — Long-term storage media archival and recovery
--  — Target platform for much of Doug's repair work
 
 ## Sources
 

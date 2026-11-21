@@ -95,7 +95,6 @@ Lambert's argument is that a $40B valuation solves the money problem that Dylan 
 - [[entities/john-schulman]] — Thinking Machines Lab co-founder; RLHF/ scalable oversight research partner
 - [[entities/sam-altman]] — OpenAI CEO; Murati's ally during the 2023 crisis
 - [[entities/ilya-sutskever]] — Former OpenAI Chief Scientist; shared safety concerns
--  — Murati's current venture
 - [[concepts/security-and-governance/ai-safety]] — Central to Murati's leadership philosophy
 - [[entities/openai]] — Where she served as CTO
 

@@ -409,7 +409,6 @@ Sources: [tweet](https://x.com/softwaredoug/status/2113362280461320592),
 - [[concepts/elasticsearch]] — Primary search engine in his early work
 - [[concepts/apache-solr]] — Search platform he worked with extensively
 - [[concepts/learning-to-rank]] — ML approach to combining ranking signals
--  — Retrieval-Augmented Generation
 - [[concepts/bm25]] — Probabilistic ranking function
 - [[concepts/evaluation/ndcg]] — Normalized Discounted Cumulative Gain
 - [[concepts/quepid]] — Open-source search relevance testing workbench
@@ -419,10 +418,6 @@ Sources: [tweet](https://x.com/softwaredoug/status/2113362280461320592),
 - [[concepts/max-irwin]] — Co-author of AI-Powered Search
 - [[entities/jo-kristian-bergum]] — Hornet CEO, former Vespa Chief Scientist, fellow search infrastructure veteran
 - [[concepts/opensource-connections]] — Search relevance consultancy where he served as CTO
--  — Platform where he achieved 2% DAU increase with LTR
--  — Where he improved merchant search revenue 10% YoY
--  — Where he worked as Staff Relevance Engineer
--  — AI fashion styling company where he doubled conversions
 
 ## Sources
 

@@ -174,8 +174,6 @@ His blog covers an eclectic range: technical tutorials, motorcycle brake rotor r
 - [[concepts/technical-writing]] — Pedagogical philosophy, progressive complexity, conversational tone
 - [[concepts/free-software]] — Creative Commons licensing, public domain code, open education
 - [[concepts/computer-science-education]] — Teaching problem-solving, mental models, meta-skills
--  — Version control mental models, not just commands
--  — IPC, signals, shared memory, pipes-  — Game-based learning, Wizard's Castle projects
 
 ---
 

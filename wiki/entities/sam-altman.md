@@ -277,7 +277,6 @@ Sources: https://www.tomshardware.com/tech-industry/data-centers/openai-ceo-says
 - [[entities/john-schulman]] — OpenAI co-founder; RL researcher
 - [[entities/dario-amodei]] — Anthropic CEO; competitor
 - [[entities/openai]] — Company Altman leads
--  — Altman's proof-of-personhood project-  — Altman's stated long-term goal
 
 ## Sources
 

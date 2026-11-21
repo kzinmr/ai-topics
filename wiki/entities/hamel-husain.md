@@ -180,7 +180,6 @@ Hamel appeared as a guest on the Season 1 finale of [[entities/hugo-bowne-anders
 
 -   [[entities/shreya-shankar]] — Co-creator of AI evals course, collaborator on Applied LLMs guide.
 -   [[entities/eugene-yan]] — Co-author on Applied LLMs guide, shared evals philosophy.
--    — Mentor/collaborator at fast.ai and AnswerAI.
 -   [[concepts/evaluation/ai-evals]] — The evaluation framework he teaches.
 -   [[entities/drmaciver]] — Property-based testing applied to LLM evaluation (`foundational-llm-evals`); PBT methodology for eval design.
 -   [[entities/shreya-shankar]] — Co-creator of AI evals course, collaborator on Applied LLMs guide.

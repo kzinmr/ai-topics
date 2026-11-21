@@ -247,7 +247,6 @@ See: [[entities/isomorphic-labs]] (entity page pending)
 - [[entities/dario-amodei]] — Anthropic CEO; former DeepMind colleague; different safety philosophy
 - [[entities/isomorphic-labs]] — Hassabis continues to lead as CEO
 - [[concepts/post-training/reinforcement-learning]] — Core technique in AlphaGo/AlphaZero
--  — AlphaFold's scientific breakthrough
 - [[concepts/frontier-ai-standards-body]] — July 2026 FINRA-style AI governance proposal
 
 ## Sources
