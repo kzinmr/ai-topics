@@ -186,6 +186,7 @@
     "https://borretti.me/article/human-routers-of-machine-words",
     "https://borretti.me/article/mathematics-without-mathematicians",
     "https://borretti.me/article/on-vulgar-materialism",
+    "https://borretti.me/article/re-riemann",
     "https://borretti.me/article/review-job-less-utopia",
     "https://boyter.org/2013/01/code-for-a-search-engine-in-php-part-1/",
     "https://boyter.org/2017/05/identify-software-licenses-python-vector-space-search-ngram-keywords/",
@@ -1527,6 +1528,7 @@
     "https://open.substack.com/users/9714824-kevin-xu?utm_source=mentions",
     "https://openai.com/academy/how-to-use-codex-for-everyday-work",
     "https://openai.com/ads/customers/flipsnack",
+    "https://openai.com/business/customer-stories/hebbia",
     "https://openai.com/index/advancing-chip-design-with-our-models/",
     "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/",
     "https://openai.com/index/ai-chemist-improves-reaction/",
@@ -1534,6 +1536,7 @@
     "https://openai.com/index/built-to-benefit-everyone-our-plan",
     "https://openai.com/index/chatgpt-memory-dreaming/",
     "https://openai.com/index/codex-for-every-role-tool-workflow/",
+    "https://openai.com/index/combatting-adversarial-distillation",
     "https://openai.com/index/cultfit-builds-with-codex",
     "https://openai.com/index/daybreak-securing-the-world/",
     "https://openai.com/index/deployment-simulation/",
@@ -2109,6 +2112,8 @@
     "https://simonwillison.net/2026/Nov/16/llm/",
     "https://simonwillison.net/2026/Nov/17/go-proverbs/",
     "https://simonwillison.net/2026/Nov/2/census-bureau-super-intelligence/",
+    "https://simonwillison.net/2026/Nov/20/levent-alpoge/",
+    "https://simonwillison.net/2026/Nov/20/ravi-vakil/",
     "https://simonwillison.net/2026/Nov/20/token-fraud-is-here-and-its-bad/",
     "https://simonwillison.net/2026/Nov/3/llm/",
     "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
@@ -2886,6 +2891,7 @@
     "https://www.johndcook.com/blog/2026-11-10/bibd/",
     "https://www.johndcook.com/blog/2026-11-14/bash-rabbit-hole/",
     "https://www.johndcook.com/blog/2026-11-14/erdos-lemniscate/",
+    "https://www.johndcook.com/blog/2026-11-20/grh/",
     "https://www.johndcook.com/blog/2026/05/19/closer-look-at-an-identity/",
     "https://www.johndcook.com/blog/2026/05/19/square-root-of-x-squared-minus-one/",
     "https://www.johndcook.com/blog/2026/05/19/zagiers-equation/",
@@ -3120,6 +3126,7 @@
     "https://www.together.ai/blog/kimi-k3-vs-gpt-5-6-sol-on-deepswe-cost-coding-and-routing",
     "https://www.together.ai/blog/new-in-together-gpu-clusters-reliability-and-control-for-production-gpu-clusters",
     "https://www.together.ai/blog/provisioned-throughput",
+    "https://www.together.ai/blog/qwen3-tts",
     "https://www.together.ai/blog/together-ai-announces-strategic-partnership-with-moonshot-ai-to-natively-serve-kimi-models",
     "https://www.together.ai/blog/together-ai-brings-thinking-machines-labs-new-model-inkling-on-day-0",
     "https://www.together.ai/blog/together-ai-icml-2026",
@@ -3302,5 +3309,5 @@
     "substack.com/ui-wrapper (Link 8)",
     "substack.com/ui-wrapper (Link 9)"
   ],
-  "updated": "2026-11-20T18:19:15.152058+00:00"
+  "updated": "2026-11-21T10:27:23.882069+00:00"
 }

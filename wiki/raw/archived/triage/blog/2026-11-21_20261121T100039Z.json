@@ -1,0 +1,104 @@
+{
+  "archived_at": "2026-11-21T10:27:23.881304+00:00",
+  "triage_run_id": "20261121T100039Z",
+  "source": "blog",
+  "summary_ja": "11-21 blog-batch (18 candidates + 2 unsaved) を triage。目玉は Anthropic IPO翌日の株価暴落を記録したGary Marcus記事（$111→$97→$88、SoftBank -14.5%、アジア市場COVID以来最悪週）で、created 11-20の events/anthropic-nasdaq-debut-2026.md が上場初日しかカバーしておらず既存ページ更新のtakeとした。Ed Zitron「Premium: Bursting Bubbles」はIPO崩壊と同時期のバブル論最新章で entities/ed-zitron.md の追跡が7月で停止しておりtake。Sean Goedecke「Why output caching doesn't work」は出力トークンの内訳（reasoning 50%/tool call 44%/可見6%）とAmdahl限界を定量化した推論エコノミクス新知見でtake。同日発表のLevent Alpöge「ClaudeとRH/GRHを証明」＋Ravi Vakil「Masullo GRHは人間のみ」の対照的な2つのquote-postと、そのhumanist批評（borretti.me「Re: Riemann」）はreferenceとしてjacobian/RHページ側での本格処理へ回す。Qwen3 TTS on Togetherは既存Qwen3-TTSconceptがあるためtogether-ai.mdへの小追記reference。Unsaven OpenAI 2件（adversarial distillation対策、Hebbia×GPT-6 Astra）は本文未抽出だがギャップ候補としてreference。残りはoldnewthing/Diablo II/Zigbee/dfarq/Talk Show/Krebs/Pluralistic/GRH数学解説など非AI・重複のbatch skip。",
+  "decisions": [
+    {
+      "item_id": "blog-1",
+      "source": "blog",
+      "source_name": "simonwillison.net",
+      "title": "A quote from Ravi Vakil",
+      "url": "https://simonwillison.net/2026/Nov/20/ravi-vakil/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/simonwillison.net--2026-nov-20-ravi-vakil--41000322.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★ Ravi Vakil（スタンフォード数理教授）のX投稿をSimon Willisonが引用したポスト（792B）。Alessandro MasulloによるGeneralized Riemann Hypothesis証明案について、Brian Conradが数か月かけて精査し広範なフィードバックを与え「現時点で良好に見える」、そして「It is all human, with no AI」と明言、急いで草稿を公開する判断——という内容。同日のAlpögeによるClaude併走RH/GRH証明発表と「AI人間 vs 人間のみ」という対比をなす重要一次資料だが、Willisonの定型quote-postであり本文は引用1文のみ。simon-willison.md の quote-post 蓄積セクションへの追記で十分。",
+      "candidate_wiki_path": "entities/simon-willison.md",
+      "body_excerpt": "# A quote from Ravi Vakil\nSource: https://simonwillison.net/2026/Nov/20/ravi-vakil/\n20th November 2026\nAlessandro Masullo has a proposed proof of [Generalized Riemann Hypothesis], and Brian Conrad has been looking closely at it for months and gave extensive feedback which is being incorporated, and "
+    },
+    {
+      "item_id": "blog-3",
+      "source": "blog",
+      "source_name": "simonwillison.net",
+      "title": "A quote from Levent Alpöge",
+      "url": "https://simonwillison.net/2026/Nov/20/levent-alpoge/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/simonwillison.net--2026-nov-20-levent-alpoge--773e6dba.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★ Levent Alpöge（Anthropic数理研究者、Jacobian予想反例発見者）がClaudeと共同でRiemann仮説、さらにGeneralized RHの証明を発見したと主張する引用ポスト（1105B）。「Claudeと仮定なしでformalizeした」「Claudeがフィニッシュラインで自分をはるかに追い越した——飛んで、踊って、輝いた」「これは終わりで、主要な導きLoss of a principal guiding lightを失う」という表現はAI and math の転換点イベントとして重要。既存 concepts/claude-fable-jacobian-conjecture.md はAlpögeをカバーするが本発表は未収録、独立した Alpöge entityページも存在しない。Quote-postの短さ（引用抜粋のみ）を考慮しreferenceとし、下流で jacobian conjecture ページまたは新RHイベントページでの本格処理を推奨。",
+      "candidate_wiki_path": "concepts/claude-fable-jacobian-conjecture.md",
+      "body_excerpt": "# A quote from Levent Alpöge\nSource: https://simonwillison.net/2026/Nov/20/levent-alpoge/\n20th November 2026\nI believe I have, working with Claude, discovered a proof of the Riemann Hypothesis. In fact, the method easily extends much further, resolving the so-called Generalized Riemann Hypothesis, a"
+    },
+    {
+      "item_id": "blog-13",
+      "source": "blog",
+      "source_name": "borretti.me",
+      "title": "Re: Riemann",
+      "url": "https://borretti.me/article/re-riemann",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/borretti.me--article-re-riemann--fd0b610f.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★ Flavio Borretti（豪州の研究者）によるAlpöge-RH発表への批評エッセイ（5.5KB、全文読み取り済み）。Alpögeの announcement をAyn Randのアポロ11号観覧記「How great is Man!」と対比し、Diego Riveraの壁画「Man, Controller of the Universe」を引きながら、「AI中心主義」を叛離・降伏と断じる内容——「humanity is not at the center. Claude is at the center... How great is Claude!」「Man is a bridge, a rusty old bridge」、AI企業・EA・rationalismの夢は「暖かい湯船に横たわり、召喚した悪魔が空で踊るのを見ながら消えていくこと」と批判。Alpöge発表の知的反響（humanist批評）として、RHイベント処理時に引用価値が高い。borretti.me entityは未作成のため下流では jacobian/RHページへの出典追加で十分。",
+      "candidate_wiki_path": "concepts/claude-fable-jacobian-conjecture.md",
+      "body_excerpt": "# Re: Riemann\nSource: https://borretti.me/article/re-riemann\nA fun thing about living in Australia is that most things happen overnight, so\nreading the news in the morning is like a\ngacha game\n. You pick up the\nphone and scroll through notifications of world-historic events: elections won,\nwars begu"
+    },
+    {
+      "item_id": "blog-10",
+      "source": "blog",
+      "source_name": "Together AI Blog",
+      "title": "Qwen3 TTS is now available on Together AI",
+      "url": "https://www.together.ai/blog/qwen3-tts",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/together.ai--blog-qwen3-tts--9687b759.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★ Together AIによるQwen3 TTS（Apache 2.0、1.7B、Qwen/Qwen3-TTS-12Hz-1.7B）サービング開始の技術ブログ（10.7KB、全文読み取り済み）。具体数値——first audio 97ms、$20/1M characters、9プリセットvoice×10言語（同一voice多言語維持）、instructionsフィールドによる平文のdelivary制御、HTTP SSEストリーミングとWebSocket（input_text_buffer.append/commit）2種——は商用サービング側のチューニング情報として新規。ただし concepts/speech-audio-asr-tts-voice.md にQwen3-TTS（10月、voice cloning・speaker embeddings）が既に詳細収録済みで、entities/together-ai.md への小規模追記（初出97ms・価格・ストリーミングAPI仕様）が適切な処理規模。新規ページ不要。",
+      "candidate_wiki_path": "entities/together-ai.md",
+      "body_excerpt": "# Qwen3 TTS is now available on Together AI\nSource: https://www.together.ai/blog/qwen3-tts\nStarting today, developers can run\nQwen3 TTS\non Together AI, with first audio in as little as 97ms.\nQwen3 TTS is an open text-to-speech model that separates who is speaking from how they speak. You choose one "
+    },
+    {
+      "item_id": "blog-unsaved-distillation",
+      "source": "blog",
+      "source_name": "OpenAI News",
+      "title": "Combatting adversarial distillation",
+      "url": "https://openai.com/index/combatting-adversarial-distillation",
+      "raw_path": null,
+      "recommended_action": "reference",
+      "reason_ja": "★★★ unsaved_articles（抽出失败）。OpenAI公式による「敵対的蒸留（adversarial distillation）」対策の発表。greedy grepで concepts/local-llm/model-distillation.md は存在するが「adversarial distillation」は concepts/ai-digital-nato.md と concepts/_index.md の言及のみで、OpenAI公式の対抗策を扱うページは不在。蒸留不正利用（他社モデルからの密輸的蒸留）対策という政策/安全面のギャップを埋める一次資料のため、下流で本文取得して model-distillation.md 追記または新節作成を推奨。",
+      "candidate_wiki_path": "concepts/local-llm/model-distillation.md",
+      "body_excerpt": "（unsaved_articles — 本文抽出不可。OpenAI公式インデックス記事「Combatting adversarial distillation」。既存wikiでは adversarial distillation は ai-digital-nato.md/_index.md の言及のみで公式対策は未収録）"
+    },
+    {
+      "item_id": "blog-unsaved-hebbia",
+      "source": "blog",
+      "source_name": "OpenAI News",
+      "title": "Hebbia sees improvements in financial research with GPT-6 Astra",
+      "url": "https://openai.com/business/customer-stories/hebbia",
+      "raw_path": null,
+      "recommended_action": "reference",
+      "reason_ja": "★★★ unsaved_articles（抽出失败）。OpenAI公式のHebbia顧客事例（GPT-6 Astra使用）。 entities/hebbia.md が既に存在し、直近のdreaming処理でも enrichment 済みだが、GPT-6 Astra版の改善事例（財務調査での具体的成果）が反映されているか要確認。既存エンティティページへの出典追記候補としてreference扱い。本文未抽出のため強制takeはしない。",
+      "candidate_wiki_path": "entities/hebbia.md",
+      "body_excerpt": "（unsaved_articles — 本文抽出不可。OpenAI公式顧客事例、Hebbia が GPT-6 Astra で財務調査が改善と主張。entities/hebbia.md 既存、Astra版成果の反映可否は下流で要検証）"
+    },
+    {
+      "item_id": "blog-skip-grh-cluster",
+      "source": "blog",
+      "source_name": "simonwillison.net / johndcook.com",
+      "title": "GRH/RH関連の背景記事（2件: A quote from Ravi Vakil背景, What is the Generalized Riemann Hypothesis?）",
+      "url": "https://www.johndcook.com/blog/2026-11-20/grh/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/johndcook.com--blog-2026-11-20-grh--4a45d112.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★ RH/GRH発表クラスタ（blog-1/blog-3/blog-13で処理）の背景説明記事群。johndcook.comのGRH解説は「本日AI生成と人間生成の2つのRH証明が発表された」という事実確認は有益だが、内容の中心はDirichlet L関数・臨界線などの数学的初歩解説であり、WikiのAI/LLMスコープでは blog-1/blog-3 の引用ポストと borretti の批評で十分にカバー。重複スキップ。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# What is the Generalized Riemann Hypothesis?\nSource: https://www.johndcook.com/blog/2026/11/20/grh/\nThere were two proofs of the Riemann Hypothesis (RH) announced today: one\nAI-generated\nand one\nhuman-generated\n.Both claimed to prove something more general, the Generalized Riemann Hypothesis (GRH) "
+    },
+    {
+      "item_id": "blog-skip-nonai",
+      "source": "blog",
+      "source_name": "複数名 (johndcook以外9件)",
+      "title": "非AI/日常テック記事一括スキップ（11件）",
+      "url": "",
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "★ LLM/AI Agentスコープ外のブログ記事一括スキップ: (1) devblogs.microsoft.com/oldnewthing x2 — Windowsシェル SHGetFileInfo の「..」親フォルダアイコンAPIの奇妙な挙動解説（Raymond Chen定型連載）。 (2) filfre.net — Diablo II開発史（Digital Antiquarian連載、Blizzard North）。 (3) shkspr.mobi — HomeAssistant OSにUSB Zigbeeドングルを繋ぐ手順（Homelab運用）。 (4) dfarq.homeip.net x2 — 「Why Johnny Can't Patch」続編（脆弱性パッチ管理の実務論。業界批判は興味深いがAI無関係）と1987年Max Headroom放送ジャック事件の歴史記事。 (5) daringfireball.net The Talk Show ep.457 — Christina Warrenゲスト回（Jensen Huang-gate、HomeView、iPad Mini、iPhone Duo、James Bond castingのトーク番組索引のみ、本文なし）。 (6) krebsonsecurity.com — RansomwareHelp CTOのwire fraud起訴（FBIステリン グ作戦で「独自暗号復元」を騙り身代金代わりに支払っていた詐欺を立証。セキュリティ事件だがAI/LLM要素なし、DoJ一連のsecurity firms起訴の一部）。 (7) pluralistic.net — Lisa Hanawalt回想録書評中心のリンクデigest（AI関連はCory Doctorow新刊「The Reverse-Centaur's Guide to AI」の宣伝行のみ、内容は目録レベル）。 (8) johndcook以外にAI無関係数学記事は上記GRHクラスタに含む。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Windows icon API: Last time, we looked at why asking SHGetFileInfo for the icon of .. (the parent folder) produces inconsistent results | Diablo II: Within a few weeks of the release of Diablo, it was clear that Blizzard Entertainment had a hit on their hands | Zigbee: I plugged a Zigbee dongle into my HomeAssistant box, but I couldn't find it in the UI | Johnny patch: I spent 4 years patching vulnerabilities for a living. My client was the United States Air Force | Max Headroom: It was November 22, 1987, that the most notorious unsolved pirate television broadcast of all time happened in Chicago | Talk Show: Jensen Huang-gate at Nvidia, the HomeView, the new iPad Mini | Krebs: the company was simply paying the attackers for a decryption key and charging victims a markup | Pluralistic: a frank, self-aware, funny, horny, horsey exploration of Hanawalt's life"
+    }
+  ]
+}
