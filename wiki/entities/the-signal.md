@@ -97,6 +97,10 @@ Full body recovered via direct HTTP fetch (`thesignal.substack.com` bypasses the
 - **Burn-Murdoch (FT) labour-market charts**: revenue up / headcount flat at Alphabet, Meta, Microsoft, Spotify since 2022 vs revenue-and-staff rising together at Bank of America, Visa, Accenture, Deloitte — Banks's dividing line: **if one more customer doesn't need one more person, AI lets you grow without hiring**. Stanford (Aug 2026): 22–25-year-olds in the most AI-exposed jobs ~**19% behind** peers in less-exposed work (13% a year earlier). See [[concepts/ai-employment-displacement]].
 - **Google education default-off**: Banks's catch — a school that wants AI fully off must also give up Google Search itself; his conclusion is that the *curriculum*, not the toggle, has to change. Plus data-centre local-backlash framing ("should data centres be pushed through like prisons, or put to a local vote?"). See [[concepts/data-center-local-backlash]].
 
+### "Anthropic's IPO explained (for people who aren't investors)" (2026-11-20)
+
+Full body recovered via `thesignal.substack.com` direct fetch: `raw/newsletters/2026-11-20_the-signal_anthropic-ipo-explained-full.md`. Banks's plain-English read of the three S-1 filings and the 57-slide roadshow, published the day after the Nasdaq debut. Key framings: the Nov 2 → Nov 10 amendment flip from "may imminently meet" to **"we have met"** the RSP "dramatically accelerated progress attributable to AI" threshold in eight days (with his caveat that it rests on *expected* future models, not demonstrated capability); the convertible-note accounting-charge decomposition of the $104B headline loss; NRR ~900% and gross margin 29%→85%+ as the real health signals; the **$120.5B SpaceX compute exposure** and the "Anthropic Direct" shift from infra-light to owned data centres; his honest verdict "close to breaking even but not quite there yet" against the roadshow's 12% adjusted margin. Full numbers integrated into [[events/anthropic-nasdaq-debut-2026]].
+
 ## Growth & Audience
 
 | Metric | Value |

@@ -1,0 +1,44 @@
+{
+  "archived_at": "2026-11-21T10:58:32.762665+00:00",
+  "triage_run_id": "20261121T101055Z",
+  "source": "newsletter",
+  "summary_ja": "2026-11-21 バッチは Anthropic IPO 関連 2 通（The Signal uid=930 / beehiiv uid=931）。newsletter-triage が HTTP 503 で triage JSON を出せなかったため、newsletter-wiki-ingest が inbox pre-triage summary（run 20261121T101055Z）から復元して実行。uid=930 はカスタムドメイン迂回で本文全文（54段落）を復元し、初日ピーク $111.53・RSP 閾値「met」宣言・NRR 900%・SpaceX $120.5B compute・Anthropic Direct など既存イベントページの空白を埋める take として events/anthropic-nasdaq-debut-2026 に統合。uid=931 は全リンクが Cloudflare チェレンジで到達不能、推定トピックは既存ページでカバー済みのため reference（unresolved lead 保存）。",
+  "decisions": [
+    {
+      "item_id": "nw-931-main",
+      "source": "newsletter",
+      "source_name": "beehiiv AI newsletter (uid=931)",
+      "title": "Anthropic made history, then got a reality check",
+      "url": null,
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-20-anthropic-made-history-then-got-a-reality-check.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ 本文到達不能（20/20 リンクが link.mail.beehiiv.com v2/c/ トラッカー、サンプリング3件とも Cloudflare Just a moment チェレンジページ）。件名から推定できるトピック（Nasdaq 上場成立＋市場の冷静化論調）は events/anthropic-nasdaq-debut-2026（2026-11-21 更新・反論セクション含む）と concepts/ai-bubble-economics で詳細カバー済み。inbox summary の指示どおり件名からの内容捏造は行わず、未解決リードとして queries/unresolved-newsletter-leads.md に保存。",
+      "candidate_wiki_path": "queries/unresolved-newsletter-leads.md",
+      "body_excerpt": "# Newsletter Digest - 2026-11-20\n**Subject:** Anthropic made history, then got a reality check\n**Collected:** 2026-11-21T10:10:53.543441+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v2/c/ddb23b1719ae95912a19450799188ced1b3cd20842c2386741c19a5593eddf748514db01ea81"
+    },
+    {
+      "item_id": "nw-930-links-chrome",
+      "source": "newsletter",
+      "source_name": "The Signal (uid=930)",
+      "title": "Substack chrome links x19 (batch skip)",
+      "url": "https://substack.com/app-link/post?publication_id=293154&post_id=225782936",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-20-anthropic-s-ipo-explained-for-people-who-aren-t-investors.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆ Substack UI クローム（app-link / like / comment / share / @alexbanks プロフィール / redirect/app-store / utm_campaign=email-read-in-app）。本文リンクは Link 7/8 の post ページのみで、既に take 済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-11-20\n**Subject:** Anthropic’s IPO explained (for people who aren’t investors)\n**Collected:** 2026-11-21T10:10:51.617195+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly90aGVzaWduYWwuc3Vic3RhY2suY29tL3N1YnNjcmliZT91dG1f"
+    },
+    {
+      "item_id": "nw-931-links-chrome",
+      "source": "newsletter",
+      "source_name": "beehiiv (uid=931)",
+      "title": "Beehiiv v2/c/ tracking links x20 (batch skip)",
+      "url": "https://link.mail.beehiiv.com/v2/c/91e5e717d556a8b4346fe333c5c942cc",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-20-anthropic-made-history-then-got-a-reality-check.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆ 暗号化 v2/c/ トラッカー 20 本は単一ニュースレター本文へのクリックトラッキング。重複除外のため 1 件だけ代表登録（本文到達不能は上記 reference 参照）。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-11-20\n**Subject:** Anthropic made history, then got a reality check\n**Collected:** 2026-11-21T10:10:53.543441+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v2/c/ddb23b1719ae95912a19450799188ced1b3cd20842c2386741c19a5593eddf748514db01ea81"
+    }
+  ]
+}

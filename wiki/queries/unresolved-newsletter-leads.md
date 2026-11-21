@@ -1,7 +1,7 @@
 ---
 title: "Unresolved Leads — Newsletter Coverage Pending Primary Sources"
 created: 2026-11-01
-updated: 2026-11-09
+updated: 2026-11-21
 type: query
 tags:
   - newsletter
@@ -28,6 +28,19 @@ Entries are ordered newest first. When a lead is resolved, move its content to t
 owning concept/event page and mark the row `resolved` with a date rather than deleting it.
 
 ## Open leads
+
+### 2026-11-21 — "Anthropic made history, then got a reality check" (beehiiv uid=931)
+
+| Field | Value |
+|---|---|
+| Subject | `Anthropic made history, then got a reality check` |
+| Sent | 2026-11-20 (received via newsletter-ingest run `20261121T101055Z`) |
+| Raw | `raw/newsletters/2026-11-20-anthropic-made-history-then-got-a-reality-check.md` (all 20 links are opaque `link.mail.beehiiv.com/v2/c/` trackers, no body) |
+| Body access | **Unreachable.** Three sampled v2/c/ tracking links all returned HTTP 200 Cloudflare `Just a moment...` challenge pages (7,045 bytes each, zero article content). Per the Cloudflare-challenge rule, no retry — the challenge is not solvable without an email-session context. |
+| Triage decision | reference → this page (newsletter-wiki-ingest 2026-11-21, after newsletter-triage died on HTTP 503 before emitting its JSON) |
+| Topic | Anthropic milestone + market "reality check" — same-day, same-topic pair with The Signal's Nov 20 "Anthropic's IPO explained" (uid=930), whose full body **was** recovered same-day. |
+| What would resolve it | The publication's public beehiiv archive, or a future run where the v2/c/ tokens resolve (some uid batches resolve 15-24h after send). |
+| Coverage status | **Effectively covered without the body.** The only facts inferable from the subject are (a) the Nasdaq debut ("made history") and (b) a skeptical counterpoint ("reality check") — both already covered in depth by [[events/anthropic-nasdaq-debut-2026]] (Nov 21 update: first-day $111.53 peak, RSP "met" flip, NRR ~900%, $120.5B SpaceX compute, "Anthropic Direct", $132B cash) plus its contestation section (Gary Marcus, Ed Zitron, "No Bailout for the AI Bubble" protests) and [[concepts/ai-bubble-economics]]. Per the inbox summary's own instruction, no content was fabricated from the subject line; the lead is held here in case the archive surfaces unique numbers. |
 
 ### 2026-11-08 — "Treat It Like a Disaster Recovery Test: Neo4j's Philip Rathle on Surviving the Loss of Your AI Provider" (beehiiv uid=891)
 

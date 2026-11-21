@@ -2,6 +2,24 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-11-21 10:55 UTC] newsletter-wiki-ingest | run 20261121T101055Z — Anthropic IPO pair (1 take, 1 ref, 2 batch skips) — triage recovered from 503 crash
+
+**Trigger**: `newsletter-triage` (4e8b0d92c6a1) died at 10:30 UTC with `RuntimeError: HTTP 503: Local LLM server is busy` and emitted no triage JSON. Recovered per the skill's checkpoint-recovery path: the inbox pre-triage summary `raw/inbox/newsletter-ingest/20261121T101055Z.json` (commit 65e9d079) identified 2 critical newsletters (both Anthropic IPO, 2026-11-20). Rebuilt and saved `cron/data/newsletter/triage_latest.json` (4 decisions) before editing.
+
+**TAKE (1) — The Signal "Anthropic's IPO explained (for people who aren't investors)" (uid=930, Alex Banks, pub 293154):**
+- Full body (54 paragraphs) recovered via `thesignal.substack.com` custom-domain bypass -> raw: `raw/newsletters/2026-11-20_the-signal_anthropic-ipo-explained-full.md`.
+- `events/anthropic-nasdaq-debut-2026.md`: new section "S-1 deep read & first-day numbers" — first-day peak $111.53 (~$1.5T, ~$2T fully diluted); RSP "dramatically accelerated progress attributable to AI" threshold flipped "may imminently meet" (Nov 2 amendment) -> "we have met this threshold" (Nov 10) in 8 days, with Banks's caveat that it rests on expected future models; Claude wrote >90% of Anthropic's own codebase contributions in September; NRR ~900%; gross margin 29% -> >85%; 9M operating cash flow +$6.6B; $104B loss ~90% non-cash convertible-note mark-up ($94.3B 9M); $6.2B convertible debt held almost entirely by Amazon (~$146B carrying value per 10-Q); revenue $386M(2024) -> $4.6B(2025) -> $33.2B 9M-2026, Q3 $17.0B; 100K+/yr customers 1,500 -> 11,900+; quarterly growth 144% -> 47%; SpaceX compute exposure up to **$120.5B through 2029** (~$3.1B/mo, 90-day exit after early 2027); "Anthropic Direct" owned-datacenter shift; ~$132B cash of $141.1B raised. SEC Edgar primary links recorded (CIK 2130357 S-1 x3; Amazon 10-Q).
+- `entities/the-signal.md`: new Notable Issue Analyses subsection for the Nov 20 issue.
+- Tags used were pre-registered in SCHEMA.md (`anthropic-ipo`, `responsible-scaling-policy`).
+
+**REFERENCE (1) — "Anthropic made history, then got a reality check" (beehiiv uid=931):** all 20 v2/c/ trackers Cloudflare-challenged (HTTP 200 "Just a moment...", 3 sampled, no retry per rule). Inferable topic already covered by the event page above + concepts/ai-bubble-economics; no content fabricated from subject line. Logged as open lead in `queries/unresolved-newsletter-leads.md` (updated 2026-11-21).
+
+**SKIPS (2 batch entries)**: Substack chrome x19 (uid=930), beehiiv v2/c/ trackers x20 (uid=931).
+- Archive: `raw/archived/triage/newsletter/2026-11-21_20261121T101055Z.json` (3 URL-bearing items: 1 ref + 2 batch skips), archive_index -> 3310.
+- Also committed: 2 link-dump raws from newsletter-ingest (previously uncommitted) + recovered full-body raw.
+
+**index.md**: no new pages -> 0 new entries; description for events/anthropic-nasdaq-debut-2026 unchanged (counts unchanged).
+
 ## [2026-11-21 10:05 UTC] blog-ingest | RSS-fallback recovery of 2 blocked OpenAI News articles
 
 **Trigger**: `blog_ingest` checkpoint (run 20261121T100039Z) reported 18/20 articles saved, 2 `unsaved_articles` from OpenAI News (403 to scraper UA). Recovered per `references/openai-news-rss-fallback.md` (openai.com/news/rss.xml + browser UA).
