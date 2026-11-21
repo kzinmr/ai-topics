@@ -1,10 +1,10 @@
 ---
 title: MCP (Model Context Protocol)
 created: 2026-04-26
-updated: 2026-08-04
+updated: 2026-11-21
 type: concept
 tags: [protocol, agentic-engineering, tool, mcp]
-sources: [raw/articles/troyhunt.com--heres-what-agentic-ai-can-do-with-have-i-been-pwneds-apis--7eefad3f.md, raw/articles/2026-04-25-langchain-anatomy-agent-harness.md, raw/articles/gemini-deep-research-agent.md, raw/articles/2026-01-26_anthropic-interactive-tools-claude.md, raw/articles/2025-11-21_mcp-apps-proposal.md, raw/articles/2026-01-26_mcp-apps-official-release.md, raw/articles/2026-01-01_mcpui-dev-landing-page.md, raw/articles/2025-10-08_postman-state-of-api-2025-report.md, raw/articles/workos.com--blog-management-mcp-server--d9a49c8a.md, raw/articles/workos.com--blog-mcp-vs-rest--adc9d692.md]
+sources: [raw/articles/troyhunt.com--heres-what-agentic-ai-can-do-with-have-i-been-pwneds-apis--7eefad3f.md, raw/articles/2026-04-25-langchain-anatomy-agent-harness.md, raw/articles/gemini-deep-research-agent.md, raw/articles/2026-01-26_anthropic-interactive-tools-claude.md, raw/articles/2025-11-21_mcp-apps-proposal.md, raw/articles/2026-01-26_mcp-apps-official-release.md, raw/articles/2026-01-01_mcpui-dev-landing-page.md, raw/articles/2025-10-08_postman-state-of-api-2025-report.md, raw/articles/workos.com--blog-management-mcp-server--d9a49c8a.md, raw/articles/workos.com--blog-mcp-vs-rest--adc9d692.md, raw/articles/2026-11-20_backpackforlaravel_llms-txt-mcp-didnt-move-the-needle.md]
 ---
 
 # MCP (Model Context Protocol)
@@ -357,6 +357,17 @@ Your REST API — business logic, data access, existing infrastructure
 ```
 
 MCP and REST are complementary layers in the AI stack: the REST API handles the business logic, and MCP makes that logic accessible to the AI agents that are increasingly becoming the primary way users interact with software.
+
+### Counter-case: llms.txt and a docs-only MCP server "didn't move the needle" (Backpack for Laravel, Nov 2026)
+
+Cristian Tabacitu (maintainer of the 10-year-old Backpack for Laravel admin-panel package) reports that the two items every "make your package AI-ready" guide prescribes — an **llms.txt** file and an **MCP server** exposing the docs — produced **no measurable benefit**:
+
+- **llms.txt**: "Agents rarely go looking for it. When they do, they find a table of contents for docs they could already read." He is considering removing it.
+- **Docs MCP server**: "The agent has to decide to call it, and it usually doesn't. Then the queries some of the AIs make are... laughable." Also considering removal. His verdict: an MCP server fits *live data the agent can't otherwise get*, or tool use — **static documentation isn't that**.
+
+What actually helped were non-AI-specific properties: a stable API (years of correct code in training data — "deprecate, don't rename"), open-source + readable paid source under `vendor/`, low-ceremony one-file escape hatches, predictable naming, runnable generators, and — the biggest win — a **Laravel Boost plugin** that drops version-matched guidelines/skills straight into the agent's context, because "the agent doesn't have to decide to fetch it."
+
+The lesson generalizes to any "agent-readiness" checklist item that requires the agent to *decide to fetch* something: **anything the agent has to remember to go and retrieve is weak — what works is what is already in front of it (in-context guidelines/skills) or already in its head (training data from a stable, open API).** In the MCP-vs-REST frame above, this is the boundary case: MCP earns its keep for live data the agent cannot otherwise reach (tool use, dynamic state), and loses it for static reference docs. See also [[concepts/cli-over-mcp-pattern]]. Source: `raw/articles/2026-11-20_backpackforlaravel_llms-txt-mcp-didnt-move-the-needle.md`.
 
 ## Open Questions & Debates
 

@@ -2,7 +2,7 @@
 title: "Sean Goedecke"
 tags: [person]
 created: 2026-04-24
-updated: 2026-11-08
+updated: 2026-11-21
 type: entity
 sources:
   - raw/articles/seangoedecke.com--what-requirements-dont-you-have--b9347116.md
@@ -249,6 +249,10 @@ Goedecke's full response:
 > (On AI sycophancy) "The companies building AI are spending billions to acquire engineers, not replace them."
 
 > (On the vibe shift) "The end of zero-interest rates made it much harder to be a software engineer."
+
+### Why Output Caching Doesn't Work (November 2026)
+
+The mirror question to prompt/input caching: if we cache *inputs*, why not cache *outputs* so an agent stops re-printing code snippets and evidence docs it just produced (output tokens are the expensive side)? Goedecke's answer is no, on **Amdahl's-law** grounds — across his own agent histories **~50% of output tokens are reasoning and ~44% are tool calls, leaving only ~6% visible repetition**; even a maximally optimistic two-thirds cut of that saves ~4% of total output tokens. Models don't repeat inside their chain of thought (the info is already in context), so output caching can only compress what the user sees. The real lever for output cost is **intelligence** — smarter models need fewer reasoning/tool tokens, which is why 5×-pricier models can be 6×-cheaper to run. Full treatment: [[concepts/prompt-caching]].
 
 ## Writing Style & Philosophy
 
@@ -589,6 +593,7 @@ Source: [[raw/articles/seangoedecke.com--llms-are-terrible-at-designing-ai-syste
 ## Sources
 
 - raw/articles/seangoedecke.com--the-o3-geoguessr-prompt-did-not-work--c4335530.md
+- raw/articles/seangoedecke.com--why-output-caching-doesnt-work--a8a0b7c4.md
 - raw/articles/seangoedecke.com--build-agents-not-pipelines--43a57b4a.md
 - raw/articles/seangoedecke.com--ai-inference-is-obviously-profitable--ac8d2cd6.md
 - raw/articles/seangoedecke.com--text-ai-watermarks--cd663c94.md

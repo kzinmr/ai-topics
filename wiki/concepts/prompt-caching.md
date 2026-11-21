@@ -2,7 +2,7 @@
 title: "Prompt Caching (Paged Attention & API-Level Patterns)"
 type: concept
 created: 2026-05-09
-updated: 2026-05-29
+updated: 2026-11-21
 status: L2
 tags:
   - kv-cache
@@ -11,6 +11,7 @@ tags:
   - infrastructure
 sources:
   - "[[raw/articles/2025-11-30_sankalp_prompt-caching-internals]]"
+  - "[[raw/articles/seangoedecke.com--why-output-caching-doesnt-work--a8a0b7c4]]"
 related:
   - "[[concepts/kv-cache]]"
   - "[[concepts/vllm]]"
@@ -69,6 +70,16 @@ Request 1: [sys prompt] [user: "translate A"] [assistant: "translation A"]
 Request 2: [sys prompt] [user: "translate B"]
 → sys prompt portion is a cache hit
 ```
+
+## Output Caching Does Not Work (Sean Goedecke, Nov 2026)
+
+Input/prefix caching works because identical prefixes recur. The tempting mirror question — cache model *outputs* the same way, so an agent stops re-printing code snippets it just read or evidence docs it just wrote (an "obvious" waste of the more expensive output-token side) — has a negative answer, per [[entities/seangoedecke-com|Sean Goedecke]].
+
+- **Amdahl's law is the killer.** Across his own agent histories, **~50% of output tokens are reasoning tokens and ~44% are tool calls — only ~6% is "visible" repeated output**. Even a (ridiculously optimistic) two-thirds cut of visible-output repetition saves ~4% of total output tokens.
+- **Why the visible-only optimization is the wrong target**: models do *not* repeat themselves in their internal chain of thought (the information is already in context), so output caching can only compress the segment the user sees.
+- **What actually cuts output tokens**: reduce the **94% invisible** reasoning+tool-call budget, which is governed by **intelligence** — this is why more expensive models are often cheaper to run (e.g. 5× per-token price but 6× fewer tokens to the right answer → lower total cost). Pairs with [[concepts/llm-inference]] economics.
+
+See also [[concepts/caching-performance-cost-optimization]].
 
 ## Optimization Tips
 

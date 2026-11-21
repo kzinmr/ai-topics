@@ -2,6 +2,23 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-11-21 18:35 UTC] dreaming wiki-ingest | Deep Sleep verification of 5 references (3 enriched, 2 covered)
+
+Recovered the 18:16 triage JSON (newer than upstream's 18:17 archive-only commit `79be01b2` — 3 files, no entity/concept pages). Verified each of the 5 reference candidates against target-page body content per the Deep Sleep quality gate.
+
+**Enriched (3):**
+- [[entities/seangoedecke-com]] — new "Why Output Caching Doesn't Work" subsection: Amdahl's-law analysis (~50% reasoning + ~44% tool-call output tokens → only ~6% visible repetition; ~4% max saving). Cross-linked to [[concepts/prompt-caching]].
+- [[concepts/prompt-caching]] — new "Output Caching Does Not Work" section + raw source.
+- [[concepts/mcp]] — new "Counter-case: llms.txt and a docs-only MCP server didn't move the needle" (Backpack for Laravel, Cristian Tabacitu): in-context guidelines/skills beat anything the agent must decide to fetch; MCP fits live data, not static docs.
+- [[entities/sierra]] — new "Shopping agents — the retail/commerce thesis" subsection: conversation-as-interface, one agent pre/post-purchase, proactive agents, Muse/Instinct + Poppy digital-front-door framing (demand-side complement to the existing Poppy v1.0 section).
+
+**Already covered (2) — skipped:**
+- arXiv:2611.21885 weight self-rewriting — already comprehensively covered in `concepts/language-model-weight-self-rewriting.md` (created by trending-topics commit `528cb33d` today; cites the arXiv id + raw article).
+- Signal restricting AI agents — fully documented in `concepts/security-and-governance/os-agent-capture-privacy.md` (iOS 27/Android/macOS countermeasures, two OS-vendor demands, accessibility-permission skeleton key); triage's guessed `concepts/website-blocking-of-ai-agents.md` was the wrong page.
+
+**Archive:** upstream's `2026-11-21_20261121T180006Z.json` (18 decisions) already committed; downstream re-run clobbered it to 5 → restored from HEAD (Pitfall #22). No new URLs; archive_index stays 3325.
+
+
 
 ## [2026-11-21 18:10 UTC] dreaming group | Pattern E filesystem triage (checkpoint total_articles=0, recent_raw=292)
 

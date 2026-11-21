@@ -1,7 +1,7 @@
 ---
 title: "Sierra"
 created: 2026-05-05
-updated: 2026-11-19
+updated: 2026-11-21
 type: entity
 tags:
   - company
@@ -306,6 +306,20 @@ Source: [[raw/articles/sierra.ai--blog-accelerators--3122018d.md]]
 
 Sierra released **v1.0 of the Personal Agent Protocol (Poppy)**, its open standard for how a consumer's personal agent identifies itself to a company and discovers what it is allowed to do — built from MCP, OpenAPI, UCP and OAuth rather than a new wire format, with staged adoption. Three adoption facts at v1.0: **Shopify enabled Poppy for every merchant** (175+ countries; stores already support UCP by default so they auto-publish a Poppy file with no merchant work), **Meta's Muse now looks for Poppy first on every site it visits**, and **60 new design partners** brought the total past 100 (including Delta Air Lines, Intuit, Salesforce, SoFi, Twilio, Wayfair, Zoom). First live deployments: **Mercury** (balance/transaction/categorization/budget tasks; payments and transfers must clear the account's existing approval policy), **Synchrony** (financing-aware agent-led shopping across a 500,000+ merchant network), **Turkish Airlines** (fares, flight status, booking lookup by reference+surname, Miles&Smiles business-class upgrade finding with customer approval before payment). Shopify co-authored Poppy's **commerce extension**, which draws the seam with UCP — UCP handles cart and checkout, Poppy handles arrival, identification and permission — and connects to **UCP Ask** so a shopper's agent can talk to the store's agent. Full treatment: [[concepts/personal-agent-protocol-poppy]].
 Source: [[raw/articles/sierra.ai--blog-releasing-poppy--1f27a1fb.md]]
+
+### Shopping agents — the retail/commerce thesis (November 2026)
+
+Sierra's retail-facing whitepaper reframes the "personal agents: opportunity or threat?" question for commerce. Core claims:
+
+- **The conversation *is* the interface.** Shoppers know roughly what they want; the hard part is narrowing hundreds of options to two or three. "Show me red dresses for my anniversary" replaces navigating product grids — no UI to learn, and it adapts to follow-ups ("will my size arrive in time?").
+- **One agent before *and* after purchase.** Browsing, buying and service should be a single remembered experience ("they shouldn't have to navigate a company's org chart"): suggest the right size before add-to-cart, offer a better color before a refund and keep the sale. This is the retail application of [[concepts/long-horizon-agents|Horizon]] + the [[#Context Engine — Rent the Intelligence, Own the Relationship (August 2026)|Context Engine]].
+- **Agents should start the conversation**, not wait to be asked — shoppers who open a chat buy more, but most won't open one unprompted (e.g. a "Will it fit over a fleece?" suggestion chip on a rain-jacket PDP, answered from product details + reviews + purchase history).
+- **Coexisting with personal agents.** Consumer agents like **Muse** and **Instinct** are still new but growing fast, and shopping is among the top reasons people use them. Sierra's prescription: every retailer should build its **own agent as a "digital front door"** that personal agents can talk to — and standardize that handshake via **Poppy** ([[concepts/personal-agent-protocol-poppy]]; see the Poppy v1.0 section above), where the consumer chooses what their agent may access and the retailer decides what it may do (e.g. allow starting a return but not changing payment details).
+- **Built on what you already have**: **Ghostwriter** builds the brand agent from brand guidelines + product knowledge, with shopping-agent performance soon trackable in **Agent Studio**.
+
+This is the demand-side framing of Poppy — the enterprise/control narrative in [[concepts/agentic-commerce]].
+
+Source: [[raw/articles/sierra.ai--blog-shopping-agents--6febce7c.md]]
 
 ## Significance
 
