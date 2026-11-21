@@ -1,0 +1,67 @@
+{
+  "schema_version": "2.0",
+  "run_id": "20261121T101055Z",
+  "collected_at": "2026-11-21T10:10:55.557569+00:00",
+  "triaged_at": "2026-11-21T10:12:00+00:00",
+  "source_checkpoint": "/opt/data/.hermes/cron/data/newsletter/newsletter_20261121T101055Z.json",
+  "summary": {
+    "processed_count": 2,
+    "relevant_count": 2,
+    "critical_count": 2,
+    "high_count": 0,
+    "low_count": 0,
+    "skipped_count": 0
+  },
+  "classifications": [
+    {
+      "message_id": "<20261120130359.3.a7a9318b2d4b322f@mg-d1.substack.com>",
+      "subject": "Anthropic's IPO explained (for people who aren't investors)",
+      "date": "2026-11-20",
+      "source_label": "uid=930",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-20-anthropic-s-ipo-explained-for-people-who-aren-t-investors.md",
+      "publisher": "The Signal (Substack, publication_id=293154)",
+      "primary_url": "https://open.substack.com/pub/thesignal/p/anthropics-ipo-explained-for-people",
+      "relevance": true,
+      "importance": "critical",
+      "topic": "Anthropic IPO / AI company business & funding",
+      "rationale": "Anthropic の IPO を一般向けに解説する記事。主要 LLM 企業 Anthropic の資金調達・バリュエーション・株式公開に関する一次ソースであり、entities/anthropic と concepts/ai-industry-funding の更新材料になる。",
+      "suggested_wiki_targets": [
+        "wiki/entities/anthropic.md (update: IPO event, valuation, funding history)",
+        "wiki/events/anthropic-ipo-2026.md (new event page candidate)",
+        "wiki/concepts/ai-industry-funding.md (update)"
+      ],
+      "suggested_tags": ["anthropic", "ai-business", "funding", "ai-safety-org"],
+      "scrape_status": "links-only (20 redirect/app-link URLs, no article body extracted)",
+      "downstream_action": "newsletter-wiki-ingest should resolve the primary_url to fetch full article text before ingesting. Substack redirect URLs are truncated in checkpoint data.",
+      "notes": "18 of 20 links are Substack chrome (like/comment/share/app-link) or truncated redirect tokens. Only Link 7/8 resolve to the actual post."
+    },
+    {
+      "message_id": "<20261120.190753.ae42a2ec@mta17>",
+      "subject": "Anthropic made history, then got a reality check",
+      "date": "2026-11-20",
+      "source_label": "uid=931",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-20-anthropic-made-history-then-got-a-reality-check.md",
+      "publisher": "Beehiiv-hosted AI newsletter (beehiiv mail)",
+      "primary_url": "unresolved — all 20 links are opaque link.mail.beehiiv.com tracking redirects",
+      "relevance": true,
+      "importance": "critical",
+      "topic": "Anthropic milestone + market/industry reality check",
+      "rationale": "Anthropic の歴史的出来事（同日の IPO ニュースと整合）とその後の業界の「現実突きつけ」を扱う AI 業界ニュースレター。Anthropic・AI 業界動向・市場評価に関する wiki 更新材料。",
+      "suggested_wiki_targets": [
+        "wiki/entities/anthropic.md (update)",
+        "wiki/events/anthropic-ipo-2026.md (new event page candidate)",
+        "wiki/concepts/ai-industry-funding.md (update: market sentiment, valuation correction)"
+      ],
+      "suggested_tags": ["anthropic", "ai-business", "ai-industry-trends", "model-releases"],
+      "scrape_status": "links-only (all 20 links are encrypted beehiiv click-tracker URLs; no title or destination URL available)",
+      "downstream_action": "BLOCKER for newsletter-wiki-ingest: beehiiv v2 tracking URLs are opaque and truncated; the ingest stage must resolve them via HTTP follow (or fall back to the beehiiv newsletter's public archive) before any wiki page is written. Do NOT fabricate content from the subject line alone.",
+      "notes": "Subject line pairs with the Anthropic IPO story from uid=930 — same-day, same-topic coverage from a second source. Treat as corroborating source for an Anthropic IPO event page."
+    }
+  ],
+  "skipped": [],
+  "observations": [
+    "Both newsletters (uid=930, uid=931) cover the same Anthropic IPO / milestone story from different publishers on 2026-11-20 — strong signal that this is a major industry event worth an events/ page.",
+    "Neither raw file contains article body text: both are link-dumps of tracking/redirect URLs. The newsletter-wiki-ingest stage must resolve URLs and scrape real content first.",
+    "Substack redirect tokens (link 1, 19, 20) and beehiiv v2 hashes are truncated in the checkpoint JSON, so URL resolution may need to re-fetch the original .eml or use the newsletter archive instead of these links."
+  ]
+}
