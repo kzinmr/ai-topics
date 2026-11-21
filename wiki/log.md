@@ -3,6 +3,20 @@
 _Log of all wiki changes. Newest entries at top._
 
 
+## [2026-11-21 18:10 UTC] dreaming group | Pattern E filesystem triage (checkpoint total_articles=0, recent_raw=292)
+
+- Checkpoint `20261121T180006Z` emitted an empty article pool; grouped the Nov 20-21 sitemap/blog raw batches via filesystem scan (15 probe URLs all absent from umbrella `archive_index.json` = never triaged).
+- Prior dreaming triage (`20261120T180051Z`) confirmed consumed by downstream commit `43a231d2` — its 3 takes (agi-to-asi-pathways, frontier-design-benchmark, ai-safeguard-double-standard) verified on disk and re-logged as skip.
+- Triage: 20 decisions | Takes=0, References=5, Skips=15 (batched: Cartesia x10 marketing, non-AI rolling x9, prior takes x3).
+- **References (for dreaming-wiki-ingest):**
+  - arXiv 2611.21885 weight self-rewriting → `concepts/language-model-weight-self-rewriting.md` (trending added same-day page; verify paper-specific method details landed)
+  - Signal restricting-AI-agents privacy post → `concepts/website-blocking-of-ai-agents.md`
+  - Sean Goedecke output caching → `concepts/prompt-caching.md` (or author entity)
+  - Sierra personal-shopping-agents whitepaper → `entities/sierra.md` (dual-enrich check vs `concepts/agentic-commerce.md`)
+  - Backpack for Laravel llms.txt/MCP negative result → `concepts/mcp.md`
+- Already-covered skips verified against today's commits: `528cb33d` (Inkling 2 Mini, Anthropic selloff day-2), `9abd4dee` (Anthropic IPO S-1), `89e8ea85`/`46d3af98` (OpenAI adversarial distillation + Hebbia via RSS fallback).
+- Archive: `raw/archived/triage/dreaming/2026-11-21_20261121T180006Z.json` (20 candidates, 18 newly archived, 2 dedup), archive_index → 3325.
+
 
 ## [2026-11-21] watchdog | Empty wikilink cleanup + orphan hub registration
 
