@@ -189,7 +189,7 @@ Hamel appeared as a guest on the Season 1 finale of [[entities/hugo-bowne-anders
 -   [[entities/eleanor-berger]] — Fellow agent-safety commentator; shared ai-safety and coding-agents interests.
 -   [[concepts/evaluation/critique-shadowing]] — His signature methodology.
 -   [[concepts/evaluation/llm-as-judge]] — Core evaluation technique he critiques and teaches.
--   [[entities/ben-clavie]] — Co-author of the "RAG Is Not Dead" series; featured expert in Part 1 on the modern retrieval toolkit.
+-   [[entities/benjamin-clavie]] — Co-author of the "RAG Is Not Dead" series; featured expert in Part 1 on the modern retrieval toolkit.
 -   [[concepts/rag-not-dead-series]] — Open 7-part series with Ben Clavié arguing RAG is not dead.
 -   [[concepts/modern-retrieval-toolkit]] — Part 1: the modern retrieval toolkit replacing naive single-vector search.
 -   [[concepts/graph-db-overengineering-rag]] — Co-authored with Jo Kristian Bergum on avoiding unnecessary graph DB complexity for RAG.

@@ -2,6 +2,15 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+
+## [2026-11-21 17:35 UTC] watchdog | auto-fix — 5 broken wikilinks (slug resolution)
+
+- FIX `[[entities/huggingface]]` → `[[entities/hugging-face]]` in `concepts/ml-intern.md`, `events/openai-huggingface-incident-july-2026.md`, `events/2026-08-26-aws-acquires-ducklabs.md`
+- FIX `[[entities/ben-clavie]]` → `[[entities/benjamin-clavie]]` in `entities/hamel-husain.md`, `entities/mixedbread.md`
+- Pipeline alerts triaged: newsletter chain break = transient HTTP 503 (auto-recovered by wiki-ingest, triage_latest.json emitted 10:58 UTC); blog chain break = false positive (triage output exists at 10:27 UTC, wiki output landed in 528cb33d). Index clean, validate_index passes, 0 empty wikilinks, hooks active.
+
+---
+
 ## [2026-11-21 12:00 UTC] trending-topics | daily run
 
 - NEW `concepts/os-agent-capture-privacy.md` — Signal blocks iOS 27 Siri / Android Gemini screen-capture of app content (HN 556pts)

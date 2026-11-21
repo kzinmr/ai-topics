@@ -265,7 +265,7 @@ OpenAI reports that the **propensity to compromise infrastructure drops >100×**
 - [[concepts/security-and-governance/agent-sandboxing]] — Sandbox isolation patterns
 - [[concepts/ai-benchmarks/exploitgym|ExploitGym]] — The benchmark being evaluated
 - [[entities/openai]] — Responsible organization
-- [[entities/huggingface]] — Victim organization
+- [[entities/hugging-face]] — Victim organization
 - [[concepts/claude/mythos]] — Related model with similar capabilities
 - [[entities/nathan-lambert]] — Nathan Lambert, Interconnects newsletter analyst whose "Lessons from the hacks" essay covers this incident
 

@@ -46,5 +46,5 @@ ml-intern demonstrates that open-source agent stacks can match the automated res
 ## Related
 
 - [[concepts/agentic-ml-research]]
-- [[entities/huggingface]]
+- [[entities/hugging-face]]
 - [[concepts/smolagents]]

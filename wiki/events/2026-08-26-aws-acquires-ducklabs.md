@@ -32,7 +32,7 @@ On August 26, 2026, **DuckLabs** — the company and core team behind the **Duck
 
 ## Related
 - [[entities/aws]] — Acquiring hyperscaler
-- [[entities/huggingface]] — Same-week AI infrastructure consolidation (NVIDIA $13B)
+- [[entities/hugging-face]] — Same-week AI infrastructure consolidation (NVIDIA $13B)
 - [[events/2026-06-24-qualcomm-acquires-modular]] — Prior 2026 infrastructure acquisition
 - [[concepts/text-to-sql]] — DuckDB as a common analytics target for AI/SQL workloads
 
