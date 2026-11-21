@@ -1490,7 +1490,7 @@
 - [[concepts/ai-vulnerability-detection-at-scale]] — AI Vulnerability Detection at Scale
 - [[concepts/ai-vulnerability-discovery]] — AI Vulnerability Discovery
 - [[concepts/alignment-relativity]] — Alignment Relativity (Aligned to Whom?) — Hyperbo: model priors aligned to non-experts who rewarded them in training; permissible shortcuts are person-indexed, making alignment irreducibly complex (Sep 2026)
-- [[concepts/alex-hall]] — alex-hall
+- [[concepts/alex-hall]] — Alex Hall — Python developer at Pydantic (Logfire/Pydantic AI team, Samuel Colvin orbit)
 - [[concepts/alex-krizhevsky]] — Alex Krizhevsky
 - [[concepts/allen-institute-ai]] — allen-institute-ai
 - [[concepts/alpha-proof-nexus]] — AlphaProof Nexus — DeepMind LLM+Lean parallel proof search (arXiv:2605.22763); 9 Erdős problems, 44 OEIS proofs, EVOLVE-VALUE
@@ -1590,9 +1590,9 @@
 - [[concepts/boring-technology]] — Boring Technology
 - [[concepts/botnet]] — Botnet
 - [[concepts/bottom-up-note-taking]] — bottom-up-note-taking
-- [[concepts/bozavlado]] — bozavlado
+- [[concepts/bozavlado]] — bozavlado — pseudonymous nanogpt-speedrun contributor (credited in alexjc README)
 - [[concepts/brain2qwerty]] — Brain2Qwerty v2 — Meta's non-invasive EEG-based brain-to-text decoder; ~61% accuracy; Auto Research coding-agent workflow improved word error rate (June 30)
-- [[concepts/brainchop]] — BrainChop
+- [[concepts/brainchop]] — BrainChop — portable tinygrad-based brain-MRI segmentation by Spike (Mike Doan); MIT, PyPI 0.2.5, WebGPU export
 - [[concepts/branch-aware-search]] — Branch-Aware Search
 - [[concepts/breach-disclosure]] — Breach Disclosure
 - [[concepts/brooks-law-ai-agents]] — Brooks's Law in the Age of AI Agents — law mutated not vanished: Baby Problem (critical path) survives, overhead shifts to defining "done"/reviewing/catching hallucinations; 2026 restatement "adding agents to a project with unclear requirements gets you the wrong answer faster" (j11g, Oct 27)
@@ -1784,7 +1784,7 @@
 - [[concepts/cohereio]] — Cohere.io (YC startup) — AI customer-support automation startup (2020–2023), co-founded by Rahul Sengottuvelu; $3.5M seed, Jsonformer lineage, acquired by Ramp June 2023; disambiguated from Cohere (cohere.com)
 - [[concepts/cohort-based-learning]] — cohort-based-learning
 - [[concepts/colbert]] — ColBERT (Late Interaction Retrieval)
-- [[concepts/colin]] — colin
+- [[concepts/colin]] — colin (colinrand) — 'diffuseness' AI-slop-docs critique quote, AIE manifesto thread
 - [[concepts/commodore-64]] — Commodore 64
 - [[concepts/common-corpus]] — Common Corpus
 - [[concepts/company-ai-pilled]] — Company AI-Pilled
@@ -2211,7 +2211,7 @@
 - [[concepts/grok-mermaid]] — Grok Mermaid — Self-contained Rust terminal renderer for Mermaid diagrams extracted from Grok Build CLI
 - [[concepts/gte-moderncolbert]] — GTE-ModernColBERT
 - [[concepts/guaranteed-minimum-income]] — guaranteed-minimum-income
-- [[concepts/hack-club]] — Hack Club
+- [[concepts/hack-club]] — Hack Club — 501(c)(3) youth-coding nonprofit; fiscal sponsor of Ghostty; Spaces/Slack engineering post-mortems
 - [[concepts/halo-loss-attention-sinks]] — HALO-Loss and Attention Sinks
 - [[concepts/hanna-hajishirzi]] — hanna-hajishirzi
 - [[concepts/harness-commoditization]] — Harness Commoditization
@@ -2374,7 +2374,7 @@
 - [[concepts/jagged-frontier]] — Jagged Frontier — Mollick/BCG concept: AI capability is unevenly distributed across tasks (758-consultant study, centaurs/cyborgs)
 - [[concepts/jane-jensen]] — jane-jensen
 - [[concepts/javascript-runtimes-for-ai-agents]] — JavaScript Runtimes for AI Agents
-- [[concepts/jay-v]] — Jay V
+- [[concepts/jay-v]] — Jay V — OpenCode co-founder (June 2025, with Dax Raad, Frank Wang, Adam Elmore)
 - [[concepts/jeremy-howard]] — jeremy-howard
 - [[concepts/jinja2]] — Jinja2
 - [[concepts/j-lens]] — J-Lens (Jacobian Lens) — Anthropic interpretability probe reading a model's hidden state before it writes the next token; Fireworks reproduced "silent signals" on open models (Aug 2026)
@@ -3465,11 +3465,12 @@
 - [[events/trustfall-symlink-rce-2026]] — TrustFall + Symlink RCE — AI Coding Agent Security Crisis (2026)
 - [[events/vercel-agent-desktop-launch-2026]] — Vercel Labs agent-desktop launch (Oct 31, 2026) — Rust-based computer-use tool ("agent-browser, for your whole computer"): reliable desktop automation via OS accessibility trees (stable refs, retry-safe, headless multi-agent), built by @mdlahfir; amplified by Chris Tate
 
-## Queries (60 pages)
+## Queries (63 pages)
 
 - [[queries/2026-11-15-skeleton-enrich-stub-action]] — Daily skeleton-enrich run 2026-11-15: 9 AI umbrella stubs enriched (tinygrad, trey-grainger, ai-alliance, robotics, embodied-ai, ai-coding-tools, generative-ai, vision-models, ai-education)
 - [[queries/2026-11-18-skeleton-enrich-stub-action]] — Daily skeleton-enrich run 2026-11-18: 8 search/security/OSS stubs enriched (elasticsearch, threat-modeling, compiler-explorer, searcharray, cohereio, open-source-sustainability, mastodon, fuzzing)
 - [[queries/2026-11-19-skeleton-enrich-stub-action]] — Daily skeleton-enrich run 2026-11-19: 5 AI-core concept stubs enriched (how-coding-agents-work, just-large-models, prompt-driven-development, agent-security-patterns, retrieval-augmented-generation)
+- [[queries/2026-11-21-skeleton-enrich-stub-action]] — Daily skeleton-enrich run 2026-11-21: 6 entity-shaped stubs in concepts/ enriched (alex-hall, bozavlado, brainchop, hack-club, colin, jay-v)
 - [[queries/2026-09-27_local-llm-ops-log]] — Local LLM ops log: Hermes backend migration to hermes-llm-serial-gate, GATE_REAL_URLS downstream layout, llm-gateway model_list state and recovery checklist
 - [[queries/2026-10-04-uncommitted-wip-snapshot-query]] — Uncommitted WIP snapshot (2026-10-04): working-tree state — 1453-line diff dump of modified/untracked wiki files from active-crawl/newsletter pipelines
 - [[queries/2026-10-05-authority-converges-on-tool-call]] — PACE/OverAct/Retire convergence: enforceable agent authority lives at the tool call + versioned runtime state, not admission-time gates

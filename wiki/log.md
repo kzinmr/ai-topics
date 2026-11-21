@@ -2,6 +2,24 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-11-21] skeleton-enrich-daily — stub backlog: 6 entity-shaped stubs in concepts/ enriched
+
+> Snapshot: the `status: skeleton` backlog remains **empty** (streak since 2026-10-17; frontmatter scans of `wiki/entities/` and `wiki/concepts/` return 0 live markers). Productive action again on the `status: stub` backlog — this run cleared the 6 entity-shaped stubs misplaced in `concepts/` that prior runs had deferred (first two candidates, `ai-evals-people` and `inference-hardware`, were already enriched on 2026-11-20).
+
+**Enriched (6 pages, all git-history-checked — no richer versions existed beyond the 272-byte bulk stub `da4a8f13`):**
+
+| Page | Before | After |
+|------|--------|-------|
+| `concepts/alex-hall.md` | 272 B | ~1.7 KB — Alex Hall, Python dev at Pydantic (Logfire/Pydantic AI, Samuel Colvin orbit); identity gaps marked as open questions |
+| `concepts/bozavlado.md` | 272 B | ~2.4 KB — pseudonymous nanogpt-speedrun contributor (README attribution line, contributor roster table w/ Grad/jxbz/brendanh0gan); GitHub/Wayback negative findings recorded |
+| `concepts/brainchop.md` | 272 B | ~2.3 KB — Spike (Mike Doan)'s tinygrad brain-MRI segmentation tool; PyPI-verified facts (MIT, v0.2.5, deps, BEAM opt, WebGPU export); canonical tinygrad application case |
+| `concepts/hack-club.md` | 272 B | ~2.7 KB — 501(c)(3) youth-coding nonprofit; Ghostty fiscal sponsorship (7% overhead, public Bank ledger); Spaces vuln + Slack post-mortem raw-article links |
+| `concepts/colin.md` | 256 B | ~1.7 KB — colinrand's "diffuseness" AI-slop-docs quote from the AIE no-AI-slop manifesto thread; identity status marked pseudonymous |
+| `concepts/jay-v.md` | 256 B | ~1.6 KB — OpenCode co-founder (June 19 2025, w/ Dax Raad, Frank Wang, Adam Elmore); architecture/agent summary cross-linked |
+
+**Verification:** all wikilinks checked against filesystem (ai-slop, ml-systems→software-minimalism, devtools→open-source swapped to existing targets); tags all pre-registered (medical-ai→medical-imaging per SCHEMA.md); index.md 6 description updates, 0 new entries, counts unchanged; low-confidence facts confined to explicit "Open Questions" sections.
+
+**Remaining backlog:** ~386 `status: stub` pages, incl. speedrun sibling stubs (`jxbz`, `brendanh0gan` — referenced by bozavlado), other person-shaped stubs in `concepts/`, and long-tail devtools stubs.
 ## [2026-11-21 18:35 UTC] dreaming wiki-ingest | Deep Sleep verification of 5 references (3 enriched, 2 covered)
 
 Recovered the 18:16 triage JSON (newer than upstream's 18:17 archive-only commit `79be01b2` — 3 files, no entity/concept pages). Verified each of the 5 reference candidates against target-page body content per the Deep Sleep quality gate.
