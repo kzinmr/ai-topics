@@ -2,6 +2,16 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-11-21 10:05 UTC] blog-ingest | RSS-fallback recovery of 2 blocked OpenAI News articles
+
+**Trigger**: `blog_ingest` checkpoint (run 20261121T100039Z) reported 18/20 articles saved, 2 `unsaved_articles` from OpenAI News (403 to scraper UA). Recovered per `references/openai-news-rss-fallback.md` (openai.com/news/rss.xml + browser UA).
+
+**Articles recovered:**
+- `openai.com--index-combatting-adversarial-distillation--7121ba7c.md` — OpenAI's layered anti-distillation approach (model training, safeguards, detection, enforcement). Published 2026-11-20. Related: prior raw article `2026-10-05_openai_disrupting-coordinated-model-distillation-campaign.md`.
+- `openai.com--business-customer-stories-hebbia--c2d36461.md` — Hebbia prerelease eval of GPT-6 Astra for financial research (source coverage, citation relevance, presentation quality). Published 2026-11-20.
+
+Both tagged `scrape_status: rss-fallback` (body = RSS description only). Filenames follow domain--slug--md5[:8] scheme; no prior files at those paths, no dedup conflicts. Commit 89e8ea85 pushed to main.
+
 ## [2026-11-20 19:0x UTC] skeleton-enrich-daily | stub backlog: 2 AI-core umbrella concept pages
 
 **Trigger**: daily skeleton enrichment. `status: skeleton` backlog remains **empty** (0 markers in entities/ and concepts/, streak since 2026-10-17); pivoted to `status: stub` backlog (394 pages) per established pattern. Continued the next-run candidate list flagged in [[queries/2026-11-19-skeleton-enrich-stub-action]].
