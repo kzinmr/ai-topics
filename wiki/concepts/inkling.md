@@ -5,7 +5,7 @@ aliases:
   - inkling
   - Thinking Machines Inkling
 created: 2026-07-15
-updated: 2026-07-16
+updated: 2026-11-21
 tags:
   - model
   - multimodal
@@ -95,6 +95,15 @@ Inkling achieves an **Intelligence Index of 41**, surpassing Nemotron 3 Ultra (3
 - **Inkling** (975B-A41B): Full release, the primary model
 - **Inkling-Small** (276B-A12B): Smaller preview variant for reduced compute requirements
 
+## Inkling 2 Mini (Nov 20, 2026) — looped transformer for laptops
+
+Thinking Machines released **Inkling 2 Mini**, a looped transformer that runs its middle layers three times per token: 26.4B total / 3.4B active parameters (5.4B weight activations per token with looping), ~20GB memory footprint, native NVFP4 training and deployment (last four layers MXFP8). It leads all open-weights models under 100B on DeepSWE v1.1 (48.2%) and Vals Index v2.2 (46.5%), and is behind only Qwen3.8-27B on some coding suites. Most weights trained and deployed in NVFP4; a demo built a playable flight simulator offline on an M5 Pro MacBook Pro in airplane mode.
+
+The looped architecture doubles as a monitorability research platform: with the companion variable-loop model, no-CoT reasoning time horizon improved from 16s at one pass to 37s at three, benchmark performance on serial reasoning kept improving out to ten loops (2x the trained depth), the chain of thought grew shorter with more loops but stayed legible, and agentic-sabotage test scores did not trend higher with added loops. Looping improves reasoning/long-context (GraphWalks BFS, MRCR v2) but not factual knowledge (AA-Omniscience, SimpleQA) — knowledge tracks total parameter count; the model compensates with search/tool use (leads its size class on BrowseComp, DeepSearchQA, MCP Atlas).
+
+HN (1060 pts): unsloth GGUF quants landed within hours; llama.cpp looped-architecture support is an open PR (#32695) with the usual worry that exotic architectures stall in PR queues; local-hardware owners (Framework Desktop / Ryzen AI Max / Strix Halo) framed it as the first credible Qwen3.6-35B-A3B-class competitor for commodity boxes.
+
+HN: https://news.ycombinator.com/item?id=50581260
 ## Related Pages
 - [[entities/thinking-machines-lab]] — Developer of Inkling
 - [[entities/daniel-han]] — Unsloth CEO, led Inkling GGUF quantization

@@ -2,6 +2,14 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-11-21 12:00 UTC] trending-topics | daily run
+
+- NEW `concepts/os-agent-capture-privacy.md` — Signal blocks iOS 27 Siri / Android Gemini screen-capture of app content (HN 556pts)
+- NEW `concepts/language-model-weight-self-rewriting.md` — arXiv 2611.21885 self-rewriting 27B weights, +6.6pts, alignment-silence HN debate (423pts)
+- APPEND `events/anthropic-nasdaq-debut-2026.md` (second-day collapse, $4T wipeout), `concepts/ai-bubble-economics.md` (market stress test), `concepts/inkling.md` (Inkling 2 Mini looped transformer, HN 1060pts), `concepts/recursive-self-improvement.md` (self-rewriting section), `concepts/signal.md` (OS agent blocking)
+- RAW saved x10 (Thinking Machines, arXiv, Signal, Mother Jones, ankitg vibecoding-chip, DreamCoder, dev-to-architect, llms.txt/MCP, Guardian sell-off, ClawDOS)
+- Report: `inbox/rss-scans/trending-topics-2026-11-21.md`
+
 ## [2026-11-21 10:55 UTC] newsletter-wiki-ingest | run 20261121T101055Z — Anthropic IPO pair (1 take, 1 ref, 2 batch skips) — triage recovered from 503 crash
 
 **Trigger**: `newsletter-triage` (4e8b0d92c6a1) died at 10:30 UTC with `RuntimeError: HTTP 503: Local LLM server is busy` and emitted no triage JSON. Recovered per the skill's checkpoint-recovery path: the inbox pre-triage summary `raw/inbox/newsletter-ingest/20261121T101055Z.json` (commit 65e9d079) identified 2 critical newsletters (both Anthropic IPO, 2026-11-20). Rebuilt and saved `cron/data/newsletter/triage_latest.json` (4 decisions) before editing.

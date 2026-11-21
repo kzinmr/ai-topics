@@ -66,6 +66,13 @@ Full-body recovery of the Nov 20 issue "Anthropic's IPO explained (for people wh
 - $81.3B IPO raise earmarked for compute/infrastructure; only ~$9B of the $141.1B raised burned so far — **~$132B in cash and short-term investments**.
 - Banks's risk to watch: demand slowing before chips reach the end of their useful economic life.
 
+## Second-day collapse and the $4T AI wipeout (Nov 20)
+
+Anthropic's second day of trading erased the debut pop: shares fell 9% on Friday to $88.30, close to the $83 IPO price (Guardian). The Nasdaq Composite erased all its 2026 gains and closed ~5% below its Jan 1 value; the WSJ counted ~$4T of AI-linked market value wiped out in the week. Dow and S&P 500 closed in correction territory. Semiconductor names led the decline (SanDisk -14%, Micron -12%, Nvidia -14%); Asia had its worst week since 2020 (Nikkei -5%, Kospi -5.5%, SoftBank -14.5% its worst day in 2+ years, TSMC -6%, Taiwan exchange chair pledging market stability).Analyst framing: "relentless selling in tech" (Neil Wilson, Saxo) and Anthropic "draining market liquidity" as investors sell other holdings to pay for the newly floated stock (Chris Beauchamp, IG).
+
+HN reception on the Guardian thread (336 pts) centered on OpenAI's missed IPO window: rumors that OpenAI's accounting is not clean enough to file an S-1 (FT link in-thread), Sam Altman's 2025 decision to reject bank price targets being called a "generational whiff" (jordanb), and the read that Anthropic "desperately needed the cash" (randomNumber7). Several commenters argued no founder ever sincerely believed the trillion-dollar AGI valuation and the exit was always meant to precede delivery (27183, blackenedgem).
+
+HN: https://news.ycombinator.com/item?id=50574383 (336 pts)
 ## Related
 
 - [[events/anthropic-ipo-roadshow-2026]] — the Nov 10–11 roadshow that preceded pricing

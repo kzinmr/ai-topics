@@ -2,7 +2,7 @@
 title: "AI Bubble Economics"
 type: concept
 created: 2026-04-10
-updated: 2026-11-17
+updated: 2026-11-21
 tags:
   - economics
   - company
@@ -611,6 +611,13 @@ Standard technique (see [[concepts/model-distillation]]), repurposed as an *inco
 
 Source: [[raw/articles/2026-10-24_irrational-analysis_market-memo-dancing-in-the-rain]] (paywalled tail truncated at capture); [TechCrunch 2026-10-22](https://techcrunch.com/2026-10-22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/)
 
+## Nov 20 market stress test: Nasdaq erases 2026 gains
+
+The Anthropic IPO week functioned as the first large-scale market stress test of the bubble thesis. In the four sessions after the Nov 19 debut, the Nasdaq Composite went from a 2026 high to ~5% below its January 1 value, erasing the year's entire gain; the WSJ put the AI-linked wipeout at ~$4T for the week. Anthropic itself gave back its debut pop (-9% Friday to $88.30 vs $83 IPO price), while the broader AI complex fell harder (Nvidia -14%, SoftBank -14.5%, TSMC -6%, Nikkei -5%, Kospi -5.5%).
+
+Two mechanisms cited by market analysts (Guardian): outright "relentless selling in tech" (Saxo) and index/liquidity mechanics — new-economy IPOs of this size drain liquidity from adjacent positions as funds raise cash to take delivery (IG). HN thread added the governance angle: OpenAI reportedly unable to clean up its books enough to file an S-1, and the argument that insiders never believed the AGI-scale valuations and treated the IPO window as exit liquidity.
+
+HN: https://news.ycombinator.com/item?id=50574383
 ## Sources
 
 - [Edward Zitron: How Much Of The AI Bubble Is Real?](https://www.wheresyoured.at/premium-how-much-of-the-ai-bubble-is-real/) (Mar 2026)

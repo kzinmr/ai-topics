@@ -1,7 +1,7 @@
 ---
 title: "Recursive Self-Improvement (RSI)"
 created: 2026-07-07
-updated: 2026-11-15
+updated: 2026-11-21
 type: concept
 tags:
   - concept
@@ -475,6 +475,15 @@ METR published an independent assessment (with Anthropic-held redaction rights):
 
 Aakash Gupta's weekly round-up independently surfaced the METR assessment with the sharper framing that Claude "is now in the early phase of **recursive self-improvement (RSI)**, and is improving the rate of Claude's development about 2x" — i.e. the second-source description characterizes the finding as an *early RSI phase* rather than merely an R&D-productivity acceleration. That is a stronger claim than METR's own published wording (capability-improvement rate ~2x baseline, majority attribution to internal AI use), so the RSI-phase characterization should be attributed to commentary, not to METR. Same issue also reported **SemiAnalysis GDPx** (best model 12%, see [[concepts/semianalysis-gdpx]]) alongside [[concepts/kimi-k3|Kimi K3.1 Pro]] reaching the top open-weights position on the Artificial Analysis Intelligence Index within 3 points of Opus 5.5 at half the price. Source: https://www.aibyaakash.com/p/spotifys-90-trick
 
+## Weight self-rewriting without gradients (Nov 2026)
+
+**"Language Models Can Rewrite Their Own Weights"** (arXiv:2611.21885, Jiajun Fan et al., submitted Nov 16, v2 Nov 18, 2026) claims the first case of an LLM rewriting its own weights by its own reasoning — no gradients, no training run. An open 27B model is given its own weights, graded answers, and the ability to run itself; it diagnoses its failures and edits the weights behind them, gaining **+6.6 points on unseen problems** over its own pre-edit version. Edits are self-tested on practice problems and only improvements are kept; across eight consecutive sessions accuracy only rises. The model also repairs a damaged copy of itself — from near-zero to >80% of original accuracy on unseen image tasks — without ever reading the original weights. The ability is emergent with scale: smaller models in the family make no edit or break themselves; only the largest improves. The authors position this as "a necessary step toward recursive self-improvement": a system that does not separate training from inference could keep upgrading itself for life.
+
+Key distinction the paper draws: unlike test-time scaling, the gain is written into weights at no per-answer cost; unlike training, it runs only forward passes, as serving does. "The wall between training and inference is a limit of our tools, not a property of intelligence."
+
+HN reception (423 pts) was dominated by the paper's silence on alignment — the word "alignment" appears nowhere, and commenters (esafak et al.) asked what happens when robots modify themselves without oversight; proposed mitigations (well-aligned base + weight-update safeguards) only apply to closed models, leaving abliterated open models as the risk case. The community noted there is no alignment benchmark for weight-space optimization (only WeightBench). Related prior art in this wiki: WeightBench, weight-space programming, the frontier-edits-smaller-model result that this paper extends to self-editing.
+
+HN: https://news.ycombinator.com/item?id=50577265
 ## Sources
 
 - [1] Good, I.J. "Speculations Concerning the First Ultraintelligent Machine." *Advances in Computers*, 1965.
