@@ -53,7 +53,15 @@ Template for the Japanese-language Discord report produced by the `x-accounts-sc
 
 1. **テーマ1**: 説明
 2. **テーマ2**: 説明
+3. **テーマ3**: 説明
 ```
+
+Cross-check the overview table against the script summary every run — the fields the user
+wants to see at a glance are `tracked_accounts`, `accounts_scanned`/budget, `new_posts`,
+`with_errors`, and the `cursor_start`→`cursor_next` rotation. When
+`accounts_skipped_budget` is non-zero, add a sentence to the table caption saying it is the
+request budget, not dead handles, and that coverage continues in later runs (see
+`wiki-ingestion-pipelines` → `references/x-accounts-scan-cron.md`).
 
 ## Formatting Conventions
 
@@ -61,6 +69,7 @@ Template for the Japanese-language Discord report produced by the `x-accounts-sc
 - **Emoji**: Use sparingly — section headers (📡, 🔥, ✍️, 📊) and topic markers (🛠️, 🎙️, 🔒) only
 - **@handles**: Always include with backtick code formatting (`@handle`)
 - **Links**: Use `🔗` prefix for external links, keep URLs compact
+- **Verbatim quotes**: when an author's own words are the evidence (a product tagline, a benchmark claim, a refusal to use a new model), quote them **in the original English inside Japanese quotation marks** and italicize, rather than paraphrasing into Japanese. The report is Japanese; the primary-source text stays English — same rule as the wiki pages themselves. Paraphrasing a sharp judgement ("I don't find myself reaching for the new 6.2 models") into Japanese loses exactly the phrasing worth citing later.
 - **Evaluations**: Each major discovery gets a `> 💡 **評価**:` block — 1-2 sentences max, focused on AI/agent relevance
 - **AI関連度**: Star rating (⭐〜⭐⭐⭐) for items in the misc section. ⭐ = tangential, ⭐⭐ = somewhat relevant, ⭐⭐⭐ = directly AI/agent
 - **Wiki update table**: Use emoji for operation type — ✏️ update, 🆕 create, 📋 index/log
@@ -73,6 +82,9 @@ Template for the Japanese-language Discord report produced by the `x-accounts-sc
 3. **Group by account** — if one account has multiple posts, present them together
 4. **De-prioritize non-AI content** — Python libraries, desktop toolkits, open-source governance → "その他ピックアップ" section only
 5. **Save raw articles** for any blog post that gets wiki attention (entities updated or concepts created)
+6. **Check for an existing events/ page before reacting to a big news link.** Major industry news (CEO changes, launches, incidents) is often already covered from newsletters/RSS by the time the X scan sees it — grep `wiki/events/` and `wiki/raw/articles/` first (e.g. `grep -ril '<person-or-slug>' events/ raw/articles/`). If an event page exists, ADD a dated reaction/follow-up section citing the tweet, and update the sharer's entity page — do not create a duplicate event page or re-scrape the primary source (its raw file likely already exists).
+7. **Prefer concept-page case-study sections over new pages** for links that fit an existing taxonomy page (e.g. a new production sandbox writeup → case-study section in `concepts/agent-sandbox-patterns.md`; a weight-editing result → section in `concepts/activation-steering.md`). Update the page's `sources:` and `updated:` in the same pass.
+7a. **Check raw-file dates before scraping a "new" link.** The scan's `created_at` is the *tweet* date, not the article date — a post surfacing today can link to an article ingested weeks ago by active-crawl, x-bookmarks, or a prior scan (2026-11-16 example: Ronacher tweet linked his Nov 9 essay whose raw file had existed since Nov 10; Hugo amplified two already-covered Anthropic/Block pieces). Always `grep -ril '<slug-or-title>' raw/articles/ concepts/ events/` first. If the raw file or topic page exists, skip scraping and skip new-page creation — add only the **reaction layer**: an X Activity Log entry on the sharer's entity, and/or a dated `## Reception` bullet on the concept page (who amplified, verbatim quote, what they valued — e.g. "opening with Kierkegaard is a boss level move"). The amplification itself is the new knowledge, not the article. When no Reception section exists on a concept page, create it and add the amplifiers as `[[entities/...]]` wikilinks.
 
 ### Reply Evaluation Heuristics
 
@@ -108,6 +120,19 @@ When processing new posts for wiki updates:
 7. **Append to `log.md`** and update `index.md` entry description
 8. **Commit + push** with descriptive message: `wiki: x-accounts scan — <summary>`
 
+## Unresolved / next-actions section (add when anything failed or is unverified)
+
+Whenever a scrape failed or a claim could not be verified, add a `### ⚠️ 未解決・次回アクション` section between the Wiki 更新内容 table and トレンド観測. It is the part the user actually acts on. Required contents:
+
+- **Failed scrape**: name the URL, list every variant tried, state the most likely cause
+  (e.g. 「サイト側のビルド/ルーティング不具合の可能性が高い」), and say what the wiki currently
+  rests on instead (RSS lede + tweet text) so nobody mistakes a partial raw file for the
+  full article. State that a later run should retry.
+- **Unverified claims** on newly created pages: product ownership ambiguity, missing
+  license/benchmarks, vendor claims recorded as claims.
+- Never bury these in prose inside a discovery section — the point of the section is that a
+  human can triage it in ten seconds.
+
 ## Commit & Push Pitfall
 
 `git pull --rebase origin main` **fails** in `~/ai-topics` when the working tree has pre-existing unstaged changes (which is common — other cron jobs leave `AGENTS.md`, `config/`, `skills/` dirty): `error: cannot pull with rebase: You have unstaged changes.` Do **not** stash, do **not** commit the unrelated files, and do **not** treat this as a blocker. The pre-commit hook validates index.md + tags on commit, so after `git add` of your wiki files + `git commit`, just run a plain `git push` — it succeeds (fast-forward) even when the rebase attempt failed. Verify with `git log --oneline -1` and the push output line `main -> main`.
@@ -117,3 +142,7 @@ Also: stage **only** the files this scan touched (`git add wiki/...` explicitly,
 ## Example
 
 See the 2026-07-25 scan report for a full worked example with 12 new posts across 6 accounts.
+
+## Idempotency Guard for Python-patch Bulk Edits
+
+When applying multiple entity edits via a `python3` heredoc (frontmatter `updated:`, Log bullets, section insertions), make replacements idempotent — strip the section header first (`s = s.replace('\n## Reception', '')` before re-appending) or check `'marker' not in s` — because sibling cron jobs and re-runs can leave the block partially present, and `str.replace` silently duplicates it. The `patch` tool's "modified by sibling subagent" warning is common in this repo (many concurrent cron jobs touch `wiki/`); re-read the target region with `sed -n` before a follow-up patch rather than trusting the cached copy.

@@ -95,7 +95,9 @@ for l in miss[:20]:
 
 ## Tag-violation triage (report says "N pages with invalid tags")
 
-The weekly report flags invalid tags but not which page has which. Map each offending tag to its canonical form before any commit (pre-commit blocks them). Grep `SCHEMA.md` for the exact tag-word (with `\b` boundaries) to find the canonical spelling — several are counterintuitive (`open-weight` not `open-weights`, `datasets` not `data`). Confirmed mappings: `ai-agent`→`ai-agents`. If a *whole family of pages* shares one invalid tag (2026-10-02: `ai-timeline` on `entities/dimillian` + `entities/odyssey-ml`, plus stray `devtools`/`ai-coding-tools`/`genai`), it likely came from one recent seed/bulk-ingest using a non-taxonomy tag — decide once (add to taxonomy OR strip everywhere), don't leave the invalid tag on a subset.
+**Shortcut first: just run `python3 config/hermes/skills/_overrides/wiki-graph-health/scripts/tag_audit.py`.** It's the authoritative check — prints "Tags NOT in taxonomy: 0" when clean, lists the offending tags otherwise. The report's `TAG_VIOLATIONS:N` line is unreliable in BOTH directions: 2026-11-20 reported 1 with 0 real (generator artifact); 2026-10-02 reported 1 but a real taxonomy family was hiding. Always defer to tag_audit before spending any effort here.
+
+When tag_audit confirms real bad tags, map each offending tag to its canonical form before any commit (pre-commit blocks them). Grep `SCHEMA.md` for the exact tag-word (with `\b` boundaries) to find the canonical spelling — several are counterintuitive (`open-weight` not `open-weights`, `datasets` not `data`). Confirmed mappings: `ai-agent`→`ai-agents`. If a *whole family of pages* shares one invalid tag (2026-10-02: `ai-timeline` on `entities/dimillian` + `entities/odyssey-ml`, plus stray `devtools`/`ai-coding-tools`/`genai`), it likely came from one recent seed/bulk-ingest using a non-taxonomy tag — decide once (add to taxonomy OR strip everywhere), don't leave the invalid tag on a subset.
 
 ## Working-tree hygiene during the weekly run (reconfirmed 2026-10-02)
 
@@ -113,7 +115,7 @@ The raw auto-report is noisy; last week's numbers are only comparable after adju
 
 ## Stale-page interpretation
 
-Counts are dominated by bulk-import `updated` dates (e.g. 2026-04-09/10), so >1000 "stale" pages mostly means "never touched since import", not "content degraded". Report the count but prioritize review by size+staleness (large pages stale the longest).
+Counts are dominated by bulk-import `updated` dates (e.g. 2026-04-09/10), so >1000 "stale" pages mostly means "never touched since import", not "content degraded". Report the count but prioritize review by size+staleness (large pages stale the longest). **Weekly trend interpretation:** stale is a near-static baseline (2026-11-13: 2,558 → 2026-11-20: 2,563, +5) — only treat it as a real signal on a >50/week jump or a sharp drop (re-touch campaign); never recommend action from a single run. Cite the deep-audit per-category split (`entities`/`concepts`/`comparisons`/`events`) in the trend table, not just the single report line.
 
 ## Batch adjudication recipes (verified 2026-10-23 — faster than reading every page)
 
@@ -136,7 +138,7 @@ Counts are dominated by bulk-import `updated` dates (e.g. 2026-04-09/10), so >10
 
 ## Skill-name collision: 'llm-wiki' (new 2026-10-30)
 
-Cron jobs referencing skill `llm-wiki` get "not found and skipped" — it's NOT missing, it's ambiguous: `~/.hermes/skills/research/llm-wiki/SKILL.md` and `~/ai-topics/config/hermes/skills/_overrides/llm-wiki/SKILL.md` both match, so `skill_view('llm-wiki')` refuses to guess. Workaround: `read_file('/opt/data/.hermes/skills/research/llm-wiki/SKILL.md')` directly. When reporting the skip to the user, note it's a collision not an absence. (Fix would be renaming or removing one copy — outside a weekly-analysis cron's mandate.)
+Cron jobs referencing skill `llm-wiki` get "not found and skipped" — it's NOT missing, it's ambiguous: `~/.hermes/skills/research/llm-wiki/SKILL.md` and `~/ai-topics/config/hermes/skills/_overrides/llm-wiki/SKILL.md` both match, so `skill_view('llm-wiki')` refuses to guess. Workaround: `read_file('/opt/data/.hermes/skills/research/llm-wiki/SKILL.md')` directly. When reporting the skip to the user, note it's a collision not an absence. (Fix would be renaming or removing one copy — outside a weekly-analysis cron's mandate.) **Update 2026-11-06: confirmed this skill is NOT needed for the weekly run at all** — the canonical procedure is fully covered by weekly-graph-analysis.md + weekly-graph-analysis-pitfalls.md + `_weekly_graph_report.py` + `deep_link_audit.py`. Safe to ignore the skip notice.
 
 ## Report + commit workflow
 

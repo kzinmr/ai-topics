@@ -1,0 +1,18 @@
+# Grouping-Stage Triage Recipe — 2026-11-07 (dreaming-group, validated)
+
+Context: dreaming-group cron (18:00 UTC). Checkpoint `total_articles: 0`, `recent_raw_articles: 234`, `articles: []` — Pattern E. Prior run (11-06) had committed Takes=3 (carried) / Refs=5 / Skips=4 but the carried items were NOT executed by dreaming-wiki-ingest, so they had to be re-verified and re-carried.
+
+## Working sequence (completed in ~12 tool calls)
+
+1. **Prior-triage baseline**: read `triage_latest.json` (12 decisions) — carried 3 takes + 5 references forward, but ONLY after grep-verifying each page is still stale (`grep -c "<specific-claim>" wiki/entities/<page>.md` = 0 AND `updated:` date predates the article). All 3 takes re-confirmed absent (factory.md HumanLayer 0 hits, simon-willison.md updated 10-30, fireworks-ai.md Forge section absent). One carried reference (Harvey contract-approval, prior skip) was re-classified as reference after confirming harvey.md lacked the section.
+2. **Duplicate check**: `git log --oneline --since=2 days` + today's log.md entries — trending-topics/active-crawl commits name their pages; anything claimed = skip without re-verification.
+3. **Archive-absence probe**: reuse the /tmp probe pattern — normalize each recent raw file's frontmatter `url:` and membership-test against umbrella `archive_index.json` `{"urls": [str]}`. NOTE: this run's probe showed 100/100 "never archived" because `ls -lt` 3-day window includes files whose frontmatter has quoted URLs (`url: "https://..."` — the regex `^url:\s*(\S+)` captures the quote) and sitemap files with EMPTY url. Handle quoted URLs with `.strip('"\'')` before normalizing; URL-less files fall through as candidates by design (the sibling raw_backlog check catches them).
+4. **Coverage grep per candidate** (one batched terminal call across all 9 candidate pages): specific-claim grep miss + stale `updated:` = reference; same-day sibling commit = skip.
+5. **Triage JSON builder** via write_file→/tmp→terminal (CJK reasons), dedup by item_id, verify counts with `python3 -c` hardcoded-path one-liner.
+6. **Archive clobber catch (Pitfall #22 recurrence)**: first `archive_triage.py` run reported `candidates: 13, new_archived: 8` but the dated file contained ONLY the 4 skip decisions — the 9 references with URLs got URL-deduped against the index (archived by a prior pipeline) and were dropped from the file write. Fixed with a small merge script that re-reads triage_latest.json and appends any skip+reference decision whose title is missing from the dated archive file. Commit the merged 13-decision file.
+7. **Log prepend**: canonical normalize-then-prepend script (strip ALL `# Wiki Log`/italic lines, rebuild head). **Guard-string pitfall**: `assert "dreaming group | Pattern E scan" not in log` fires on YESTERDAY's entry (same title shape) — make the guard date-specific: `assert "## [2026-11-07] dreaming group" not in log`.
+8. **Selective staging** (wide sibling-dirty tree: ~10 modified skill files from other jobs): stage exactly `wiki/log.md` + dated archive JSON + `archive_index.json`. Commit `dreaming: group triage YYYY-MM-DD — Takes=N refs=N skip=N, archive M (Pattern E scan)` passed both hooks, plain push.
+
+## Yield
+
+234 recent raw / 100 never-archived window → Takes=3 (all carried, re-verified), Refs=9 (5 carried + 4 new: Harvey contract-approval, mitchellh libghostty, Modal×Snorkel, Zitron Fault Lines), Skips=4 batch entries; archive 8 new URLs (3,055 total). Carried-take chain (11-04 Fireworks Forge on its 3rd run) — if a take survives a third carry with the page still stale, downstream execution is the bottleneck, not triage; keep carrying with explicit "Nth run" provenance in reason_ja so the chain is auditable.

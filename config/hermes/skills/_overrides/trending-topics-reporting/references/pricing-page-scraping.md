@@ -39,6 +39,7 @@ PYEOF
 - Long context pricing: model name includes `(<272K context length)` suffix
 - Pro models (`-pro`) typically have no cached pricing (`null`)
 - Empty string `&quot;&quot;` for cached = not offered (distinct from `null`)
+- **4-value tuple trap (observed 2026-11-02)**: GPT-6-era rows carry FIVE values `[input, cached, cacheWrite5m, output, ...]` (cache write inserted), so the 4-group regex silently truncates output (e.g. gpt-5.6-sol showed output $5.00 instead of $20.00). Do not trust the quick regex for new generations — re-verify any suspicious price by dumping the raw tuple: `re.finditer(re.escape(model), html)` and print `html[m.start():m.start()+300]`. The tier tabs (Standard/Flex/Fast/Ultrafast = 1×/0.5×/2×/6×) each repeat the model list — dedupe and identify the tier by the ratio pattern.
 
 **Alternative quick extraction** (model names only, for verification):
 ```bash
@@ -88,6 +89,16 @@ PYEOF
 - Context window sizes, max output tokens, extended thinking support
 - New model announcements (e.g., Claude Mythos 5)
 
+**Best extraction (observed 2026-11-02)**: the rendered HTML tables are thin, but the page embeds a `ModelComparisonSheet` RSC payload with a `models:[...]` array carrying machine-readable pricing per model: `{"id":"claude-opus-5-5",...,"pricing":{"inputPerMTok":4,"outputPerMTok":20,"cacheWrite5mPerMTok":5,"cacheWrite1hPerMTok":8,"cacheReadPerMTok":0.2},"releasedOn":"2026-09-22","contextWindowTokens":1000000,"maxOutputTokens":128000}` — plus `pricingLines` and `cacheReadExceptions` (multiplier vs base input, e.g. 0.025× for Fable/Mythos, 0.05× for Opus/Sonnet). Grep for `"inputPerMTok"` rather than stripping tags; it gives exact cache-write 5m/1h splits and release dates that the visible table omits. The `www.anthropic.com/pricing` page (redirects to claude.com, Webflow) yields almost nothing via curl (1.3MB, no model names) — don't waste time on it.
+
+### Google — Vertex AI table parsing
+
+The Vertex pricing page renders tab-tier rows (Standard/Priority/Flex/Batch × Global/Non-global). Grep the tag-stripped text around each `Gemini <name>` token for `Input ... Global $X ... Text output ... Global $Y` patterns. Watch for **promo tables with dated sub-headers** — e.g. "Gemini 4 Argon* through November 30, 2026 → $2/$10" followed by a separate "Starting December 1, 2026 → $4/$20" row; capture BOTH the current price and the step-up date, and put the date in the wiki footnote. Non-global endpoints are a uniform 1.1× Global.
+
+### Model generation drift (the big one, 2026-11-02)
+
+A weekly monitor can be 2+ generations stale if runs were skipped: the 08-24 snapshot predated the entire OpenAI GPT-6 family, Anthropic Claude 5.5 generation, and Gemini 4. When OpenRouter shows `gpt-6*`/`claude-*-5-5`/`gemini-4-*` ids absent from the wiki frontier tables, this is a frontier reorganization, not a price tweak — add new rows at the top of the US/China frontier tables, re-tier old flagships to "prev gen", fix lapsed intro promos (an expired promo like Sonnet 5's $2/$10 must move to standard list price with a † footnote), and rewrite the promo footnote block with current expiry dates. Save verbatim scrape evidence to `wiki/raw/articles/YYYY-MM-DD_<provider>-pricing-scrape.md` (with source URLs + fetched_at frontmatter) and cite those notes in the Changelog rows.
+
 ### Google — Use Vertex AI (NOT ai.google.dev)
 
 **`ai.google.dev` is blocked by tirith** as "lookalike TLD" (`.dev` TLD). Use the enterprise pricing page instead:
@@ -121,7 +132,9 @@ for i, l in enumerate(lines):
 PYEOF
 ```
 
-DeepSeek's page is clean Docusaurus HTML — easy to parse. Pricing includes cache hit/miss columns.
+DeepSeek's page is usually clean Docusaurus HTML — easy to parse. Pricing includes cache hit/miss columns.
+
+**Pitfall (observed 2026-11-02)**: the page can serve a JS shell to curl — body reads "Your Docusaurus site did not load properly" with no pricing tables, even with a 200 response and ~50KB file. `cdn.deepseek.com/pricing.html` returns ~352 bytes (dead). Fallback chain that worked: (1) OpenRouter API listing for the model id, (2) the wiki's own event/entity page for the model (e.g. `wiki/events/2026-10-17-deepseek-v4.1-flash-1017-release.md` carried the $0.15/$0.60 figure with a cited OpenRouter source), (3) carry forward previously-verified peak/off-peak rows and label them "carried forward from <date>" in the Changelog rather than leaving them silently unverified.
 
 ## Cross-Provider Verification: OpenRouter API
 
@@ -166,7 +179,7 @@ PYEOF
 - **DeepSeek CloudFront 403**: Use `api-docs.deepseek.com` not `platform.deepseek.com`.
 - **OpenAI page generator changed**: Was Next.js (had `__NEXT_DATA__`), now Astro (v6.0.4). The extraction pattern changed completely.
 - **OpenRouter prices ≠ official prices**: Use for verification/discovery, not as primary source.
-- **Introductory pricing**: Anthropic sometimes offers time-limited introductory prices (e.g., Sonnet 5 at $2/$10 through Aug 2026). Note these with `*` footnotes in the wiki.
+- **Introductory pricing**: Anthropic sometimes offers time-limited introductory prices (e.g., Sonnet 5 at $2/$10 through Aug 2026). Note these with `*` footnotes in the wiki. **Check expiry dates every run** — an expired promo is a silent wrong-price bug: as of 2026-11-02 Sonnet 5's $2/$10 had lapsed 8/31 and had to be corrected to $3/$15, while new promos (Gemini 4 Argon until 11/30, 3.8/3.7/3.6 Flash until 12/31, GPT-5.6 until ≥11/21) needed adding. Keep the footnote block dated ("active promos as of YYYY-MM-DD").
 - **Batch pricing section**: When updating prices, also update batch pricing, cache pricing, tier analysis, and cost comparison sections — not just the main table.
 
 ## Cross-Check Sources
@@ -175,3 +188,10 @@ PYEOF
 - **Provider docs pages**: More reliable than consumer pricing pages for model details
 - **Provider blog posts**: Announcements often include pricing details before the pricing page updates
 - **Wiki page**: `comparisons/llm-api-pricing.md` — the target page to update (but NOT the source of truth)
+
+## Cron-mode notes (llm-pricing-monitor job)
+
+- `execute_code` is BLOCKED in cron mode — build the log.md prepend with `write_file` to `/tmp/log_entry.md` then `cat /tmp/log_entry.md wiki/log.md > /tmp/log_merged.md && mv ...` in terminal.
+- The working tree usually carries other jobs' uncommitted changes (skills edits etc.). Use **scoped `git add <your 5 files>`**, never blanket `git add wiki/`. If `git pull --rebase` refuses due to unstaged changes, `git stash && git pull --rebase && git push && git stash pop`.
+- Verification gates: pre-commit runs index validator + tag taxonomy; commit message format `wiki: llm-pricing-monitor — <summary>` (single quotes if it contains `&`).
+- Log entry / Changelog must state per-provider which rows changed vs "verified unchanged", and label any carried-forward (unverifiable this run) rows with their original verification date.

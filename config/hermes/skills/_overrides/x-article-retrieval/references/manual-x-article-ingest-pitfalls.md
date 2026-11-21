@@ -71,6 +71,14 @@ Full-coverage audit recipe:
 4. Cross-posted titles (blog + Substack + X Article) count as ONE article; prefer the fullest version.
 5. Bio drift: verify entity bio against the freshest RSS `<description>` (Osmani: Google Cloud AI Director → Anthropic/Claude Code MTS, visible in addyosmani.com feed description by Oct 2026).
 
-## 10. Bulk xurl→JSON batch pattern (avoids repeated pipe-approval gates)
+## Bulk xurl→JSON batch pattern (avoids repeated pipe-approval gates)
 
 `xurl ... | python3` triggers the security approval scanner on every call. For N articles: loop with redirect (`xurl --auth oauth2 "/2/tweets/$id?tweet.fields=article,created_at,public_metrics" > /tmp/dir/$id.json`), then ONE heredoc `python3 - <<'EOF'` converts all saved JSONs into raw markdown (invisible-unicode strip per pitfall #7, NFC-normalize, engagement frontmatter per pitfall #8). One approval for the whole batch.
+
+## Prior-art grep matrix before creating a concept page (2026-11-09, Makarevych evals article)
+
+Before writing a new concept page from an X Article, run one grep batch over `concepts/ entities/ queries/ comparisons/` for the article's **distinctive named claims** — proper nouns of papers/audits/metrics (e.g. `GAUGE`, `Verification Horizon`, `RoPoLL`, `AgentLens`, `GSM1k`, `rank two`) — not just the article's general topic. General-topic greps (`grep -i eval`) hit hundreds of pages and tell you nothing; named-claim greps reveal which claims are ORIGINAL to the wiki (only the raw article matched → dedicated section + a "Relation to existing wiki pages" note naming arXiv IDs) vs already covered (→ update-in-place in the existing page instead of duplicating). This operationalizes the AGENTS.md 既存ページ優先 rule. In the evals ingest it correctly flagged verification-horizon and GAUGE as new-to-wiki while routing kappa/judge-panel content as a dated update section into `concepts/evaluation/llm-as-judge.md`.
+
+## Author entity page: bio from the metadata call, no extra research
+
+The two-call metadata response's `includes.users[].description` is sufficient for a first-time author entity page's bio — quote it verbatim with source `https://x.com/<handle>`, build the rest of the page from the article content + engagement metrics. Don't block on web research for first-pass author bios; later enrichment sessions can deepen. Keep `related:`/`[[wikilinks]]` pointing to the new concept page so the 2-wikilink minimum is met.

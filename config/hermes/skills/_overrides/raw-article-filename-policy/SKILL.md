@@ -98,6 +98,7 @@ For X Article and X Note Tweet raw articles:
 4. **RSS feed** — `<pubDate>` or `<dc:date>` in the feed XML
 5. **Search engine snippet** — Google/Bing search results often show publication dates
 6. **Social media cross-post** — Check the X/Twitter or LinkedIn post announcing the article. For LinkedIn posts specifically, extract `datePublished` from JSON-LD `SocialMediaPosting` — see `references/linkedin-date-extraction.md`.
+7. **Author RSS feeds (best for bulk audits)** — When backfilling an author's output over a date range, fetch the blog's `feed.xml`/`rss.xml` and the Substack's `/feed` — pubDate per item is authoritative and one fetch covers the period. Full recipe: `wiki-entity-enrichment-from-article/references/bulk-author-period-backfill.md`.
 
 ### arXiv Papers
 

@@ -104,6 +104,69 @@ The raw-file byte count should be ≥ 5KB for a substantial article; anything un
 2KB is a near-certain extraction failure — re-extract before saving to
 `wiki/raw/articles/`.
 
+## 6. Substack newsletter triage: fetch the post body from the CUSTOM DOMAIN
+
+Validated 2026-11-11 (newsletter-triage, 5 newsletters / 74 candidates). When a Substack
+newsletter checkpoint's links are all email chrome (`submitLike`, `action=post-comment`,
+`action=share`, `restack-comment`, `email-read-in-app`, `@author`, `subscribe-widget`,
+`redirect/2/eyJ...` OAuth, `redirect/<uuid>`), do NOT resolve any token URL. The post slug is
+already in the checkpoint's Link 7/8 URLs (`open.substack.com/pub/<pub>/p/<slug>?utm_...`) —
+swap the host to the publication's custom domain and curl once:
+
+```
+https://www.lennysnewsletter.com/p/<slug>
+https://www.bensbites.com/p/<slug>
+https://www.hyperdimensional.co/p/<slug>
+```
+
+Batch 3-4 publications in one script (see §2: `write_file` → `terminal python3`):
+
+```python
+import subprocess, re
+r = subprocess.run(["curl","-sL","--max-time","25",url], capture_output=True, text=True)
+art = re.search(r'<article[^>]*>(.*?)</article>', r.stdout, re.DOTALL)
+ps = [re.sub(r'<[^>]+>','',p).strip()
+      for p in re.findall(r'<p[^>]*>(.*?)</p>', art.group(1), re.DOTALL)]
+body = " ".join(p for p in ps if len(p) > 40)
+```
+
+- These Substack pages have **no `<title>` tag** — use the checkpoint `source_name` (for
+  single-article Substack emails it IS the article title) plus the extracted `<article>` text.
+- Custom-domain 404 / "Page not found" is itself a triage verdict (nothing substantive at that
+  slug — e.g. `aiweekly.co` Hundred-Page RL book promo = chrome only) → reference/skip, don't
+  chase tokens.
+- "∙ Paid" posts still render 30+ free-preview `<p>` paragraphs with headline numbers. **Read the
+  free preview before accepting an inbox summary's `importance: low` on a data-bearing essay.**
+  Lenny's "State of the tech job market: late 2026" was inbox-classified "peripheral/perishable
+  skip"; the preview's PM-openings +75%, +56% vs engineers +43%, PM hiring share 16%→21% made it a
+  ★★★★☆ take.
+- Beehiiv counterpart: if the inbox pre-triage summary already lists `resolved_links` +
+  `existing_coverage`, do NOT re-resolve the ~20 `link.mail.beehiiv.com/v2/c/` URLs — trust it for
+  topic ID, verify coverage on disk (saved ~17 `web_extract` calls).
+
+## 7. Coverage ladder for a model/product release (triage-side)
+
+grep across `entities/ concepts/ events/`, then:
+
+1. Page exists **with the article's specific numbers** → `reference` (sibling pipeline won).
+2. Only **sibling generations** exist (`muse-spark`/`muse-glimmer`/`meta-muse-spark` present,
+   `muse-ember` absent) → **take**. Family-name grep hits are false-positive coverage.
+3. `log.md` hit **+ tag already minted in `wiki/SCHEMA.md`** (e.g. `muse-ember` minted 2026-11-10)
+   but **zero page bodies anywhere** → strongest take signal: a prior run registered the taxonomy
+   and never made the page. Check `grep -n "<kw>" wiki/SCHEMA.md` alongside log.md.
+4. Zero hits → take only if a raw article body exists (blog-ingest's
+   `raw/articles/<blog>--<date>--<slug>--<hash>.md` often carries the full body when the
+   newsletter's own raw is chrome-only).
+
+Honour an "already ingested by sibling pipeline" claim only after grepping the section heading
+**and** its figures (`grep -n "5.2" concepts/claude/fable-5.md` → FrontierCode 2.0 49.1%;
+`grep "8tx" entities/google-tpu.md` → dedicated Nov 9 section). A fresh `updated:` date alone never
+justifies downgrading a lead story to `reference`.
+
+`archive_triage.py <pipeline> --keep-reference` prints a nested-looking
+`/opt/data/.hermes/home/ai-topics/wiki/raw/archived/...` path — it is a symlink;
+`readlink -f` → `/opt/data/ai-topics`. Commit the archive file + `archive_index.json` as-is.
+
 ## 5. Cross-referencing before wiki work
 
 The wiki-ingest pipelines (newsletter-wiki-ingest ~07:40, blog-wiki-ingest ~07:50,

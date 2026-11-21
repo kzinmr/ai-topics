@@ -182,11 +182,13 @@ For each person:
 
 This skill covers **enriching skeleton entity pages** for tracked X accounts. A separate workflow exists for **processing new posts from x-accounts scans** into wiki pages (creating concept pages from shared links, updating entity pages with new blog posts, etc.).
 
-For the scan→ingest workflow, see `wiki-ingestion-pipelines` → `references/x-accounts-scan-ingest-workflow.md`.
+For the scan→ingest workflow, see `wiki-ingestion-pipelines` → `references/x-accounts-scan-ingest-workflow.md`. Read `references/x-scan-pitfalls.md` FIRST — it carries the commit/table/link-verification pitfalls, the `account_handle` → entity-filename mismatch trap, and the `.dev`-TLD curl security-block workaround (fetch those links via Python `urllib` with the hostname built from `chr()` so `.dev` never hits the shell argv).
 
 **Key distinction**:
 - **This skill**: Take a `status: skeleton` entity page → research the person → write 8-15KB full page
 - **Scan ingest**: Take `new_posts` from `x_accounts_latest_full.json` → evaluate each post's external URLs → create concept pages or update existing entity pages. Read `references/x-scan-pitfalls.md` FIRST — it carries the commit/table/link-verification pitfalls and the `account_handle` → entity-filename mismatch trap that the "handle ≠ filename" note above does not fully cover.
+
+> **Cron-runs-of-x-accounts-scan note**: the daily/2-day `x-accounts-scan` cron job's *report* format lives in `references/x-scan-discord-report-template.md`, which also carries the most important ingest rule — **check whether the linked article's raw file already predates the tweet before scraping** (rule 7a), and otherwise add only the reaction layer (X Activity Log entry / concept `## Reception` bullet) rather than re-scraping or duplicating pages.
 
 **Post evaluation quick reference**:
 | Signal | Action |

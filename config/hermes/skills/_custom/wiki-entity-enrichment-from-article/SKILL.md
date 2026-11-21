@@ -3,7 +3,7 @@ name: wiki-entity-enrichment-from-article
 description: Create or enrich wiki entity and concept pages from raw articles, multi-source web research, newsletters, and tool/project investigations. Supports both article-driven enrichment and from-scratch entity page creation via website + docs + X/Twitter + GitHub/NPM research.
 trigger: >-
   When asked to explain an article, create concept pages from raw content, convert
-  newsletter articles into wiki entries (see references/newsletter-take-body-fetch-pattern.md),
+  newsletter articles into wiki entries (see references/newsletter-take-body-fetch-pattern.md; backfill: references/bulk-author-period-backfill.md),
   ingest a lecture/workshop transcript (see references/transcript-ingestion.md), create
   entity pages from scratch: tool/project via multi-source web research, AI model from
   arXiv + project + HF sources, status:skeleton, batch company, batch person from X

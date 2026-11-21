@@ -14,8 +14,8 @@ All pipelines follow the same pattern:
 fetch external content → checkpoint → triage → wiki-ingest (create/update pages) → commit
 ```
 
-> X-scan: `references/x-accounts-scan-cron.md` + `references/x-accounts-scan-addenda-2026-11-01.md`. Blog ingest frontmatter pitfalls + budget ordering: `references/blog-ingest-session-notes-2026-10-23.md`. Blog triage parse-failure recovery + sibling-pipeline git hygiene: `references/blog-wiki-ingest-checkpoint-recovery-2026-10-19.md`.
-> 📖 Blog-ingest notes: `references/blog-ingest-session-notes-2026-10-28.md` `references/blog-ingest-page-heavy-budget-ordering.md` (read when editing entity/concept pages), `references/pre-commit-wikilink-verification.md` (run before `git add wiki/` — hooks don't verify `[[wikilinks]]`), `references/log-prepend-header-repair.md`. The standalone `newsletter-wiki-ingest` skill was consolidated into this umbrella on 2026-08-21.
+> X-scan: `references/x-accounts-scan-cron.md`, `references/blog-ingest-session-notes-2026-10-23.md`. Triage parse-failure + git hygiene: `blog-wiki-ingest-checkpoint-recovery-2026-10-19.md`, `blog-wiki-ingest-2026-11-02-patterns.md`, `newsletter-wiki-ingest-2026-11-08/10-patterns.md``newsletter-triage-unresolvable-urls.md`.
+> 📖 Blog-ingest notes: `references/blog-ingest-session-notes-2026-10-28.md` `references/blog-ingest-supplement-2026-11-14.md` (+11-17;+11-18:`blog-wiki-ingest-2026-11-18-patterns.md`) (read when editing pages), `references/pre-commit-wikilink-verification.md` (run before `git add wiki/` — hooks don't verify `[[wikilinks]]`), `references/log-prepend-dynamic-scan-2026-11-10.md` (patch-anchored prepend; execute_code blocked in cron). Merged: `newsletter-wiki-ingest`.
 
 ---
 
@@ -147,7 +147,7 @@ See `references/newsletter-wiki-ingest.md` for full Substack URL resolution patt
 - Commit early for large batches to prevent data loss from tool call limits
 - **blog-triage JSON is from yesterday at newsletter-triage time**: Newsletter-triage runs at 07:20 UTC, but blog-triage runs at 07:30 UTC. When checking `${HERMES_HOME}/cron/data/blog_ingest/triage_latest.json` for cross-pipeline dedup, that file is still from the previous day. For same-day dedup, check `raw/articles/` (sitemap-monitor at 06:00) and `log.md` instead. See `semantic-article-grouping` skill for full race condition documentation.
 
-See `references/newsletter-wiki-ingest.md` for full workflow details.
+See `references/newsletter-wiki-ingest-2026-11-03-recovery-patterns.md`.
 
 ---
 

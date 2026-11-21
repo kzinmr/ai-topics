@@ -7,6 +7,8 @@ blog-wiki-ingest cron fires with script output:
 ```
 
 ## Recovery (worked exactly as documented in semantic-article-grouping)
+
+Reconfirmed 2026-11-13 (run 20261113T100036Z) with the same `ok:false / failed to parse JSON response from blog-triage output` payload — checkpoint read via `read_file` was sufficient, run proceeded normally. Extended patterns that run (placeholder `body_excerpt` must be replaced by reading raws; modal chart-noise grep filter; rumor→confirmed two-beat event page; push without rebase when siblings leave the tree dirty): `references/blog-wiki-ingest-2026-11-13-patterns.md`.
 1. Do NOT re-run triage. Check `~/.hermes/cron/data/blog_ingest/triage_latest.json` — if `triage_timestamp` and `checkpoint_run_id` match today's blog_ingest `latest.json` run, the triage agent saved the checkpoint before its response-render failure. Read it directly.
 2. Verify decision counts (`take`/`reference`/`skip`) via `python3 -c` with hardcoded path (no pipes — `tirith:pipe_to_interpreter` blocks `cat | python3`).
 3. Cross-check `git log --oneline -3` that the triage commit (`wiki: blog-triage <date>`) exists and no prior wiki-ingest consumed this run_id.
