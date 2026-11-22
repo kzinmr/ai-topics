@@ -1,7 +1,7 @@
 ---
 title: "Unresolved Leads — Newsletter Coverage Pending Primary Sources"
 created: 2026-11-01
-updated: 2026-11-21
+updated: 2026-11-22
 type: query
 tags:
   - newsletter
@@ -13,6 +13,8 @@ sources:
   - raw/newsletters/2026-10-31-two-ai-labs-say-they-refuted-eth.md
   - raw/newsletters/2026-11-02-who-is-hacking-europe-s-supermarket-freezers.md
   - raw/newsletters/2026-11-08-treat-it-like-a-disaster-recovery-test-neo4j-s-philip-rathle-on-surviving-the-lo.md
+  - raw/newsletters/2026-11-20-anthropic-made-history-then-got-a-reality-check.md
+  - raw/newsletters/2026-11-21-anthropic-just-had-the-biggest-ipo-ever-how-long-will-its-lead-last.md
 ---
 
 # Unresolved Leads — Newsletter Coverage Pending Primary Sources
@@ -28,6 +30,19 @@ Entries are ordered newest first. When a lead is resolved, move its content to t
 owning concept/event page and mark the row `resolved` with a date rather than deleting it.
 
 ## Open leads
+
+### 2026-11-22 — "Anthropic just had the biggest IPO ever. How long will its lead last?" (beehiiv uid=932)
+
+| Field | Value |
+|---|---|
+| Subject | `Anthropic just had the biggest IPO ever. How long will its lead last?` |
+| Sent | 2026-11-21 (received via newsletter-ingest run `20261122T101113Z`) |
+| Raw | `raw/newsletters/2026-11-21-anthropic-just-had-the-biggest-ipo-ever-how-long-will-its-lead-last.md` (18 opaque `link.mail.beehiiv.com/v2/c/` trackers, no body) |
+| Body access | **Unreachable.** Sampled Link 1-4 v2/c/ tracking links all returned HTTP 403 + Cloudflare `Just a moment...` challenge pages (~6,853 bytes each, zero article content). Per the Cloudflare-challenge rule, no retry — the challenge is not solvable without an email-session context. |
+| Triage decision | reference → this page (newsletter-wiki-ingest 2026-11-22; 0 takes / 1 reference / 2 batch-skips) |
+| Topic | Anthropic IPO record + skeptical counterpoint on durability of its lead — the **third** same-topic beehiiv newsletter in a row after uid=930 (The Signal, "Anthropic's IPO explained", body recovered) and uid=931 ("Anthropic made history, then got a reality check"). |
+| What would resolve it | The publication's public beehiiv archive, or a future run where the v2/c/ tokens resolve (some uid batches resolve 15-24h after send). |
+| Coverage status | **Effectively covered without the body.** The only facts inferable from the subject are (a) the record Anthropic IPO and (b) skepticism that its lead is durable — both already covered in depth by [[events/anthropic-nasdaq-debut-2026]] ($83 pricing, $81.3B–$107.3B raised, ~$1.5T valuation, first-day $111.53 peak, RSP "met" flip, NRR ~900%, $120.5B SpaceX compute, second-day drop / ~$4T AI market-cap loss) plus [[events/anthropic-ipo-roadshow-2026]] and [[concepts/ai-bubble-economics]] (incl. its Gary Marcus / Ed Zitron / "No Bailout for the AI Bubble" contestation section). Per the no-subject-only-update rule, no content was fabricated from the subject line; the lead is held here in case the archive surfaces unique numbers. |
 
 ### 2026-11-21 — "Anthropic made history, then got a reality check" (beehiiv uid=931)
 

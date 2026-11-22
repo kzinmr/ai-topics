@@ -2,6 +2,12 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-11-22] newsletter-wiki-ingest | run 20261122T101113Z - 1 reference / 2 skips / 0 takes
+- Pre-run reported a JSON parse failure on the newsletter-triage wrapper, but the checkpoint `triage_latest.json` (run 20261122T101113Z) parsed cleanly with 3 decisions, so this ingest ran off the checkpoint directly.
+- Batch: one beehiiv newsletter (uid=932, sent 2026-11-21, 18 links), subject "Anthropic just had the biggest IPO ever. How long will its lead last?". All sampled v2/c/ tracking links returned HTTP 403 + Cloudflare "Just a moment..." challenge (0 body); no inbox pre-triage summary for this run. Body-level assessment impossible, so no take.
+- `queries/unresolved-newsletter-leads.md` - added a new open lead (newest-first) above the uid=931 entry recording the third consecutive same-topic beehiiv newsletter (after uid=930 The Signal and uid=931). Coverage status: effectively covered without the body by events/anthropic-nasdaq-debut-2026, events/anthropic-ipo-roadshow-2026 and concepts/ai-bubble-economics; per the no-subject-only-update rule nothing was fabricated from the subject line. Frontmatter: bumped updated to 2026-11-22, added the Nov 20/21 raws to sources.
+- 2 skips (16-link v2/c/ batch + beehiivstatus pixel) archived. 0 take pages created.
+
 ## [2026-11-22] blog-wiki-ingest | run 20261122T100039Z — apply deferred reference (nesbitt Nov 21 roundup)
 
 Triage batch 20261122T100039Z (take 0 / reference 1 / skip 13) had its 1 reference deferred by the triage-reconstruction run (commit 60255f63), which noted it would only archive the reference and not edit the wiki. This ingest run applied it.
