@@ -1,3 +1,11 @@
+# [2026-11-22] active-crawl — 2 new pages + 1 enrichment (inference-data trust cluster; Seth consciousness essay)
+
+- **Created** `concepts/dragos-inference-canary-study.md` — Dragos/HD Moore canary-token audit: ~2M seeded prompts Jul–Nov 2026; 3 provider compromises (front-door request copying, ARTEX LLM-pentest user agents `artex-agent`/`artex-judge-r121`), marketplace resellers reading prompts via plain logging, ZDR violations (US→China flows, Feishu-chat resurrection at day 24), traceroute-for-inference method, defender playbook (self-host pricing ladder, first-tier direct, seed your own canaries). confidence: medium (single first-party source). Raw: `raw/articles/2026-11-19_dragos_ai-supply-chain-canary-tokens.md`
+- **Created** `concepts/zero-data-retention.md` — synthesis concept page for ZDR (mentioned in 10+ pages, no home page): request-level semantics vs. chain reality; evidence table (Dragos, Fireworks/Notion batch-dataset side door, Together AI ZDR-default remediation); attestation gap, semantic gaps, chain opacity.
+- **Enriched** `concepts/ai-consciousness-debate.md` — new "Anil Seth Case" section from the Berggruen Prize essay "The Mythology of Conscious AI" (Noema; HN 72 Nov 22): bias taxonomy (anthropocentrism/exceptionalism/anthropomorphism, "hallucinate"→"confabulate", exponential-curve distortion, techno-rapture), four arguments against computational functionalism (brains-aren't-computers, other games in town, life matters, simulation≠instantiation), conscious-seeming harms. Raw: `raw/articles/2026-01-14_noema_mythology-of-conscious-ai.md`
+- **Research note**: `raw/articles/2026-11-22_trending-topics-research.md`. Same-day dedup: Together AI security event already ingested by blog-ingest 5cbae342 (skipped). Deferred: OpenRouter data-processing incidents (HN 159, scrape pending), Better Data Center Project fuel breakdown (404 — find correct URL), Pandex EU agent law (verify substance), token-fraud (thin), Anthropic IPO bust day-2 (paywalled; event page exists).
+- SCHEMA: minted `prompt-leakage`, `zero-data-retention`, `canary-token` on Infrastructure line. Index: 2 new concept entries; counts 2382→2384. Checks: wikilinks + tags verified clean pre-commit.
+
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._

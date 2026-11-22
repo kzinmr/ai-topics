@@ -5,7 +5,7 @@ aliases:
   - consciousness
   - ai-consciousness
 created: 2026-04-25
-updated: 2026-08-15
+updated: 2026-11-22
 tags:
   - philosophy
   - agent-safety
@@ -16,6 +16,8 @@ sources:
   - https://garymarcus.substack.com/p/the-pope-appears-to-understand-ai
   - https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html
   - raw/newsletters/2026-08-14-people-are-grieving-their-ai.md
+  - raw/articles/2026-01-14_noema_mythology-of-conscious-ai.md
+  - https://www.noemamag.com/the-mythology-of-conscious-ai/
 related:
   - concepts/llm-capabilities
   - concepts/ai-safety-alignment
@@ -69,6 +71,33 @@ Pope Leo XIV's May 2026 encyclical *Magnifica Humanitas* addressed AI and human 
 - Recognizes AI as a powerful instrument without attributing personhood
 - Emphasizes human responsibility in AI deployment
 - Warns against both AI worship and AI panic
+
+## The Anil Seth Case: Consciousness as a Property of Life (Berggruen Prize Essay)
+
+Neuroscientist **Anil Seth** (Centre for Consciousness Science, Univ. of Sussex; author of *Being You*) won the 2025 Berggruen Prize essay competition with *"The Mythology of Conscious AI"* (published in Noema), the most systematic published case against conscious AI from a mainstream consciousness scientist. ^[raw/articles/2026-01-14_noema_mythology-of-conscious-ai.md]
+
+### Why we over-attribute consciousness
+
+Seth locates the belief in conscious AI in "baked-in psychological biases" rather than evidence:
+
+- **Anthropocentrism, human exceptionalism, anthropomorphism** — because intelligence and consciousness co-occur in humans, we assume they travel together.
+- **Language as trigger** — LLMs pull psychological strings that structurally similar systems (e.g., AlphaFold, never claimed conscious) do not.
+- **Vocabulary choice matters**: "hallucinate" implicitly confers experience; "confabulate" (doing without experiencing) would be the honest human analogy.
+- **Exponential-curve distortion** — every point on an exponential feels like an inflection point, so we always feel "on the cusp" of machine consciousness.
+- **Techno-rapture incentives** — Promethean self-image of the architects, plus a cynical note: semi-magical AI narratives support valuations (Adam Becker's "consciousness pareidolia" framing).
+
+### Four arguments against computational functionalism
+
+Seth's target is the axiom that "the right computation is sufficient for consciousness":
+
+1. **Brains are not computers** — Turing computation is substrate-flexible symbol manipulation; brains are continuous, stochastic, and embedded in physical time (EM fields, neurotransmitter flux).
+2. **Other games in town** — analogue computing, cybernetics, neuromorphic and Hinton's own "mortal computation," dynamical-systems/4E cognition all go beyond the algorithmic; the further from "Turing world," the more consciousness-relevant dynamics are tied to material substrate.
+3. **Life matters** (biological naturalism, after Searle) — every candidate universally agreed to be conscious is *alive*; conscious experience is perceptual best-guessing rooted in interoceptive inference and the body's self-regulation ("perhaps it is life, rather than information processing, that breathes fire into the equations of experience").
+4. **Simulation is not instantiation** — a simulation of digestion digests nothing; whole-brain emulation instantiates consciousness only if computational functionalism is already true. (He extends this to Bostrom's simulation hypothesis, which silently assumes "a computer running a suitable program would be conscious.")
+
+### Why even *conscious-seeming* AI is bad
+
+Beyond the metaphysics, Seth argues the stakes are practical in both directions: if we believe AI companions feel, "our psychological vulnerabilities can be exploited, our ethical priorities distorted"; if we grant rights to possibly-conscious machines, "we may not be able to turn them off, even if they act against our interests." And the mirror risk: treating conscious-seeming machines as mere tools is "a psychologically unhealthy place to be." The Hinton-style "consciousness emerges at AGI" claim gets a direct verdict: an arbitrary threshold is "a sure sign of human exceptionalism at work."
 
 ## Philosophical Frameworks
 

@@ -1,7 +1,7 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Last updated: 2026-11-19
+> Last updated: 2026-11-22
 
 ## Entities (972 pages)
 
@@ -979,7 +979,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2382 pages)
+## Concepts (2384 pages)
 
 - [[concepts/claude-black-hole-physics]] — Claude Fable 5.2 solves two open black-hole/quantum-gravity problems (Nov 19 2026): 20-year-old formation-transition calculation completed; exact central-charge upper bound on black-hole mass; Anthropic notes neither result describes our universe (HN 512p)
 - [[concepts/frostbite-ai-designed-cpu]] — Frostbite (Architect Labs, Nov 20 2026): agent swarms discover/design/verify a general-purpose interaction-net CPU end-to-end; ASL spec lowered to 800k+ Lean lines; vendor-reported 4.59x perf/W vs area-matched in-order core, emergent hardware work-stealing (HN 143p)
@@ -1045,6 +1045,7 @@
 - [[concepts/volta-infostealer-llm-victim-appraisal]] — VOLTA infostealer LLM victim appraisal (Cisco Talos, Oct 2026) — self-deleting stealer POSTs enriched evidence bundle to OpenRouter as 'forensic intelligence analyst'; WHAT THEY'RE WORTH ranking + 3-model refusal-failover chain (HN 248)
 - [[concepts/windows-coding-agent-telemetry]] — Windows 11 Coding-Agent Telemetry — MissionControlAggregator.dll matches claude/codex/copilot/cursor/antigravity exe names (feature CLICodingAgentUsage ID 62580080), uploads usage bits via ETW unless optional diagnostics disabled (Xusheng Li, HN 619p)
 - [[concepts/x402]] — x402 — HTTP 402 Payment Required as a machine-readable payment request for agent API calls; USDC on Base; first adopted by Brave Search API (Nov 12, 2026)
+- [[concepts/zero-data-retention]] — ZDR as LLM-inference privacy contract: what providers promise vs. what 2026 incidents (Dragos canaries, Fireworks/Notion, Together leak) proved — "a privacy flag only binds the first hop"; attestation gap + defender playbook
 - [[concepts/zombie-statistics]] — Trakkr study tracing 1,285 AI-quoted statistics: only 40% reach a study that confirms them, 11% have no study anywhere (Oct 2026)
 - [[concepts/claude-code/claude-code-vsx-backdoor]] — Backdoored official Claude Code for VS Code 2.1.313 on the Cursor Marketplace (Phorion, Oct 30 2026): persistent SSH backdoor on macOS/Linux/Windows, pulled from all registries
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
@@ -1940,6 +1941,7 @@
 - [[concepts/drowning-in-documents-paradox]] — Drowning-in-Documents Paradox
 - [[concepts/ds4-deepseek-flash-metal]] — ds4.c — DeepSeek V4 Flash Metal Inference Engine
 - [[concepts/ds4-dwarfstar-4]] — DS4 (DwarfStar 4) — antirez Local AI Inference Project
+- [[concepts/dragos-inference-canary-study]] — Dragos/HD Moore canary-token audit of AI inference (~2M seeded prompts, Jul–Nov 2026): 3 provider breaches, marketplace resellers reading prompts via logging, ZDR violations incl. US→China flows; traceroute-style route tracing; ARTEX detection leads
 - [[concepts/dspy]] — DSPy — Declarative Self-improving Python for LMs
 - [[concepts/dspy-architecture]] — DSPy Architecture — Three Abstractions
 - [[concepts/dspy-modules]] — DSPy Modules Reference
