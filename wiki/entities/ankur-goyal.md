@@ -4,7 +4,7 @@ tags:
   - person
   - evaluation
 created: 2026-04-24
-updated: 2026-11-14
+updated: 2026-11-22
 type: entity
 sources:
   - raw/articles/2025-09-05_ben-hylak_thoughts-on-evals.md
@@ -156,6 +156,16 @@ storage and fast startup across hundreds of millions of projects, explicitly mot
 incidents (OpenAI×Hugging Face, Anthropic evals) and NIST's agent standards work. Fits his
 agent-observability / eval-loop positions above. See [[concepts/agent-sandbox-patterns]] (case study
 section) and `raw/articles/2026-11-14_frontier.replit_sandbox-engine-microvms-part-1.md`.
+
+### Nov 22, 2026 — Resurfaced the WinFS Wikipedia article
+
+Goyal shared the Wikipedia entry for **WinFS**
+([en.wikipedia.org/wiki/WinFS](https://en.wikipedia.org/wiki/WinFS)), Microsoft's cancelled
+Longhorn-era relational/semantic file system that stored every artifact as typed, linked
+structured data rather than opaque blobs. No commentary accompanied the link, but it fits the
+same "data-model-first" instinct behind his eval-loop work and the recurring
+[[concepts/graph-db-overengineering-rag]] thread — WinFS is the historical precedent for
+treating unstructured content as a queryable graph of typed relations.
 
 ## Projects
 

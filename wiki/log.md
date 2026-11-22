@@ -44,6 +44,12 @@ _Log of all wiki changes. Newest entries at top._
 dingcad, pallets, placeiq — many likely org/tool stubs needing the same
 GitHub/registry-first research pattern used here).
 
+## [2026-11-22 22:30 UTC] x-accounts-scan | 11/84 accounts (budget 12), 1 new post — Ankur Goyal WinFS link
+
+- **Scan**: cursor 22 -> 33, 11 accounts scanned (73 skipped on request budget, not dead handles), 12 API requests, 0 errors. Dedup cache 258 entries.
+- **NEW**: `@ankrgyl` (Ankur Goyal, Braintrust) linked the WinFS Wikipedia article — no commentary, reaction-layer only.
+- **UPDATE**: `entities/ankur-goyal.md` — added Nov 22 WinFS entry to Recent X Activity, framed against [[concepts/graph-db-overengineering-rag]]. No scrape (Wikipedia reference, not an article).
+
 ## [2026-11-22 18:35 UTC] dreaming wiki-ingest | recovered render-fail; 1 take (Cartesia H-Net), refs verified, ~70 skips archived
 
 - **Recovery**: dreaming-group (18:10) completed Pattern E analysis (checkpoint total_articles=0, recent_raw=279) but failed JSON render (Pitfall #12). Read 5450-line output file tail; extracted triage verdict.
