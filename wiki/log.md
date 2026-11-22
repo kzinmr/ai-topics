@@ -3362,3 +3362,7 @@ research-grade pages from genuinely uncovered material:
 - Tag violations: 0 real per `tag_audit.py` (report's "1" is generator artifact).
 - `llm-wiki` skill skip = name collision (research/ vs _overrides/), not absence.
 - Index: replaced 2 dangling 2026-11-13 report lines with today's report + annotations + the previously-unindexed skeleton-enrich-stub-action query.
+
+# Hot post log
+
+- 2026-11-22 09:30 JST morning hot-post: Inkling 2 Mini looped transformer (inbox/trending-reports/hot-post-2026-11-22-0930.md)
