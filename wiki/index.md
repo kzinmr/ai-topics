@@ -672,7 +672,7 @@
 - [[entities/openknowledge]] — OpenKnowledge — Open-source AI-native markdown editor with Claude/Codex/Cursor integration (373 HN pts)
 - [[entities/opencontext]] — OpenContext — open-source context runtime / context harness for AI agents (by Alloomi); temporal context, memory & retrieval, context correction, multi-platform connectivity, proactive scheduling; powers Alloomi AI's holistic-context layer (Aug 13)
 - [[entities/openpipe]] — OpenPipe
-- [[entities/openrouter]] — OpenRouter; Stripe acquisition for $7B+ finalized (Aug 16, Bloomberg) — AI inference payment rail consolidation
+- [[entities/openrouter]] — OpenRouter; Stripe acquisition for $7B+ finalized (Aug 16, Bloomberg) — AI inference payment rail consolidation; Nov 22: off-boarded 3 providers + stripped 125 endpoints from ZDR eligibility after the Dragos canary study
 - [[entities/overreacted-io]] — Dan Abramov; resilient component design principles (Writing Resilient Components), Lean Syntax Primer & formal verification exploration (2026)
 - [[entities/palantir]] — Palantir Technologies
 - [[entities/palo-alto-networks]] — Palo Alto Networks — Global cybersecurity leader; Prisma AIRS AI Security Platform; Portkey acquisition (Apr 2026) establishes AI Gateway control plane for agents

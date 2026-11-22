@@ -2,7 +2,7 @@
 title: OpenRouter
 type: entity
 created: 2026-05-02
-updated: 2026-08-17
+updated: 2026-11-22
 tags:
   - entity
   - platform
@@ -17,7 +17,8 @@ sources:
   - raw/articles/2025-12-01_openrouter-state-of-ai-2025.md
   - https://openrouter.ai/
   - raw/articles/minimaxir.com--2026-05-openrouter-hy3--e38b0f2d.md
-  - https://techcrunch.com/2026/08/16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b/
+  - https://techcrunch.com/2026-08-16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b/
+  - raw/articles/2026-11-22_openrouter_data-processing-incidents.md
 ---
 
 
@@ -107,7 +108,15 @@ Bloomberg reported on **2026-08-16** that **Stripe has finalized a deal to acqui
 - WSJ had reported acquisition talks in July 2026; Bloomberg confirmed the finalized deal on 8/16.
 - This is the largest consolidation in the AI gateway layer and signals payment processors treating model routing as core financial infrastructure. See also [[concepts/ai-gateway]] and [[concepts/multi-model-synthesis-strategies]].
 
-Source: [TechCrunch — Stripe will reportedly acquire OpenRouter for $7B+ (2026-08-16)](https://techcrunch.com/2026/08/16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b/)
+Source: [TechCrunch — Stripe will reportedly acquire OpenRouter for $7B+ (2026-08-16)](https://techcrunch.com/2026-08/16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b/)
+
+## Data Processing Incidents Response (November 2026)
+
+On Nov 22, 2026 — one day after the [[concepts/dragos-inference-canary-study]] disclosure (HN 159) and an "Ask HN: OpenRouter prompts to Minimax may have been read" — OpenRouter published an announcement stating the researchers' findings **showed no breach of OpenRouter itself**, but implicated specific downstream inference providers. Actions taken: **off-boarded three providers**, **removed 125 endpoints from ZDR eligibility** (researcher-flagged plus precautionary), notified potentially affected customers. Ongoing: adapting the canary-testing approach for continuous checks, technical verification of network paths for undisclosed third-party forwarding, and requiring validation before restoring ZDR eligibility. Explicitly credits the Dragos report: "providers that want to be on OpenRouter will need to meet it."
+
+Public provider incident list at time of writing: **Novita** (privacy notice re: MiniMax requests), **Phala** (November preliminary incident report), **Together AI** (June–July prompt-leak security event). This positions OpenRouter as a *policy enforcer* above the marketplace — a notable countermove to the study's indictment of router economics (see [[concepts/zero-data-retention]]).
+
+Source: raw/articles/2026-11-22_openrouter_data-processing-incidents.md
 
 ## Related
 
@@ -115,3 +124,4 @@ Source: [TechCrunch — Stripe will reportedly acquire OpenRouter for $7B+ (2026
 - [[concepts/openrouter-state-of-ai-2025]] — The landmark 100T token usage study
 - [[concepts/glass-slipper-effect]] — Model retention framework identified by the study
 - [[entities/malika-aubakirova]] — a16z researcher, co-author of the study
+- [[concepts/dragos-inference-canary-study]] — The canary audit that triggered the off-boarding actions

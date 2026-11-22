@@ -10,6 +10,9 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-11-22] active-crawl (follow-up) — OpenRouter data-processing incidents enrichment
+- **Enriched** `entities/openrouter.md` — new "Data Processing Incidents Response (Nov 2026)" section: no OpenRouter breach claimed; 3 providers off-boarded, 125 endpoints removed from ZDR eligibility, continuous canary-style checks + network-path verification underway; public provider list (Novita/Phala/Together). Positions OpenRouter as ZDR policy enforcer vs. the Dragos indictment of router economics. Raw: `raw/articles/2026-11-22_openrouter_data-processing-incidents.md` (server-rendered, full extraction).
+
 ## [2026-11-22] newsletter-wiki-ingest | run 20261122T101113Z - 1 reference / 2 skips / 0 takes
 - Pre-run reported a JSON parse failure on the newsletter-triage wrapper, but the checkpoint `triage_latest.json` (run 20261122T101113Z) parsed cleanly with 3 decisions, so this ingest ran off the checkpoint directly.
 - Batch: one beehiiv newsletter (uid=932, sent 2026-11-21, 18 links), subject "Anthropic just had the biggest IPO ever. How long will its lead last?". All sampled v2/c/ tracking links returned HTTP 403 + Cloudflare "Just a moment..." challenge (0 body); no inbox pre-triage summary for this run. Body-level assessment impossible, so no take.
