@@ -1,3 +1,10 @@
+# [2026-11-22] watchdog | auto-fix — 1 orphan index registration
+
+- **Fixed**: `concepts/security-and-governance/os-agent-capture-privacy` (created 2026-11-21 by trending-topics, commit 528cb33d8) was missing from `index.md` — wiki_health reported it as the sole orphan. Registered alphabetically in the security-and-governance hub block; Concepts header count 2384→2385 (verified against section line count).
+- **Verified clean (no action)**: index.md corruption checks all 0 (pipe/triple-bracket/line-number/space-prefix); `validate_index.py` exit 0; log.md single `# Wiki Log` header (buried at line 9 under active-crawl prepend — known benign pattern, count=1); no orphan `###` timestamps; live wiki_health: 0 skeleton entities, 0 tag/structural errors, 1 page-name warn (9-word slug — cosmetic).
+- **Pipeline**: 0 watchdog alerts at 12:00 UTC. Transient 503/connection errors today on `newsletter-ingest` (recovered: triage+wiki-ingest ran ok), `trending-topics` (output committed anyway), `jp-to-en-translation`, `llm-pricing-monitor` (Nov 16), `Weekly AI digest` (Nov 16, monthly — next run Dec 1). No action; re-run if digest errors persist at next schedule.
+- **Graph (from 11-20 weekly, adjudicated)**: 462 orphans / 2,627 broken links / 17 duplicate groups all adjudicated upstream — 0 merges, creation queue (huggingface, ben-clavie, claude-opus-4-7) tracked in weekly annotations. No new remediation due.
+
 # [2026-11-22] active-crawl — 2 new pages + 1 enrichment (inference-data trust cluster; Seth consciousness essay)
 
 - **Created** `concepts/dragos-inference-canary-study.md` — Dragos/HD Moore canary-token audit: ~2M seeded prompts Jul–Nov 2026; 3 provider compromises (front-door request copying, ARTEX LLM-pentest user agents `artex-agent`/`artex-judge-r121`), marketplace resellers reading prompts via plain logging, ZDR violations (US→China flows, Feishu-chat resurrection at day 24), traceroute-for-inference method, defender playbook (self-host pricing ladder, first-tier direct, seed your own canaries). confidence: medium (single first-party source). Raw: `raw/articles/2026-11-19_dragos_ai-supply-chain-canary-tokens.md`

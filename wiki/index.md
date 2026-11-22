@@ -979,7 +979,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2384 pages)
+## Concepts (2385 pages)
 
 - [[concepts/claude-black-hole-physics]] — Claude Fable 5.2 solves two open black-hole/quantum-gravity problems (Nov 19 2026): 20-year-old formation-transition calculation completed; exact central-charge upper bound on black-hole mass; Anthropic notes neither result describes our universe (HN 512p)
 - [[concepts/frostbite-ai-designed-cpu]] — Frostbite (Architect Labs, Nov 20 2026): agent swarms discover/design/verify a general-purpose interaction-net CPU end-to-end; ASL spec lowered to 800k+ Lean lines; vendor-reported 4.59x perf/W vs area-matched in-order core, emergent hardware work-stealing (HN 143p)
@@ -3057,6 +3057,7 @@
 - [[concepts/security-and-governance/ai-safety]] — AI Safety
 - [[concepts/security-and-governance/ai-safety-alignment-rlhf-scalable-oversight-interpretability]] — Ai Safety Alignment Rlhf Scalable Oversight Interpretability
 - [[concepts/security-and-governance/ai-safety-and-alignment]] — ai-safety-and-alignment
+- [[concepts/security-and-governance/os-agent-capture-privacy]] — OS-Agent Screen Capture vs App Privacy — OS-level AI agents vs app-layer privacy (Signal screenshot blocking, Recall precedent)
 - [[concepts/attack-surface-reduction-llm]] — Attack Surface Reduction with LLMs — Anthropic: Claude maps and gates unnecessary reachable code across 25 OSS projects (493 issues); shrink reachability instead of patching bugs, defensive complement to AI vuln discovery (Oct 2026)
 - [[concepts/security-and-governance/ai-safety-military-governance-claude]] — Ai Safety Military Governance Claude
 - [[concepts/security-and-governance/ai-text-watermarking]] — AI Text Watermarking — SynthID-Text-based model watermarking for EU AI Act; Anthropic ships on future Claude models; criticism: Gruber "perversion of writing" (Aug 16), Padolsey "weak watermarks appease weak law" (Aug 12)
