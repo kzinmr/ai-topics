@@ -1,0 +1,116 @@
+{
+  "archived_at": "2026-11-22T18:29:12.340252+00:00",
+  "triage_run_id": "20261122T180040Z",
+  "source": "dreaming",
+  "summary_ja": "Cartesia H-Net series is the sole take: created concepts/hierarchical-networks-hnet.md + enriched entities/cartesia.md. ~6 marginal references (core theses already in wiki), ~70 batch skips (marketing, non-AI, saturated Anthropic IPO bubble, consumed security/Frostbite). Pattern E filesystem scan (checkpoint total_articles=0, recent_raw=279).",
+  "decisions": [
+    {
+      "item_id": "dreaming-cartesia-hierarchical",
+      "source": "dreaming",
+      "source_name": "Cartesia/sitemap batch",
+      "title": "Hierarchical modeling",
+      "url": "https://www.cartesia.ai/blog/hierarchical-modeling",
+      "raw_path": "raw/articles/2026-11-21_cartesia_hierarchical-modeling.md",
+      "recommended_action": "reference",
+      "reason_ja": "**** H-Net overview post; enriched entities/cartesia.md Research section.",
+      "candidate_wiki_path": "entities/cartesia.md",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-seangoedecke-blunders",
+      "source": "dreaming",
+      "source_name": "Cartesia/sitemap batch",
+      "title": "To code well, avoid blunders",
+      "url": "https://www.seangoedecke.com",
+      "raw_path": null,
+      "recommended_action": "reference",
+      "reason_ja": "*** Coding blunders essay; marginal, seangoedecke entity accumulation only.",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Coding blunders essay; marginal, seangoedecke entity accumulation only."
+    },
+    {
+      "item_id": "dreaming-warp-factory",
+      "source": "dreaming",
+      "source_name": "Cartesia/sitemap batch",
+      "title": "Becoming a factory engineer (Warp)",
+      "url": "https://www.warp.dev",
+      "raw_path": null,
+      "recommended_action": "reference",
+      "reason_ja": "*** Software-factory role; covered by concepts/warp-factories.md.",
+      "candidate_wiki_path": "concepts/warp-factories.md",
+      "body_excerpt": "Software-factory role; covered by concepts/warp-factories.md."
+    },
+    {
+      "item_id": "dreaming-skip-0",
+      "source": "dreaming",
+      "source_name": "Cartesia/sitemap batch",
+      "title": "Cohere marketing batch (x7)",
+      "url": "https://cohere.com",
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "* Fujitsu partnership, LLM University - product marketing, no AI-research substance",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Fujitsu partnership, LLM University - product marketing, no AI-research substance"
+    },
+    {
+      "item_id": "dreaming-skip-2",
+      "source": "dreaming",
+      "source_name": "Cartesia/sitemap batch",
+      "title": "Cartesia non-research batch (x9)",
+      "url": "https://cartesia.ai",
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "* voice product posts (Sonic/Ink/Line), based, choosing-voice-ai-models - marketing",
+      "candidate_wiki_path": null,
+      "body_excerpt": "voice product posts (Sonic/Ink/Line), based, choosing-voice-ai-models - marketing"
+    },
+    {
+      "item_id": "dreaming-skip-4",
+      "source": "dreaming",
+      "source_name": "Cartesia/sitemap batch",
+      "title": "Pinecone batch (x3)",
+      "url": "https://www.pinecone.io",
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "* product posts; entities/pinecone.md enriched days ago",
+      "candidate_wiki_path": null,
+      "body_excerpt": "product posts; entities/pinecone.md enriched days ago"
+    },
+    {
+      "item_id": "dreaming-skip-6",
+      "source": "dreaming",
+      "source_name": "Cartesia/sitemap batch",
+      "title": "Frostbite AI-designed CPU",
+      "url": "https://example",
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "* already concepts/frostbite-ai-designed-cpu.md",
+      "candidate_wiki_path": null,
+      "body_excerpt": "already concepts/frostbite-ai-designed-cpu.md"
+    },
+    {
+      "item_id": "dreaming-skip-8",
+      "source": "dreaming",
+      "source_name": "Cartesia/sitemap batch",
+      "title": "Anthropic selloff / bubble trio",
+      "url": "https://theguardian.com",
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "* Guardian Nasdaq + Marcus stock-crash + Zitron bursting bubbles - covered by events/anthropic-nasdaq-debut-2026, ai-bubble-economics; no-subject-only rule",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Guardian Nasdaq + Marcus stock-crash + Zitron bursting bubbles - covered by events/anthropic-nasdaq-debut-2026, ai-bubble-economics; no-subject-only rule"
+    },
+    {
+      "item_id": "dreaming-skip-10",
+      "source": "dreaming",
+      "source_name": "Cartesia/sitemap batch",
+      "title": "jayd.ml LLMs crush OSS bugs",
+      "url": "https://jayd.ml",
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "* 1.2KB link-post, thin",
+      "candidate_wiki_path": null,
+      "body_excerpt": "1.2KB link-post, thin"
+    }
+  ]
+}

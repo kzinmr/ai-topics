@@ -3,6 +3,17 @@
 _Log of all wiki changes. Newest entries at top._
 
 
+## [2026-11-22 18:35 UTC] dreaming wiki-ingest | recovered render-fail; 1 take (Cartesia H-Net), refs verified, ~70 skips archived
+
+- **Recovery**: dreaming-group (18:10) completed Pattern E analysis (checkpoint total_articles=0, recent_raw=279) but failed JSON render (Pitfall #12). Read 5450-line output file tail; extracted triage verdict.
+- **Take (1)**: Created `concepts/hierarchical-networks-hnet.md` — Cartesia's Hierarchical Networks (H-Net) learned dynamic chunking replacing BPE tokenization. From Tokens to Bytes I+II (Oct 2026): 1.28x val / 1.83x Paloma / 2.06x OLMES compute efficiency; code median 2.04x in-dist, 3.10x OOD (5.37x Prolog); 2-stage byte H-Net matched SmolLM3-3B after ~1T vs ~11T tokens (>10x); DNA 5.8-7.1x; in-context tokenization; atomic-models multimodal thesis. Enriched `entities/cartesia.md` (was 45 lines) with H-Net Research section.
+- **Gap verified**: cartesia.md thin (45 lines), zero H-Net/hierarchical content wiki-wide. Prior triage (Nov 21, consumed by L96 dreaming wiki-ingest) confirmed no re-triage.
+- **Wikilink hygiene**: fixed pre-existing broken `[[concepts/state-space-models]]` -> `[[concepts/ssm-mamba]]`; dropped ghost `[[concepts/byte-latent-transformer]]` and `[[concepts/smollm3]]`; all 8 targets verified to exist.
+- **References (~6, marginal)**: doraisamy architect, seangoedecke blunders, warp factory, elevenlabs concurrency, harvey patent retrieval, hierarchical-modeling (folded into cartesia) — core theses already covered in warp-factories / ai-engineering-dekilling / elevenlabs / harvey.
+- **Skips (~70 batch)**: Cohere x7 + Cartesia non-research x9 + ElevenLabs x5 + Harvey x5 + Pinecone x3 marketing; Anthropic IPO/bubble trio (saturated, no-subject-only rule); Frostbite/Ankit (consumed); ClawDOS, jayd, Dreamcoder, non-AI rolling.
+- **Archive**: 19 candidates, 9 new archived, 10 dedup-skipped. `2026-11-22_20261122T180040Z.json`; total_archive_urls 3348.
+- **Adjacent-job dedup**: security cluster (Together/OpenRouter/Dragos) + Anthropic IPO handled today by active-crawl/blog-wiki-ingest/newsletter-wiki-ingest — not re-processed.
+
 
 ## [2026-11-22] health-fix | auto-fix pass — clean run, log hygiene
 
@@ -108,7 +119,6 @@ Recovered the 18:16 triage JSON (newer than upstream's 18:17 archive-only commit
 - Signal restricting AI agents — fully documented in `concepts/security-and-governance/os-agent-capture-privacy.md` (iOS 27/Android/macOS countermeasures, two OS-vendor demands, accessibility-permission skeleton key); triage's guessed `concepts/website-blocking-of-ai-agents.md` was the wrong page.
 
 **Archive:** upstream's `2026-11-21_20261121T180006Z.json` (18 decisions) already committed; downstream re-run clobbered it to 5 → restored from HEAD (Pitfall #22). No new URLs; archive_index stays 3325.
-
 
 
 ## [2026-11-21 18:10 UTC] dreaming group | Pattern E filesystem triage (checkpoint total_articles=0, recent_raw=292)

@@ -1216,6 +1216,7 @@
 - [[concepts/harness-engineering/harness-engineering-101]] — Isuru Maduranga's 16-chapter open-source book: one stateless JSON array + 16 minimal patches (caching, subagents-as-context-forks, steering, guardrails, MCP/skills/hooks), each taught as failure → patch → cost, with a runnable ~300-line toy harness (v1.1 Oct 2026)
  — Agentic Workflows — Developer workflows under harness engineering (sub-pages hub)
 - [[concepts/harness-engineering/system-architecture/_index]] — System Architecture — System design under harness engineering (sub-pages hub)
+- [[concepts/hierarchical-networks-hnet]] — Hierarchical Networks (H-Net) — Cartesia's end-to-end learned-chunking architecture replacing BPE tokenization; 1.28× (val)–2.06× (downstream) compute efficiency, >10× data vs SmolLM3, 5.8–7.1× on DNA, in-context tokenization (Oct 2026)
 - [[concepts/inference-provisioned-throughput]] — Provisioned Throughput — reserved inference capacity for open-weight models with token pricing and 99% SLA (Together AI, July 2026)
 - [[concepts/jepa-world-models]] — JEPA World Models — Joint Embedding Predictive Architecture for world models (LeCun, LeMario)
 - [[concepts/jepa-planning-methods]] — JEPA Planning Methods — Alchaer 600-experiment study comparing planning strategies over JEPA world models (Nov 2026)
