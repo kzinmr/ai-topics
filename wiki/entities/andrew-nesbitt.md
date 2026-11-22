@@ -1,10 +1,9 @@
 ---
 title: "Andrew Nesbitt"
 tags: [person]
-updated: 2026-11-15
-sources: [raw/articles/nesbitt.io--2026-08-04-brew-install-actions-checkout-html--7762f317.md, raw/articles/nesbitt.io--2026-08-13-supplier-security-questionnaire-html--5f6fc9cf.md, raw/articles/nesbitt.io--2026-10-23-one-small-bug-html--9b2510ec.md, raw/articles/nesbitt.io--2026-10-24-this-week-in-package-management-html--b6c5a952.md, raw/articles/nesbitt.io--2026-10-30-signing-and-attestations-across-package-registrie--fb28e540.md, raw/articles/nesbitt.io--2026-11-07-this-week-in-package-management-html--37800db7.md, raw/articles/nesbitt.io--2026-11-14-this-week-in-package-management-html--06956290.md]
+sources: [raw/articles/nesbitt.io--2026-08-04-brew-install-actions-checkout-html--7762f317.md, raw/articles/nesbitt.io--2026-08-13-supplier-security-questionnaire-html--5f6fc9cf.md, raw/articles/nesbitt.io--2026-10-23-one-small-bug-html--9b2510ec.md, raw/articles/nesbitt.io--2026-10-24-this-week-in-package-management-html--b6c5a952.md, raw/articles/nesbitt.io--2026-10-30-signing-and-attestations-across-package-registrie--fb28e540.md, raw/articles/nesbitt.io--2026-11-07-this-week-in-package-management-html--37800db7.md, raw/articles/nesbitt.io--2026-11-14-this-week-in-package-management-html--06956290.md, raw/articles/nesbitt.io--2026-11-21-this-week-in-package-management-html--280f8438.md]
 created: 2026-04-24
-updated: 2026-11-15
+updated: 2026-11-22
 type: entity
 ---
 
@@ -596,6 +595,21 @@ Nesbitt's weekly digest, gathered from his package-manager OPML feed collection,
 
 Source: [[raw/articles/nesbitt.io--2026-11-14-this-week-in-package-management-html--06956290.md]]
 
+### "This Week in Package Management: 21 November 2026" (Nov 21, 2026)
+
+Nesbitt's weekly digest, gathered from his package-manager OPML feed collection, his Mastodon posts and boosts, and reader submissions (version-control and forge news again going to the Wednesday *This Week in Source Control* roundup). Items with AI-agent / supply-chain relevance:
+
+1. **Gemstash 2.9.0 fixes eight vulnerabilities** — the worst is **unauthenticated remote code execution** through unsafe loading of upstream data (**GHSA-27cp-f4p8-8qwv**, CVSS 10.0). Non-default upstreams must now be listed in `:allowed_upstreams`, and upstream responses are capped at 64 MiB and 300 seconds. The RubyGems team also announced 2.9.0 is the **last feature release** of Gemstash (bug/vuln reports still accepted); hosted and self-hosted alternatives are listed — conspicuously absent is `git-pkgs/proxy`, which Nesbitt notes sarcastically as "an oversight, I'm sure."
+2. **Java4Shell (CVE-2026-114938)** — Calif published details of a heap memory-corruption bug in the **AVX-512 Base64 decoder intrinsic** in OpenJDK HotSpot on x86-64, with reported **pre-authentication RCE** against Artifactory and other Java servers; workaround `-XX:-UseBASE64Intrinsics` until OpenJDK/vendor patches land. A concrete instance of the "exotic CPU intrinsic as a memory-safety footgun" class — relevant to AI coding agents that emit Java that silently hits the vulnerable decode path.
+3. **Ruby 4.0.10 / 3.4.13 / 3.3.14** fix seven vulnerabilities in Regexp and String case conversion, several allowing RCE when an app compiles an attacker-controlled pattern; Ruby ≤3.2 is EOL.
+4. **pnpm 12.22.0 / 11.28.13** fix a bug where `pnpm install` could **skip `minimumReleaseAge` and `trustPolicy` checks** against a new registry after the default or a scoped registry changed — directly in the release-age-cooldown / supply-chain-defense class Nesbitt tracks (the same `minimumReleaseAge` feature whose Cargo `min-publish-age` stabilization he covered on Nov 14), now showing a bypass when registries are swapped mid-install.
+5. **Bun 1.4.5** security release bumping bundled lsquic, c-ares, SQLite, llhttp and BoringSSL.
+6. **Releases**: RubyGems/Bundler 4.1.0 adds a Gemfile `override` method (rewrite dependency-declared version constraints, transitives included, e.g. `override "foo", required_ruby_version: :ignore_upper`), cooldowns in the `gem` command (`gem install --cooldown 7`, gem and Bundler reading each other's cooldown setting), an opt-in **OS-keychain credential store** replacing plaintext API-key files, `--content-addressable` gems, and **ML-DSA support for signed gems**; conda 26.10.0 makes **Rattler the default solver** (classic solver split into `conda-pycosat-solver`, requires Python ≥3.11); pip-tools 7.7.0 is the first release after the move from Jazzband (nine years, now shutting down) to PyPA — with the post-transfer story that releases to the `pypi` deployment environment needed a Jazzband-team approval until the environment was reconfigured to a PyPA one (an org-handover supply-chain wrinkle); sbt 2.1.0 drops Apache Ivy; Docker Engine 29.10.0 removes the implicit loopback exemption from `insecure-registries`; mise 2026.11.9 adds lock pools and `--deny-unix`/`--allow-unix` socket controls; Homebrew 7.0.15 verifies Sigstore bundles in Ruby (after 7.0.14 vendored the `sigstore` gem + `manifest_sha256`); Nix 2.36.0 reworks `nix-daemon` to re-execute workers with `--stdio`; uv 0.13.9 previews **PEP 832 `.venv` redirect files** and rejects wheels an index lists under a different package name (name-confusion defense); ORAS 1.4.0 caches auth per-repository.
+7. **Articles**: William Woodruff (PyPI blog) on stricter upload-time distribution checks targeting **parser differentials** (sdists packed as V7 tar, wheels whose ZIP comment could be read as ZIP control structures; GNU-format tar sdists and any ZIP comment under evaluation); NuGet's **staged publishing** (uploaded package validated and repository-signed but withheld from search/restore — even for its owner — until a 2FA maintainer promotes it on the website; `dotnet package stage push` on the upload side); Farid Zakaria's two follow-ups on turning Nix builds into Bazel targets (*Build systems à la trace* records a build in the Rewind deterministic VM, modeling each `execve` as an MLIR-lowered genrule reproducing the cache.nixos.org NAR hash; *Genrules all the way down* transpiles 219 Nixpkgs packages into 2,386 Bazel genrules, finding Bazel runs fewer actions than Nix).
+8. **Elsewhere**: Zakaria's `beer.drv.drv.drv` uses Nix experimental **dynamic derivations** to chain 51 derivations (each emitting the next + a verse of 99 Bottles of Beer; 50 bottles max before the store-path length limit), and surfaces `nix-store --query --deriver` returning `unknown-deriver` for content-addressed producers (filed NixOS/nix#16823); the mpld3 maintainer's handover issue attracted an account that replied to ten similar repositories within a minute three days earlier — a **slopsquatting / fake-maintainer-recruitment** pattern Nesbitt warns about, tying to his LLM-dependency-confusion and slopsquatting line of work; GitHub made security-advisory permissions GA (custom roles can grant advisory access without admin) and Dependabot alert-dismissal requests now expire after a year; *From Maintenance to Market* (Sovereign Tech Agency + iconomy) is a 47-page report on public OSS-maintenance investment reaching EU SMEs. Nesbitt tagged `git-pkgs clone v0.7.8` and `registries v0.14.0`.
+
+Source: [[raw/articles/nesbitt.io--2026-11-21-this-week-in-package-management-html--280f8438.md]]
+
 ## References
 
 - raw/articles/nesbitt.io--2026-06-03-skills-registry-threat-models-html--63b9387d.md
@@ -622,3 +636,4 @@ Source: [[raw/articles/nesbitt.io--2026-11-14-this-week-in-package-management-ht
 - raw/articles/nesbitt.io--2026-10-12-now-thats-what-i-call-technical-debt-html--c10d9aef.md
 - raw/articles/nesbitt.io--2026-10-23-one-small-bug-html--9b2510ec.md
 - raw/articles/nesbitt.io--2026-11-14-this-week-in-package-management-html--06956290.md
+- raw/articles/nesbitt.io--2026-11-21-this-week-in-package-management-html--280f8438.md

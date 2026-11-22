@@ -2,6 +2,16 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-11-22] blog-wiki-ingest | run 20261122T100039Z — apply deferred reference (nesbitt Nov 21 roundup)
+
+Triage batch 20261122T100039Z (take 0 / reference 1 / skip 13) had its 1 reference deferred by the triage-reconstruction run (commit 60255f63), which noted it would only archive the reference and not edit the wiki. This ingest run applied it.
+
+**Pages updated:**
+- `entities/andrew-nesbitt.md` — added "This Week in Package Management: 21 November 2026" subsection to the recurring weekly-digest series (follows Oct 24 / Oct 30 / Nov 7 / Nov 14). Genuine gap: Nov 21 edition absent. Substantive supply-chain + AI-agent-relevant first-hand items captured: Gemstash 2.9.0 unauth RCE (GHSA-27cp-f4p8-8qwv, CVSS 10.0, last feature release), Java4Shell CVE-2026-114938 (AVX-512 Base64 decoder intrinsic pre-auth RCE, workaround -XX:-UseBASE64Intrinsics), Ruby 4.0.10/3.4.13/3.3.14 Regexp/String RCE fixes, pnpm 12.22.0/11.28.13 minimumReleaseAge+trustPolicy bypass on registry swap, Bun 1.4.5, RubyGems/Bundler 4.1.0 (Gemfile override, gem cooldowns, OS-keychain credential store, content-addressable gems, ML-DSA signed gems), conda 26.10.0 Rattler-default, pip-tools 7.7.0 PyPA move, sbt 2.1.0, Docker 29.10.0, mise 2026.11.9, Homebrew 7.0.15 Sigstore-in-Ruby, Nix 2.36.0, uv 0.13.9 PEP 832, ORAS 1.4.0; articles (PyPI parser-differential upload checks, NuGet staged publishing, Zakaria Nix->Bazel genrules x2); elsewhere (beer.drv.drv.drv dynamic derivations, mpld3 fake-maintainer/slopsquatting warning, GitHub advisory permissions GA). Frontmatter: removed duplicate `updated:` line, bumped to 2026-11-22, added Nov 21 raw to sources + References.
+
+No new take pages (0 takes this batch; blog-wiki-ingest 5cbae342 already consumed the 5 substantive articles earlier at 10:09 UTC). 13 skips already archived (2026-11-22_20261122T100039Z.json, 14 items incl. this reference).
+
+
 ## [2026-11-22] blog-wiki-ingest | 20 articles scanned, 5 pages updated
 
 > Blog-ingest checkpoint 20261122T100039Z: 20 articles, 18 raw-saved. AI-relevant triage: 2 take clusters ingested, remainder reference/skip.
