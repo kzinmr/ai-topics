@@ -1,11 +1,26 @@
-# [2026-11-22] watchdog | auto-fix — 1 orphan index registration
+# Wiki Log
+
+_Log of all wiki changes. Newest entries at top._
+
+
+
+## [2026-11-22] health-fix | auto-fix pass — clean run, log hygiene
+
+- **No structural corruption**: index.md pipe/line-number/triple-bracket/space-prefix all 0; `validate_index.py` exit 0 (3539 lines); L2 pipe-prefix scan (entities/+concepts/) 0; no-frontmatter scan 0; orphans 0; ghosts 0.
+- **Header counts verified**: Entities 972 / Concepts 2385 / Comparisons 35 / Events 56 / Queries 63 — all match actual section line counts (diff 0).
+- **Fixed**: `fix_log_header_burial.py` restored buried `# Wiki Log` header (was at line 16 after active-crawl prepend); converted 2 recent watchdog/active-crawl entries from `# [date]` to canonical `## [date]` format.
+- **Pipeline**: git pull skipped — sibling jobs (dreaming, blog-wiki-ingest, watchdog) hold uncommitted skill/reference changes; no push performed to avoid interference.
+
+---
+
+## [2026-11-22] watchdog | auto-fix — 1 orphan index registration
 
 - **Fixed**: `concepts/security-and-governance/os-agent-capture-privacy` (created 2026-11-21 by trending-topics, commit 528cb33d8) was missing from `index.md` — wiki_health reported it as the sole orphan. Registered alphabetically in the security-and-governance hub block; Concepts header count 2384→2385 (verified against section line count).
 - **Verified clean (no action)**: index.md corruption checks all 0 (pipe/triple-bracket/line-number/space-prefix); `validate_index.py` exit 0; log.md single `# Wiki Log` header (buried at line 9 under active-crawl prepend — known benign pattern, count=1); no orphan `###` timestamps; live wiki_health: 0 skeleton entities, 0 tag/structural errors, 1 page-name warn (9-word slug — cosmetic).
 - **Pipeline**: 0 watchdog alerts at 12:00 UTC. Transient 503/connection errors today on `newsletter-ingest` (recovered: triage+wiki-ingest ran ok), `trending-topics` (output committed anyway), `jp-to-en-translation`, `llm-pricing-monitor` (Nov 16), `Weekly AI digest` (Nov 16, monthly — next run Dec 1). No action; re-run if digest errors persist at next schedule.
 - **Graph (from 11-20 weekly, adjudicated)**: 462 orphans / 2,627 broken links / 17 duplicate groups all adjudicated upstream — 0 merges, creation queue (huggingface, ben-clavie, claude-opus-4-7) tracked in weekly annotations. No new remediation due.
 
-# [2026-11-22] active-crawl — 2 new pages + 1 enrichment (inference-data trust cluster; Seth consciousness essay)
+## [2026-11-22] active-crawl — 2 new pages + 1 enrichment (inference-data trust cluster; Seth consciousness essay)
 
 - **Created** `concepts/dragos-inference-canary-study.md` — Dragos/HD Moore canary-token audit: ~2M seeded prompts Jul–Nov 2026; 3 provider compromises (front-door request copying, ARTEX LLM-pentest user agents `artex-agent`/`artex-judge-r121`), marketplace resellers reading prompts via plain logging, ZDR violations (US→China flows, Feishu-chat resurrection at day 24), traceroute-for-inference method, defender playbook (self-host pricing ladder, first-tier direct, seed your own canaries). confidence: medium (single first-party source). Raw: `raw/articles/2026-11-19_dragos_ai-supply-chain-canary-tokens.md`
 - **Created** `concepts/zero-data-retention.md` — synthesis concept page for ZDR (mentioned in 10+ pages, no home page): request-level semantics vs. chain reality; evidence table (Dragos, Fireworks/Notion batch-dataset side door, Together AI ZDR-default remediation); attestation gap, semantic gaps, chain opacity.
@@ -13,9 +28,7 @@
 - **Research note**: `raw/articles/2026-11-22_trending-topics-research.md`. Same-day dedup: Together AI security event already ingested by blog-ingest 5cbae342 (skipped). Deferred: OpenRouter data-processing incidents (HN 159, scrape pending), Better Data Center Project fuel breakdown (404 — find correct URL), Pandex EU agent law (verify substance), token-fraud (thin), Anthropic IPO bust day-2 (paywalled; event page exists).
 - SCHEMA: minted `prompt-leakage`, `zero-data-retention`, `canary-token` on Infrastructure line. Index: 2 new concept entries; counts 2382→2384. Checks: wikilinks + tags verified clean pre-commit.
 
-# Wiki Log
-
-_Log of all wiki changes. Newest entries at top._
+---
 
 ## [2026-11-22] active-crawl (follow-up) — OpenRouter data-processing incidents enrichment
 - **Enriched** `entities/openrouter.md` — new "Data Processing Incidents Response (Nov 2026)" section: no OpenRouter breach claimed; 3 providers off-boarded, 125 endpoints removed from ZDR eligibility, continuous canary-style checks + network-path verification underway; public provider list (Novita/Phala/Together). Positions OpenRouter as ZDR policy enforcer vs. the Dragos indictment of router economics. Raw: `raw/articles/2026-11-22_openrouter_data-processing-incidents.md` (server-rendered, full extraction).
