@@ -7,7 +7,7 @@ license: MIT
 metadata:
   hermes:
     tags: [x-bookmarks, cron, dedup, archive-index, recovery, troubleshooting]
-    related_skills: [wiki-ingestion-pipelines, skill-drift-check]
+    related_skills: [wiki-ingestion-pipelines, skill-drift-check, x-account-enrichment]
 ---
 
 # X Bookmarks Dedup Consistency
