@@ -41,11 +41,23 @@ The 4 superseded local skills were archived to `~/.hermes/skills/.archive/` with
 `planning-and-execution` (⊂ writing-plans + subagent-driven-development, 54%),
 `kanban` (⊂ kanban-orchestrator + kanban-worker, 96%), `hermes-repo-sync`
 (⊂ skill-management, which lists it as related). Pre-flight passed: no cron jobs,
-config.yaml, or AGENTS.md references. New steady state: **Managed 76 / Unmanaged 1 /
-Builtin 70**. The 1 remaining unmanaged (`yuanbao`) is disabled Yuanbao-gateway
+config.yaml, or AGENTS.md references. New steady state: **Managed 77 / Unmanaged 1 /
+Builtin 71**. The 1 remaining unmanaged (`yuanbao`) is disabled Yuanbao-gateway
 plumbing with tools absent from this profile — leave it, never promote.
 If this job reports the old 5-item unmanaged list again, the archive was reverted;
 restore it rather than re-triaging.
+
+### Resolved 2026-11-22: promoted x-bookmarks-dedup-consistency
+First genuine promotion candidate in many checks. `x-bookmarks-dedup-consistency`
+(local, created 2026-11-20 during the false-positive dedup diagnosis) encodes
+reusable recovery knowledge for the `x-bookmarks-ingest` cron job: the two dedup
+stores (`processed_x_bookmarks.json` tweet_ids vs `archive_index.json` urls),
+drift symptoms, root-cause order, recovery recipe, correct write order, and
+cron-mode pitfalls. Promoted to
+`config/hermes/skills/_custom/x-bookmarks-dedup-consistency/` (commit 9f2460aa)
+with peer-matched frontmatter (version/author/license/metadata.hermes.tags/
+related_skills) added; local copy at `~/.hermes/skills/x-bookmarks-dedup-consistency/`
+kept in place (same pattern as blogwatcher-db — repo copy is the versioned master).
 
 When new unmanaged skills are identified during inventory checks:
 1. **Assess value**: Does the skill encode reusable workflow knowledge (not session-specific hacks)?
