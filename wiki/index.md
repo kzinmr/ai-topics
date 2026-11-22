@@ -3,7 +3,7 @@
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Last updated: 2026-11-22
 
-## Entities (972 pages)
+## Entities (974 pages)
 
 - [[entities/_index]] — Directory hub / overview for entities pages
 - [[entities/0xjeff]] — 0xJeff
@@ -519,6 +519,7 @@
 - [[entities/liquid-ai]] — Liquid AI
 - [[entities/liquid-ai-lfm2-5-retrievers]] — LFM2.5 Retrievers — 350M-param multilingual retrieval models (ColBERT + Embedding); bidirectional LFM architecture; 11 languages; best-in-class NanoBEIR/MKQA-11; GGUF for llama.cpp edge deployment (June 29)
 - [[entities/liquid-ai-lfm3]] — LFM3 — Liquid AI open-weight multimodal family (text/vision/audio/omni/decision) on one tri-hybrid backbone (gated convs + SWA + global attn); LFM3-1.7B beats LFM2.5-2.6B with 35% fewer params, ~1 GB @4-bit, 256K ctx, fine-tune on 1 GPU; AMD/Ambarella/Qualcomm launch partners (Oct 27)
+- [[entities/leloykun]] — Franz Louis Cesista (@leloykun) — nanoGPT speedrun record-setter (first sub-3-min #20, #15, #21), Muon co-author; 2x IOI & 2x ICPC World Finalist, Math @ AdMU
 - [[entities/llama-3]] — Llama 3
 - [[entities/llamaindex]] — LlamaIndex
 - [[entities/lm-studio]] — LM Studio — Local LLM desktop app + Bionic agent for open models (Element Labs)
@@ -966,6 +967,7 @@
 - [[entities/yohei-nakajima]] — Yohei Nakajima — Creator of BabyAGI, ActiveGraph (arXiv:2605.21997); Shared Discovery Paradox (arXiv:2607.18045)
 - [[entities/yoonho-lee]] — Yoonho Lee
 - [[entities/ysymyth]] — ysymyth
+- [[entities/you-jiacheng]] — You Jiacheng — IIIS Tsinghua; most prolific solo nanoGPT speedrun record-setter (#15-#17 value-embedding family, #19, #20), Muon co-author
 - [[entities/zach-mueller]] — Zach Mueller; "Learning pi through force" — Model Memo deep research pipeline migration from Claude Code to Pi (July 13)
 - [[entities/zach-tratar]] — Zach Tratar
 - [[entities/zaimiri]] — Zaimiri
@@ -1598,7 +1600,7 @@
 - [[concepts/branch-aware-search]] — Branch-Aware Search
 - [[concepts/breach-disclosure]] — Breach Disclosure
 - [[concepts/brooks-law-ai-agents]] — Brooks's Law in the Age of AI Agents — law mutated not vanished: Baby Problem (critical path) survives, overhead shifts to defining "done"/reviewing/catching hallucinations; 2026 restatement "adding agents to a project with unclear requirements gets you the wrong answer faster" (j11g, Oct 27)
-- [[concepts/brendanh0gan]] — brendanh0gan
+- [[concepts/brendanh0gan]] — brendanh0gan — nanoGPT speedrun record #11 (U-net skip connections + double LR, 7.2 min) and first sub-3-min team; likely "Brendan Rappazzo" per project citation
 - [[concepts/browser-integrated-ai]] — Browser-Integrated AI — Trend of embedding AI models directly in browsers; Chrome's silent 4GB Gemini Nano installation raising consent and AI distribution questions (July 2026)
 - [[concepts/browser-agent/death-of-browser]] — Death of Browser — Dehumanization of the Browser
 - [[concepts/browser-agent/deep-research]] — Deep Research — Agentic Browsing for Autonomous Research
@@ -2386,7 +2388,7 @@
 - [[concepts/js-runtime]] — js-runtime
 - [[concepts/json-render]] — json-render — Generative UI Framework
 - [[concepts/just-large-models]] — Scale-first product thesis: elicit model capability instead of building compensation scaffolds (applied bitter lesson)
-- [[concepts/jxbz]] — jxbz
+- [[concepts/jxbz]] — Jeremy Bernstein (@jxbz) — Muon co-creator (Newton-Schulz orthogonalization; Bernstein & Newhouse 2024); introduced Muon in speedrun record #3; Thinking Machines Lab; author of "Deriving Muon" (Mar 2025)
 - [[concepts/just-in-time-agent-memory]] — Just-In-Time Agent Memory (JAM) — constructs relevant context at runtime conditioned on the query instead of Ahead-of-Time memory, avoiding silent loss of fine-grained info; Memory-Gym training env (arXiv:2609.34385, Sept 2026)
 - [[concepts/karpathy]] — Karpathy (Andrej Karpathy) — AI researcher, educator, and OpenAI/DirectX co-founder. Entity: entities/andrej-karpathy.md
 - [[concepts/karpathy-loop]] — The Karpathy Loop — Autonomous Experiment Design
@@ -3474,6 +3476,7 @@
 - [[queries/2026-11-15-skeleton-enrich-stub-action]] — Daily skeleton-enrich run 2026-11-15: 9 AI umbrella stubs enriched (tinygrad, trey-grainger, ai-alliance, robotics, embodied-ai, ai-coding-tools, generative-ai, vision-models, ai-education)
 - [[queries/2026-11-18-skeleton-enrich-stub-action]] — Daily skeleton-enrich run 2026-11-18: 8 search/security/OSS stubs enriched (elasticsearch, threat-modeling, compiler-explorer, searcharray, cohereio, open-source-sustainability, mastodon, fuzzing)
 - [[queries/2026-11-19-skeleton-enrich-stub-action]] — Daily skeleton-enrich run 2026-11-19: 5 AI-core concept stubs enriched (how-coding-agents-work, just-large-models, prompt-driven-development, agent-security-patterns, retrieval-augmented-generation)
+- [[queries/2026-11-22-skeleton-enrich-stub-action]] — Daily skeleton-enrich run 2026-11-22: nanoGPT speedrun contributor cluster — jxbz (Jeremy Bernstein, Muon) + brendanh0gan enriched; leloykun & you-jiacheng entities created
 - [[queries/2026-11-21-skeleton-enrich-stub-action]] — Daily skeleton-enrich run 2026-11-21: 6 entity-shaped stubs in concepts/ enriched (alex-hall, bozavlado, brainchop, hack-club, colin, jay-v)
 - [[queries/2026-09-27_local-llm-ops-log]] — Local LLM ops log: Hermes backend migration to hermes-llm-serial-gate, GATE_REAL_URLS downstream layout, llm-gateway model_list state and recovery checklist
 - [[queries/2026-10-04-uncommitted-wip-snapshot-query]] — Uncommitted WIP snapshot (2026-10-04): working-tree state — 1453-line diff dump of modified/untracked wiki files from active-crawl/newsletter pipelines

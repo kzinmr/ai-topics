@@ -2,6 +2,47 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+# Skeleton enrichment run — 2026-11-22
+
+> `skeleton-enrich-daily` cron run (2026-11-22, 19:0x UTC). `status: skeleton` backlog
+> remains **empty** (streak since 2026-10-17). Productive action on the `status: stub`
+> backlog: the two speedrun sibling stubs deferred from the 2026-11-21 run
+> (`jxbz`, `brendanh0gan`), plus two new entity pages for prolific speedrun
+> contributors surfaced during research (`leloykun`, `you-jiacheng`).
+
+## Actions this run (2 enriched, 2 new pages)
+
+| Page | Before | After |
+|------|--------|-------|
+| `concepts/jxbz.md` | 252 B stub | ~4.9 KB — **Jeremy Bernstein**, Muon co-creator; identity verified (GitHub jxbz = jeremybernste.in = Thinking Machines Lab); "Deriving Muon" theory (RMS-to-RMS dualization, Newton-Schulz, LR transfer); speedrun record #3 credit; Bernstein & Newhouse 2024 draft-origin story from modded-nanogpt README |
+| `concepts/brendanh0gan.md` | 252 B stub | ~2.8 KB — record #11 (U-net skips + double LR, 7.2 min) sole credit; #20 first-sub-3-min team; "Brendan Rappazzo" name via project citation (flagged as inference); GitHub 404 negative finding |
+| `entities/leloykun.md` | (new) | ~2 KB — Franz Louis Cesista; records #15/#20/#21 incl. first sub-3-min; Muon co-author ("Franz Cesista"); 2x IOI/2x ICPC finalist (GitHub bio) |
+| `entities/you-jiacheng.md` | (new) | ~2 KB — You Jiacheng (IIIS Tsinghua); solo streak #15-#17, #19 (value-embedding family); Muon co-author ("Jiacheng You") |
+
+## Sources used
+
+- GitHub API (users jxbz, brendanh0gan[404], leloykun, YouJiacheng)
+- jeremybernste.in homepage + /writing + /writing/deriving-muon (via Jina Reader)
+- KellerJordan/modded-nanogpt README (full record table + contributor list + Muon provenance note)
+- Keller Jordan's Muon post (formal citation with real-name list)
+
+## Notes
+
+- web_search unavailable in this session; DuckDuckGo endpoints bot-blocked — GitHub API
+  + Jina Reader + arXiv API used instead (all primary sources anyway).
+- Tags used (person, ml-research, optimization, nanogpt-speedrun, open-source,
+  pseudonymous) all pre-registered in SCHEMA.md.
+- Git-history richness check: both stubs last touched by stub-era commit; nothing to restore.
+- `brendanh0gan.md` keeps `status: stub` (identity still unverified) — downgrade to
+  full enrichment pending name confirmation.
+- index.md: 2 new entity entries (972→974), 2 concept description updates.
+
+## Remaining backlog
+
+~384 `status: stub` pages. Next-run candidates: remaining person-shaped stubs in
+`concepts/` (cyd, foaf, genie, synth, quepid, spegel, botnet, prodng, katerra,
+dingcad, pallets, placeiq — many likely org/tool stubs needing the same
+GitHub/registry-first research pattern used here).
 
 ## [2026-11-22 18:35 UTC] dreaming wiki-ingest | recovered render-fail; 1 take (Cartesia H-Net), refs verified, ~70 skips archived
 
