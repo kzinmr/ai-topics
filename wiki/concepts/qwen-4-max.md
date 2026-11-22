@@ -2,7 +2,7 @@
 title: "Qwen 4 Max"
 type: concept
 created: 2026-11-16
-updated: 2026-11-16
+updated: 2026-11-22
 tags:
   - model
   - qwen
@@ -13,6 +13,7 @@ tags:
   - china
 sources:
   - raw/articles/2026-11-16_qwen_hn-discussion_qwen4-max.md
+  - raw/articles/together.ai--blog-qwen4-max--d62cbc2a.md
   - https://news.ycombinator.com/item?id=50513215
 ---
 
@@ -42,6 +43,19 @@ explicitly previewing architecturally. The launch hit the HN front page the same
   alongside quality", with the community waiting on the smaller **Flash** and **27B** variants to
   populate the local-inference tier.
 
+## Vendor-confirmed specs (Together AI launch post, Nov 21, 2026)
+
+Together AI's day-0 launch post ([raw](raw/articles/together.ai--blog-qwen4-max--d62cbc2a.md)) supplies the first fetchable vendor text for Qwen4 Max and confirms the provisional architecture figures:
+
+- **Architecture**: sparse mixture-of-experts, **2.4T total parameters / 71B active per token** — matching the community-reported 2.4T figure.
+- **Capabilities**: 1M-token context window; text + image input; tool calling (multiple calls per turn); thinking on by default (billed as output tokens; disable via `reasoning={"enabled": false}`, maximize via `reasoning_effort: "max"`).
+- **Alibaba's claimed benchmarks** (vendor figures, not independently verified): on **Work360** (Alibaba's benchmark of industry tasks across 721 specialized fields) Qwen4 Max outperforms Qwen3.8 Max overall, uses **35% fewer tokens at high reasoning effort**, and costs ~**60% less per task** on average.
+- **Open-weight status**: Qwen4 Max itself is **closed** (serverless-only on Together AI, no fine-tuning or dedicated endpoints). Alibaba says **smaller open-weight Qwen4 series models will follow** — relevant to the local-inference "dead zone" complaint above; the community expectation of local Qwen4 variants now depends on those follow-ups.
+
+## Together AI one-shot repo test (Nov 2026)
+
+Together AI's launch demo is the most concrete capability evidence so far: the entire **Tornado** codebase (344 files, **652,519 tokens**) plus a symptom-only bug report in a single request — no tools, no retrieval. First token 54 s, complete patch at 72 s, ~69 cents at sale price ($1.05/$3.15 per 1M in/out; cached input $0.0525). The patch passed the maintainers' own two regression tests and the full 1,673-test suite, and the model independently cited `tornado/iostream.py`'s `BaseIOStream.write` as the in-repo precedent — the same code the maintainers cite in their actual fix. On Together AI the model is **streaming-only** (non-stream requests 400 with `streaming_required`). See [[entities/together-ai]] for full detail and pricing; caching mechanics at [[concepts/prompt-caching]].
+
 ## Why it matters
 
 The thread crystallized a recurring 2026 open-weights gap: a "massive dead zone between 24GB and
@@ -62,4 +76,5 @@ market, per several commenters.
 
 - Qwen blog: https://qwen.ai/blog?id=qwen4-max (JS-rendered; body not captured)
 - HN discussion: https://news.ycombinator.com/item?id=50513215 (594 pts)
-- raw: `raw/articles/2026-11-16_qwen_hn-discussion_qwen4-max.md`
+- Together AI launch post: https://www.together.ai/blog/qwen4-max (Nov 21, 2026)
+- raw: `raw/articles/2026-11-16_qwen_hn-discussion_qwen4-max.md`, `raw/articles/together.ai--blog-qwen4-max--d62cbc2a.md`

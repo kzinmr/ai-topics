@@ -2,7 +2,7 @@
 title: "Together AI"
 type: entity
 created: 2026-05-08
-updated: 2026-11-05
+updated: 2026-11-22
 tags:
   - company
   - infrastructure
@@ -23,6 +23,8 @@ sources:
   - raw/articles/together.ai--blog-together-post-training--0ce37260.md
   - raw/articles/together.ai--blog-polymorphic-inference--4919f0f8.md
   - raw/articles/together.ai--blog-together-compiler-continual-compilation-for-ai-inferenc--c95495b8.md
+  - raw/articles/together.ai--blog-qwen4-max--d62cbc2a.md
+  - raw/articles/together.ai--blog-security-event-prompt-leakage-for-requests-in-june-and---a5f19d7c.md
 ---
 
 # Together AI
@@ -145,6 +147,27 @@ Together announced a research agenda for the **"Polymorphic Inference"** era —
 Also previewed: self-serve Continuous Compilation (limited beta), shape-shifting speculative decoding, ThunderAgent Router (ICML 2026 Spotlight), Together Post-Training partnerships (Moonshot, MiniMax), and TogetherLink workload-aware model routing (heirs to Hazy Research's Ask Me Anything and Mixture-of-Agents). Notably, Together served **more tokens than closed-source labs on OpenRouter for the first time in early October 2026**.
 
 See [[concepts/polymorphic-inference]] for full detail. Source: raw/articles/together.ai--blog-polymorphic-inference--4919f0f8.md, raw/articles/together.ai--blog-together-compiler-continual-compilation-for-ai-inferenc--c95495b8.md
+
+## Qwen4 Max Launch Test (November 2026)
+
+Together AI served Alibaba's **Qwen4 Max** (released Nov 16, 2026) on Serverless Inference day-0 under the model string `Qwen/Qwen4-Max`, and published a single-shot long-context coding demo (see [[concepts/qwen-4-max]]):
+
+- **Whole-repository one-shot fix**: the entire Tornado codebase (344 files, 652,519 tokens) plus a symptom-only bug report in one request, no tools, no retrieval step. First token at 54 s, full patch at 72 s; ~69 cents at the launch sale price ($1.05/1M input, $3.15/1M output; list $1.50/$4.50).
+- The patch passed the two regression tests Tornado's maintainers shipped with their own Nov 18 fix, and the full 1,673-test suite. The model also independently cited `tornado/iostream.py`'s `BaseIOStream.write` as precedent — the same code the maintainers cite.
+- **Prompt caching economics**: a repeat ~630k-token request came back almost fully cached ($0.0525/1M cached input during the sale) — first token 8 s instead of 54 s, input cost ~3 cents instead of 66.
+- **Serving constraints**: streaming-only (non-stream requests return 400 `streaming_required`), thinking on by default (thinking tokens billed as output; disable with `reasoning={"enabled": false}`, raise with `reasoning_effort: "max"`), 1M-token context, text+image input, tool calling supported, serverless only (no fine-tuning / dedicated endpoints).
+
+Source: raw/articles/together.ai--blog-qwen4-max--d62cbc2a.md
+
+## Security Event: Prompt Leakage via AI-Agent Credential Commit (Nov 2026 disclosure)
+
+On November 21, 2026 Together AI disclosed that an unauthorized party downloaded stored **prompt samples** from serverless inference in June–July 2026 (MiniMax M3, GLM-5.2, Kimi K2.6 requests, primarily June 24 / July 4 / July 8 / July 14). Root cause: during development of the public GitHub repo **xorl**, an **AI coding agent committed a credential** granting access to a private Hugging Face repository where routine-testing prompt samples were stored. Automated scanning detected the exposure and the commit was reverted, but the window was long enough for the samples to be downloaded and mined for embedded third-party credentials (five were canary credentials from a Dragos security experiment).
+
+Together worked with an external forensic firm and law enforcement; no additional leakage identified. Remediations: scoped/short-lived credentials and keyless access where possible, credential checks on all pull requests, **zero data retention (ZDR) as the default for new accounts**, and updated development processes governing **AI coding agent** use.
+
+> Notable as a supply-chain incident class: an AI coding agent, not a human, was the credential-exposure vector — one of the first vendor disclosures to explicitly enumerate "development processes governing the use of AI coding agents" as a post-incident remediation. Pairs with the Nov 10 Fireworks/Notion inference-vendor breach (`raw/articles/2026-11-10_hn_fireworks-notion-security-breach-discussion.md`) in showing prompt-log retention at inference vendors as a recurring exposure surface; the ZDR-default move is Together's answer to the customer-side retention question raised there.
+
+Source: raw/articles/together.ai--blog-security-event-prompt-leakage-for-requests-in-june-and---a5f19d7c.md
 
 ## World's Fastest Speech-to-Text Stack (May 2026)
 

@@ -588,6 +588,14 @@ Fits his design-centrism line ([[#System Design: Practical, Not Interview-Focuse
 
 Source: [[raw/articles/seangoedecke.com--llms-are-terrible-at-designing-ai-systems--1bc34f1a.md]]
 
+### To Code Well, Avoid Blunders (Nov 2026)
+
+"The secret to writing good code is to avoid catastrophic mistakes" — programming, unlike basketball (99-1 becomes 99-4), gives no durable winning advantage: **one blunder turns an elegant codebase into a janky one**. The named blunder list: introducing a parallel system for the same task; a second source of truth for key data; turning a safe sync operation into a delicate async one; adding subtle points of failure; complicating a key interface. The cardinal sins underneath are **inconsistency** (breaks trust — engineers must hunt for surprises instead of assuming sensible behavior) and **unnecessary requirements**, which are (a) *sticky* — a requirement seen in the codebase must be assumed necessary unless you pay to research otherwise, so they outlive their justification — and (b) combinatorially dangerous, since every feature supporting X forces every new feature to consider X. The discipline: identify where your task fits *most normally* in the current codebase, and trim to the smallest requirement set — so single-mindedly that "I could implement it with this clever pattern" is itself a warning sign. "You don't have to be clever to do great programming work. In fact, sometimes cleverness can be a disadvantage."
+
+Agent-era read: this is a direct extension of his design-centrism line ([[#System Design: Practical, Not Interview-Focused]], [[#LLMs Are Terrible at Designing AI Systems (Nov 2026)]]) and doubles as an eval rubric for coding agents — the listed blunders (parallel systems, second sources of truth, sync→async drift, interface complication) are precisely the diff-level failure modes human reviewers catch and agents generate, which is why his "good at code review → good at agents" thesis ([[#"If You Are Good at Code Review, You Will Be Good at Using AI Agents"]]) keeps holding. The anti-cleverness stance also rhymes with [[concepts/coding-agents/ai-coding-reliability]].
+
+Source: [[raw/articles/seangoedecke.com--to-code-well-avoid-blunders--80f3e6a6.md]]
+
 ---
 
 ## Sources

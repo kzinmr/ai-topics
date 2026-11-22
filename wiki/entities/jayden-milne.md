@@ -1,9 +1,11 @@
 ---
 title: "Jayden Milne"
 tags: [person]
-sources: []
+sources:
+  - raw/articles/jayd.ml--2026-11-01-llms-are-going-to-crush-every-bug-html--b5609894.md
+  - raw/articles/jayd.ml--2026-11-14-rockbox-on-yp3-html--410a7866.md
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-11-22
 type: entity
 ---
 
@@ -54,6 +56,15 @@ His *Off Grid: Red Team* project (at Semaeopus) teaches players to "think like a
 ### Blogging as Digital Sovereignty
 
 In 2025 alone, Milne published 123,382 words across 104 posts. He values blogs as addressable archives that compound over time, enabling context-rich first contact. This stands in sharp contrast to the "nuclear winter" of short-form social platforms collapsing under algorithmic incentives.
+
+## LLM-Assisted Embedded Reverse Engineering (November 2026)
+
+Two November 2026 posts on jayd.ml (a second blog distinct from thejaymo.net) document aggressive LLM-assisted embedded-systems work, in the lineage of his Arch-Linux-on-Surface experiments:
+
+- **"LLMs are going to crush every open source bug" (Nov 1)** — Claude brought modern Linux up on a 9-year-old Galaxy Tab S3 and, in one hour, "backport[ed] a WIP GPU patch from LKML that hasn't even been merged," fixed a freedreno GPU driver bug existing since 2018, found two separate Kwin bugs and an Alpine packaging bug (file capabilities not applied for a month), and prepared fork + MR descriptions for each. His thesis: even accepting the "stochastic averages" framing, most code mostly works, so average-quality code generation compounds against a massive backlog of neglected open-source bugs. ^[raw/articles/jayd.ml--2026-11-01-llms-are-going-to-crush-every-bug-html--b5609894.md]
+- **"Porting Rockbox to an undocumented $9 Aliexpress 'YP3' MP3 Player with LLMs" (Nov 14)** — ported Rockbox to a 512 KiB-RAM undocumented player ("I was barely involved"), then had Claude distill the approach into a reusable **auto-rockbox** porting toolkit/skills with which it ran Rockbox on a second player (TS47) **in 4 hours**. Project site: rockslop.jayd.ml. Credit given to ilyakurdyukov for the original ROM-download-mode/flash-dump tooling. Detailed constraint accounting (shared 128 KiB codec/plugin arena, feature cuts: no voice/DSP/cuesheets/album art). ^[raw/articles/jayd.ml--2026-11-14-rockbox-on-yp3-html--410a7866.md]
+
+> Agent-era significance: the second port in 4 hours via a self-generated porting toolkit is a clean demonstration of **skill/toolkit distillation as an agent capability multiplier** — the agent authored the reusable procedure from its own first run. Pairs with his earlier hardware-porting posts and with [[concepts/agent-generated-software]].
 
 ## Key Quotes
 
@@ -106,3 +117,5 @@ In 2025 alone, Milne published 123,382 words across 104 posts. He values blogs a
 - jayd.ml--2026-02-14-godot-minesweeper-html--9f958842
 - jayd.ml--2026-02-14-letterboxd2jellyfin-html--7d65fe92
 - jayd.ml--2026-02-14-microsoft-game-pass-fraud-html--d58463f3
+- jayd.ml--2026-11-01-llms-are-going-to-crush-every-bug-html--b5609894
+- jayd.ml--2026-11-14-rockbox-on-yp3-html--410a7866

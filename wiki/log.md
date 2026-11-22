@@ -2,6 +2,21 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-11-22] blog-wiki-ingest | 20 articles scanned, 5 pages updated
+
+> Blog-ingest checkpoint 20261122T100039Z: 20 articles, 18 raw-saved. AI-relevant triage: 2 take clusters ingested, remainder reference/skip.
+
+**Ingested (5 pages):**
+- `entities/together-ai.md` — 2 new sections: (1) **Qwen4 Max Launch Test** — day-0 `Qwen/Qwen4-Max` serving, one-shot 344-file/652,519-token Tornado repo fix (72 s, $0.69, passes maintainers' regression tests + 1,673-test suite, cites iostream.py precedent), prompt-caching economics, streaming-only/thinking-by-default constraints. (2) **Security Event** — June–July 2026 prompt-sample leakage: an AI coding agent committed a credential for the private HF repo (xorl dev), samples downloaded + mined for creds (5 Dragos canaries); remediations incl. ZDR-default for new accounts + AI-coding-agent dev-process controls. Frontmatter sources+updated.
+- `concepts/qwen-4-max.md` — was entirely HN-derived; added **vendor-confirmed specs** (2.4T MoE/71B active, 1M ctx, closed weight w/ smaller open-weights to follow, Work360 vendor claims) + **Together one-shot repo test** section, resolving the provisional-confidence note.
+- `entities/simon-willison.md` — Recent Notes (Nov): llm-gemini 0.38.1 `xhigh` reasoning tier (Hydrogen/Neon only; xhigh = 6× tokens for Neon-competitive quality) + Muru (Graham Dumpleton's AI-assisted Rust WSGI/ASGI server, "AI as a lifestyle choice" quote).
+- `entities/seangoedecke-com.md` — new article section "To Code Well, Avoid Blunders" (blunder taxonomy, sticky-requirements argument, anti-cleverness; framed as agent-diff eval rubric).
+- `entities/jayden-milne.md` — new section "LLM-Assisted Embedded RE": Tab S3 Linux bug-crush post + Rockbox YP3 port → auto-rockbox toolkit → TS47 port in 4 h (skill-distillation-as-multiplier read).
+
+**Skipped (verified, no action):** Graham Dumpleton has no entity page (Muru content captured via Simon Willison note; too thin standalone for the SCHEMA threshold); OpenAI MedChemBench launch article unsaved (fetch failed) — MedChemBench already covered in `concepts/gpt/gpt-rosalind.md`; Daring Fireball measles/Apple Intelligence items and personal-life posts (shkspr CC-BY-SA relicensing, dfarq garbage disposal, eli DFT notes, bernsteinbear Datalog LSRA, troyhunt weekly, nesbitt package mgmt, construction-physics reading list, merge.dev marketing ×2, Apple support doc) — off-scope or low durable value.
+
+Index.md: 4 description updates (together-ai, qwen-4-max, simon-willison, seangoedecke-com, jayden-milne — 5 entries touched).
+
 ## [2026-11-21] x-accounts-scan — 11/84 scanned, 2 new posts, 1 wiki update
 
 > Cursor 11->22, request budget 12. Both new posts evaluated. `@vanstriendaniel` (Nov 18) reported the

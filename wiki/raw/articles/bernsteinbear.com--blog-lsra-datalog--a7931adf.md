@@ -1,0 +1,273 @@
+---
+title: "Linear scan register allocation in Datalog"
+url: "https://bernsteinbear.com/blog/lsra-datalog/?utm_source=rss"
+fetched_at: 2026-11-22T10:01:11.717399+00:00
+source: "bernsteinbear.com"
+tags: [blog, raw]
+---
+
+# Linear scan register allocation in Datalog
+
+Source: https://bernsteinbear.com/blog/lsra-datalog/?utm_source=rss
+
+Note: This was supposed to be published basically immediately after PLDI 2026
+but I got hung up on posting it because I am not a Datalog native like Yannis
+is and I like understanding everything I post. But I guess that’s what expert
+co-authors are for, right? It’s a little rough but it’s been so long that the
+editing is holding up the posting. Happy reading.
+Last year I wrote
+my first register allocator
+: a small
+linear scan implementation in Ruby on SSA. Immediately after publishing the
+post, I had a call with
+Waleed Khan
+where he walked
+me through implementing the liveness fixpoint algorithm in Datalog. We talked
+about doing the whole register allocator in Datalog—how hard could it
+be?—but it never materialized.
+This year, though, I met
+Yannis Smaragdakis
+at
+PLDI. I did my usual thing, which is to nerd snipe other people into doing
+interesting projects: in this case, full linear scan in Datalog. Several short
+hours and several beers later, we have an implementation that I only mostly
+understand.
+Overall this is an excellent demonstration of programming in Datalog. It shows
+tasks that Datalog handles very elegantly, such as the basic block computation
+and the liveness analysis, which are just a handful of lines.
+At the same time, it shows how to do things that are complex to do in Datalog,
+namely the linear scan algorithm. The algorithm is very sequential,
+imperative-style. It has steps such as “remove an interval that expires”,
+“update the stack of intervals to evict the one ending last”, etc. All of these
+operations have to be simulated declaratively.
+The final result contains perhaps the most advanced Datalog programming
+pattern, a forall emulation: iterating declaratively over a pre-determined set
+(in this case, to select the interval corresponding to the variable to spill).
+Let’s get into program representation.
+Encoding
+As with Waleed, we started off with the Wimmer2010 CFG example from the last
+two posts.
+The graph from Wimmer2010 has come back! Again! Remember, we’re using block
+arguments instead of phis, so
+B1(R10, R11)
+defines R10 and R11 before the
+first instruction in B1.
+Additionally, we have numbered the instructions in the graph. For each
+instruction that defines a value, we have also given it two separate numbers:
+one number N at which it uses its inputs and one number N+1 at which it defines
+its output.
+We do this so that the logic can process one event at a time: the end of a
+liveness interval happens before the need to possibly allocate a register
+because a variable gets assigned. This is visible in labels 8 and 9 as well as
+14 and 15.
+We have similarly modified block parameters: we sequentialize assignment by
+picking different instruction indices for each block parameter in a block. This
+is visible in labels 0 and 1.
+This time, however, we encoded the program in terms of instructions instead of
+in terms of blocks: we modeled which instructions used which registers and
+def-ed which registers.
+.type Block <: number
+.type Var <: symbol
+.type Instruction <: number
+
+// Input
+.decl var_use(insn:Instruction, var:Var)
+.decl var_def(insn:Instruction, var:Var)
+
+.decl jump(insn:Instruction, next:Instruction)
+.decl jumpi(insn:Instruction, next:Instruction, otherNext:Instruction)
+.decl ret(insn:Instruction)
+
+#define NUM_REGS 2
+
+// Facts: maintain the property that defs use a unique instruction so that
+// liveness intervals end before the def
+var_def(0, "R10").
+var_def(1, "R11").
+
+var_use(2, "R11").
+
+var_def(3, "R12").
+var_def(4, "R13").
+
+var_use(5, "R13").
+
+var_use(8, "R12").
+var_use(8, "R13").
+var_def(9, "R14").
+
+var_use(10, "R13").
+var_def(11, "R15").
+
+var_use(12, "R14").
+var_use(12, "R15").
+
+var_use(14, "R10").
+var_use(14, "R12").
+var_def(15, "R16").
+
+var_use(16, "R16").
+
+.decl min_instruction(insn:Instruction)
+min_instruction(-1).
+
+.decl max_instruction(insn:Instruction)
+max_instruction(16).
+
+jump(2, 3).
+jumpi(6, 7, 13).
+jump(12, 3).
+ret(16).
+We also model the control-flow in terms of instructions: we have jumps between
+instructions from which we (in Datalog!) recover the basic block boundaries and
+control-flow graph (omitted for brevity). This is why we have
+jump(2, 3)
+(which means
+jump
+at instruction
+2
+targeting instruction
+3
+),
+ret(16)
+(
+ret
+at instruction
+16
+), etc.
+Now that we have our program represented in Datalog, we can begin to compute
+what we need from it… like liveness information.
+Liveness
+Since we complicated our input data a bit (variables are no longer def-ed in
+blocks but instead def-ed in their own instruction indices), we had to expand
+out liveness from the last post. Now we do a lot more in Datalog:
+compute block boundaries (omitted for brevity)
+compute what instructions are in what block (omitted for brevity)
+compute the control-flow graph structure (omitted for brevity)
+compute live-in and live-out for each instruction (not block!)
+and finally, compute liveness intervals
+Still, liveness is the most straightforward part of the implementation. There
+are 4 rules defining
+live_out
+and
+live_in
+in mutual recursion. These
+correspond to the standard data-flow equations in textbook definitions of
+liveness. (The transfer function is encoded as two rules for explicitness, to
+capture that a variable is live-in if it is used by the instruction, or if it
+was live-out and is not def-ed.)
+live_out(insn, var) :-
+  block_succ(prev, succ),
+  block_head(succ, headinsn),
+  live_in(headinsn, var),
+  block_tail(prev, insn).
+
+live_in(insn, var) :-
+  var_use(insn, var).
+
+live_in(insn, var) :-
+  live_out(insn, var),
+  !var_def(insn, var).
+
+live_out(insn, var) :-
+  live_in(next, var),
+  next_in_block(insn, next).
+This looks similar enough to the liveness implementation that Waleed and I did,
+but (as mentioned) handles instructions, not just blocks.
+This only gives us the per-instruction sets, so to get the intervals, we need
+to extract the full extents of the interval for every variable: the earliest
+place it was known live and the latest place it was known live. We can use a
+max
+and
+min
+here because we compute this
+only after
+the mutually
+recursive dataflow has settled.
+// Liveness starts right after start, ends right before end
+.decl liveness_interval(start:Instruction, end:Instruction, var:Var)
+
+liveness_interval(start, end, var) :-
+  live_out(_, var),
+  start = min b : { live_out(b, var) },
+  end = max b : { live_in(b, var) }.
+Once we have intervals, we need to assign physical registers to the
+variables
+.
+Register assignment
+The difficult part of the computation is the linear scan register allocation
+itself. We encode this using a predicate
+reg_assignment
+which simulates what
+the algorithm does at every step, with a linear scan of instructions.
+// after instruction, this is the register assignment. Var = "none" is a possibility
+.decl reg_assignment(insn:Instruction, reg:Register, var:Var)
+At every
+instruction, the algorithm keeps the current contents of registers that we are
+allocating. Registers that are not currently encoding a variable are instead
+holding a pseudo-variable that corresponds to the register’s name. E.g., when
+register 0 is empty, it contains variable
+none_0
+. This encoding lets us
+phrase every decision as a comparison between variables. The actual choice of
+variable to spill, for instance, always prefers a “none” variable over a real
+one, and then between real variables it implements the usual linear scan
+policy: the spilled variable is the one whose liveness interval ends last.
+Comments in the code explain all the cases that the algorithm needs to handle.
+The assignment of values to registers is propagated if there is no liveness
+interval that ends and no new variable that is def-ed (i.e., assigned).
+When a liveness interval expires, the register holding the variable (if any)
+gets reset to a “none” variable.
+The interesting case is when we encounter a new variable def. We then need to
+decide which variable to spill, i.e., which register (if any) should best
+hold the def-ed variable. The policy for deciding on a victim variable is
+entirely self-contained and modular, captured by predicate
+better_victim_var
+, which pre-calculates the result of all possible variable
+comparisons.
+However, the interesting part is the forall emulation encoded in the rules for
+predicates
+best_victim_up_to_reg
+and
+all_reg_best_victim
+. (The latter is
+trivial to inline, but it’s kept for making the concept explicit.) The forall
+emulation iterates over all registers and keeps at every point in the iteration
+the current best victim variable. When we reach the final variable, we have the
+overall best victim.
+Returning to the core algorithm, if the victim variable is the def-ed var
+itself, then all registers get carried over—the def-ed var does not receive a
+register.
+If, however, the best victim is a variable that is currently held in a register
+then that register now gets assigned to the def-ed var, with all other
+registers copied over to the next instruction.
+Forall emulation is an advanced Datalog coding pattern. It arises in all cases
+when a forall cannot be simply emulated as a “not exists”, because the
+predicates involved are defined in mutual recursion. From a complexity theory
+standpoint, the forall emulation pattern is essential for Datalog to be able to
+encode all PTIME algorithms. (Although realistic Datalog implementations
+include arithmetic and tuples, and hence are Turing-complete.) Without a
+forall-emulation, which is possible only via an underlying ordering of values,
+Datalog without extra features only expresses a subset of polynomial-time
+algorithms.
+The final step of the algorithm just assigns a register to a variable if the
+variable can be held by the register for its entire lifetime. This is the
+simplest implementation of linear scan—one could also extend it to allow
+registers to hold a variable for a part of its lifetime.
+Accordingly, there are many improvements to the implementation that one can
+perform, especially for efficiency. Currently iteration is done over all
+instructions, whereas it could instead jump from “interesting” to “interesting”
+instruction, i.e., defs and interval expirations, ignoring instructions that
+only copy over the register assignment. Additionally, the comparison between
+two variables to find the best victim can be done on demand, instead of
+calculating the result for all possible variable pairs up front. This would
+require a request-response programming pattern, where the current rules only
+fire in response to a request, i.e., only for variable pairs that truly need to
+be compared in the course of execution.
+Conclusion
+Datalog is fun. It’s not for everyone or everything. But I love nerd sniping
+people at conferences. Thank you to Yannis for playing along and writing half
+this article and being so patient for it to be published!
+See the
+implementation
+.
