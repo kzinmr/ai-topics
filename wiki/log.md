@@ -1,3 +1,17 @@
+## [2026-11-23] blog-wiki-ingest | 3 takes + 5 references from blog triage (run 20261123T100944Z)
+
+- **NEW** events/2026-11-20-alpoge-riemann-hypothesis-claude.md — Alpoge-Claude Riemann Hypothesis proof claim (Gary Marcus analysis): human-driven 250K-page proof, Lean+mathlib infrastructure, DeepBlue analogy, market unmoved; confidence low.
+- **UPDATE** concepts/ai-mathematics-theorem-proving.md — added "Alpoge-Claude Riemann Hypothesis Claim (Nov 2026)" section + source.
+- **UPDATE** concepts/scaling-laws.md — added "OpenAI's Perplexity Reveal (Sean Goedecke, Nov 2026)" section (base-sharing, GPT-4.5 retreat, GPT-5.2 re-acceleration vs RL-all-in conventional wisdom, alignment/monitoring implications) + perplexity tag + 2 sources.
+- **UPDATE** entities/george-hotz.md — added "the singularity is nearer (slopcore)" (Nov 23): orthogonality-thesis rejection, 10K-GPU anti-regulation, multi-polar accelerationism, slop-core critique, GPT-6.2 micro-programming claim; timeline row added.
+- **REF** entities/troy-hunt.md — Claude ghost-wrote breach-disclosure analysis (mailbox-mining example).
+- **REF** entities/simon-willison.md — Select Styling Specimens (Claude Fable 5.2).
+- **REF** entities/seangoedecke-com.md — "When in Doubt, Flail About" + sources.
+- **REF** entities/lcamtuf.md — "Tranquility" eugenics-fable fiction entry.
+- OpenAI Perplexity-and-Intelligence (openai.com, 403 RSS-stub) attached as source to scaling-laws.
+
+Skips (4) archived via archive_triage.py.
+
 ## [2026-11-23] blog-ingest | RSS-fallback recovery — 2 unsaved articles recovered
 
 - `openai.com/index/perplexity-and-intelligence` → recovered via `openai.com/news/rss.xml` (browser UA, 200). Body = RSS description only; `scrape_status: rss-fallback`. Cross-referenced companion commentary: Sean Goedecke's "Notes on OpenAI's perplexity reveal" (same batch).

@@ -1,7 +1,7 @@
 ---
 title: "Scaling Laws"
 created: 2026-06-26
-updated: 2026-08-09
+updated: 2026-11-23
 type: concept
 tags:
   - training
@@ -11,6 +11,7 @@ tags:
   - evaluation
   - inference
   - methodology
+  - perplexity
 sources:
   - "[[raw/articles/2026-06-24_lilianweng_scaling-laws-carefully]]"
   - https://arxiv.org/abs/2001.08361
@@ -19,6 +20,8 @@ sources:
   - https://arxiv.org/abs/2305.16264
   - https://arxiv.org/abs/2605.01640
   - "[[raw/articles/2026-08-07_gilesthomas-chinchilla-check]]"
+  - "[[raw/articles/seangoedecke.com--notes-on-openais-perplexity-reveal--a2eebf0c.md]]"
+  - "[[raw/articles/openai.com--index-perplexity-and-intelligence--1fd1a4e2.md]]"
 related:
   - "[[entities/lilian-weng]]"
   - "[[concepts/chinchilla]]"
@@ -134,6 +137,21 @@ Both Chinchilla-scaled models beat the overtrained ones. Notably, the slightly-s
 
 **Implications for Practitioners**: Chinchilla's core claim held directionally — equal scaling of N and D produced better models than overtraining alone. However, the marginal gain (~1%) must be weighed against the engineering friction of designing correctly-sized architectures. For deployment-constrained scenarios (e.g., mobile devices with fixed RAM budgets), overtraining a smaller model may remain the pragmatic choice even if it is not compute-optimal in theory. Thomas noted that the experiment used a single random seed for each scaled model vs. a different seed for the overtrained models, so a multi-seed study would be needed for statistical rigor.
 
+
+## OpenAI's Perplexity Reveal (Sean Goedecke, Nov 2026)
+
+In November 2026 OpenAI released a graph of **perplexity over time across all its released models** (`openai.com/index/perplexity-and-intelligence`) — "the most visibility we've ever had into the internal training metrics at a frontier lab." Sean Goedecke's notes are the wiki's best interpretation; the OpenAI post itself is a single RSS-description line (403 on direct fetch), so the analysis below is the substantive source.
+
+**What perplexity can and cannot measure.** Perplexity only scores how well a model matches held-out text, so it is fundamentally a **pre-training** metric. Frontier training is rumored to spend **50% or less** of compute on pre-training — the rest is RL, which perplexity tells us nothing about. If one accepts that pre-training creates capabilities and RL merely elicits them, perplexity *is* a useful capability proxy (and it does decline over time). But other capabilities — ability to improve with chain-of-thought, obedience / sycophancy-avoidance — do not correlate with perplexity. A subtlety: perplexity is only meaningful against a *specific* held-out dataset (every model scores ~zero on "AAAA…"), so cross-lab comparisons (e.g., against any future Anthropic release) are only valid up to the slope/angle of the curve, not the absolute value.
+
+**What the chart reveals:**
+
+- **Very few models share a base** (identical perplexity). The common rumor that OpenAI post-trained 4o/4.1 into many models is contradicted — it looks like only **o1 and o3** share a base. Surprisingly, the underwhelming **4.1** and the excellent **o3** share the same base.
+- **The GPT-4.5 pre-training retreat is visible**: GPT-4.5 had perplexity similar to GPT-5.3-Codex yet was *far* less useful — the point where OpenAI briefly gave up on large pre-trained models (unclear whether a choice or an internal scaling wall).
+- **A real acceleration in perplexity loss from GPT-5.2 onward** — which **contradicts the common wisdom** that labs have abandoned pre-training in favor of going all-in on RL. Pre-trained bases are still improving rapidly.
+- **Subjective vs measured jumps**: a big GPT-3.5→GPT-4 jump (matching perception), then broad stagnation until GPT-5.5, then rapid acceleration. But Goedecke felt the real "big jump" models were o3 and GPT-5.3-Codex — models better *RL-ed* into CoT use and sycophancy avoidance, which perplexity does not capture.
+
+**Alignment implication.** Safety researchers have wanted such transparency for years, but Goedecke is skeptical of its value: a sudden scary perplexity drop is only detectable by OpenAI itself unless it also publishes perplexity of *unreleased* pre-trained bases; and for labs to agree on thresholds they won't cross, the precise held-out dataset must be disclosed. Relates to [[concepts/evaluation/evals-vs-monitoring-debate|evals vs monitoring]] and [[concepts/scaling-hypothesis|the scaling hypothesis]].
 
 ## See Also
 

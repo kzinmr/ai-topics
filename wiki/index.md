@@ -3409,8 +3409,9 @@
 - [[comparisons/palantir-vs-competitors]] — Palantir vs. Competitors
 - [[comparisons/self-scaffolding-approaches]] — Self-Scaffolding Approaches — RLM vs Dynamic Workflows vs Ornith-1.0
 
-## Events (56 pages)
+## Events (57 pages)
 
+- [[events/2026-11-20-alpoge-riemann-hypothesis-claude]] — Alpöge–Claude Riemann Hypothesis proof claim (Nov 2026): Levent Alpöge reportedly proves RH with Claude over months; 250K pages, human-driven, leans on Lean + mathlib (2M+ lines); Marcus's DeepBlue analogy, Kahn/Krier 'no margin impact', market unmoved; confidence low (no peer review)
 - [[events/anthropic-nasdaq-debut-2026]] — Anthropic Nasdaq debut (ANT, Nov 19 2026) — priced $83/share above range, $81.3B raised ($107.3B incl. greenshoe per Bloomberg), largest IPO ever topping SpaceX, ~$1.5T valuation; HN 1,095p: engineered-pop, lockup-watch, 2.7% of US market cap vs Google's 0.16% at IPO; same-week 'Not a Safe AI Company' coalition + no-bailout protests; Nov 21 S-1 deep read (The Signal): day-one peak $111.53, RSP AI-acceleration threshold 'met' in 8 days, NRR ~900%, SpaceX $120.5B compute, 'Anthropic Direct', ~$132B cash
 - [[events/chatgpt-wallet-launch-2026]] — ChatGPT Wallet (OpenAI, Nov 16 2026) — agentic-commerce payment surface; low HN traction (46p/80c), single official source, confidence low pending third-party audit
 - [[events/openai-robotics-team-disbanded-2026]] — OpenAI disbands robotics team (2nd time, Nov 13 2026, Fortune/HN 179) as general models start running robots; HN: layered control, ~36ms latency floor, Bitter Lesson debate; confidence medium (paywalled single source)

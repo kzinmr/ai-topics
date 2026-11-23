@@ -6,7 +6,7 @@ aliases:
   - geohot
   - tomcr00se
 created: 2026-04-25
-updated: 2026-11-18
+updated: 2026-11-23
 tags:
   - entity
   - person
@@ -123,6 +123,7 @@ Hotz had a brief 12-week internship at **Twitter** in late 2022, joining to fix 
 | **2026 (Nov 13)** | Publishes "First Strike / the singularity is nearer" — China 10x-US-electricity thesis, chips-for-solar strategy, warns the AI race's only perceived exit is an ASI "decapitating first strike"; WWIII odds up with "the nationalization of NVIDIA". |
 | **2026 (Nov 17)** | Publishes "My Empire of Dirt / the singularity is nearer" — names Anthropic's "Singleton" ideology and EA as the actors who would "salt the Earth"; after RSI all demand is internally generated ("The future definitely doesn't need you"); argues **WWIII is the good outcome** (not extinction) and China wins a war lasting >1 year. |
 | **2026 (Nov 18)** | Publishes "My Empire of Sunshine and Roses / the singularity is nearer" — the coda to the four-essay November arc: differential history via counterfactuals, critique of the OpenAI ad, "Nature did not collapse to a singleton" + agent-swarm exponential-cost argument, and a positive vision of millions of independent power centers with no central planner. |
+| **2026 (Nov 23)** | Publishes "the singularity is nearer (slopcore)" — declares the **orthogonality thesis "hogwash"** and the "naive doomer a fool"; anti-regulation demand for 10,000+ GPUs in private hands; multi-polar accelerationism ("a plurality of AIs"); "slop core" cultural critique of despising-yet-consuming AI output; claims **GPT-6.2 micro-programming better than him** for the first time. |
 
 ---
 
@@ -311,6 +312,23 @@ Published November 18, 2026 under the recurring "the singularity is nearer" head
 **Arc-completion note**: This is the **positive/market-liberal** counterpart to "My Empire of Dirt." Read together, the two Nov 17–18 essays are Hotz's full statement of the same worldview: the Singleton is both the *danger* (Dirt) and a *metaphysically unlikely* outcome contradicted by nature and exponential-cost physics (Sunshine and Roses), while the desirable attractor is decentralized emergent order. The OpenAI-ad and differential-history passages are unique to this piece and absent from the three earlier essays documented above.
 
 Source: [[raw/articles/geohot.github.io--blog-jekyll-update-2026-11-18-my-empire-of-sunshine-and-rose--b67128ec.md]]
+
+---
+
+### the singularity is nearer (slopcore) (Nov 23, 2026)
+
+Published November 23, 2026 — the fifth entry under the recurring "the singularity is nearer" heading (Jul 12 "I Love LLMs" → Nov 13 "First Strike" → Nov 17 "My Empire of Dirt" → Nov 18 "My Empire of Sunshine and Roses" → this). A short (2.2 KB) manifesto-style post that crystallizes Hotz's **anti-orthogonality / accelerationist** stance more directly than any prior essay. New positions not previously on this page:
+
+- **Rejects the orthogonality thesis outright.** "The orthogonality thesis is hogwash. The naive doomer is a fool." This is Hotz's sharpest direct rebuttal to the core AI-safety premise that intelligence and final goals are independent — he holds that a plurality of AIs will, by nature, take civilization "to heights never before seen." Pairs with (and is more blunt than) his June "AI Will Be Massively Deflationary" and July "I Love LLMs" optimism, and stands in tension with the Nov 17/18 Singleton warnings: here the enemy is not a singleton lab but the regulator.
+- **Anti-regulation / "give individuals 10,000+ GPUs."** He casts AI restriction as tyranny — "The Hitler of the 21st century will try to hold it back … no you can't have 10,000 GPUs you might try to compete with us … we need to keep the world safe from you." "Only a fascist would try to oppress them." Explicitly frames GPU-access regulation as the new authoritarianism.
+- **Multi-polar accelerationism.** "A plurality of AIs will take civilization to heights never before seen. It would take a brutal totalitarian world government to try and stop it, and I'm still not sure you can." Decentralized multi-agent future as both desirable and hard to suppress — consistent with the Nov 18 "millions of independent power centers" vision.
+- **"Slop core" cultural critique.** He quotes his own 9-second AI song ("You'll play it for a week / You'll call it slop in the comments / Then ask me to write your wedding speech") and references Astra Blue / Telosapien lyrics — a wry observation that people *scorn* AI output publicly while *depending* on it privately. "The programs are still slop but they are fast — make it faster."
+- **GPT-6.2 assessment (first model of its kind).** "GPT-6.2 can micro[-]programming better than me, not just faster, the first model to." A concrete capability benchmark by a self-described expert low-level programmer — distinct from his earlier tinygrad/comma.ai-era coding takes. He pairs it with "Move 37, you called it a mistake / Terence Tao can't keep up and he's THE BEST YOU MAKE" — the AlphaGo-Move-37 and Tao analogies for AI surpassing human experts.
+- **Open problems he suspects labs are sitting on**: "Did you find polynomial time factoring and not tell us? Here's my middle finger to your paced frontier" — accusing labs of deliberately pacing capability release.
+
+**Continuity note**: This is Hotz's most compact public statement of the **e/acc-adjacent, anti-orthogonality, anti-regulation** cluster. Where Nov 17–18 warned against a *singleton lab* imposing control, slopcore warns against a *state* imposing control, and drops the orthogonality-thesis rebuttal that earlier essays only implied. Connects to [[concepts/technological-singularity]] and [[concepts/rich-suttons-bitter-lesson]].
+
+Source: [[raw/articles/geohot.github.io--blog-jekyll-update-2026-11-23-slopcore-html--bd218c30.md]]
 
 ---
 

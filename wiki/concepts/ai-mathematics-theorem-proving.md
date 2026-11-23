@@ -1,7 +1,7 @@
 ---
 title: "AI for Mathematical Theorem Proving and Theoretical Computer Science"
 created: 2026-08-01
-updated: 2026-08-29
+updated: 2026-11-23
 type: concept
 tags:
   - model
@@ -14,6 +14,7 @@ tags:
   - formal-verification
 sources:
   - raw/articles/2026-08-01_openai_ten-advances-mathematics-tcs.md
+  - raw/articles/garymarcus.substack.com--p-levent-alpoge-has-solved-the-riemann--f15f14f8.md
 ---
 
 # AI for Mathematical Theorem Proving and Theoretical Computer Science
@@ -65,6 +66,20 @@ The formal verification workflow — generating proofs and then certifying them 
 ## Open Questions
 
 Several open questions remain about the role of AI in mathematical research. How should the mathematical community evaluate and integrate AI-generated proofs? What does it mean for a problem to be "solved" when the solution was produced by a model rather than a human? The Leiden Declaration on AI and Mathematics, signed by many mathematicians, reflects ongoing debate about the appropriate role of AI in the discipline. OpenAI has emphasized that it hopes the community will "engage deeply with these results, place them in context, and bring the ideas behind them to life through new research and discovery."
+
+## The Alpöge–Claude Riemann Hypothesis Claim (Nov 2026)
+
+In November 2026, mathematician **Levent Alpöge** reportedly proved the **Riemann Hypothesis** with Anthropic's Claude over several months of collaboration — the highest-profile AI-math claim since the Astra ten-advance batch. Gary Marcus's analysis treats it as a cautionary case against over-reading AI-for-math results, and it sharpens the page's core theme: **formal verifiability is the asset**, not model autonomy. See [[events/2026-11-20-alpoge-riemann-hypothesis-claude]] for the full event account.
+
+Key points relevant to this concept:
+
+- **Human-driven, not autonomous.** Unlike Astra's autonomous argument generation, here a brilliant human mathematician "made all the right (life) choices at the right time" (Szegedy) and drove a deeply collaborative process. AI alone could not have done it.
+- **Lean + mathlib were the decisive infrastructure.** The proof leaned on the **Lean** symbolic prover and **mathlib** (2M+ lines of formalized mathematics). Marcus argues this is the same special-purpose, *verifiability-rich* setup that makes math tractable for AI — and that it transfers poorly to biology, business, or robotics.
+- **250,000 pages, no new techniques yet.** The proof is "hardly elegant," with no generalizable math lessons or new concepts extracted so far.
+- **No commercial impact.** Kahn and Krier (DeepMind) both noted solving RH does not widen Anthropic's enterprise value or operating margins; the market barely moved on the news.
+- **DeepBlue analogy.** Marcus frames it like 1997's Deep Blue vs Kasparov — an amazing but *special-purpose* brute-force result that did not generalize.
+
+This contrasts with the OpenAI Astra results above (single-model, model-generated arguments + Lean certificates) and with [[concepts/claude-fable-jacobian-conjecture|Claude Fable's Jacobian Conjecture]] work. The recurring lesson across all three: Lean/mathlib-style machine-checkable verification is what lets frontier models contribute to math, and that same verifiability is scarce outside formal domains.
 
 ## Related Pages
 

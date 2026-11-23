@@ -4,7 +4,7 @@ tags: [person]
 sources:
   - raw/articles/troyhunt.com--weekly-update-528--1249e07d.md
 created: 2026-04-24
-updated: 2026-11-01
+updated: 2026-11-23
 type: entity
 ---
 
@@ -110,6 +110,8 @@ Hunt has embraced AI tooling pragmatically, using GitHub Copilot and experimenti
 > *"Watching OpenClaw do its thing must be like watching the first plane take flight. It's a bit rickety and stuck together with a lot of sticky tape, but squint and you can see the potential for agentic AI to change the world as we know it."*
 
 His position is optimistic but grounded: AI agents are experimental, imperfect, and require careful management. He is actively transitioning human workloads to AI agents for the small HIBP team (now including Stefan) while maintaining operational oversight.
+
+**Concrete example — Claude ghost-wrote a breach-disclosure analysis (Nov 2026)**: In "Here's Why Data Breach Disclosure is so Hard," Hunt **openly disclosed that he had Claude write the post**, using AI precisely to surface patterns he kept seeing across hundreds of hacked-company email threads. The disclosed methodology: he had Claude read **8.5 years of his mailbox (2018-03 → 2026-11)** out of 13 years running HIBP, and analyze **73 first-notification emails and their reply threads**. The article (the AI's output) catalogs recurring failure behaviors — "no human owner on the breach," "six hops to find the responsible person," etc. — mapping his lived operational experience onto LLM-generated synthesis. It is a transparent, well-scoped instance of a security practitioner using an LLM to mine his *own* corpus for insight rather than to fabricate it.
 
 ### Operational Transparency as a Service Feature
 

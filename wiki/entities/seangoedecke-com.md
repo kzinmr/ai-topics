@@ -598,8 +598,18 @@ Source: [[raw/articles/seangoedecke.com--to-code-well-avoid-blunders--80f3e6a6.m
 
 ---
 
+### When in Doubt, Flail About (Nov 2026)
+
+A career/craft essay on operating under uncertainty. When you have no clear guidance and don't know what will help, "the best course of action is often just to flail about" — and he is candid that it "sounds counter-intuitive" and "definitely dangerous advice. Flailing badly is a great way to damage your reputation." The discipline that separates productive from reputation-destroying flailing is a three-part method: **(1) try many things, (2) become highly sensitive to feedback, (3) mercilessly discard the options that get no response.** He distinguishes *product* flailing from other modes of exploring an unclear situation. It sits naturally beside his existing insider-amnesia / screwing-up / simple-work-gets-rewarded essays on this page and is best treated as a sources-list addition rather than a new concept — his career-and-organization essays are accumulated here, and the technical claims are thin relative to his design-centrism pieces. Pairs thematically with his Oct "Elegance and Intelligence Are Anticorrelated" (both about how to operate when the right move isn't obvious).
+
+Source: [[raw/articles/seangoedecke.com--when-in-doubt-flail-about--d1a2a175.md]]
+
+---
+
 ## Sources
 
+- raw/articles/seangoedecke.com--when-in-doubt-flail-about--d1a2a175.md
+- raw/articles/seangoedecke.com--notes-on-openais-perplexity-reveal--a2eebf0c.md
 - raw/articles/seangoedecke.com--the-o3-geoguessr-prompt-did-not-work--c4335530.md
 - raw/articles/seangoedecke.com--why-output-caching-doesnt-work--a8a0b7c4.md
 - raw/articles/seangoedecke.com--build-agents-not-pipelines--43a57b4a.md
