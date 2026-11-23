@@ -18,6 +18,16 @@ In cron sessions `execute_code` can be denied (`BLOCKED: ... Cron jobs run witho
 
 `log.md` is newest-first below the header block. To insert an entry, use `patch` with the FIRST existing `## [YYYY-MM-DD] ...` header line as the unique anchor and prepend the new entry + `---` before it. Do not append at EOF. (In practice a plain append via `printf ... >> wiki/log.md` in terminal also passed the pre-commit hooks — 2026-09-27 scan.)
 
+## Frontmatter `updated:` bump needs multi-line anchor too (2026-11-22)
+
+The "never patch YAML frontmatter with a short `old_string`" rule above is not only about
+destructive deletes — a bare `updated: 2026-11-14` also matches non-frontmatter occurrences
+(page-body date lines, a `## [2026-11-14]` log line elsewhere in the same file) and the fuzzy
+matcher may pick the wrong one. Reliable form: anchor on the preceding stable key, e.g.
+`old_string` = `created: 2026-04-24\nupdated: 2026-11-14`. After the patch, verify with
+`python3 -c "import yaml; print(list(yaml.safe_load(open(f).read().split('---')[1]).keys()))"`
+that the full key set survived AND the returned `updated` is the intended one.
+
 ## Emoji in `terminal` heredoc / `git commit -m` blocked by tirith (cron-safe: ASCII in shell, emoji only via patch/write_file) (hit live 2026-11-19)
 
 The tirith security scan BLOCKS any `terminal` command whose argv contains emoji / Unicode

@@ -99,6 +99,19 @@ When evaluating whether a reply has standalone value (rule #2), ask: **"If you s
 | Multiple replies from same account forming a **coherent thread** (same topic, consecutive timestamps) | Evaluate as group — may have standalone value together |
 | Reply linking to author's own previous work (e.g., "we updated this") | Check if the linked content is new or already captured in wiki |
 | Non-AI domain link (general software, personal projects unrelated to AI/agents) | ❌ Skip |
+| **Reference link** (Wikipedia, MDN, docs homepage, definitional page) with no commentary | ❌ No scrape — reaction layer only (see below) |
+
+### Reference links are not articles
+
+A `status: 200` `external_url` pointing at a third-party encyclopedia/registry (Wikipedia, MDN, RFC
+index, vendor docs home page) is the account *pointing at* something, not publishing something. Do
+NOT scrape it into `raw/articles/` and do NOT create a concept page that mirrors a public reference
+work that will still exist verbatim in 5 years. Instead add a dated entry to the sharer's entity
+`## Recent X Activity` describing what was shared, and connect it to the closest existing concept
+page. (Confirmed 2026-11-22: `@ankrgyl` shared the WinFS Wikipedia article with no commentary — no
+scrape, a short entity log entry framed against `[[concepts/graph-db-overengineering-rag]]` was the
+whole update.) Test: would the wiki lose any primary-source substance if the link were never
+scraped? If no, reaction layer only. This is the link-level analogue of rule 7a.
 
 **Example from 2026-07-31 scan**:
 - Daniel Han reply "Lossless UD-Q8_K_XL is out!" linking to HF model page → ✅ processed (new model quantization)
