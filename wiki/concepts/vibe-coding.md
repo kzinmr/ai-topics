@@ -17,3 +17,5 @@ sources: []
 > **Moved:** Content moved to [[concepts/harness-engineering/agentic-workflows/vibe-coding]]. 
 
 Details: [[concepts/harness-engineering/agentic-workflows/vibe-coding]]
+
+- [[concepts/coding-agents-on-obsolete-hardware]] — the hardware-domain extension: vibe-coded FPGA inference chip (33x tok/s), ClawDOS on an 8088

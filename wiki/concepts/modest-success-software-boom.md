@@ -65,6 +65,10 @@ fraction survived into the "used by hundreds/thousands" band.
 - Attribution: no voluntary AI-disclosure data is usable (disclosure invites backlash),
   so the causal link to AI rests on the timing coincidence plus the 10x total-project growth.
 
+## Related
+
+- [[concepts/coding-agents-on-obsolete-hardware]] — Milne's compounding-against-neglected-bugs thesis (Galaxy Tab S3 Linux bring-up)
+
 ## Sources
 
 - Sean Goedecke, "AI is driving a boom in modestly successful software projects" (2026-10-15).

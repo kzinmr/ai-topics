@@ -1,0 +1,32 @@
+{
+  "archived_at": "2026-11-23T18:30:37.351062+00:00",
+  "triage_run_id": "20261123T180041Z",
+  "source": "dreaming",
+  "summary_ja": "dreaming-group レンダリング失敗からの復旧。チェックポイント total_articles=0 / recent_raw=271 に対し出力ファイル末尾の13クラスタ分析を回収。テイク1件（レトロハード・コーディングエージェント統合ページ concepts/coding-agents-on-obsolete-hardware.md）、リファレンス候補4件は全てDeep Sleep検証で既存カバー確認（Inkling 2 Mini / Signal / 重み自己書き換え / Together経済性）、残り約60件はバッチスキップ。",
+  "decisions": [
+    {
+      "item_id": "dreaming-c4-batch",
+      "source": "dreaming",
+      "source_name": "dreaming",
+      "title": "Inference economics batch (output caching / Together leakage / Qwen4-Max / Qwen3-TTS)",
+      "url": "",
+      "raw_path": "raw/articles/2026-11-22_togetherai_prompt-leakage-security-event.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ Together prompt-leakage/Qwen4-Maxは本日blog-wiki-ingestがentities/together-ai.md+concepts/qwen-4-max.mdに入稿済み（log L187-188）。output-caching/qwen3-ttsはアーカイブindex登録済み。",
+      "candidate_wiki_path": "entities/together-ai.md",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-nonai-batch",
+      "source": "dreaming",
+      "source_name": "dreaming",
+      "title": "Non-AI / consumed batch (~60 files: Cohere x7, Cartesia x11, bubble trio, Alpoge/Perplexity, retro/math/personal)",
+      "url": "",
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 非AI/マーケティング/本日・前日パイプライン消費済み。Alpoge+Perplexityはlog L31、Cartesiaは昨日起動、bubble三姉妹は飽和、dfarq/shkspr/filfre/johndcook/maskray等は非AI。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "batch skip - subject-level screening against log.md same-day entries and archive index."
+    }
+  ]
+}
