@@ -392,4 +392,5 @@ For a practical, hands-on tutorial that takes ~1 hour: [[concepts/dspy-tutorial]
 | Jul 2024 | Fine-Tuning and Prompt Optimization | Synergistic combination (+23%) |
 | 2025 | GEPA | Genetic prompt evolution |
 | 2025 | RLMs | Recursive context processing |
+| Nov 2026 | **Context Engineering with DSPy** (Mike Taylor / @hammer_mt, Databricks) | Book; launched at the Bay Area DSPy Meetup, Dec 16 2026 (Figma), organized by [[entities/drew-breunig]] |
 

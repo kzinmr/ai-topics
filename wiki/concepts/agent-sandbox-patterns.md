@@ -117,6 +117,8 @@ Raw: `raw/articles/2026-11-14_frontier.replit_sandbox-engine-microvms-part-1.md`
 - [[entities/micahflee]] — "in-band" vs "out-of-band" framing for agent control
 - [[entities/browser-use]] — the company behind this architecture
 - [[concepts/agent-runtime-infrastructure]] — the substrate agents run on
+- [[concepts/stateful-api-emulators]] — the fourth option for external calls: a local stateful emulator instead of control-plane proxy, leased credentials, or failure
+- [[concepts/monty-sandbox]] — the in-process tier, and its isolate-reuse dependency on edge platforms
 
 ## Sources
 - [[raw/articles/2026-08-29_browser-use_two-ways-to-sandbox-agents]] — Browser Use, "How We Built Secure, Scalable Agent Sandbox Infrastructure" (2026-02-25)

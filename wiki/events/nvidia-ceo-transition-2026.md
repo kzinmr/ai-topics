@@ -140,9 +140,19 @@ The post materially upgrades the wiki's coverage from *reported* comeback talks 
 
 Around the same moment, **Daring Fireball (John Gruber, "The 50-Yard Line," Nov 18)** reframed the scandal's political dimension, revisiting Huang's March 2026 quote that *"America's unique advantage that no country could possibly have is President Trump."* Gruber's thesis: corporate leaders normally stay near the political "50-yard line" (Tim Cook's Obama→Trump→Biden→Trump survival strategy) so they can "just turn around" after each election; Huang instead *"broke for Trump's end zone"* — million-dollar inauguration tickets, the gold trophy, an appointment to the President's Council of Advisors on Science and Technology — an alignment that was *"unprecedented in modern U.S. history"* and that now leaves NVIDIA (unlike Apple) exposed to *"charges of corruption and/or breaches of national security."* Gruber credits Huang with at least believing what he said, and notes Trump had floated **Tim Cook's name to succeed Huang at Nvidia**. Raw: [[raw/articles/daringfireball.net--2026-11-the-50-yard-line--1dbb4704.md]]. See [[entities/daringfireball-net]].
 
+## Huang reinstated as CEO (November 23)
+
+On **November 23, 2026** — eleven days after his resignation and five days after his own *"would be honored"* post above — CNBC reported that **"Nvidia reinstates Jensen Huang as CEO"** ([CNBC](https://www.cnbc.com/2026-11-23/nvidia-jensen-huang-ceo.html)), ending the shortest CEO search in NVIDIA's 33-year history and sidelining the interim arrangement under CFO **Colette Kress**.
+
+- **Source-status caveat (as of this scan, 2026-11-23 22:30 UTC):** the CNBC URL surfaced via [[entities/mario-zechner|Mario Zechner]]'s X post and returned the headline **"Nvidia reinstates Jensen Huang as CEO"** through the link unfurler, but the article URL itself returned **HTTP 404** when scraped directly eleven hours after the tweet, so **the full text is not in the wiki and the headline is the only confirmed content**. The page may be paywalled, geo-blocked, still unpublished, or moved; the page may also have been a breaking-news placeholder. Retry the scrape in a later run before treating any detail beyond the headline as established.
+- **Reactions were immediate and sceptical.** Zechner's entire endorsement of the story was the single word *"haha"*, consistent with his standing anti-hype posture and with the fact that the reinstatement vindicates none of the concerns raised during the transition (see the Zitron revenue-integrity and Treasury-external-CEO sections above).
+- **Unresolved tension the reinstatement does not settle:** the Board's independent investigation that Huang acknowledged on Nov 18, the congressional testimony commitment, the GPU-smuggling probe, and Treasury's stated demand for an *external* CEO are all still live. A reinstatement eleven days in — with no reported successor search outcome — is therefore a *reversal*, not a resolution, of the November 12 resignation.
+
+See [[entities/jensen-huang]], [[entities/nvidia]].
+
 ## Related
 
-- [[entities/jensen-huang]] — person page (status updated from "rumor-level ouster" to confirmed resignation)
+- [[entities/jensen-huang]] — person page (status updated from "rumor-level ouster" to confirmed resignation; Nov 23 reinstatement noted above)
 - [[entities/nvidia]] — company page
 - [[entities/gary-marcus]] — same-day commentary
 - [[events/anthropic-ipo-roadshow-2026]] — NVIDIA's committed backstop now in question

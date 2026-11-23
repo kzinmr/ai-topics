@@ -75,6 +75,7 @@ His blog at dbreunig.com, active since 2010, covers AI, geospatial technology, m
 | 2026 | "Separating Task from Model" — argues for task-model separation as core DSPy/GEPA philosophy |
 | 2026-08-23 | "Fable & The End of the Free Lunch" — Fable ends the "free lunch": agentic coding now requires deliberate work-routing across model tiers (Fable for design, GLM 5.2 for execution) |
 | 2026-10-17 | X post criticizing **Claude.app** mobile UX: the keyboard cannot be hidden, forcing users to read through a 2–3-line window after typing a paragraph or two of feedback — an input/feedback-surface critique in the vein of his context-UX work |
+| 2026-11-23 | Announced the **final Bay Area DSPy meetup of 2026** (Dec 16, hosted by Figma), closing out the year with a book launch for Mike Taylor's *Context Engineering with DSPy* — lightning talks and discussion; Breunig is the event's organizer ([RSVP](https://luma.com/2czukysp)) |
 
 ## Core Ideas
 
@@ -347,6 +348,7 @@ Since ChatGPT's launch, Breunig's writing shifted intensely toward AI:
 - **MLOps Community "Coding Agents" Conference (Mar 2026)**: "Learnings from a No-Code Library: Keeping the Spec Driven Development Triangle in Sync"
 - **Dev Writers Meetup (Swyx)**: "Finding the Right Word"
 - **GeoBuiz**: Multiple presentations on GERS and location intelligence
+- **Bay Area DSPy Meetup (Dec 16, 2026, hosted by Figma)**: organizer of the final 2026 edition, a book-launch evening for Mike Taylor (**@hammer_mt**, Databricks) — *Context Engineering with DSPy* — with lightning talks and discussion. Confirms Breunig as the sustained community organizer behind the DSPy/GEPA scene in the Bay Area, not only a speaker at it.
 
 ## Key Quotes
 

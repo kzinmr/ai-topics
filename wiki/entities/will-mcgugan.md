@@ -3,7 +3,7 @@ title: Will McGugan
 type: entity
 handle: "@willmcgugan"
 created: 2026-04-10
-updated: 2026-04-10
+updated: 2026-11-23
 tags:
   - person
   - x-account
@@ -169,3 +169,9 @@ The business entity supporting McGugan's open-source work:
 In October 2026, McGugan announced **Dinkus** (dinkus.textualize.io), a **distraction-free WYSIWYG markdown studio for Mac** built on the Textualize stack. Key features include typewriter mode, focus modes, source view, and files that stay plain markdown — continuing his Ishmael-style philosophy of minimal writing tools that preserve plain-text fidelity. As of Oct 2, 2026 he was iterating on the tree-view icon set (adding per-file-type icons beyond the original folder/file pair), demonstrating his characteristic focus on small UI polish details.
 
 Dinkus extends the Textualize product line alongside Ishmael (novel-writing) into general-purpose markdown authoring.
+
+## Single-file shareable artifacts (Nov 2026)
+
+On **Nov 23, 2026** McGugan demonstrated the output format he has been building toward: *"Here's an example of that single shareable file. It's an HTML file that anyone can open. Completely self contained, including search index and images."* ([example](https://sharable.link/vb9w4tep), a self-contained "lizards" document).
+
+The architectural claim is the interesting part: a **single HTML file that carries its own search index and its images** — i.e. a full site's functionality collapsed into one portable artifact, no server, no asset directory, no build step. This is the natural extension of McGugan's standing positions: plain-text fidelity (Dinkus keeps files as markdown), terminal-first minimalism, and skepticism of infrastructure dependencies. It also overlaps the local-first / single-file-app tradition, and is worth watching as an output target for agents: a coding agent that can emit *one* self-contained, searchable, offline-openable file sidesteps deployment, hosting, and asset-pipeline problems entirely.

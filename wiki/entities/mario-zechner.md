@@ -3,7 +3,7 @@ title: Mario Zechner
 type: entity
 handle: "@badlogicgames"
 created: 2026-04-10
-updated: 2026-10-05
+updated: 2026-11-23
 tags:
   - person
   - x-account
@@ -198,3 +198,8 @@ A ~400-line RAG chatbot that replicated the Austrian government's job informatio
 - **Personal reflections** — Essays on fatherhood, slowing down, and finding meaning in software development beyond commercial success
 - **AI safety and control** — Shared Google DeepMind's "Securing the Future of AI Agents: A Technical Roadmap" (2026-06-24), noting "they've given up on solving the lethal trifecta directly. the new direction seems to be a tower of LLMs." See [[concepts/ai-control]].
 - **AI and software engineering** — Shared Gergely Orosz's "Slow down to speed up: AI and software engineering" talk from Craft Conference 2026 (2026-06-24), noting "the theme sounds familiar :)".
+
+## Recent X Activity (Nov 2026)
+
+- **Nov 23 — amplifies Paul Christiano's Dwarkesh interview, with visible unease.** Zechner posted *"recommended viewing. that i am unsure what to make of this is not great."* linking the Dwarkesh Patel interview **"We could be 12 months away from AIs that can overthrow the government"** ([YouTube](https://youtu.be/SyHM5hNPAEo)). The recommendation-with-reservation framing is characteristic: he endorses the source's seriousness while declining to accept its conclusion. Note this is the *same interview* the wiki already covers in depth from the transcript side ([[entities/paul-christiano]] → Nov 2026 Dwarkesh interview: ~1-in-3 chance of uncontrollable superintelligence within 12 months, pause-algorithmic-progress-until-weights-secure). Zechner's post is the reception layer — evidence the interview crossed from the AI-safety audience into the systems-programming/coding-agent audience. See [[concepts/ai-alignment]], [[concepts/ai-control]].
+- **Nov 23 — Nvidia reinstates Jensen Huang as CEO.** Zechner shared the CNBC report with a single word of commentary: *"haha"*. Recorded here because it links the AI-infrastructure governance beat to his anti-hype posture; the substance lives on [[events/nvidia-ceo-transition-2026]] → "Huang reinstated as CEO (November 23)".

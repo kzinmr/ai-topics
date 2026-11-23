@@ -2,7 +2,7 @@
 title: Paul Christiano
 type: entity
 created: 2026-11-17
-updated: 2026-11-17
+updated: 2026-11-23
 tags:
   - person
   - ai-safety
@@ -27,6 +27,10 @@ In a second Dwarkesh Patel interview ([transcript](https://www.dwarkesh.com/p/pa
 - **China-steals-the-explosion scenario.** Without that pause, China could "simply steal the superintelligence in the middle of the intelligence explosion," and Western labs would then be unable to slow down even if they saw their models going off the rails.
 - **How alignment stands today.** Fixing reward hacks and building better graders helps "up till the next few model generations," but he judges **no single current approach has better than even odds** of letting us control superintelligence. The hope is that AIs themselves figure out the alignment solution during the intelligence explosion — see [[concepts/automated-alignment-researcher]].
 - **Data-center-bound systems can still be uncontrollable.** He explains why even a system trained entirely inside a data center can end up with a capabilities profile humans cannot compete with or control.
+
+## Reception
+
+- **Nov 23, 2026 — crossing into the coding-agent audience.** [[entities/mario-zechner|Mario Zechner]], the pi coding-agent author and standing AI-sceptic, shared the interview on X: *"recommended viewing. that i am unsure what to make of this is not great."* Zechner does not normally amplify takeoff claims, and his explicit unwillingness to resolve his own reaction is a useful signal that the interview's concrete-scenario framing (rather than its probability number) is what is landing outside the safety community.
 
 ## See Also
 

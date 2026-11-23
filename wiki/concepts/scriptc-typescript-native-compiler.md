@@ -57,6 +57,10 @@ scriptc is explicitly **experimental** and supports only a **subset** of JavaScr
 
 scriptc extends Vercel Labs' bet on **agent-first / performance-native tooling** alongside the Zero language ([[concepts/agent-first-design]]). A native, engine-free TypeScript runtime path is relevant to AI agents that ship or execute generated code where a full Node runtime is heavyweight (sandboxes, edge, CI, small containers).
 
+## Reception
+
+- **Nov 23, 2026 — Tate's own one-line framing.** In an X reply, lead author [[entities/chris-tate|Chris Tate]] compressed the pitch to *"Compiled to one tiny native binary: instant startup, native speed, a fraction of the memory, no Node required."* The emphasis on **instant startup** (not raw throughput) locates scriptc's payoff on the cold-start axis — the regime that dominates agent-executed snippets, edge functions and CI steps, where V8 + Node boot time is the workload. See [[entities/chris-tate]] → X Activity Log (Nov 2026).
+
 ## Related
 
 - [[entities/vercel-labs]] — parent R&D division (also ships Zero, fx)

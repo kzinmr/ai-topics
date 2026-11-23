@@ -5,7 +5,7 @@ sources:
   - https://github.com/pydantic/monty/releases/tag/v1.2.0
   - https://github.com/pydantic/monty/pull/1016
 created: 2026-04-15
-updated: 2026-10-19
+updated: 2026-11-23
 type: entity
 ---
 
@@ -193,6 +193,11 @@ Colvin articulates a clear spectrum for AI code execution:
 | **Full Computer Use** | None | Maximum | Minutes | Very high |
 
 > *"Monty attempts to slot in between simple tool calling which is very safe and relatively easy to implement, doesn't require external infrastructure, but isn't that expressive for the LLM, and sandboxes which are much more expressive, you can do much more powerful things, but they require... the cost is [high]."*
+
+## Recent X Activity
+
+- **Nov 18, 2026 — isolate warm-reuse blocker for wasm sandboxes on Cloudflare.** Colvin escalated [[raw/articles/2026-11-18_github.cloudflare.workerd_issue-8379_isolate-warm-reuse.md|cloudflare/workerd#8379]], asking Cloudflare (cc @dok2001, @KentonVarda) for *"a way to reuse isolates (with wasm) on websocket connections."* The issue reports far more production cold starts than the warm-request rate in Cloudflare's own *Eliminating Cold Starts 2: Shard and Conquer*: WebSocket upgrade requests never reuse a warm isolate, and `placement.region` fans a session across many isolates. This is the infrastructure counterpart to the Execution Continuum row above — Monty's 0.004 ms restore only pays off if the host isolate survives across connections, so edge-platform isolate lifecycle is now a first-order constraint on wasm-sandbox architectures.
+- **Nov 18, 2026 — Agent Sandboxes in Pydantic Logfire (live demo).** Colvin presented a 30-minute live demo of running the code an agent writes inside an isolated Rust interpreter (Monty), traced end-to-end in Logfire, followed by Q&A ([event page](https://pydantic.dev/events/agent-sandboxes-live-demo)). It is the practical demonstration of the Monty/CodeMode tier of the Execution Continuum: agent-authored code executed without external sandbox infrastructure, with tracing supplied by the same vendor. See [[concepts/monty-sandbox]], [[concepts/logfire]].
 
 ## Connections to Other Leaders
 

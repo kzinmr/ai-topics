@@ -2,7 +2,7 @@
 title: Chris Tate
 type: entity
 created: 2026-04-10
-updated: 2026-11-15
+updated: 2026-11-23
 source: "x-account"
 related: [entities/simonw, entities/antirez-com, entities/geoffreylitt-com, entities/mitsuhiko]
 tags:
@@ -87,6 +87,8 @@ A secure port forwarding tool for development. Allows developers to expose local
 
 A local API emulation tool for CI and no-network sandboxes, released under vercel-labs in June 2026. Enables developers to mock external API responses locally, making integration tests reproducible without network dependencies. Designed as a lightweight alternative to full service virtualization — useful for both human developers and AI coding agents that need predictable API surfaces during code generation.
 
+**Crossed 1M weekly npm downloads (Nov 23, 2026).** Tate announced the milestone with the product's own positioning line: *"Local drop-in replacement services for CI and no-network sandboxes. Fully stateful, production-fidelity API emulation. Not mocks."* ([emulate.dev](https://emulate.dev)). The "not mocks" distinction is the interesting one for agents: emulate keeps server-side state across calls, so an agent (or CI job) running against it in a **no-network sandbox** sees a coherent stateful API rather than canned responses — which is what makes it usable as the API substrate for agent code-execution sandboxes rather than only for test doubles.
+
 Source: `raw/articles/` — `emulate` GitHub README: https://github.com/vercel-labs/emulate
 
 ## Core Ideas & Philosophy
@@ -144,6 +146,9 @@ He occasionally shares **technical threads** explaining the reasoning behind his
 
 - **Nov 13 — [WebMCP via Vercel UI SDK](https://ui-sdk.dev/docs/agents/connect-an-agent/webmcp):** Tate flagged (with a bare "Interesting") the **WebMCP** docs page in the **Vercel UI SDK** agent-integration guide: *"Let the agent built into a browser read and use your components."* It is the concrete shadcn/UI-SDK implementation surface for the [[concepts/webmcp-protocol|WebMCP]] direction — instead of an external agent scraping the DOM, the **browser's built-in agent** discovers and invokes the site's own typed React components directly. Fits Tate's [[#Key Projects|json-render]] / Generative-UI line of work: the component catalog is the agent's tool surface. See [[concepts/agentic-web]].
 - **Nov 14 — [SPEC-01/HARDWARE theme for Vercel UI SDK](https://spec-01.vercel.app/):** Amplified **SPEC-01/HARDWARE**, a themed component set built with the **Vercel UI SDK** and released by **@shuding** (Guo Yun, Vercel design engineer): **61 hardware-flavored components — keys, knobs, dials, LCDs and switches — with haptics and sound**, installable from a **shadcn registry**. Tate's reaction: *"Going here, turning sound on and pressing buttons is so satisfying 😌."* Worth noting as the aesthetic/UX end of the same UI-SDK component-registry story that [[#X Activity Log (Nov 2026)|WebMCP]] sits on the agent end of.
+- **Nov 23 — [scriptc: the "no Node required" pitch](https://github.com/vercel-labs/scriptc):** In a reply, Tate restated [[concepts/scriptc-typescript-native-compiler|scriptc]]'s value proposition in one line: *"Compiled to one tiny native binary: instant startup, native speed, a fraction of the memory, no Node required."* The framing targets cold-start cost rather than language politics — the same axis that matters for short-lived agent-executed scripts and edge/serverless invocations, where V8 startup and Node's footprint dominate a sub-second workload.
+- **Nov 23 — emulate passes 1M weekly downloads:** Announced the npm milestone for [[#emulate|emulate]] (see above).
+- **Nov 23 — [ui-feed](https://ui-feed.dev), a weekend project:** Tate shipped a scrolling gallery of **89 live interface components** built with the **Vercel UI SDK** — *"A feed of live interface components. Scroll through and try each one."* Each entry is a working component (prism, VCR timer, mercury-tilt switch, Newton's-cradle switch, darkroom enlarger timer, Morse-key autocomplete…) with a copyable prompt and an internal ID, presented as a "ui sdk system / Inspiration for your next UI" feed. Functionally it is the **prompt-and-component catalogue** for Tate's Generative-UI line: instead of describing a component to a model, an agent can be pointed at an existing rendered example plus its prompt. Same substrate as [[#X Activity Log (Nov 2026)|WebMCP]] and SPEC-01, one week later.
 
 ## Notable Quotes & Statements
 

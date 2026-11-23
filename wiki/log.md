@@ -1,4 +1,75 @@
 # Wiki Log
+
+## [2026-11-23 22:30 UTC] x-accounts-scan | 11 accounts scanned, 10 new posts -> 2 raw articles, 1 new concept, 7 page updates
+
+- **Scan**: cursor 33->44, 11/84 accounts (request budget 12; 73 skipped by budget, not dead handles), 0 errors, dedup cache 253.
+- **Raw saved (2)**: `raw/articles/2026-11-23_blog.google_gemini-api-file-slicing-controls.md` (Google DeepMind, file slicing + native Office/OpenDocument support), `raw/articles/2026-11-18_github.cloudflare.workerd_issue-8379_isolate-warm-reuse.md` (workerd isolate warm-reuse issue, unfurl-text only).
+- **New concept (1)**: `concepts/stateful-api-emulators.md` — the emulator-vs-mock distinction as the fourth answer to "what happens when agent code calls an external API"; emulate (Vercel Labs) 1M weekly downloads as the anchor datapoint. Tags all pre-existing in SCHEMA.
+- **Updated (7)**: `entities/samuel-colvin` (new Recent X Activity: workerd#8379 isolate blocker + Logfire Agent Sandboxes demo), `concepts/monty-sandbox` (Reception: isolate-lifecycle is the wasm tier's cold-start floor), `entities/chris-tate` (emulate 1M, scriptc one-line pitch, ui-feed weekend project), `concepts/scriptc-typescript-native-compiler` (Reception), `entities/philipp-schmid` (Gemini file slicing amplification), `entities/paul-christiano` (Reception: badlogic amplification), `entities/mario-zechner` (Recent X Activity: Christiano interview + Nvidia reinstatement), `entities/will-mcgugan` (self-contained single-file HTML with embedded search index), `entities/drew-breunig` (timeline + Speaking: Dec 16 Bay Area DSPy meetup / hammer_mt book launch), `concepts/dspy` (book row), `concepts/agent-sandbox-patterns` (backlinks), `events/nvidia-ceo-transition-2026` (Huang reinstated Nov 23, with 404-source caveat).
+- **Skipped**: none purely trivial; all 10 posts routed to an update or a reaction layer.
+- **Unresolved**: CNBC "Nvidia reinstates Jensen Huang as CEO" URL 404 on direct scrape (headline only from unfurl) - retry next run.
+
+
+## [2026-11-23 18:45 UTC] dreaming wiki-ingest | recovered render-fail; 1 take (retro-hardware agent cluster), 4 refs verified covered
+
+- **Recovery**: dreaming-group (c4a9e8d2f671, 18:17) completed Pattern E analysis (checkpoint total_articles=0, recent_raw=271) but failed JSON render (Pitfall #12). Read 5,433-line output file tail: 13 clusters, 1 take-candidate + 4 reference candidates. Cluster data also in grouped_themes_latest.json (run 20261123T180041Z).
+- **Prior triage consumed**: triage_latest.json (run 20261122T180040Z) was consumed by yesterday's dreaming-wiki-ingest (log L125, commit 6cf315138, Cartesia H-Net take). Not re-triaged.
+- **Take (1)**: Created `concepts/coding-agents-on-obsolete-hardware.md` (C6) — unifies ClawDOS (agent harness on real IBM PC 5160 8088, 176KB HARNESS.EXE speaking Claude Messages API, TLS bridge PC, 18 tools incl. peek/poke/port + CGA screenshot tool, 100% Claude-written repo, HN 84) + ankitg vibe-coded FPGA inference chip (DeepGrove ternary model on AWS F2 16GB HBM, 6→213 tok/s = 33x, ~$10K tokens / 3M lines, cocotb→co-sim→token-for-token verification ladder, HN 152) + jayd.ml Tab S3 (already in entities/jayden-milne L64, cited cross-page). Verified zero wiki coverage (ricapar/ankitg URLs absent from archive_index; only prior mention = yesterday's skip line). Backlinks added: modest-success-software-boom, vibe-coding (moved-stub). SCHEMA: minted `retro-computing` on Engineering line.
+- **Reference verification gate (Deep Sleep)** — all 4 downstream refs verified ALREADY COVERED, no edits:
+  | Candidate | Status | Details |
+  |---|---|---|
+  | C3 Inkling 2 Mini | ✅ Covered | concepts/inkling.md L98-104: looped middle layers x3, 26.4B/3.4B active, NVFP4, DeepSWE v1.1 48.2%, Vals 46.5%, HN 1060 GGUF-quants thread — all present (trending-topics today) |
+  | C1 Signal OS-agent blocking | ✅ Covered | concepts/security-and-governance/os-agent-capture-privacy.md (dedicated page, full body) + concepts/signal.md L23-27 |
+  | C2 arXiv 2611.21885 self-rewriting | ✅ Covered | concepts/language-model-weight-self-rewriting.md — cites arXiv id, 27B, +6.6pts (trending 528cb33d today) |
+  | C4 Together prompt-leakage + Qwen4-Max/TTS + output-caching | ✅ Covered | entities/together-ai.md (2 sections, log L187-188), concepts/qwen-4-max.md vendor specs — done by today's blog-wiki-ingest; output-caching already archived |
+- **Skips (batch)**: Alpoge/Perplexity clusters (consumed today per log L31), Cartesia x11 (yesterday), Cohere x7 marketing, bubble trio (saturated), dev-role-shift + security-misc (marginal — prior dreaming cycle judged core theses covered in ai-engineering-dekilling etc.), ~28 non-AI (dfarq/shkspr/filfre/johndcook/maskray...).
+- **Archive**: dreaming --keep-reference; see archive JSON this commit.
+
+
+# Skeleton enrichment run — 2026-11-22
+
+> `skeleton-enrich-daily` cron run (2026-11-22, 19:0x UTC). `status: skeleton` backlog
+> remains **empty** (streak since 2026-10-17). Productive action on the `status: stub`
+> backlog: the two speedrun sibling stubs deferred from the 2026-11-21 run
+> (`jxbz`, `brendanh0gan`), plus two new entity pages for prolific speedrun
+> contributors surfaced during research (`leloykun`, `you-jiacheng`).
+
+## Actions this run (2 enriched, 2 new pages)
+
+| Page | Before | After |
+|------|--------|-------|
+| `concepts/jxbz.md` | 252 B stub | ~4.9 KB — **Jeremy Bernstein**, Muon co-creator; identity verified (GitHub jxbz = jeremybernste.in = Thinking Machines Lab); "Deriving Muon" theory (RMS-to-RMS dualization, Newton-Schulz, LR transfer); speedrun record #3 credit; Bernstein & Newhouse 2024 draft-origin story from modded-nanogpt README |
+| `concepts/brendanh0gan.md` | 252 B stub | ~2.8 KB — record #11 (U-net skips + double LR, 7.2 min) sole credit; #20 first-sub-3-min team; "Brendan Rappazzo" name via project citation (flagged as inference); GitHub 404 negative finding |
+| `entities/leloykun.md` | (new) | ~2 KB — Franz Louis Cesista; records #15/#20/#21 incl. first sub-3-min; Muon co-author ("Franz Cesista"); 2x IOI/2x ICPC finalist (GitHub bio) |
+| `entities/you-jiacheng.md` | (new) | ~2 KB — You Jiacheng (IIIS Tsinghua); solo streak #15-#17, #19 (value-embedding family); Muon co-author ("Jiacheng You") |
+
+## Sources used
+
+- GitHub API (users jxbz, brendanh0gan[404], leloykun, YouJiacheng)
+- jeremybernste.in homepage + /writing + /writing/deriving-muon (via Jina Reader)
+- KellerJordan/modded-nanogpt README (full record table + contributor list + Muon provenance note)
+- Keller Jordan's Muon post (formal citation with real-name list)
+
+## Notes
+
+- web_search unavailable in this session; DuckDuckGo endpoints bot-blocked — GitHub API
+  + Jina Reader + arXiv API used instead (all primary sources anyway).
+- Tags used (person, ml-research, optimization, nanogpt-speedrun, open-source,
+  pseudonymous) all pre-registered in SCHEMA.md.
+- Git-history richness check: both stubs last touched by stub-era commit; nothing to restore.
+- `brendanh0gan.md` keeps `status: stub` (identity still unverified) — downgrade to
+  full enrichment pending name confirmation.
+- index.md: 2 new entity entries (972→974), 2 concept description updates.
+
+## Remaining backlog
+
+~384 `status: stub` pages. Next-run candidates: remaining person-shaped stubs in
+`concepts/` (cyd, foaf, genie, synth, quepid, spegel, botnet, prodng, katerra,
+dingcad, pallets, placeiq — many likely org/tool stubs needing the same
+GitHub/registry-first research pattern used here).
+
+
+
 ## [2026-11-23] auto-fix | Wiki health: YAML frontmatter repair (4 pages)
 
 ### Changes
@@ -63,48 +134,6 @@ Skips (4) archived via archive_triage.py.
 
 
 _Log of all wiki changes. Newest entries at top._
-
-# Skeleton enrichment run — 2026-11-22
-
-> `skeleton-enrich-daily` cron run (2026-11-22, 19:0x UTC). `status: skeleton` backlog
-> remains **empty** (streak since 2026-10-17). Productive action on the `status: stub`
-> backlog: the two speedrun sibling stubs deferred from the 2026-11-21 run
-> (`jxbz`, `brendanh0gan`), plus two new entity pages for prolific speedrun
-> contributors surfaced during research (`leloykun`, `you-jiacheng`).
-
-## Actions this run (2 enriched, 2 new pages)
-
-| Page | Before | After |
-|------|--------|-------|
-| `concepts/jxbz.md` | 252 B stub | ~4.9 KB — **Jeremy Bernstein**, Muon co-creator; identity verified (GitHub jxbz = jeremybernste.in = Thinking Machines Lab); "Deriving Muon" theory (RMS-to-RMS dualization, Newton-Schulz, LR transfer); speedrun record #3 credit; Bernstein & Newhouse 2024 draft-origin story from modded-nanogpt README |
-| `concepts/brendanh0gan.md` | 252 B stub | ~2.8 KB — record #11 (U-net skips + double LR, 7.2 min) sole credit; #20 first-sub-3-min team; "Brendan Rappazzo" name via project citation (flagged as inference); GitHub 404 negative finding |
-| `entities/leloykun.md` | (new) | ~2 KB — Franz Louis Cesista; records #15/#20/#21 incl. first sub-3-min; Muon co-author ("Franz Cesista"); 2x IOI/2x ICPC finalist (GitHub bio) |
-| `entities/you-jiacheng.md` | (new) | ~2 KB — You Jiacheng (IIIS Tsinghua); solo streak #15-#17, #19 (value-embedding family); Muon co-author ("Jiacheng You") |
-
-## Sources used
-
-- GitHub API (users jxbz, brendanh0gan[404], leloykun, YouJiacheng)
-- jeremybernste.in homepage + /writing + /writing/deriving-muon (via Jina Reader)
-- KellerJordan/modded-nanogpt README (full record table + contributor list + Muon provenance note)
-- Keller Jordan's Muon post (formal citation with real-name list)
-
-## Notes
-
-- web_search unavailable in this session; DuckDuckGo endpoints bot-blocked — GitHub API
-  + Jina Reader + arXiv API used instead (all primary sources anyway).
-- Tags used (person, ml-research, optimization, nanogpt-speedrun, open-source,
-  pseudonymous) all pre-registered in SCHEMA.md.
-- Git-history richness check: both stubs last touched by stub-era commit; nothing to restore.
-- `brendanh0gan.md` keeps `status: stub` (identity still unverified) — downgrade to
-  full enrichment pending name confirmation.
-- index.md: 2 new entity entries (972→974), 2 concept description updates.
-
-## Remaining backlog
-
-~384 `status: stub` pages. Next-run candidates: remaining person-shaped stubs in
-`concepts/` (cyd, foaf, genie, synth, quepid, spegel, botnet, prodng, katerra,
-dingcad, pallets, placeiq — many likely org/tool stubs needing the same
-GitHub/registry-first research pattern used here).
 
 
 ## [2026-11-23 10:00 UTC] tag-audit-weekly | Clean — 0 violations, normalization skipped

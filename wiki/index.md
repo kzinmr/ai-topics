@@ -3184,6 +3184,7 @@
 - [[concepts/starchild-1]] — Starchild-1
 - [[concepts/state-of-open-source-ai-2026]] — Mozilla report: open weights closed the capability gap while inference cost collapsed 50× (July 2026)
 - [[concepts/state-sponsored-chatbot-influence]] — State-Sponsored AI Chatbot Influence — fake think-tank "data reports" engineered to steer LLM chatbot answers (Hanover Institute / Piro case, Aug 2026)
+- [[concepts/stateful-api-emulators]] — Stateful API Emulators — local drop-in replacement services with real server-side state for CI and no-network sandboxes; the fourth option for agents' external calls (vs control-plane proxy / leased credentials / hard failure); emulate (Vercel Labs) 1M weekly downloads Nov 2026
 - [[concepts/statewise-persistent-operational-state-repair]] — StateWise: diagnose & repair corrupted persistent operational state before an agent acts (counterfactual replanning + typed evidence grounding); 93.3% vs 38.7% correctness under corrupted state, no unsafe actions (arXiv:2610.05241, Oct 2026)
 - [[concepts/statistical-process-control]] — Statistical Process Control
 - [[concepts/strands-decider]] — Strands Decider — decision-model variant in the System One category, compared with Perplexity Decider and Gemini Decision 1 (Nov 2026)
