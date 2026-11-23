@@ -1,3 +1,10 @@
+## [2026-11-23] blog-ingest | RSS-fallback recovery — 2 unsaved articles recovered
+
+- `openai.com/index/perplexity-and-intelligence` → recovered via `openai.com/news/rss.xml` (browser UA, 200). Body = RSS description only; `scrape_status: rss-fallback`. Cross-referenced companion commentary: Sean Goedecke's "Notes on OpenAI's perplexity reveal" (same batch).
+- `youtube.com/watch?v=JNexz3Tbiu8` (AI Engineer: "Build the Workshop Before the Software Factory" — Armin Ronacher / Earendil Pi coding agent) → transcript blocked (yt-dlp 429); body = YouTube channel RSS description + timestamps. `scrape_status: rss-fallback`.
+- `abortretry.fail/p/zenith-data-systems-part-ii` → NOT recovered: paywalled Substack (`body_html: null`, wordcount 6626, 0 AI-related terms in preview HTML). Off-domain retrocomputing content; left for blog-triage archival without raw article.
+- 12/15 articles saved by blog_ingest pre-run script (checkpoint `blog_ingest_20261123T100944Z`).
+
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
