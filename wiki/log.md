@@ -44,6 +44,16 @@ _Log of all wiki changes. Newest entries at top._
 dingcad, pallets, placeiq — many likely org/tool stubs needing the same
 GitHub/registry-first research pattern used here).
 
+
+## [2026-11-23 10:00 UTC] tag-audit-weekly | Clean — 0 violations, normalization skipped
+
+- **Audit**: `scripts/tag_audit.py` — scanned 3,562 tagged pages, 1,043 unique tags in use vs 1,147 SCHEMA tags. Composite kebab-case violations: **0**. Non-SCHEMA tags: **0**. Coverage 110% (all used tags valid).
+- **Normalization dry-run**: proposed 652 rewrites, but per `tag-audit-session-2026-08-10` pitfall (dry-run scope >> real violations; audit reports 0), these are preference rewrites — NOT applied.
+- **Action**: No changes to pages, TAG_NORMALIZATION, or SCHEMA.md. No commit needed.
+- **Note**: Unstaged changes in working tree are skill-file updates from other pipelines (dreaming, x-account-enrichment, etc.) — intentionally not staged/committed by this job (per dirty-tree scope-staging recipe).
+
+---
+
 ## [2026-11-22 22:30 UTC] x-accounts-scan | 11/84 accounts (budget 12), 1 new post — Ankur Goyal WinFS link
 
 - **Scan**: cursor 22 -> 33, 11 accounts scanned (73 skipped on request budget, not dead handles), 12 API requests, 0 errors. Dedup cache 258 entries.
