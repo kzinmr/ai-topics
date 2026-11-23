@@ -3,7 +3,7 @@
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Last updated: 2026-11-22
 
-## Entities (974 pages)
+## Entities (976 pages)
 
 - [[entities/_index]] — Directory hub / overview for entities pages
 - [[entities/0xjeff]] — 0xJeff
@@ -602,6 +602,7 @@
 - [[entities/mixedbread]] — Mixedbread
 - [[entities/mo-bitar]] — Mo Bitar
 - [[entities/mobius-labs]] — Mobius Labs
+- [[entities/maritime]] — Maritime (YC F26) — managed cloud for production AI agents; persistent microVM + lifecycle services (sleep/wake, triggers, spend caps); $1/mo 2GB agent claim; 'sandboxes solve 10% of the problem' thesis (Launch HN Nov 18 2026)
 - [[entities/modal-labs]] — Modal Labs; added Auto Endpoints launch (SOTA inference with one click), Decagon voice AI case study (290ms→190ms, 100ms cut), DFlash mid-training methodology (June 25); NVIDIA Vera CPU adoption for Sandboxes (Oct 2026) — first Arm move off x86, up to 2x throughput vs Intel Granite Rapids, Agentless Agent Bench methodology; Latent Space interview (Oct 22 2026) — $1B ARR / $750M Series D @ $16B / ~3B sandboxes, "duration transformation" compute economics, sandboxes = ~1/3 revenue; Sakana Namazu case study (Oct 29 2026) — production NVFP4 selective-expert quantization, raw-token-ID custom draft models, CPU-GPU sync stall removal (>90% less GPU idle), KV-aware router
 - [[entities/modal-sandbox]] — Modal Sandbox (Claude Managed Agents)
 - [[entities/modular]] — Modular — AI infrastructure startup co-founded by Chris Lattner (LLVM, Swift) and Tim Davis; creator of Mojo programming language and MAX AI platform; acquired by Qualcomm for ~$4B (June 24, 2026)
@@ -835,6 +836,7 @@
 - [[entities/smolmaxxing]] — smolmaxxing — hyperionaidev's on-device/small-model maximization project (GitHub); edge AI, quantization, memory-efficiency
 - [[entities/softwaredoug]] — Doug Turnbull (softwaredoug)
 - [[entities/soham-ray]] — Soham Ray — Researcher at Sierra; tau-bench suite, ICML 2026 oral
+- [[entities/starsling]] — StarSling (YC P25) — self-improving CI: fast GitHub Actions runners + agent loop shipping CI-optimization PRs with statistical-significance gating; Mastra 1,800 PRs/mo; 'CI bill got close to inference bill' (Launch HN Nov 17 2026)
 - [[entities/solo-founder-stack]] — Solo Founder Stack
 - [[entities/soundstream]] — SoundStream
 - [[entities/speakeasy-openapi-generation]] — Speakeasy's open-source OpenAPI→SDK/CLI/MCP code generator; agent-native API surface thesis, DeepMind DevRel partnership (Sep 2026)
