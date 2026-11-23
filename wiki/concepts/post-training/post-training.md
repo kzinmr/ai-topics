@@ -7,17 +7,14 @@ aliases:
   - post-training pipeline
   - post-training automation
 created: 2026-04-25
-updated: 2026-05-04
-tags:
-  - concept
+updated: 2026-11-23
 tags:
   - concept
   - post-training
-  - supervised-fine-tuning
-  - RLHF
-  - RL
+  - fine-tuning
+  - rlhf
+  - reinforcement-learning
   - model-training
-  - modelcrafting
 related:
   - "[[concepts/modelcrafting]]"
   - "[[concepts/post-training/_index]]"

@@ -2,7 +2,7 @@
 title: "Representation Collapse — When Models, Maps, and Proxies Replace Reality"
 type: concept
 created: 2026-05-11
-updated: 2026-06-08
+updated: 2026-11-23
 tags:
   - concept
   - philosophy
@@ -27,6 +27,7 @@ related:
   - "[[entities/qiaochu-yuan]]"
 sources:
   - "raw/articles/filfre.net--2026-04-the-mystery-of-rennes-le-chateau-part-4-non-fiction---893d1378.md"
+  - "raw/articles/filfre.net--2026-05-the-mystery-of-rennes-le-chateau-part-5-the-man-behi--a5bdea3e.md"
   - "https://www.ianyng.com/thoughts/2025/pomo-llms/"
   - "https://jamescosullivan.substack.com/p/baudrillard-llms-and-the-map-that"
   - "https://en.wikipedia.org/wiki/Simulacra_and_Simulation"

@@ -1,9 +1,9 @@
 ---
 title: "Edge AI Strategy — Quantize-Big vs Build-Tiny"
-description: The two competing routes to on-device LLMs in 2026: compress frontier-scale models via extreme quantization (Prism ML / Bonsai) versus build natively tiny agentic models (Cactus Compute / Needle 2). Shared principle, divergent bets.
+description: "The two competing routes to on-device LLMs in 2026: compress frontier-scale models via extreme quantization (Prism ML / Bonsai) versus build natively tiny agentic models (Cactus Compute / Needle 2). Shared principle, divergent bets."
 type: concept
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-11-23
 aliases:
   - edge-LLM strategy
   - quantize-big vs build-tiny

@@ -1,4 +1,19 @@
 # Wiki Log
+## [2026-11-23] auto-fix | Wiki health: YAML frontmatter repair (4 pages)
+
+### Changes
+- `concepts/post-training/post-training.md`: removed duplicated `tags:` block; normalized non-SCHEMA tags (`supervised-fine-tuning`→`fine-tuning`, `RLHF`→`rlhf`, `RL`→`reinforcement-learning`, deleted one-off `modelcrafting`)
+- `concepts/edge-ai-strategy.md`: quoted `description:` value (unquoted colon broke YAML parse)
+- `concepts/representation-collapse.md`: added missing part-5 filfre source entry — closing quote of part-4 line had been absorbed, leaving unterminated scalar
+- `concepts/representation-collapse-moc.md`: same truncated-source-line repair (was already fixed via companion edit; re-verified parse)
+- Bumped `updated:` to 2026-11-23 on all 4 pages
+
+### Verification
+- Full-wiki frontmatter YAML scan: 0 parse errors, 0 no-frontmatter, 0 non-SCHEMA tags remaining
+- `validate_index.py`: clean (3549 lines); index corruption checks (pipe/line-number/triple-bracket/space-prefix): 0
+- No index.md orphans, no ghost entries
+
+---
 
 ## [2026-11-23] trending-topics — 3 new pages + 3 enrichments (authoritative-data MCP, subagent role-reversal, agent-fleet math)
 

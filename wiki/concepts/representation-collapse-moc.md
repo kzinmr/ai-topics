@@ -2,7 +2,7 @@
 title: "Representation Collapse — Map of Content"
 type: concept
 created: 2026-06-08
-updated: 2026-06-08
+updated: 2026-11-23
 tags:
   - concept
   - philosophy
