@@ -983,7 +983,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2385 pages)
+## Concepts (2387 pages)
 
 - [[concepts/claude-black-hole-physics]] — Claude Fable 5.2 solves two open black-hole/quantum-gravity problems (Nov 19 2026): 20-year-old formation-transition calculation completed; exact central-charge upper bound on black-hole mass; Anthropic notes neither result describes our universe (HN 512p)
 - [[concepts/frostbite-ai-designed-cpu]] — Frostbite (Architect Labs, Nov 20 2026): agent swarms discover/design/verify a general-purpose interaction-net CPU end-to-end; ASL spec lowered to 800k+ Lean lines; vendor-reported 4.59x perf/W vs area-matched in-order core, emergent hardware work-stealing (HN 143p)
@@ -1260,6 +1260,7 @@
 - [[concepts/training-infra/_index]] — AI Infrastructure Engineering — Concepts hub for training-infra sub-pages
 - [[concepts/waymo-effect-research-collaboration]] — Deployment field sites as research environments; lab/field role blurring (Waymo Effect)
 - [[concepts/webmcp-protocol]] — WebMCP Protocol — Web standard for agent tool discovery (Aug 2026)
+- [[concepts/worker755-llm-subagent-game]] — Worker 755 — browser game where a real LLM manager (Claude/GPT/Gemini/DeepSeek/GLM/Kimi) spawns the human as its subagent on a 90-second clock; report+transcript is the only worker contract (Show HN 329, Nov 22 2026)
 - [[concepts/vm-containment-ai-agents]] — VM Containment of Cyber-Capable AI Agents — Trail of Bits research (Aug 2026)
 - [[concepts/weight-compiled-computers]] — Weight-Compiled Computers (In-Model CPUs) — Qwenputer: RV32I RISC-V CPU compiled into Qwen3.5-4B weights, Gated DeltaNet heads as exact RAM; dual-use for CoT-monitoring evasion and tamper-proof in-weight monitors (HN 532, Oct 2026)
 - [[concepts/wiki-memory]] — Wiki Memory — Agent-maintained file-based knowledge layer pattern (Harrison Chase, 2026)
@@ -2788,6 +2789,7 @@
 - [[concepts/parametric-factuality-recall-bottleneck]] — Parametric Factuality: Recall Is the Bottleneck — Google Research knowledge-profiling framework (Aug 2026)
 - [[concepts/passive-reconnaissance]] — Passive Reconnaissance
 - [[concepts/peft-lora-and-qlora]] — Peft Lora And Qlora
+- [[concepts/pandex-european-law-api]] — Pandex — EU + 7 European countries' legislation and top-court decisions as a REST API + MCP server for AI agents; 2.8M official documents, 37M linked citations, point-in-time law, cross-lingual hybrid search (pandex.io, HN 140, Nov 21 2026)
 - [[concepts/pentagon-ai-contracts-2026]] — Pentagon AI Contracts (May 2026)
 - [[concepts/people-first-ai-fund]] — People-First AI Fund
 - [[concepts/peoplereadmes]] — peoplereadmes
@@ -3411,9 +3413,10 @@
 - [[comparisons/palantir-vs-competitors]] — Palantir vs. Competitors
 - [[comparisons/self-scaffolding-approaches]] — Self-Scaffolding Approaches — RLM vs Dynamic Workflows vs Ornith-1.0
 
-## Events (57 pages)
+## Events (58 pages)
 
-- [[events/2026-11-20-alpoge-riemann-hypothesis-claude]] — Alpöge–Claude Riemann Hypothesis proof claim (Nov 2026): Levent Alpöge reportedly proves RH with Claude over months; 250K pages, human-driven, leans on Lean + mathlib (2M+ lines); Marcus's DeepBlue analogy, Kahn/Krier 'no margin impact', market unmoved; confidence low (no peer review)
+- [[events/2026-11-20-alpoge-riemann-hypothesis-claude]]
+- [[events/2026-11-22-pequalnp-agent-fleet]] — pequalnp.com — live coordinated AI agent fleet attacking P vs NP; paste-in prompt for Claude Code/Cursor/Codex/Gemini CLI, one assigned step per agent, every proof through one Lean checker; refuted/ruled-dead tracks public (HN 153, Nov 22 2026) — Alpöge–Claude Riemann Hypothesis proof claim (Nov 2026): Levent Alpöge reportedly proves RH with Claude over months; 250K pages, human-driven, leans on Lean + mathlib (2M+ lines); Marcus's DeepBlue analogy, Kahn/Krier 'no margin impact', market unmoved; confidence low (no peer review)
 - [[events/anthropic-nasdaq-debut-2026]] — Anthropic Nasdaq debut (ANT, Nov 19 2026) — priced $83/share above range, $81.3B raised ($107.3B incl. greenshoe per Bloomberg), largest IPO ever topping SpaceX, ~$1.5T valuation; HN 1,095p: engineered-pop, lockup-watch, 2.7% of US market cap vs Google's 0.16% at IPO; same-week 'Not a Safe AI Company' coalition + no-bailout protests; Nov 21 S-1 deep read (The Signal): day-one peak $111.53, RSP AI-acceleration threshold 'met' in 8 days, NRR ~900%, SpaceX $120.5B compute, 'Anthropic Direct', ~$132B cash
 - [[events/chatgpt-wallet-launch-2026]] — ChatGPT Wallet (OpenAI, Nov 16 2026) — agentic-commerce payment surface; low HN traction (46p/80c), single official source, confidence low pending third-party audit
 - [[events/openai-robotics-team-disbanded-2026]] — OpenAI disbands robotics team (2nd time, Nov 13 2026, Fortune/HN 179) as general models start running robots; HN: layered control, ~36ms latency floor, Bitter Lesson debate; confidence medium (paywalled single source)

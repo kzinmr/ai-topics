@@ -1,7 +1,7 @@
 ---
 title: "GLM-5.3"
 created: 2026-08-14
-updated: 2026-08-20
+updated: 2026-11-23
 type: concept
 tags:
   - model
@@ -168,6 +168,22 @@ Key points of the post as summarized by the AINews bulletin:
 The post also revived Tang's earlier prediction of an **open-weights Fable-class model by end of 2026**; AINews' spot check: with 134 days remaining, two 2–3T open models already exist (Qwen 3.8 Max, Kimi K3), Fable is estimated at 3–7T and only ~2 points ahead on the AA index.
 
 This framework complements the Superintel+ "post-training economics" analysis above (capability manufactured one domain at a time) and Lambert's Z.ai/Kimi post-training/pretraining division of labor — together they make GLM-5.3 a case study for the shift from pretraining-scale competition to post-training/environment-scale competition.
+
+## GLM-5.4: First Loop Transformer (Nov 2026)
+
+Z.ai shipped **GLM-5.4** on 2026-11-23 — *"Toward Generalized Coding with Our First Loop Transformer"* (z.ai/blog/glm-5.4; HN 150 pts / 73 comments, item 50609685). The launch page was client-side rendered and returned no fetchable body text, so **the technical claims below are unverified first-hand** and are reconstructed from the HN thread.
+
+What the thread establishes:
+
+- **Architecture**: billed as Z.ai's first **loop transformer** — recurrent/looped computation over the latent space rather than a single forward pass. One commenter noted the idea *"has come up a few times on r/LocalLLaMa and it's been considered one obvious missing piece for the latent space looped thinking"* (eurekin), situating it in the looped-recurrent line rather than as an isolated trick.
+- **Failure mode named in the post**: the model *"tends to get caught in overly long 'marathon thinking'"* — a test-time-compute runaway, the mirror image of under-thinking. This is the most concrete behavioral detail recoverable.
+- **No benchmarks published.** This dominated the reaction and is the story's real signal: *"Hard to say how good this is without benchmarks — I'm guessing they're not impressive or else they would have included the scores?"* (saretup) vs *"I'd rather applaud them for not benchmaxxing. If it's even slightly better than GLM-5.3 there's no doubt it's an outstanding coding model"* (A_D_E_P_T), and *"benchmarks have become nothing more than a marketing tool and the aggregate scores have become almost meaningless... them leaving these out could mean they don't want to bother with this charade anymore (I hope but don't think so)"* (Systemerror7A69).
+- **Subscription limits were raised vs 5.3**, read as a signal that the release emphasises **inference cost** over headline capability (lesspassiveobse).
+- **Suspicion about the silence**: *"So no benchmark numbers? Seems like anti-distillation efforts have really thwarted the Chinese models."* (yewenjie); *"considering the time they took to release this new iteration and the enormous amount of models released in the last couple of days, I assume they don't have something competitive here"* (paoliniluis). Counter: *"they're so good that they want two news cycles instead of one"* (viraptor).
+- **Continuity with the page's scaling thesis**: commenters still anchor on GLM-5.3 as the daily driver (*"I still use GLM5.3, it's my favourite model by far... it has been enough for everything I use it for"*, Systemerror7A69), consistent with the post-training/environment-scaling reading above — an incremental 5.x release is judged on cost and reliability, not on whether it tops a leaderboard.
+- The distillation argument surfaced as background: *"All models including and especially OpenAI and Anthropic distill; it is a legitimate training technique. Also the data is sourced without regard to ownership."* (thereader12)
+
+**Status: needs verification.** Confirm the loop-transformer design, parameter count, context length, benchmark suite, and the marathon-thinking claim against the z.ai post when the page becomes fetchable, and link the model to [[concepts/glm-5-3-flash]] / [[concepts/open-weight-models]] as appropriate.
 
 ## Related Pages
 

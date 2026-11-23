@@ -1,7 +1,7 @@
 ---
 title: "AI Energy"
 created: 2026-08-08
-updated: 2026-11-08
+updated: 2026-11-23
 type: concept
 tags:
   - concept
@@ -303,6 +303,18 @@ Physical constraints on power delivery may impose a harder ceiling on AI scaling
 - Can nuclear (fission and fusion) scale fast enough to meet AI's near-term power needs?
 
 ---
+
+## Anthropic's 2028 Power Mix and the Fossil-Fuel Record (Nov 2026)
+
+Two linked analyses put a lab-specific number on the emissions question on 2026-11-22:
+
+**Better Data Center Project** (*How AI is powered: a breakdown of BYOP and grid power*, 2026-11-16) estimated that **87% of Anthropic's power will come from gas and 11% from coal in 2028**. This hit HN at **982 pts / 963 comments** (item 50597612) — the highest-scoring AI story of the day, and by a wide margin the most contested. The thread split into (a) genuine cost-benefit disagreement — *"Really need a bit more data to know whether or not what Anthropic will expend is bad relative to what we expend today resource-wise... how much carbon are knowledge workers putting out between commuting, heating/air conditioning?"* (bilbo0s) — (b) efficiency-counter arguments (*"the LLMs of today will write 50x the code at better quality than these guys while emitting a fraction of the energy use"*, AIShill101), and (c) moral anger at the asymmetry — *"Why are we letting the few burn down our planet in order to further decrease reliance on (and opportunities for) the many?"* (vrganj). A recurring rebuttal to the anger: the same objection applies to tractors, the internet and lightbulbs (NotGMan), with the distinguishing answer being **who controls it** — *"How many of those are centrally controlled by somebody actively trying to change the political economy again?"* (vrganj).
+
+**Brian Merchant, Blood in the Machine** (2026-11-22, HN 127 pts / 55 comments) framed the same data around Anthropic's post-IPO position — >$81B raised on day one, a $1.3–1.7T net worth at five years old — while citing a report that Anthropic's upcoming data-center projects *"could emit nearly 20 megatons of CO2-e a year"*, i.e. *"one of the worst recent records on fossil fuels"* despite its self-positioning as the uniquely ethical lab. Merchant's specifics: reliance on particularly polluting third-party compute including **xAI's Colossus plant in Memphis**, plus natural gas for in-house buildout, and — the politically operative half — **Silicon Valley pushing to strip communities of their means to protest data centers** while health impacts mount.
+
+The skeptic position should be recorded alongside: the Blood in the Machine submission was flagged and revived by a moderator, and top comment called it *"a polemic that doesn't seem to add very much"* pointing to the Better Data Center piece as the more substantive read (petesergeant), with *"This is just not true at all and is only written to support the author's point of view — there are many way, way more applicable reasons to be disapproving of AI than climate change"* (217). Treat the 87%/11% and 20 Mt figures as **single-source projections, not measured emissions**.
+
+Connection: this is the concrete case for the *Power as the Ultimate Scaling Limit* and *Subprime Data Center* sections above — and the political dimension (community veto rights) is where energy becomes [[concepts/data-center-politics]] rather than an efficiency problem.
 
 ## Related Pages
 

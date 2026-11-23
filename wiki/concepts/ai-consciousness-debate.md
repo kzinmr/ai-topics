@@ -5,7 +5,7 @@ aliases:
   - consciousness
   - ai-consciousness
 created: 2026-04-25
-updated: 2026-11-22
+updated: 2026-11-23
 tags:
   - philosophy
   - agent-safety
@@ -154,6 +154,18 @@ Beyond the philosophical debate over whether LLMs are conscious lies a documente
 - Over-attribution of consciousness may lead to under-regulation ("it's just like us")
 - Under-attribution may lead to insufficient ethical consideration ("it's just a tool")
 - The precautionary principle suggests treating advanced AI with care regardless of consciousness status
+
+## The Seth Thesis Back on the Front Page (Nov 2026)
+
+Anil Seth's Berggruen Prize essay *The Mythology of Conscious AI* (Noema) returned to the HN front page on 2026-11-22 (**176 pts / 522 comments**, item 50595537) — an unusually high comment-to-point ratio that says the essay provokes rather than informs. The thread is a clean map of the two camps:
+
+- **Consciousness-as-granted**: *"Consciousness in others isn't something we prove. It is something we grant and we should be very careful about whom or what we grant it to."* (andsoitis) — with the supporting argument that we can never *disprove* an inner experience, so ascription is a moral decision, graded across cows/trees/rocks.
+- **Consciousness-as-fact**: *"This is a bad take. Whether a property exists is independent of whether we perceive or grant it. I don't 'grant' my dog consciousness. She has it or she doesn't."* (scott_w) — with the counter-parody that the same grammar applies to beauty and luck (asadotzler).
+- **The tool camp**: *"LLMs are not conscious and even if they magically were, they're still tools and their suffering is not something we should give an iota of thought to."* (xyzsparetimexyz) and its reductio: *"I do not grant andsoitis consciousness. It is a tool I will use and destroy when I no longer need it."* (hardbass) — which is precisely the instrumental-treatment outcome the essay warns creates a moral hazard.
+- **The functionalist counter to Seth's title claim** (that consciousness is more likely a property of life than of computation): *"'Why consciousness is more likely a property of life than of computation' is a false dichotomy and the first branch is clearly false, since most life (bacteria and insects) isn't conscious. And neither 'life' nor 'consciousness' are scientific terms with fixed definitions. Anil Seth has made the arguments in TFA many times and they have been rebutted many times."* (jibalt) — plus the point that AI "evolution" will not be Mendelian, so biological evolution is not an appropriate model for it.
+- **Qualia vs awareness**: *"LLMs are already conscious in the sense that they have awareness and self-awareness; the thing everyone wonders about is qualia... that qualia has no obvious evolutionary or selective advantage is a good reason to assume it's an emergent property of interconnected systems and not reliant on biology."* (adam-eclse)
+
+Note the disconnect worth tracking: the HN thread largely **did not engage the essay's normative claim** (that building conscious or conscious-*seeming* AI is actively a bad idea, independent of whether it works). The debate re-litigated the metaphysics instead — which is the recurring failure mode this page documents under the Gullibility Gap.
 
 ## Related Pages
 

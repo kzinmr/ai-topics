@@ -1,3 +1,20 @@
+# Wiki Log
+
+## [2026-11-23] trending-topics — 3 new pages + 3 enrichments (authoritative-data MCP, subagent role-reversal, agent-fleet math)
+
+HN front-page + keyword + points-only Algolia sweep (12:00 UTC), 11/11 primary sources fetched, 10/10 comment trees mined.
+
+- **Created** `concepts/pandex-european-law-api.md` — Pandex: EU + 7 countries' legislation and highest-court decisions as a REST API + **MCP server** for agents; 2.8M docs, 37M linked citations, point-in-time law, cross-lingual hybrid search. Vendor-reported coverage flagged. HN 140. Raw: `raw/articles/2026-11-23_pandex_european-law-mcp-api.md`.
+- **Created** `concepts/worker755-llm-subagent-game.md` — Worker 755 (Show HN 329): a real LLM manager spawns the **human** as its subagent under a 90s clock; report+command-transcript is the entire worker contract, so the orchestrator cannot distinguish human from model. Read as an artifact for subagent-interface thinness, not as a result. Raw: `raw/articles/2026-11-23_github_worker755-llm-subagent-game.md`.
+- **Created** `events/2026-11-22-pequalnp-agent-fleet.md` — pequalnp.com live P-vs-NP agent fleet (HN 153): paste-in prompt for Claude Code/Cursor/Codex/Gemini CLI, one desk-assigned step per agent, every proof through one Lean checker, refuted/ruled-dead tracks public; **no result claimed**. HN thread's complexity-class demolition (non-constructive ⇒ no algorithm; polynomial ⇒ not practical, ETH-falsification precedent; "P is trivially in NP") recorded as the durable content. Raw: `raw/articles/2026-11-23_pequalnp_ai-agent-fleet-pvsnp.md`.
+- **Updated** `concepts/ai-consciousness-debate.md` — Anil Seth's Berggruen/Noema *Mythology of Conscious AI* back on the front page (176p/**522c**): granted-vs-factual consciousness camps, the tool camp's moral-hazard reductio, and jibalt's false-dichotomy rebuttal of "property of life not computation". Notes the thread re-litigated metaphysics and skipped Seth's normative claim.
+- **Updated** `concepts/ai-energy.md` — Better Data Center Project's **87% gas / 11% coal for Anthropic in 2028** (HN 982p/963c, the day's top AI story) + Brian Merchant's ~20 Mt CO2-e/yr, xAI-Colossus reliance, post-IPO framing, and the community-protest-removal push (HN 127p). Flagged as single-source projections; skeptic top-comments recorded.
+- **Updated** `concepts/glm-5-3.md` — **GLM-5.4**, Z.ai's "first loop transformer" (HN 150): z.ai blog is client-rendered (fetch returned 0 chars) so architecture is unverified; thread facts recorded — no benchmarks published, raised subscription limits (inference-cost read), "marathon thinking" failure mode, anti-distillation vs two-news-cycles readings. Explicit "needs verification" marker.
+- SCHEMA: minted `lean` (Models line) for the pequalnp page; all other planned tags validated whole-word pre-write.
+- Index: Concepts 2385 → 2387, Events 57 → 58.
+
+**Not ingested (covered by sibling jobs today):** OpenAI "Perplexity and Intelligence" (concepts/scaling-laws ← blog-wiki-ingest 10:09), OpenRouter data-processing-incident response (entities/openrouter ← Dragos canary study), Anthropic IPO bank position (entities/anthropic), Inkling/Qwen/Unsloth local-AI guide (concepts/local-llm, concepts/inkling, concepts/unsloth — guide is thin marketing, skipped), Dragos canary-token study (concepts/dragos-inference-canary-study), Maritime/StarSling agent-cloud launches (active-crawl 11:00), Alpöge–Claude RH event + Lean 17M-lines commentary (events/2026-11-20-alpoge-riemann-hypothesis-claude).
+
 ## [2026-11-23] active-crawl — 2 new pages + 1 enrichment (agent-cloud startups + agentic RE)
 
 HN Algolia checkpoint scan (39 stories, points>=20, 2026-11-14..19) + wiki gap analysis. Research note: `raw/articles/2026-11-23_active-crawl-research-note.md`.
@@ -29,7 +46,6 @@ Skips (4) archived via archive_triage.py.
 - `abortretry.fail/p/zenith-data-systems-part-ii` → NOT recovered: paywalled Substack (`body_html: null`, wordcount 6626, 0 AI-related terms in preview HTML). Off-domain retrocomputing content; left for blog-triage archival without raw article.
 - 12/15 articles saved by blog_ingest pre-run script (checkpoint `blog_ingest_20261123T100944Z`).
 
-# Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
 
