@@ -3477,7 +3477,7 @@
 - [[events/trustfall-symlink-rce-2026]] — TrustFall + Symlink RCE — AI Coding Agent Security Crisis (2026)
 - [[events/vercel-agent-desktop-launch-2026]] — Vercel Labs agent-desktop launch (Oct 31, 2026) — Rust-based computer-use tool ("agent-browser, for your whole computer"): reliable desktop automation via OS accessibility trees (stable refs, retry-safe, headless multi-agent), built by @mdlahfir; amplified by Chris Tate
 
-## Queries (63 pages)
+## Queries (64 pages)
 
 - [[queries/2026-11-15-skeleton-enrich-stub-action]] — Daily skeleton-enrich run 2026-11-15: 9 AI umbrella stubs enriched (tinygrad, trey-grainger, ai-alliance, robotics, embodied-ai, ai-coding-tools, generative-ai, vision-models, ai-education)
 - [[queries/2026-11-18-skeleton-enrich-stub-action]] — Daily skeleton-enrich run 2026-11-18: 8 search/security/OSS stubs enriched (elasticsearch, threat-modeling, compiler-explorer, searcharray, cohereio, open-source-sustainability, mastodon, fuzzing)
