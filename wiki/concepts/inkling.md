@@ -5,7 +5,7 @@ aliases:
   - inkling
   - Thinking Machines Inkling
 created: 2026-07-15
-updated: 2026-11-21
+updated: 2026-11-24
 tags:
   - model
   - multimodal
@@ -104,6 +104,8 @@ The looped architecture doubles as a monitorability research platform: with the 
 HN (1060 pts): unsloth GGUF quants landed within hours; llama.cpp looped-architecture support is an open PR (#32695) with the usual worry that exotic architectures stall in PR queues; local-hardware owners (Framework Desktop / Ryzen AI Max / Strix Halo) framed it as the first credible Qwen3.6-35B-A3B-class competitor for commodity boxes.
 
 HN: https://news.ycombinator.com/item?id=50581260
+
+**Third-party hosted demo (Nov 21, 2026):** Eric Zhang (@ekzhang1, ex-Modal founding engineer, now Thinking Machines) posted a "just for fun" hosted chat demo of Inkling 2 Mini on Modal, also exposing a `/v1/chat/completions` endpoint "for your agent". The page's own title was **Resin**, indicating it was served by his Rust inference-engine library rather than a stock server — an early external adoption signal for the model as an *agent-serving* target, not just a laptop model. The endpoint returned 404 when probed on 2026-11-24 (see [[entities/eric-zhang]] Recent Notes).
 ## Related Pages
 - [[entities/thinking-machines-lab]] — Developer of Inkling
 - [[entities/daniel-han]] — Unsloth CEO, led Inkling GGUF quantization

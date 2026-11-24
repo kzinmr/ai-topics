@@ -2,7 +2,7 @@
 title: Hynek Schlawack
 type: entity
 created: 2026-04-10
-updated: 2026-10-21
+updated: 2026-11-24
 tags:
   - person
   - developer-tooling
@@ -194,6 +194,11 @@ Hynek's blog at [hynek.me/articles](https://hynek.me/articles) covers Python dev
 - [[concepts/python]] — Python's creator; Hynek's attrs work directly influenced PEP 557 (dataclasses)
 - [[entities/eugene-yan]] — ML practitioner who shares Hynek's focus on production-first practices
 - [[entities/andrew-nesbitt]] — Ruby developer with similar open-source maintenance philosophy
+
+## X Activity Log (Nov 2026)
+
+- **2026-11-23 — psycache 26.5.0 for sentry-sdk 3.0**: Shipped [[raw/articles/github.com--hynek-psycache-release-26.5.0--2479ac4b.md|psycache 26.5.0]], upgrading `SentryInstrumentation` to the breaking **sentry-sdk 3.0** line (span data became span attributes; operation moved to the `sentry.op` attribute). Deliberately did *not* dual-support 2.x — "the download numbers currently do not justify adding support for both versions" — and told users still on 2.x to wait until they upgrade the SDK too. A visible instance of his sustainable-maintenance heuristic: support effort is rationed by measured download volume, not by requests.
+- **2026-11-24 — funding his next video project**: Announced he is locking the script and filming that week, and asked sponsors to invest "at least $11" if they want their name/brand in the credits (https://github.com/sponsors/hynek). Continues his pattern of making the economics of solo OSS maintenance explicit rather than performing disinterest.
 
 ## Recent X Activity (Oct 2026)
 

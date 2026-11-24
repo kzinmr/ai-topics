@@ -6,7 +6,7 @@ aliases:
   - jobergum
   - Jo Bergum
 created: 2026-04-25
-updated: 2026-10-23
+updated: 2026-11-24
 tags:
   - entity
   - person
@@ -102,6 +102,23 @@ Bergum's work spans traditional information retrieval, neural search, and large-
 ## Current Work: Hornet
 
 In 2025, Bergum founded **Hornet** (hornet.dev), a retrieval engine built from the ground up for AI agent workloads. The company addresses the fundamental shift from human-paced queries to agent-driven search loops that issue thousands of structured queries per session. Hornet is model-agnostic, open-source, and designed to run in VPC or on-premises alongside agent infrastructure. Key team members include many ex-Vespa engineers — Henning Baldersheim (CTO), Erik Dyrkoren (COO), and others.
+
+## Recent X Activity (November 2026)
+
+- **2026-11-19 — "Big graphs, small vectors: HNSW at a billion"**: introduced CTO Henning
+  Baldersheim's deep dive on scaling ANN to 1B+ vectors with the self-aware framing
+  *"You all know me as the BM25 guy but embedding-based retrieval is here to stay. Our design
+  partners runs billions of vectors in production with ever-increasing qps from agents. A
+  workload where HNSW really shines."* The post is a rare vendor admission of where HNSW is
+  *not* a fit, and quantifies the core decision (one large graph vs. many shards: 6× the
+  distance computations). See [[concepts/hornet]] §Scaling Vector Search and
+  [[raw/articles/hornet.dev--big-graphs-small-vectors-hnsw-at-a-billion--ade78227.md]].
+- **2026-11-19 — "Why we started Hornet" founding post**: co-authored (with Baldersheim) the
+  company's retrospective thesis, posting the framing *"Our central observation and you have to
+  solve for both now that orgs wants agents to perform work. Even AGI needs retrieval. Let's
+  go!"* — the "both" being relevance *and* serving cost, the two problems the essay opens with.
+  See [[concepts/hornet]] §Founding Story and
+  [[raw/articles/hornet.dev--why-we-started-hornet--75e31a43.md]].
 
 ## Recent X Activity (October 2026)
 

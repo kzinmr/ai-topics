@@ -2,7 +2,7 @@
 title: Eric Zhang
 type: entity
 created: 2025-11-17 16:10:46
-updated: 2026-11-05 22:40:00
+updated: 2026-11-24
 aliases: [ekzhang, Eric Zhang]
 status: active
 description: "Systems hacker and designer. Creator of bore, sshx, rustpad, and Percival. Former founding engineer at Modal, now at Thinking Machines Lab."
@@ -184,6 +184,15 @@ Photorealistic path tracer for rendering 3D scenes. Won top project out of 100 s
 
 ## Recent Notes
 
+- **Public Inkling 2 Mini demo endpoint on Modal (Nov 21, 2026):** posted a "just for fun"
+  hosted chat UI for **Inkling 2 Mini** at
+  `https://ekzhang--inkling2-mini.us-east.modal.run/`, explicitly noting it also exposes a
+  `/v1/chat/completions` URL "for your agent" — i.e. an OpenAI-compatible endpoint on top of
+  Modal serverless containers. The page's own `<title>` is **Resin**, so the demo is built on
+  his Rust inference-engine library ([[concepts/resin]]) rather than a stock server — the same
+  project he was iterating on in late October. The endpoint has since been taken down (HTTP 404
+  when probed 2026-11-24), consistent with a throwaway demo rather than a maintained service.
+  See [[concepts/inkling]] §Inkling 2 Mini.
 - **Resin: composable inference-engine library (Oct 30 – Nov 4, 2026):** shipped and
   iterating on [ekzhang/resin](https://github.com/ekzhang/resin), a Rust `Engine`
   (scheduler + KV cache + metrics) plus pluggable Python kernels — "just code" for

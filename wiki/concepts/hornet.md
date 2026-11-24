@@ -4,7 +4,7 @@ type: concept
 aliases:
   - hornet
 created: 2026-04-25
-updated: 2026-06-03
+updated: 2026-11-24
 tags:
   - concept
   - product
@@ -21,6 +21,8 @@ sources:
   - raw/articles/2026-05-20_hornet_this-is-what-agentic-retrieval-looks-like.md
   - raw/papers/2026-02-25_2602.21456_revisiting-text-ranking-in-deep-research.md
   - raw/articles/2026-06-03_hornet_agent-queries-cost-more-to-serve.md
+  - raw/articles/hornet.dev--why-we-started-hornet--75e31a43.md
+  - raw/articles/hornet.dev--big-graphs-small-vectors-hnsw-at-a-billion--ade78227.md
 ---
 
 # Hornet
@@ -113,6 +115,42 @@ The core Hornet thesis — that retrieval infrastructure must be redesigned for 
 - **Q2Q reformulation** (keyword → natural language via reasoning trace) bridges the query mismatch with 7.95% relative gain
 
 This academic IR work and Hornet's empirical analysis (Part 2: 19,279 search calls across 830 questions) converge on the same design imperative.
+
+## Founding Story: "Why we started Hornet" (Nov 19, 2026)
+
+Published November 19, 2026 by Bergum and CTO Henning Baldersheim, this retrospective frames Hornet's thesis through two decades of retrieval engineering at Yahoo/Fast. The founding observations, formed on forest walks around Trondheim: (1) building relevant retrieval is hard, (2) building and scaling retrieval *workloads* is hard — and improving relevance while scaling multiplies the complexity (a ranking change costs compute; a query-cost cap restricts what gets scored).
+
+The essay's distinctive contribution is a **hardware-history argument**: each generation of retrieval architecture was an adaptation to a resource that stopped being the binding constraint.
+
+- **Memory**: 2007-era Yahoo nodes had 2–4 cores and 4–8 GB DRAM, forcing early sharding. Cheaper DRAM let teams keep more docs per node, fewer shards, and enabled Henning's rewrite of the core indexing code so writes were searchable in real time (built for Flickr's tag-update requirement).
+- **CPU cores**: cores grew faster than clock speeds, so intra-query parallelism became the lever for larger per-node indexes — reducing fan-out and the tail-latency amplification Dean & Barroso describe in *The Tail at Scale*.
+- **Storage**: HDD → SSD → NVMe (Micron Gen6 9650 rated up to 28 GB/s sequential) changed the price of random access, which in turn re-priced how much data must live in RAM.
+
+The workload argument follows: scaling is only easy for algorithms that grow **linearly** in document count. The authors recount teams adding 10× the nodes and cost for 2× the throughput because the retrieval algorithm scaled closer to log(N) — every query still touches every shard, so per-shard work shrinks far less than the data. Their conclusion: before scaling you must understand and benchmark the *top-k retrieval algorithm's* scaling properties under a representative workload, not just the document count.
+
+The essay also notes the retrieval-methods arc (linear models → GBDTs at Yahoo → Transformers/BERT → the post-ChatGPT RAG surge), citing BEIR's finding that dense retrievers can lose to BM25 out of domain, and argues that LLMs now help mainly by supplying relevance judgments and synthetic training data — teams still have to integrate, evaluate, and operate the result.
+
+The closing claim is the company's bet: **agents are the new user of retrieval**, and unlike prior shifts (which changed the systems around a largely human user), this one changes the user itself. They quantify the reading cost of agent SERPs: a 24-search task returning five full 512-token snippets per search costs roughly **$0.61 to read once** at GPT-6 Astra's standard uncached input rate of $10/M tokens — so an agent-facing SERP must optimize for both evidence quality *and* the cost of putting it into context. Their initial bets are framed as a virtuous circle: "better agents help us build and tune the engine, while better retrieval gives agents better context."
+
+Source: [[raw/articles/hornet.dev--why-we-started-hornet--75e31a43.md]]
+
+## Scaling Vector Search: HNSW at a Billion (Nov 19, 2026)
+
+Written by CTO **Henning Baldersheim** (not Bergum), this is the follow-up the founding post promised: how Hornet scales embedding-based retrieval to billions of vectors while meeting four hard criteria — true real-time write visibility, high QPS at predictable latency, balanced use of memory/CPU/disk, and good recall.
+
+**Why brute force fails**: 1B vectors at 1,024 dimensions in bfloat16 would require reading ~2 TB and computing 1B distances per query.
+
+**Why HNSW won despite its memory appetite**. Search cost is governed by two knobs — *max-links* (M in the HNSW paper, R in DiskANN) and *top-K* (ef / efSearch / search-list L) — and averages roughly **top-K × max-links** distance computations. At a top-K of 1,000 against 1B 2-bit vectors with 32 max-links, a search makes only ~25,000 distance computations: CPU cost is roughly linear in those, so large graphs are computationally efficient. HNSW is also incremental (no training step to redo as data changes) and builds a *stable* graph because each vector's top layer is drawn at random, making the structure independent of insertion order. DiskANN and IVF variants were tested and mostly "failed the real-time requirement" because they need upfront knowledge of the data.
+
+**The Achilles heel is memory**, and the key architectural decision follows from it: because every graph in a sharded index pays the full per-search cost, **ten graphs of 100M need ~6× the distance computations (~150,000) of one graph of 1B (~25,000) at the same recall@100 (~65%, pre-rescoring)**. So Hornet avoids sharding for as long as possible — which forces memory per vector down.
+
+**Quantization shrinks the vector, not the graph.** At 32 max-links the graph costs ~150 bytes/vector (~110 B at 24 max-links, ~240 B at 64). Full bfloat16 vectors are ~2,048 B (~2.2 TB per billion); 4-bit drops the total to ~660 GB/B and 2-bit to ~400 GB/B — about a fifth of full precision. Full-resolution vectors move to local NVMe for **rescoring**: the graph search runs on quantized vectors, then top-K candidates are rescored against full vectors read from disk. Rescoring is *reordering only* — it cannot recover a true neighbor the graph search never reached. At top-K 1,000, rescoring costs ~1,000 full-vector reads against ~25,000 in-memory 2-bit computations (about 1 in 25).
+
+**Cross-machine global merge** partially wins back the sharding tax: for 10B vectors over ten machines, each runs the cheap 2-bit graph search at top-K 1,000 and ships its best 1,000 up; a global merge keeps only the best 2,000 and sends them back down, so each machine rescores ~200 instead of 1,000.
+
+**When HNSW is the wrong tool** (the post is explicit, notable from a vendor): low-QPS workloads are cheaper on IVF with vectors on object storage; naturally partitioned multi-tenant data doesn't need one large graph — brute force or a small per-tenant IVF suffices. And because efficiency pushes you to the biggest-memory machines (AWS x8g at 16 GB/core; a 1 TB box holds ~2B vectors but exposes 64 cores far beyond what graph search needs), HNSW only pays off if you can use the spare CPU for rescoring or lexical search.
+
+Source: [[raw/articles/hornet.dev--big-graphs-small-vectors-hnsw-at-a-billion--ade78227.md]]
 
 ## Team
 

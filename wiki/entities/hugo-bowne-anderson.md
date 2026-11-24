@@ -4,7 +4,7 @@ type: entity
 aliases: [hugobowne, Hugo Bowne Anderson]
 status: complete
 created: 2026-04-14
-updated: 2026-11-16
+updated: 2026-11-24
 depth_tracking: {'current': 'L3', 'target': 'L3', 'last_reviewed': datetime.date(2026, 7, 25), 'notes': "Added Privacy Engineering + Agent Harness Engineering + Production AI Agents: Maven Assistant sections from 2026 content"}
 tags:
   - person
@@ -378,8 +378,11 @@ This case study directly validates Hugo's broader philosophy: evaluation-driven 
 - **Nov 7, 2026** — Amplified Block / Jack Dorsey's **"From Hierarchy to Intelligence"** ([block.xyz/inside/from-hierarchy-to-intelligence](https://block.xyz/inside/from-hierarchy-to-intelligence), see [[concepts/ai-organization/ai-org-from-hierarchy-to-intelligence]]): "it's this type of thinking wrt organizational memory and organizations as intelligence that will help us all build the types of systems @jack is pointing towards here." Links organizational-memory framing to Dorsey's org-as-intelligence model — Hugo's recurring bridge between **organizational memory** and **agent memory** framings.
 - **Nov 2, 2026** — Promoted **Show Us Your Agent Skills Episode 7** (w/ Greg Ceccarelli & Han-Chung-Lee, [YouTube](https://youtu.be/kfCi2EBu-nc)) in a thread on agent-driven engineering workflows, sparking from the take "forget about PRs and push direct to main on teams of tightly-aligned humans and agents" (itself quoting @guillewrotethis; another reply in-thread countered "Protect main branch and don't let anyone push without PRs and approvals" — an active PR-workflow debate). Hugo highlighted guest Greg Ceccarelli: "He ran data science at GitHub, was Chief Product Officer at Pluralsight, and is now at SpecStory figuring out how engineering teams use agents and what the future of all this looks like." Logged, transcript not ingested.
 
+- **Nov 19, 2026 — Grok Bot builds a live recap page from a phone chat**: In a reply to @MattOfMisk / @bot / @jeremyphoward, demonstrated that **@bot "does it using the API"** — he chats with it from his phone and *"it builds the pages for me in real time"*, producing a generated **Twitter AI recap** page (`https://twitter-ai-recap-cdvl.pages.grok.bot/`, title "Twitter AI recap - Grok Bot", with Download-PDF and Copy-link actions). He added that he simply *"asked it to draft a twitter thread in my tone and it did the above"* — a concrete, low-friction example of his recurring **agentic data science / agent-as-publisher** framing: the artifact is a published web page, generated on demand in his voice rather than a static dashboard he maintains. The page is client-rendered (server returns "This page could not be loaded" to a plain fetch), so content is not archived. Logged, no new page.
+
 ## Log
 
+- **2026-11-24**: X Activity Log — Nov 19 Grok Bot real-time recap-page demo (agent-as-publisher).
 - **2026-11-16**: X Activity Log — Nov 7 amplifications of Anthropic components-of-agent-memory (Lance Martin) and Block "From Hierarchy to Intelligence" (Jack Dorsey).
 - **2026-11-03**: Added X Activity Log entry for Show Us Your Agent Skills Ep. 7 promotion (Greg Ceccarelli / SpecStory).
 - **2026-08-06**: Added guest post source "Top Questions About AI-Assisted Software Development" (Eleanor Berger, Mar 31, 2026) — the canonical Elite AI-Assisted Coding course FAQ published on Vanishing Gradients as companion to Ep. 67 (Eleanor Berger + Isaac Flath). Ten-question framework (demos vs production, reliability, context stack, spec-driven development, mode/tool/model selection, delegation control, SDLC-wide AI, async agents, security, team measurement) documented in [[entities/eleanor-berger]] and [[concepts/ai-assisted-development]].
