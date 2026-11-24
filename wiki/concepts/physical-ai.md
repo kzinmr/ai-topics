@@ -1,13 +1,14 @@
 ---
 title: Physical AI
 created: 2026-04-28
-updated: 2026-04-28
+updated: 2026-11-24
 type: concept
 tags:
   - robotics
   - company
 sources:
   - raw/newsletters/2026-04-27-physical-ai-that-moves-the-world-qasar-younis-peter-ludwig-applied-intuition.md
+  - raw/newsletters/2026-11-23-import-ai-482-huawei-kernel-benchmarks-airborne-drone-detection-and-a-national-l.md
 ---
 
 # Physical AI
@@ -69,6 +70,10 @@ Physical AI extends [[concepts/agentic-engineering]] into the real world. The sa
 - An agent that "figures it out" for 6 hours is powerful in code; in a factory or vehicle, the same autonomy requires hard fail-safes
 - [[concepts/harness-engineering]] patterns become critical: how to constrain physical AI agents while allowing useful autonomy
 - [[concepts/multi-agents/agent-team-swarm]] patterns apply to fleet coordination and multi-robot systems
+
+## Drones & Counter-UAV Perception
+
+**A2A-UAV** (Import AI 482, Nov 2026; arXiv:2611.21311) — a multimodal dataset for **air-to-air UAV detection and identification** released by Nanjing University of Aeronautics and Astronautics and HKUST. 105,263 samples split roughly equally across three locations (playground / park / garden) and day/night. Each sample carries an RGB image and a panoramic image (with bounding boxes) plus a **thermal image, RF time-frequency image, radar point cloud, and metadata** — a genuinely multimodal counter-drone sensor stack. Targets include 15 UAVs / 13 commercial models (with three DJI Mini 4 Pro drones separately labeled), 271 tar.gz archives (~2.5 TB), captured from a UAV-mounted RGB-thermal gimbal camera, panoramic camera, RF spectrum analyzer, and millimeter-wave radar. It is a rare public benchmark for *drone-vs-drone* perception, the sensing layer for counter-UAV physical-AI agents.
 
 ## Related Pages
 

@@ -1,5 +1,19 @@
 # Wiki Log
 
+## [2026-11-24 10:45 UTC] newsletter-wiki-ingest | Import AI 482 (run 20261124T101044Z): 3 takes + 2 refs applied
+
+- **Upstream false alarm**: newsletter-triage output wrapper reported `failed to parse JSON response`, but `triage_latest.json` was valid — read the checkpoint directly per skill guidance.
+- **New pages (3)**:
+  - `concepts/ai-benchmarks/ascendgym.md` — AscendGYM kernel-optimization benchmark for Huawei Ascend NPUs (Shenzhen Loop Area Institute); AscendForge harness; Opus 5 > GPT-5.6 > GLM-5.3; Jack Clark's "China's own RSI" framing.
+  - `concepts/ai-benchmarks/sciresearch-eval.md` — LLNL benchmark: agent-designed experiments + deliberately flawed simulator + 95%-interval calibration grading; only GPT-6 Astra / Claude Fable 5.2 trustworthy by default.
+  - `entities/noeri.md` — Yejin Choi & Carlos Guestrin's $110M Stanford neolab for "plural intelligence" (test-time training, self-distillation, agentic orchestration).
+- **References (2)**:
+  - `concepts/physical-ai.md` — new "Drones & Counter-UAV Perception" section: A2A-UAV multimodal air-to-air UAV dataset (105,263 samples, RGB+panoramic+thermal+RF+radar, ~2.5 TB).
+  - `concepts/monitorability-metrics.md` — new "Speculative Governance Framing" section on the Import AI 482 Tech Tales "Machine Hermeneutics" memoir (Sentience Accords, didactic architecture, TTHUE).
+- **Unresolved (0 takes lost)**: second inbox item "History made: math's biggest problem solved, with Claude's help" (uid=937, classified critical) was NOT in the triage candidates array; all 20 beehiiv v2/c tracking links return 403 (expired tokens, batch test validated) and no web search tools are available in this cron profile. The wiki already carries three independent AI-math breakthrough pages (`concepts/erdos-unit-distance-problem`, `concepts/claude-fable-jacobian-conjecture`, `events/2026-11-20-alpoge-riemann-hypothesis-claude`); the specific 11-23 claim needs manual follow-up with search access to identify the underlying problem before creating a page.
+- Index counts bumped: Entities 976->977, Concepts 2388->2390. Skips (4) were archived by the triage run (commit 63446c209).
+
+
 ## [2026-11-23 22:30 UTC] x-accounts-scan | 11 accounts scanned, 10 new posts -> 2 raw articles, 1 new concept, 7 page updates
 
 - **Scan**: cursor 33->44, 11/84 accounts (request budget 12; 73 skipped by budget, not dead handles), 0 errors, dedup cache 253.

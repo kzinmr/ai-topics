@@ -3,7 +3,7 @@
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Last updated: 2026-11-22
 
-## Entities (976 pages)
+## Entities (977 pages)
 
 - [[entities/_index]] — Directory hub / overview for entities pages
 - [[entities/0xjeff]] — 0xJeff
@@ -621,6 +621,7 @@
 - [[entities/nemo-agent-toolkit]] — NVIDIA NeMo Agent Toolkit
 - [[entities/nemotron-cascade-2]] — Nemotron Cascade 2
 - [[entities/neon-database]] — Neon Database
+- [[entities/noeri]] — Noeri — Yejin Choi & Carlos Guestrin's $110M Stanford "neolab" for plural intelligence; test-time training + self-distillation + agentic orchestration pillars (Import AI 482, Nov 2026)
 - [[entities/nico-gerold]] — Nico Gerold
 - [[entities/nicolas-bustamante]] — AI for knowledge workers at Microsoft. Previously CEO of Fintool (acq. Microsoft), CEO of Doctrine (acq. Summit Partn...
 - [[entities/nightwatch]] — Nightwatch (AI SRE)
@@ -983,7 +984,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2388 pages)
+## Concepts (2390 pages)
 
 - [[concepts/claude-black-hole-physics]] — Claude Fable 5.2 solves two open black-hole/quantum-gravity problems (Nov 19 2026): 20-year-old formation-transition calculation completed; exact central-charge upper bound on black-hole mass; Anthropic notes neither result describes our universe (HN 512p)
 - [[concepts/frostbite-ai-designed-cpu]] — Frostbite (Architect Labs, Nov 20 2026): agent swarms discover/design/verify a general-purpose interaction-net CPU end-to-end; ASL spec lowered to 800k+ Lean lines; vendor-reported 4.59x perf/W vs area-matched in-order core, emergent hardware work-stealing (HN 143p)
@@ -1297,6 +1298,7 @@
 - [[concepts/ai-benchmarks/arc-agi-1]] — ARC-AGI-1
 - [[concepts/ai-benchmarks/arc-agi-2]] — ARC-AGI-2 Benchmark
 - [[concepts/ai-benchmarks/arc-agi-3]] — ARC-AGI-3 — Third-generation ARC benchmark (2D puzzle games); OpenAI GPT-5.6 Sol tripled scores to 38.3% via retained reasoning + context compaction (July 2026); a full seven-model July–Sep 2026 suite still scored <3pt above random on public games (see frontier-model-benchmarks-2026h2)
+- [[concepts/ai-benchmarks/ascendgym]] — AscendGYM (Shenzhen Loop Area Institute, Nov 2026) — kernel optimization benchmark for Huawei Ascend NPUs; can agents speed up correct kernels while preserving correctness; AscendForge harness; Opus 5 > GPT-5.6 > GLM-5.3; Jack Clark frames as China's own RSI path (Import AI 482)
 - [[concepts/ai-benchmarks/benchflow-tool]] — BenchFlow — Dockerized agent evaluation framework; Awesome Agent Evals curated list (443+ resources, 12 must-read starter set, companies landscape)
 - [[concepts/ai-benchmarks/benchjack]] — BenchJack
 - [[concepts/ai-benchmarks/benchmaxxing]] — Benchmaxxing (Benchmark Over-optimization)
@@ -1367,6 +1369,7 @@
 - [[concepts/ai-benchmarks/remote-labor-index]] — Remote Labor Index
 - [[concepts/ai-benchmarks/rewardbench]] — RewardBench: reward model evaluation (Allen AI, 2024🆕)
 - [[concepts/ai-benchmarks/rewardbench-2]] — RewardBench 2
+- [[concepts/ai-benchmarks/sciresearch-eval]] — SciResearch-Eval (Lawrence Livermore NL, Nov 2026) — first benchmark combining agent-designed experiments + deliberately flawed simulator + 95%-interval calibration grading; only GPT-6 Astra and Claude Fable 5.2 trustworthy by default (Import AI 482)
 - [[concepts/ai-benchmarks/scienceagentbench]] — ScienceAgentBench
 - [[concepts/ai-benchmarks/senior-swe-bench]] — Senior SWE-Bench — Snorkel AI benchmark evaluating coding agents at senior engineer level; taste scoring, runtime investigation, under-specified tasks; Claude Opus 4.8 leads at 24.0% tasteful solve rate (July 5)
 - [[concepts/ai-benchmarks/shade-arena]] — SHADE-Arena

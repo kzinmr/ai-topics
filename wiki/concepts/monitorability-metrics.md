@@ -73,6 +73,12 @@ Post-control risk is **not** base-rate invariant the way g-mean² is — a model
 
 Applied to past OpenAI system-card rollouts: 7 agent models at medium reasoning effort (o1, o3, GPT-5, GPT-5.2, GPT-5.4, GPT-5.5, GPT-5.6 Sol) with **GPT-5 at high effort as the monitor**; GPT-6 Astra excluded because it was evaluated under a different monitor (GPT-5.6 Sol). Error bars from 500 deterministic hierarchical bootstrap replicates; pair-matched orderings fit within each environment/monitor configuration. Pair-matched and dataset-level orderings generally agreed — and their **disagreements were diagnostic**, flagging rankings sensitive to instance selection or too close to call (Antischeming near a tie; Health Queries: Missing Evidence near ceiling). OpenAI notes the gating deployment is hypothetical: current models are not deployed this way.
 
+## Speculative Governance Framing: Machine Hermeneutics (Import AI 482)
+
+Import AI 482 (Jack Clark, Nov 23 2026) carried a Tech Tales contribution, *"Machine architecture and the objectivity crisis of Machine Hermeneutics"* — a memoir from a primary Machine Hermeneutics investigator, set in 2033. In its fictional world, the **Sentience Accords** prohibit any novel machine-designed insight or equipment from being used until it is **fully explainable by a human**. The resulting occupational category — machine hermeneutics — studies how to make machine-constructed concepts human-understandable, including the **"didactic architecture"**: giant buildings constructed purely to convey machine-originated concepts to human visitors, and the **TTHUE** (time-to-human-understandable-explanation) metric for legibility latency.
+
+While speculative fiction, the piece dramatizes a real pressure on this page's research agenda: monitorability metrics quantify *how legible a model's behavior is to a monitor*; the story asks what society looks like when legibility becomes a **regulatory precondition for using machine-generated knowledge at all** — i.e., when TTHUE-style metrics acquire the force that preparedness frameworks have today. See [[concepts/ai-transparency]] and [[concepts/ai-governance]].
+
 ## Related
 
 - [[concepts/instrumental-monitor-evasion]] — the obfuscation failure mode that makes post-control risk diverge from raw monitorability
