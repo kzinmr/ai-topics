@@ -2,7 +2,7 @@
 title: Martin Alderson
 type: entity
 created: 2026-04-09
-updated: 2026-10-30
+updated: 2026-11-24
 tags:
   - person
   - blogger
@@ -28,6 +28,7 @@ sources:
   - raw/articles/martinalderson.com--posts-the-summer-of-open-weights--58f8bbd1.md
   - raw/articles/martinalderson.com--posts-how-i-think-about-reducing-ai-costs--b34c39d8.md
   - raw/articles/martinalderson.com--posts-making-agents-fast--5a2940ba.md
+  - raw/articles/martinalderson.com--posts-two-graphs--c2bc064c.md
 ---
 
 
@@ -399,6 +400,19 @@ Two more detectors:
 Relevance to this wiki: it is the practitioner-side complement to the academic harness ablation in [[concepts/coding-agent-harness-design-study]] (which finds component value is conditional on model and budget — Alderson's "parallelisation backfires on weaker models" is the field-observed version of that), and it operationalizes [[concepts/harness-engineering]] as a performance discipline. Cross-cutting links: [[concepts/context-engineering/context-efficiency]] (output size → TTFT), [[concepts/dev-state-sandbox-snapshots-for-coding-agents]] (suspend/resume and CoW I/O), [[concepts/claude/effort-control]] (thinking budgets), [[concepts/inference-speed-development]] and [[concepts/openrouter-state-of-ai-2025]] (provider speed variance).
 
 Source: [[raw/articles/martinalderson.com--posts-making-agents-fast--5a2940ba.md]] (martinalderson.com, Oct 29 2026)
+
+## "Two graphs" — METR extrapolation + Remote Labour Index (November 23, 2026)
+
+Short post written on the back of the Riemann-hypothesis-proof news cycle (see [[concepts/alphaproof-code]]). Alderson singles out two capability graphs as the reason to expect a "very interesting — and disruptive — 2027":
+
+1. **Remote Labour Index** — a benchmark testing how well models perform remote (text-based knowledge) labour tasks, popularized by AI Explained. Wiki coverage: [[concepts/ai-benchmarks/remote-labor-index]].
+2. **Extrapolation of the famous METR progress graphs** — made by **Benjamin Todd** (Anthropic), but explicitly *not* an official METR chart: the projected diamonds are estimates from **Anthropic's internal capability index**, not METR measurements. A caution for anyone citing the curve as independent METR evidence.
+
+**Alderson's claims:** underlying model performance keeps rising regardless of market moves; he has "again noticed a tangible jump in capability since **Opus 5.5**" (his second same-author capability-jump datapoint, cf. [[concepts/ai-rd-acceleration-doubling]]); despite a long-standing optimism he "never expected them to get *this* good"; and per the two graphs "we still have the **hyperbolic stage** of progress ahead of us."
+
+**Wiki relevance:** a practitioner-side corroborating data point for the AI-R&D-acceleration debate (METR's Anthropic assessment, Remote Labour Index) — notable as a *third-party reception* record of Anthropic's internal capability index leaking into public extrapolation discourse.
+
+Source: [[raw/articles/martinalderson.com--posts-two-graphs--c2bc064c.md]]
 
 ## Related
 

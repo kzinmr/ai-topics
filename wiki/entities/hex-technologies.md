@@ -2,7 +2,7 @@
 title: "Hex Technologies"
 type: entity
 created: 2026-05-08
-updated: 2026-11-13
+updated: 2026-11-24
 tags:
   - company
 aliases: ["Hex", "Hex Tech"]
@@ -15,6 +15,7 @@ sources:
   - raw/articles/2026-10-28_hex-technologies_introducing-hex-4-0.md
   - raw/articles/2026-11-05_hex-technologies_ai-sorcerers-stone.md
   - raw/articles/2026-11-13_hex-technologies_what-we-learned-working-with-robots-to-rewrite-hex.md
+  - raw/articles/2026-11-24_hex-technologies_what-is-a-knowledge-graph.md
   - raw/articles/2026-05-10_hex-technologies_beginners-guide-to-python-notebooks.md
 ---
 
@@ -203,6 +204,16 @@ Charlie Imhoff's post-mortem on the Hex 4.0 rewrite is the operational companion
 **Strategic read for the wiki**: this is the *process* layer beneath the October architecture post — the two together make Hex the most complete first-party case study in this wiki of a large agent-driven rewrite (architecture rationale + review discipline + failure taxonomy). Rule 2's signature-freeze and rule 5's wrapper-string trick are concrete harness-engineering controls; the DAMP observation and the non-agent-initiated-refactor finding are evidence for the human-ownership half of [[concepts/agentic-engineering]]. Cross-reference [[concepts/coding-agents/agentic-coding]], [[concepts/harness-engineering/agent-native-architecture]], [[concepts/agent-native-tool-fallacy]].
 
 Source: [[raw/articles/2026-11-13_hex-technologies_what-we-learned-working-with-robots-to-rewrite-hex]]
+
+## Knowledge-graph / semantic-layer content marketing (November 23, 2026)
+
+Hex published a pair of educational posts ("What is a knowledge graph?" and an Apache **OSSIE** semantic-layer companion) positioning Hex's agent stack for the "agents need to know what your data means" argument. The knowledge-graph post is a competent explainer (entities/relationships/properties triples, OWL 2 ontology, RDF 1.1, entity resolution, graph DB vs triple store) but its differentiating content is the **analytics-specific comparison section: "Knowledge graph vs. semantic layer for analytics"** and **"Agents that know what your data means"**.
+
+Hex's stated position: a full knowledge graph is often *not* needed for analytics questions about metrics and tables — Hex's agent derives business meaning from **semantic models (metric and dimension definitions), endorsed tables, warehouse descriptions, and workspace guides**, and a graph only pays off when tracing relationships across systems. This is a vendor-articulated middle path between [[concepts/graph-engineering]] / [[concepts/agentic-alternative-to-graphrag]] (graph-everything) and plain RAG, and extends the Context Studio story from the November Hero / Hex 4.0 posts above.
+
+Worth keeping as the reference point for how agent-analytics vendors are framing the KG-vs-semantic-layer question in late 2026; the Apache OSSIE post is companion marketing around the same semantic-layer thesis.
+
+Source: raw/articles/2026-11-24_hex-technologies_what-is-a-knowledge-graph.md (https://hex.tech/blog/what-is-a-knowledge-graph/)
 
 ## Related
 - [[entities/anthropic]] — customer using Hex for data analytics

@@ -2,6 +2,19 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+
+## [2026-11-24 18:40 UTC] dreaming wiki-ingest | Deep Sleep verification — 4 refs: 2 enriched, 2 already covered
+
+- Recovered triage `20261124T180044Z` (0 takes, 4 refs, 9 skips) after dreaming-group JSON render failure; upstream commit `ec7e775d0` was archive-only ("queued" wording + stat confirmed no enrichment).
+- **Reference verification gate results:**
+  - ✅ Already covered — nesbitt "This Week in Package Management 21 Nov" → `entities/andrew-nesbitt.md` L600-611 (applied by blog-wiki-ingest deferred reference, log 2026-11-22 run 20261122T100039Z).
+  - ✅ Already covered — George Hotz "slopcore" (Nov 23) → `entities/george-hotz.md` L318-333 (full subsection incl. orthogonality rejection, 10K-GPU anti-regulation, GPT-6.2 claim; log L168).
+  - ❌ Genuine gap → enriched — `entities/martin-alderson.md` new "Two graphs" section: Remote Labour Index + Benjamin Todd METR extrapolation (Anthropic internal capability index diamonds), Opus 5.5 capability jump, hyperbolic-stage/2027 claims. +16 lines.
+  - ❌ Genuine gap → enriched — `entities/hex-technologies.md` new "Knowledge-graph / semantic-layer content marketing" section: KG-vs-semantic-layer-for-analytics position, semantic models/endorsed tables/workspace guides as the middle path, Apache OSSIE companion. +12 lines.
+- Skips (9) verified consistent with adjacent-job coverage (Jensen cluster, GLM-5.4, OpenRouter ZDR, Goedecke perplexity, datasette misc, sitemap marketing batch, x-accounts batch, HN launches, non-AI ~25).
+- Archive re-run (idempotent merge): Hex knowledge-graph raw was un-indexed (raw_path-only decision); other URLs already covered by upstream archive.
+
+
 ## [2026-11-24 18:10 UTC] dreaming group | Pattern E saturation triage — 0 takes, 4 references queued
 
 - Checkpoint `20261124T180044Z`: article pool 0 (recent raw 268). Ran archive-index absence probe (43 never-triaged) + cross-pipeline dedup.
@@ -118,7 +131,6 @@ dingcad, pallets, placeiq — many likely org/tool stubs needing the same
 GitHub/registry-first research pattern used here).
 
 
-
 ## [2026-11-23] auto-fix | Wiki health: YAML frontmatter repair (4 pages)
 
 ### Changes
@@ -180,8 +192,6 @@ Skips (4) archived via archive_triage.py.
 - `youtube.com/watch?v=JNexz3Tbiu8` (AI Engineer: "Build the Workshop Before the Software Factory" — Armin Ronacher / Earendil Pi coding agent) → transcript blocked (yt-dlp 429); body = YouTube channel RSS description + timestamps. `scrape_status: rss-fallback`.
 - `abortretry.fail/p/zenith-data-systems-part-ii` → NOT recovered: paywalled Substack (`body_html: null`, wordcount 6626, 0 AI-related terms in preview HTML). Off-domain retrocomputing content; left for blog-triage archival without raw article.
 - 12/15 articles saved by blog_ingest pre-run script (checkpoint `blog_ingest_20261123T100944Z`).
-
-
 
 
 ## [2026-11-23 10:00 UTC] tag-audit-weekly | Clean — 0 violations, normalization skipped
