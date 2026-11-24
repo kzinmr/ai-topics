@@ -3608,3 +3608,8 @@ research-grade pages from genuinely uncovered material:
 # Hot post log
 
 - 2026-11-22 09:30 JST morning hot-post: Inkling 2 Mini looped transformer (inbox/trending-reports/hot-post-2026-11-22-0930.md)
+
+## 2026-11-24 12:30 UTC — hot-post night draft (21:30 JST)
+- Topic: OS-agent screen capture vs app privacy (Signal, HN 556 pts). Contrarian framing: security-boundary shift, not AI ethics.
+- Draft: inbox/hot-posts/2026-11-24-2130-night.md
+- Checkers: NO_SLOP_FOUND / 0 wikilink MISS / NO_TYPO
