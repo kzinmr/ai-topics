@@ -706,6 +706,7 @@
     "https://garymarcus.substack.com/p/you-cant-get-more-2026-than-that",
     "https://geoffreylitt.com/2026/07/02/understanding-is-the-new-bottleneck.html",
     "https://geohot.github.io//blog/jekyll/update/2026-11-01/pray-for-chaos.html",
+    "https://geohot.github.io//blog/jekyll/update/2026-11-23/slopcore.html",
     "https://geohot.github.io//blog/jekyll/update/2026/05/20/what-will-better-mean.html",
     "https://geohot.github.io//blog/jekyll/update/2026/05/24/the-eternal-sloptember.html",
     "https://geohot.github.io//blog/jekyll/update/2026/06/06/our-great-war.html",
@@ -820,6 +821,7 @@
     "https://hex.tech/blog/notebook-agent-prompting-guide-agentic-analytics/",
     "https://hex.tech/blog/trust-used-to-be-implied",
     "https://hex.tech/blog/what-is-a-data-lakehouse/",
+    "https://hex.tech/blog/what-is-a-knowledge-graph/",
     "https://hex.tech/blog/what-is-an-ai-analytics-platform/",
     "https://hex.tech/blog/what-is-an-ai-gateway/",
     "https://hex.tech/blog/what-we-learned-working-with-robots-to-rewrite-hex/",
@@ -1366,6 +1368,7 @@
     "https://news.ycombinator.com/item?id=48653268",
     "https://news.ycombinator.com/item?id=49024620",
     "https://news.ycombinator.com/item?id=50437106",
+    "https://news.ycombinator.com/item?id=50536468",
     "https://newsletter.posthog.com/p/decision-models",
     "https://newsletter.pragmaticengineer.com/p/why-is-meta-destroying-its-engineering",
     "https://newsletter.semianalysis.com/p/intel-should-raise-capital",
@@ -1607,6 +1610,7 @@
     "https://opencode.ai/product/browse",
     "https://openpipe.ai/blog/art-e-mail-agent",
     "https://openpipe.ai/blog/ruler-easy-mode-rl-rewards",
+    "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers",
     "https://openrouter.ai/openai/gpt-5.6-sol",
     "https://overreacted.io/a-lean-syntax-primer/",
     "https://overreacted.io/impossible-components/",
@@ -1773,6 +1777,7 @@
     "https://seangoedecke.com/llms-are-not-superhuman-at-reading-and-writing-neural-network-weights/",
     "https://seangoedecke.com/llms-reward-expertise/",
     "https://seangoedecke.com/local-models-will-not-win/",
+    "https://seangoedecke.com/notes-on-openais-perplexity-reveal/",
     "https://seangoedecke.com/overtraining-as-the-path-to-human-like-ai/",
     "https://seangoedecke.com/playing-politics/",
     "https://seangoedecke.com/powerful-ais-might-escape-by-releasing-open-weight-models/",
@@ -2156,6 +2161,7 @@
     "https://simonwillison.net/2026/Nov/20/token-fraud-is-here-and-its-bad/",
     "https://simonwillison.net/2026/Nov/21/muru/",
     "https://simonwillison.net/2026/Nov/22/select-styling/",
+    "https://simonwillison.net/2026/Nov/23/glm-54/",
     "https://simonwillison.net/2026/Nov/23/ladybird/",
     "https://simonwillison.net/2026/Nov/24/datasette-agent/",
     "https://simonwillison.net/2026/Nov/24/datasette-charts/",
@@ -3141,6 +3147,7 @@
     "https://www.seangoedecke.com",
     "https://www.seangoedecke.com/how-to-keep-thinking/",
     "https://www.semafor.com/article/06/27/2026/us-releases-powerful-anthropic-model-mythos-to-some-us-companies",
+    "https://www.semafor.com/article/11/23/2026/jensen-huang-reinstated-as-nvidia-ceo",
     "https://www.snopes.com/fact-check/grant-next-civil-war/",
     "https://www.techradar.com/...",
     "https://www.thealgorithmicbridge.com/p/what-apple-knows-about-ai-that-silicon",
@@ -3378,5 +3385,5 @@
     "substack.com/ui-wrapper (Link 8)",
     "substack.com/ui-wrapper (Link 9)"
   ],
-  "updated": "2026-11-24T10:37:06.567463+00:00"
+  "updated": "2026-11-24T18:17:19.903584+00:00"
 }

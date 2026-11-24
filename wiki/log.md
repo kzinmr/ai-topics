@@ -2,6 +2,13 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-11-24 18:10 UTC] dreaming group | Pattern E saturation triage — 0 takes, 4 references queued
+
+- Checkpoint `20261124T180044Z`: article pool 0 (recent raw 268). Ran archive-index absence probe (43 never-triaged) + cross-pipeline dedup.
+- **Skips (already covered by adjacent jobs)**: Jensen Huang reinstatement cluster (events/nvidia-ceo-transition-2026.md via x-accounts-scan 20d10041), OpenRouter ZDR incidents (entities/openrouter.md full section), GLM-5.4 loop transformer (concepts/glm-5-3.md same-day section), StarSling/Maritime HN launches (hot-post 857b0062), Simon Willison datasette misc (blog pipeline today), 11/23 22:34 x-accounts batch, ~25 non-AI files (johndcook/dfarq/shkspr/vintage/math).
+- **References for downstream enrichment**: nesbitt package-management 11/21 → entities/andrew-nesbitt.md; Martin Alderson "Two graphs" (METR extrapolation + Remote Labour Index) → entities/martin-alderson.md; George Hotz slopcore 11/23 → entities/george-hotz.md; Hex knowledge-graph/OSSIE → entities/hex-technologies.md.
+- Archive: 13 candidates, 10 newly archived, 3 dedup; total_archive_urls 3384.
+
 
 ## [2026-11-24 17:50 UTC] auto-fix | wiki-health-fix: removed 1 ghost index entry
 

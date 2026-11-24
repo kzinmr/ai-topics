@@ -1,0 +1,128 @@
+{
+  "archived_at": "2026-11-24T18:17:19.902818+00:00",
+  "triage_run_id": "20261124T180044Z",
+  "source": "dreaming",
+  "summary_ja": "checkpointのarticleプールは0(直近raw 268件)。Pattern E+アーカイブ不在プローブ(43件)を実施し、同一イベント既存収録(Jensen再任/OpenRouter ZDR/GLM-5.4/HNローンチ)を大量skip、ギャップ4件をreference判定: nesbitt パッケージ管理ラウンドアップ→andrew-nesbitt、Alderson Two graphs(metr外挿+Remote Labour Index)→martin-alderson、Hotz slopcore(11/23)→george-hotz、Hex知識グラフ→hex-technologies。take 0件。",
+  "decisions": [
+    {
+      "item_id": "dreaming-geohot-slopcore",
+      "source": "dreaming",
+      "source_name": "geohot.github.io",
+      "title": "the singularity is nearer: slopcore (LLM song essay)",
+      "url": "https://geohot.github.io//blog/jekyll/update/2026-11-23/slopcore.html",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/geohot.github.io--blog-jekyll-update-2026-11-23-slopcore-html--bd218c30.md",
+      "recommended_action": "reference",
+      "reason_ja": "*** entityページの11月エッセイ・アーク(11/13, 11/17, 11/18)は収録済みだが11/23のslopcore投稿は未収録。orthogonality thesis否定・『1万GPUを渡さないファシズム』規制批判・LLM作曲ソング(Astra Blue等)へのslop批判への逆張りという独自の主張群。日付付きでPhilosophy and Commentary節に追記すべきギャップ。",
+      "candidate_wiki_path": "entities/george-hotz.md",
+      "body_excerpt": "# the singularity is nearer\nSource: https://geohot.github.io//blog/jekyll/update/2026/11/23/slopcore.html\nThe Hitler of the 21st century will try to hold it back. In defiance of nature, insist humans be in charge, insist\nthey\nare the humans in charge, it’s for your own good you see, no you can’t hav"
+    },
+    {
+      "item_id": "dreaming-hex-knowledge-graph",
+      "source": "dreaming",
+      "source_name": "hex.tech",
+      "title": "Hex: What is a knowledge graph / Apache OSSIE",
+      "url": "https://hex.tech/blog/what-is-a-knowledge-graph/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/2026-11-24_hex-technologies_what-is-a-knowledge-graph.md",
+      "recommended_action": "reference",
+      "reason_ja": "** 11/24 06:00 sitemap batchでどのパイプラインもトリアージせず。HexはDataBench先例の通りマーケだけでなくナレッジグラフ/セマンティック層の実務記事を出す。概念ページ(concepts/graph-engineering.md, agentic-alternative-to-graphrag.md)側の更新は任意、最低限entities/hex-technologies.mdへの出典追記候補。",
+      "candidate_wiki_path": "entities/hex-technologies.md",
+      "body_excerpt": "# What is a knowledge graph?\n**Source**: [https://hex.tech/blog/what-is-a-knowledge-graph/](https://hex.tech/blog/what-is-a-knowledge-graph/)\nSkip to main content\n📈\nA new era for Hex, and data\nAnnouncing Hex 4.0, and a $100m fundraise building toward the agent-native future for analytics.\nBlog\nWhat "
+    },
+    {
+      "item_id": "dreaming-skip-jensen-batch",
+      "source": "dreaming",
+      "source_name": "www.semafor.com",
+      "title": "Jensen Huang reinstatement cluster (Semafor/BI/Gary Marcus x2)",
+      "url": "https://www.semafor.com/article/11/23/2026/jensen-huang-reinstated-as-nvidia-ceo",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/semafor.com--article-11-23-2026-jensen-huang-reinstated-as-nvidia-ceo--991c5885.md",
+      "recommended_action": "skip",
+      "reason_ja": "* events/nvidia-ceo-transition-2026.mdがx-accounts-scan(20d10041)でTrump介入・再任済み。Gary Marcus 2本(jensengate/市場)も同一イベントで冗長。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Huang reinstatement came at Trump’s behest\nSource: https://www.semafor.com/article/11/23/2026/jensen-huang-reinstated-as-nvidia-ceo\nHours before Nvidia reinstated ousted CEO Jensen Huang, President Donald Trump dialed into Nvidia’s Sunday board meeting to argue for his return.\nThe remarkable direc"
+    },
+    {
+      "item_id": "dreaming-skip-glm54",
+      "source": "dreaming",
+      "source_name": "simonwillison.net",
+      "title": "Simon Willison: GLM-5.4 first loop transformer",
+      "url": "https://simonwillison.net/2026/Nov/23/glm-54/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/simonwillison.net--2026-nov-23-glm-54--9407fd61.md",
+      "recommended_action": "skip",
+      "reason_ja": "* concepts/glm-5-3.mdに『GLM-5.4: First Loop Transformer (Nov 2026)』節が既に存在しHN再構成版として詳細収録(1,138pts)。entity glm-5-zai.mdのループ言及確認済み。重複。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Toward Generalized Coding with Our First Loop Transformer\nSource: https://simonwillison.net/2026/Nov/23/glm-54/\nGLM-5.4: Toward Generalized Coding with Our First Loop Transformer\n. GLM 5.4 is now available from Chinese AI lab Z.ai. It's their first model to use a looped transformer architecture, w"
+    },
+    {
+      "item_id": "dreaming-skip-openrouter-zdr",
+      "source": "dreaming",
+      "source_name": "openrouter.ai",
+      "title": "OpenRouter: Data Processing Incidents on Inference Providers",
+      "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/2026-11-22_openrouter_data-processing-incidents.md",
+      "recommended_action": "skip",
+      "reason_ja": "* entities/openrouter.mdの『Data Processing Incidents Response (November 2026)』節が3プロバイダoff-board・125エンドポイントZDR剥奪・Dragos report参照まで全文収録済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Data Processing Incidents on Inference Providers\nSource: https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers\nAuthor: OpenRouter · 11/22/2026 · Category: Announcements\nEarlier this week, security researchers reported that certain inference providers had data co"
+    },
+    {
+      "item_id": "dreaming-skip-sean-perplexity",
+      "source": "dreaming",
+      "source_name": "seangoedecke.com",
+      "title": "Sean Goedecke: Notes on OpenAI's perplexity reveal",
+      "url": "https://seangoedecke.com/notes-on-openais-perplexity-reveal/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/seangoedecke.com--notes-on-openais-perplexity-reveal--a2eebf0c.md",
+      "recommended_action": "skip",
+      "reason_ja": "** entities/seangoedecke-com.md sourcesにrawが登録済みでconcepts/scaling-laws.mdにも言及あり。openai.com RSS stub(openai.com--index-perplexity-and-intelligence)も併存。本文は一次情報源への論評で追加の主たるデータはなし。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Notes on OpenAI's perplexity reveal\nSource: https://seangoedecke.com/notes-on-openais-perplexity-reveal/\nOpenAI have just\nreleased\na fascinating graph showing the perplexity over time of all their released models:\nHere are a bunch of thoughts I have about this:\nWhy OpenAI?\nThis is the most visibil"
+    },
+    {
+      "item_id": "dreaming-skip-sitemap-batch-1124",
+      "source": "dreaming",
+      "source_name": "dreaming",
+      "title": "11/24 sitemap batch: ElevenLabs x3, Harvey x2 (author page含む), Hex Apache OSSIE",
+      "url": null,
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "* ElevenLabs(STT API比較/ElevenMusic比較/Yahoo)とHarvey(アンバサダー紹介/imene-hamdi-cherifはauthorページ)は製品マーケ・人物紹介でAI知識価値なし。Apache OSSIEはHex知識グラフ記事と一括判定済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Sitemap marketing/author-profile batch — no substantive new technical claims."
+    },
+    {
+      "item_id": "dreaming-skip-xaccounts-covered",
+      "source": "dreaming",
+      "source_name": "dreaming",
+      "title": "11/23 22:34 batch: workerd issue 8379 / Gemini API file slicing",
+      "url": null,
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "* x-accounts-scan commit 20d10041でGemini file slicingはconcepts/stateful-api-emulators.md、workerd isolate reuseはsandbox系ページにエンリッチ済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Already enriched by x-accounts-scan 2026-11-23 (commit 20d10041)."
+    },
+    {
+      "item_id": "dreaming-skip-hn-launches",
+      "source": "dreaming",
+      "source_name": "news.ycombinator.com",
+      "title": "HN launches: StarSling self-improving CI / Maritime managed cloud for agents",
+      "url": "https://news.ycombinator.com/item?id=50536468",
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "* hot-post night draft 857b0062 (11/23 21:30) がMaritime/StarSlingを収録済み(sandbox=10%, CI bill≈inference bill)。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Covered by hot-post 2026-11-23 21:30 night draft."
+    },
+    {
+      "item_id": "dreaming-skip-nonai-batch",
+      "source": "dreaming",
+      "source_name": "dreaming",
+      "title": "Non-AI batch (~25 files: johndcook x6, dfarq x3, shkspr x3, vintage-computing, math, hardware)",
+      "url": null,
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "* Atari Jaguar/Tandy 1000/Rockbox/LLVM TableGen/LWN/DFT/射影幾何/Zigbeeセンサー/iPhone planner/Pluralistic Debt Trap(本日のリンク集、AI主軸なし)/Noema意識神話(汎用哲学)/Dragos canary(既収録)/merge.devマーケ/Construction Physicsリーディングリスト/Daring Fireball macOSプライバシー設定 — 全てAI/LLM/エージェント非関連か既存カバレッジ済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "Non-AI blog batch: retrocomputing, math essays, hardware reviews, general tech-policy link posts."
+    }
+  ]
+}
