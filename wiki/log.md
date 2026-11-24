@@ -2,6 +2,10 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-11-24] skeleton-enrich-daily: 3 infra/tool stubs enriched (Pallets, Quepid, Spegel)
+
+`status: skeleton` backlog empty since 2026-10-17. Worked the `status: stub` backlog instead — org/tool-shaped stubs in `concepts/`. Enriched via GitHub REST API (Python urllib, avoiding pipe-to-interpreter scan). **pallets** (Flask/Werkzeug/Jinja/Click org, ~75k stars), **quepid** (O19S search-relevance eval, Ruby/Apache-2.0), **spegel** (spegel-org P2P OCI registry mirror for k8s, ~3.8k stars). Ambiguous stubs (cyd/genie/synth/katerra/prodng/placeiq) left untouched to avoid fabrication. Fixed 6 broken wikilinks + 4 SCHEMA tag violations. Query log: `queries/2026-11-24-skeleton-enrich-stub-action.md`.
+
 
 ## [2026-11-24 18:40 UTC] dreaming wiki-ingest | Deep Sleep verification — 4 refs: 2 enriched, 2 already covered
 

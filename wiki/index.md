@@ -2790,7 +2790,7 @@
 - [[concepts/package-management]] — Package Management
 - [[concepts/p-jit-21k]] — P-JiT 21K (Linum) — 2.18B pixel-space Apache-2.0 text-to-image DiT trained for $21,038 (8,415 H100-hr); 32×32 token reduction kills the VAE (4× attention context cut, 11× faster convergence); trunk readouts + PixelREPA→DINOv3-L; FDFO post-training with JEV-Image judges (HN 274p, Nov 2026)
 - [[concepts/palantir-ai-fde]] — AI FDE (Foundry Decision Engine)
-- [[concepts/pallets]] — Pallets
+- [[concepts/pallets]] — Pallets: open-source org behind Flask, Werkzeug, Jinja, Click (Python web stack)
 - [[concepts/parametric-factuality-recall-bottleneck]] — Parametric Factuality: Recall Is the Bottleneck — Google Research knowledge-profiling framework (Aug 2026)
 - [[concepts/passive-reconnaissance]] — Passive Reconnaissance
 - [[concepts/peft-lora-and-qlora]] — Peft Lora And Qlora
@@ -2931,7 +2931,7 @@
 - [[concepts/pytorch-reference-language]] — PyTorch: A Reference Language — Proposal to treat PyTorch programs as a formal reference language for ML computation; fundamental shift in ML compiler design
 - [[concepts/qlora]] — Q-LoRA (Quantized Low-Rank Adaptation)
 - [[concepts/quantifying-infrastructure-noise-in-agentic-coding-evals]] — Infrastructure Noise in Agentic Coding Evals — OpenAI analysis of SWE-Bench Pro reliability; benchmaxxing, harness variance, private benchmarks; + local LLM inference-stack noise (Level1Techs, Aug 2026)
-- [[concepts/quepid]] — Quepid
+- [[concepts/quepid]] — Quepid (O19S): open-source search-relevance evaluation tool for Elasticsearch/OpenSearch/Solr/Vectara/Algolia
 - [[concepts/query-understanding]] — Query Understanding
 - [[concepts/queueing-theory]] — Queueing Theory
 - [[concepts/qwen]] — Qwen Model Family
@@ -3177,7 +3177,7 @@
 - [[concepts/speech/whisper]] — Whisper — OpenAI's Speech Recognition Model
 - [[concepts/speed-as-scaling-law]] — Speed as a Scaling Law
 - [[concepts/speed-vs-legitimacy-in-ai-institutions]] — Speed vs Legitimacy in AI Institutions
-- [[concepts/spegel]] — Spegel
+- [[concepts/spegel]] — Spegel: stateless P2P OCI registry mirror for Kubernetes (spegel-org)
 - [[concepts/spike-mike-doan]] — Spike (Mike Doan)
 - [[concepts/spine-swarm-agents]] — Spine Swarm — Parallel Multi-Agent Research Platform
 - [[concepts/sqs-lambda-esm-scaling]] — SQS Lambda ESM Scaling
