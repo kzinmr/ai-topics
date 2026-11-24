@@ -1,0 +1,46 @@
+{
+  "run_id": "20261124T101044Z",
+  "triaged_at": "2026-11-24T10:15:00+00:00",
+  "source_checkpoint": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "processed_count": 2,
+  "items": [
+    {
+      "message_id": "<20261123141118.3.1dc08ead4d536eeb@mg-d0.substack.com>",
+      "subject": "Import AI 482: Huawei kernel benchmarks; airborne drone detection; and a national lab's AI science benchmark",
+      "date": "2026-11-23",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-23-import-ai-482-huawei-kernel-benchmarks-airborne-drone-detection-and-a-national-l.md",
+      "classification": "high",
+      "relevance": "ai-relevant",
+      "reason": "Import AI (Jack Clark) 482号。Huawei kernel benchmarks、airborne drone detection、national lab の AI science benchmark — モデル/ベンチマーク/推論インフラ領域で wiki の AI benchmark・hardware エコシステムページと関連。",
+      "suggested_wiki_targets": [
+        "concepts/ai-benchmarks/",
+        "entities/huawei (update or create)",
+        "events/ (Import AI 482 issue)"
+      ],
+      "notes": "記事URLは Substack redirect/トークン形式で抽出済みだが、リダイレクト先が解決不能な形式で保持されている。wiki-ingest 段階では raw newsletter の見出しからセクションを分割し、Import AI 公式 post (publication_id=1317673, post_id=226120777) を直接スクレイプして本文を取得すること。"
+    },
+    {
+      "message_id": "<20261123.190720.c93f2169@mta31>",
+      "subject": "History made: math's biggest problem solved, with Claude's help",
+      "date": "2026-11-23",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-23-history-made-math-s-biggest-problem-solved-with-claude-s-help.md",
+      "classification": "critical",
+      "relevance": "ai-relevant",
+      "reason": "Claude による数学の未解決問題解決という LLM/Agent の能力に関する重大イベント。AI による数学的発見・形式証明・Agent 活用の主要事例として wiki 記録に値する。",
+      "suggested_wiki_targets": [
+        "entities/anthropic (update)",
+        "entities/claude (update)",
+        "events/claude-math-breakthrough-2026-11 (create)",
+        "concepts/llm-for-mathematics (create or update)"
+      ],
+      "notes": "beehiiv click-tracking URL のみで元記事 URL が復元できていない。wiki-ingest 段階で beehiiv リダイレクトを解決（curl -L で Location ヘッダ追跡）するか、ニュースレター本体のテキストから原典（おそらく Anthropic / 数学者チームの発表）を特定すること。"
+    }
+  ],
+  "summary": {
+    "total": 2,
+    "critical": 1,
+    "high": 1,
+    "low": 0,
+    "skipped": 0
+  }
+}
