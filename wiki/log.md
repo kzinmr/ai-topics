@@ -3649,3 +3649,9 @@ research-grade pages from genuinely uncovered material:
 - Topic: OS-agent screen capture vs app privacy (Signal, HN 556 pts). Contrarian framing: security-boundary shift, not AI ethics.
 - Draft: inbox/hot-posts/2026-11-24-2130-night.md
 - Checkers: NO_SLOP_FOUND / 0 wikilink MISS / NO_TYPO
+
+## 2026-11-25 03:30 JST — hot-post (late-night 01:30 slot)
+- Draft: inbox/trending-reports/hot-post-2026-11-25-0130.md
+- Topic: coding agents on obsolete/exotic hardware trio (ClawDOS 8088, FPGA inference chip, Galaxy Tab S3)
+- Sources: [[concepts/coding-agents-on-obsolete-hardware]], [[concepts/modest-success-software-boom]], [[entities/jayden-milne]], [[concepts/agent-skills]], [[concepts/code-review-bottleneck]], [[concepts/ai-engineering-dekilling]], [[concepts/scaffold-vs-rl-debate]]
+- Checks: NO_SLOP_FOUND, zero wikilink MISS, NO_TYPO
