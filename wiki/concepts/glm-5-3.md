@@ -1,7 +1,7 @@
 ---
 title: "GLM-5.3"
 created: 2026-08-14
-updated: 2026-11-23
+updated: 2026-11-24
 type: concept
 tags:
   - model
@@ -171,7 +171,7 @@ This framework complements the Superintel+ "post-training economics" analysis ab
 
 ## GLM-5.4: First Loop Transformer (Nov 2026)
 
-Z.ai shipped **GLM-5.4** on 2026-11-23 — *"Toward Generalized Coding with Our First Loop Transformer"* (z.ai/blog/glm-5.4; HN 150 pts / 73 comments, item 50609685). The launch page was client-side rendered and returned no fetchable body text, so **the technical claims below are unverified first-hand** and are reconstructed from the HN thread.
+Z.ai shipped **GLM-5.4** on 2026-11-23 — *"Toward Generalized Coding with Our First Loop Transformer"* (z.ai/blog/glm-5.4; **HN front page, 1,138 pts / 369 comments by 2026-11-24**, item 50609685 — the thread grew ~7x from the first capture; the added volume was dominated by benchmark-silence debate, with no new primary-source facts surfaced). The launch page was client-side rendered and returned no fetchable body text, so **the technical claims below are unverified first-hand** and are reconstructed from the HN thread.
 
 What the thread establishes:
 

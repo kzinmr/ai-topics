@@ -2,7 +2,7 @@
 title: "Dario Amodei"
 type: entity
 created: 2026-06-17
-updated: 2026-06-24
+updated: 2026-11-24
 tags:
   - person
   - policy
@@ -80,6 +80,14 @@ A comprehensive governance framework arguing that AI is advancing far faster tha
 - **AI Safety & Alignment**: Safe and reliable AGI deployment
 - **AI Policy**: Regulatory frameworks for powerful models (transparency → binding regulation)
 - **AI Economics**: Macroeconomic implications, labor displacement, optimal tax/redistribution
+
+## The 2015 "Video Games Will Pacify the Masses" Anecdote (Nov 2026)
+
+Following Anthropic's record-breaking IPO, a Wall Street Journal profile of Dario and Daniela Amodei surfaced widely-circulated Slack messages from **2015**, when Amodei had just joined OpenAI: he *"engaged in debates with his fellow employees, suggesting that immersive video games might be a solution for the political strife caused by AI-induced joblessness."* The Verge picked it up on 2026-11-22 (75 pts / 82 comments, item 50610830).
+
+The thread's contest was over sourcing and framing rather than the quote itself: *"The Verge's 'article' is basically one line"* (strictnein), who objected to *"pulling a random out of context quote from a decade ago... It sounds like it was from a debate that people were having"* — versus *"It shows it's not something Dario came up now, but something he had in mind even before LLMs"* (coldtea). Brave New World comparisons recurred: *"The games are the Soma (Brave new World) they can distribute that for free"* (teekert). Note the original WSJ article is paywalled; the quote is single-sourced through The Verge.
+
+Read alongside his published essays (see Key Essays above), the anecdote's value is durability: the mass-joblessness political-stability problem is not a post-2022 position but dates to his pre-LLM OpenAI years.
 
 ## Related Concepts
 - [[concepts/ai-economics]]

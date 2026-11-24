@@ -1,7 +1,7 @@
 ---
 title: "NVIDIA CEO Transition (November 2026)"
 created: 2026-11-13
-updated: 2026-11-19
+updated: 2026-11-24
 type: event
 tags:
   - nvidia
@@ -149,6 +149,10 @@ On **November 23, 2026** — eleven days after his resignation and five days aft
 - **Unresolved tension the reinstatement does not settle:** the Board's independent investigation that Huang acknowledged on Nov 18, the congressional testimony commitment, the GPU-smuggling probe, and Treasury's stated demand for an *external* CEO are all still live. A reinstatement eleven days in — with no reported successor search outcome — is therefore a *reversal*, not a resolution, of the November 12 resignation.
 
 See [[entities/jensen-huang]], [[entities/nvidia]].
+
+## Polymarket Insider-Trading Investigation (Nov 24)
+
+A French independent investigation (deucalionn.vercel.app, HN 101 pts, item 50626578) documented on-chain evidence of probable insider trading on the Polymarket market *"Will Jensen Huang rejoin NVIDIA by December 31, 2026?"*: a **Gnosis Safe Proxy wallet created 81 hours earlier** accumulated 4,648 USDC on a 6.5% probability **exactly 89 minutes before Trump's Truth Social post**, cashing out 71,518 USDC on the board's unanimous confirmation. On-chain timing is publicly verifiable; insider attribution is inference. Full analysis: [[concepts/polymarket-insider-trading-jensen-huang]].
 
 ## Related
 

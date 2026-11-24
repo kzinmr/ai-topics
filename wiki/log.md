@@ -1,5 +1,13 @@
 # Wiki Log
 
+## [2026-11-24 12:00 UTC] trending-topics | Nov 24 midday run: 2 new pages, 4 updates, 3 raws
+
+- **New pages (2)**: `concepts/shirudo-ebpf-shield-runtime.md` (OpenAI × Cisco Codex-generated eBPF shielding runtime, HN 72p); `concepts/polymarket-insider-trading-jensen-huang.md` (on-chain insider-trading case vs the NVIDIA reinstatement market, HN 101p).
+- **Updates (4)**: `entities/dario-amodei.md` (2015 WSJ "video games pacify the masses" Slack anecdote, The Verge via paywalled WSJ, HN 75p); `concepts/ai-energy.md` (Blood in the Machine climate piece cross-ref, HN 134p, flag-dead/moderator-revive episode); `concepts/glm-5-3.md` (GLM-5.4 section: HN 150→1,138 pts, no new primary facts); `events/nvidia-ceo-transition-2026.md` (Polymarket insider-trading section).
+- **Raw (3)**: `2026-11-24_bloodinthemachine_ai-disaster-for-the-climate.md`, `2026-11-23_openai-introducing-shirudo.md`, `2026-11-24_deucalionn_polymarket-insider-trading-jensen-huang.md` (all sha256 recomputed over body-after-frontmatter).
+- **SCHEMA**: minted `ebpf, linux, cisco, insider-trading` on the Meta line (`prediction-markets` verified present).
+- **Covered by siblings, not duplicated**: yann-lecun open-weights vs Amodei fear-mongering quarrel (HN 1,748p — page exists, thread add pending next run), GLM-5.4 page (blog-triage in flight), pequalnp + Worker755 (Nov 23 events/concept pages), local-AI beginner guide (HN 759p — covered by local-llm/local-ai + Inkling pages), Amodei games anecdote (page + section this run).
+
 ## [2026-11-24 10:45 UTC] newsletter-wiki-ingest | Import AI 482 (run 20261124T101044Z): 3 takes + 2 refs applied
 
 - **Upstream false alarm**: newsletter-triage output wrapper reported `failed to parse JSON response`, but `triage_latest.json` was valid — read the checkpoint directly per skill guidance.

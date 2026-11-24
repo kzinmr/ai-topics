@@ -984,7 +984,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2390 pages)
+## Concepts (2394 pages)
 
 - [[concepts/claude-black-hole-physics]] — Claude Fable 5.2 solves two open black-hole/quantum-gravity problems (Nov 19 2026): 20-year-old formation-transition calculation completed; exact central-charge upper bound on black-hole mass; Anthropic notes neither result describes our universe (HN 512p)
 - [[concepts/frostbite-ai-designed-cpu]] — Frostbite (Architect Labs, Nov 20 2026): agent swarms discover/design/verify a general-purpose interaction-net CPU end-to-end; ASL spec lowered to 800k+ Lean lines; vendor-reported 4.59x perf/W vs area-matched in-order core, emergent hardware work-stealing (HN 143p)
@@ -1002,6 +1002,8 @@
 - [[concepts/ai-generated-code-open-source]] — AI-generated code should be open source — Jankiewicz's license-laundering + uncopyrightability argument (Monkey Selfie / CC0), 1174p HN thread and its 'licenses need copyright' / 'OSS = human-validated code' rebuttals (Nov 2026)
 - [[concepts/anthropic-metr-regulatory-capture]] — Anthropic-METR regulatory-capture allegations (kevinnbass, HN 140p): evaluator funding entanglement debate, contested
 - [[concepts/open-source-project-sudden-disappearance]] — ONNX Runtime vanishing from GitHub (350p): no-notice repo takedown as supply-chain availability failure; mirror/malware hazard
+- [[concepts/polymarket-insider-trading-jensen-huang]] — On-chain case of probable insider trading on the "Will Jensen Huang rejoin NVIDIA" Polymarket market: disposable wallet, 89-minute lead over Trump's Truth Social post, 15x payoff
+- [[concepts/shirudo-ebpf-shield-runtime]] — Shirudo; OpenAI × Cisco open-source runtime deploying Codex-generated, TPM-verified eBPF shields that protect unpatched running Linux systems (Nov 23, 2026)
 - [[concepts/claude-code/verification-playbook]] — Claude Code Verification Playbook (Addy Osmani, Nov 16 2026): ~90% agent-written code; E2E/property/differential tests, verify skill, 39-item diff-triggered reliability checklist, changes-can't-modify-checks, observe/enforce commit gates, review-the-reviewers evals (HN 282p)
 - [[concepts/cerebras-disaggregated-inference]] — Cerebras Disaggregated Inference (Nov 17 2026) — AMD GPUs for prefill + Cerebras CS-3 for decode in production; 5× tokens/megawatt vendor-claimed; KV Portal over RDMA, vLLM/SGLang prefill engine, decode-only SDK; AWS/Fireworks/Gimlet/General Compute early access (HN 85p)
 - [[concepts/decision-model-playbook]] — Decision Model Playbook (PostHog, Nov 9 2026) — production patterns for Jev-style decision models: gate LLM calls (98.7% skip; threshold by error cost), model routing, face-value checks after embedding pre-filter, replace overqualified LLMs; Jeeves hybrid reason-then-decide (HN 160p)

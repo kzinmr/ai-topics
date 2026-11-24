@@ -1,7 +1,7 @@
 ---
 title: "AI Energy"
 created: 2026-08-08
-updated: 2026-11-23
+updated: 2026-11-24
 type: concept
 tags:
   - concept
@@ -315,6 +315,15 @@ Two linked analyses put a lab-specific number on the emissions question on 2026-
 The skeptic position should be recorded alongside: the Blood in the Machine submission was flagged and revived by a moderator, and top comment called it *"a polemic that doesn't seem to add very much"* pointing to the Better Data Center piece as the more substantive read (petesergeant), with *"This is just not true at all and is only written to support the author's point of view — there are many way, way more applicable reasons to be disapproving of AI than climate change"* (217). Treat the 87%/11% and 20 Mt figures as **single-source projections, not measured emissions**.
 
 Connection: this is the concrete case for the *Power as the Ultimate Scaling Limit* and *Subprime Data Center* sections above — and the political dimension (community veto rights) is where energy becomes [[concepts/data-center-politics]] rather than an efficiency problem.
+
+## Blood in the Machine: The Same Numbers, Framed as Climate Disaster (Nov 24)
+
+Brian Merchant's **"AI is becoming a disaster for the climate"** (bloodinthemachine.com, published 2026-11-22, resurfaced on HN 2026-11-24 at 134 pts / 64 comments, item 50598961) recycles the 20 Mt CO2-e/yr and animal-agriculture-comparison figures documented in the section above, this time against Anthropic's post-IPO position. Two additions worth recording:
+
+- The article's own math invites the scale objection in print: it cites ~20 megatons CO2-e/yr for AI/data centers against **animal agriculture's ~6,200 megatons/yr**, while its forward projection is that AI reaches *"half of all animal agriculture"* in a decade. rsfern made the projection's logic explicit: with compute scaling still the dominant performance mechanism (RL post-training + test-time scaling), *"it's only two more rounds of 10x increase in compute capacity to hit parity"* — plausible enough to warrant study, not settled fact.
+- The thread's moderation drama is itself a data point on discourse health: the submission was flagged dead and **revived by a moderator** (nkurz: *"Even if you think the whole climate narrative is bunk, please explain why in a comment rather than flagging this away"*), and the top comment still dismissed it as *"a polemic that doesn't seem to add very much"* (petesergeant).
+
+The transparency ask is the consensus-adjacent position: *"Regardless of our opinion on data centers, I think they should be fully transparent about the information"* (skwon816) — which connects directly to the community-veto thread in [[concepts/data-center-politics]].
 
 ## Related Pages
 
