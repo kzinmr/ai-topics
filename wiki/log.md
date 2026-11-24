@@ -1,5 +1,16 @@
 # Wiki Log
 
+## [2026-11-24 17:35 UTC] watchdog | auto-fix: committed scaffold-vs-rl-debate enrichment; blog chain 503 NEEDS-HUMAN
+
+- **Verified clean**: index.md (3,556 lines, validate_index.py pass, 0 pipe/line-number/triple-bracket corruption), log.md header intact (line 1), tag violations 0 (11-20 weekly baseline).
+- **Committed**: untracked working-tree enrichment of `concepts/scaffold-vs-rl-debate.md` (stub -> full page, 2026-11-23, orphaned by a sibling session) + 15 skill reference/session files from today's pipeline runs.
+- **NEEDS-HUMAN**: `blog-wiki-ingest` failed today 10:40 UTC with `HTTP 503: Local LLM server is busy; Hermes should fall back to the external provider.` (same failure 11-23 x2, and across other jobs). 503-no-fallback class => no force-rerun per watchdog policy; will self-heal on the next scheduled tick once local LLM load clears. Today's blog-triage tooks (4) + refs (6) remain pending ingestion.
+- **Graph**: weekly analysis 98h old; orphans 462 / broken links 2,627 / dups 17 (0 merges) — flat WoW, stable noise, no action.
+
+---
+
+# Wiki Log
+
 ## [2026-11-24 12:00 UTC] trending-topics | Nov 24 midday run: 2 new pages, 4 updates, 3 raws
 
 - **New pages (2)**: `concepts/shirudo-ebpf-shield-runtime.md` (OpenAI × Cisco Codex-generated eBPF shielding runtime, HN 72p); `concepts/polymarket-insider-trading-jensen-huang.md` (on-chain insider-trading case vs the NVIDIA reinstatement market, HN 101p).

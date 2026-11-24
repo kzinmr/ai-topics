@@ -14,8 +14,8 @@ All pipelines follow the same pattern:
 fetch external content → checkpoint → triage → wiki-ingest (create/update pages) → commit
 ```
 
-> X-scan: `references/x-accounts-scan-cron.md`, `references/blog-ingest-session-notes-2026-10-23.md`. Triage parse-failure + git hygiene: `blog-wiki-ingest-checkpoint-recovery-2026-10-19.md`, `blog-wiki-ingest-2026-11-02-patterns.md`, `newsletter-wiki-ingest-2026-11-08/10-patterns.md``newsletter-triage-unresolvable-urls.md`.
-> 📖 Blog-ingest notes: `references/blog-ingest-session-notes-2026-10-28.md` `references/blog-ingest-supplement-2026-11-14.md` (+11-17;+11-18:`blog-wiki-ingest-2026-11-18-patterns.md`) (read when editing pages), `references/pre-commit-wikilink-verification.md` (run before `git add wiki/` — hooks don't verify `[[wikilinks]]`), `references/log-prepend-dynamic-scan-2026-11-10.md` (patch-anchored prepend; execute_code blocked in cron). Merged: `newsletter-wiki-ingest`.
+> X-scan: `references/x-accounts-scan-cron.md`. Triage parse-failure + git hygiene: `blog-wiki-ingest-checkpoint-recovery-2026-10-19.md`, `blog-wiki-ingest-2026-11-02-patterns.md`, `newsletter-wiki-ingest-2026-11-08/10-patterns.md`.
+> 📖 Blog-ingest notes: `references/blog-ingest-session-notes-2026-10-28.md` `references/blog-ingest-supplement-2026-11-14.md` (+11-17;+11-18 `blog-wiki-ingest-2026-11-18-patterns.md`;+11-22 `blog-ingest-session-notes-2026-11-22.md`) (read when editing pages), `references/pre-commit-wikilink-verification.md` (run before `git add wiki/` — hooks don't verify `[[wikilinks]]`), `references/log-prepend-dynamic-scan-2026-11-10.md` (patch-anchored prepend; execute_code blocked in cron). Merged: `newsletter-wiki-ingest`.
 
 ---
 

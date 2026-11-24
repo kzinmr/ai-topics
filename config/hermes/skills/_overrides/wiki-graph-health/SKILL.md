@@ -45,7 +45,7 @@ fixed = re.sub(r'^\|-\s+\[\[(?:entities|concepts|comparisons|queries)/',
 
 ### Index Header Count Decay
 
-**WARNING**: Header page counts in `index.md` go stale fast (600+ discrepancies observed). **Auto-correct from index LINES** (`^\|?- [[ns/` per namespace), NOT filesystem files — nested subdir pages are individually indexed, redirect-stub dups legit. Recipe + orphan set-difference: `references/watchdog-session-2026-11-09.md` (typo-fix batches miss the report's own quoted examples). Flat `ls` misses subdirs. 4-way count divergence (digest/header/index/filesystem) — reconcile headers from index-line counts only: `references/digest-vs-index-reconciliation-2026-11-09.md`. ⚠️ SKILL.md ≈100K limit; net-growing patches fail — use references/ or net-shrink edits.
+**WARNING**: Header page counts in `index.md` go stale fast (600+ discrepancies observed). **Auto-correct from index LINES** (`^\|?- [[ns/` per namespace), NOT filesystem files — nested subdir pages are individually indexed, redirect-stub dups legit. Recipe + orphan set-difference: `references/watchdog-session-2026-11-09.md`. Flat `ls` misses subdirs. **Count the SECTION slice (between `## Concepts` and next `^## `), not the whole file** — whole-file regex overcounts; diff `git show HEAD:wiki/index.md` when patch warns a sibling modified it: `references/watchdog-session-2026-11-22.md`. ⚠️ SKILL.md ≈100K limit; net-growing patches fail — use references/ or net-shrink edits.
 
 ### Broken Wikilink Subdirectory vs Flat Path Issue
 
@@ -1054,9 +1054,9 @@ rm -r -f /opt/data/home/wiki /opt/data/home/ai-topics
 - Ensure `AGENTS.md` documents canonical paths prominently
 - Verify subagent output paths after `delegate_task` — check `/opt/data/ai-topics/wiki/` not `/opt/data/home/`
 
-## Wikilink Auto-Fix from Graph Analysis
+## Wikilink Auto-Fix
 
-After running `wiki_graph.py --format json`, the analysis report identifies broken wikilinks in four categories:
+⚠️ `wiki_health.py --json` >60s possible — terminal `timeout=320`, never pipe to `python3 -c`. YAML corruption: `references/yaml-frontmatter-corruption-2026-11-23.md`.
 - `bare-wikilink`: `[[foo]]` without namespace prefix (auto-fixable)
 - `cross-namespace`: `[[entities/foo]]` when file exists in `concepts/` (auto-fixable)
 - `missing`: namespaced link to a page that doesn't exist (needs page creation)
@@ -1087,7 +1087,7 @@ The graph analysis typically detects ~1,000 fixable links, but actual runs can f
 - `scripts/tag_audit.py` — Tag analysis and auditing (canonical: `~/ai-topics/scripts/tag_audit.py`)
 - `scripts/validate_index.py` — Pre-commit validator for baked-in numbers, pipe prefixes, truncation artifacts in wiki/index.md. Run `python3 scripts/validate_index.py`; exit 0 = clean. Called by `.githooks/pre-commit`. See Section H.
 - `references/wiki-health-script-optimization.md` wiki_health.py perf (0.28s) · `references/json-output-processing.md` · `references/raw-article-coverage-audit.md` · `references/bare-wikilink-batch-fix.md` scan→map→regex · `references/broken-wikilink-repair.md` · `references/index-corruption-recovery.md` · `references/wiki-file-move.md` · `references/wiki-bulk-link-fix.md` · `references/wiki-works-source-linking.md` · `references/wiki-page-splitting.md` · `references/wiki-entity-dedup.md` · `references/watchdog-session-2026-10-22.md` — verified FIXMAP renames, WIP-snapshot `status: archived`, · `references/watchdog-session-2026-10-24.md` — no-frontmatter hot-post pages; run no-FM scan + recount when cleancode-block-stripped link scanner
-See `references/log-prepend-header-burial-and-cron-tool-blocks-2026-11-02.md` (**READ BEFORE ANY log.md PREPEND** — buried-header recurring bug; run `fix_log_header_burial.py` LAST before commit — sibling preps re-bury, see `references/log-prepend-rereburial-end-of-run-repair-2026-11-13.md`), `references/duplicate-log-entry-recovery.md`, `references/log-prepend-and-header-fix-recipe-2026-11-06.md`. **⚠️ HEADER-BURIAL GUARANTEE (2026-11-14): a fresh prepend ALWAYS buries `# Wiki Log` — after prepend `grep -n '^# Wiki Log' wiki/log.md`; if >1 run `python3 ~/ai-topics/config/hermes/skills/_overrides/wiki-graph-health/scripts/fix_log_header_burial.py` (NOT on scripts/) LAST before commit.** `references/watchdog-session-2026-11-16.md` — cron prepend recipe, clean-run baseline.
+See `references/log-prepend-header-burial-and-cron-tool-blocks-2026-11-02.md` (**READ BEFORE ANY log.md PREPEND** — buried-header recurring bug; run `fix_log_header_burial.py` LAST before commit — sibling preps re-bury, see `references/log-prepend-rereburial-end-of-run-repair-2026-11-13.md`), `references/duplicate-log-entry-recovery.md`, `references/log-prepend-and-header-fix-recipe-2026-11-06.md`, `references/log-entry-level-normalization-and-dirty-tree-commit-2026-11-22.md` (`# [`→`## [` fix; dirty-tree ⇒ skip pull, scope-stage, push). **⚠️ HEADER-BURIAL GUARANTEE (2026-11-14): a fresh prepend ALWAYS buries `# Wiki Log` — after prepend `grep -n '^# Wiki Log' wiki/log.md`; if >1 run `fix_log_header_burial.py` LAST.** `references/watchdog-session-2026-11-16.md` — cron prepend recipe, clean-run baseline.
 - `references/entity-concept-cross-reference.md` — Entity/concept duplicate resolution: redirect stubs, cross-link comparable pairs (2026-05-08 session)
 - `references/wiki-bare-wikilink-fix.md` — Bare wikilink → namespace-prefixed batch fix with full session data
 - `references/tag-normalization.md` — Tag normalization procedure, analysis scripts, and critical pitfalls
@@ -1221,7 +1221,7 @@ Two failure modes with `terminal()` + `python3 -c "..."`:
 
 When `patch` finds multiple matches for `---`, it matches the **first** occurrence, which is almost never the one you intended. The result is a corrupted entry at an arbitrary position.
 
-**Prevention — never use `---` as old_string, never pipe Python with backticks through bash, and note: `execute_code` is BLOCKED in cron mode (approvals.cron_mode) — use write_file → `python3 /tmp/script.py` instead. Ready-made: `scripts/fix_log_header_burial.py` (see references/watchdog-healthy-baseline.md §3):**
+**Prevention — never use `---` as old_string, never pipe Python with backticks through bash, and note: `execute_code` is BLOCKED in cron mode (approvals.cron_mode; CONFIRMED 2026-11-22 — the execute_code prepend snippet below fails there, use the write_file recipe):**
 ```python
 # WRONG (Failure 1) — will match first `---` in file
 patch(old_string="---", new_string="...")
@@ -1253,7 +1253,7 @@ patch(
 **Recovery from `---` corruption**:
 If triggered, assess damage via `read_file`, fix each fragment with targeted `patch` (long unique strings as `old_string`), verify only one `# Wiki Log` header. If damage >4 lines, rewrite the affected section via `execute_code` Python rather than iterative `patch`.
 
-**Preferred: prepend via `execute_code` Python `with open()`**:
+**Cron-mode prepend** — `write_file` → `/tmp/x.py`, `terminal("python3 /tmp/x.py")`. Snippet below = interactive only.
 ```python
 import os
 log_path = os.path.expanduser("~/ai-topics/wiki/log.md")
