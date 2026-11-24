@@ -1,5 +1,16 @@
 # Wiki Log
 
+_Log of all wiki changes. Newest entries at top._
+
+
+## [2026-11-24 17:50 UTC] auto-fix | wiki-health-fix: removed 1 ghost index entry
+
+- **Verified clean**: index.md 0 pipe_prefix / 0 line_number_prefix / 0 triple_bracket / 0 space_prefix; validate_index.py pass; header counts (977/2393/35/58/64) match section line counts; 0 no-frontmatter pages across entities/concepts/comparisons/events/queries; 0 L2 pipe-prefix corruption.
+- **Fixed**: removed ghost entry `[[concepts/os-agent-capture-privacy]]` from index.md (duplicate of correctly-pathed `[[concepts/security-and-governance/os-agent-capture-privacy]]` whose file exists); Concepts header 2394 -> 2393.
+- **No action**: orphans 0 (per digest), skeleton entities 0, stale/raw-backlog volumes informational only.
+
+---
+
 ## [2026-11-24 17:35 UTC] watchdog | auto-fix: committed scaffold-vs-rl-debate enrichment; blog chain 503 NEEDS-HUMAN
 
 - **Verified clean**: index.md (3,556 lines, validate_index.py pass, 0 pipe/line-number/triple-bracket corruption), log.md header intact (line 1), tag violations 0 (11-20 weekly baseline).
@@ -8,8 +19,6 @@
 - **Graph**: weekly analysis 98h old; orphans 462 / broken links 2,627 / dups 17 (0 merges) — flat WoW, stable noise, no action.
 
 ---
-
-# Wiki Log
 
 ## [2026-11-24 12:00 UTC] trending-topics | Nov 24 midday run: 2 new pages, 4 updates, 3 raws
 
@@ -166,7 +175,6 @@ Skips (4) archived via archive_triage.py.
 - 12/15 articles saved by blog_ingest pre-run script (checkpoint `blog_ingest_20261123T100944Z`).
 
 
-_Log of all wiki changes. Newest entries at top._
 
 
 ## [2026-11-23 10:00 UTC] tag-audit-weekly | Clean — 0 violations, normalization skipped

@@ -984,7 +984,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2394 pages)
+## Concepts (2393 pages)
 
 - [[concepts/claude-black-hole-physics]] — Claude Fable 5.2 solves two open black-hole/quantum-gravity problems (Nov 19 2026): 20-year-old formation-transition calculation completed; exact central-charge upper bound on black-hole mass; Anthropic notes neither result describes our universe (HN 512p)
 - [[concepts/frostbite-ai-designed-cpu]] — Frostbite (Architect Labs, Nov 20 2026): agent swarms discover/design/verify a general-purpose interaction-net CPU end-to-end; ASL spec lowered to 800k+ Lean lines; vendor-reported 4.59x perf/W vs area-matched in-order core, emergent hardware work-stealing (HN 143p)
@@ -1016,7 +1016,6 @@
 - [[concepts/claude]] — Claude Models — hub index for Claude model-family pages (27 pages under concepts/claude/)
 - [[concepts/browser-agent]] — Browser Agent — hub for agentic browsing pages (Death of Browser, Deep Research)
 - [[concepts/anthropic]] — Anthropic Platform & Business — hub for platform/SDK/business pages of Anthropic
-- [[concepts/os-agent-capture-privacy]] — OS-level AI agents vs app-layer privacy; Signal's screenshot blocking of iOS 27 Siri / Android Gemini screen-reading; Recall precedent; app opt-out demands
 - [[concepts/positional-embeddings]] — Positional Embeddings in Modern LLMs (Raschka survey, Nov 15 2026, HN 228): RoPE still dominant but share falling in 2026; partial-RoPE now majority of RoPE models; NoPE hybrids and Inkling T5-style learned relative bias emerging; absolute position tables uneconomic beyond ~1k context
 - [[concepts/agent-trust-boundary-violations]] — Agent trust-boundary violations (Nov 2026): Postman silently auto-installs Codex/Claude plugins + self-trusts its hook (HN 1332); OpenAI Codex training opt-in silently re-enabled (HN 488); agent config as executable attack surface
 - [[concepts/ai-agent-bureaucracy|Agent Bureaucracy Failure]] – multi-agent coordination collapse in the YC labs 50-agent Minecraft civilization experiment
