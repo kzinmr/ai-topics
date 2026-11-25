@@ -2,6 +2,10 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-11-25 00:31 UTC] hot-post | 2026-11-25 09:30 morning draft — Hornet agentic-retrieval economics trio (8.4× QPS swing, 6× sharding tax, $0.61 SERP)
+
+Archived to `inbox/trending-reports/hot-post-2026-11-25-0930.md`. Sources: `concepts/hornet.md` (updated 2026-11-24), raws `hornet.dev--why-we-started-hornet--75e31a43.md`, `hornet.dev--big-graphs-small-vectors-hnsw-at-a-billion--ade78227.md`, `2026-06-03_hornet_agent-queries-cost-more-to-serve.md`. Wikilinks: agentic-retrieval, bm25, deep-research, context-engineering/_index, kv-cache, jo-kristian-bergum — all resolve, zero MISS. T1 slop grep NO_SLOP_FOUND, no katakana typo. No dedup conflict (recently_covered_topics empty; late-night 01:30 slot used obsolete-hardware trio). Numbers transcribed verbatim from `concepts/hornet.md`.
+
 ## [2026-11-24 22:30 UTC] ingest | x-accounts-scan: Hornet founding + HNSW-at-1B posts, psycache 26.5.0, Inkling 2 Mini Modal demo, Grok Bot recap page
 
 Cursor rotation 44→55 (10 of 84 accounts scanned, 73 skipped on the 12-request budget — expected, nothing dropped). 6 substantive candidates, all dispositioned. Raw saved (3, readability recipe): `hornet.dev--why-we-started-hornet--75e31a43.md`, `hornet.dev--big-graphs-small-vectors-hnsw-at-a-billion--ade78227.md`, `github.com--hynek-psycache-release-26.5.0--2479ac4b.md`.
