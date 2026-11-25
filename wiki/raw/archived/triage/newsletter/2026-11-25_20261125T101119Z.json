@@ -1,0 +1,32 @@
+{
+  "archived_at": "2026-11-25T10:39:24.989135+00:00",
+  "triage_run_id": "20261125T101119Z",
+  "source": "newsletter",
+  "summary_ja": "run 20261125T101119Z のニュースレター2通（beehiiv uid=939 / Substack Vanishing Gradients uid=941）を評価。uid=939「Jensen Huang back at Nvidia: the return of the king」は全20本の beehiiv v2/c 追跡URLが Cloudflare Just a moment... challenge を返し（Location ヘッダ無し・12本サンプル検証）、inbox pre-triage summary も 未生成だったため本文到達不能。件名から推定されるトピックは events/nvidia-ceo-transition-2026.md の 11/23 CEO復帰セクション（Zitron の特朗普介入機序・Polymarket インサイダー調査まで）で詳細カバー済みとなり、20件とも skip。対して Hugo Bowne-Anderson（Vanishing Gradients, pub 2632531 / post 226449334）は open.substack.com が404だったが substack.com/home/post/p-226449334 の redirect-stub 見出しから正規URL hugobowne.substack.com/p/what-the-amish-can-teach-us-about を復元し、isAccessibleForFree=true の本文全文15.8KBをraw化。O'Reilly Foo Camp の lightning talk 拡張版で、AI psychosis・Amish barn-raising・VIVO・verification-driven development・org chart 上への agent 配置4パターン・Foo Camp 10人セッションという、既存 entity/concept ページに無い具体論が多数。take 5件（hugo-bowne-anderson.md / simon-willison.md / spec-driven-development.md / ai-org-from-hierarchy-to-intelligence.md / ai-organization.md）、reference 2件、skip 33件。",
+  "decisions": [
+    {
+      "item_id": "<20261125033508.3.43f96f1fa1c770a6@mg-d1.substack.com>-9",
+      "source": "newsletter",
+      "source_name": "Vanishing Gradients (Hugo Bowne-Anderson)",
+      "title": "Durable personal practice: VIVO (voice in, visuals out) + single coordinator agent",
+      "url": "https://hugobowne.substack.com/p/what-the-amish-can-teach-us-about#orgchart-agentic#vivo-coordinator-agent",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-25-what-happens-to-the-org-chart-when-agents-do-the-work.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ 単発だが永続的な実務事実として1行価値あり。wiki全体で「voice in, visuals out」「VIVO」は zero hits。音声入力＋ゲームコントローラ操作、編集可能HTMLキャンバスで可視物を受け取る作業様式、および Foo Camp 後に 6-8並列エージェントから「1つの coordinator agent 配下」へ戻した（focus of attention）という運用転換は、hugo-bowne-anderson.md の take 項に含める副次情報として十分。take 5項と同一rawから取るため单独編集は不要。",
+      "candidate_wiki_path": "entities/hugo-bowne-anderson.md",
+      "body_excerpt": "# Newsletter Digest - 2026-11-25\n**Subject:** What Happens to the Org Chart When Agents Do the Work?\n**Collected:** 2026-11-25T10:11:16.900056+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9odWdvYm93bmUuc3Vic3RhY2suY29tL3N1YnNjcmliZT91dG1fc291c"
+    },
+    {
+      "item_id": "<20261125033508.3.43f96f1fa1c770a6@mg-d1.substack.com>-7",
+      "source": "newsletter",
+      "source_name": "Vanishing Gradients (Hugo Bowne-Anderson)",
+      "title": "Greg Ceccarelli / SpecStory: agents outrun PR review → push straight to main; background-agent PR security review",
+      "url": "https://hugobowne.substack.com/p/what-the-amish-can-teach-us-about#orgchart-agentic#specstory-push-main",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-25-what-happens-to-the-org-chart-when-agents-do-the-work.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ 軽微な更新候補。entities/greg-ceccarelli.md は Show Us Your Agent Skills Ep.7 で既に SpecStory の 「tight-aligned な人間＋agent チームは PR を開かず main に push」論を収録済み（2026-11-03 ログ）。本文の追加情報は SpecStory の動機付け（agent がコードを書く速度が PR レビュー速度を超えた）と、PR をトリガに security review を自動実行する background agent の例のみ。concepts/pull-request-review 系の既存ページがあれば補足程度。",
+      "candidate_wiki_path": "entities/greg-ceccarelli.md",
+      "body_excerpt": "# Newsletter Digest - 2026-11-25\n**Subject:** What Happens to the Org Chart When Agents Do the Work?\n**Collected:** 2026-11-25T10:11:16.900056+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9odWdvYm93bmUuc3Vic3RhY2suY29tL3N1YnNjcmliZT91dG1fc291c"
+    }
+  ]
+}
