@@ -1,3 +1,17 @@
+## [2026-11-25] wiki-health-fix | orphan index registration (queries 64->65)
+
+### Changes
+- wiki/index.md: registered unindexed orphan queries/2026-11-24-skeleton-enrich-stub-action (skeleton-enrich daily run log); Queries header count 64 -> 65. validate_index.py clean.
+### Checks (all clean)
+- index.md: 0 pipe/line-number/triple-bracket/space-prefix corruption; headers match section lines (978/2397/35/58/65).
+- wiki_health.py --json: 0 orphans, 0 page-name errors (1 warn: 9-word slug).
+- L2 scans: 0 pipe-prefix lines, 0 triple-bracket files, 0 no-frontmatter pages.
+### Needs human attention
+- 7443 unprocessed raw articles (62.7% of 11877) - backlog grows ~264/wk; consider raw-backlog batch runs.
+- 2905 stale pages (>30d) - expected for slow-moving entity pages.
+
+---
+
 ## [2026-11-25] watchdog | index line-merge fix + pipeline health check
 
 ### Changes

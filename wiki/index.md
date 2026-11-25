@@ -3488,7 +3488,7 @@
 - [[events/trustfall-symlink-rce-2026]] — TrustFall + Symlink RCE — AI Coding Agent Security Crisis (2026)
 - [[events/vercel-agent-desktop-launch-2026]] — Vercel Labs agent-desktop launch (Oct 31, 2026) — Rust-based computer-use tool ("agent-browser, for your whole computer"): reliable desktop automation via OS accessibility trees (stable refs, retry-safe, headless multi-agent), built by @mdlahfir; amplified by Chris Tate
 
-## Queries (64 pages)
+## Queries (65 pages)
 
 - [[queries/2026-11-15-skeleton-enrich-stub-action]] — Daily skeleton-enrich run 2026-11-15: 9 AI umbrella stubs enriched (tinygrad, trey-grainger, ai-alliance, robotics, embodied-ai, ai-coding-tools, generative-ai, vision-models, ai-education)
 - [[queries/2026-11-18-skeleton-enrich-stub-action]] — Daily skeleton-enrich run 2026-11-18: 8 search/security/OSS stubs enriched (elasticsearch, threat-modeling, compiler-explorer, searcharray, cohereio, open-source-sustainability, mastodon, fuzzing)
@@ -3552,6 +3552,7 @@
 - [[queries/unresolved-newsletter-leads]] — Unresolved newsletter leads: beehiiv uid=861 "Two AI Labs Say They Refuted ETH" (2026-10-31, all 16 links Cloudflare-403) — second-lab ETH refutation unverifiable from any primary source; held pending arXiv cs.CC / DeepMind blog corroboration
 - [[queries/where-the-missing-software-went]] — Where the missing software went: reconciles code-review-bottleneck (shipping didn't grow) with the modest-success boom (modest successes doubling per year) — growth went long-tail, review capacity is the moat
 - [[queries/2026-11-13-skeleton-enrich-stub-action]] — Skeleton-enrich daily: stub action log (2026-11-13)
+- [[queries/2026-11-24-skeleton-enrich-stub-action]] — Skeleton-enrich daily: stub action log (2026-11-24) — enriched Pallets/Quepid/Spegel infra stubs
 - [[queries/wiki-graph-analysis-weekly-2026-11-20]] — Weekly Wiki Graph Analysis (2026-11-20) — 3,495 pages; 462 true orphans (≥20L via deep audit), 2,627 true broken links, 17 dup groups (0 merges needed), 335 oversized, 2,563 stale
 - [[queries/wiki-graph-analysis-weekly-2026-11-20-annotations]] — Adjudicated verdicts: all 17 dup groups = already-redirected/false-positive/legit-split, index gap = 1 real, 4-item genuine missing-page queue (huggingface, ben-clavie, claude-opus-4-7, agent-harness-comparison alias), tag violations = 0 (report false positive)
 
