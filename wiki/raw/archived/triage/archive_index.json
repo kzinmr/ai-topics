@@ -6,6 +6,8 @@
     "(multiple)",
     "(substack infrastructure links)",
     "...",
+    "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-24-jensen-huang-back-at-nvidia-the-return-of-the-king.md",
+    "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-25-what-happens-to-the-org-chart-when-agents-do-the-work.md",
     "N/A",
     "N/A — 20 beehiiv tracking URLs all return 403 expired token",
     "See raw newsletter file for individual URLs",
@@ -841,6 +843,10 @@
     "https://hugobowne.substack.com/p/building-an-enterprise-ai-agent-for",
     "https://hugobowne.substack.com/p/how-to-build-an-effective-agent-harness",
     "https://hugobowne.substack.com/p/open-weight-ai-is-becoming-infrastructure",
+    "https://hugobowne.substack.com/p/what-the-amish-can-teach-us-about",
+    "https://hugobowne.substack.com/p/what-the-amish-can-teach-us-about#orgchart-agentic",
+    "https://hugobowne.substack.com/p/what-the-amish-can-teach-us-about#orgchart-agentic#specstory-push-main",
+    "https://hugobowne.substack.com/p/what-the-amish-can-teach-us-about#orgchart-agentic#vivo-coordinator-agent",
     "https://hugotunius.se/2026/06/15/the-sword-juggling-fallacy.html",
     "https://human-in-the-loop.bearblog.dev/llms-are-eroding-my-software-engineering-career-and-i-dont-know-what-to-do/",
     "https://hyperbo.la/w/chatgpt-4000/",
@@ -3403,5 +3409,5 @@
     "substack.com/ui-wrapper (Link 8)",
     "substack.com/ui-wrapper (Link 9)"
   ],
-  "updated": "2026-11-25T10:25:00.340405+00:00"
+  "updated": "2026-11-25T10:39:24.990433+00:00"
 }
