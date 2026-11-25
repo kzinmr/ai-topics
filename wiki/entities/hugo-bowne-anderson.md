@@ -4,7 +4,7 @@ type: entity
 aliases: [hugobowne, Hugo Bowne Anderson]
 status: complete
 created: 2026-04-14
-updated: 2026-11-24
+updated: 2026-11-25
 depth_tracking: {'current': 'L3', 'target': 'L3', 'last_reviewed': datetime.date(2026, 7, 25), 'notes': "Added Privacy Engineering + Agent Harness Engineering + Production AI Agents: Maven Assistant sections from 2026 content"}
 tags:
   - person
@@ -338,6 +338,50 @@ The team also found that **open-weight self-hosting economics are nuanced** — 
 - **Production AI agent development is a discovery process** — user behavior cannot be fully predicted pre-launch
 
 This case study directly validates Hugo's broader philosophy: evaluation-driven development, structured automation, and the recognition that production AI systems must be built for discovery and iteration, not for a pre-imagined user.
+
+## The Agentic Organization Without AI Psychosis (Nov 25, 2026)
+
+Source: raw/newsletters/2026-11-25-what-happens-to-the-org-chart-when-agents-do-the-work.md; article body in raw/articles/hugobowne.substack.com--p-what-the-amish-can-teach-us-about--5afbb1b68f99df90.md (Vanishing Gradients, pub_id 2632531, post_id 226449334, free access).
+
+An expansion of Hugo's O'Reilly **Foo Camp** lightning talk ("building agentic organizations") plus a ~10-person off-the-record session he ran afterward. See the YouTube lightning talk and his free Maven Lightning Lesson, *10 Things People Building Agentic Organizations Told Me*.
+
+### "AI psychosis" (nonclinical coinage)
+Hugo's provocation: the industrial revolution cost workers limbs to machines; when the machine is "a bicycle for the mind, we're all losing our minds." He uses **AI psychosis** in a deliberately nonclinical, evocative sense — the mental toll of directing 6–8 agents on a typical day. He compares running agents to doom-scrolling Instagram ("every run looks like productive work… by 3 a.m. you've got twelve terminals open and you're building your eleventh Kanban board. Doom-scrolling plus up and to the right!").
+
+### Amish barn-raising as an information-routing model
+At Foo Camp he used an Amish barn-raising (Clinton, Wisconsin time-lapse) as the coordination metaphor: a **master carpenter + a shared plan for the barn**, each crew owning a part of the frame; when someone leaves a part of the frame, a worker elsewhere **sees the gap, recognizes a job they know, and moves to fill it**. In a company the person with the skills may have no way of seeing another team needs them — the request travels up the management chain. His thesis: **hierarchical organizations are designed entirely around the fact that information flow is a bottleneck**, and a strong frontier model + well-curated context about who is working on what collapses that bottleneck. See [[concepts/ai-organization/ai-org-from-hierarchy-to-intelligence]].
+
+### Three coordination models
+1. **Hierarchy** — chain of command (corporations, the military, the mafia).
+2. **Flat team** — people coordinate directly with one another (his Foo Camp examples: **Instagram** and **Cursor**).
+3. **Core-and-periphery** — a core group of maintainers + occasional contributors (open-source projects; a potluck).
+
+### Org-chart agent placement (4 patterns)
+- An agent takes a role **in an existing department alongside a human** (marketing agent beside marketing, product/design agents with their teams).
+- **Hub-and-spoke** — Hugo personally worked with 6–8 agents daily, "all the lines in the diagram come back to me."
+- **Dotted lines** — agent-to-agent communication that a reporting structure leaves out.
+- **PR-triggered background agent** — a pull request itself is the signal for an agent to start work (e.g., a background agent runs a security review on every new PR unprompted).
+
+### Verification-driven development (relativizing spec-driven)
+With **Eleanor Berger**, the *Software Factories++* "Factory Life / Micro Managers Anonymous" series: some of the best builders have never written a line of code — they are clear about what they want and careful about checking what comes back, letting the agent work out *how*. They call this **evidence-backed verification**, a core component of **verification-driven development**, and argue **specification-driven development is less important now that models and harnesses are getting far better**. See [[concepts/spec-driven-development]] (contested).
+
+### VIVO: voice in, visuals out (durable personal practice)
+Most of Hugo's interaction with agents is **voice in, visuals out** — he talks to agents and uses a **gaming controller** to point/click (so he can work on the treadmill); agents return text and images in an **editable HTML canvas** he edits directly while the agent works on the code behind it. Since Foo Camp he has moved **back from 6–8 parallel agents toward one coordinator agent** that orchestrates the others, so he follows one conversation — "focus of attention."
+
+### Foo Camp session (off-the-record, ~10 people)
+Attendees included the head of a major tech company's Americas research lab, a founder running four companies with ~20 agents each, a software-factory founder, a designer building an open-source protocol for personal agents, and a co-creator of core web protocols now working on how agents prove who they act for. Themes Hugo is still mulling:
+- **Maximum openness**: one research lead's team already shares *every* agent session (what a colleague asked, tried, and why they changed direction); she proposed taking one willing team fully open to find where boundaries are needed.
+- **Agent authority & secrets**: one company defaults to open channels with legal/personnel exceptions; a harder case — someone accidentally put personal material into a shared session and, by the time they tried to retract it, agents had learned from it. In a large org you need to know who an agent acts for, what it can read, and who it can share with. See [[concepts/agent-security-certification]].
+- **Bank/Siemens vs. Block bet**: whether an established company can afford to wait (winner too big to buy) or can let others experiment and then hire the team.
+- **Junior-career gap under fewer managers**: experienced people find their way to new work; early-career people get isolated when the manager-led connection disappears. The designer is building a personal agent that finds opportunities *on the employee's behalf* — raising "whose interests does the agent represent?"
+- **Factory throughput bottleneck**: a software factory that makes code faster than the business can ship is "a factory making tires faster than engines" — people spend time moving piles of tires while engines slow down.
+- **"Supreme Court cases all day long"**: the most useful answer Hugo heard — when a decision reaches you, write down the principle so the next person/agent can make it; ideally only the 51–49 calls land on your desk.
+
+### Simon Willison quote (in-talk)
+Hugo quoted Simon Willison from Lenny's Podcast (Simon was in the room): using coding agents well takes "every inch of my 25 years of experience as a software engineer," and he can put four agents on four projects in parallel and be "wiped out for the day by 11 a.m." See [[entities/simon-willison]].
+
+### Greg Ceccarelli / SpecStory example
+Greg Ceccarelli (ex-CPO at Pluralsight, led data science at GitHub) — his SpecStory team's agents write code faster than the team can review PRs, so they **push straight to main** and keep branches for experiments; a background agent reviews PRs (e.g., security review) without being asked each time. See [[entities/greg-ceccarelli]].
 
 ## Key Quotes
 

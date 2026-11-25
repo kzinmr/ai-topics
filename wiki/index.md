@@ -3,7 +3,7 @@
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Last updated: 2026-11-22
 
-## Entities (977 pages)
+## Entities (978 pages)
 
 - [[entities/_index]] — Directory hub / overview for entities pages
 - [[entities/0xjeff]] — 0xJeff
@@ -379,6 +379,7 @@
 - [[entities/grant-slatton]] — Grant Slatton
 - [[entities/grantslatton-com]] — Grant Slatton
 - [[entities/greg-brockman]] — Greg Brockman
+- [[entities/greg-ceccarelli]] — Greg Ceccarelli (SpecStory / ex-Pluralsight CPO / ex-GitHub data science)
 - [[entities/grok-4-3]] — Grok 4.3
 - [[entities/grok-build]] — Grok Build
 - [[entities/grok-imagine]] — Grok Imagine 1.0

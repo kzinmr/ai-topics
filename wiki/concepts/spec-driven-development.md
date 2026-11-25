@@ -6,7 +6,7 @@ aliases:
   - spec-first-development
   - spec-first
 created: 2026-04-25
-updated: 2026-10-13
+updated: 2026-11-25
 tags:
   - concept
   - software-engineering
@@ -88,6 +88,14 @@ The [AWS/OpenAI Codex example](https://aws.amazon.com/blogs/migration-and-modern
 - **[[concepts/ai-assisted-development]]** — Spec-driven development is one of the core practice patterns of AI-assisted development (Q4 of the ten-question playbook).
 - **[[concepts/agentic-engineering]]** — Spec-first workflows are a central agentic-engineering pattern; the spec is the primary human control surface for agent delegation.
 - **[[concepts/dspy]]** — DSPy's declarative signature/module approach is a programmatic cousin of spec-first development (specifying inputs/outputs/constraints instead of prompt text).
+
+## Contested: Verification-Driven Development (Bowne-Anderson & Berger, Nov 2026)
+
+A direct counter-thesis to the spec-first framing on this page, worth recording rather than overwriting. In *Software Factories++* "Factory Life" (a.k.a. "Micro Managers Anonymous", a series by Hugo Bowne-Anderson and **Eleanor Berger**), they report that **some of the best builders they have seen have never written a line of code**: they are clear about what they want and careful about checking what comes back, which lets them leave the agent to work out *how* to get there. They call this **evidence-backed verification**, a core component of **verification-driven development**, and state explicitly:
+
+> *"what we're seeing in our own work and from colleagues is that specification-driven development is less important now that models and harnesses are getting far better."*
+
+This does not retire the spec-as-contract model above — for high-stakes domains (legacy modernization, compliance) precise specs still anchor behavior. But it dates a live disagreement as of **November 2026**: as models and harnesses improve, the locus of human leverage shifts from *specifying how the work is done* toward *defining what evidence must come back*. Treat the relative importance of spec-driven vs. verification-driven as contested, with the verification-driven position rising on harness capability gains. Source: raw/articles/hugobowne.substack.com--p-what-the-amish-can-teach-us-about--5afbb1b68f99df90.md. See [[entities/hugo-bowne-anderson]].
 
 ## Sources
 

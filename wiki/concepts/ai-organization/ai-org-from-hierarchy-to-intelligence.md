@@ -5,7 +5,7 @@ aliases:
   - block-hierarchy-to-intelligence
   - jack-dorsey-org-model
 created: 2026-04-13
-updated: 2026-05-26
+updated: 2026-11-25
 tags:
   - concept
   - company
@@ -112,6 +112,18 @@ Block's moat: **The Economic Graph** — real-time bi-directional transaction da
 ## Operational Reality
 
 The transition is not easy. Expect a **"break then move"** phase. Success requires deep proprietary understanding of the domain. Without it, AI ends up as a short-term cost optimization story.
+
+## The Amish Barn-Raising Model of Information Routing (Bowne-Anderson, Nov 2026)
+
+Hugo Bowne-Anderson's O'Reilly Foo Camp lightning talk (expanded in Vanishing Gradients, 2026-11-25) offers an independent, concrete formulation of the same thesis this page develops — that hierarchy exists because **information flow is a bottleneck**. Source: raw/articles/hugobowne.substack.com--p-what-the-amish-can-teach-us-about--5afbb1b68f99df90.md. See [[entities/hugo-bowne-anderson]].
+
+**The barn-raising metaphor.** In an Amish barn raising (Clinton, Wisconsin), a *master carpenter* holds a *shared plan for the barn*; each crew owns a different part of the frame. When someone leaves a part of the frame, a worker elsewhere **sees the gap, recognizes a job they know how to do, and moves over to fill it** — no request travels up a chain. In a company, the person with the skills to help may have no way of seeing that another team needs them: a team tells its manager where it's stuck and the request travels up until it reaches someone who knows where to find help.
+
+**Why AI collapses the bottleneck.** With a strong frontier model and well-curated context about what teams are working on and who has the skills to help, getting the information to the right person is no longer the bottleneck. Bowne-Anderson's explicit generalization: *"hierarchical organizations are designed entirely around the fact that information flow is a bottleneck."* A background agent working from a shared company model could spot the gap and route it directly to someone who can act — letting the request *and* the decision skip the trip up and down the management chain (his framing maps onto Dorsey/Botha's shared-model-vs-local-context distinction on this page).
+
+**Three coordination models he contrasts:** hierarchy (corporations, the military, the mafia — chain of command); flat team (direct coordination — his examples **Instagram** and **Cursor**); core-and-periphery (OSS maintainers + occasional contributors, a potluck).
+
+**Org-chart agent placement (4 patterns):** (1) an agent in an existing department alongside a human; (2) hub-and-spoke where all reporting lines return to one person (Bowne-Anderson ran 6–8 agents this way, since reduced to one coordinator agent for "focus of attention"); (3) dotted lines for agent↔agent communication a reporting structure omits; (4) a **pull request as the trigger** for a background agent (e.g., an unprompted PR security review). Complements the "three org-chart scenarios" in [[concepts/future-of-the-firm-org-chart]].
 
 ## Related Concepts
 

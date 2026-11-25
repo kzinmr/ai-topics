@@ -2,6 +2,18 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-11-25 10:45 UTC] newsletter-wiki-ingest | run 20261125T101119Z | 5 takes + 2 references applied
+
+Source article: Hugo Bowne-Anderson, "What Happens to the Org Chart When Agents Do the Work?" (Vanishing Gradients, pub_id 2632531 / post_id 226449334, 2026-11-25, free access; redirect-stub recovered via substack.com/home/post/p-226449334). Body raw: raw/articles/hugobowne.substack.com--p-what-the-amish-can-teach-us-about--5afbb1b68f99df90.md; newsletter digest raw: raw/newsletters/2026-11-25-what-happens-to-the-org-chart-when-agents-do-the-work.md. Pre-run newsletter-triage output reported a JSON parse error (false alarm) but the checkpoint triage_latest.json was valid.
+
+- `entities/hugo-bowne-anderson.md` (404->~450L) — new section "The Agentic Organization Without AI Psychosis (Nov 25, 2026)": AI psychosis coinage, Amish barn-raising info-routing, 3 coordination models, 4 org-chart agent placement patterns, verification-driven development, VIVO, Foo Camp session themes, Simon Willison + Greg Ceccarelli mentions.
+- `entities/simon-willison.md` — Recent Notes (Nov 2026) entry for the "every inch of my 25 years" / "wiped out by 11 a.m." coding-agent judgment-load quote (Lenny's Podcast, re-quoted at Foo Camp); frontmatter sources_addendum.
+- `entities/greg-ceccarelli.md` — NEW (stub): SpecStory / ex-Pluralsight CPO / ex-GitHub data science; agents outrun PR review -> push straight to main, background PR security-review agent, SUYAS Ep.7.
+- `concepts/ai-organization/ai-org-from-hierarchy-to-intelligence.md` (127->~139L) — new "Amish Barn-Raising Model of Information Routing (Bowne-Anderson)" section: hierarchy = information-flow bottleneck, 3 coordination models, 4 org-chart agent placement patterns (complements [[concepts/future-of-the-firm-org-chart]]).
+- `concepts/ai-organization.md` (40->~52L) — new "Field Notes: Foo Camp Agentic-Organization Session" subsection: chief-of-staff agents at labs, full-open teams, agent authority/secrets, junior-career gap, factory throughput (tires vs engines), principle-writing 51-49 calls.
+- `concepts/spec-driven-development.md` (94->~102L) — new dated Contested section: Bowne-Anderson & Berger verification-driven development / evidence-backed verification relativizing spec-driven development (kept as contested, not overwritten).
+- index.md: registered entities/greg-ceccarelli (Entities 977->978).
+
 ## [2026-11-25 10:00 UTC] blog-ingest | 40 scanned, 20 fetched (19+1 recovered), 5 pages updated
 
 Checkpoint run 20261125T100016Z: 19 raw saved by script + 1 supplemental recovery (`dwarkesh.com--p-rsiobjections--5cc573df.md` via `blog_ingest.persist_blog_articles`; checkpoint `unsaved_articles` emptied, `supplemental` key recorded). Scan report: `inbox/rss-scans/daily-scan-2026-11-25.md`.
