@@ -2,6 +2,20 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-11-25 10:00 UTC] blog-ingest | 40 scanned, 20 fetched (19+1 recovered), 5 pages updated
+
+Checkpoint run 20261125T100016Z: 19 raw saved by script + 1 supplemental recovery (`dwarkesh.com--p-rsiobjections--5cc573df.md` via `blog_ingest.persist_blog_articles`; checkpoint `unsaved_articles` emptied, `supplemental` key recorded). Scan report: `inbox/rss-scans/daily-scan-2026-11-25.md`.
+
+**Ingested (pages)**
+- `entities/simon-willison.md` — 2 new Nov 24 Recent Notes: "Three LLM inflection points in twelve months" (keynote periodization: Nov 2025 coding-agent daily-driver / June-July 2026 "Fable class models" roster / Sep-Oct 2026 gamedev; "if you can imagine and clearly describe it, Fable can build it") + "GPT-6.2 Astra Solves a Historical Mystery" (Humphries 22-min Beinecke sketchbook attribution, Deep-Blue-for-historians framing).
+- `entities/gary-marcus.md` — 2 new subsections: Madison Mills/Axios "panicking employees" response (bulls-in-china-shop continuity, empowered-not-powerful, 3-point prescription incl. voluntary pull of internet agents) + "bump from rehiring Jensen doesn't appear to be holding" (Humpty-Dumpty, Trump-procured reinstatement).
+- `events/nvidia-ceo-transition-2026.md` — Zitrón "Defective Accelerationism" corroboration bullet under Huang reinstatement (board bypass incl. Kress, Trump CNBC "assurance", NYT Alice Huang/Kang Wei reporting) — resolves the CNBC-404 caveat with second-source detail.
+- `concepts/recursive-self-improvement.md` + `entities/dwarkesh-patel.md` — Patel × Max Farrens RSI-objections rebuttal: corsaren concession ("He's right. Moving on."), 2028 median re-anchor + 25% next-year, Jerry Han data-vs-architectures study, spikiness counter (Clocktower 90%+ Astra, >10% Erdős), Christiano 2018-predicted-HF argument, "good boys will eventually break down" alignment close.
+
+**Skipped (verified, no action)**: shkspr Virgin Media API, xania microarchitecture, oldvcr lightbox, lcamtuf pinwheel, johndcook ×2, entropicthoughts meta-analysis, dfarq AOL/Netscape, oldnewthing ×2, engadget iPhone 18e, experimental-history writing (0 AI terms), pluralistic free lunches (tangential), lucumr lock poisoning (Rust-only). All left to blog-triage archival.
+
+Index.md: no new pages, no description changes needed (all updates on existing entries).
+
 ## [2026-11-25 00:31 UTC] hot-post | 2026-11-25 09:30 morning draft — Hornet agentic-retrieval economics trio (8.4× QPS swing, 6× sharding tax, $0.61 SERP)
 
 Archived to `inbox/trending-reports/hot-post-2026-11-25-0930.md`. Sources: `concepts/hornet.md` (updated 2026-11-24), raws `hornet.dev--why-we-started-hornet--75e31a43.md`, `hornet.dev--big-graphs-small-vectors-hnsw-at-a-billion--ade78227.md`, `2026-06-03_hornet_agent-queries-cost-more-to-serve.md`. Wikilinks: agentic-retrieval, bm25, deep-research, context-engineering/_index, kv-cache, jo-kristian-bergum — all resolve, zero MISS. T1 slop grep NO_SLOP_FOUND, no katakana typo. No dedup conflict (recently_covered_topics empty; late-night 01:30 slot used obsolete-hardware trio). Numbers transcribed verbatim from `concepts/hornet.md`.

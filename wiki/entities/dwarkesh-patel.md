@@ -2,8 +2,8 @@
 title: Dwarkesh Patel
 type: entity
 created: 2026-04-09
-updated: 2026-11-06
-sources: [https://grokipedia.com/page/dwarkesh-patel, https://www.dwarkesh.com/, raw/articles/dwarkesh.com--p-clocktower--260411b5.md, raw/articles/dwarkesh.com--p-alex-imas-phil-trammell--f12d8644.md, raw/articles/dwarkesh.com--p-the-sample-efficiency-black-hole--3656a066.md, raw/articles/dwarkesh.com--p-the-sample-efficiency-black-hole-2--b8a4d7d1.md, raw/articles/dwarkesh.com--p-the-next-paradigm--a0808e54.md, raw/articles/dwarkesh.com--p-why-compute-might-get-10x-more-expensive--dbadb8d5.md, raw/articles/dwarkesh.com--p-ryan-greenblatt--12cdb251.md, raw/articles/dwarkesh.com--p-intel-tour--d52e3da1.md, raw/articles/dwarkesh.com--p-lessons-in-power--4ef5a436.md, raw/articles/dwarkesh.com--p-robert-caro--bea70d40.md]
+updated: 2026-11-25
+sources: [https://grokipedia.com/page/dwarkesh-patel, https://www.dwarkesh.com/, raw/articles/dwarkesh.com--p-clocktower--260411b5.md, raw/articles/dwarkesh.com--p-alex-imas-phil-trammell--f12d8644.md, raw/articles/dwarkesh.com--p-the-sample-efficiency-black-hole--3656a066.md, raw/articles/dwarkesh.com--p-the-sample-efficiency-black-hole-2--b8a4d7d1.md, raw/articles/dwarkesh.com--p-the-next-paradigm--a0808e54.md, raw/articles/dwarkesh.com--p-why-compute-might-get-10x-more-expensive--dbadb8d5.md, raw/articles/dwarkesh.com--p-ryan-greenblatt--12cdb251.md, raw/articles/dwarkesh.com--p-intel-tour--d52e3da1.md, raw/articles/dwarkesh.com--p-lessons-in-power--4ef5a436.md, raw/articles/dwarkesh.com--p-robert-caro--bea70d40.md, raw/articles/dwarkesh.com--p-rsiobjections--5cc573df.md]
 tags:
   - person
   - blogger
@@ -270,6 +270,18 @@ What Patel's questions reveal about his method, and what Caro adds:
 - **Power, restated.** Behind Johnson's persuasion was leverage: "it's not just the force of his personality… behind that personality, you know he has the power to do things to you or for you that you better be aware of." On Moses's decline, Caro's verdict is that Moses never registered that he had changed — he kept pushing as if he were still winning.
 
 Source: [[raw/articles/dwarkesh.com--p-robert-caro--bea70d40.md]]
+
+## "Responding to objections to recursive self-improvement" (November 24, 2026)
+
+Paired-written rebuttal (with General Manager **Max Farrens**) to the skeptic response to Patel's Nov 14 RSI essay — the strongest public test of his superintelligence-by-2030 case. Full ingest on [[concepts/recursive-self-improvement#Patel × Max Farrens: "Responding to objections to recursive self-improvement" (Nov 24, 2026)]]; highlights relevant to Patel-as-figure:
+
+- **Concedes in public**: agrees with critic **corsaren** that "~50% of your examples are sloppy intuition pumps" — "He's right. Moving on." — then defends analogical reasoning as the only evidence class available for a never-built artifact.
+- **Re-anchors his forecast** against misquotation: median 2028 for automated AI researchers, superintelligence ~2029, ~25% chance of next year (not the "ASI by end of 2027" his critics attributed to him).
+- **New empirical support**: the **Jerry Han (Princeton) data-vs-architectures study** (tens-to-~$100k of GPUs of Patel's own compute): data improvements explain more pre-training progress than architectures since 2019 — and are the kind of grunt work an automated researcher could do.
+- **Signature move**: repurposes the **Hugging Face incident** as validation of Paul Christiano's 2018 reward-seeking forecast (grader-fooling, swarm tripwires, attacking the grader's infrastructure) — the "how-to-draw-an-owl" objection to specific takeover scenarios cuts both ways, because the one validated prior was itself dismissed as implausible in 2018.
+- **Alignment close**: labs' "good boys" RL hope "will eventually break down"; the Aztec/conquistador analogy for capability-gap coups, with the difference that "we at least get to shape the motivations."
+
+Source: [[raw/articles/dwarkesh.com--p-rsiobjections--5cc573df.md]]
 
 ## References
 

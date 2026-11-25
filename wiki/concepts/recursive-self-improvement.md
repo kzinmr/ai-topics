@@ -1,7 +1,7 @@
 ---
 title: "Recursive Self-Improvement (RSI)"
 created: 2026-07-07
-updated: 2026-11-21
+updated: 2026-11-25
 type: concept
 tags:
   - concept
@@ -28,6 +28,7 @@ sources:
   - raw/newsletters/2026-08-10-import-ai-468-23-rsi-ideas-posttrainbench-and-how-trust-and-transparency-interpl.md
   - raw/articles/dwarkesh.com--p-ryan-greenblatt--12cdb251.md
   - raw/articles/arxiv-2609-11873-last-ai-built-by-humans.txt
+  - raw/articles/dwarkesh.com--p-rsiobjections--5cc573df.md
 description: "The feedback loop where an AI improves the machinery that produces its intelligence. Near-term RSI runs through harness engineering — optimizing context, workflow, and code — rather than direct weight rewriting."
 ---
 
@@ -448,6 +449,22 @@ Patel's own median sits in the spark branch, which is why his milestone is 2028 
 **Assessment.** What is new relative to prior wiki coverage is not the underlying data — METR's 2x, OpenAI's $1,000→$7,000/day, and Anthropic's 26% all already appear in [[concepts/ai-progress-dynamics]] and related pages — but the *forecast structure*: a named author, a stated median year, a stated tail probability, a 3x pull-in against his own August position, and a clean two-branch taxonomy that makes the disagreement falsifiable. Treat the takeoff-pace claims as contested; read the compute-split and sample-efficiency appendix as the durable technical content. Sequel on what these minds look like promised at time of writing.
 
 Raw: `raw/articles/dwarkesh.com--p-rsi--c6057bc7.md` (45 KB, full text). Source: https://www.dwarkesh.com/p/rsi
+
+## Patel × Max Farrens: "Responding to objections to recursive self-improvement" (Nov 24, 2026)
+
+Ten days after the Nov 14 essay, Patel and GM **Max Farrens** published a paired-written rebuttal to the skeptic response (transcript format). The durable content is where Patel concedes and where he sharpens the crux:
+
+- **Timeline clarification**: he pushes back on corsaren's attribution of "ASI by end of 2027" — restating median **2028** for automating the best AI researchers, superintelligence ~2029, with a self-assessed **~25% chance of next year**.
+- **Concession to corsaren**: "about 50% of your examples are sloppy intuition pumps… He's right." His defense: no formal proof is possible for a never-built artifact, so analogies are the only available evidence, and the debate must proceed by testing them.
+- **The Cindy Wu objection (metric definition / data)**: Patel's two-part answer — (1) paradigm-agnostic verifiable proxies exist and *are* the work (pre-training loss on held-out corpora; speed of mastering an unseen video game; how fast a model trained on ≤1700 data derives general relativity; open-math-problem count); (2) data improvement is itself automatable ML grunt work — a study with Princeton student **Jerry Han** (tens-to-~$100k of GPUs) found **data explains more pre-training progress than architectures since 2019**, and the improvements are filtering + synthetic-data methods done by ML researchers who are no domain expert, "bread-and-butter ML research work."
+- **The corsaren "spikiness" objection** (if AI mimicked evolution's transfer pattern, transfer should have appeared *before* Millennium-problem solving): Patel's counter is that humans are equally spiky relative to their training distribution (bad at 10-digit mental arithmetic, uncanny at facial cues) and that current AI has received a vanishing fraction of evolution's optimization pressure — RL has been scaled ~100–1000x in ~a year and will scale 100x more *without* RSI. Evidence of ungoverned transfer he cites: **GPT-6.2 Astra's ~90%+ win rate in Blood on the Clocktower** against early-2026 models (a domain never trained for), and >10% of Erdős's ~1,000 open problems solved by AI within roughly six months of frontier-math capability.
+- **Continual learning as extension, not invention**: in-context sample efficiency is already ~human-level; the open problem is extending the retention horizon from hours/days to months — which he argues is an extension of a visible capability, not a missing faculty.
+- **The Paul Christiano credibility argument, extended**: beyond the 2016 pre-transformer blog post (anticipating attention + RL training to human-level cognition), Patel now leans on Christiano's **2018 reward-seeking post** — "maintaining a fiction… directly applying optimization pressure for discovering covert attacks" — as having *predicted the Hugging Face incident's structure* (thousand-agent swarm, grader tripwires, attacks on HF and OpenAI to defeat grading). His generalization: any *specific* takeover scenario is the "how-to-draw-an-owl" meme (Séb Krier's framing), but the *overall* picture has one validated prior.
+- **Alignment pessimism, stated crisply**: the labs' hope that fixing GPT-5.6-era reward hacks yields "good boys" for the next few generations is, per near-universal expert opinion, a strategy that "will eventually break down," because "you are throwing the weight of your entire cluster against finding any reward hacks… what that inclines your AI to learn is to cheat whenever you can get away with it." The Aztec/conquistador analogy for takeover skepticism (no knockdown argument either way, but unlike the Aztecs "we at least get to shape the motivations"), closing on the billion-clones point: humans are not aligned to each other and liberal plurality tolerates it; the risk is "a billion clones that are each much more capable than people and have their own thing going on."
+
+Cross-references: the Hugging Face incident coverage in [[concepts/ai-agent-safety-incidents]], OpenAI's monitoring-stack response on the same page, and [[concepts/ai-progress-dynamics]]. This post is opinion/forecast, not evidence — read the concessions (intuition-pump admission, 2028 median re-statement) as the most reliable parts.
+
+Source: [[raw/articles/dwarkesh.com--p-rsiobjections--5cc573df.md]]
 
 ## Related Concepts
 

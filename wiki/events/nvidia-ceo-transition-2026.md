@@ -1,7 +1,7 @@
 ---
 title: "NVIDIA CEO Transition (November 2026)"
 created: 2026-11-13
-updated: 2026-11-24
+updated: 2026-11-25
 type: event
 tags:
   - nvidia
@@ -18,6 +18,7 @@ sources:
   - raw/articles/garymarcus.substack.com--p-jensen-huang-resigns--4a2c07c7.md
   - raw/newsletters/2026-11-14-open-source-ai-without-jensen-body.md
   - raw/articles/wheresyoured.at--the-nvidia-bubble--711785b3.md
+  - raw/articles/wheresyoured.at--defective-accelerationism--7c627ecc.md
 ---
 
 # NVIDIA CEO Transition (November 2026)
@@ -146,6 +147,7 @@ On **November 23, 2026** — eleven days after his resignation and five days aft
 
 - **Source-status caveat (as of this scan, 2026-11-23 22:30 UTC):** the CNBC URL surfaced via [[entities/mario-zechner|Mario Zechner]]'s X post and returned the headline **"Nvidia reinstates Jensen Huang as CEO"** through the link unfurler, but the article URL itself returned **HTTP 404** when scraped directly eleven hours after the tweet, so **the full text is not in the wiki and the headline is the only confirmed content**. The page may be paywalled, geo-blocked, still unpublished, or moved; the page may also have been a breaking-news placeholder. Retry the scrape in a later run before treating any detail beyond the headline as established.
 - **Reactions were immediate and sceptical.** Zechner's entire endorsement of the story was the single word *"haha"*, consistent with his standing anti-hype posture and with the fact that the reinstatement vindicates none of the concerns raised during the transition (see the Zitron revenue-integrity and Treasury-external-CEO sections above).
+- **Corroboration + mechanism (Nov 24, Ed Zitrón, "Defective Accelerationism")**: Zitrón confirms the reinstatement as fact and supplies details the 404'd CNBC scrape lacked — NVIDIA's board reinstated Huang **without consulting any of the company's executives, not even interim CEO Colette Kress**, as a direct result of a **Trump campaign**: Trump provided "assurance" by declaring Huang "not a national security threat" ("we believe he's fine, he's absolutely fine," CNBC). Zitrón additionally cites NYT reporting (Sunday Nov 22) that **Alice Huang and her husband Kang Wei appeared to have been in regular contact with Chinese intelligence services** during her affair with Jensen Huang, and condemns the board as exhibiting "stunning cowardice and total fealty to two empires — those of Huang and Trump." Gary Marcus's same-day follow-up adds the market read: Monday's post-return bounce had faded by Tuesday ([[entities/gary-marcus]]). ^[raw/articles/wheresyoured.at--defective-accelerationism--7c627ecc.md]
 - **Unresolved tension the reinstatement does not settle:** the Board's independent investigation that Huang acknowledged on Nov 18, the congressional testimony commitment, the GPU-smuggling probe, and Treasury's stated demand for an *external* CEO are all still live. A reinstatement eleven days in — with no reported successor search outcome — is therefore a *reversal*, not a resolution, of the November 12 resignation.
 
 See [[entities/jensen-huang]], [[entities/nvidia]].

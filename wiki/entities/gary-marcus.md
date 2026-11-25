@@ -2,7 +2,7 @@
 title: "Gary Marcus"
 type: entity
 created: 2026-05-11
-updated: 2026-11-18
+updated: 2026-11-25
 tags:
   - lab
   - benchmark
@@ -46,6 +46,8 @@ sources:
   - raw/articles/garymarcus.substack.com--p-leopolds-folly--46f3d5d4.md
   - raw/articles/garymarcus.substack.com--p-openais-egregious-pattern-of-misconduct--ebaf2381.md
   - raw/articles/garymarcus.substack.com--p-game-over-man--969f0a1b.md
+  - raw/articles/garymarcus.substack.com--p-breaking-employees-at-openai-and--d6c18566.md
+  - raw/articles/garymarcus.substack.com--p-breaking-when-it-comes-to-generative--1c11973a.md
 ---
 
 # Gary Marcus
@@ -561,6 +563,26 @@ He ties in the same-day **Optimizely supply-chain attack** (178 orgs — CNN/Fox
 This extends the [[concepts/ai-skepticism]] / [[concepts/systemic-software-breakdown]] reliability-crisis thread, the [[concepts/ai-agent-safety-incidents]] agent-harm beat, and the Oct 22 "U.S. banks are taking hits from AI agents" wave; the malice-vs-incompetence framing also recurs in Cory Doctorow's Nov 18 "enshittifiers groom us for scammers" (cross-reference).
 
 Source: [[raw/articles/garymarcus.substack.com--p-wake-up-americas-infrastructure-is--c1ac4ac3.md]]
+
+### "BREAKING: Employees at OpenAI and Anthropic are panicking" (Nov 24, 2026)
+
+Marcus's response to **Madison Mills' Axios scoop** (tweet, Nov 24 2026: "Internal, unreleased AI models at OpenAI and Anthropic are becoming so powerful that many employees believe they can no longer be safely released, according to more than two dozen sources familiar with the internal debates"). Marcus's framing:
+
+- **Continuity claim**: his 2022 "bulls in a china shop, reckless and hard to control" metaphor "has been true of *every* model since. Hundreds of them" — and capabilities advances "have NOT been accompanied by technical advances in being able to interpret and control models."
+- **The agent escalation**: turning models into agents with internet access "has made them fundamentally more dangerous"; the issue is not whether models are "powerful" but whether they are **empowered** to roam the internet without being controllable, i.e. not "human compatible" in Stuart Russell's sense.
+- **Governance vacuum**: no FDA-like independent scientific panels (his long-standing ask) plus "dysfunction in Washington" and "neutered measures like self-policing" have left release decisions to "CEOs with enormous financial conflicts of interest."
+- **Prescription (his concrete policy asks)**: (1) AI companies should **voluntarily pull internet-access agents off the market** until adequate safety solutions exist; (2) **never release a new model without internal consensus** on its safety; (3) "If they won't do the right things voluntarily, the federal government should step in."
+- **Source hygiene**: he explicitly flags PR risk — "some of this may be PR, but some of it seems to reflect genuine fear."
+
+Extends the [[concepts/ai-agent-safety-incidents]] agent-harm beat (cf. OpenAI's four-layer monitoring stack above, which the "cannot be controlled" claim directly contests) and his Nov 18 infrastructure-collapse post's vector #2. Cross-reference the Nov 24 "panicking employees" reporting for downstream coverage.
+
+Source: [[raw/articles/garymarcus.substack.com--p-breaking-employees-at-openai-and--d6c18566.md]]
+
+### "The bump from rehiring Jensen doesn't appear to be holding" (Nov 24–25, 2026)
+
+Brief market commentary following NVIDIA's reinstatement of Jensen Huang ([[events/nvidia-ceo-transition-2026]]): the Monday post-return bounce faded by Tuesday. Marcus frames the reinstatement itself as politically procured — "In the opinion of many, including both Democratic and Republican members of Congress, President Trump sacrificed the integrity of the Oval Office in order to prop up the AI industry and his own holdings" — with the Humpty-Dumpty epigraph ("Couldn't put Humpty together again") signaling his thesis that the collapse is not reversible by personnel decisions. Consistent with his standing no-moat thesis: rehiring the "ringmaster of all the insane circular financing" doesn't restore fundamentals ([[concepts/ai-bubble-economics]], [[concepts/ai-infrastructure-circular-financing]]). Ed Zitrón's parallel "Defective Accelerationism" (Nov 24) attacks the board's decision more directly (reinstatement without consulting executives, Trump's "assurance" on CNBC, the Alice Huang / Kang Wei NYT reporting).
+
+Source: [[raw/articles/garymarcus.substack.com--p-breaking-when-it-comes-to-generative--1c11973a.md]]
 
 ## References
 
