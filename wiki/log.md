@@ -1,3 +1,18 @@
+## [2026-11-25] watchdog | index line-merge fix + pipeline health check
+
+### Changes
+- wiki/index.md: split merged Events entries — `events/2026-11-20-alpoge-riemann-hypothesis-claude` had lost its description (absorbed into the `pequalnp-agent-fleet` line by an upstream run). Restored description from the event page; both files verified on disk; section count 58 unchanged; validate_index.py clean.
+### Checks (all clean)
+- index.md: 0 pipe/triple-bracket/line-number/space-prefix corruption; header counts match section lines (978/2397/35/58/64).
+- log.md: single `# Wiki Log` header, 298 entries, 0 orphan ### lines.
+- tag_audit.py: 0 non-SCHEMA tags, 0 composite tags.
+- Pipeline: newsletter-ingest checkpoint fresh (10:11 UTC today) — jobs.json 'error' is stale 503 state, not a live failure.
+### Needs human attention
+- active-crawl: last checkpoint 2026-11-19 (6 days); last_status=error (HTTP 503 local LLM busy). Recommend `hermes cron run active-crawl` when the local LLM server is free.
+- Weekly AI digest / jp-to-en-translation / llm-pricing-monitor: last runs failed (503 busy / output-length truncation). Low urgency; re-run when convenient.
+
+---
+
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
