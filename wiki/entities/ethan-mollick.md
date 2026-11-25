@@ -218,6 +218,17 @@ Mollick consistently raises questions about the ethical implications of AI in wo
   day-to-day steerability in agentic work, not benchmark standing.
   Sources: [tweet](https://x.com/emollick/status/2122755693191287009),
   [reply with demo link](https://x.com/emollick/status/2122756233291821250).
+- **GPT-6.2 Astra solves a historical mystery (Nov 24):** Mollick amplified history
+  professor **Mark Humphries'** case study — *"There is a lot of focus on AI-aided
+  discoveries in quantitative fields, but they can go beyond that, too"* — in which
+  GPT-6.2 Astra autonomously identified the author of an anonymous 1808 sketchbook at
+  Yale (an obscure French aristocrat) from public sources alone. The underlying article
+  was **already ingested today (2026-11-25) by blog-ingest** via Simon Willison's link-post;
+  full write-up at [[entities/simon-willison]] (Nov 24 note) and
+  `raw/articles/simonwillison.net--2026-nov-24-astra-historical-mystery--c0ca8642.md`.
+  This entry records Mollick's own amplification only — **logged, not re-ingested**.
+  Source: [tweet](https://x.com/emollick/status/2125245031842042301) ·
+  [article](https://generativehistory.substack.com/p/gpt-62-astra-solves-a-historical).
 
 ## Notable X Posts (October 2026)
 

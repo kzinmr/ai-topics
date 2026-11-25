@@ -2,6 +2,16 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-11-25 22:30 UTC] ingest | x-accounts-scan: SPARSEUP-v2 release + 1 re-amplification
+
+Budget-limited run: 11/84 accounts scanned (cursor 55→66, 73 skipped on the 12-request budget — rotation, not errors; `with_errors: 0`). `source_posts: 0` but 5 new linked posts in `new_posts[]` (trusting the detail JSON). Clustered into 2 stories.
+
+**Ingested — new event page `events/2026-11-24-sparseup-v2-release.md`** (from @tomaarsen's 5-tweet thread, deduped by shared external_urls → one event page, thread-folded per skill). Linkup Research's SPARSEUP-v2: new SOTA learned-sparse encoder under 150M params — 57.2 nDCG@10 BEIR-15 (matches late-interaction LateOn 57.22, beats SlideOn 56.7 at ~7× fewer retrieval FLOPS), best MTEB(eng,v2) sparse score 59.71, Apache 2.0, ModernBERT-base, 8192 tokens, index 4.6× smaller than SlideOn. Three ingredients: sparse-modality contrastive pretraining on 665M weakly-supervised pairs (key finding: sparse CPT beats multi-vector/LateOn init, closing a modality gap) + cross-encoder distillation + Matryoshka pruning-budget training. Released the post-CPT pretrained checkpoint (full CPT ≈ 3.5 days on 4×H100) so others can build on it. Cross-linked to gte-moderncolbert, denseon-lateon, modernbert, late-interaction-retrieval, lexical-search. Raw: `raw/articles/www.linkup.so--introducing-sparseup-v2-by-linkup--2026-11-24.md` (scraped from vendor blog). Also added a dated section to `entities/tom-aarsen.md`.
+
+**Skipped (already ingested today)** — @emollick's Nov 24 GPT-6.2-Astra-historical-mystery link-share: the underlying article was fully ingested earlier today (blog-ingest 10:00 UTC) into `entities/simon-willison.md` + `raw/articles/simonwillison.net--2026-nov-24-astra-historical-mystery--c0ca8642.md`, and the same-day blog triage JSON already flagged it as a duplicate (Japanese: "no duplicate take needed"). Added only a dated re-amplification bullet to `entities/ethan-mollick.md` (logged, not re-ingested). Per same-day cross-pipeline dedup rule.
+
+Counts: Events 58→59 (one new page). tom-aarsen and ethan-mollick are in-place blurb/section updates — no count change. Tags used: announcement, search, information-retrieval, rag, beir, training, open-source, retrieval (all verified present in SCHEMA.md).
+
 ## [2026-11-25 19:1x UTC] skeleton-enrich-daily | 4 concept stubs enriched (signal, formal-methods, founder-mode, overture-maps-foundation) + entity stub backlog check
 
 `status: skeleton` backlog remains **empty** (streak since 2026-10-17; whole-tree YAML-frontmatter regex scan: 0 matches under entities/concepts/comparisons/events). Entity-level `status: stub` backlog is also effectively clean: the single remaining entity stub, [[entities/greg-ceccarelli]] (created today by the x-accounts/blog pipeline), already carries full prose content with no TODO markers, so it needed no enrichment — frontmatter-only flag, left as-is.

@@ -206,6 +206,18 @@ Source: [tweet thread](https://x.com/tomaarsen/status/2123061190209491152) ·
 [model2vec](https://github.com/MinishLab/model2vec).
 Full thread text: `raw/articles/2026-11-18_tomaarsen_minishlab-blink-static-embeddings.md`.
 
+## SPARSEUP-v2 release amplification (November 24, 2026)
+
+On 2026-11-24 Aarsen posted a five-tweet thread amplifying **SPARSEUP-v2** from **Linkup Research** (Thibault Formal) — "they've been killing it on sparse models!" The new learned-sparse encoder reaches **57.2 nDCG@10 on BEIR-15 at 150M params**, matching LightOn's late-interaction LateOn and beating SlideOn at ~7× fewer retrieval FLOPS, with the best MTEB(eng,v2) sparse score (59.71). A full event page exists at [[events/2026-11-24-sparseup-v2-release]]; raw: `raw/articles/www.linkup.so--introducing-sparseup-v2-by-linkup--2026-11-24.md`.
+
+Points Aarsen singled out:
+- **Sparse embedding expansion made visible**: sparse embeddings add related terms absent from the input; Linkup's [interactive Space](https://huggingface.co/spaces/Linkup-Platform/sparseup-embed-v2-visualization) shows which vocabulary terms each token activates and which shared terms drive a query–document score.
+- **Buildable-on pretraining**: unlike v1 (initialized from the multi-vector LateOn checkpoint), v2 pretrains directly in the sparse modality — which beats cross-modality init — and Linkup **released the post-CPT pretrained checkpoint** so others skip the ~3.5-day/4×H100 pretraining stage.
+- **Practical API**: ModernBERT-base, 8,192-token English input, **Apache 2.0**; `SparseEncoder.encode_query`/`encode_document` add the query/document prefixes for you, so raw text can be passed directly.
+- Three-ingredient recipe: sparse contrastive pretraining on 665M pairs + cross-encoder distillation + Matryoshka training.
+
+Source: [thread](https://x.com/tomaarsen/status/2125257957726392731).
+
 ## X Activity Themes
 
 - **Sentence Transformers updates** -- Release announcements, feature additions, and migration guides
