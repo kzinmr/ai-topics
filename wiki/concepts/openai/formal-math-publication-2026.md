@@ -1,7 +1,7 @@
 ---
 title: "OpenAI Formal Mathematics Publication Program (722 Papers)"
 created: 2026-10-08
-updated: 2026-10-09
+updated: 2026-11-25
 type: concept
 tags:
   - openai
@@ -61,6 +61,33 @@ The release triggered an organized academic backlash. The **[[entities/associati
 - What fraction of the 1,563 "long-standing open problems" are genuinely open versus obscure/uninteresting restatements? The corpus-selection policy is not fully disclosed.
 - Does Lean-kernel verification transfer credit to the model, the retrieval/strategy scaffolding, or the Lean mathlib ecosystem?
 - If formal proof becomes commodity labor, what happens to the "AI did X breakthrough" framing that currently anchors AI-safety capability reports?
+
+## November 2026: the preprint race (omega = 9/4, VP != VNP)
+
+Two further `openai/math` preprints in as many days moved the program from bulk publication into
+an explicit lab-vs-lab priority race. On Nov 24 OpenAI posted **"The matrix multiplication
+exponent is nine fourths"** — omega = 9/4 = 2.25 *exactly* (upper and lower bound), with roughly
+eight additional results in the same drop (HN 705 pts / 388 comments). On Nov 23 it posted
+**"VP and VNP are different"**, stating it solved the separation *before* Anthropic (HN 94 pts).
+
+Two reception facts matter more than the claims. First, the top of the matrix-multiplication
+thread was a notation correction, not a verification: "Title is incorrect (it says O(n^2.25) …),
+we already knew that … It should be Θ(n^2.25)" (orlp), with a sub-thread on whether the epsilon
+in the upper bound permits big-Theta at all, and a challenge about rectangular sizes where the
+lower bound is below 2.25 (vlovich123). Second, the VP != VNP framing converted the release into
+a priority dispute whose proposed fix is procedural, not mathematical — advance commitment of
+results via trusted-timestamped hashes ("They don't even need to publish the hashes in advance …
+if they timestamp them using a trusted TSA", layer8), against the charge that both labs are
+"spending tens of millions to destroy a small but prestigious academic community in order to
+generate PR that's disproportionate to the actual value of the generated proofs" (uptrails).
+
+No independent verification of either November preprint had appeared as of Nov 25, on a channel
+whose October cohort lost 3 papers and required 14 repairs inside 24 hours. See
+[[concepts/openai-math-preprint-race]] and
+[[concepts/academic-reception-of-ai-math]].
+
+Source: raw/articles/2026-11-25_openai_openai-math-matrix-multiplication-exponent.md,
+raw/articles/2026-11-25_openai_openai-math-vp-vnp-preprint.md (HN 50637220, 50632756).
 
 ## Related
 

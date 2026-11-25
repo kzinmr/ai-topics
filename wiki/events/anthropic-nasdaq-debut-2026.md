@@ -1,7 +1,7 @@
 ---
 title: "Anthropic Nasdaq Debut (ANT) — Largest IPO Ever"
 created: 2026-11-20
-updated: 2026-11-21
+updated: 2026-11-25
 type: event
 tags: [anthropic, anthropic-ipo, ai-industry, ai-industry-economics, announcement, event, controversy, responsible-scaling-policy]
 sources:
@@ -73,6 +73,43 @@ Anthropic's second day of trading erased the debut pop: shares fell 9% on Friday
 HN reception on the Guardian thread (336 pts) centered on OpenAI's missed IPO window: rumors that OpenAI's accounting is not clean enough to file an S-1 (FT link in-thread), Sam Altman's 2025 decision to reject bank price targets being called a "generational whiff" (jordanb), and the read that Anthropic "desperately needed the cash" (randomNumber7). Several commenters argued no founder ever sincerely believed the trillion-dollar AGI valuation and the exit was always meant to precede delivery (27183, blackenedgem).
 
 HN: https://news.ycombinator.com/item?id=50574383 (336 pts)
+## Breaking below the $83 issue price (Nov 24)
+
+Anthropic broke below its **$83 IPO price** in premarket trading on Nov 24 (Bloomberg; HN 405 pts
+/ 770 comments, the largest AI thread of the day), after a Nov 23 Nasdaq selloff that also hit
+Nvidia; Reuters framed it as a "swift reversal after record listing". At the time of the HN
+discussion the stock sat near **$80** — roughly 3% under the institutional price and ~28% below
+the $111.50 day-one peak.
+
+Thread reception split three ways:
+
+- **Structural bearishness**: "They have no future business model. Open-weight models and
+  specialized distillations can be hosted in anyone's datacenter where fierce competition will
+  bring down prices" (littlecranky67); simias added that even a durable capability gap may not
+  justify the cost, since "most Claude users aren't using it to solve Millennium Prize problems"
+  and a Chinese open-weight model at Opus 5.5 level would be "Good Enough(tm) for 99% of use
+  cases".
+- **Margin counter-argument, itself contested**: ianm218 claimed inference gross margin ~85% and
+  profit even on $200 subscriptions; reticulates rebutted from the Q3 filings — "Anthropic spend
+  over $5 billion per month on compute, their revenue barely exceeds their compute spend", the
+  good-looking margin being an artefact of a short window of artificially low compute cash
+  expenditure and of fixed-price plans.
+- **Market-structure defence vs. its own rebuttal**: cma argued the drop is small relative to a
+  listing made "during the biggest market rout of the past many years" and that a 9% fall is
+  "remarkably minor" for a high-beta name; mtlmtlmtlmtl countered that the Nasdaq bounced 6.5%
+  the next day while Anthropic kept falling. rapind restated the two-price problem: "$83 official
+  (wholesale) price for institutions / friends and family. $111.50 was the bag-holder price."
+
+Same-day related items: Forbes reported Dario Amodei and sister **Daniela sold $561M in stock
+during the IPO** (HN 47 pts); Novaramedia claimed, citing Max Tegmark, that Anthropic staff
+"openly talk about taking over the world" (HN 217 pts — the thread was more sceptical of the
+outlet than of the quote, and waffletower's top reply argued physical takeover is beyond a
+company that owns no data centres and whose valuation is falling).
+
+Sources: raw/articles/2026-11-25_novaramedia_tegmark-anthropic-taking-over-the-world.md;
+HN 50627836, 50631210, 50635706, 50634815, 50629413 (Bloomberg/WSJ/Reuters primaries bot-gated;
+substance from threads).
+
 ## Related
 
 - [[events/anthropic-ipo-roadshow-2026]] — the Nov 10–11 roadshow that preceded pricing

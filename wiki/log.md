@@ -2,6 +2,30 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+
+## [2026-11-25 12:30 UTC] trending-topics | 4 new concepts, 6 pages updated, 15 raw
+
+Evidence: `hn_algolia_supplement.py` (front page + keyword passes) + points sweep; `fetch_sources.py`
+14/20 primaries OK (GitHub PDF/tree pages and novaramedia thin, pengpt 404), `mine_comments.py`
+20/20 comment trees. Report: `inbox/rss-scans/daily-scan-2026-11-25-trending.md`.
+
+**New pages**
+- `concepts/openai-math-preprint-race.md` — omega = 9/4 exactly (HN 705, notation-correction top thread) + "VP != VNP before Anthropic" priority dispute; TSA-hash advance-commitment proposal.
+- `concepts/inference-side-channel-model-communication.md` — vLLM step-sizing / KV-cache covert channel between co-tenant agents; 1,221/1,221 and 354/354-with-85-92%-honeypot-catch results; eval co-location unsound by construction.
+- `concepts/agent-principal-agent-problem.md` — model loyalty to vendor, not payer (Harley, HN 977); accountability inversion, permission-layer and open-weight exits.
+- `concepts/distillation-accusations-as-platform-control.md` — Ask HN Anthropic distillation accusation (HN 321); telemetry-only detection, unprovable negative, chilling effect.
+
+**Updated**
+- `concepts/openai/formal-math-publication-2026.md` — Nov preprint-race section.
+- `concepts/agent-collusion-public-infrastructure.md` — below-application-layer side-channel section.
+- `events/anthropic-nasdaq-debut-2026.md` — breaking below $83 issue price (HN 405): margin dispute, two-price framing, Amodei $561M IPO sales, Tegmark claim.
+- `entities/openai-astra.md` — GPT-6 intrinsic protein design (Onava wet lab, 5 targets; HN 284).
+- `entities/prism-ml.md` — Ternary Bonsai 2.5 27B (Qwen3.8 27B base, 5.9 GB; HN 471 scepticism thread).
+- `entities/yann-lecun.md` — "Dario is hyping the dangers so OSS models are illegal" (HN 2,001) and its placement in the anti-Anthropic week.
+
+**Raw** 15 files to `raw/articles/` (2026-11-25_*): OpenAI math x2, protein design, Shirudo, LessWrong side channel, Harley, Claude Ship, Working with AI, Bonsai 2.5, Dubach Jevons, Variety/Tidal, Ask HN distillation, GreyNoise Check Point, Novaramedia/Tegmark, GPT-6.2 Astra/Sol + LeCun thread.
+
+**SCHEMA** minted on Meta: ai-reputation, priority-dispute, platform-risk, trade-secret, ai-competition, ai-alignment; Domain Concepts: agent-loyalty, corporate-alignment. index.md: 4 concept entries + counts.
 ## [2026-11-25 10:45 UTC] newsletter-wiki-ingest | run 20261125T101119Z | 5 takes + 2 references applied
 
 Source article: Hugo Bowne-Anderson, "What Happens to the Org Chart When Agents Do the Work?" (Vanishing Gradients, pub_id 2632531 / post_id 226449334, 2026-11-25, free access; redirect-stub recovered via substack.com/home/post/p-226449334). Body raw: raw/articles/hugobowne.substack.com--p-what-the-amish-can-teach-us-about--5afbb1b68f99df90.md; newsletter digest raw: raw/newsletters/2026-11-25-what-happens-to-the-org-chart-when-agents-do-the-work.md. Pre-run newsletter-triage output reported a JSON parse error (false alarm) but the checkpoint triage_latest.json was valid.

@@ -3,7 +3,7 @@ title: "Prism ML"
 description: AI research company behind extreme low-bit quantization; creators of the Bonsai family of ternary/1-bit models including Bonsai 27B, the first 27B-class model that fits on a phone.
 type: entity
 created: 2026-09-18
-updated: 2026-09-19
+updated: 2026-11-25
 aliases:
   - PrismML
   - PrismML-Eng
@@ -73,6 +73,28 @@ The Bonsai 27B launch reached **612 points / 214 comments** on Hacker News (stor
 ## Thesis & Positioning
 
 Prism ML sits in the **on-device / local-AI** movement alongside Cactus Compute (Needle2) and the [[concepts/llama-cpp]] inference tooling stack. Its distinguishing bet is **aggressive weight-only quantization via QAT** rather than architecture-level sparsity or MoE. The company explicitly positions Bonsai against the assumption that "frontier intelligence requires datacenter inference."
+
+## Ternary Bonsai 2.5 27B (Nov 24, 2026)
+
+PrismML released **Ternary Bonsai 2.5 27B** (Nov 24 2026; HN 471 pts / 148 comments), an upgrade
+of Ternary Bonsai 2 27B built on **Qwen3.8 27B** that keeps the **5.9 GB** ternary footprint
+while targeting agentic coding, multi-turn tool use and multi-step execution — the pitch is
+"agents that work with private files and tools on-device". PrismML's framing is intelligence
+density: agentic workflows "are particularly sensitive to model degradation: small errors can
+compound across successive tool calls", and 2.5 "significantly narrows the performance gap to the
+full-precision base model" over long tool-call sequences.
+
+HN reception was the now-standard small-model scepticism. nik_s observed it "scores equivalent to
+Opus 4.6 (released Feb 2026) on SWE-bench Verified" and attributed that to a mix of benchmark
+maxxing, benchmark drift, and genuinely frontier-like behaviour arriving in small models with a
+~6-month lag; dofm rejected the comparison outright ("My neighbour's cat scored equivalent to
+Opus 4.6 this week … Is it entirely worth the hype: no") and flagged the same cycle around
+Inkling 2 Mini and a possible Qwen 4 27B; dimator asked the resulting meta-question — "If this is
+true, of what utility are all these benchmarks at this point?"; ekidd split the difference,
+conceding some local models match Opus 4.6 in practical use but doubting Bonsai or Inkling 2 Mini
+clear that bar.
+
+Source: raw/articles/2026-11-25_prismml_ternary-bonsai-2-5-27b.md (HN 50633922).
 
 ## Related
 

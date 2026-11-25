@@ -3,7 +3,7 @@ title: "Yann LeCun"
 tags: [person]
 sources: []
 created: 2026-04-24
-updated: 2026-04-24
+updated: 2026-11-25
 type: entity
 ---
 
@@ -105,6 +105,27 @@ type: entity
 *Last updated: April 14, 2026*
 *Data sources: Grokipedia, Meta AI blog, NYU profile, academic papers*
 *Depth: L2 (basic profile, career, research contributions, awards) → Planned upgrade to L3 (philosophy, citation analysis, conceptual framework)*
+
+## "Dario is hyping the dangers so OSS models are illegal" (Nov 23, 2026)
+
+A LeCun post asserting that **"Dario is hyping the dangers so OSS models are illegal and he stays
+in control"** reached **2,001 HN points / 1,184 comments** on Nov 23 — by a wide margin the
+largest AI thread of the week, and the sharpest public articulation of the open-weights camp's
+grievance against Anthropic's safety framing.
+
+The thread's significance for the record is not the claim itself but its placement: it landed one
+day before Anthropic broke below its $83 IPO price ([[events/anthropic-nasdaq-debut-2026]]), one
+day before an Ask HN in which a company said Anthropic had accused it of distilling with no
+evidence ([[concepts/distillation-accusations-as-platform-control]]), and days before
+Novaramedia's Tegmark "taking over the world" story. Capability-safety arguments from lab
+leaders were being read, by a large technically-literate audience, as regulatory positioning —
+the same "safety-washing" charge the open-weights movement has been making since the open-weight
+export-control debates.
+
+Caveat: the linked primary is an X post; the HN thread is the durable record of the claim and its
+reception, and the quoted sentence is LeCun's characterization of Amodei's incentives, not a
+finding. Source:
+raw/articles/2026-11-25_gpt62-astra-sol_launch-coverage.md (HN 50615308).
 
 ## See Also
 

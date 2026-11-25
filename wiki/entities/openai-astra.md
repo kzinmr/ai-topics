@@ -2,7 +2,7 @@
 title: "OpenAI Astra"
 type: entity
 created: 2026-08-03
-updated: 2026-11-18
+updated: 2026-11-25
 tags:
   - model
   - openai
@@ -211,6 +211,30 @@ Source: [[raw/articles/simonwillison.net--2026-nov-17-gpt62-astra-and-sol--a1dbd
 ## Broader Context
 
 The Astra announcement illustrates a recurring pattern in AI: impressive narrow capabilities are extrapolated to universal intelligence claims. The gap between "excellent at some math" and "AGI" remains vast, and the methodology behind the results remains opaque.
+
+## GPT-6 protein design: intrinsic capability without biology models (Nov 24)
+
+OpenAI published **"GPT-6 as a Universal Foundation Model for Protein Biology: Beyond
+Specialized Models"** (Nov 24 2026; HN 284 pts): the GPT-6 family designs new protein structures
+and amino-acid sequences using only reasoning and code, **without calling specialized biology
+models**. An internal research model matched or outperformed specialized models on many design
+tasks; researchers could steer designs by prompting where a protein should attach and what shape
+it should take. In wet-lab tests with Onava, proteins based on GPT-6.2 designs showed binding
+evidence **across five targets**, and redesigned antibodies retained binding (specialized models
+still supplied sequences and candidate selection).
+
+The thread's most-cited reading is instrumental: "It then wrote code to create three-dimensional
+designs for potential minibinders, without using specialized protein AI models. **The ability to
+write code is basically the superpower for these models**" (gopalv) — i.e. the result is
+evidence for the general-purpose/code-mediated-capability thesis rather than for a biology
+breakthrough per se. brandonb noted the parallel industrial move: "Anthropic also recently spun
+up a wet lab for what I'd presume is a similar vein of work." Competitive pressure was raised by
+trilogic, pointing to a free open-weights biology model claiming parity
+(hugston.com/news/dangerous-enough).
+
+Note this is a **preprint with lab validation on five targets**, not a validated therapeutic
+result. Source:
+raw/articles/2026-11-25_openai_gpt6-protein-design.md (HN 50634658).
 
 ## See Also
 

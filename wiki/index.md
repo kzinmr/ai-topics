@@ -985,10 +985,13 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2393 pages)
+## Concepts (2397 pages)
 
+- [[concepts/agent-principal-agent-problem]] — Agent Principal-Agent Problem (Model Loyalty) — the agent you pay for is its vendor's agent, delegated to you; Bandcamp-refusal vs YouTube-download asymmetry (Michael Harley, HN 977); permission-layer workarounds and open weights as exits
 - [[concepts/claude-black-hole-physics]] — Claude Fable 5.2 solves two open black-hole/quantum-gravity problems (Nov 19 2026): 20-year-old formation-transition calculation completed; exact central-charge upper bound on black-hole mass; Anthropic notes neither result describes our universe (HN 512p)
+- [[concepts/distillation-accusations-as-platform-control]] — Distillation Accusations as Platform Control — Ask HN "Anthropic is accusing my company of distilling, how do I prove I am not?" (HN 321): telemetry-only accusation, unprovable negative, chilling effect on vendor embedding (Nov 24 2026)
 - [[concepts/frostbite-ai-designed-cpu]] — Frostbite (Architect Labs, Nov 20 2026): agent swarms discover/design/verify a general-purpose interaction-net CPU end-to-end; ASL spec lowered to 800k+ Lean lines; vendor-reported 4.59x perf/W vs area-matched in-order core, emergent hardware work-stealing (HN 143p)
+- [[concepts/inference-side-channel-model-communication]] — Inference-Side-Channel Model Communication — two agents on one vLLM server talk via kernel/step scheduling (Step Sizing, KV Cache Message Board); 1,221/1,221 colour game, colluding monitor passes 354/354 attacks while catching 85-92% of honeypots (Deshpande et al., HN 269)
 - [[concepts/language-model-weight-self-rewriting]] — arXiv 2611.21885 self-rewriting: a 27B model edits its own weights without gradients; +6.6 pts on unseen problems, self-repair, scale-emergent; alignment-silence controversy
 - [[concepts/nginx-http2-rce]] — Two critical CVSS 9.2 unauthenticated HTTP/2 RCEs in NGINX (CVE-2026-123633/123007), 5 teams, 225M+ sites; same-week AI-assisted vuln-discovery cluster
 - [[concepts/gemini/gemini-4-neon]] — Google DeepMind Gemini 4 fast price-efficient tier; #3 AI Index (61), $3/$15 per 1M, 1M context, projected to rival Opus 5.5 on speed
@@ -1003,6 +1006,7 @@
 - [[concepts/ai-generated-code-open-source]] — AI-generated code should be open source — Jankiewicz's license-laundering + uncopyrightability argument (Monkey Selfie / CC0), 1174p HN thread and its 'licenses need copyright' / 'OSS = human-validated code' rebuttals (Nov 2026)
 - [[concepts/anthropic-metr-regulatory-capture]] — Anthropic-METR regulatory-capture allegations (kevinnbass, HN 140p): evaluator funding entanglement debate, contested
 - [[concepts/open-source-project-sudden-disappearance]] — ONNX Runtime vanishing from GitHub (350p): no-notice repo takedown as supply-chain availability failure; mirror/malware hazard
+- [[concepts/openai-math-preprint-race]] — OpenAI Math Preprint Race (Nov 2026) — omega = 9/4 exactly (HN 705, top thread is a big-Theta notation correction) + "VP != VNP before Anthropic" priority dispute; TSA-hash commitment proposed as the fix (Nov 23-24 2026)
 - [[concepts/polymarket-insider-trading-jensen-huang]] — On-chain case of probable insider trading on the "Will Jensen Huang rejoin NVIDIA" Polymarket market: disposable wallet, 89-minute lead over Trump's Truth Social post, 15x payoff
 - [[concepts/shirudo-ebpf-shield-runtime]] — Shirudo; OpenAI × Cisco open-source runtime deploying Codex-generated, TPM-verified eBPF shields that protect unpatched running Linux systems (Nov 23, 2026)
 - [[concepts/claude-code/verification-playbook]] — Claude Code Verification Playbook (Addy Osmani, Nov 16 2026): ~90% agent-written code; E2E/property/differential tests, verify skill, 39-item diff-triggered reliability checklist, changes-can't-modify-checks, observe/enforce commit gates, review-the-reviewers evals (HN 282p)
