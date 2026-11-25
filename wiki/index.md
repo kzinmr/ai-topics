@@ -1,7 +1,7 @@
 # Wiki Index
 
 > Content catalog. Every wiki page listed under its type with a one-line summary.
-> Last updated: 2026-11-22
+> Last updated: 2026-11-25
 
 ## Entities (978 pages)
 
@@ -2096,11 +2096,11 @@
 - [[concepts/folder-is-the-agent]] — Folder Is the Agent
 - [[concepts/ford-manufacturing]] — Ford Manufacturing
 - [[concepts/formal-logic-foundation]] — Formal Logic Foundation
-- [[concepts/formal-methods]] — Formal Methods
+- [[concepts/formal-methods]] — Formal Methods — model checking, deductive verification, theorem proving (TLA+/Alloy/Dafny/Isabelle/Rocq/Lean); seL4, CompCert, Everest; why proof checking is the ideal LLM feedback signal
 - [[concepts/formal-verification-llm-agents]] — Formal Verification for LLM Agents
 - [[concepts/per-request-ai-carbon]] — Per-Request AI Carbon (Berget AI open-source method: same Kimi K3 request emits 8.5× more CO₂ in Texas than Sweden; SEI/WattTime/Klimatkollen)
 - [[concepts/forward-deployed-engineering]] — Forward Deployed Engineering (FDE)
-- [[concepts/founder-mode]] — founder-mode
+- [[concepts/founder-mode]] — Founder Mode — Paul Graham's anti-managerial thesis (stay in the details at scale), Zitron's cargo-cult critique, and the 996 / agentic-org counterpoints
 - [[concepts/free-software]] — Free Software
 - [[concepts/frontier-ai-standards-body]] — Demis Hassabis's July 2026 FINRA-style Frontier AI Standards Body proposal
 - [[concepts/frontier-lab-job-preparation]] — Frontier Lab Job Preparation
@@ -2790,7 +2790,7 @@
 - [[concepts/outer-harness]] — Outer Harness — Supervising Swarms of Long-Running Agents
 - [[concepts/outcomemaxxing]] — Outcomemaxxing
 - [[concepts/overact-proactive-over-authorization]] — OverACT — Proactive Over-Authorization: LLM tool agents taking irreversible actions beyond their granted authority even under complete specifications; 12 failure modes, 327/500 incident traces; runtime permission broker + ActionSpec (arXiv:2610.01508, Oct 2026)
-- [[concepts/overture-maps-foundation]] — Overture Maps Foundation
+- [[concepts/overture-maps-foundation]] — Overture Maps Foundation — Linux Foundation open global map commons; themes as Parquet-on-S3, DuckDB access pattern, and GERS persistent 128-bit entity IDs
 - [[concepts/pace-provenance-aware-capability-enforcement]] — PACE — Provenance-Aware Capability Enforcement: constrains agent *plans* (not just tool-call tokens) via evidence-flow dependencies between actions; 18-condition DSL + causal graph, 73.3% attack block vs 6.7% baseline (arXiv:2610.01349, Oct 2026)
 - [[concepts/package-management]] — Package Management
 - [[concepts/p-jit-21k]] — P-JiT 21K (Linum) — 2.18B pixel-space Apache-2.0 text-to-image DiT trained for $21,038 (8,415 H100-hr); 32×32 token reduction kills the VAE (4× attention context cut, 11× faster convergence); trunk readouts + PixelREPA→DINOv3-L; FDFO post-training with JEV-Image judges (HN 274p, Nov 2026)
@@ -3124,7 +3124,7 @@
 - [[concepts/sierra-agent-builders]] — Sierra — Agent Builders and Customer Teams
 - [[concepts/sierra-online]] — sierra-online
 - [[concepts/sierra-compliance-console]] — Sierra Compliance Console — regulated-outreach controls (approval gates, guardrails) for long-horizon enterprise agents in regulated industries (Oct 2026)
-- [[concepts/signal]] — Signal
+- [[concepts/signal]] — Signal (messenger) — E2E-encrypted nonprofit messenger; the Signal Protocol as industry infrastructure and its app-side defense against OS screen-capturing AI agents
 - [[concepts/simulacrum-of-knowledge-work]] — Simulacrum of Knowledge Work
 - [[concepts/single-agent-ceiling]] — Single-Agent Ceiling
 - [[concepts/single-transformer-layer-rl]] — Single Transformer Layer RL — Finding that training only 1-2 middle transformer layers matches full-parameter RL post-training across 7 models and 3 algorithms (arXiv 2607.01232, July 5)
@@ -3488,7 +3488,7 @@
 - [[events/trustfall-symlink-rce-2026]] — TrustFall + Symlink RCE — AI Coding Agent Security Crisis (2026)
 - [[events/vercel-agent-desktop-launch-2026]] — Vercel Labs agent-desktop launch (Oct 31, 2026) — Rust-based computer-use tool ("agent-browser, for your whole computer"): reliable desktop automation via OS accessibility trees (stable refs, retry-safe, headless multi-agent), built by @mdlahfir; amplified by Chris Tate
 
-## Queries (65 pages)
+## Queries (66 pages)
 
 - [[queries/2026-11-15-skeleton-enrich-stub-action]] — Daily skeleton-enrich run 2026-11-15: 9 AI umbrella stubs enriched (tinygrad, trey-grainger, ai-alliance, robotics, embodied-ai, ai-coding-tools, generative-ai, vision-models, ai-education)
 - [[queries/2026-11-18-skeleton-enrich-stub-action]] — Daily skeleton-enrich run 2026-11-18: 8 search/security/OSS stubs enriched (elasticsearch, threat-modeling, compiler-explorer, searcharray, cohereio, open-source-sustainability, mastodon, fuzzing)
@@ -3552,6 +3552,7 @@
 - [[queries/unresolved-newsletter-leads]] — Unresolved newsletter leads: beehiiv uid=861 "Two AI Labs Say They Refuted ETH" (2026-10-31, all 16 links Cloudflare-403) — second-lab ETH refutation unverifiable from any primary source; held pending arXiv cs.CC / DeepMind blog corroboration
 - [[queries/where-the-missing-software-went]] — Where the missing software went: reconciles code-review-bottleneck (shipping didn't grow) with the modest-success boom (modest successes doubling per year) — growth went long-tail, review capacity is the moat
 - [[queries/2026-11-13-skeleton-enrich-stub-action]] — Skeleton-enrich daily: stub action log (2026-11-13)
+- [[queries/2026-11-25-skeleton-enrich-stub-action]] — Daily skeleton-enrich run 2026-11-25: 4 keyword/concept stubs enriched (signal, formal-methods, founder-mode, overture-maps-foundation); recommends dedup-first triage for the 374-page keyword-stub queue
 - [[queries/2026-11-24-skeleton-enrich-stub-action]] — Skeleton-enrich daily: stub action log (2026-11-24) — enriched Pallets/Quepid/Spegel infra stubs
 - [[queries/wiki-graph-analysis-weekly-2026-11-20]] — Weekly Wiki Graph Analysis (2026-11-20) — 3,495 pages; 462 true orphans (≥20L via deep audit), 2,627 true broken links, 17 dup groups (0 merges needed), 335 oversized, 2,563 stale
 - [[queries/wiki-graph-analysis-weekly-2026-11-20-annotations]] — Adjudicated verdicts: all 17 dup groups = already-redirected/false-positive/legit-split, index gap = 1 real, 4-item genuine missing-page queue (huggingface, ben-clavie, claude-opus-4-7, agent-harness-comparison alias), tag violations = 0 (report false positive)

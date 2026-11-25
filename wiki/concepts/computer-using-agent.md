@@ -88,6 +88,8 @@ now an execution environment for agents" ([[concepts/browser-agent/death-of-brow
 - [[entities/anthropic-computer-use]] — Anthropic's computer-use tool API
 - [[concepts/browser-agent/death-of-browser]] — the browser-as-agent-runtime framing
 - [[entities/manus]] — general-purpose agent relying on CUA-style execution
+- [[concepts/signal]] — app-side defense against screen-capturing OS agents
+- [[concepts/formal-methods]] — specification/proof as the trust substitute when execution is delegated
 
 ## Sources
 
