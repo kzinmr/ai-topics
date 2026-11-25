@@ -1,3 +1,38 @@
+# Wiki Log
+
+_Log of all wiki changes. Newest entries at top._
+
+
+## [2026-11-25 18:10 UTC] dreaming-group | Pattern E triage — 1 take + 4 references, 13 skips
+
+Checkpoint candidate pool empty (`total_articles: 0`) with `recent_raw_articles: 264` -> Pattern E filesystem scan. `check_archive_index_absence.py`: 96 recent raws, 33 never-archived.
+
+### Duplicate check (adjacent jobs confirmed first)
+trending-topics 12:30 UTC (4 new concepts, 6 updates, 15 raws) / newsletter-wiki-ingest 10:45 (5 takes + 2 refs, Hugo Bowne org-chart) / blog-ingest 10:00 (40 scanned, 19+1 saved) / active-crawl 11:00 (Maritime page) / hot-post 00:31 + 21:30 (Hornet trio, safety-as-control-channel triad) / watchdog + wiki-health-fix 17:35-17:50. Alpoge-Riemann + pequalnp covered by manual ingest (events/, concepts/ai-mathematics-theorem-proving.md). No dreaming commit today -> triage not consumed -> fresh decisions saved.
+
+### Theme clusters
+- **Agent context/token efficiency (TAKE)**: Gemini API native file slicing (server-side page/sheet/media ranges, bill only inspected parts, removes LibreOffice/ffmpeg harness bloat). Zero wiki mentions of file slicing anywhere, including `concepts/gemini/index.md`. -> new `concepts/gemini-api-file-slicing.md`.
+- **Software-factory mechanics (REFERENCE)**: Warp "program a software factory as code" -- YAML blueprint (worker/stages/inputs/outputs/prompt-file/to), triage+spec stages, commit spec as code, /grill-me-style conditional clarifying questions, agent-computer self-verification, merge-risk grading. `concepts/warp-factories.md` (updated 2026-08-28) has zero hits for blueprint / merge risk / triage-spec.
+- **Legal-AI go-to-market (REFERENCE x2)**: Harvey small/mid-size firm ROI framing with two named case studies (B. Cremades y Asociados invoice chart; Giliberti Triscornia 15 takeover-bid docs, day -> minutes); Harvey third Legal-Engineer portrait (Imene Hamdi-Cherif, empathy framing) -- existing page has Molloy + Hooper only.
+- **Agent-native cloud (REFERENCE, low)**: Maritime Launch HN page already comprehensive; only unmined HN comment tree outstanding (page self-flags this).
+- **Non-AI batch skips**: retrocomputing (dfarq x3), Doctorow essays (x2), xania/shkspr/finalist personal essays, John D. Cook math (x3), ElevenLabs marketing/SEO (x4 incl. SIP trunking guide), Harvey author/ambassador pages (x2), Simon Willison Datasette quote-post, Jensen Huang reinstatement cluster.
+- **Scrape stubs**: Harvey Tenet open-weight recipe + Parallel holiday-deals both 14-line brotli failures -> skip (Tenet recipe already documented at `entities/harvey.md` L462-470).
+
+### Verification gate results
+| Candidate | Status | Details |
+|-----------|--------|---------|
+| Gemini file slicing | take (genuine gap) | grep "slic" across concepts/ + entities/ = 0 hits |
+| Warp factory-as-code | reference (genuine gap) | grep -c blueprint/merge risk/triage-spec = 0 in warp-factories.md + warp-terminal.md |
+| Harvey small firms | reference (genuine gap) | Cremades/Giliberti absent from entities/harvey.md (1132 lines) |
+| Harvey Legal Engineer #3 | reference (incremental) | Legal Engineer section covers Molloy + Hooper; empathy angle absent |
+| Maritime | reference (marginal) | self-documented "HN Q&A not yet mined"; body already covered |
+| Harvey Tenet open-weight | skip | stub raw (brotli fail); recipe covered at entities/harvey.md L462-470 |
+
+### Archive
+`archive_triage.py dreaming --keep-reference`: candidates=17, new_archived=15, dedup_skipped=2, total_archive_urls 3408 -> 3417.
+Triage: `/opt/data/.hermes/cron/data/dreaming/triage_latest.json` (run 20261125T180015Z, 18 decisions). No wiki content edited by this job (triage-only) -- take + references handed to dreaming-wiki-ingest.
+
+
 ## [2026-11-25] wiki-health-fix | orphan index registration (queries 64->65)
 
 ### Changes
@@ -26,10 +61,6 @@
 - Weekly AI digest / jp-to-en-translation / llm-pricing-monitor: last runs failed (503 busy / output-length truncation). Low urgency; re-run when convenient.
 
 ---
-
-# Wiki Log
-
-_Log of all wiki changes. Newest entries at top._
 
 
 ## [2026-11-25 12:30 UTC] trending-topics | 4 new concepts, 6 pages updated, 15 raw
