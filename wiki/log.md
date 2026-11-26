@@ -2,6 +2,23 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-11-26 19:1x UTC] skeleton-enrich-daily | 5 stub concepts enriched + link hygiene
+
+**Backlog**: `status: skeleton` = 0 (streak since 2026-10-17); entity stubs = 1 (greg-ceccarelli, content-complete, no action); concept stubs with TODO 381 → 375.
+
+**Enriched (stub → full page)**:
+- `concepts/tim-kraska.md` (276 B → 4.2 KB) — MIT EECS/DSG professor via CSAIL homepage (Jina Reader): AWS Director of Applied Science, MGAIC/DSAIL/Everest co-director, Instancio + Einblick co-founder, Sloan Fellow; research table (G5, Palimpzest semantic operators, KramaBench, BRAD/learned indexes → Redshift MDDL); positioned as senior author on [[concepts/rlm-recursive-language-models]] + context rot; students Alex Zhang / Omar Khattab cross-refs.
+- `concepts/zjit.md` (252 B → 3.1 KB) — Shopify's method-level SSA-IR Ruby JIT; YJIT-vs-ZJIT comparison table; upstreamed into ruby/ruby `zjit/` (Shopify repo now historical); Bernstein blog engineering topics (inlining heuristics, SSA-from-bytecode, Perfetto deopt tracing); cross-ref [[entities/max-bernstein]], [[concepts/yjit]].
+- `concepts/ai-benchmarks/yourbench.md` (272 B → 3.5 KB) — HF dynamic custom-benchmark framework (arXiv:2504.01833): documents→QA pipeline, MMLU 7-subset replication <$15 at Spearman Rho=1, Tempora-0325 post-March-2025 corpus, 26 models/7 families validation; team incl. [[entities/clefourrier]].
+- `concepts/max-irwin.md` (272 B → 2.0 KB) — AI-Powered Search third author; Max.io founder, ex-OXC managing consultant (Manning bio); anchored to trey-grainger/doug-turnbull cluster.
+- `concepts/minijinja.md` (272 B → 2.4 KB) — Ronacher's Rust Jinja2; Jan 2026 AI Rust→Go port metrics (45 min human / 10 h agent / 2,698 msgs / $60); links to agentic-engineering + The Coming Loop raw.
+
+**Link hygiene**: clefourrier `related:` empty entry removed + `[[yourbench]]`/`[[lighteval]]` → canonical ai-benchmarks paths; frontier-swe-benchmark `[[concepts/yourbench]]` fixed; rlm page + Kraska source URL.
+
+**Incident**: briefly overwrote the `concepts/gaia` redirect (canonical = `concepts/ai-benchmarks/gaia-benchmark`, consolidated 11-13) — restored via `git checkout`. Lesson recorded in [[queries/2026-11-26-skeleton-enrich-stub-action]]: verify git history before enriching any 2026-04-25 bulk-import stub.
+
+**Index**: 5 descriptions upgraded in `wiki/index.md` (yourbench, max-irwin, minijinja, tim-kraska, zjit); page count unchanged (no new pages except this query snapshot).
+
 
 ## [2026-11-26 18:10 UTC] dreaming-group | Pattern E triage — 1 take + 5 references, 3 batch skips
 

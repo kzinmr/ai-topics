@@ -70,7 +70,7 @@ FrontierSWE complements rather than replaces [[concepts/ai-benchmarks/swe-bench]
 - **SWE-Bench**: Short-horizon PR fixes on open-source repos
 - **FrontierSWE**: 20-hour ultra-long-horizon challenges in implementation, performance, and ML research
 - **[[concepts/ai-benchmarks/workspace-bench]]**: Multi-file workspace navigation (74 file types, 20,476 files — different dimension of complexity)
-- **[[concepts/ai-benchmarks/kernelbench]]**: Kernel-level optimization; [[concepts/yourbench]]: Human-calibrated coding; [[concepts/programbench]]: Multi-language programming
+- **[[concepts/ai-benchmarks/kernelbench]]**: Kernel-level optimization; [[concepts/ai-benchmarks/yourbench]]: Human-calibrated coding; [[concepts/programbench]]: Multi-language programming
 
 ## Key Significance
 

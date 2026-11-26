@@ -6,10 +6,9 @@ created: 2026-04-10
 updated: 2026-06-03
 related:
   - [[concepts/evaluation/open-llm-leaderboard]]
-  - 
   - [[concepts/gaia]]
-  - [[yourbench]]
-  - [[lighteval]]
+  - [[concepts/ai-benchmarks/yourbench]]
+  - [[concepts/ai-benchmarks/lighteval]]
   - [[concepts/evaluation/llm-evaluation-harness]]
   - [[concepts/bloom]]
   - [[concepts/zephyr]]

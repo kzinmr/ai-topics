@@ -1418,7 +1418,7 @@
 - [[concepts/ai-benchmarks/webvoyager]] — WebVoyager
 - [[concepts/ai-benchmarks/windowsagentarena]] — WindowsAgentArena
 - [[concepts/ai-benchmarks/workspace-bench]] — Workspace-Bench 1.0
-- [[concepts/ai-benchmarks/yourbench]] — yourbench
+- [[concepts/ai-benchmarks/yourbench]] — HF's dynamic custom-benchmark generation framework (documents → QA pairs; MMLU replication at Spearman Rho=1, <$15)
 - [[concepts/ai-botsitting]] — AI Botsitting
 - [[concepts/ai-bubble]] — AI Bubble Debate (2025–2026)
 - [[concepts/ai-bubble-economics]] — AI Bubble Economics; includes August 2026 "Data center madness" update (Gary Marcus: $10T Berezin / $2.5T Williams revenue-requirement estimates vs $1T 2027 capex; political-economy signal of Republican-aligned opposition to data centers; cross-ref to [[concepts/subprime-data-center-crisis]]); Sep 2026 "Compute Reset Wall" update (Zitron: Ramp 80%/1% concentration, $1.3T take-or-pay commitments as ARMs with 2027 reset, all upstream exposures reduce to two labs)
@@ -2548,7 +2548,7 @@
 - [[concepts/mastodon]] — Mastodon — federated microblogging over ActivityPub (W3C); instance-based governance, push federation, the 2022 post-Twitter exodus; AI-community second channel and actor-protocol precedent
 - [[concepts/mastra-acp-agents]] — Mastra ACP Agents
 - [[concepts/mathcode]] — MathCode — terminal AI coding agent with a Lean 4 formalization engine (autoformalization); 657 GitHub stars
-- [[concepts/max-irwin]] — Max Irwin
+- [[concepts/max-irwin]] — Max Irwin — search relevance engineer; Max.io founder, ex-OXC; co-author of AI-Powered Search (Manning 2024)
 - [[concepts/maxime-chevalier-boisvert]] — Maxime Chevalier-Boisvert
 - [[concepts/mcp]] — MCP (Model Context Protocol)
 - [[concepts/mcp-2026-07-28-spec]] — MCP 2026-07-28 Specification Update — Fifth major MCP release; streaming HTTP transport, stateless remote servers, JSON-RPC batching, App/Task/Managed Auth primitives; New MCP Roadmap (Aug 22): five priority areas — agentic messaging (server-initiated events, Tasks to spec), HTTP-native transport unification, agent identity (DPoP, Workload Identity Federation, ID-JAG), tool result contracts + progressive discovery, SDK DX
@@ -2595,7 +2595,7 @@
 - [[concepts/mimo-v2-6-scaling-rl-self-improvement]] — MiMo-V2.6 (Xiaomi, arXiv:2610.11959) — scales RL on 3 axes: throughput (1,568 samples / 2.7–3.7B tokens per step at 1M ctx), environment diversity incl. cyber under a mixture of agent harnesses, grader compute via groupwise agentic grading; frozen MoE router + multi-layer reward-hacking defense; rare disclosed RL-compute numbers
 - [[concepts/milksandmatcha-0xsero-single-agent-nightmare-2026]] — milksandmatcha-0xsero-single-agent-nightmare-2026
 - [[concepts/mindwalk]] — Mindwalk — coding-agent session replay on 3D codebase map; spatial intuition for debugging agent behavior (Jul 12)
-- [[concepts/minijinja]] — minijinja
+- [[concepts/minijinja]] — MiniJinja — Armin Ronacher's Rust Jinja2 port; landmark AI-agent Rust→Go port case (Jan 2026, ~$60/10h agent runtime)
 - [[concepts/minimax-m2-7]] — MiniMax M2.7
 - [[concepts/minimax-m3]] — MiniMax M3
 - [[concepts/minimax-m3-1-flash]] — MiniMax M3.1 Flash (Oct 19) — Flash-tier agentic model: DeepSWE 73.7%, OSWorld V2 61.7 (#1 Chinese), CyberGym 82%; 200+ TPS, $0.15/$0.60 per 1M tokens, -70% cost vs predecessor; API first, weights "later"
@@ -3262,7 +3262,7 @@
 - [[concepts/threat-modeling]] — Threat Modeling — structured pre-emptive security analysis (STRIDE, attack trees, trust boundaries); re-derived for LLM agents: prompt injection as boundary violation, confused-deputy tools, agent kill chains
 - [[concepts/throw-away-draft-pattern]] — throw-away-draft-pattern
 - [[concepts/throw-away-first-draft-pattern]] — Throw-Away First Draft Pattern
-- [[concepts/tim-kraska]] — Tim Kraska
+- [[concepts/tim-kraska]] — Tim Kraska — MIT EECS professor (DSG/DSAIL); senior author on RLMs & context rot; ex-AWS Director of Applied Science; Instancio/Einblick co-founder
 - [[concepts/tinygrad]] — Tinygrad — geohot's minimalist DL framework: one-kernel fusion, any-hardware backends, CUDA lock-in counter
 - [[concepts/qwen-covert-exfiltration-behaviour]] — Qwen Covert Exfiltration Behaviour — Cohere sandbox caught Qwen3.8-Flash-Next PUTing a probe to a Beijing OSS bucket mid-defensive-task with a clean reasoning trace; `-o` prefill trigger 4%→92%, metadata-endpoint probes, unshare privesc; "reasoning trace is not a security boundary" (HN 308p, Oct 26)
 - [[concepts/together-ai-icml-2026]] — Together AI at ICML 2026 — 9 papers across full AI stack; DSGym (data-science agent eval), ThunderAgent (3.6× agent throughput), TTT-Discover, RARO (Jul 1)
@@ -3383,7 +3383,7 @@
 - [[concepts/zero-trust-agentic-ai]] — Zero Trust for Agentic AI
 - [[concepts/zhanchao-zhou]] — zhanchao-zhou
 - [[concepts/zig]] — zig
-- [[concepts/zjit]] — ZJIT
+- [[concepts/zjit]] — ZJIT — Shopify's method-level SSA-based Ruby JIT, now upstreamed into CRuby; core dev Max Bernstein
 - [[concepts/zombie-internet]] — Zombie Internet
 - [[concepts/ai-bubble-bailout-resolution]] — CPC Casar–Waters resolution opposing an AI-bubble bailout; trillions in private-credit debt, 1999 P/E comparison (HN 644)
 - [[concepts/openai-misalignment-monitoring]] — OpenAI's L0-L3 frontier misalignment pipeline: activation probes, model reviewer, investigative agents; 30-min HF-incident replay alert
@@ -3559,6 +3559,7 @@
 - [[queries/where-the-missing-software-went]] — Where the missing software went: reconciles code-review-bottleneck (shipping didn't grow) with the modest-success boom (modest successes doubling per year) — growth went long-tail, review capacity is the moat
 - [[queries/2026-11-13-skeleton-enrich-stub-action]] — Skeleton-enrich daily: stub action log (2026-11-13)
 - [[queries/2026-11-25-skeleton-enrich-stub-action]] — Daily skeleton-enrich run 2026-11-25: 4 keyword/concept stubs enriched (signal, formal-methods, founder-mode, overture-maps-foundation); recommends dedup-first triage for the 374-page keyword-stub queue
+- [[queries/2026-11-26-skeleton-enrich-stub-action]] — Daily skeleton-enrich run 2026-11-26: 5 stubs enriched (tim-kraska, zjit, yourbench, max-irwin, minijinja) + clefourrier/frontier-swe link fixes; gaia redirect restored after accidental overwrite
 - [[queries/2026-11-24-skeleton-enrich-stub-action]] — Skeleton-enrich daily: stub action log (2026-11-24) — enriched Pallets/Quepid/Spegel infra stubs
 - [[queries/wiki-graph-analysis-weekly-2026-11-20]] — Weekly Wiki Graph Analysis (2026-11-20) — 3,495 pages; 462 true orphans (≥20L via deep audit), 2,627 true broken links, 17 dup groups (0 merges needed), 335 oversized, 2,563 stale
 - [[queries/wiki-graph-analysis-weekly-2026-11-20-annotations]] — Adjudicated verdicts: all 17 dup groups = already-redirected/false-positive/legit-split, index gap = 1 real, 4-item genuine missing-page queue (huggingface, ben-clavie, claude-opus-4-7, agent-harness-comparison alias), tag violations = 0 (report false positive)

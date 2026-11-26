@@ -27,6 +27,7 @@ sources:
   - raw/articles/2026-06-04_softwaredoug_search-with-agents-lesson6-rlms.md
   - raw/articles/2026-04-26_isaacflath_pi-harness-rlm-late-interaction.md
   - raw/articles/2026-08-07_primeintellect_prime-agent-self-improving-rlm-agent.md
+  - https://people.csail.mit.edu/kraska/
   - transcripts/2026-06-04_softwaredoug_cheat-at-search-coding-agents-lecture.md
   - raw/articles/2026-05-14_softwaredoug_autoresearch-ranking-coded-by-agents-haystackconf
   - https://jameshwade.github.io/dsprrr/articles/how-rlm-works.html
