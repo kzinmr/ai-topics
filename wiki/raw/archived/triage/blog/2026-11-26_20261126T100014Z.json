@@ -1,0 +1,152 @@
+{
+  "archived_at": "2026-11-26T10:26:47.139992+00:00",
+  "triage_run_id": "20261126T100014Z",
+  "source": "blog",
+  "summary_ja": "2026-11-26 blog-ingest 17件のトリアージ。take 6件 / reference 5件 / skip 6件。主要な獲得は Together AI の2本（Kimi-K3.1-Pro から Qwen3.8-27B へのラオ語蒸留実験と、エージェント評価ツール Hurdle のOSS公開）、Martin Alderson の Jevons paradox 崩壊論への反論（Ramp のトークン支出成長 42%→1.5% データと4段階トークン消費モデル）、Doctorow のニューヨーク州サブスク禁止法（enshittification は stub のまま）、Andrew Nesbitt の未収録シリーズ This Week in Source Control、Scott Aaronson の計算複雑性引用（person ページ緑地）。非AI系6件（数学・Windows内部・Ansible/Sudo-Rust・SF書評・EV政治ネタ）はスキップ。",
+  "decisions": [
+    {
+      "item_id": "blog-14",
+      "source": "blog",
+      "source_name": "daringfireball.net",
+      "title": "Trump wanted Jensen Huang back. Now, the president is alone in Washington",
+      "url": "https://www.cnbc.com/2026-11-24-trump-jensen-huang-nvidia.html",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/cnbc.com--2026-11-24-trump-jensen-huang-nvidia-html--1801f9c7.md",
+      "recommended_action": "reference",
+      "reason_ja": "** CNBC の政治フォロー記事。Nvidia 董事会の Huang 復職（11/23）を受け、Trump が1時間近いCNBC電話取材で「自分がディールを作った」と復職を自画自賛する一方、Capitol Hill の同盟者すら反発し Huang 調査継続を表明、Chinese intelligence asset との関係が米国家安全保障を危うくした可能性があるとの懸念を続ける、という構図。ただし events/nvidia-ceo-transition-2026.md の「Huang reinstated as CEO (November 23)」セクションが既に Trump の「absolutely fine」保証・Ed Zitron による「幹部（ interim CEO Colette Kress ですら）に相談なき復職」詳細・Alice Huang/Kang Wei の中国情報機関接触報道まで収録済みで、本記事の追加情報は薄い。日付付き追記に留める。",
+      "candidate_wiki_path": "events/nvidia-ceo-transition-2026.md",
+      "body_excerpt": "# Trump wanted Jensen Huang back. Now, the president is alone in Washington\nSource: https://www.cnbc.com/2026/11/24/trump-jensen-huang-nvidia.html\nPresident\nDonald Trump\nwanted\nJensen Huang\nback at the helm of\nNvidia\n. Now that the chip mogul is reinstated, Trump is cheering alone in Washington.\nTru"
+    },
+    {
+      "item_id": "blog-15",
+      "source": "blog",
+      "source_name": "blog.jim-nielsen.com",
+      "title": "Have You Tried Using Your Agent?",
+      "url": "https://blog.jim-nielsen.com/2026/have-you-tried-your-agent/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/blog.jim-nielsen.com--2026-have-you-tried-your-agent--fbcf33d5.md",
+      "recommended_action": "reference",
+      "reason_ja": "*** Jim Nielsen の AX（Agent eXperience）批判エッセイ。2025年の AX 考察の続編として「我々はロボットのアクセスには容易だが人間のアクセスには困難なものを増やしている」「『アクセシブルか？』が『AIエージェントがアクセスできるか？』を意味し始め、技術者集団の姿勢が『人間はエージェントを使え』に傾いている」点を懸念として提示。entities/jim-nielsen.md に 2025年 AX リンクと「AI × Web Platform Standards (July 2026)」セクションはあるが、2026年11月時点の AX 評価（人間体験 vs エージェント体験の優先順位反転）は未収録で、author ページの明確な更新候補。",
+      "candidate_wiki_path": "entities/jim-nielsen.md",
+      "body_excerpt": "# Have You Tried Using Your Agent?\nSource: https://blog.jim-nielsen.com/2026/have-you-tried-your-agent/\nIn 2025, I wrote down\nsome thoughts on “AX”\n. My fear was that AX would end up becoming the top priority for people building software. (I’m not\nagainst\nAX, I would simply prefer a priority of cons"
+    },
+    {
+      "item_id": "blog-2",
+      "source": "blog",
+      "source_name": "simonwillison.net",
+      "title": "Database Remote-Copy Tool For SQLite",
+      "url": "https://simonwillison.net/2026/Nov/26/sqlite3-rsync/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/simonwillison.net--2026-nov-26-sqlite3-rsync--5f0dd10a.md",
+      "recommended_action": "reference",
+      "reason_ja": "** SQLite 公式ツール sqlite3_rsync の技術解説（2024年10月 3.47.0 で experimental 追加、2025年5月 3.50.0 で強化）。通常のバックアップAPI / VACUUM INTO はデータベースのフルコピー用ディスク容量が必要で小容量インスタンスでは使えないが、sqlite3_rsync は SSH 越しに完全ローカルコピーなしでスナップショットを複製でき、レプリカがページ単位の暗号ハッシュを送り差分ページのみ受け取る rsync 型プロトコルで同期も可能。AI/LLM 技術とは直接無関係だが SQLite はローカルLLM/RAG の基盤ストレージであり、entities/simon-willison.md への轻微な追記候補。",
+      "candidate_wiki_path": "entities/simon-willison.md",
+      "body_excerpt": "# Database Remote-Copy Tool For SQLite\nSource: https://simonwillison.net/2026/Nov/26/sqlite3-rsync/\n26th November 2026 - Link Blog\nsqlite3_rsync: Database Remote-Copy Tool For SQLite\n. This additional SQLite tool has been around for a while now - it was added as \"experimental\"\nin SQLite 3.47.0 in Oc"
+    },
+    {
+      "item_id": "blog-3",
+      "source": "blog",
+      "source_name": "simonwillison.net",
+      "title": "datasette-charts 0.3a0",
+      "url": "https://simonwillison.net/2026/Nov/25/datasette-charts/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/simonwillison.net--2026-nov-25-datasette-charts--b8d15192.md",
+      "recommended_action": "reference",
+      "reason_ja": "** Willison の datasette-charts リリースノート。チャート注釈（線・塗り領域・ラベルの組み合わせ）対応、Datasette Lite のチャートビルダーUIで編集可能、Datasette Agent 導入時は「LLM関連とDatasette関連のタグ付きコンテンツを比較するチャートを注釈付きで」というプロンプトでエージェントが注釈付きチャートを作成。entities/simon-willison.md は datasette-agent 系プラグイン（micropython / edit）を多数収録するが datasette-charts のリリース追跡が無く、エージェントによる可視化生成という小さな新機能として追記候補。",
+      "candidate_wiki_path": "entities/simon-willison.md",
+      "body_excerpt": "# datasette-charts 0.3a0\nSource: https://simonwillison.net/2026/Nov/25/datasette-charts/\nI added chart annotations to\ndatasette-charts\n!\nYou can now render a chart and then annotate it with lines, shaded areas, labels, or a combination of the three.\nA chart with annotations looks like this:\nHere's\nt"
+    },
+    {
+      "item_id": "blog-7",
+      "source": "blog",
+      "source_name": "daringfireball.net",
+      "title": "Update on a security incident involving 1Password's backend systems.",
+      "url": "https://1password.com/blog/update-on-nov-2026-security-incident",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/1password.com--blog-update-on-nov-2026-security-incident--659c7356.md",
+      "recommended_action": "reference",
+      "reason_ja": "** 1Password 公式のセキュリティインシデント告知。バックエンドへの不正アクセスで一部顧客の氏名・サインイン用メールアドレスが流出、ただしボールトデータ・アイテム・秘密鍵は無傷で 1Password はパスワードや秘密鍵にアクセスできない設計、内部認証情報のローテーション実施、フィッシングへの注意喚起。AI/エージェント文脈では entities/karpathy-*.md や concepts/agent-credential-leasing.md / agweb-browser-for-agents.md が認証情報管理を扱うため補助出典になり得るが、ページ本体は AI と無関係で新ページ生成には値しない。",
+      "candidate_wiki_path": "concepts/agent-credential-leasing.md",
+      "body_excerpt": "# Update on a security incident involving 1Password’s backend systems.\nSource: https://1password.com/blog/update-on-nov-2026-security-incident\nThe short version\nAn attacker gained access to some of our backend systems and copied a limited amount of customer account information from a subset of our c"
+    },
+    {
+      "item_id": "blog-10",
+      "source": "blog",
+      "source_name": "devblogs.microsoft.com/oldnewthing",
+      "title": "Why did it seem that the entries in the CoreApplication Properties expired when the source application shut down?",
+      "url": "https://devblogs.microsoft.com/oldnewthing/20261125-00/?p=112895/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/devblogs.microsoft.com--oldnewthing-20261125-00--3d598291.md",
+      "recommended_action": "skip",
+      "reason_ja": "* Raymond Chen の UWP/CoreApplication Properties のライフサイクルに関する Windows 内部解説。Win32/WinRT の歴史的挙動の話題で AI と無関係。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Why did it seem that the entries in the CoreApplication Properties expired when the source application shut down?\nSource: https://devblogs.microsoft.com/oldnewthing/20261125-00/?p=112895/\nLast time, we confirmed that\nentries in the\nCore­Application.\nProperties\nare not tied to the lifetime of the a"
+    },
+    {
+      "item_id": "blog-16",
+      "source": "blog",
+      "source_name": "shkspr.mobi",
+      "title": "Book Review: Slow Gods by Claire North",
+      "url": "https://shkspr.mobi/blog/2026/11/book-review-slow-gods-by-claire-north/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/shkspr.mobi--blog-2026-11-book-review-slow-gods-by-claire-north--6cb80e93.md",
+      "recommended_action": "skip",
+      "reason_ja": "* Claire North のスペースオペラ「Slow Gods」の書評。SF文学批評で AI/LLM と無関係。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Book Review: Slow Gods by Claire North\nSource: https://shkspr.mobi/blog/2026/11/book-review-slow-gods-by-claire-north/\nCor! This is a great big doorstop of a space opera. It perfectly co-opts the language of pulp sci-fi without becoming pulpy. If you've read plenty of sci-fi, you'll be familiar wi"
+    },
+    {
+      "item_id": "blog-5",
+      "source": "blog",
+      "source_name": "jeffgeerling.com",
+      "title": "Ansible Fails waiting for privilege escalation on Ubuntu 26",
+      "url": "https://www.jeffgeerling.com/blog/2026/ansible-fails-become-ubuntu2604/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/jeffgeerling.com--blog-2026-ansible-fails-become-ubuntu2604--1ce51898.md",
+      "recommended_action": "skip",
+      "reason_ja": "** Ansible の become で Ubuntu 26.04 同梱の sudo-rs がパスワードプロンプト前に余分な文字列を出力し、権限昇格プロンプト待ちの自動化が12秒でタイムアウトする問題の調査記録。実務的には有用な環境トラブルシューティングだが、LLM / AI エージェント / 推論・学習基盤とは無関係で wiki スコープ外。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Ansible Fails waiting for privilege escalation on Ubuntu 26\nSource: https://www.jeffgeerling.com/blog/2026/ansible-fails-become-ubuntu2604/\nI've slowly been moving my servers from Ubuntu 22 and 24 to 26 this year, and noticed my Ansible automation starts failing if I have password protection for\ns"
+    },
+    {
+      "item_id": "blog-6",
+      "source": "blog",
+      "source_name": "daringfireball.net",
+      "title": "Trump says he 'protected' Musk in first term after 'a tough incident'",
+      "url": "https://electrek.co/2026-11-24-trump-protected-elon-musk-first-term-tough-incident/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/electrek.co--2026-11-24-trump-protected-elon-musk-first-term-tough-incide--63217e34.md",
+      "recommended_action": "skip",
+      "reason_ja": "* Daring Fireball 経由の Electrek 転載で、Trump が最初の任期中に Musk を「守った」（a tough incident 後）と主張したという政治・EV業界ネタ。AI 技術との関連は無く、同カテゴリの Trump×CEO 報道は blog-14（Nvidia/Huang、AI半文脈あり）で代表させる。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Trump says he 'protected' Musk in first term after 'a tough incident'\nSource: https://electrek.co/2026/11/24/trump-protected-elon-musk-first-term-tough-incident/\nTrump does an ad for Tesla\nPresident Trump says he “protected” Elon Musk during his first term, and that “you wouldn’t have Elon if it w"
+    },
+    {
+      "item_id": "blog-8",
+      "source": "blog",
+      "source_name": "johndcook.com",
+      "title": "Covering a body with eight smaller copies of itself",
+      "url": "https://www.johndcook.com/blog/2026-11-25/hadwiger-covering/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/johndcook.com--blog-2026-11-25-hadwiger-covering--f8acd282.md",
+      "recommended_action": "skip",
+      "reason_ja": "* Hadwiger 被覆予想（凸体をより小さな自身の写像で覆う問題）に関する純数学エッセイ。AI/LLM と無関係。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Covering a body with eight smaller copies of itself\nSource: https://www.johndcook.com/blog/2026/11/25/hadwiger-covering/\nIt’s obvious that you could cover a cube with smaller cubes. You could, for example, take a cube with side 1 and cover it a cube of side ½ centered on each corner.\nIt’s not as o"
+    },
+    {
+      "item_id": "blog-9",
+      "source": "blog",
+      "source_name": "johndcook.com",
+      "title": "Polynomials and Planets",
+      "url": "https://www.johndcook.com/blog/2026-11-25/polynomials-and-planets/",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/articles/johndcook.com--blog-2026-11-25-polynomials-and-planets--e0e6f5a7.md",
+      "recommended_action": "skip",
+      "reason_ja": "* 偏平惑星表面での重力変化を多項式で近似する応用数学ノート。AI/LLM と無関係。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Polynomials and Planets\nSource: https://www.johndcook.com/blog/2026/11/25/polynomials-and-planets/\nA couple days ago\nI wrote about how the force of gravity varies over the surface of an oblate planet. Earth is slightly oblate,\ni\n.\ne\n., it has an equatorial bulge, and this oblateness has a signific"
+    },
+    {
+      "item_id": "blog-unsaved-batch",
+      "source": "blog",
+      "source_name": "daringfireball.net / simonwillison.net",
+      "title": "unsaved_articles: datasette-charts 0.2a1 / WSJ Trump-protects-CEOs / The Life of a Composer",
+      "url": "",
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "* unsaved_articles 3件は本文抽出不可のため判定保留（decision: skip）。datasette-charts 0.2a1 は同日収録の 0.3a0（blog-3）の1バージョン前のリリースノートで内容が重複。WSJ の Trump「保護した brillant CEO」記事と Pablo Stanley の作曲家インタラクティブ作品は AI スコープ外かつ課金/メディア埋め込みで本文取得不可。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "（unsaved_articles - 抽出不可）"
+    }
+  ]
+}
