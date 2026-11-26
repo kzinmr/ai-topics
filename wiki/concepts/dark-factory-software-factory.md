@@ -368,6 +368,12 @@ Uber sits at a **hybrid Level 3→4**: majority agent-authored code (Level 4 ter
 
 Source: [[raw/articles/2026-08-28_ubereng_running-software-factory-efficiently-at-uber-scale]]
 
+### Follow-up: Skills as the Factory's Unit of Work (November 2026)
+
+Uber's sequel report ("How Uber Evals 1 Million Agent Skill Invocations a Month", 2026-11-23) shows the factory layer that sits on top: the skills marketplace grew from 1 skill (Oct 2025) to **5,000+ with >1M invocations/month**. Key factory machinery: three-tier graduation (Domain → Core → Always-on), the `aifx` cross-agent installer, per-skill cost telemetry, spec-first compiled SKILL.md, a 5/80/15 eval suite with trajectory grading and blind-judge ablation, Code Mode scripts replacing MCP tool preloads (50–70K token saving), and an agent-self-reported "papercut" bug flywheel. Full synthesis: [[concepts/enterprise-skill-fleet-operations]].
+
+Source: [[raw/articles/2026-11-23_ubereng_how-uber-evals-1-million-agent-skill-invocations-a-month]]
+
 ## Case Study: Composio's Anti-Slop Factory (October 2026)
 
 **Source:** Sarah (@sarahfim), lead product engineering at [[entities/composio|Composio]] — ["How to build an anti-slop software factory for teams of 30+"](https://x.com/sarahfim/status/2109736893198016898) (X Article, 2026-10-12)

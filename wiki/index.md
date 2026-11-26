@@ -1143,7 +1143,7 @@
 - [[concepts/agent-security-patterns]] — Containment patterns for tool-using agents: isolation, egress proxy, secret injection, untrusted-content handling, lethal trifecta breaks
 - [[concepts/agent-status-summary-polling-overhead]] — Agent Status-Summary Polling Overhead — Claude Code's `agent_summary` re-sends each active background agent's whole transcript to its model every ~30s for a few UI words; 16.4% of weekly spend (background-heavy team) vs ~8% single session vs Anthropic's fleet-wide ~2%; cache-hit ≠ free at ~9,000 input tokens per output token; companion Tell HN on email injected into outbound prompts (HN 567, Oct 2026)
 - [[concepts/agent-skill-ecosystem-missing-package-manager]] — Missing Package Managers (synthesis of arXiv:2610.11169 + 2610.11647, both 2026-10-08) — the SKILL.md namespace lacks registry/pinning/provenance/name-resolution; 2,193,119 adoptions traced with stars useless for origin ID (top-100 ranked audit = 14.9% vs 0.5% for starred, ~30x) and 1-in-4 skills co-installed with a same-job rival whose winner is decided by install location
-- [[concepts/agent-skills]] — Agent Skills; enriched with Codex Record &amp; Replay workflow recording as skills — skill authoring via live demonstration (June 24); Agent Skills standard donated to Agentic AI Foundation / Linux Foundation by Anthropic (Oct 22 2026) — both SKILL.md and MCP now under neutral governance
+- [[concepts/agent-skills]] — Agent Skills; enriched with Codex Record &amp; Replay workflow recording as skills — skill authoring via live demonstration (June 24); Agent Skills standard donated to Agentic AI Foundation / Linux Foundation by Anthropic (Oct 22 2026) — both SKILL.md and MCP now under neutral governance; + Uber enterprise fleet case (Nov 2026: 5,000+ skills, 1M invocations/month)
 - [[concepts/academic-reception-of-ai-math]] — Academic reception of AI-generated mathematics — the Oct 2026 OpenAI math split: AHM's institutional objection + Karagila's "verification DoS" desk-rejection critique, vindicated by the 24-hour withdrawal cascade
 - [[concepts/adaptive-code-revision-attacks-pr-reviewers]] — AFCRA: attackers mine AI PR reviewers' own feedback to revise code so the reported issue is fixed but a vulnerability survives; AFCRA-Bench (159 vulns), success 2.5x/12.5x over text-only attacks vs Sonnet 5 / GPT-5.5 (arXiv:2610.05399, Oct 2026)
 - [[concepts/agent-slop]] — Agent Slop — the reliability gap between AI marketing claims and demonstrated capability; evals-as-evidence framing (created 2026-09-15)
@@ -1737,7 +1737,7 @@
 - [[concepts/code-as-graph]] — Code-as-Graph — Samuel Colvin's thesis: agent orchestration belongs in type-checked code, not graph libraries; "typed/snapshotted/parallel — pick two" CAP theorem; Monty + Temporal as the execution/durability answer (Oct 2026)
 - [[concepts/code-execution-with-mcp]] — Code Execution with MCP — Treating MCP Servers as Code APIs
 - [[concepts/code-intelligence-for-llms]] — The practice of providing LLMs with structured, pre-computed code analysis data rather than raw source files. Cuts to...
-- [[concepts/code-mode]] — CodeMode — LLM Code Execution Over Sequential Tool Calling
+- [[concepts/code-mode]] — CodeMode — LLM Code Execution Over Sequential Tool Calling; + Uber enterprise adoption (Nov 2026: gateway scripts replace 50–70K-token MCP tool preloads, .mcp.json blocked)
 - [[concepts/code-review]] — code-review
 - [[concepts/code-review-bottleneck]] — Code Review Bottleneck — Harvard/Jellyfish study: AI agents +30% LOC/+23% PRs but no more software shipped; gains absorbed by human review (Oct 2026)
 - [[concepts/code-search-indexing]] — Code Search Indexing for Agent Tools — inverted-index techniques (n-gram/trigram/sparse n-gram) so agent grep/regex lookups skip full scans; Cursor client-side "instant grep" research (Mar 2026)
@@ -2005,6 +2005,7 @@
 - [[concepts/enterprise-ai-cost-management]] — Enterprise AI Tool Cost Management; Tokenpocalypse per-token billing shift (GitHub per-token, Accenture token waste) (Aug 2026); Uber shift from $1,500 caps to token-efficiency engineering (Sep 2026)
 - [[concepts/enterprise-ai-deployment-jv]] — Enterprise AI Deployment Joint Ventures
 - [[concepts/enterprise-rle]] — Enterprise RLE (Reinforcement Learning Environments) — In-product RL training where models learn inside the actual product harness, with externalized context/skills/tools for model independence
+- [[concepts/enterprise-skill-fleet-operations]] — Enterprise Skill Fleet Operations — Uber aifx case (Nov 2026): 5,000+ skills / 1M invocations/month, 3-tier marketplace, per-skill cost telemetry, 5/80/15 eval split, papercut bug flywheel
 - [[concepts/enterprise-ai-operating-model]] — Enterprise AI Operating Model
 - [[concepts/enterprise-ai-scaling-patterns]] — Enterprise AI Scaling Patterns
 - [[concepts/enterprise-coding-agent-security]] — Enterprise Coding Agent Security — Security risks of coding agents in enterprise: session leakage, data exfiltration, supply chain; Claude Code and Alibaba case studies

@@ -2,6 +2,19 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-11-26] ingest — Uber agent-skill fleet at 1M invocations/month (X Article, Nov 23 2026)
+
+Manual ingest of Uber Engineering X Article "How Uber Evals 1 Million Agent Skill Invocations a Month"
+(https://x.com/ubereng/status/2125008806249930999, 21.5K bookmarks, Tier 1.5 xurl OAuth2, full plain_text).
+
+- `raw/articles/2026-11-23_ubereng_how-uber-evals-1-million-agent-skill-invocations-a-month.md` — full body (new raw)
+- `concepts/enterprise-skill-fleet-operations.md` — NEW: synthesis (aifx, 3-tier marketplace, OTel telemetry, 5/80/15 evals, ablation, cost levers, papercuts)
+- `concepts/agent-skills.md` — + Enterprise Fleet Case: Uber section
+- `concepts/code-mode.md` — + Enterprise Adoption: Uber section (50–70K token MCP preload elimination, .mcp.json block)
+- `concepts/dark-factory-software-factory.md` — + follow-up subsection under the Aug 2026 Uber case study
+- `concepts/agent-skill-ecosystem-missing-package-manager.md` — + enterprise-internalization update vs the Oct 2026 papers
+- `index.md` — 1 new entry, 3 descriptions updated
+
 ## [2026-11-26 12:00 UTC] trending-topics — complexity-theory AI wave, Cogentic factoring, token-reseller trust, model provenance forensics
 
 Daily trending run (RSS scan 17 raw blog articles this morning via blog-ingest run 20261126T100014Z; HN

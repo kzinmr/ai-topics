@@ -9,13 +9,14 @@ tags:
   - rlm
   - mcp
 created: 2026-04-16
-updated: 2026-04-30
+updated: 2026-11-26
 type: concept
 sources:
   - raw/articles/2026-04-30_cloudflare-code-mode-mcp.md
   - https://blog.cloudflare.com/code-mode-mcp/
   - https://blog.cloudflare.com/project-think/
   - raw/articles/2026-04-15_cloudflare-project-think.md
+  - raw/articles/2026-11-23_ubereng_how-uber-evals-1-million-agent-skill-invocations-a-month.md
 ---
 
 # CodeMode — LLM Code Execution Over Sequential Tool Calling
@@ -332,3 +333,14 @@ Agent → search(OpenAPI + docs) → execute(API calls + llm_query) → submit(r
 ```
 
 pydantic-ai-harness already provides a Python REPL via [[concepts/monty-sandbox|Monty]], and implementing llm_query-like subcalls within CodeMode's `run_code` makes CodeMode+RLM integration feasible.
+
+## Enterprise Adoption: Uber (November 2026)
+
+Uber Engineering's skills-at-scale report independently validates the Code Mode thesis at Fortune-500 scale:
+
+- **Problem**: the default MCP install loaded every tool's full description into every call — with 100+ tools that was **50,000–70,000 tokens before the user typed anything**.
+- **Fix**: deterministic flows (query + read response, Slack send, remote code search, email) moved into utility scripts that call tools through Uber's gateway, avoiding tool-definition preload. Success rate, latency, and cost of the most-used flows all improved.
+- **Governance**: `.mcp.json` files (which install tool servers) are **blocked** in skills and plugins; code-mode skills became named packages other company skills reference by name — Code Mode as a shared library tier.
+- Falls under Uber's broader skill-cost lever set in [[concepts/enterprise-skill-fleet-operations]].
+
+Source: [[raw/articles/2026-11-23_ubereng_how-uber-evals-1-million-agent-skill-invocations-a-month]]

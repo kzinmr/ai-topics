@@ -1,7 +1,7 @@
 ---
 title: "Missing Package Managers — What Two Oct 2026 Papers Say About the Agent Skill Ecosystem"
 created: 2026-10-12
-updated: 2026-10-12
+updated: 2026-11-26
 type: concept
 tags: [agent-skills, supply-chain, agent-governance, harness-engineering, verification, failure-modes]
 sources: [raw/papers/2026-10-11_2610.11169_skill-constellations-github-supply-chain.md, raw/papers/2026-10-11_2610.11647_skill-co-installation-conflict.md]
@@ -87,3 +87,9 @@ selection*: whichever file the filesystem happened to place first.
   arXiv:2610.11169 (2026-10-08) — `raw/papers/2026-10-11_2610.11169_skill-constellations-github-supply-chain.md`
 - Chaoliang Yan, Zihao Xu, Yuekang Li, et al., *One Skill Too Many: How Co-Installed Skills Conflict
   in Coding Agents*, arXiv:2610.11647 (2026-10-08) — `raw/papers/2026-10-11_2610.11647_skill-co-installation-conflict.md`
+
+## Update: Enterprise Internalization as a Partial Answer (November 2026)
+
+Uber Engineering (2026-11-23) demonstrates that the missing primitives **can be reproduced inside one organization**: a single Git repo marketplace supplies the registry + provenance + review, the `aifx` CLI supplies pinning-like install semantics and layered resolution, and platform-team review + eval gates substitute for a solver. Notably Uber reaches "one format, one repo, every agent" — the interop layer these papers find missing publicly exists *inside* the enterprise wall. What remains unsolved publicly: nothing in Uber's design helps skills installed from outside the marketplace, and cross-org copy propagation is still manual. See [[concepts/enterprise-skill-fleet-operations]].
+
+Source: `raw/articles/2026-11-23_ubereng_how-uber-evals-1-million-agent-skill-invocations-a-month.md`
