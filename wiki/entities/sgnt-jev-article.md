@@ -2,7 +2,7 @@
 title: "SGNT — You Could Have Built Jev"
 type: entity
 created: 2026-09-19
-updated: 2026-10-28
+updated: 2026-11-26
 tags: [ai-company, small-models, sgnl, jev, sgnt, llm-internals, first-principles, model-optimization, inference-speed, tokenization]
 sources:
   - https://sgnt.ai/p/jev/
@@ -29,6 +29,22 @@ Jev is a **100M-parameter model initialized from the GPT2-small checkpoint** —
 Jev demonstrates that **architecture-level accumulated optimizations on tiny models** can punch far above their parameter count for narrow domains (code/math), and that the GPT2 skeleton remains a viable substrate a decade later. The sgnt.ai article doubles as both a technical explainer and a manifesto for "small, fast, transparent models you can reason about."
 
 The article was personally endorsed by **Drew Breunig** (["No, but this is good"](https://x.com/dbreunig/status/2101154389574791210) — recommending it in reply to a question about Jev coverage, Sep 19, 2026). Related coverage: Samuel Colvin benchmarked Jev vs Claude Sonnet via [[concepts/pydantic-ai|Pydantic AI]].
+
+## Provenance challenged via latency and self-identification (2026-11-25)
+
+Modaic's post "Latency doesn't lie" (HN 318 pts) argued that Jev is derived from **Qwen3.5-35B-A3B**,
+supported by prompt-variant self-identification tables ("Are you Qwen?" -> Yes 64% / 56% across Jev
+1.13/1.14, while "Are you DeepSeek?" -> No 95-98%, "Are you Gemma?" -> No 86-90%) rather than by weight
+access. The thread split on whether the vendor had already disclosed lineage in its own materials, and
+flagged that Modaic is a competitor of the subject — "take this with a grain of salt barring
+reproduction of results" (linolevan). The defensive reading treats lineage and novelty as orthogonal:
+"most hiphop is taken from samples from the 70s ... unless the Jev people came out and specifically said
+'we wrote this from scratch', which today would be insane" (keyle).
+
+Note the tension with this page's own account: the SGNT write-up describes Jev as a 100M-parameter
+GPT2-small derivative, which is a different lineage claim from the 35B-A3B Qwen hypothesis. See
+[[concepts/latency-fingerprint-model-provenance]] and
+raw/articles/2026-11-26_modaic_jev-is-probably-qwen-latency-doesnt-lie.md.
 
 ## Related
 - [[concepts/system-one-models|System One Models]] — the model class Jev belongs to (this article is its first-principles reproduction)

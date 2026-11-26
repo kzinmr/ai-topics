@@ -1,7 +1,7 @@
 ---
 title: "AI for Mathematical Theorem Proving and Theoretical Computer Science"
 created: 2026-08-01
-updated: 2026-11-23
+updated: 2026-11-26
 type: concept
 tags:
   - model
@@ -80,6 +80,21 @@ Key points relevant to this concept:
 - **DeepBlue analogy.** Marcus frames it like 1997's Deep Blue vs Kasparov — an amazing but *special-purpose* brute-force result that did not generalize.
 
 This contrasts with the OpenAI Astra results above (single-model, model-generated arguments + Lean certificates) and with [[concepts/claude-fable-jacobian-conjecture|Claude Fable's Jacobian Conjecture]] work. The recurring lesson across all three: Lean/mathlib-style machine-checkable verification is what lets frontier models contribute to math, and that same verifiability is scarce outside formal domains.
+
+## Cogentic: the multi-agent harness pattern (2026-11-25)
+
+Google Research shipped a batch of preprints (deterministic subexponential integer factorization,
+discrete logs) produced by **Cogentic**, a harness in which existing LLMs — Gemini 4 Argon in this
+batch — collaborate through a central orchestrator and a **shared database of intermediate proofs**
+(method paper: arXiv 2609.40324; HN 494 pts). That is a third operating model alongside OpenAI's
+industrial Lean pipeline and the human-led Alpöge/Anthropic GRH proof. Reported differentiator: the
+Google papers are said to be **human-reviewed before publication** but carry **no Lean formalizations**
+— the inverse of the OpenAI profile.
+
+The useful reality check came from the thread's complexity accounting: against GNFS's ~10^47 operations,
+the new algorithm needs ~10^2572 for a 4096-bit RSA key, so "the only improvement here is that this is
+guaranteed to work for arbitrary numbers" (vlovich123). See
+[[concepts/google-cogentic-proof-discovery]].
 
 ## Related Pages
 

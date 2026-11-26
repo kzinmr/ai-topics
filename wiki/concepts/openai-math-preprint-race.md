@@ -1,7 +1,7 @@
 ---
 title: "OpenAI Math Preprint Race (November 2026)"
 created: 2026-11-25
-updated: 2026-11-25
+updated: 2026-11-26
 type: concept
 tags:
   - openai
@@ -97,6 +97,24 @@ hours. `confidence: medium` accordingly.
   rectangular-matrix exponents?
 - Will either lab adopt advance cryptographic commitment (TSA-stamped hashes) as the norm for
   AI-generated priority claims, making the race auditable instead of narrated?
+
+## Aaronson's "beginning of a singularity" framing (2026-11-25)
+
+The week after the omega = 9/4 and VP != VNP drops, Scott Aaronson published "HOLY SHIT HOLY SHIT HOLY
+SHIT HOLY SHIT" (HN 1627 pts / 1437 comments, the month's largest AI thread), adding a third OpenAI
+result to the race — linear gates for the Fourier Transform at N (log N)^(1/2+o(1)) with a **matching
+lower bound** — and placing the whole sequence inside a single frame: "Right now - this past week - is
+very much like I would've always imagined the beginning of an AI singularity to look and feel like."
+
+Two facts from that post belong in the race ledger. First, the lower-bound shape is what Aaronson
+called unexpected: "the even bigger shock is that the AI was able to prove any lower bound of the form
+omega > 2. I never expected this challenge to be all that much easier than P != NP." Second, the
+verification gap this page documents is still open — no independent verification of the November
+preprints had appeared as of 2026-11-26, while the GRH proof already had three independent expositions
+and a shorter Lean re-verification (lsernau, HN 472 pts).
+
+See [[concepts/complexity-theory-ai-breakthrough-2026-11]] for the rumor-vs-artifact split and
+raw/articles/2026-11-25_scottaaronson_holy-shit-magnitude-of-what-is-happening.md.
 
 ## Related
 

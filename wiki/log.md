@@ -2,6 +2,48 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-11-26 12:00 UTC] trending-topics — complexity-theory AI wave, Cogentic factoring, token-reseller trust, model provenance forensics
+
+Daily trending run (RSS scan 17 raw blog articles this morning via blog-ingest run 20261126T100014Z; HN
+front-page + keyword + points-only sweeps, 20 candidate stories, 10 comment trees mined, 14 primary
+sources fetched 13/14 OK).
+
+**New concept pages (4):**
+- `concepts/complexity-theory-ai-breakthrough-2026-11.md` — Aaronson "HOLY SHIT" post (HN 50646108, 1627 pts):
+  omega = 9/4 with matching lower bound, VP != VNP, N(log N)^(1/2+o(1)) Fourier-transform linear gates,
+  QIP(2) = PSPACE; plus the crypto-bombshell rumor and the five thread objections to it
+  (classification / scope / proof-vs-attack / constructivity / credibility).
+- `concepts/google-cogentic-proof-discovery.md` — Google Cogentic multi-agent proof harness
+  (arXiv 2609.40324, Gemini 4 Argon, shared intermediate-proof DB), deterministic subexponential
+  factoring, vlovich123's 10^2572-vs-10^47 reality check, human-reviewed-but-not-Lean profile.
+- `concepts/discount-token-reseller-router-trust.md` — Moat / Command Code "OpenRouter Replacement"
+  (HN 50652184): membership-fee discounted token market, arbitraged subscription allocation, routing as
+  transitive trust for agent source + tool calls, OpenRouter ZDR/end-provider-hack disclosure report.
+- `concepts/latency-fingerprint-model-provenance.md` — Modaic "Latency doesn't lie" (HN 50648823):
+  prompt-variant self-identification table (Qwen 64%/56%, DeepSeek 95-98% No, Gemma 86-90% No), the
+  disclosure dispute, competitor-credibility caveat.
+
+**Existing pages updated (4):** `concepts/openai-math-preprint-race.md`,
+`concepts/ai-mathematics-theorem-proving.md` (Cogentic as third production pattern),
+`entities/openrouter.md` (discount-reseller competitive pressure), `entities/sgnt-jev-article.md`
+(Qwen-lineage challenge, with the GPT2-small-vs-35B-A3B tension flagged).
+
+**Raw (5):** Aaronson post (full text + thread), Cogentic HN-thread composite incl. the "Factoring in P"
+rumor thread, Moat product page + thread, Jev-latency thread composite, NYT/Photoshop (chrome-only
+fetch, marked as thread-derived).
+
+**SCHEMA minted (8 tags):** complexity-theory, post-quantum-crypto, ai-research-automation, lab-rumors,
+integer-factorization (Domain Concepts); llm-gateway, latency-fingerprinting, model-provenance (Models).
+
+**Report:** `inbox/rss-scans/daily-scan-2026-11-26-trending.md`.
+
+**Skipped / low-signal:** 1Password security incident (already in daringfireball entity + blog-ingest
+take), Bare Metal Qwen / llm.asm and songe (OSS showcases, no wiki-actionable claims yet), ProofAtlas
+top-500 LLM-ranked open problems (linked from the complexity wave, no page), Google Workspace MCP Gmail
+article, Gemini nursery-rhyme refusal, Anthropic IPO sub-$83 threads (covered by
+`events/anthropic-ipo-roadshow-2026.md`), Marginalia update, Carry.md, protocolis solid-state web
+execution (thin fetch), dbushell "year the web industry gave up" (404).
+
 ## [2026-11-26 10:55 UTC] newsletter-wiki-ingest — SemiAnalysis GDPx official leaderboard (run 20261126T101133Z)
 
 Applied the single `take` from newsletter triage run `20261126T101133Z` (the pre-run script reported a JSON parse failure on the triage output markdown; the pipeline checkpoint `triage_latest.json` parsed cleanly and was used directly).

@@ -2,7 +2,7 @@
 title: OpenRouter
 type: entity
 created: 2026-05-02
-updated: 2026-11-22
+updated: 2026-11-26
 tags:
   - entity
   - platform
@@ -80,6 +80,18 @@ Source: [[raw/articles/2026-06-12_openrouter-fusion-api-multi-model-synthesis]]
 ## Market Position
 
 OpenRouter occupies a unique position in the LLM infrastructure stack — it is provider-agnostic, enabling users to benchmark and switch between models fluidly. This neutrality made its data uniquely valuable for the State of AI study, as it captures multi-provider usage patterns rather than single-provider data.
+
+## Competitive pressure from discount-token resellers (November 2026)
+
+Moat (Command Code, "Your OpenRouter Replacement", HN 99 pts, 2026-11-26) is the visible instance of a
+membership-fee reseller layer selling discounted tokens (~70% off DeepSeek). The thread's market read:
+"there's thousands of these discounted offerings now ... lots of discounted token shops selling unused
+token allocations for 80% off" (fedupnow), and price is not even the axis buyers keep — one tester
+returned to direct DeepSeek API pricing because reseller throughput was inconsistent (jochem9).
+
+The trust counter-argument is the one that matters for agent workloads: "with tool calling, it's
+basically full access to my machine. Will we see attacks where an infected/evil router injects malicious
+tool calls?" (resonious). See [[concepts/discount-token-reseller-router-trust]].
 
 ## Related
 
