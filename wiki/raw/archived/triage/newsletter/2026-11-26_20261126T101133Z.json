@@ -1,0 +1,68 @@
+{
+  "archived_at": "2026-11-26T10:38:06.236206+00:00",
+  "triage_run_id": "20261126T101133Z",
+  "source": "newsletter",
+  "summary_ja": "ニュースレター3通（36候補）をトリアージ。SemiAnalysis「Evaluating Recent Model Releases on GDPx」を1件のtake（既存 concepts/semianalysis-gdpx.md の正式版データへの更新＋openai-astra/gemini-4-neon/fable-5/qwen-4-max/kimi-k3等への反映）として採否。beehiiv送信15時間後の全20リンクはトークン期限切れ403で本文到達不能——inbox summary topicは既存のOpenAI数学ペーパーページ群でカバー済みのため全件skip。AI Weekly（True Positive Weekly）のLambda GPUクレジット告知は本文2段落の販促メールのためskip。",
+  "decisions": [
+    {
+      "item_id": "<20261126000535.3.57e3c220d13ab9a0@mg-d1.substack.com>-2",
+      "source": "newsletter",
+      "source_name": "SemiAnalysis",
+      "title": "Evaluating Recent Model Releases on GDPx (app-link duplicate)",
+      "url": "https://newsletter.semianalysis.com/p/evaluating-recent-model-releases",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-26-evaluating-recent-model-releases-on-gdpx.md",
+      "recommended_action": "reference",
+      "reason_ja": "★★★☆☆ 同一記事の重複リンク。app-link/open.substack.com/redirect系は全て post_id=226576253 の同一GDPx記事、または@mlkan/@megalaa/@adamholter/@semianalysisの著者プロフィール、like/comment/share、read-in-app、UUIDトラッキング（メールセッション認証必須で解決不可）。実体コンテンツはtake項目1件に集約済み。",
+      "candidate_wiki_path": "concepts/semianalysis-gdpx.md",
+      "body_excerpt": "# Newsletter Digest - 2026-11-26\n**Subject:** Evaluating Recent Model Releases on GDPx\n**Collected:** 2026-11-26T10:11:25.629530+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9uZXdzbGV0dGVyLnNlbWlhbmFseXNpcy5jb20vc3Vic2NyaWJlP3V0bV9zb3VyY2U9ZW1"
+    },
+    {
+      "item_id": "<20261125202924.3.545054bbb9945138@mg-d1.substack.com>-3",
+      "source": "newsletter",
+      "source_name": "AI Weekly (True Positive Weekly, pub_id=61455, @aiweekly)",
+      "title": "The Lambda GPU credits for buyers of my new book",
+      "url": "https://open.substack.com/pub/aiweekly/p/the-lambda-gpu-credits-for-buyers",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-25-the-lambda-gpu-credits-for-buyers-of-my-new-book.md",
+      "recommended_action": "skip",
+      "reason_ja": "★☆☆☆☆ 非Wiki相当。本文を実取得して確認（<article>内2段落のみ）：Andriy Burkovの新刊「The Hundred-Page Deep Reinforcement Learning Book」購入者向けLambda GPUクレジット申込メールの宛先変更告知（author@thedrlbook.com / hello@truepositive.ca へ再送依頼）のみ。技術的内容ゼロ。13リンクは全てSubstack chrome（like/comment/share/@aiweekly/read-in-app/OAuth redirect/UUID redirect）。inbox summaryのlow分類と一致。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "# Newsletter Digest - 2026-11-25\n**Subject:** The Lambda GPU credits for buyers of my new book\n**Collected:** 2026-11-26T10:11:17.172455+00:00\n**Articles linked:** 13\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9haXdlZWtseS5zdWJzdGFjay5jb20vc3Vic2NyaWJlP3V0bV9zb3VyY2U9ZW1"
+    },
+    {
+      "item_id": "<20261125.191341.c1cacfe5@mta24>-1",
+      "source": "newsletter",
+      "source_name": "beehiiv AI newsletter (uid=942) — OpenAI strikes back with nine new math papers",
+      "title": "Link 1 (beehiiv v2/c tracking)",
+      "url": "https://link.mail.beehiiv.com/v2/c/f9025612fb08adb2712545112a626d9678e361231e3f5cf1effe055c01867bcc3ab72eef862c500441299cacbcf27d1586a9daf427585cc681e752c16f44d2f7a6dbe99e2fa25e4fa5f12cafe5ce49f6e1fe38807bf8b8b8cb147cbf154b1c678edf3da351076f469db129dd68bc3002a7469f3ecec542fec8a11de39f5d17691747270b0f31949e3426456cba016adf24409a7418e301d0467976fe2383f7e8/05dfb1fbc64ada5f",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-25-openai-strikes-back-with-nine-new-math-papers.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 本文到達不能（beehiiv v2/c トークン期限切れ：20/20リンク全てHTTP 403をcurlで確認、送信15時間後）。inbox summaryのtopic分類（OpenAIが9本の数学ペーパーで反撃＝11-23のClaude数学成果への対抗）は、既存 concepts/openai-math-preprint-race.md（2026-11-25作成：行列累乗指数 omega=9/4、VP≠VNP優先権紛争、Alpoge-Riemann/Claude、erdos-unit-distance、Jacobian反例）で詳細カバー済み。web searchツールがcronプロファイルに無いため新規事実の検証不能——take強制を避け、11-23「math's biggest problem solved with Claude's help」と並びの.manual follow-up候補としてアーカイブ。",
+      "candidate_wiki_path": "concepts/openai-math-preprint-race.md",
+      "body_excerpt": "# Newsletter Digest - 2026-11-25\n**Subject:** OpenAI strikes back with nine new math papers\n**Collected:** 2026-11-26T10:11:10.694096+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v2/c/f9025612fb08adb2712545112a626d9678e361231e3f5cf1effe055c01867bcc3ab72eef862c500"
+    },
+    {
+      "item_id": "<20261125.191341.c1cacfe5@mta24>-2",
+      "source": "newsletter",
+      "source_name": "beehiiv AI newsletter (uid=942) — OpenAI strikes back with nine new math papers",
+      "title": "Link 2 (beehiiv v2/c tracking)",
+      "url": "https://link.mail.beehiiv.com/v2/c/db4d4b7ef79b2c0f1b7ed6f59d2b9b19bda1b9c3a46604d0580c3266afb239f8b3521f2dca84c24761555755d45817696f4e020d63f9c3e90d15bf4233a70b419b83799dab2ea5b45fa5e596946838e7c0acffba9ec58fc1f8fff6e281ba824cb8bc5640a6c5d601c53a46ada2c970af3b8078dba8dc5ed537a1a27e966eaf652ab5522e691c9a61d5d89650cc16ca1b24ebe9b431649169d768c05e8d38b31a/df19e00cb0b2631e",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-25-openai-strikes-back-with-nine-new-math-papers.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 本文到達不能（beehiiv v2/c トークン期限切れ：20/20リンク全てHTTP 403をcurlで確認、送信15時間後）。inbox summaryのtopic分類（OpenAIが9本の数学ペーパーで反撃＝11-23のClaude数学成果への対抗）は、既存 concepts/openai-math-preprint-race.md（2026-11-25作成：行列累乗指数 omega=9/4、VP≠VNP優先権紛争、Alpoge-Riemann/Claude、erdos-unit-distance、Jacobian反例）で詳細カバー済み。web searchツールがcronプロファイルに無いため新規事実の検証不能——take強制を避け、11-23「math's biggest problem solved with Claude's help」と並びの.manual follow-up候補としてアーカイブ。",
+      "candidate_wiki_path": "concepts/openai-math-preprint-race.md",
+      "body_excerpt": "# Newsletter Digest - 2026-11-25\n**Subject:** OpenAI strikes back with nine new math papers\n**Collected:** 2026-11-26T10:11:10.694096+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v2/c/f9025612fb08adb2712545112a626d9678e361231e3f5cf1effe055c01867bcc3ab72eef862c500"
+    },
+    {
+      "item_id": "<20261125.191341.c1cacfe5@mta24>-3",
+      "source": "newsletter",
+      "source_name": "beehiiv AI newsletter (uid=942) — OpenAI strikes back with nine new math papers",
+      "title": "Link 3 (beehiiv v2/c tracking)",
+      "url": "https://link.mail.beehiiv.com/v2/c/c2fd500f81e6d29663f2b1fa94048b84aa06196136ba62d8a51b4e3f17724914506442747be1389dd1eadb83c7a954be3050ee867a6159409fa0c604b8434bf5f16c7a42d51d2bc32e3f513846e43e8668648378221143e0467c21527cab699000255b8a4c5552a4528b1f8b876c546b02f90968e4fa01926f0290e3752cbf3a20ff2451da88d6e1962d25a5af33a441700827ec6f09e9d66c46156986c1e49b/7c50dbf755f47350",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-25-openai-strikes-back-with-nine-new-math-papers.md",
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 本文到達不能（beehiiv v2/c トークン期限切れ：20/20リンク全てHTTP 403をcurlで確認、送信15時間後）。inbox summaryのtopic分類（OpenAIが9本の数学ペーパーで反撃＝11-23のClaude数学成果への対抗）は、既存 concepts/openai-math-preprint-race.md（2026-11-25作成：行列累乗指数 omega=9/4、VP≠VNP優先権紛争、Alpoge-Riemann/Claude、erdos-unit-distance、Jacobian反例）で詳細カバー済み。web searchツールがcronプロファイルに無いため新規事実の検証不能——take強制を避け、11-23「math's biggest problem solved with Claude's help」と並びの.manual follow-up候補としてアーカイブ。",
+      "candidate_wiki_path": "concepts/openai-math-preprint-race.md",
+      "body_excerpt": "# Newsletter Digest - 2026-11-25\n**Subject:** OpenAI strikes back with nine new math papers\n**Collected:** 2026-11-26T10:11:10.694096+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://link.mail.beehiiv.com/v2/c/f9025612fb08adb2712545112a626d9678e361231e3f5cf1effe055c01867bcc3ab72eef862c500"
+    }
+  ]
+}
