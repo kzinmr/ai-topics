@@ -3,6 +3,20 @@
 _Log of all wiki changes. Newest entries at top._
 
 
+## [2026-11-26 18:10 UTC] dreaming-group | Pattern E triage — 1 take + 5 references, 3 batch skips
+
+**Context**: Checkpoint pool empty (total_articles=0, 240 recent raws) → Pattern E filesystem scan + archive-index URL-absence probe (32 never-archived files).
+
+**Duplicate check**: Today's adjacent jobs already processed most content — trending-topics 12:00 UTC (complexity-theory wave, Cogentic factoring, token-reseller trust, model provenance forensics: 4 pages), newsletter-wiki-ingest (SemiAnalysis GDPx), blog-triage (6 takes / 5 refs), manual ingest (Uber agent-skill fleet 1M invocations/month), hot-post morning (Warp factory-as-code 3-gate draft).
+
+**Triage output** (`cron/data/dreaming/triage_latest.json`, run 20261126T180047Z):
+- **Take (★★★★☆)**: Together AI Hurdle open-sourced agent-eval npm library (zero wiki mentions; `concepts/evaluation/hurdle-agent-evals.md` candidate; code checks + guards + npx hurdle init).
+- **References**: Together Kimi-K3.1-Pro→Qwen3.8-27B Lao distillation ($260, 93% teacher chrF++, Thai-forgetting failure mode) → entities/together-ai.md; ElevenLabs GraphRAG explainer → entities/elevenlabs.md; Martin Alderson "Has the Jevons paradox broken down?" (zero Jevons mentions on entity page) → entities/martin-alderson.md; Nesbitt This Week in Source Control Nov 25 → entities/andrew-nesbitt.md; Simon Willison Aaronson quote-post → entities/simon-willison.md.
+- **Batch skips (archived for dedup)**: politics/retro/math/book-review batch (cnbc/electrek/BI Trump-Huang-Musk, dfarq, oldvcr, johndcook ×6, shkspr ×2, oldnewthing ×3, etc.); pluralistic.net Nov 24-25 (non-AI-core Doctorow essays); Harvey force-majeure (already covered at entities/harvey.md L220), ElevenLabs SIP-trunking/government marketing, 1Password incident (non-AI), NYT Photoshop, parallel-web stub.
+
+**Archive**: 5 new URLs archived, 0 dedup-skipped, total_archive_urls=3438.
+
+
 ## [2026-11-26 17:35 UTC] watchdog | auto-fix — clean run, 2 report-only alerts
 
 **Auto-fixed**: 0 (index.md clean via validate_index.py, exit 0; pipe/line-number/triple-bracket/space-prefix corruption all 0; log.md H1 intact at line 1, 306 entries; no uncommitted wiki/ changes).
@@ -117,7 +131,6 @@ Enriched 4 `status: stub` concept pages that still carried the `> **TODO**: Enri
 Also: added reverse links to [[concepts/computer-using-agent]] (`[[concepts/signal]]`, `[[concepts/formal-methods]]`). Removed `status: stub` + TODO from all 4; all now have full frontmatter (`type: concept`, `updated: 2026-11-25`, SCHEMA-compliant tags, `sources`, `related`). Verified zero broken wikilinks across the 4 new pages (programmatic `[[]]` resolution against the tree). `index.md` descriptions upgraded in place for all 4 (no new entries — all already indexed; page count unchanged, no renumbering).
 
 **Backlog note for future runs**: the remaining `concepts/` stub queue is dominated by 25-line crawl-derived auto-generated pages (~400–700 bytes) whose titles are hyphenated keyword strings (e.g. `observability-monitoring-tracing-opentelemetry-llm-agents-debugging`, `agentic-engineering-cognition-devin-multi-agents-orchestration`, `serialization-structured-output-schema-generation-python-pydantic`). These are likely **duplicate fragments of existing canonical concepts** rather than genuinely new concepts — enriching them in place risks creating near-duplicates of `observability`, `dspy`, `structured-outputs` etc. Recommended next step is a dedup/triage pass (merge into canonical pages + redirect) rather than one-by-one enrichment.
-
 
 
 ## [2026-11-25 18:10 UTC] dreaming-group | Pattern E triage — 1 take + 4 references, 13 skips

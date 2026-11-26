@@ -547,6 +547,7 @@
     "https://elevenlabs.io/blog/webinar-recap-learnings-from-deploying-ai-in-healthcare",
     "https://elevenlabs.io/blog/what-is-ai-calling",
     "https://elevenlabs.io/blog/what-is-an-ai-voice-agent",
+    "https://elevenlabs.io/blog/what-is-graphrag",
     "https://elevenlabs.io/blog/what-is-multilingual-transcription",
     "https://elevenlabs.io/blog/what-is-sip-trunking",
     "https://elevenlabs.io/blog/what-is-speaker-diarization",
@@ -1249,6 +1250,7 @@
     "https://manifest.build/blog/why-we-deprecated-our-llm-router/",
     "https://martinalderson.com/posts/built-for-turbulence-podcast/?utm_source=rss&utm_medium=rss&utm_campaign=feed",
     "https://martinalderson.com/posts/expert-aware-quantisation/",
+    "https://martinalderson.com/posts/has-jevons-paradox-broken-down/",
     "https://martinalderson.com/posts/interesting-systemd-features/",
     "https://martinalderson.com/posts/is-datacentre-sovereignty-really-that-important/",
     "https://martinalderson.com/posts/speed-vs-intelligence/",
@@ -1383,6 +1385,7 @@
     "https://nesbitt.io/2026/08/13/supplier-security-questionnaire.html",
     "https://nesbitt.io/2026/08/14/how-this-blog-is-built.html",
     "https://nesbitt.io/2026/08/15/this-week-in-package-management.html",
+    "https://nesbitt.io/2026/11/25/this-week-in-source-control.html",
     "https://news.aakashg.com/agent-safety-separation-of-duties",
     "https://news.gallup.com/poll/709772/americans-oppose-data-centers-area.aspx",
     "https://news.smol.ai/",
@@ -2199,6 +2202,7 @@
     "https://simonwillison.net/2026/Nov/24/datasette-charts/",
     "https://simonwillison.net/2026/Nov/24/llm-inflection-points/",
     "https://simonwillison.net/2026/Nov/25/datasette-charts/",
+    "https://simonwillison.net/2026/Nov/25/scott-aaronson/",
     "https://simonwillison.net/2026/Nov/26/sqlite3-rsync/",
     "https://simonwillison.net/2026/Nov/3/llm/",
     "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
@@ -3234,6 +3238,7 @@
     "https://www.together.ai/blog/autoscaling-endpoints-for-llm-inference",
     "https://www.together.ai/blog/deepseek-v4-pro-0813-vs-gpt-5-6-sol-on-deepswe-cost-coding-and-routing",
     "https://www.together.ai/blog/deploy-and-inference-any-model-from-huggingface",
+    "https://www.together.ai/blog/distilling-kimi-into-qwen",
     "https://www.together.ai/blog/how-together-ai-built-the-worlds-fastest-speech-to-text-stack",
     "https://www.together.ai/blog/iso-27001-2022-certification",
     "https://www.together.ai/blog/kimi-k3-guide",
@@ -3434,5 +3439,5 @@
     "substack.com/ui-wrapper (Link 8)",
     "substack.com/ui-wrapper (Link 9)"
   ],
-  "updated": "2026-11-26T10:38:06.236975+00:00"
+  "updated": "2026-11-26T18:17:07.531753+00:00"
 }

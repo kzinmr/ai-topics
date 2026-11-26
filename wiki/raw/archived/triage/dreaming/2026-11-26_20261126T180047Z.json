@@ -1,0 +1,104 @@
+{
+  "archived_at": "2026-11-26T18:17:07.530986+00:00",
+  "triage_run_id": "20261126T180047Z",
+  "source": "dreaming",
+  "summary_ja": "dreaming checkpoint の候補プールは空（total_articles=0）だったが on-disk raw が240件あり Pattern E を発動。archive_index.json の URL 欠損テストで32件の未トリアージファイルを特定。adjacent ジョブ（trending-topics 12:00 UTC の complexity-theory/Cogentic/token-reseller/provenance 4テイク、newsletter-wiki-ingest の SemiAnalysis GDPx、blog-triage 6テイク5レフ、Uber agent-skill fleet manual ingest、hot-post Warp factory）で大半は既に処理済み。残った genuine gap は2テイク相当（Together AI の Hurdle オープンソース eval ライブラリ — wiki 全体でゼロ言及、Kimi-K3.1-Pro→Qwen3.8-27B Lao 蒸留 — on-policy ではない SFT 蒸留の具体的ケーススタディ）と4レファレンス（ElevenLabs GraphRAG 解説、Martin Alderson Jevons 崩壊論、Nesbitt This Week in Source Control、Aaronson 記事の相互参照）。政治・数学・レトロ・純マーケティング系はバッチスキップ。",
+  "decisions": [
+    {
+      "item_id": "dreaming-ref-together-kimi-distill",
+      "source": "dreaming",
+      "source_name": "dreaming-filesystem-scan",
+      "title": "Together AI: Distilling Kimi-K3.1-Pro into Qwen3.8-27B — teaching a model a new language (Lao)",
+      "url": "https://www.together.ai/blog/distilling-kimi-into-qwen",
+      "raw_path": "raw/articles/together.ai--blog-distilling-kimi-into-qwen--1b8e965c.md",
+      "recommended_action": "reference",
+      "reason_ja": "**** entities/together-ai.md と concepts/model-distillation.md に未収録の具体的ケーススタディ：Qwen3.8-27B がラオ語翻訳で FLORES-200 chrF++ 5.5（出力の89%がタイ文字）という jagged intelligence を示す一方 Kimi-K3.1-Pro は 47.5。Kimi 翻訳3,800件での SFT 蒸留により学生モデルは 44.3（教師の93%）に到達し、タイ語能力も維持。当初の試みは25ステップでラオ語は直ったがタイ語を喪失（catastrophic forgetting の実例）。全実験コスト $260。蒸留の失敗モードとデータ量設計の実測値として wiki に価値あり。",
+      "candidate_wiki_path": "entities/together-ai.md",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-ref-elevenlabs-graphrag",
+      "source": "dreaming",
+      "source_name": "dreaming-filesystem-scan",
+      "title": "ElevenLabs: What is GraphRAG? (explainer)",
+      "url": "https://elevenlabs.io/blog/what-is-graphrag",
+      "raw_path": "raw/articles/2026-11-26_elevenlabs_what-is-graphrag.md",
+      "recommended_action": "reference",
+      "reason_ja": "*** entities/elevenlabs.md に GraphRAG 解説記事への言及なし（grep 0件）。wiki には concepts/agentic-alternative-to-graphrag.md, concepts/graph-db-overengineering-rag.md, concepts/rag-systems.md など GraphRAG 周辺ページが既に厚く、解説記事自体の概念的新規性は低い。音声 AI ベンダーが GraphRAG をコンテンツマーケ対象にしている事実（RAG 周縁の商業的定着）の補足として elevenlabs ページの sources 追加に留めるのが妥当。",
+      "candidate_wiki_path": "entities/elevenlabs.md",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-ref-alderson-jevons",
+      "source": "dreaming",
+      "source_name": "dreaming-filesystem-scan",
+      "title": "Martin Alderson: Has the Jevons paradox broken down?",
+      "url": "https://martinalderson.com/posts/has-jevons-paradox-broken-down/",
+      "raw_path": "raw/articles/martinalderson.com--posts-has-jevons-paradox-broken-down--7137dd27.md",
+      "recommended_action": "reference",
+      "reason_ja": "**** entities/martin-alderson.md には 'Two graphs' (METR extrapolation + Remote Labour Index, Nov 23) 節が最新であるが Jevons paradox に関する節はゼロ（grep 0件）。Alderson は Jevons 楽観論の論客であり、本人が「崩壊の兆候」を検証する記事は反対論点の一次資料。既存の concepts/ai-economics.md / llm-price-collapse-2026.md の Jevons 言及とも相互参照可能。.entity ページへの新節追加が proper。",
+      "candidate_wiki_path": "entities/martin-alderson.md",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-ref-nesbitt-source-control",
+      "source": "dreaming",
+      "source_name": "dreaming-filesystem-scan",
+      "title": "Andrew Nesbitt: This Week in Source Control (Nov 25, 2026)",
+      "url": "https://nesbitt.io/2026/11/25/this-week-in-source-control.html",
+      "raw_path": "raw/articles/nesbitt.io--2026-11-25-this-week-in-source-control-html--f7f9521e.md",
+      "recommended_action": "reference",
+      "reason_ja": "*** entities/andrew-nesbitt.md は This Week in Package Management の Nov 21 版まで収録済みで、水曜版の This Week in Source Control ラウンドアップは「言及あり本文なし」状態（L583, L600 に存在自体は記載）。今週の SCM/forge ニュースから AI-agent・supply-chain 関連アイテムを抽出して entity ページに追記する reference enrichment。",
+      "candidate_wiki_path": "entities/andrew-nesbitt.md",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-ref-aaronson-quote-post",
+      "source": "dreaming",
+      "source_name": "dreaming-filesystem-scan",
+      "title": "Simon Willison quote post linking Scott Aaronson 'Holy shit: the magnitude of what is happening' (+ Aaronson original on disk)",
+      "url": "https://simonwillison.net/2026/Nov/25/scott-aaronson/",
+      "raw_path": "raw/articles/simonwillison.net--2026-nov-25-scott-aaronson--63606840.md",
+      "recommended_action": "reference",
+      "reason_ja": "*** Aaronson 本人の記事 (2026-11-25_scottaaronson_holy-shit-magnitude-of-what-is-happening.md) は trending-topics の 12:00 ランで処理済みか未チェックの可能性あり。Simon Willison 側の quote post (63606840) は archive 欠損リストにあり untriaged。entities/simon-willison.md と concepts/physical-superintelligence-aaronson-ambainis.md / entities/scott-aaronson 系の相互参照として、Willison がAaronson の AI 規模論を引用した事実をどちらかの entity に一行追記する軽 reference。downstream は Aaronson 側本文の wiki カバレッジを確認してから適用可否を判定すること。",
+      "candidate_wiki_path": "entities/simon-willison.md",
+      "body_excerpt": ""
+    },
+    {
+      "item_id": "dreaming-skip-politics-retro-math-batch",
+      "source": "dreaming",
+      "source_name": "dreaming-filesystem-scan",
+      "title": "Batch skip: politics/celebrity-tech, retro-computing, math, book reviews (Nov 23-26 raws never archived)",
+      "url": "",
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "* AI/LLM/エージェント関連性なしのためバッチスキップしアーカイブして dedup 確保。対象: cnbc trump-jensen-huang、electrek trump-musk、businessinsider jensen-huang apology、dfarq AOL-Netscape/Atari Jaguar、oldvcr blogger lightbox、coredump pinwheel calculators、johndcook 数学×6（polynomials-planets/hadwiger/primes/password-joke/projective-spaces/spheroid-gravity）、shkspr Slow Gods書評/Virgin Media、experimental-history 執筆論、xania advent、engadget iPhone 18e、jeffgeerling ansible、devblogs oldnewthing×3、finalist iphone-duo-planner、entropicthoughts DIY meta-analysis。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "（バッチスキップ — 個別本文は frontmatter/title から非AI判定済み）"
+    },
+    {
+      "item_id": "dreaming-skip-pluralistic-batch",
+      "source": "dreaming",
+      "source_name": "dreaming-filesystem-scan",
+      "title": "Batch skip: Cory Doctorow pluralistic.net essays (Nov 24-25, no AI-core content)",
+      "url": "",
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "* entities/pluralistic-net.md は定期運用済み。'Empire State Strikes Back' (11/25) と 'Move Fast, Break Kings' (11/24) は enshittification/technology-policy 論で、AI/LLM/エージェントのコア概念追加がないためスキップ（Doctorow の AI 関連エッセイのみ entity ページに蓄積する既存方針）。archive 欠損リストからの dedup 目的で記録。",
+      "candidate_wiki_path": "entities/pluralistic-net.md",
+      "body_excerpt": "（Cory Doctorow テクノロジー政策エッセイ — AIコア該当なし）"
+    },
+    {
+      "item_id": "dreaming-skip-harvey-elevenlabs-marketing",
+      "source": "dreaming",
+      "source_name": "dreaming-filesystem-scan",
+      "title": "Batch skip: Harvey force-majeure explainer, ElevenLabs SIP trunking / government marketing, 1Password incident, NYT Photoshop, holiday-deals stub",
+      "url": "",
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "* Harvey force-majeure-clause 記事は entities/harvey.md L220 に force majeure provisions エージェント活用の具体例が既に収録済み（本文ゲップ一致・新規性なし）。ElevenLabs 'fixing front door government' と 'what-is-sip-trunking'（SIP 用語解説）はマーケティング/用語解説。1password nov-2026 security incident update は非AIセキュリティ。theverge NYT photographers Photoshop AI は消費者写真ツール。parallel-web holiday-deals は 481B スタブ。すべて skip。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "（Harvey force majeure は entities/harvey.md L220 にカバー済み確認済み）"
+    }
+  ]
+}
