@@ -3810,3 +3810,9 @@ research-grade pages from genuinely uncovered material:
 - Topic: coding agents on obsolete/exotic hardware trio (ClawDOS 8088, FPGA inference chip, Galaxy Tab S3)
 - Sources: [[concepts/coding-agents-on-obsolete-hardware]], [[concepts/modest-success-software-boom]], [[entities/jayden-milne]], [[concepts/agent-skills]], [[concepts/code-review-bottleneck]], [[concepts/ai-engineering-dekilling]], [[concepts/scaffold-vs-rl-debate]]
 - Checks: NO_SLOP_FOUND, zero wikilink MISS, NO_TYPO
+
+## 2026-11-26 09:30 JST — hot-post (morning 09:30 slot)
+- Draft: inbox/trending-reports/hot-post-2026-11-26-0930.md
+- Topic: Warp "software factory as code" (Ben Holmes, 2026-11-24) — blueprint YAML, triage+spec gate, computer-use verification, merge-risk 5-category skill
+- Sources: [[concepts/warp-factories]], [[concepts/dark-factory-software-factory]], [[concepts/spec-driven-development]], [[concepts/computer-using-agent]], [[concepts/code-review-bottleneck]], [[concepts/agent-slop]], [[concepts/self-evolving-agents]], [[concepts/coding-agents/lint-rules-as-agent-feedback-loop]], [[concepts/coding-agents/code-review-agents]], [[entities/micahflee]], raw: 2026-11-25_warp_program-software-factory-as-code + 2026-06-03_hornet_agent-queries-cost-more-to-serve
+- Checks: NO_SLOP_FOUND, zero wikilink MISS (alias-stripped check), NO_TYPO
