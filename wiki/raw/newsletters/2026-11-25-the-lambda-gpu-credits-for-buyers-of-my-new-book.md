@@ -1,0 +1,66 @@
+---
+title: "The Lambda GPU credits for buyers of my new book"
+date: 2026-11-25
+processed_at: 2026-11-26T10:11:17.172449+00:00
+source_label: "uid=943"
+tags: [newsletter, raw]
+---
+
+# Newsletter Digest - 2026-11-25
+
+**Subject:** The Lambda GPU credits for buyers of my new book
+**Collected:** 2026-11-26T10:11:17.172455+00:00
+**Articles linked:** 13
+
+## 1. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9haXdlZWtseS5zdWJzdGFjay5jb20vc3Vic2NyaWJlP3V0bV9zb3VyY2U9ZW1haWwmdXRtX2NhbXBhaWduPWVtYWlsLXN1YnNjcmliZSZyPTJmbHg2Jm5leHQ9aHR0cHMlM0ElMkYlMkZhaXdlZWtseS5zdWJzdGFjay5jb20lMkZwJTJGdGhlLWxhbWJkYS1ncHUtY3JlZGl0cy1mb3ItYnV5ZXJzIiwicCI6MjI2NTYwMjg2LCJzIjo2MTQ1NSwiZiI6dHJ1ZSwidSI6NDA4NzQ4MiwiaWF0IjoxNzk1NjM4NTc3LCJleHAiOjIxMTEyMTQ1NzcsImlzcyI6InB1Yi0wIiwic3ViIjoibGluay1yZWRpcmVjdCJ9.8oaHuZ0dmbvRzH2TAwFsUilJn5fzAqPHfEdEwar-HYQ?
+
+## 2. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9haXdlZWtseS5zdWJzdGFjay5jb20vcC90aGUtbGFtYmRhLWdwdS1jcmVkaXRzLWZvci1idXllcnM_dXRtX2NhbXBhaWduPWVtYWlsLWhhbGYtcG9zdCZyPTJmbHg2JnRva2VuPWV5SjFjMlZ5WDJsa0lqbzBNRGczTkRneUxDSndiM04wWDJsa0lqb3lNalkxTmpBeU9EWXNJbWxoZENJNk1UYzVOVFl6T0RVM055d2laWGh3SWpveE56azRNak13TlRjM0xDSnBjM01pT2lKd2RXSXROakUwTlRVaUxDSnpkV0lpT2lKd2IzTjBMWEpsWVdOMGFXOXVJbjAuejI4NlRYdzk3QTkzUGRMOU8tZnE4NG9mUU1TQjlKRFRuMWktT01PamdQUSIsInAiOjIyNjU2MDI4NiwicyI6NjE0NTUsImYiOnRydWUsInUiOjQwODc0ODIsImlhdCI6MTc5NTYzODU3NywiZXhwIjoyMTExMjE0NTc3LCJpc3MiOiJwdWItMCIsInN1YiI6ImxpbmstcmVkaXJlY3QifQ.dkzfsSQ7FLveYuw24o6VXHdrjR8aLzm4VHERBuItoI8?
+
+## 3. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=61455&post_id=226560286&utm_source=post-email-title&utm_campaign=email-post-title&isFreemail=true&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMjY1NjAyODYsImlhdCI6MTc5NTYzODU3NywiZXhwIjoxNzk4MjMwNTc3LCJpc3MiOiJwdWItNjE0NTUiLCJzdWIiOiJwb3N0LXJlYWN0aW9uIn0.z286TXw97A93PdL9O-fq84ofQMSB9JDTn1i-OMOjgPQ
+
+## 4. Link
+
+- **URL:** https://substack.com/@aiweekly
+
+## 5. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=61455&post_id=226560286&utm_source=substack&isFreemail=true&submitLike=true&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMjY1NjAyODYsInJlYWN0aW9uIjoi4p2kIiwiaWF0IjoxNzk1NjM4NTc3LCJleHAiOjE3OTgyMzA1NzcsImlzcyI6InB1Yi02MTQ1NSIsInN1YiI6InJlYWN0aW9uIn0.zogQ6YnYKg7iPdRfpTjfNHUHIvynOwQSoZT0OO6ieMM&utm_medium=email&utm_campaign=email-reaction&r=2flx6
+
+## 6. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=61455&post_id=226560286&utm_source=substack&utm_medium=email&isFreemail=true&comments=true&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMjY1NjAyODYsImlhdCI6MTc5NTYzODU3NywiZXhwIjoxNzk4MjMwNTc3LCJpc3MiOiJwdWItNjE0NTUiLCJzdWIiOiJwb3N0LXJlYWN0aW9uIn0.z286TXw97A93PdL9O-fq84ofQMSB9JDTn1i-OMOjgPQ&r=2flx6&utm_campaign=email-half-magic-comments&action=post-comment&utm_source=substack&utm_medium=email
+
+## 7. Link
+
+- **URL:** https://substack.com/app-link/post?publication_id=61455&post_id=226560286&utm_source=substack&utm_medium=email&utm_content=share&utm_campaign=email-share&action=share&triggerShare=true&isFreemail=true&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMjY1NjAyODYsImlhdCI6MTc5NTYzODU3NywiZXhwIjoxNzk4MjMwNTc3LCJpc3MiOiJwdWItNjE0NTUiLCJzdWIiOiJwb3N0LXJlYWN0aW9uIn0.z286TXw97A93PdL9O-fq84ofQMSB9JDTn1i-OMOjgPQ
+
+## 8. Link
+
+- **URL:** https://open.substack.com/pub/aiweekly/p/the-lambda-gpu-credits-for-buyers?utm_source=substack&utm_medium=email&utm_campaign=email-restack-comment&action=restack-comment&r=2flx6&token=eyJ1c2VyX2lkIjo0MDg3NDgyLCJwb3N0X2lkIjoyMjY1NjAyODYsImlhdCI6MTc5NTYzODU3NywiZXhwIjoxNzk4MjMwNTc3LCJpc3MiOiJwdWItNjE0NTUiLCJzdWIiOiJwb3N0LXJlYWN0aW9uIn0.z286TXw97A93PdL9O-fq84ofQMSB9JDTn1i-OMOjgPQ&utm_source=substack&utm_medium=email
+
+## 9. Link
+
+- **URL:** https://open.substack.com/pub/aiweekly/p/the-lambda-gpu-credits-for-buyers?utm_source=email&redirect=app-store-no-desktop&inbox=true&utm_campaign=email-read-in-app
+
+## 10. Link
+
+- **URL:** https://substack.com/redirect/2d111726-33ca-487f-af73-a52e9352c219?j=eyJ1IjoiMmZseDYifQ.6O_iC1_GWCzChnbrHzSrs1hMpJpoODTUJm_FAk3tf6E
+
+## 11. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9haXdlZWtseS5zdWJzdGFjay5jb20vc3Vic2NyaWJlP3V0bV9zb3VyY2U9cG9zdCZ1dG1fY2FtcGFpZ249ZW1haWwtY2hlY2tvdXQmbmV4dD1odHRwcyUzQSUyRiUyRmFpd2Vla2x5LnN1YnN0YWNrLmNvbSUyRnAlMkZ0aGUtbGFtYmRhLWdwdS1jcmVkaXRzLWZvci1idXllcnMmcj0yZmx4NiZ0b2tlbj1leUoxYzJWeVgybGtJam8wTURnM05EZ3lMQ0pwWVhRaU9qRTNPVFUyTXpnMU56Y3NJbVY0Y0NJNk1UYzVPREl6TURVM055d2lhWE56SWpvaWNIVmlMVFl4TkRVMUlpd2ljM1ZpSWpvaVkyaGxZMnR2ZFhRaWZRLnhvNnhYM3FISW1BU2tPd3JuRThSNVlJSTJ4cUJzTWtWczVvRHF5ejFmTTgiLCJwIjoyMjY1NjAyODYsInMiOjYxNDU1LCJmIjp0cnVlLCJ1Ijo0MDg3NDgyLCJpYXQiOjE3OTU2Mzg1NzcsImV4cCI6MjExMTIxNDU3NywiaXNzIjoicHViLTAiLCJzdWIiOiJsaW5rLXJlZGlyZWN0In0._xEvellqOpTi5u_ncJCc09TOhb5lvqUOqFcIDtlrInE?&utm_source=substack&utm_medium=email&utm_content=postcta
+
+## 12. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9haXdlZWtseS5zdWJzdGFjay5jb20vYWN0aW9uL2Rpc2FibGVfZW1haWw_dG9rZW49ZXlKMWMyVnlYMmxrSWpvME1EZzNORGd5TENKd2IzTjBYMmxrSWpveU1qWTFOakF5T0RZc0ltbGhkQ0k2TVRjNU5UWXpPRFUzTnl3aVpYaHdJam94T0RJM01UYzBOVGMzTENKcGMzTWlPaUp3ZFdJdE5qRTBOVFVpTENKemRXSWlPaUprYVhOaFlteGxYMlZ0WVdsc0luMC5PR0p1b3lqbWQzb2t6Um1HbXRQa2loZDlZd2dBamFvdi1JOFhEZjF3c3ljIiwicCI6MjI2NTYwMjg2LCJzIjo2MTQ1NSwiZiI6dHJ1ZSwidSI6NDA4NzQ4MiwiaWF0IjoxNzk1NjM4NTc3LCJleHAiOjIxMTEyMTQ1NzcsImlzcyI6InB1Yi0wIiwic3ViIjoibGluay1yZWRpcmVjdCJ9.rp-KYUtgpE_ffuN8d36RCpyGOu1NuxZL8-uhAL1T6c8?
+
+## 13. Link
+
+- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9zdWJzdGFjay5jb20vc2lnbnVwP3V0bV9zb3VyY2U9c3Vic3RhY2smdXRtX21lZGl1bT1lbWFpbCZ1dG1fY29udGVudD1mb290ZXImdXRtX2NhbXBhaWduPWF1dG9maWxsZWQtZm9vdGVyJmZyZWVTaWdudXBFbWFpbD1remlubXIxMDlAZ21haWwuY29tJnI9MmZseDYiLCJwIjoyMjY1NjAyODYsInMiOjYxNDU1LCJmIjp0cnVlLCJ1Ijo0MDg3NDgyLCJpYXQiOjE3OTU2Mzg1NzcsImV4cCI6MjExMTIxNDU3NywiaXNzIjoicHViLTAiLCJzdWIiOiJsaW5rLXJlZGlyZWN0In0.mUs2jCHGCNLdnrdXHXS8twVeU_t6ZH70yWbeMemBULw?
+
