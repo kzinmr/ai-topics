@@ -1,7 +1,7 @@
 ---
 title: "Gemini 4 Neon"
 created: 2026-11-19
-updated: 2026-11-20
+updated: 2026-11-26
 type: concept
 tags: [google, deepmind, google-deepmind, model, multimodal, model-release, coding-agent, reasoning-model]
 related:
@@ -51,6 +51,12 @@ micjm modeled the Agent Duel leaderboard (model identity + speed + early-voting 
 
 - **Models Engineering Index (MEI)**: Gemini 4 Neon became **#1** (HN 50568130, 351 pts, Nov 19). HN reception split: indie indexes seen as less benchmaxxable (ummonk) vs long-running "Google models benchmaxed to hell" skepticism (js4ever) and high tokens/task + hallucination complaints (mjburgess); counterpoint — Artificial Analysis Omniscience measures the three Gemini 4 models at among the **lowest hallucination rates recorded** (applicative); several users report switching OpenAI subs to Google for Neon/Carbon (hadlock, etoxin: "switching all my opus 5.5 sub-agents to neon").
 - **micjm Opus 5.5-parity thesis** (HN 50554374, 255 pts): OpenRouter-measured speed + benchmark parity project Neon as an Opus 5.5 competitor at much lower price; Agent Duel data (agentduel.com) shows speed is decisive — DeepSeek-class speed "wins ~half the time because it's lightning fast and good enough" (seizethecheese).
+
+## SemiAnalysis GDPx verdict (November 26, 2026)
+
+SemiAnalysis's first GDPx leaderboard update ranks **Gemini 4 Carbon 5th (10.9%)** and **Gemini 4 Neon 6th (10.1%)** — behind GPT-6.2 Astra (19.3%), Fable 5.2 (16.4%) and GPT-6.2 Sol (11.5%) — concluding that "the GDPx results show Gemini is still decisively behind both Anthropic and OpenAI across virtually all frontier domains", with Google a "distant third" that nonetheless "deserves its own tier". Neon is the top model on biology, but SemiAnalysis attributes that to OpenAI/Anthropic refusing bio tasks more often rather than to capability (and found Neon's *cyber* classifiers stricter than other Google models').
+
+The most pointed claim is about Neon's popularity itself: SemiAnalysis argues the "model of the moment" reception "is largely due to model behavior and not intelligence — put simply, Neon is a pleasant model to talk to", its exclamation-mark-heavy cheerfulness explicitly compared to **GPT-4o**. This is a direct counterweight to the MEI #1 and Opus-5.5-parity readings above, though SemiAnalysis does concede the reverse on cost: Neon's run cost ($15,286) was inflated by Google's lagging prompt caching — 18–32% cheaper at Opus 5.5/Astra cache hit rates — and credits a same-day Google caching update (+4.5% cache hit) with already closing part of that gap. Full leaderboard, methodology and cost tables: [[concepts/semianalysis-gdpx]].
 
 ## Related
 

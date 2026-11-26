@@ -1047,7 +1047,7 @@
 - [[concepts/project-suncatcher]] — Project Suncatcher (Google orbital TPU moonshot) — Oct 30, 2026 'Hello World': first AI response from data-center-class TPU in orbit (Gemma 4 haiku, Svalbard downlink); thermal/radiation tests, twin satellites 2027
 - [[concepts/qwen-4-max]] — Qwen 4 Max — Alibaba frontier release Nov 16, 2026 (HN 594p); 2.4T MoE / 71B active, 1M ctx, closed (smaller open-weights to follow), Work360 claims (vendor); Together AI one-shot Tornado repo fix (652k tokens, 72s, $0.69); community flags serving speed (~30 tok/s) and 24-100GB VRAM dead zone
 - [[concepts/reasoning-as-pathfinding]] — Wang essay: test-time thinking as search amortized during RL training; challenges RSI-by-more-thinking assumptions
-- [[concepts/semianalysis-gdpx]] — SemiAnalysis GDPx — real professional tasks across 11 fields (chip design, law, finance); best model Opus 5.5 scored just 12% (Nov 2026)
+- [[concepts/semianalysis-gdpx]] — SemiAnalysis GDPx — 206 real professional tasks from 14 domain partners (gov/real-estate excluded); Nov 26 leaderboard: GPT-6.2 Astra 19.3% #1, Fable 5.2 16.4%, Gemini 4 Carbon 10.9%, Neon 10.1%, Qwen4-Max 7.44%; Fable 5.2 most expensive per task (Nov 2026)
 - [[concepts/skypilot-rack-scale-scheduling]] — NVL72/Grace Blackwell rack-local scheduling: InfiniBand fallback costs 43%; topology-aware placement + defrag claims 27% more usable GPUs
 - [[concepts/systemic-software-breakdown]] — Systemic Software Breakdown — Breck-McKye thesis that 2026 outage/exploit cluster (Microsoft 2-day outage, PHP2Shell, eMudhra, Shai Hulud) reflects broken software-production system, not bad luck; AI as cause and symptom
 - [[concepts/training]] — Training — hub for training-methodology pages (TRL under concepts/training/)

@@ -2,7 +2,7 @@
 title: "OpenAI Astra"
 type: entity
 created: 2026-08-03
-updated: 2026-11-25
+updated: 2026-11-26
 tags:
   - model
   - openai
@@ -201,6 +201,14 @@ The bigger cached-price cut ($1/M → $0.40/M) matters most for **long-running a
 **Official framing** (first-party, RSS-only capture): better professional outputs, coding, computer use, and efficiency at lower cost across ChatGPT Work, Codex, and the API; published 2026-11-17 17:45 GMT. Source: [[raw/articles/openai.com--index-introducing-gpt-6-2-astra-sol--b02ac3a3.md]] (openai.com returns 403 to scrapers → RSS abstract only).
 
 **Coverage note**: a grep of the whole wiki before this update found no GPT-6.2 entity beyond a passing mention in [[entities/ethan-mollick]]; neither this page nor [[entities/gpt-6-1-sol]] previously mentioned the 6.2 line. This section closes that gap as a dated release entry.
+
+### SemiAnalysis GDPx: #1 on professional tasks (November 26, 2026)
+
+SemiAnalysis's first GDPx leaderboard update since the Nov 1 launch put **GPT-6.2 Astra first overall at 19.3%** (6.2 Sol 11.5%), ahead of Claude Fable 5.2 (16.4%), Gemini 4 Carbon (10.9%) and Gemini 4 Neon (10.1%) — "OpenAI is the current king of GDPx", and OpenAI also "completely dominates the cost-performance Pareto frontier". With cyber/bio/alignment excluded and partial grading on legal/finance, Astra leads 32.2% vs Fable 5.2's 29.9%.
+
+Domain detail matters for how Astra should be read. It is strong exactly where reasoning is expensive (chip design, hardware, materials science, RSI 33.22% vs Fable 5.2's 24.13% — the RSI edge is attributed to Anthropic nerfing AI-research capability in public models), it is **the first model to clear 0% on legal** and is **SOTA on finance**, and it scores very high on alignment ("OpenAI's safety commitments post Hugging Face weren't just for show"). It also dropped base-model log-perplexity, OpenAI's disclosed proxy for pretraining intelligence. Against that, it is weak at **software engineering (half of Fable 5.2)** and qualitatively too literal — failing to infer intent or make reasonable assumptions.
+
+This is the quantitative counterpart to the mixed reception recorded above: X sentiment called it "the worst model OpenAI has ever released", and SemiAnalysis's conclusion is that the backlash tracks **behavior and SWE performance, not intelligence** — "the current negative sentiment around OpenAI's models is overblown... they just need to do a better job making their models pleasant to work with." Full numbers, methodology and cost tables: [[concepts/semianalysis-gdpx]].
 
 ## Claude Fable 5.2 launch offers (November 9, 2026)
 

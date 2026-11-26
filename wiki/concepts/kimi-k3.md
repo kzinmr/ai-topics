@@ -1,7 +1,7 @@
 ---
 title: "Moonshot Kimi K3"
 created: 2026-07-17
-updated: 2026-11-10
+updated: 2026-11-26
 type: concept
 tags:
   - model
@@ -587,6 +587,12 @@ Source: https://huggingface.co/moonshotai/Kimi-K3.1-Pro ; HN discussion mined 20
 ### Artificial Analysis positioning (Nov 9, 2026)
 
 Third-party reporting (AI by Aakash) records **Kimi K3.1 Pro as the best open-weights model on the Artificial Analysis Intelligence Index**, scoring **within 3 points of Claude Opus 5.5 at launch and at half the price**. Read against the same week's [[concepts/semianalysis-gdpx|GDPx]] result (best model 12% on real professional tasks), the open-weights frontier is closing the index gap while professional-work performance remains low across the board. Source: https://www.aibyaakash.com/p/spotifys-90-trick
+
+### SemiAnalysis GDPx: underperforms its AA index standing (November 26, 2026)
+
+SemiAnalysis's GDPx update is a direct challenge to the AA-index framing above. Kimi K3.1 Pro scores **materially worse on GDPx than on the Artificial Analysis Intelligence Index**, and SemiAnalysis attributes the divergence to **benchmaxxing**: K3.1 Pro is "unironically the number one model on Terminal Bench 4.1", which accounts for **10% of the AA index**, while GDPx shows it "clearly still lags Fable 5.2, Gemini 4 Neon, 6.2 Astra". This is the same saturated-benchmark critique GDPx is built around — Terminal Bench 4.0/4.1 is treated as no longer discriminating between frontier releases.
+
+K3.1 Pro also appears in GDPx's domain-specific cyber track as one of two **abliterated** models evaluated (from Boundless, alongside a DeepSeek v4.1 Flash variant); it scored **slightly worse than vanilla K3.1 Pro**, because the open-weight model never refused the cyber tasks in the first place — so abliteration bought nothing on this suite. Inference was provided by Modal. Full leaderboard and methodology: [[concepts/semianalysis-gdpx]].
 
 ## Related Pages
 

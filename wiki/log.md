@@ -2,6 +2,29 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-11-26 10:55 UTC] newsletter-wiki-ingest — SemiAnalysis GDPx official leaderboard (run 20261126T101133Z)
+
+Applied the single `take` from newsletter triage run `20261126T101133Z` (the pre-run script reported a JSON parse failure on the triage output markdown; the pipeline checkpoint `triage_latest.json` parsed cleanly and was used directly).
+
+**Take (★★★★☆ existing-page update)** — SemiAnalysis, "Evaluating Recent Model Releases on GDPx" (2026-11-26).
+
+- Full body recovered by direct curl of `newsletter.semianalysis.com` (44 `<p>` paragraphs; no paywall) and saved as a durable raw source: `raw/newsletters/2026-11-26-semianalysis-gdpx-full-body.md`. Every figure below was re-verified against that body, not the triage summary.
+- `concepts/semianalysis-gdpx.md` was 41 lines and recorded only the launch-day fact (Opus 5.5 = 12%). Grew to ~118 lines with `Methodology` (Nov 1 launch, 206 tasks / 14 data partners, gov + real estate deliberately excluded, difficulty headroom vs saturated Terminal Bench 4.0) and `Official results (Nov 26, 2026 update)`: main leaderboard (GPT-6.2 Astra 19.3% #1, Fable 5.2 16.4%, GPT-6.2 Sol 11.5%, Gemini 4 Carbon 10.9%, Neon 10.1%, Qwen4-Max 7.44%), classifier-excluded/partial-grading variant (Astra 32.2% vs Fable 5.2 29.9%), per-domain highlights, cost/token economics (Fable 5.2 $88 and 1.23M output tokens/task = 1.9x cost / 3.9x tokens of Astra for a lower score; materials science 21.8% vs 41.3%; finance 12x tokens = 6.6x cost; Neon run cost $15,286 vs $12,536/$10,403 at rival cache-hit rates, +4.5% same-day Google caching fix), perception-vs-measurement (X called Astra "the worst model OpenAI has ever released"; Neon's praise attributed to behavior not intelligence, likened to GPT-4o), ecosystem tiering (OpenAI/Anthropic tier 1, Google distant tier 2, Meta/SpaceX/Moonshot/Alibaba fighting for 4th; SemiAnalysis retracts its Gemini-demise call), Chinese cohort, and the domain-specific cyber track (Hinoki HO1, Boundless abliterations scoring worse than vanilla OSS). Frontmatter `updated`/`sources`, Related and Sources sections extended.
+- Dangling wikilinks repaired while editing: `[[concepts/ai-evals]]` → `[[concepts/evaluation/ai-evals]]`, `[[concepts/benchmark-integrity]]`/`[[concepts/benchmark-optimization]]` → `[[concepts/ai-benchmarks/benchmaxxing]]`, `[[entities/modal]]` de-linked (no such page).
+
+**References (5 sibling pages, dated entries + `updated` bump)** — each carries the model-specific slice plus a wikilink back to the GDPx page:
+
+1. `entities/openai-astra.md` — new `### SemiAnalysis GDPx` subsection under the GPT-6.2 section: #1 at 19.3%, first model above 0% on legal, finance SOTA, high alignment, RSI 33.22% vs Fable 5.2 24.13%, log-perplexity drop, and the "sentiment tracks behavior + SWE, not intelligence" rebuttal to the mixed-reception section already on the page.
+2. `concepts/gemini/gemini-4-neon.md` — Carbon 10.9% / Neon 10.1%, bio win attributed to rival refusals, "pleasant model, not smarter" GPT-4o comparison as counterweight to the MEI #1 and Opus-5.5-parity theses, plus the caching-cost concession.
+3. `concepts/claude/fable-5.md` — #2 at 16.4%, SWE 24.4% dominance, the 1.9x/3.9x cost finding, materials-science and finance cost collapses, and third-party corroboration of the page's existing RSI-suppression thesis.
+4. `concepts/qwen-4-max.md` — best Chinese model at 7.44%, "a little worse than Sonnet 5.5 but significantly cheaper", gains vs Qwen3.8 in SWE/RSI/cyber/bio, with the difficulty-scale caveat.
+5. `concepts/kimi-k3.md` — GDPx-vs-AA-index divergence explained by Terminal Bench 4.1 benchmaxxing (10% of the AA index), plus the abliteration result.
+6. `entities/semianalysis.md` — new Key Publications entry for the article (GDPx positioning vs GDPVal / Agent's Last Exam, both-leaderboards framing, contrarian reads).
+
+**Skips (5, archived)** — beehiiv uid=942 "OpenAI strikes back with nine new math papers" (all 20 tracking links HTTP 403, ~15h after send; topic already covered by `concepts/openai-math-preprint-race.md` + 2 related pages; body unreachable so no take permitted) and AI Weekly / True Positive Weekly "Lambda GPU credits" (2-paragraph book-promo notice, no technical content).
+
+`wiki/index.md` GDPx entry rewritten to carry the Nov 26 leaderboard. Triage JSON confirmed valid at `~/.hermes/cron/data/newsletter/triage_latest.json` (7 decisions: 1 take, 1 reference, 5 skip).
+
 ## [2026-11-25 22:30 UTC] ingest | x-accounts-scan: SPARSEUP-v2 release + 1 re-amplification
 
 Budget-limited run: 11/84 accounts scanned (cursor 55→66, 73 skipped on the 12-request budget — rotation, not errors; `with_errors: 0`). `source_posts: 0` but 5 new linked posts in `new_posts[]` (trusting the detail JSON). Clustered into 2 stories.

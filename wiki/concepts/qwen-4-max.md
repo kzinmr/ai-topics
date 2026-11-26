@@ -2,7 +2,7 @@
 title: "Qwen 4 Max"
 type: concept
 created: 2026-11-16
-updated: 2026-11-22
+updated: 2026-11-26
 tags:
   - model
   - qwen
@@ -55,6 +55,10 @@ Together AI's day-0 launch post ([raw](raw/articles/together.ai--blog-qwen4-max-
 ## Together AI one-shot repo test (Nov 2026)
 
 Together AI's launch demo is the most concrete capability evidence so far: the entire **Tornado** codebase (344 files, **652,519 tokens**) plus a symptom-only bug report in a single request — no tools, no retrieval. First token 54 s, complete patch at 72 s, ~69 cents at sale price ($1.05/$3.15 per 1M in/out; cached input $0.0525). The patch passed the maintainers' own two regression tests and the full 1,673-test suite, and the model independently cited `tornado/iostream.py`'s `BaseIOStream.write` as the in-repo precedent — the same code the maintainers cite in their actual fix. On Together AI the model is **streaming-only** (non-stream requests 400 with `streaming_required`). See [[entities/together-ai]] for full detail and pricing; caching mechanics at [[concepts/prompt-caching]].
+
+## SemiAnalysis GDPx (November 26, 2026)
+
+SemiAnalysis's first GDPx leaderboard update makes **Qwen4-Max the highest-scoring Chinese model at 7.44%** — versus GPT-6.2 Astra 19.3% and Fable 5.2 16.4% overall. The read is capability-per-dollar rather than headline capability: SemiAnalysis places it "a little worse than Claude Sonnet 5.5, though significantly cheaper", with its largest gains over Qwen3.8 in **software engineering, RSI, cyber, and bio**. GDPx deliberately excludes government and real-estate tasks and grades 206 tasks from 14 domain partners, so a sub-8% score is a difficulty-scale artifact (the benchmark's founding top score was 12%) rather than an absolute capability claim — see [[concepts/semianalysis-gdpx]] for the full leaderboard and the classifier-adjusted view.
 
 ## Why it matters
 

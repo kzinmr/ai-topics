@@ -2,7 +2,7 @@
 title: Claude Fable 5
 type: entity
 created: 2026-06-10
-updated: 2026-11-10
+updated: 2026-11-26
 tags:
   - model
   - claude-fable-5
@@ -574,6 +574,16 @@ numbers no longer match Opus 5.5's original announcement (minimaxir, HN). bhu8 l
 "Model 3" from the Nov 5 Anthropic R&D-acceleration report
 ([[concepts/ai-rd-acceleration-doubling]]). Reception was strongly positive on vibe-coding capability:
 "Fable 5.2 one-shotted my nephew's dream game" hit 418pts ([HN 50433659](https://news.ycombinator.com/item?id=50433659)).
+## SemiAnalysis GDPx: #2 overall, most expensive model (November 26, 2026)
+
+SemiAnalysis's first GDPx leaderboard update (206 professional tasks, 14 domain partners) places **Fable 5.2 second at 16.4%**, behind only GPT-6.2 Astra (19.3%), and ahead of Gemini 4 Carbon/Neon. Excluding the classifier-heavy cyber/bio/alignment domains and grading legal/finance partially, the gap nearly closes: **29.9% vs Astra's 32.2%**.
+
+Where Fable 5.2 wins: **chip design, software engineering, and quant trading**. Its SWE score (**24.4%**) nearly triples Opus 5.5 (8.9%) and beats the next-best GPT-6.2 Sol (15.6%) — a notable inversion, since SWE is the domain where Fable usually outruns Astra, which scores only about half as much. Partial-graded finance (53.6%) is effectively tied with Opus 5.5 (54.6%) and Astra (53.5%).
+
+The cost story is the sharper finding. At **$88 and 1.23M output tokens per task**, Fable 5.2 is **1.9× Astra's cost and 3.9× its output tokens for a lower score**, driven by higher persistence and a tendency to spawn subagents for testing/review (all runs at maximum reasoning level). Materials science is the extreme case: 2× Astra's cost and 3.7× the tokens for **19 points less** (21.8% vs 41.3%), with even GPT-6.2 Sol beating it at ~1/10 the price. In finance it is tied on score but uses **12× Astra's output tokens**, i.e. **6.6× the cost per task**.
+
+This also strengthens the page's standing RSI-suppression thesis: **Astra beats Fable 5.2 on RSI, 33.22% vs 24.13%**, and SemiAnalysis independently concludes this is "largely due to Anthropic explicitly nerfing their public models' AI research abilities" — third-party benchmark evidence for the capability-limitation controversy above. Full leaderboard and tables: [[concepts/semianalysis-gdpx]].
+
 ## Related
 
 - [[entities/anthropic]] — The company behind Fable 5

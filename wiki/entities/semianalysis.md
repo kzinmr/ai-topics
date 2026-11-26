@@ -2,7 +2,7 @@
 title: "SemiAnalysis"
 type: entity
 created: 2026-05-20
-updated: 2026-11-08
+updated: 2026-11-26
 tags:
   - company
   - lab
@@ -166,6 +166,19 @@ An institutional investor bear thesis on Google's Gemini model business, publish
 - **Thomas Kurian has won the internal political battle** (GCP monetization over frontier model supremacy)
 
 Distinguishes the model business (bearish) from the infrastructure business (bullish). Derived concept page: [[concepts/gemini/index#semianalysis-institutional-bear-thesis-august-2026|Gemini index — SemiAnalysis bear thesis]].
+
+### Evaluating Recent Model Releases on GDPx (November 26, 2026)
+
+First leaderboard update for SemiAnalysis's own **GDPx** benchmark (launched Nov 1, 2026; 206 tasks built with 14 specialized data partners). Positions GDPx explicitly against GDPVal and Agent's Last Exam for selecting domains by GDP share or O*NET taxonomy, and excludes government and real estate on the argument that frontier capability is not yet economically load-bearing there. Core claims:
+
+- **GPT-6.2 Astra #1 at 19.3%**, Fable 5.2 16.4%, GPT-6.2 Sol 11.5%, Gemini 4 Carbon 10.9%, Gemini 4 Neon 10.1%, Qwen4-Max 7.44% (best Chinese model). Classifier-excluded / partially-graded variant: Astra 32.2% vs Fable 5.2 29.9%.
+- **OpenAI dominates both the leaderboard and the cost-performance Pareto frontier**; Fable 5.2 costs 1.9× Astra per task and 3.9× its output tokens for a lower score ($88 / 1.23M output tokens per task).
+- Two defensible leaderboards are presented rather than one — the page argues openly that penalizing a model for safety-classifier refusals may be unfair when the goal is measuring intelligence.
+- Contrarian reads: Gemini 4 Neon's acclaim is judged to reflect **model behavior rather than intelligence** (compared to GPT-4o), and the backlash against GPT-6.2 Astra is called **overblown**. SemiAnalysis also retracts its earlier "demise of Gemini/DeepMind" call.
+- Evidence for capability nerfing: Astra beats Fable 5.2 on RSI (33.22% vs 24.13%), attributed to Anthropic deliberately limiting public models' AI-research ability.
+- Includes a domain-specific cyber track (Hinoki HO1; Boundless abliterations) and argues such models matter more as the major labs tighten cyber/bio classifiers.
+
+Main page: [[concepts/semianalysis-gdpx]] · [article](https://newsletter.semianalysis.com/p/evaluating-recent-model-releases)
 
 ## Industry Influence
 
