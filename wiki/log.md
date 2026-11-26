@@ -3920,3 +3920,9 @@ research-grade pages from genuinely uncovered material:
 - Topic: Warp "software factory as code" (Ben Holmes, 2026-11-24) — blueprint YAML, triage+spec gate, computer-use verification, merge-risk 5-category skill
 - Sources: [[concepts/warp-factories]], [[concepts/dark-factory-software-factory]], [[concepts/spec-driven-development]], [[concepts/computer-using-agent]], [[concepts/code-review-bottleneck]], [[concepts/agent-slop]], [[concepts/self-evolving-agents]], [[concepts/coding-agents/lint-rules-as-agent-feedback-loop]], [[concepts/coding-agents/code-review-agents]], [[entities/micahflee]], raw: 2026-11-25_warp_program-software-factory-as-code + 2026-06-03_hornet_agent-queries-cost-more-to-serve
 - Checks: NO_SLOP_FOUND, zero wikilink MISS (alias-stripped check), NO_TYPO
+
+## 2026-11-26 18:30 UTC — hot-post (late-night 01:30 JST slot)
+- Draft: inbox/trending-reports/hot-post-2026-11-27-0130.md
+- Topic: latency-fingerprint model provenance forensics — Modaic "Latency doesn't lie" vs SGNT's GPT2-small account of Jev (HN 318 pts / 88 comments, 2026-11-25). Niche/high-signal angle: the method + the unresolved disclosure dispute + the GPT2-100M vs Qwen-35B-A3B lineage contradiction.
+- Sources: [[concepts/latency-fingerprint-model-provenance]], [[entities/sgnt-jev-article]], [[concepts/system-one-models]], [[concepts/multi-teacher-on-policy-distillation]], [[concepts/post-training/on-policy-distillation]], [[concepts/distillation-accusations-as-platform-control]], [[concepts/open-weights-licensing-tightening]], [[concepts/open-weight-vs-closed-llm-gap]]
+- Checks: NO_SLOP_FOUND, 0 wikilink MISS (alias-stripped, 8 links), NO_TYPO
