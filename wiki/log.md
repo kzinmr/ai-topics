@@ -2,6 +2,19 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+
+## [2026-11-26 17:35 UTC] watchdog | auto-fix — clean run, 2 report-only alerts
+
+**Auto-fixed**: 0 (index.md clean via validate_index.py, exit 0; pipe/line-number/triple-bracket/space-prefix corruption all 0; log.md H1 intact at line 1, 306 entries; no uncommitted wiki/ changes).
+
+**Pipeline alert triage**:
+- `blog` chain broken (`triage_ok_but_wiki_ingest_failed`): blog-wiki-ingest failed 10:40 UTC with `HTTP 503: Local LLM server is busy` (no fallback fired). Same class seen 11-23, 11-24. Per 503-no-fallback policy: NEEDS-HUMAN, no force-rerun; self-heals next scheduled tick. Today's blog-triage run 20261126T100014Z (18 decisions) pending ingestion.
+- `llm-wiki` skill skipped (all wiki cron jobs): known research/ vs _overrides/ name collision (see llm-wiki-skill-name-collision-2026-11-10.md). Benign shadowing notice — but NOTE: unlike the 2026-11-10 verification, skill_view now REFUSES to resolve ('Ambiguous skill name'), so override content loading cannot be confirmed this run. Override file (35 KB, richer) is intact on disk. Permanent fix (delete upstream research/ copy or rename) requires user decision.
+
+**Graph health**: 11-20 weekly report is 6 days old (next Friday run); metrics were flat-to-marginal (0 real merges, 0 tag violations, 1 index gap). Index header counts and structure verified clean this run independently.
+
+---
+
 ## [2026-11-26] ingest — Uber agent-skill fleet at 1M invocations/month (X Article, Nov 23 2026)
 
 Manual ingest of Uber Engineering X Article "How Uber Evals 1 Million Agent Skill Invocations a Month"
