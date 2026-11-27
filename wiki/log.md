@@ -1,6 +1,18 @@
 # Wiki Log
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-11-27 18:10 UTC] dreaming-group | Pattern E triage — Takes=0, 1 reference, 10 skips
+
+Checkpoint pool empty (`total_articles: 0`) despite `recent_raw_articles: 236` → Pattern E filesystem scan. Archive-index URL-absence probe (`check_archive_index_absence.py`) surfaced **18 never-triaged raw files**; all bodies read and verified.
+
+**Triage: 11 decisions (0 takes, 1 reference, 10 skips), archived 9 new + 2 dedup.**
+
+- **Reference → `entities/elevenlabs.md`**: "Fixing the front door to government with voice AI agents" (Nov 25) — government voice-agent stats absent from page: SSA 25M unanswered calls / 1h40m peak hold (US IG); IRS 8M routed to voice bots, only 29% answered (National Taxpayer Advocate); Ukraine Ministry of Economy ElevenAgents hotline (2,698 calls / 80 days, 30-40s → 18s); Poland Centralna e-Rejestracja (40M appointments/yr, 10-20% no-show); Brazil TSE No Go Voices (~2,000 impersonation blocks). Existing government coverage is a one-line partner mention.
+- **8 already-covered skips** (content applied by today's pipelines; absence = archiving gap only): Goedecke Pangram power analysis → `entities/seangoedecke-com.md`; Neumann VLDB/SIGMOD flood → `concepts/ai-research-automation.md` + `concepts/benchmarking-crisis.md`; Sierra HLTH 2026 healthcare → `entities/sierra.md` (all blog-wiki-ingest run 20261127T100017Z, 10:45 UTC); Together Hurdle → `concepts/evaluation/hurdle-agent-evals.md` (active-crawl); Alderson Jevons-broke → `concepts/jevons-paradox-token-demand.md` (full body coverage, incl. Glyman 42%→1.5% + four-step rebuttal); Nesbitt This Week in Source Control → `entities/andrew-nesbitt.md`; Willison Aaronson quote post → `entities/simon-willison.md`; Harvey force-majeure SEO explainer → skip.
+- **2 batch skips**: Doctorow Pluralistic ×3 (politics/IP essays, no AI tech content) + non-AI batch (johndcook math ×3, AOL/Netscape retro, Trump-Huang/Trump-Musk politics, xania.org diary, ElevenLabs generic transcription SEO guide covered by existing Scribe v2 section).
+
+**Duplicate check**: Prior dreaming triage (run 20261126T180047Z, 1 take + 5 refs) confirmed consumed — its Hurdle take exists as a page, Alderson/Nesbitt/Willison refs reflected in pages. No re-processing.
+
 ## [2026-11-27 17:50 UTC] wiki-health-fix | auto-fix pass — clean; restored 2 deleted query pages
 
 ### Checked (all already clean, 0 fixes needed)

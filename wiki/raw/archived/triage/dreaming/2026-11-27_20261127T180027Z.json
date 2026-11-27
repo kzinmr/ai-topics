@@ -1,0 +1,32 @@
+{
+  "archived_at": "2026-11-27T18:17:21.123084+00:00",
+  "triage_run_id": "20261127T180027Z",
+  "source": "dreaming",
+  "summary_ja": "チェックポイントの候補プールは空(total_articles=0)だが recent_raw_articles=236 のためPattern E発動。archive_index URL不在プローブで未triage 18件を抽出し全件本文確認。結果: take 0件、reference 1件(ElevenLabs政府音声エージェント的具体統計がentities/elevenlabs.mdに未収録)、skip 9件(うち8件は本日10:45 UTCのblog-wiki-ingest/active-crawlが既にカバー済みでarchive漏れのみ、1件はDoctorow政治エッセイbatch skip+5件の非AIbatch skip)。前サイクル(11-26)triageのtake/referenceは全て消費済みを確認。",
+  "decisions": [
+    {
+      "item_id": "dreaming-skip-nonai-misc",
+      "source": "dreaming",
+      "source_name": "dreaming",
+      "title": "Batch skip: non-AI（johndcook数学x3, retro-computing, EV/政治, voice AI解説記事）",
+      "url": "",
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "★★☆☆☆ 以下はAI/LLM/エージェント知識価値なし:(1) johndcook.com Las Vegas Monte Carlo / Polynomials and Planets / Hadwiger Covering = 純数学雑学3本。(2) dfarq.homeip.net Why AOL Bought Netscape = レトロコンピューティング歴史。(3) cnbc Trump-Jensen Huang と electrek Trump-Musk = AI政策ではなく政治ゴシップ。(4) xania.org Advent of What = 一般テック日記。(5) elevenlabs what-is-ai-transcription = Scribe v2のSEO向け汎用解説で、entities/elevenlabs.md のMultilingual Transcriptionセクション（Scribe v2/WER/diarization/entity detection）が同一内容をより詳細にカバー済み。",
+      "candidate_wiki_path": null,
+      "body_excerpt": "johndcook: 'The Las Vegas method of computing pi by Monte Carlo...' / dfarq: 'AOL bought Netscape in 1998...' / elevenlabs: 'What is AI transcription: The complete guide. Written by Jack Limebear, Published Nov 26, 2026...'"
+    },
+    {
+      "item_id": "dreaming-covered-willison-aaronson",
+      "source": "dreaming",
+      "source_name": "dreaming",
+      "title": "Simon Willison quote post: Scott Aaronson 'Holy shit' (de-individualization)",
+      "url": "",
+      "raw_path": null,
+      "recommended_action": "skip",
+      "reason_ja": "本日blog-wiki-ingestのreference 1件（Nov 26 quote post: Jack Despain Zhouのde-individualization, ai-generated-language-readability / ai-slopへリンク）として entities/simon-willison.md に適用済み。grepで該当記録を確認。",
+      "candidate_wiki_path": "entities/simon-willison.md",
+      "body_excerpt": "I open a YouTube video and I hear Claude... (de-individualization quote post)"
+    }
+  ]
+}
