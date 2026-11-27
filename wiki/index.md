@@ -280,7 +280,7 @@
 - [[entities/e2b]] — E2B — cloud sandbox platform for AI agents (Firecracker microVMs); "Sandboxes are dead" thesis: sandbox → per-agent private cloud (Oct 2026)
 - [[entities/eleanor-berger]] — Eleanor Berger
 - [[entities/eleutherai]] — Grassroots research collective turned non-profit that started the modern open-source AI movement
-- [[entities/elevenlabs]] — ElevenLabs; added Ads Engine (50+ language ad localization) + Anarock case study (5x sales capacity in Indian real estate) + Voice Agent Latency Optimization (June 24); Real-Time Speech-to-Text Architecture guide — Scribe v2 Realtime ~150ms partials, WebSocket vs WebRTC, partials vs finals, chunk sizing (Jun 25)
+- [[entities/elevenlabs]] — ElevenLabs; voice AI/agents — Nov 2026: Scribe v3 STT reset, Kotoba acquisition (Japanese voice AI), Campaign Manager, PostNord/Autotorino case studies, government voice-agent thesis (SSA/IRS failure stats, Ukraine/Poland/Brazil deployments)
 - [[entities/eli-thegreenplace-net]] — Eli Bendersky
 - [[entities/elie-bakouch]] — ML engineer and researcher at Prime Intellect (formerly Hugging Face), known for work on SmolLM, pretraining optimiza...
 - [[entities/eliezer-yudkowsky]] — Eliezer Yudkowsky — AI alignment researcher, co-founder of MIRI
