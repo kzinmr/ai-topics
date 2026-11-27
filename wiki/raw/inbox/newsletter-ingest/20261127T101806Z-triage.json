@@ -1,0 +1,81 @@
+{
+  "ok": true,
+  "run_id": "20261127T101806Z",
+  "triaged_at": "2026-11-27T10:18:06+00:00",
+  "checkpoint_path": "/opt/data/.hermes/cron/data/newsletter/latest.json",
+  "processed_count": 2,
+  "newsletters": [
+    {
+      "message_id": "<20261126.191118.6807f107@mta25>",
+      "subject": "The end of distillation? China's AI labs slow down",
+      "source": "AI Weekly (aiweekly.co, beehiiv)",
+      "source_label": "uid=945",
+      "date": "2026-11-26",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-26-the-end-of-distillation-china-s-ai-labs-slow-down.md",
+      "importance": "high",
+      "url_resolution_note": "All 20 stored links are beehiiv click-tracking wrappers (link.mail.beehiiv.com) that return 403 to plain HTTP fetch; titles unresolved at triage time. Issue identified as AI Weekly ~#545 via aiweekly.co archive cross-reference. Downstream wiki-ingest should resolve via the aiweekly.co issue page or the newsletter web archive.",
+      "lead_theme": "Distillation slowdown at Chinese AI labs",
+      "relevance": "Core wiki scope: distillation, Chinese labs, model training dynamics, agent benchmarks, AI safety/security incidents.",
+      "candidate_articles": [
+        {"title": "The end of distillation? China's AI labs slow down (lead story)", "url": null, "importance": "critical", "wiki_targets": ["concepts/knowledge-distillation", "entities/deepseek", "events/"], "reason": "Directly on-topic: distillation practice at Chinese labs; likely updates knowledge-distillation concept page and China lab entities."},
+        {"title": "AI is now the most-cited risk in the Fed's survey: 87%, up from 50% (AI Weekly #544)", "url": "https://aiweekly.co/issues/ai-is-now-the-most-cited-risk-in-the-feds-survey-87-up-from", "importance": "low", "wiki_targets": ["concepts/ai-safety (context only)"], "reason": "Macro/economic angle, weak fit for technical wiki."},
+        {"title": "AI labs hold unpublished crypto 'bombshells', a top theorist says", "url": "https://aiweekly.co/issues/ai-labs-hold-unpublished-crypto-bombshells-a-top-theorist", "importance": "low", "wiki_targets": [], "reason": "Speculative; monitor only."},
+        {"title": "Nvidia distributors warn neoclouds: rent to China, lose chip supply", "url": "https://cryptobriefing.com/chip-sellers-withhold-nvidia-gpus-neoclouds-china/", "importance": "low", "wiki_targets": ["concepts/ai-chips (context)"], "reason": "Geopolitics/supply-chain; low technical value."},
+        {"title": "OS-Omni: top agents ace Linux, crumble to ~19% on iOS tasks", "url": "https://aiweekly.co/alerts/os-omni-benchmark-top-agents-succeed-on-linux-but-collapse-to-188-on-ios-tasks", "importance": "high", "wiki_targets": ["concepts/ai-benchmarks/", "concepts/computer-use-agents"], "reason": "New multi-OS agent benchmark; benchmark pages belong under concepts/ai-benchmarks/."},
+        {"title": "Claude Opus 5.5 scores 68.5% on six-platform OS benchmark (humans 77.3%)", "url": "https://aiweekly.co/editors-blog/found-first-claude-opus-5-5-scores-68-5-on-six-platform-os-benchmark-humans-at-77", "importance": "high", "wiki_targets": ["entities/anthropic", "concepts/ai-benchmarks/"], "reason": "Frontier model release + benchmark result."},
+        {"title": "Stable Gated DeltaNet-2 caps recurrent state blow-up, doubles RULER at 128K", "url": "https://aiweekly.co/alerts/stable-gated-deltanet-2-caps-recurrent-state-blow-up-at-ot", "importance": "high", "wiki_targets": ["concepts/efficient-transformers", "concepts/linear-attention"], "reason": "Architecture research relevant to efficient inference pages."},
+        {"title": "Shadowserver finds 4,200 exposed AI hacking servers (ARTEX runs most)", "url": "https://cybersecuritynews.com/4000-servers-running-ai-hacking-agents-are-exposed/", "importance": "low", "wiki_targets": ["concepts/ai-safety"], "reason": "Security incident; context for agentic-risk pages."},
+        {"title": "Switzerland confirms five AI-agent attacks on power, water, telecoms", "url": "https://www.globalbankingandfinance.com/ai-agents-used-five-cyber-attacks-switzerland-government/", "importance": "high", "wiki_targets": ["concepts/ai-safety", "concepts/agentic-security-incidents"], "reason": "First-of-kind confirmed state-attributed AI-agent cyberattacks; significant for agent safety narrative."},
+        {"title": "Novita, StreamLake and Ant Digital exposed as ByteDance Ark wrappers", "url": "https://kendell.dev/blog/arkwrapper/", "importance": "low", "wiki_targets": ["entities/bytedance"], "reason": "API-reseller exposé; minor."},
+        {"title": "Bank of England pegs hyperscaler AI exposure at $4 trillion", "url": "https://stockanalysis.com/news/boe-financial-stability-report-ai-november-2026/", "importance": "low", "wiki_targets": [], "reason": "Macro-financial; out of scope."}
+      ]
+    },
+    {
+      "message_id": "<20261126223432.3.3fdbdb87b3640196@mg2.substack.com>",
+      "subject": "True Positive Weekly #187",
+      "source": "AI Weekly / True Positive (aiweekly.substack.com, pub_id=61455, post_id=226710999)",
+      "source_label": "uid=946",
+      "date": "2026-11-26",
+      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-26-true-positive-weekly-187.md",
+      "importance": "high",
+      "url_resolution_note": "Stored Substack redirect URLs were truncated by the ingest script; canonical post resolved to https://aiweekly.substack.com/p/true-positive-weekly-187 and external links extracted directly from the published page.",
+      "candidate_articles": [
+        {"title": "2026 in LLMs so far (Simon Willison)", "url": "https://simonwillison.net/2026/Sep/27/2026-in-llms-so-far/", "importance": "high", "wiki_targets": ["entities/simon-willison", "concepts/llm-timeline"], "reason": "Authoritative mid-year LLM retrospective by tracked author."},
+        {"title": "Add runtime controls to AI agents with NVIDIA OpenShell", "url": "https://developer.nvidia.com/blog/add-runtime-controls-to-ai-agents-with-nvidia-openshell/", "importance": "critical", "wiki_targets": ["concepts/agent-sandboxing", "entities/nvidia"], "reason": "Agent runtime control plane — directly core to agent-harness/safety knowledge area. Consider documentation-page-ingestion."},
+        {"title": "Faster retrieval for better, more efficient RAG (Apple ML Research)", "url": "https://machinelearning.apple.com/research/faster-retrieval", "importance": "high", "wiki_targets": ["concepts/retrieval-augmented-generation"], "reason": "Industrial RAG efficiency research."},
+        {"title": "Looped weight-space programming (MBZUAI Oryx)", "url": "https://mbzuai-oryx.github.io/LoopedWSP/", "importance": "high", "wiki_targets": ["concepts/weight-space-programming"], "reason": "Novel training paradigm (weights written directly); pairs with Nathan Lambert-adjacent LP post below."},
+        {"title": "Linear program for weight-space programming (Nathan Schneider)", "url": "https://nathan.rs/posts/weight-space-lp/", "importance": "medium", "wiki_targets": ["concepts/weight-space-programming"], "reason": "Supporting explainer for LoopedWSP."},
+        {"title": "Estimating the agent population: how many AI agents could run on AI chips (Epoch AI)", "url": "https://epoch.ai/publications/estimating-the-agent-population", "importance": "high", "wiki_targets": ["concepts/ai-agents", "entities/epoch-ai"], "reason": "Quantitative agent-ecosystem estimate from a tracked research org."},
+        {"title": "Best practices for customizing Gemini models via RL (Google Cloud)", "url": "https://cloud.google.com/blog/topics/developers-practitioners/best-practices-guide-for-customizing-gemini-models", "importance": "medium", "wiki_targets": ["concepts/reinforcement-learning-from-feedback", "entities/google-deepmind"], "reason": "Practical RL fine-tuning guidance; vendor doc — documentation-page-ingestion candidate."},
+        {"title": "Stratified modeling for imbalanced data (bryer.org)", "url": "https://bryer.org/posts/2026-11-03-Stratified_Modeling_for_Imbalanced_Data.html", "importance": "low", "wiki_targets": [], "reason": "General statistics, outside LLM/agent scope."},
+        {"title": "Linux Fundamentals by Paul Cobbaut (Amazon)", "url": "https://www.amazon.com/dp/106597017X", "importance": "low", "wiki_targets": [], "reason": "Book promo; out of scope."}
+      ]
+    }
+  ],
+  "ingest_recommendations": {
+    "must_ingest": [
+      "The end of distillation? China's AI labs slow down (resolve final URL via aiweekly.co issue archive first)",
+      "NVIDIA OpenShell runtime controls",
+      "OS-Omni benchmark + Claude Opus 5.5 OS benchmark results",
+      "Switzerland AI-agent infrastructure attacks",
+      "LoopedWSP + weight-space LP pair",
+      "Epoch AI agent population estimate",
+      "Apple faster-retrieval RAG research"
+    ],
+    "skip": [
+      "Fed survey risk stat", "BoE $4T exposure", "Taiwan fund outflows", "crypto bombshells", "Mercor bankers", "Linux Fundamentals book", "stratified logistic regression", "Nvidia neocloud chip-supply story"
+    ],
+    "known_issues": [
+      "beehiiv click-wrapper URLs in uid=945 digest are unresolvable by plain fetch (403); process_email.py should capture final URLs or the digest should store the beehiiv archive URL.",
+      "Substack redirect URLs for uid=946 were truncated in the digest; resolving via publication_id/post_id from the app-link URLs works (post at aiweekly.substack.com)."
+    ]
+  },
+  "stats": {
+    "total_articles_seen": 40,
+    "classified": 20,
+    "critical": 2,
+    "high": 8,
+    "medium": 2,
+    "low": 8
+  }
+}
