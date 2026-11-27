@@ -3943,3 +3943,10 @@ research-grade pages from genuinely uncovered material:
 - Topic: latency-fingerprint model provenance forensics — Modaic "Latency doesn't lie" vs SGNT's GPT2-small account of Jev (HN 318 pts / 88 comments, 2026-11-25). Niche/high-signal angle: the method + the unresolved disclosure dispute + the GPT2-100M vs Qwen-35B-A3B lineage contradiction.
 - Sources: [[concepts/latency-fingerprint-model-provenance]], [[entities/sgnt-jev-article]], [[concepts/system-one-models]], [[concepts/multi-teacher-on-policy-distillation]], [[concepts/post-training/on-policy-distillation]], [[concepts/distillation-accusations-as-platform-control]], [[concepts/open-weights-licensing-tightening]], [[concepts/open-weight-vs-closed-llm-gap]]
 - Checks: NO_SLOP_FOUND, 0 wikilink MISS (alias-stripped, 8 links), NO_TYPO
+
+## 2026-11-27 10:05 UTC — blog-ingest (YouTube recovery)
+- Recovered 2 of 3 unsaved articles (AI Engineer conference talks; `web_extract` can't handle YouTube → used youtube-content `fetch_transcript.py`).
+- New raw articles (both `content: full` transcripts):
+  - `raw/articles/ai-engineer--execution-is-free-jason-liu-openai--bFcob2p6u3A.md` (Jason Liu, OpenAI DX; taste/ambition/ownership; 19:26)
+  - `raw/articles/ai-engineer--stop-building-software-factories-justin-mccarthy--1S4hx3wgvBE.md` (Justin McCarthy, Diffusion; brownfield + demand factories; 18:03)
+- LWN "[\$] Tainting (or not) on manual driver binding" (paywalled) left unsaved — out of AI scope.
