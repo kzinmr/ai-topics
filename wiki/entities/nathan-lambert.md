@@ -2,7 +2,7 @@
 title: "Nathan Lambert"
 tags: [person]
 created: 2026-04-24
-updated: 2026-11-15
+updated: 2026-11-27
 type: entity
 aliases:
   - natolambert
@@ -377,6 +377,10 @@ Lambert writes with a distinctive mix of technical rigor and personal candor. He
 ## "Open-source AI without Jensen" (Nov 14, 2026) — HN reception
 
 The Interconnects analysis [[events/nvidia-ceo-transition-2026|post-Jensen open-model ecosystem]] reached the HN front page on November 14 (item 50496590, 26 pts), where the discussion largely accepted Lambert's framing that **Jensen Huang functioned as a political shield for the open-weight ecosystem** ("It's not money, it's talent" — Dylan Patel, ChinaTalk emergency podcast) and asked what happens once that shield is removed under a Kress interim leadership with no political capital of its own.
+
+## Recent X Activity
+
+- **2026-11-27** (@natolambert): "The important links" reply promoting his three official channels — the Amazon listing for **The RLHF Book** (*Reinforcement Learning from Human Feedback: LLM alignment and post-training*, Manning), the Interconnects Substack subscribe page, and his Cotton Bureau merch store. Confirms the print edition is listed on Amazon alongside the free rlhfbook.com text. No new substantive content beyond the Amazon listing URL.
 
 ## Related
 

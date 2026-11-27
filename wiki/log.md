@@ -2,6 +2,12 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-11-27 22:30 UTC] x-accounts-scan | 2 new posts (11/84 accounts, budget 12), 1 entity updated
+
+Rotated scan (cursor 77→4). 2 substantive candidates, both low-value replies processed at reaction layer only (no scrape, no new pages):
+- **@natolambert** — "The important links" reply (Amazon RLHF Book listing + Interconnects subscribe + Cotton Bureau). Added `## Recent X Activity` bullet to [[entities/nathan-lambert]] confirming the RLHF Book print edition's Amazon listing.
+- **@0xsero** — "Goodnight" + Warpaint "Undertow" YouTube link. Non-AI, skipped (report only).
+
 
 ## [2026-11-27 18:30 UTC] dreaming wiki-ingest | 1 reference enriched (elevenlabs govt voice)
 
