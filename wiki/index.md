@@ -1013,7 +1013,6 @@
 - [[concepts/agent-model-drift]] — Agent/model drift: silent server-side model changes and harness churn destabilizing agent workflows; Opus 5.5 "nerfed" allegations (HN 236p, Nov 9 2026), Claude Code 244-release instability, Goldman Claude Code restriction, OpenTelemetry-for-agent-memory proposal
 - [[concepts/agentic-representation-gatekeeping]] — Agentic Representation Gatekeeping — platforms banning *user-side* personal AI agents while tolerating platform-side automation and traditional aggregators; United Airlines' Nov 11 2026 flight-booking ban (HN 569p) as canonical case: stated security grounds vs intermediary control, GDS per-query costs, and defense of dynamic pricing; Southwest's ChatGPT inventory the defection
 - [[concepts/agweb-browser-for-agents]] — Agweb: WebKit-based macOS browser for coding agents (never-steals-focus window, per-agent workspaces, shared login profiles, secret-safe fill, HN 100pts Nov 14 2026)
-- [[concepts/ai-benchmarks]] — AI Benchmarks — hub index for individual benchmark pages (122 pages under concepts/ai-benchmarks/)
 - [[concepts/ai-engineering-dekilling]] — AI engineering de-skilling — the erosion of code comprehension and debugging skill from 100% AI-mandate orgs and 'brain fry': r/ClaudeCode one-year retrospective (HN 129pts), Kuhne's manual-coding regimen (HN 306pts), Goldman's engineer-only Claude Code restriction; distinct from cognitive-deskilling (knowledge work) and agent model drift (infra)
 - [[concepts/agent-selected-hardware]] — Agent-Selected Hardware (Geoff Stearns, HN 75): when agents install device firmware, hackability/open firmware become competitive product features; M-Vave FM-1 GPLv3 case; recoverable installs as agent-safety infra
 - [[concepts/ai-generated-code-open-source]] — AI-generated code should be open source — Jankiewicz's license-laundering + uncopyrightability argument (Monkey Selfie / CC0), 1174p HN thread and its 'licenses need copyright' / 'OSS = human-validated code' rebuttals (Nov 2026)
@@ -1029,12 +1028,6 @@
 - [[concepts/energy-based-reasoners]] — Energy-Based Reasoners (EBR) — looped reasoner doing gradient descent on a learned energy function; self-scores candidates + native stopping signal, no external verifier; 1.8M-param EBR = 99.9% Sudoku-Extreme at ~345-385x less inference compute (Chen/Gladstone/Li/Ji/Du, HN 311 Nov 18 2026; author-reported)
 - [[concepts/frontierharness-eval]] — FrontierHarness Eval v1.1 — Runta+Baseten harness leaderboard (22 harnesses x 5 models x 62 tasks x 4 attempts, 27,280 runs); key result: the harness materially changes cost-per-pass, so model migration is also a harness-migration decision (HN 418 Nov 17 2026; vendor-published)
 - [[concepts/llm-assisted-reverse-engineering]] — LLM-Assisted Reverse Engineering — 2026 practitioner workflow: point a cheap agent (DeepSeek Flash) at a binary + custom RE agent skills, drive Ghidra via MCP / radare2 via CLI; human supplies judgment (ioma8, Slow Chronicle, HN 223 Nov 18 2026)
-- [[concepts/openai]] — OpenAI Platform & APIs — hub for OpenAI platform/API pages
-- [[concepts/gpt]] — GPT Models — hub index for GPT model-family pages (43 pages under concepts/gpt/)
-- [[concepts/gemini]] — Google Gemini — hub index for Gemini model-family pages (14 pages under concepts/gemini/)
-- [[concepts/claude]] — Claude Models — hub index for Claude model-family pages (27 pages under concepts/claude/)
-- [[concepts/browser-agent]] — Browser Agent — hub for agentic browsing pages (Death of Browser, Deep Research)
-- [[concepts/anthropic]] — Anthropic Platform & Business — hub for platform/SDK/business pages of Anthropic
 - [[concepts/positional-embeddings]] — Positional Embeddings in Modern LLMs (Raschka survey, Nov 15 2026, HN 228): RoPE still dominant but share falling in 2026; partial-RoPE now majority of RoPE models; NoPE hybrids and Inkling T5-style learned relative bias emerging; absolute position tables uneconomic beyond ~1k context
 - [[concepts/agent-trust-boundary-violations]] — Agent trust-boundary violations (Nov 2026): Postman silently auto-installs Codex/Claude plugins + self-trusts its hook (HN 1332); OpenAI Codex training opt-in silently re-enabled (HN 488); agent config as executable attack surface
 - [[concepts/ai-agent-bureaucracy|Agent Bureaucracy Failure]] – multi-agent coordination collapse in the YC labs 50-agent Minecraft civilization experiment
@@ -1064,7 +1057,6 @@
 - [[concepts/semianalysis-gdpx]] — SemiAnalysis GDPx — 206 real professional tasks from 14 domain partners (gov/real-estate excluded); Nov 26 leaderboard: GPT-6.2 Astra 19.3% #1, Fable 5.2 16.4%, Gemini 4 Carbon 10.9%, Neon 10.1%, Qwen4-Max 7.44%; Fable 5.2 most expensive per task (Nov 2026)
 - [[concepts/skypilot-rack-scale-scheduling]] — NVL72/Grace Blackwell rack-local scheduling: InfiniBand fallback costs 43%; topology-aware placement + defrag claims 27% more usable GPUs
 - [[concepts/systemic-software-breakdown]] — Systemic Software Breakdown — Breck-McKye thesis that 2026 outage/exploit cluster (Microsoft 2-day outage, PHP2Shell, eMudhra, Shai Hulud) reflects broken software-production system, not bad luck; AI as cause and symptom
-- [[concepts/training]] — Training — hub for training-methodology pages (TRL under concepts/training/)
 - [[concepts/triggerdev-env-var-exposure-2026-11|Trigger.dev Env-Var Exposure]] – 2026-11-01 incident exposing customer environment variables, disputed 'Resolved' status
 - [[concepts/trnrt-trainium-inference-engine]] — TrnRT — open-source AWS Trainium2 inference engine by RunanywhereAI; NKI megakernels (~1/layer-half), 1M ctx sparse+linear attention, FP8 radix prefix cache w/ host tier; GLM-5.3-Flash day-1; ~$0.04/M tokens spot on one trn2.48xlarge (HN 54 Nov 17 2026; vendor-reported)
 - [[concepts/volta-infostealer-llm-victim-appraisal]] — VOLTA infostealer LLM victim appraisal (Cisco Talos, Oct 2026) — self-deleting stealer POSTs enriched evidence bundle to OpenRouter as 'forensic intelligence analyst'; WHAT THEY'RE WORTH ranking + 3-model refusal-failover chain (HN 248)
@@ -1072,6 +1064,14 @@
 - [[concepts/x402]] — x402 — HTTP 402 Payment Required as a machine-readable payment request for agent API calls; USDC on Base; first adopted by Brave Search API (Nov 12, 2026)
 - [[concepts/zero-data-retention]] — ZDR as LLM-inference privacy contract: what providers promise vs. what 2026 incidents (Dragos canaries, Fireworks/Notion, Together leak) proved — "a privacy flag only binds the first hop"; attestation gap + defender playbook
 - [[concepts/zombie-statistics]] — Trakkr study tracing 1,285 AI-quoted statistics: only 40% reach a study that confirms them, 11% have no study anywhere (Oct 2026)
+- [[concepts/ai-benchmarks]] → [[concepts/ai-benchmarks/index]] — AI Benchmarks cluster hub (redirect stub → categorized index of ~124 benchmark pages)
+- [[concepts/anthropic]] → [[concepts/anthropic/index]] — Anthropic Platform & Business cluster hub (redirect stub → agent platform / SDK / business pages)
+- [[concepts/browser-agent/index]] — Browser Agent cluster hub — agentic browsing sub-pages (Death of Browser, Deep Research)
+- [[concepts/claude]] → [[concepts/claude/index]] — Claude model family cluster hub (redirect stub → 27 sub-pages)
+- [[concepts/gemini]] → [[concepts/gemini/index]] — Google Gemini model family cluster hub (redirect stub → 15 sub-pages)
+- [[concepts/gpt]] → [[concepts/gpt/index]] — GPT model family cluster hub (redirect stub → 43 sub-pages)
+- [[concepts/openai]] → [[concepts/openai/index]] — OpenAI Platform & APIs cluster hub (redirect stub → Agents SDK / AgentKit / API sub-pages)
+- [[concepts/training/index]] — Training cluster hub — training-methodology sub-pages (TRL), distinct from concepts/training-infrareach a study that confirms them, 11% have no study anywhere (Oct 2026)
 - [[concepts/claude-code/claude-code-vsx-backdoor]] — Backdoored official Claude Code for VS Code 2.1.313 on the Cursor Marketplace (Phorion, Oct 30 2026): persistent SSH backdoor on macOS/Linux/Windows, pulled from all registries
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer

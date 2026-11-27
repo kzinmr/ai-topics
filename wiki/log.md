@@ -1,5 +1,41 @@
 # Wiki Log
 
+_Log of all wiki changes. Newest entries at top._
+
+
+## [2026-11-27 17:35 UTC] watchdog | dir-hub ghost entries resolved (8 index lines pointed at non-existent files)
+
+### Context
+Weekly graph analysis reported "2 dir-hubs missing index.md (browser-agent, training)". Live scan found the problem was larger and pre-existing: **8 index.md lines pointed at non-existent files**, all dir-hub entries registered by commit `9acade461` ("register 8 dir-hub links") without creating the target pages.
+
+### Root cause
+- 6 hubs had their real content at `<dir>/index.md` (`ai-benchmarks`, `anthropic`, `claude`, `gemini`, `gpt`, `openai`) while index linked the directory slug `<dir>`.
+- 2 hubs (`browser-agent`, `training`) had **no hub file at all**.
+- 44 body-level wikilinks across the wiki already targeted the bare dir slugs, so those references were silently dead too.
+
+### Changes
+- Created `concepts/browser-agent/index.md` and `concepts/training/index.md` (real hub pages: sub-page lists + Related links, all targets verified to exist, all tags from SCHEMA taxonomy).
+- Created 6 redirect stubs (`concepts/{ai-benchmarks,anthropic,claude,gemini,gpt,openai}.md`, `status: redirect`) so both the index lines and the 44 pre-existing body links resolve. Chose additive stubs over renaming because renaming would have required editing 44 files (>10-file auto-fix limit).
+- Replaced the 8 stale index lines with explicit `[[concepts/x]] → [[concepts/x/index]]` redirect entries (the wiki's documented redirect convention) + 2 direct entries for the new hubs.
+- Concepts header recount verified: 2411 lines == header count (already correct; redirect stubs dedupe against their canonical line).
+
+### Verified
+- `validate_index.py` clean (3579 lines); all 6 section headers intact.
+- Ghost index entries: 8 → **0**. Unindexed L2 pages: **0**.
+- Zero-link `[[]]` backlog: 0 occurrences (weekly report's "278→1" closed on the watchdog side).
+- Index corruption (pipe / line-number / triple-bracket / space-prefix): all 0.
+- `log.md` H1 at line 1; 0 orphan `###` timestamp lines.
+
+### Pipeline note (NOT auto-fixable)
+`newsletter` chain reported `ingest_ok_but_triage_failed`. Live check: today's ingest is healthy (`ok: True`, 2 messages, `20261127T101806Z`), but `triage_latest.json` still points at `checkpoint_run_id: 20261126T101133Z` — the **11-27 triage stage did not produce output**. The 11-26 triage recorded beehiiv 403 token-expiry failures on all 20 links, so today's 2 newsletters (with `links: 0`) are likely the same fetch-side blocker. Routed to `x-article-getxapi-fallback` / human review; no force-rerun performed.
+
+### Not touched (delegated / escalated)
+- 150 auto-fixable links → daily `wiki-health-fix` job.
+- Missing-page queue (`entities/cursor`, `concepts/claude-opus-4-7`, `concepts/intelligence-explosion`, `entities/huggingface`, `entities/ben-clavie`) → skeleton-enrich / active-crawl. Watchdog does not create pages.
+- 6 additional sibling dirs lack hub files (`gpt`, `claude`, `openai`, `gemini`, `anthropic`, `ai-benchmarks` are now covered; remaining bare-dir dirs are covered by `/index` or `/_index` entries).
+
+---
+
 ## [2026-11-27 15:05 UTC] weekly-graph-analysis — 3,541 pages; 493 orphans, 3,574 raw broken links, 17 dup groups (0 merges)
 - Generated `queries/wiki-graph-analysis-weekly-2026-11-27` via scripts/_weekly_graph_report.py + independent resolver ground truth.
 - WoW: pages 3,456→3,541 (+85), orphans 460→493 (+33, tracks creation), oversized 330→335, stale 2,558→2,566 (baseline). Tag violations 0.
@@ -25,7 +61,6 @@
 - Not ingested this run (covered by sibling jobs / low actionability): NYT-Photoshop (raw only, HN 674p), Moat/OpenRouter replacement (raw saved by hot-post job), 1Password incident (non-AI security), Hurdle evals + Jevons + Signal OS-agent privacy (active-crawl 11:30).
 
 
-_Log of all wiki changes. Newest entries at top._
 
 ## [2026-11-27 10:45 UTC] blog-wiki-ingest | run 20261127T100017Z | 3 takes + 1 reference applied (20 decisions)
 
