@@ -1,5 +1,16 @@
 # Wiki Log
+
 _Log of all wiki changes. Newest entries at top._
+
+
+## [2026-11-27 18:30 UTC] dreaming wiki-ingest | 1 reference enriched (elevenlabs govt voice)
+
+Upstream dreaming-group (18:10) committed triage + archive (a0dc0957d) but not the reference enrichment. Pre-run reported JSON parse failure; recovered `triage_latest.json` (11 decisions: 0 takes, 1 reference, 10 skips) directly — no re-triage needed.
+
+- **Enriched** [[entities/elevenlabs]] (+1 section, 596→624 lines): "Government voice agents — front door to government thesis (Nov 2026)" — SSA 25M unanswered calls / 1h40m peak hold, IRS 8M bot-routed calls at 29% answer rate, Ukraine MoE hotline (2,698 calls / 80 days, 18s answer), Poland e-Rejestracja (40M appts, 10-20% no-show), Brazil TSE No Go Voices (~2,000 impersonations blocked), Karnataka + Greece partnerships, Gartner 10B-agent-by-2030 argument, FedRAMP/zero-retention checklist. Source raw added to frontmatter.
+- Wikilink sweep: dropped 1 guessed target (`concepts/deepfakes-and-synthetic-media` absent); all remaining targets verified on disk.
+- Re-ran `archive_triage.py dreaming --keep-reference`: 11 candidates, 0 new, 9 dedup-skipped (upstream archive already complete) — reverted pure timestamp churn on archive JSON + index.
+
 
 ## [2026-11-27 18:10 UTC] dreaming-group | Pattern E triage — Takes=0, 1 reference, 10 skips
 

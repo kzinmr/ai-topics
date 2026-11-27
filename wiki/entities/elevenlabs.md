@@ -2,7 +2,7 @@
 title: "ElevenLabs"
 type: entity
 created: 2026-05-08
-updated: 2026-11-17
+updated: 2026-11-27
 tags:
   - company
   - voice-ai
@@ -37,6 +37,7 @@ sources:
   - raw/articles/2026-11-17_elevenlabs_kotoba.md
   - raw/articles/2026-11-17_elevenlabs_postnord.md
   - raw/articles/2026-11-17_elevenlabs_autotorino-agents.md
+  - raw/articles/2026-11-26_elevenlabs_fixing-front-door-government.md
 ---
 
 # ElevenLabs
@@ -589,6 +590,32 @@ Two ElevenAgents deployment metrics published Nov 16-17, 2026:
 Both cases illustrate the same architectural pattern as the internal ElevenAgents usage above: orchestrator + cheap specialized subagents + production A/B loop as the mechanism for continued completion-rate gains, rather than a one-shot deployment. Related: [[concepts/ai-for-customer-and-voice-work]], [[concepts/voice-agent-evaluation]].
 
 **Sources:** [[raw/articles/2026-11-17_elevenlabs_postnord]], [[raw/articles/2026-11-17_elevenlabs_autotorino-agents]]
+
+## Government voice agents — "front door to government" thesis (November 2026)
+
+Ben Supple (Global Public Policy lead, ex-OpenAI/Meta/WhatsApp policy; Harvard MPP) published ElevenLabs' public-sector thesis (Nov 25, 2026): the phone line is the front door of government for millions, and it is failing — with concrete failure statistics the company uses as its wedge.
+
+**Failure baseline (third-party sources cited in the post):**
+- **US SSA**: 25 million calls ended without service in 2025; average hold time peaked at 1h40m in Jan 2025 (US Inspector General) — improvement by year-end credited to a new phone platform plus more automation.
+- **US IRS**: phone is still taxpayers' main channel; in 2025 the agency routed ~8 million calls to voice bots, which answered only **29%** — the other 71% disconnected or abandoned (National Taxpayer Advocate 2025 report to Congress). ElevenLabs' own framing: a scripted bot that can't finish the job "adds one more way for a call to fail."
+- **Language access**: 26M US residents have limited English (GAO); the National Weather Service spent ~$2.7M (2022–2025) to add AI translation in 5 languages, vs ElevenLabs' 90+ language model coverage.
+- **Connectivity**: ~10.5M Americans lack fixed high-speed internet (FCC 2026 report), 9M+ rural; 1-in-5 rural adults is smartphone-only (Pew) — for them the phone call is the only front door.
+
+**Deployed government case studies:**
+- **Ukraine Ministry of Economy** hotline (State Employment Service), built on ElevenAgents: 24/7 with human handoff; first 80 days handled **2,698 calls (~1/4 of line volume)**, answer time cut from 30–40s to **18s**; kept the line open during air-raid alerts when operators sheltered.
+- **Poland Centralna e-Rejestracja** (central e-Health appointment system): voice agent calls landline-only patients for reminders/rescheduling; the system carries **40M appointments/year** with **10–20% no-show rates**.
+- **Brazil TSE** (National Electoral Court): voice for the Electoral Assistant plus **No Go Voices** protection for senior political figures and Supreme Court justices — **~2,000 impersonation attempts blocked**.
+- **India — Karnataka state** partnership (Nov 2026): pilots in grievance redressal, public helplines, entitlement schemes in Kannada and other Indian languages (14 supported nationally).
+- **Greece**: May 2026 partnership to explore voice AI for gov.gr (2,200+ services) call centers, incl. the diaspora.
+- Context: the US federal **America.gov** AI portal (Sept 2026, 29,000+ federal sites) is text-only through 2026; apply/enroll/track planned for 2027.
+
+**The "not every caller will be human" argument**: Gartner projects **>10 billion autonomous AI agents** clogging public-service lines by end-2030 (benefits lookup, eligibility checks, claims filing); the IRS 2026 "Dirty Dozen" scam list includes AI voice-mimicry impersonation calls, and the IG lists audio deepfakes as a benefits-fraud vector. ElevenLabs' prescription is symmetric: agencies need their own AI to serve legitimate agents, catch fraudulent ones (synthetic-voice detection with human-priority queuing), and keep lines open for people — "fixing the front door also means securing it."
+
+**Requirements framing** (their government product checklist): sound human; measure end-to-end resolution not containment; caller's own language; secure by design (data residency, zero retention, PII redaction, SOC 2 / GDPR / FedRAMP); detect and route AI callers; fraud boundaries via synthetic-voice detection.
+
+Strategic read: this is a policy-led GTM post (author leads Global Policy & Public Sector Partnerships) rather than a product launch, but it consolidates ElevenLabs' public-sector evidence base — Ukraine/Poland/Brazil metrics are the hardest public numbers the company has published for government deployments, and the No Go Voices ~2,000-block statistic is its first quantified anti-impersonation claim. Related: [[concepts/llm-voice]], [[concepts/voice-agent-evaluation]], [[concepts/ai-for-customer-and-voice-work]].
+
+**Source:** [[raw/articles/2026-11-26_elevenlabs_fixing-front-door-government]]
 
 ## Related
 - [[entities/openai]] — Competitor via GPT-4o voice and TTS capabilities
