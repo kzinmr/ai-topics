@@ -1,7 +1,7 @@
 ---
 title: Anthropic Drug Development Program
 created: 2026-10-28
-updated: 2026-10-28
+updated: 2026-11-27
 type: concept
 tags: [ai-in-science, biotech, healthcare, drug-discovery, anthropic, ai-agents]
 sources: [raw/articles/2026-10-27_anthropic-drug-development.md]
@@ -84,6 +84,14 @@ legitimate bio research), and an **open call for guest investigators**.
   structure/affinity foundation model.
 - The **Life Sciences Verification Program** is a notable governance move: relaxes safety guardrails for
   vetted researchers, a dual-use trade-off.
+
+## 2026-11-27: "diseases cured by AI" = 0 public ledger
+
+`diseasescuredbyai.com` (26 Nov snapshot, HN 311 pts) maintains a deliberately narrow public counter: **0 diseases cured by an AI-discovered treatment, 0 AI-discovered drugs approved by FDA/EMA**. Stated criteria exclude AI-*enabled* tooling - an AI-assisted scan or a target-nomination assist does not count; the cure must come from a cure that AI discovered.
+
+Context figures from the same snapshot: 1,452 days since ChatGPT launched, all 1,452 at zero; $6.93B AI drug-discovery market in 2025 and growing; 117 AI-enabled candidates in human trials by July 2025 from 63 companies, of which **1** reached Phase III. The page does not poll live; it is updated when the number changes.
+
+Worth citing as an accountability artifact against `concepts/ai-hype` claims: it fixes the metric definition *before* the result, which is what makes zero meaningful. Confidence: medium (the counter's own criteria are contestable - "discovered by AI" has no regulatory definition - and the pipeline figures are quoted rather than independently verified). Raw: `raw/articles/2026-11-26_diseasescuredbyai_zero-cured-ledger.md`.
 
 ## Related
 

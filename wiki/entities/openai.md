@@ -2,7 +2,7 @@
 title: "OpenAI"
 type: entity
 created: 2026-04-16
-updated: 2026-11-16
+updated: 2026-11-27
 tags:
   - company
   - model
@@ -746,6 +746,15 @@ Reported with commentary by [[entities/the-signal|Alex Banks]] (The Signal, 2026
   Fable (see [[entities/openai-astra]]). The wiki currently holds only the RSS
   abstract; the proof itself has not been captured.
   Raw: [[raw/articles/openai.com--index-step-toward-defining-the-standard-model--df3e44b9.md]]
+
+## 2026-11-27: cost-control signal on GPT-6.2 (Astra/Sol)
+
+Two linked 26 Nov signals that GPT-6.2 was tuned for cost rather than capability, both third-party and contested:
+
+- **Agent Duel battle data** (micjm, HN 335 pts): output tokens per task and reasoning tokens per task both dropped for Astra 6.2 / Sol 6.2 relative to opponents, making them "underthinking outliers". Reported p-values: output drop 0.0055 (Sol) / 0.022 (Astra); reasoning drop 0.00013 (Sol) / 0.0064 (Astra). Single battle system on top of OpenCode; not peer-reviewed.
+- **Usage-limit tightening** (HN 491 pts): Astra hits its usage limit 40% faster, Sol 25% faster. OpenAI attributed part of this to a billing error, having first sent a short email lacking context and then a clarifying follow-up.
+
+HN readings split between deliberate margin defence ("OpenAI's business is heavily skewed towards consumer, meanwhile enterprise has better margins and they're losing to Anthropic") and demand exhaustion ("people just ran out of stuff to do with smarter, more expensive models"). Raw: `raw/articles/2026-11-26_micjm_openai-cost-control-mode.md`. Confidence: medium on the measurements, low on intent.
 
 ## Sources
 - **OpenAI Agents SDK Blog (2026-04-15)** — [openai.com](https://openai.com/index/the-next-evolution-of-the-agents-sdk/)

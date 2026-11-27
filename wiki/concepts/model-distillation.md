@@ -6,7 +6,7 @@ aliases:
   - knowledge-distillation
   - teacher-student-distillation
 created: 2026-04-25
-updated: 2026-05-05
+updated: 2026-11-27
 tags:
   - concept
   - training
@@ -159,3 +159,7 @@ Lambert and others warn that anti-distillation regulation could backfire:
 - [[entities/nathan-lambert]] — Author of "The Distillation Panic"
   - raw/articles/2026-05-04_interconnects_distillation-panic
   - raw/articles/2026-05-01_willccbb-sft-rl-on-policy-distillation
+
+## 2026-11-27: distillation slowdown at Chinese labs (AI Weekly)
+
+AI Weekly (26 Nov issue) leads with "The end of distillation? China's AI labs slow down" - a report that Chinese labs are pulling back on distillation as a capability shortcut. Read alongside the same week's counter-evidence, the practice is contested rather than abandoned: Together AI published a $260 Kimi-K3.1-Pro to Qwen3.8-27B distillation reaching 93% of the teacher (see [[entities/together-ai]]), and `concepts/latency-fingerprint-model-provenance` documents provenance forensics aimed at distilled releases. Raw: `raw/newsletters/2026-11-26-the-end-of-distillation-china-s-ai-labs-slow-down.md` (newsletter digest; the 20 stored links are beehiiv click-trackers that return 403 to plain fetch, so article-level attribution is unresolved - treat as directional, not sourced).

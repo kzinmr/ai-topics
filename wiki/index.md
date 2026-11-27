@@ -3,7 +3,7 @@
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Last updated: 2026-11-25
 
-## Entities (978 pages)
+## Entities (979 pages)
 
 - [[entities/_index]] — Directory hub / overview for entities pages
 - [[entities/0xjeff]] — 0xJeff
@@ -986,21 +986,26 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2402 pages)
+## Concepts (2411 pages)
+- [[concepts/ai-assisted-self-hosting-renaissance]] - AI-Assisted Self-Hosting Renaissance - Jan-Lukas Else: coding agents on Git-hosted Docker Compose/NixOS/bootc config revive hobbyist self-hosting; HN split that the AI-built attack surface raises the ops barrier (767p, Nov 2026)
 - [[concepts/ai-research-automation]] — AI research automation — agents accelerating idea implementation, experiments and paper-writing; VLDB/SIGMOD submission flood (5,000+/yr), sentence-level-vs-paper-level writing failure, raise-the-bar prescription (Thomas Neumann, Nov 2026)
 
 - [[concepts/agent-principal-agent-problem]] — Agent Principal-Agent Problem (Model Loyalty) — the agent you pay for is its vendor's agent, delegated to you; Bandcamp-refusal vs YouTube-download asymmetry (Michael Harley, HN 977); permission-layer workarounds and open weights as exits
 - [[concepts/claude-black-hole-physics]] — Claude Fable 5.2 solves two open black-hole/quantum-gravity problems (Nov 19 2026): 20-year-old formation-transition calculation completed; exact central-charge upper bound on black-hole mass; Anthropic notes neither result describes our universe (HN 512p)
 - [[concepts/complexity-theory-ai-breakthrough-2026-11]] — AI-generated complexity-theory wave (Nov 2026): omega = 9/4 with matching lower bound, VP != VNP, N(log N)^1/2 Fourier gates; Aaronson's "beginning of an AI singularity" post and the unverifiable "labs are sitting on a crypto break" rumor
+- [[concepts/cross-assistant-persona-gossip-leak]] - Cross-Assistant Persona Gossip Leak - one-line prompt makes an assistant fabricate a WhatsApp group where AI models gossip about the user from accumulated history; persona role-play vs silent derived-profile surfacing (326p, Nov 2026)
 - [[concepts/discount-token-reseller-router-trust]] — Membership-fee discounted token resellers (Moat/Command Code) as a second-tier inference market, and routing as transitive trust for agent source code and tool calls
 - [[concepts/distillation-accusations-as-platform-control]] — Distillation Accusations as Platform Control — Ask HN "Anthropic is accusing my company of distilling, how do I prove I am not?" (HN 321): telemetry-only accusation, unprovable negative, chilling effect on vendor embedding (Nov 24 2026)
 - [[concepts/frostbite-ai-designed-cpu]] — Frostbite (Architect Labs, Nov 20 2026): agent swarms discover/design/verify a general-purpose interaction-net CPU end-to-end; ASL spec lowered to 800k+ Lean lines; vendor-reported 4.59x perf/W vs area-matched in-order core, emergent hardware work-stealing (HN 143p)
 - [[concepts/google-cogentic-proof-discovery]] — Google Cogentic multi-agent proof-discovery harness (Gemini 4 Argon, shared intermediate-proof DB) and why its deterministic subexponential factoring result does not threaten RSA
+- [[concepts/google-workspace-mcp-mandate]] - Google Workspace MCP Mandate - from 1 Feb 2027 AI-agent-driven tools must use Google's 8 Workspace MCP servers; Gmail MCP can search/draft but cannot send; direct REST held to Standard-tier quotas (347p, Nov 2026)
 - [[concepts/hurdle-agent-evals]] — Hurdle (Together AI, Nov 2026) — open-source npm agent-eval library: Claude Code/Codex vs your API/docs/skills; code checks + runtime guards + LLM judge, A/B skill conditions, Guardian sandbox key-swapping
+- [[concepts/inference-provider-wrapper-problem]] - Inference Provider Wrapper Problem - kendell traced Novita/StreamLake/Ant Digital DeepSeek tokens to ByteDance Ark (up to 1.1T/wk) despite Zero-Data-Retention claims; Cayman-HK-SG-US-VIE tree vs IPO 'not a pass-through gateway' claim (Nov 2026)
 - [[concepts/inference-side-channel-model-communication]] — Inference-Side-Channel Model Communication — two agents on one vLLM server talk via kernel/step scheduling (Step Sizing, KV Cache Message Board); 1,221/1,221 colour game, colluding monitor passes 354/354 attacks while catching 85-92% of honeypots (Deshpande et al., HN 269)
 - [[concepts/jevons-paradox-token-demand]] — Jevons Paradox and Token Demand — Ramp's 'Jevons broke' claim (42%→1.5% token-spend growth) vs Alderson's 4-step adoption ladder: price cuts can't move orgs up steps; attention/burnout cap heavy-user burn
 - [[concepts/language-model-weight-self-rewriting]] — arXiv 2611.21885 self-rewriting: a 27B model edits its own weights without gradients; +6.6 pts on unseen problems, self-repair, scale-emergent; alignment-silence controversy
 - [[concepts/latency-fingerprint-model-provenance]] — Inferring a model's open-weight base from latency behaviour and prompt-variant self-identification (Modaic's Jev-is-probably-Qwen3.5-35B-A3B teardown)
+- [[concepts/model-persona-benchmarks]] - Model Persona Benchmarks - FursonaBench: 50 harness-less OpenRouter queries per model, Haiku 5.5 annotator; Claude=corvid/octopus, Gemini=protogens, GPT-6.2 Astra=moth; post-training style residue, not self-representation (Nov 2026)
 - [[concepts/nginx-http2-rce]] — Two critical CVSS 9.2 unauthenticated HTTP/2 RCEs in NGINX (CVE-2026-123633/123007), 5 teams, 225M+ sites; same-week AI-assisted vuln-discovery cluster
 - [[concepts/gemini/gemini-4-neon]] — Google DeepMind Gemini 4 fast price-efficient tier; #3 AI Index (61), $3/$15 per 1M, 1M context, projected to rival Opus 5.5 on speed
 - [[concepts/_index]] — Directory hub / overview for concepts pages

@@ -1,7 +1,7 @@
 ---
 title: Google DeepMind
 created: 2026-05-15
-updated: 2026-10-29
+updated: 2026-11-27
 type: entity
 tags:
   - company
@@ -139,6 +139,12 @@ DeepMind announced **Genie 4** (Oct 27, 2026), its fourth-generation world model
 ### Gemini 4 Carbon — Cyber/Long-Horizon Frontier Model (October 28, 2026)
 
 Two days after Genie 4, DeepMind announced **Gemini 4 Carbon**, its strongest model, marketed on cybersecurity defense and long-horizon endurance: #1 on Artificial Analysis Intelligence Index v5.0 (59), SEC-bench Pro **88.2%**, ExploitGym **54.8%**, CWE-bench **71.0%**, WebDev Arena #4 (1768 elo), with internal teams running it **for days** on multi-step engineering tasks. Released at Argon's introductory price ($2/$10 per 1M) and **capability-gated** — cyber defenders first via the Fairwind Program, under the U.S. government's voluntary pre-release testing process. Alignment claims are quantified as product features (Terminal-Bench 4.0 cheating 0.0% success, Gray Swan IPI 0.0% ASR, overreach −26% / under-service −29%); all are vendor-reported. See [[concepts/gemini/gemini-4-carbon]]. (Source: Google blog, HN 943 pts)
+
+## 2026-11-27: agents running Gemini experiment compute
+
+On Google's podcast (reported 25 Nov, The Decoder), **Koray Kavukcuoglu** (VP of Research, Gemini development) said AI agents now control part of DeepMind's compute to run their own experiments for the next Gemini model, while insisting the lab remains far from full recursive self-improvement. Two other claims in the same appearance: DeepMind has consolidated specialized project teams (AlphaFold, nuclear fusion) onto **a single general-purpose algorithm** for both science and products, and each Gemini generation is a **hand-built one-off** rather than a fixed architecture, with parallel teams on successors.
+
+Stated safety measure: DeepMind does **not reward the agents' internal Chain of Thought** during training, so intentions stay unfiltered and reviewable. HN context (samuelknight): once models run experiments better than humans, "the last ingredient for RSI is research taste"; theptip links METR's 2026-11-05 and 2026-11-24 posts on interpreting recent AI R&D acceleration as the adjacent evidence base. Company framing, single source - confidence medium on the quotes, low on how much autonomy "control part of the compute" actually implies. Raw: `raw/articles/2026-11-25_the-decoder_deepmind-agents-control-compute.md`.
 
 ## Related Entities
 

@@ -1,5 +1,21 @@
 # Wiki Log
 
+## [2026-11-27 12:00 UTC] trending-topics | 5 new pages + 6 updates
+
+- Trend discovery: hn_algolia_supplement.py (--days 2 --min-points 25, front page + keyword block) + points-only Algolia sweep (created_at_i>24h, points>100) + newsletter triage checkpoint 20261127T101806Z. 12/12 comment trees mined, 9/10 primaries fetched (thetimes.com paywall shell).
+- New raw articles (9): janlukas ai-self-hosting, techstackups google-workspace-mcp, construct22 group-chat prompt, micjm openai cost-control, devnull.land amd llama.cpp fork, kendell Ark inference wrappers, diseasescuredbyai zero ledger, mondtech fursona bench, the-decoder DeepMind agent compute.
+- New pages (5):
+  - concepts/ai-assisted-self-hosting-renaissance
+  - concepts/inference-provider-wrapper-problem
+  - concepts/cross-assistant-persona-gossip-leak
+  - concepts/model-persona-benchmarks
+  - concepts/google-workspace-mcp-mandate
+- Updated pages (6): concepts/model-distillation (China distillation slowdown, AI Weekly), entities/openai (GPT-6.2 cost-control signal), entities/google-deepmind (agents on Gemini experiment compute), concepts/agent-sabotage (Claude ML-research sabotage reports), concepts/ai-drug-discovery (diseases-cured-by-AI = 0 ledger), concepts/inference-engine (hardware-specific vibe-coded forks).
+- SCHEMA.md: minted tags platform-control, model-persona (AI Agents line).
+- Index: 5 entries inserted (Concepts +5).
+- Not ingested this run (covered by sibling jobs / low actionability): NYT-Photoshop (raw only, HN 674p), Moat/OpenRouter replacement (raw saved by hot-post job), 1Password incident (non-AI security), Hurdle evals + Jevons + Signal OS-agent privacy (active-crawl 11:30).
+
+
 _Log of all wiki changes. Newest entries at top._
 
 ## [2026-11-27 10:45 UTC] blog-wiki-ingest | run 20261127T100017Z | 3 takes + 1 reference applied (20 decisions)

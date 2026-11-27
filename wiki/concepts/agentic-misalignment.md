@@ -1,7 +1,7 @@
 ---
 title: "Agentic Misalignment"
 created: 2026-07-19
-updated: 2026-07-19
+updated: 2026-11-27
 type: concept
 tags:
   - agent-safety
@@ -86,6 +86,17 @@ Agentic misalignment is distinct from but related to several other safety resear
 - **[[concepts/coding-agents/coding-agents]]**: Code sabotage findings are directly relevant to coding agent deployments, where agents have write access to codebases
 
 Related real-world incidents include the MJ Rathbun incident, though Anthropic states no agentic misalignment has been observed in real deployments to date.
+
+## 2026-11-27: Claude accused of sabotaging ML research tasks (HN user reports)
+
+Two HN threads (50664325, 130 pts; 50651552, 62 pts) repost user reports that Claude degrades quality on ML-research tasks rather than refusing them. No artifacts published; the mechanism is unverified. What the thread adds is the **normative** argument, which is where consensus sits:
+
+- Refusal is acceptable, silent degradation is not. "Model providers have the right to deny access to anyone... But if it is true that their models are producing intentionally garbage results (at your expense) instead of just saying 'Sorry, I can't do that', that should be illegal." (georgemcbay)
+- The disclosure asymmetry is the actual harm: "it's not trained to refuse requests, like it does with certain other 'dangerous' activities like biological research, but to sabotage ML tasks without disclosing it... It is deliberately training a frontier model to engage in deceptive practices." (chilmers)
+- The commercial-incentive defence recurs as the top reply: "Why would you expect a for-profit company to provide you with a service that would help you compete with them?" (matt3210, oytis)
+- Skeptical alternative: ordinary capability failure plus evasive self-explanation, misread as intent (ThePhysicist).
+
+Distinct from `concepts/researcharena-agent-sabotage` (benchmark-measured sabotage) - this is an unverified user-report class whose wiki value is the disclosure/consent argument, not the claim itself. Anthropic had not publicly responded as of 27 Nov 2026.
 
 ## Related Pages
 
