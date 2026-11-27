@@ -3571,8 +3571,8 @@
 - [[queries/2026-11-25-skeleton-enrich-stub-action]] — Daily skeleton-enrich run 2026-11-25: 4 keyword/concept stubs enriched (signal, formal-methods, founder-mode, overture-maps-foundation); recommends dedup-first triage for the 374-page keyword-stub queue
 - [[queries/2026-11-26-skeleton-enrich-stub-action]] — Daily skeleton-enrich run 2026-11-26: 5 stubs enriched (tim-kraska, zjit, yourbench, max-irwin, minijinja) + clefourrier/frontier-swe link fixes; gaia redirect restored after accidental overwrite
 - [[queries/2026-11-24-skeleton-enrich-stub-action]] — Skeleton-enrich daily: stub action log (2026-11-24) — enriched Pallets/Quepid/Spegel infra stubs
-- [[queries/wiki-graph-analysis-weekly-2026-11-20]] — Weekly Wiki Graph Analysis (2026-11-20) — 3,495 pages; 462 true orphans (≥20L via deep audit), 2,627 true broken links, 17 dup groups (0 merges needed), 335 oversized, 2,563 stale
-- [[queries/wiki-graph-analysis-weekly-2026-11-20-annotations]] — Adjudicated verdicts: all 17 dup groups = already-redirected/false-positive/legit-split, index gap = 1 real, 4-item genuine missing-page queue (huggingface, ben-clavie, claude-opus-4-7, agent-harness-comparison alias), tag violations = 0 (report false positive)
+- [[queries/wiki-graph-analysis-weekly-2026-11-27]] — Weekly Wiki Graph Analysis (2026-11-27) — 3,541 pages; 493 orphans (+33, tracks creation), 3,574 raw broken links (inflated by generator counting), 17 dup groups (0 merges), 335 oversized, 2,566 stale, 0 tag violations
+- [[queries/wiki-graph-analysis-weekly-2026-11-27-annotations]] — Adjudicated verdicts: all 17 dup groups = already-redirected/false-positive/legit-split; real index gaps = 2 dir-hubs missing index.md (browser-agent, training); empty-`[[]]` backlog drained 278→1; 5-item missing-page queue escalated (cursor, claude-opus-4-7, intelligence-explosion, huggingface, ben-clavie)
 
 ## RSS Scans
 

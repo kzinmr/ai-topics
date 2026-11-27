@@ -1,5 +1,14 @@
 # Wiki Log
 
+## [2026-11-27 15:05 UTC] weekly-graph-analysis — 3,541 pages; 493 orphans, 3,574 raw broken links, 17 dup groups (0 merges)
+- Generated `queries/wiki-graph-analysis-weekly-2026-11-27` via scripts/_weekly_graph_report.py + independent resolver ground truth.
+- WoW: pages 3,456→3,541 (+85), orphans 460→493 (+33, tracks creation), oversized 330→335, stale 2,558→2,566 (baseline). Tag violations 0.
+- Adjudicated 17 dup groups (annotations artifact): all already redirected / legit namespace split / false positive. 0 merges.
+- Real index gaps = 2 dir-hubs without index.md (`concepts/browser-agent`, `concepts/training`); not-indexed count 17 → 0 real.
+- Empty `[[]]` link backlog drained 278→1 — standing "needs human review" item closable.
+- Missing-page queue escalated (4+ weeks open): entities/cursor, concepts/claude-opus-4-7, concepts/intelligence-explosion, entities/huggingface, entities/ben-clavie.
+- 150 auto-fixable bare/cross-namespace links deferred to daily wiki-health-fix job.
+
 ## [2026-11-27 12:00 UTC] trending-topics | 5 new pages + 6 updates
 
 - Trend discovery: hn_algolia_supplement.py (--days 2 --min-points 25, front page + keyword block) + points-only Algolia sweep (created_at_i>24h, points>100) + newsletter triage checkpoint 20261127T101806Z. 12/12 comment trees mined, 9/10 primaries fetched (thetimes.com paywall shell).
