@@ -205,6 +205,14 @@ Key optimizations that made this possible:
 
 > **Key insight**: Voice latency is an **end-to-end systems problem**. GPU time, queue depth, and model execution all looked normal — the latency spike lived in the Python runtime itself.
 
+## Hurdle: open-source agent evals (Nov 25, 2026)
+
+Together open-sourced **Hurdle**, an npm library for running Claude Code / Codex agent evals against your own API, SDK, docs, and skills — tasks + code checks + runtime guards + LLM judge, with A/B "conditions" (e.g., baseline vs with-skill) and sandboxed runs via the Together Sandbox API + Guardian key-swapping proxy. Full page: [[concepts/hurdle-agent-evals]].
+
+## Kimi-K3.1-Pro → Qwen3.8-27B language distillation case study (Nov 26, 2026)
+
+A worked [[concepts/model-distillation|distillation]] example on Together Post-Training: **Qwen3.8-27B cannot write Lao** — asked to translate English→Lao it answers in Thai (5.5 chrF++ on FLORES-200 devtest, only 11% of outputs in Lao script), while [[concepts/kimi-k3|Kimi-K3.1-Pro]] scores 47.5. A LoRA adapter (rank 64 / alpha 128, lr 1e-4 cosine, batch 16) trained on ~3,800 teacher-generated translations lifted the student to **44.3 chrF++ = 93% of teacher, with Thai ability intact**; total cost of all experiments **$260** on B200s (teacher data generation: $7.46 at $2/$10 per MTok). Findings worth noting: the student fit **Kimi's translations at half the loss of human references** (0.36→0.06 vs 0.54→0.16 nats/token — one model's outputs are more consistent than a team of human translators'); training loss kept dropping at epoch boundaries while held-out chrF++ barely moved (−1 to +3 pts), and **more data beat more passes** (1 epoch of 4× data: 43.2 vs 3 epochs of small set: 41.3) — an overfitting/epoch-count data point for the SFT playbook. Code in Together's post-training cookbook (`recipes/distillation/`). This is also a live demonstration of Together Post-Training's model-resource/generator architecture (train + sample on the same resource; best run held a resource 46 min).
+
 ## Related
 
 - [[entities/modal-labs]] — competitor in GPU cloud and serverless inference

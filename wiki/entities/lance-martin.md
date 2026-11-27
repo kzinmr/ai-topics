@@ -3,7 +3,7 @@ title: Lance Martin
 type: entity
 handle: "@RLanceMartin"
 created: 2026-04-10
-updated: 2026-06-07
+updated: 2026-11-27
 tags:
   - person
   - model
@@ -190,3 +190,15 @@ Martin noted that Claude Opus 4.8 has a tendency to favor reasoning over tool ca
 - **Adaptive thinking steering** — The triggering behavior for adaptive thinking is steerable. If the model thinks more often than desired (which can happen with large or complex system prompts), add guidance: "Thinking adds latency and should only be used when it will meaningfully improve answer quality — typically for problems that require multi-step reasoning. When in doubt, respond directly."
 
 These tips align with Martin's broader **context engineering** and **reduce-offload-isolate** frameworks, particularly the principle of providing agents with precise, context-appropriate instructions rather than overloading the top-level system prompt. See [[concepts/reduce-offload-isolate]] for the full framework.
+
+## AI Engineer 2026 talk: 1,000-agent FLT formalization + agent memory & "dreaming" (Nov 25, 2026)
+
+Martin's AI Engineer conference talk told two frontier-capability stories (transcript: `raw/articles/2026-11-25_ai-engineer_lance-martin-1000-claude-agents-fermat.md`):
+
+1. **1,000 Claude agents formalized Fermat's Last Theorem in Lean** with no domain-specific harness (no Prove2Me) and no researcher steering — only Git + a SQL database as primitives, one lead + 999 helpers, ~30-hour runs. Five minutes in, the lead agent had *invented its own coordination schema* (announcements/roles/notes/landed tables). Details on the [[concepts/fable-5-2-1000-agent-flt-formalization]] page. Martin's takeaway: agents increasingly **orchestrate themselves** using simple primitives for very long-horizon tasks; scaffolding requirements keep collapsing.
+
+2. **Memory as a second frontier capability**, built around the Kierkegaard line "life can only be understood backwards, but it must be lived forwards" — agents write memory greedily/myopically mid-task, but memory must be globally coherent in hindsight (the hippocampus→neocortex sleep-consolidation analogy). Key results:
+   - **CL Bench** (open-source continual-learning benchmark; 40 DB questions, fresh session between each, free memory directory): the *same* minimal "a memory directory is available" instruction yields monotonically better memory use from Sonnet 4.6 → Sonnet 5 → Opus 5.5. Weak models neither reliably write nor read memory; strong models write verified, predictive statements.
+   - **Pokémon salience test**: Claude 3.7 writes an indiscriminate, bloated memory directory and plays poorly; Fable 5 keeps a tight directory of strategic/tactical insights and progresses much further — better models have better **salience instincts**.
+   - **"Dreaming"** = offline reflection over transcripts + notes that fixes poisoned memories (a wrong landmark note trapped Claude in a fall-down-the-trapdoor loop until dreaming corrected it), fills wiki gaps/placeholders, builds indices, and promotes memories to injected context. On an anonymized **Stainless acquisition corpus** (25 questions answerable only from docs + Slack), raw semantic search scores ~53%; a **Claude-built wiki improves with more dreaming tokens**, and wiki+search beats either alone.
+

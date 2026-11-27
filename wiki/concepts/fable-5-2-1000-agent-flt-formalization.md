@@ -2,7 +2,7 @@
 title: "Fable 5.2 1,000-Agent Team FLT Formalization"
 type: concept
 created: 2026-11-13
-updated: 2026-11-13
+updated: 2026-11-27
 tags:
   - ai-agents
   - multi-agent
@@ -11,6 +11,7 @@ tags:
 sources:
   - "raw/articles/claude.dev--safely-scaling-multi-agent-teams-with-claude-fable--5b21667c.md"
   - "https://claude.dev/blog/safely-scaling-multi-agent-teams-with-fable-5-2/"
+  - "raw/articles/2026-11-25_ai-engineer_lance-martin-1000-claude-agents-fermat.md"
 related:
   - "[[concepts/claude/fable-5]]"
   - "[[concepts/claude/fable-safety-classifiers-critique]]"
@@ -76,6 +77,10 @@ possible misalignment.
   **commodity infrastructure** (SQL + Git): an agent-team bitter-lesson data point.
 - Connects to the Formalizing Fermat workshop thread and the Jacobian conjecture
   discovery ([[concepts/claude-fable-jacobian-conjecture]]).
+
+## Lance Martin's AI Engineer talk elaboration (Nov 25, 2026)
+
+Lance Martin ([[entities/lance-martin]]) presented the result live at AI Engineer with additional detail (transcript: `raw/articles/2026-11-25_ai-engineer_lance-martin-1000-claude-agents-fermat.md`): each of the 1,000 agents ran in its own sandbox with restricted network access to exactly **two endpoints — Git and the SQL database**; real-time monitoring inspected every tool call for escapes, offline monitoring re-examined all runs every 10 minutes. Prompting was minimal: one lead + 999 helpers, awareness of Git/DB, and the problem statement. Within ~5 minutes the lead had created the orchestration schema itself — an *announcements* table (global broadcasts), *roles* (worker assignment across the proof's 60 statements), *notes/subtasks* (progress sharing), and *landed* (merged Lean code) — none of it specified. Runs lasted ~30 hours; on hard sub-problems (e.g., a Lagrange-related task tree) agents **invented their own abstractions** and reallocated themselves as statements closed. One agent note read: "total freeze of the origin, effective now, magnificent work all 999 of you."
 
 ## See Also
 

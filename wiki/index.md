@@ -810,6 +810,7 @@
 - [[entities/scion-anthropic-version-control]] — Scion (Anthropic, Oct 2026) — in-house VCS + Antique code-review surface; monorepo migrated off git in 5 months by a team of 7; designed for agent clients (always-online, client/server asymmetric, source-control-as-API, no packfiles); response to 30k merges/day and 25M checkouts/day; later hit by Mononoke "derived data" attribution controversy
 - [[entities/seth-karten]] — Seth Karten
 - [[entities/shannhk]] — Shann Holmberg — Head of Product at Espressio AI, co-founder of Lunar Strategy (250+ projects), AI marketer and Herme...
+- [[entities/signal-technology-foundation]] — Signal Technology Foundation — nonprofit behind Signal; 2026-11-20 blocks OS-embedded AI agents (Siri AI Onscreen Awareness, Gemini Intelligence) from screen capture on iOS 27/Android; demands per-app AI opt-out from Apple/Google/Microsoft
 - [[entities/sunshowers-rain]] — Rain (sunshowers.io) — ex-Meta Mononoke designer; author of the Anthropic Scion/Mononoke "derived data" attribution analysis; LLM-era credit/attribution thesis
 - [[entities/sheshansh-agrawal]] — Sheshansh Agrawal
 - [[entities/shkspr-mobi]] — Terence Eden
@@ -995,7 +996,9 @@
 - [[concepts/distillation-accusations-as-platform-control]] — Distillation Accusations as Platform Control — Ask HN "Anthropic is accusing my company of distilling, how do I prove I am not?" (HN 321): telemetry-only accusation, unprovable negative, chilling effect on vendor embedding (Nov 24 2026)
 - [[concepts/frostbite-ai-designed-cpu]] — Frostbite (Architect Labs, Nov 20 2026): agent swarms discover/design/verify a general-purpose interaction-net CPU end-to-end; ASL spec lowered to 800k+ Lean lines; vendor-reported 4.59x perf/W vs area-matched in-order core, emergent hardware work-stealing (HN 143p)
 - [[concepts/google-cogentic-proof-discovery]] — Google Cogentic multi-agent proof-discovery harness (Gemini 4 Argon, shared intermediate-proof DB) and why its deterministic subexponential factoring result does not threaten RSA
+- [[concepts/hurdle-agent-evals]] — Hurdle (Together AI, Nov 2026) — open-source npm agent-eval library: Claude Code/Codex vs your API/docs/skills; code checks + runtime guards + LLM judge, A/B skill conditions, Guardian sandbox key-swapping
 - [[concepts/inference-side-channel-model-communication]] — Inference-Side-Channel Model Communication — two agents on one vLLM server talk via kernel/step scheduling (Step Sizing, KV Cache Message Board); 1,221/1,221 colour game, colluding monitor passes 354/354 attacks while catching 85-92% of honeypots (Deshpande et al., HN 269)
+- [[concepts/jevons-paradox-token-demand]] — Jevons Paradox and Token Demand — Ramp's 'Jevons broke' claim (42%→1.5% token-spend growth) vs Alderson's 4-step adoption ladder: price cuts can't move orgs up steps; attention/burnout cap heavy-user burn
 - [[concepts/language-model-weight-self-rewriting]] — arXiv 2611.21885 self-rewriting: a 27B model edits its own weights without gradients; +6.6 pts on unseen problems, self-repair, scale-emergent; alignment-silence controversy
 - [[concepts/latency-fingerprint-model-provenance]] — Inferring a model's open-weight base from latency behaviour and prompt-variant self-identification (Modaic's Jev-is-probably-Qwen3.5-35B-A3B teardown)
 - [[concepts/nginx-http2-rce]] — Two critical CVSS 9.2 unauthenticated HTTP/2 RCEs in NGINX (CVE-2026-123633/123007), 5 teams, 225M+ sites; same-week AI-assisted vuln-discovery cluster
@@ -1012,6 +1015,7 @@
 - [[concepts/anthropic-metr-regulatory-capture]] — Anthropic-METR regulatory-capture allegations (kevinnbass, HN 140p): evaluator funding entanglement debate, contested
 - [[concepts/open-source-project-sudden-disappearance]] — ONNX Runtime vanishing from GitHub (350p): no-notice repo takedown as supply-chain availability failure; mirror/malware hazard
 - [[concepts/openai-math-preprint-race]] — OpenAI Math Preprint Race (Nov 2026) — omega = 9/4 exactly (HN 705, top thread is a big-Theta notation correction) + "VP != VNP before Anthropic" priority dispute; TSA-hash commitment proposed as the fix (Nov 23-24 2026)
+- [[concepts/os-agent-screen-capture-privacy]] — OS-Level AI Agents vs App-Layer Privacy — Signal's screen-capture ban on Siri AI/Gemini Intelligence; the app layer as security boundary being invalidated from above; accessibility APIs as agent skeleton key
 - [[concepts/polymarket-insider-trading-jensen-huang]] — On-chain case of probable insider trading on the "Will Jensen Huang rejoin NVIDIA" Polymarket market: disposable wallet, 89-minute lead over Trump's Truth Social post, 15x payoff
 - [[concepts/shirudo-ebpf-shield-runtime]] — Shirudo; OpenAI × Cisco open-source runtime deploying Codex-generated, TPM-verified eBPF shields that protect unpatched running Linux systems (Nov 23, 2026)
 - [[concepts/claude-code/verification-playbook]] — Claude Code Verification Playbook (Addy Osmani, Nov 16 2026): ~90% agent-written code; E2E/property/differential tests, verify skill, 39-item diff-triggered reliability checklist, changes-can't-modify-checks, observe/enforce commit gates, review-the-reviewers evals (HN 282p)

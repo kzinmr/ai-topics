@@ -3962,3 +3962,24 @@ research-grade pages from genuinely uncovered material:
   - `raw/articles/ai-engineer--execution-is-free-jason-liu-openai--bFcob2p6u3A.md` (Jason Liu, OpenAI DX; taste/ambition/ownership; 19:26)
   - `raw/articles/ai-engineer--stop-building-software-factories-justin-mccarthy--1S4hx3wgvBE.md` (Justin McCarthy, Diffusion; brownfield + demand factories; 18:03)
 - LWN "[\$] Tainting (or not) on manual driver binding" (paywalled) left unsaved — out of AI scope.
+
+## 2026-11-27 11:30 UTC — active crawl (4 topics)
+- Trend discovery: blogwatcher DB (3-day window) + HN Algolia; web_search tool unavailable in this cron session → used curl-based source extraction + blogwatcher SQLite per skill fallback.
+- Dropped candidate: Dwarkesh RSI objections (already fully ingested 2026-11-25 → concepts/recursive-self-improvement).
+- New raw articles (wiki/raw/articles/):
+  - 2026-11-25_together-ai_introducing-hurdle-agent-evals.md
+  - 2026-11-26_together-ai_distilling-kimi-k3-1-pro-into-qwen3-8-27b.md
+  - 2026-11-25_martinalderson_has-jevons-paradox-broken-down.md
+  - 2026-11-20_signal_restricting-ai-agents-from-screen-capture.md
+  - 2026-11-25_ai-engineer_lance-martin-1000-claude-agents-fermat.md (YouTube transcript via fetch_transcript.py)
+- New pages:
+  - concepts/hurdle-agent-evals — Together AI open-source agent-eval npm lib (checks+guards+judge, skill A/B conditions, Guardian sandbox)
+  - concepts/jevons-paradox-token-demand — Ramp "Jevons broke" (42%→1.5%) vs Alderson 4-step adoption ladder
+  - concepts/os-agent-screen-capture-privacy — Signal vs Siri AI/Gemini Intelligence screen capture; app-layer security boundary
+  - entities/signal-technology-foundation
+- Updated pages:
+  - entities/lance-martin — AI Engineer talk: 1,000-agent FLT + memory/dreaming (CL Bench, Pokémon salience, Stainless wiki/dreaming tokens)
+  - concepts/fable-5-2-1000-agent-flt-formalization — talk elaboration section (Git+SQL primitives, self-invented schema, 30h runs)
+  - entities/together-ai — Hurdle + Kimi-K3.1-Pro→Qwen3.8-27B Lao distillation ($260, 93% of teacher)
+- SCHEMA.md: added tags together-ai, os-agent, jevons-paradox.
+- Index: 4 entries inserted (entities +1, concepts +3).
