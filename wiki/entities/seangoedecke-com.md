@@ -2,7 +2,7 @@
 title: "Sean Goedecke"
 tags: [person]
 created: 2026-04-24
-updated: 2026-11-21
+updated: 2026-11-27
 type: entity
 sources:
   - raw/articles/seangoedecke.com--what-requirements-dont-you-have--b9347116.md
@@ -32,6 +32,7 @@ sources:
   - raw/articles/seangoedecke.com--how-to-get-assigned-interesting-work--a0b6ee47.md
   - raw/articles/seangoedecke.com--alignment-is-impossible--1d1ef1ca.md
   - raw/articles/seangoedecke.com--llms-are-terrible-at-designing-ai-systems--1bc34f1a.md
+  - raw/articles/seangoedecke.com--who-gets-to-decide-if-something-is-written-by-ai--11be4583.md
 ---
 
 # Sean Goedecke
@@ -603,6 +604,20 @@ Source: [[raw/articles/seangoedecke.com--to-code-well-avoid-blunders--80f3e6a6.m
 A career/craft essay on operating under uncertainty. When you have no clear guidance and don't know what will help, "the best course of action is often just to flail about" — and he is candid that it "sounds counter-intuitive" and "definitely dangerous advice. Flailing badly is a great way to damage your reputation." The discipline that separates productive from reputation-destroying flailing is a three-part method: **(1) try many things, (2) become highly sensitive to feedback, (3) mercilessly discard the options that get no response.** He distinguishes *product* flailing from other modes of exploring an unclear situation. It sits naturally beside his existing insider-amnesia / screwing-up / simple-work-gets-rewarded essays on this page and is best treated as a sources-list addition rather than a new concept — his career-and-organization essays are accumulated here, and the technical claims are thin relative to his design-centrism pieces. Pairs thematically with his Oct "Elegance and Intelligence Are Anticorrelated" (both about how to operate when the right move isn't obvious).
 
 Source: [[raw/articles/seangoedecke.com--when-in-doubt-flail-about--d1a2a175.md]]
+
+---
+
+### Who Gets to Decide If Something Is Written by AI? — The Power Analysis of AI Detection (Nov 2026)
+
+His deepest statement yet on the AI-detection debate, extending the watermarking line ([[#AI Text Watermarking Is Not a Big Deal (Aug 2026)]], [[#Readers Can't Identify Watermarked AI Text]]) from *technical feasibility* to *political legitimacy*. The opening cases: a writing prize whose winner was accused of AI generation, an author who lost her contract after a manuscript "lit up Pangram," and endless tweet-authentication disputes.
+
+The core move: arguments about Pangram's **reliability** are downstream of the real conflict — many anti-AI people have a *fundamental hatred of AI-detection tooling as such*, which puzzles him ("If you hate AI, shouldn't you love a tool that can unmask it?"). His answer is **power**: "who gets to decide if something is written by AI" is a question about who gateskeeps literary prizes, grades students, and excludes people from public discourse — his blog's central thesis ("everything is actually about power and that's fine") makes him *sympathetic* to Pangram skeptics here. Steelman: if your worry is that AI gives the tech sector unprecedented social power, then making Pangram — culturally and politically part of the same distrusted tech sector — the arbiter is irrational; "if you don't want Sam Altman or Dario Amodei with a hand on the wheel of public opinion, having some other tech CEO as a watchdog is unlikely to reassure you much." He generalizes this to distrust of *tool-shaped solutions* overall: decades of shift from messy community processes to legible app-based ones (taxis, hotels, doctor's appointments; semi-robotic jobs assessed by systems rather than forgiving humans) — anti-AI sentiment is partly a reaction to that whole shift, so "ameliorating AI by relying on yet another AI tool sounds like a sick joke."
+
+His own pro-Pangram conclusion rests on the alternative being **community self-policing**, which he rejects because people who don't use AI are bad at judging AI text: on Twitter, obvious-AI tells get defended by people who haven't read enough AI content, and a merely long, polite tweet gets flagged as AI. Delegate the judgment to AI haters "and they will get it wrong more often than not." Therefore: if you actually want less AI in art and culture, use the most powerful tools available even if they are AI tools — and if you distrust tech companies policing each other, push for **open-source detection or government-built in-house detection platforms** rather than no detection at all. A reader email added a caveat he accepted: much Pangram distrust stems from most AI tools being dishonestly bad, so false-positive fear is rational even toward a good tool.
+
+Wiki relevance: the strongest "detection as power struggle" framing to date; complements the technical skepticisms in [[concepts/ai-content-transparency]] and [[concepts/llm-text-detection-classical-ml]] (his own watermarking pieces: readers can't identify watermarked AI text, C2PA needs universal signing) — there the question is *can we detect*, here it is *who is allowed to*.
+
+Source: [[raw/articles/seangoedecke.com--who-gets-to-decide-if-something-is-written-by-ai--11be4583.md]]
 
 ---
 

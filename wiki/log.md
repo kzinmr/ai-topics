@@ -2,6 +2,18 @@
 
 _Log of all wiki changes. Newest entries at top._
 
+## [2026-11-27 10:45 UTC] blog-wiki-ingest | run 20261127T100017Z | 3 takes + 1 reference applied (20 decisions)
+
+Recovered triage from checkpoint (pre-run script reported parse failure; triage_latest.json valid). 20 decisions: 3 takes, 1 reference, 16 skips.
+
+- **Take**: `entities/seangoedecke-com.md` — new section "Who Gets to Decide If Something Is Written by AI?" (Pangram power analysis: detection-tool hatred as distrust of tech-sector watchdogs; community self-policing fails because non-users misjudge AI text; recommends open-source/government detection).
+- **Take**: `concepts/benchmarking-crisis.md` — new case study "VLDB/SIGMOD Submission Flood" (Neumann: 500+ non-peak VLDB submissions, ~2,000 SIGMOD, 5,000+ combined; sentence-level-vs-paper-level AI writing failure; half-dozen agent-produced publishable results in days of prompting; raise-the-bar prescription). New tag `ai-research-automation`.
+- **Take (new page)**: `concepts/ai-research-automation.md` — concept page for agent-driven research automation & peer-review crisis, anchored on Neumann's first-hand account; cross-linked to benchmarking-crisis, reward-hacking, agent-generated-software, recursive-self-improvement. Registered in index.md.
+- **Take**: `entities/sierra.md` — new "Healthcare — HLTH 2026" section (BCBSA Federal Employee Program agent: 6M members / 31 plans / 53-day launch / 105K+ calls / 4.5/5; Cigna Will Rogers on personal agents "many doors"; Poppy visitor-badge framing; ~50 care-gap use cases; Dr. Mitesh Patel hire as Head of Clinical; outcome-based pricing). Tag `healthcare` added.
+- **Reference**: `entities/simon-willison.md` — Nov 26 quote post: Jack Despain Zhou "de-individualization" (I open a YouTube video and I hear Claude) linked to ai-generated-language-readability / ai-slop.
+
+Skips archived (LWN x4 batch, Doctorow politics, Wichary UI essay, dynomight miscellany, JohndCook math, Raymond Chen WinRT, Geerling USB hack, shkspr OGP, merge.dev vendor comparison, NYT/Photoshop link-card, 3 unsaved_articles).
+
 ## [2026-11-26 19:1x UTC] skeleton-enrich-daily | 5 stub concepts enriched + link hygiene
 
 **Backlog**: `status: skeleton` = 0 (streak since 2026-10-17); entity stubs = 1 (greg-ceccarelli, content-complete, no action); concept stubs with TODO 381 → 375.

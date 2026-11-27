@@ -985,7 +985,8 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2401 pages)
+## Concepts (2402 pages)
+- [[concepts/ai-research-automation]] — AI research automation — agents accelerating idea implementation, experiments and paper-writing; VLDB/SIGMOD submission flood (5,000+/yr), sentence-level-vs-paper-level writing failure, raise-the-bar prescription (Thomas Neumann, Nov 2026)
 
 - [[concepts/agent-principal-agent-problem]] — Agent Principal-Agent Problem (Model Loyalty) — the agent you pay for is its vendor's agent, delegated to you; Bandcamp-refusal vs YouTube-download asymmetry (Michael Harley, HN 977); permission-layer workarounds and open weights as exits
 - [[concepts/claude-black-hole-physics]] — Claude Fable 5.2 solves two open black-hole/quantum-gravity problems (Nov 19 2026): 20-year-old formation-transition calculation completed; exact central-charge upper bound on black-hole mass; Anthropic notes neither result describes our universe (HN 512p)

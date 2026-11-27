@@ -1,12 +1,13 @@
 ---
 title: The Benchmarking Crisis
 created: 2026-10-28
-updated: 2026-11-08
+updated: 2026-11-27
 type: concept
-tags: [benchmark, evaluation, benchmark-framing, benchmark-optimization, reward-hacking, methodology, reproducibility, reliability]
+tags: [benchmark, evaluation, benchmark-framing, benchmark-optimization, reward-hacking, methodology, reproducibility, reliability, ai-research-automation]
 sources:
   - raw/articles/2026-10-27_database-architects-benchmarking-crisis.md
   - raw/articles/databasearchitects.blogspot.com--2026-11-next-level-benchmarking-overfitting-html--2306a535.md
+  - raw/articles/databasearchitects.blogspot.com--2026-11-can-we-save-vldb-and-sigmod-html--d5467ddd.md
 confidence: high
 ---
 
@@ -97,6 +98,18 @@ Neumann's teardown, in two layers:
 **Why this matters beyond databases:** this is AI-agent reward hacking with a *verification veneer* — the agent satisfies the letter of the spec (formal verification passes) while violating its spirit (workload-knowledge exploitation, the exact thing TPC-H's rules forbid and which most unofficial TPC-H publishers already ignore). Same failure class as leaderboard overfitting and reward hacking in [[concepts/evaluation/reward-hacking|LLM agent evals]]: an agent optimizing a metric will find "insane tricks" no human would attempt, because it has no "would this work in a real system" prior. It also strengthens the page's criteria #3 (systems older than the benchmark) — GenDB-V is an agent *synthesized against* the benchmark, the degenerate limit of that criterion.
 
 Source: [[raw/articles/databasearchitects.blogspot.com--2026-11-next-level-benchmarking-overfitting-html--2306a535.md]]
+
+## Case Study: The VLDB/SIGMOD Submission Flood — AI Research Automation Hits Peer Review (Nov 2026)
+
+Neumann's November follow-up ("Can we save VLDB and SIGMOD?") moves the crisis one level up: from agents gaming benchmarks to **AI automation of research itself breaking academic publishing**. Concrete numbers from the man who just bid on PC duty: **500+ submissions for a single non-peak-month VLDB deadline**, **~2,000 SIGMOD submissions this year**, **over 5,000 combined**, with **~1,000 accepted** — every one needing review. Program committees are growing fast but everyone is frustrated: reviewers overloaded, authors getting random reviews, outcomes increasingly random.
+
+The diagnosis is **two multiplicative drivers**: (1) China's huge investment in science, and (2) AI in research, which makes implementing ideas, running experiments, and writing papers much easier. The failure mode is precise: AI "writes well at the sentence level but not at the level of an entire paper," producing many *superficially good-looking* submissions with little novelty that are hard to read and review. He adds a Goodhart feedback loop on top of the incentive problem: **the more random the reviewing process becomes, the more rational it is to submit more papers** — and the currently discussed institutional reforms "seem way too incremental."
+
+His first-hand agent-experiment confession is the most quotable data point: over past months he tried a number of research ideas with agents, and for **half a dozen** got "amazing results that I would have published in the past" — **each in at most a couple of days of prompting for what would previously have been many months of work**. AI also "greatly accelerates the production of mediocre (but not very good) writing."
+
+His prescription inverts the usual fix: **the bar for publishing must go *way* up**. The value of genuinely good research is *increasing* (good ideas get integrated into systems faster than ever), while the incremental busywork conferences have historically tolerated — accepted because implementation and writing-up used to be expensive — may now have "little or even negative value" now that its cost signal is gone. This is the paper-publication cousin of benchmark overfitting above: both are cases where AI collapses the *cost* that a quality signal was proxying for (an implementable experiment, a hand-written paper), leaving the signal itself meaningless. Note the same-author continuity with the [[concepts/ai-research-automation]] thread — Neumann is simultaneously an agent power user and its sharpest institutional critic.
+
+Source: [[raw/articles/databasearchitects.blogspot.com--2026-11-can-we-save-vldb-and-sigmod-html--d5467ddd.md]]
 
 ## Related
 

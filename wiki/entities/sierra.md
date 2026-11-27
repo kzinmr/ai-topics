@@ -1,7 +1,7 @@
 ---
 title: "Sierra"
 created: 2026-05-05
-updated: 2026-11-21
+updated: 2026-11-27
 type: entity
 tags:
   - company
@@ -14,6 +14,7 @@ tags:
   - lab
   - fintech
   - partnership
+  - healthcare
 sources:
   - raw/newsletters/2026-05-04-ainews-the-other-vs-the-utility.md
   - https://www.cnbc.com/2026/05/04/bret-taylor-sierra-fundraise-openai.html
@@ -21,6 +22,7 @@ sources:
   - raw/articles/sierra.ai--blog-tau-knowledge--5dda7a09.md
   - raw/articles/sierra.ai--blog-outcomemaxxing--0bc34aec.md
   - raw/articles/sierra.ai--blog-discovering-what-s-possible-with-ai-for-cx--904ecc1f.md
+  - raw/articles/sierra.ai--blog-ai-agents-healthcare-hlth-2026--f1e95686.md
   - raw/articles/2025-08-19_sierra_simulations-the-secret-behind-every-great-agent.md
   - raw/articles/sierra.ai--blog-ai-pilling-our-company-lessons-learned--168c9b80.md
   - raw/articles/sierra.ai--blog-announcing-our-partnership-with-softbank-corp--4a150bd0.md
@@ -320,6 +322,21 @@ Sierra's retail-facing whitepaper reframes the "personal agents: opportunity or 
 This is the demand-side framing of Poppy — the enterprise/control narrative in [[concepts/agentic-commerce]].
 
 Source: [[raw/articles/sierra.ai--blog-shopping-agents--6febce7c.md]]
+
+## Healthcare — HLTH 2026 (November 2026)
+
+Sierra's official HLTH 2026 recap ("AI Agents in Healthcare: 4 Lessons from HLTH 2026") is its healthcare-vertical thesis statement, anchored on two payer deployments — **Blue Cross Blue Shield Association (BCBSA)** and **Cigna** — at the scale of millions of members. Framing problem: the referral black hole (doctor says sent, specialist says never arrived, so "you become the project manager"); an agent instead tracks the referral, follows up with the insurer for approval, and keeps the patient posted until booked — "takes that burden off the patient without adding work for payer and provider staff." Market observation: "There was an agentic something at almost every booth at HLTH this year. It's relatively easy to spin up a demo, but launching an agent at scale is harder."
+
+The four lessons, with the durable numbers:
+
+1. **Speed comes from partnership.** BCBSA launched an agent for the **Federal Employee Program** (nearly **6 million** people across **31 BCBS Plans**) in **53 days**; it took **400 calls on day one** (June) and resolved **105,000+ calls with 4.5/5 satisfaction** five months later. BCBSA COO Sean Robbins credited day-one "in the trenches together" partnership and offered the anti-pattern warning: "If you just apply AI to the same old workflows, you're just accelerating, in many cases, broken workflows."
+2. **Capabilities go beyond the call.** Eighteen months ago an agent's work ended when the call did; now it "can own a task for weeks, across every channel" — enabling proactive care (call a patient overdue for a mammogram, find and book a clinic opening, follow up by text until she's seen; "You can put the agent on hold instead of the other way around" — Clay Bavor). Sierra counts **~50 care-gap use cases** (screenings to post-procedure check-ins). The same agent can explain a $340 balance from the health record, set a payment plan, and take payment via **Plaid** in one conversation — all on **direct EHR integrations** (book/reschedule, bill context, calling payers about prior auth).
+3. **Planning for personal agents.** **Will Rogers, Head of AI at Cigna**: members will increasingly "walk in" through their own personal agents — "There's not going to be one front door. There's going to be many doors" — with most people owning one **within two years**. This is the healthcare validation of [[concepts/personal-agent-protocol-poppy]] (100+ design partners incl. Cigna; provider agents already call Cigna's agents, and Sierra is building a direct agent-to-agent connection). Trust framing: where many personal agents log in with the user's password, **Poppy gives each agent its own identity and scoped access — "a visitor badge, not a master key"** (Rogers).
+4. **Trust is the real work.** In healthcare trust starts with safety: the agent must recognize a crisis in whatever words the patient uses and know where its job ends — administrative work to the agent, clinical decisions stay with clinicians; drawing and testing that line pre-launch "is what earns an agent the right to serve patients." To lead it, Sierra hired **Dr. Mitesh Patel** (formerly Chief Clinical Transformation Officer at **Ascension**) as **Head of Clinical**.
+
+Forward stance: "We have less of a technology gap today than we have a process change gap" (Bavor) — which underwrites Sierra's **outcome-based pricing** (an appointment booked, a prior authorization approved, a bill paid) and its stated goal: "a named advisor for every patient." This section extends the existing healthcare touchpoints on this page (Horizon prior-authorization use case, Accelerators' healthcare pack, Anon's loan-origination/prior-auth fit) into a full vertical, alongside the regulated-finance evidence (JPMorganChase Hall of Innovation, Compliance Console).
+
+Source: [[raw/articles/sierra.ai--blog-ai-agents-healthcare-hlth-2026--f1e95686.md]]
 
 ## Significance
 
