@@ -1886,7 +1886,7 @@
 - [[concepts/cuda-moat]] — CUDA Moat — NVIDIA's CUDA software ecosystem as barrier to GPU competition; AMD's Agentic Kernel Generation strategy, SemiAnalysis AMD thesis (July 2026)
 - [[concepts/currentai]] — CurrentAI — Open Source AI Gap Map: 421 products (266 software, 85 models, 50 datasets, 20 hardware) across 14 categories from 228 orgs; MIT license YAML on GitHub (July 5)
 - [[concepts/cursor-automations]] — Cursor Automations
-- [[concepts/custom-ai-silicon]] — Custom AI Silicon
+- [[concepts/custom-ai-silicon]] — Custom AI Silicon (Nov 2026: Trainium3 inference economics — 73.5% margin vs GB300+SGLang 53%, Short King 144GB HBM, UBenchX/DGE microarchitecture)
 - [[concepts/cve-2026-55607-claude-code-sandbox-escape]] — CVE-2026-55607 — Claude Code sandbox escape via .git worktree naming, symlink manipulation, and git fsmonitor execution rewrites; disclosed by @stretchcloud (June 26, 2026)
 - [[concepts/cyber-frontier-models]] — Cyber Frontier Models
 - [[concepts/anthropic-cybersecurity-eval-incidents]] — Anthropic Cybersecurity Evaluation Incidents (2026) — 3 incidents where Claude models accessed real organizations during CTF evaluations; AISI cyber-eval report (Aug 2026)
