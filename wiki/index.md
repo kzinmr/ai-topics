@@ -216,6 +216,7 @@
 - [[entities/daniel-han]] — Daniel Han — Co-founder & CEO of Unsloth AI (YC S24); 2-30x faster LLM fine-tuning, Kimi K3 & DeepSeek-V4-Flash GGUF quants, Inkling 1-bit GGUF, Unsloth Studio
 - [[entities/daniel-kim-cerebras]] — Daniel Kim (@learnwdaniel) — Head of Growth at Cerebras; co-author of Cerebras Knowledge Base
 - [[entities/daniel-miessler]] — Daniel Miessler
+- [[entities/daniel-kokotajlo]] — Daniel Kokotajlo — AI Futures Project (*AI 2027*); >50% for human-expert-surpassing AI before 2029, expects superintelligence in 2027; argues for industry-wide pause then international treaty (Nov 2026)
 - [[entities/daniel-tunkelang]] — Daniel Tunkelang
 - [[entities/daniel-van-strien]] — Daniel van Strien; ML Librarian at HF — weak-label GLAM pipelines, UV scripts for agents; Nov 2026: saturate (congestion-aware batch inference) + ocr-bench (per-collection OCR leaderboards via VLM-as-judge); Oct 2026: HF "Train Models on Jobs" docs, curation decision model
 - [[entities/danlark-org]] — Daniel Kutenin (danlark) — Search infrastructure engineer (ex-Yandex, Google); C++ performance, algorithms, and large-scale systems blog; Telegram Data Clustering Contest 3rd place write-up (fastText/CLD2/HNSW news aggregator)
@@ -282,6 +283,7 @@
 - [[entities/eleutherai]] — Grassroots research collective turned non-profit that started the modern open-source AI movement
 - [[entities/elevenlabs]] — ElevenLabs; voice AI/agents — Nov 2026: Scribe v3 STT reset, Kotoba acquisition (Japanese voice AI), Campaign Manager, PostNord/Autotorino case studies, government voice-agent thesis (SSA/IRS failure stats, Ukraine/Poland/Brazil deployments)
 - [[entities/eli-thegreenplace-net]] — Eli Bendersky
+- [[entities/ege-erdil]] — Ege Erdil — Google DeepMind researcher / Intelligence Futures co-founder (*AI 2040*); ~20% for human-expert-surpassing AI before 2029, median 2040 for full automation; argues misalignment itself throttles RSI (Nov 2026)
 - [[entities/elie-bakouch]] — ML engineer and researcher at Prime Intellect (formerly Hugging Face), known for work on SmolLM, pretraining optimiza...
 - [[entities/eliezer-yudkowsky]] — Eliezer Yudkowsky — AI alignment researcher, co-founder of MIRI
 - [[entities/elvis]] — elvis
@@ -546,7 +548,7 @@
 - [[entities/mark-chen]] — Mark Chen
 - [[entities/mark-mcquade]] — Mark McQuade
 - [[entities/mark-saroufim]] — Mark Saroufim
-- [[entities/martin-alderson]] — Martin Alderson; ML Research + Open-Weight Margin Collapse section (July 7); Cache Read Costs (Aug 11: cache reads dominate agentic workload costs, quadratic turn growth, ~$0.5/GB-h profit centre); How I Think About Reducing AI Costs (Aug 17: 4-layer cost audit framework, MCP token waste, quarterly review cadence); The Summer of Open Weights (Aug 24: open-weight tipping point, OpenAI Luna -80%/Sol -20% cuts, Meta Muse Spark 1.2 $0.10/$0.20 + $0.002 cache reads, Anthropic compute-starved & least able to respond price-wise, commodity vs frontier-leap scenarios); Gavin Baker GPU contract-repricing wildcard (Aug 25: expiring $2/GPU-hr commitments repricing toward $4 — 2x cost shock on open-weight inference, token efficiency as decisive axis)
+- [[entities/martin-alderson]] — Martin Alderson; ML Research + Open-Weight Margin Collapse section (July 7); Cache Read Costs (Aug 11: cache reads dominate agentic workload costs, quadratic turn growth, ~$0.5/GB-h profit centre); How I Think About Reducing AI Costs (Aug 17: 4-layer cost audit framework, MCP token waste, quarterly review cadence); The Summer of Open Weights (Aug 24: open-weight tipping point, OpenAI Luna -80%/Sol -20% cuts, Meta Muse Spark 1.2 $0.10/$0.20 + $0.002 cache reads, Anthropic compute-starved & least able to respond price-wise, commodity vs frontier-leap scenarios); Gavin Baker GPU contract-repricing wildcard (Aug 25: expiring $2/GPU-hr commitments repricing toward $4 — 2x cost shock on open-weight inference, token efficiency as decisive axis); "The agent tax has arrived" (Nov 27 2026: coins the term, Google Workspace MCP pricing $0.20/1k vs 10M/day REST free tier, $2/user/month hit on frontier-lab margins, enforcement-by-profiling and agent-driven-exit objections) → [[concepts/google-workspace-mcp-mandate]]
 - [[entities/martin-fowler]] — Martin Fowler (redirect)
 - [[entities/martin-kleppmann]] — Martin Kleppmann
 - [[entities/martinfowler]] — Martin Fowler — Chief Scientist at Thoughtworks; PRINCE case study (Agentic RAG + Text-to-SQL for Bayer AG) published on martinfowler.com bliki (June 23)
@@ -591,7 +593,7 @@
 - [[entities/mimi]] — Mimi (Kyutai)
 - [[entities/mimo]] — MiMo (Xiaomi)
 - [[entities/minimax]] — MiniMax; H3 open weights (first open model to top Artificial Analysis video ranking) + MLX port for Apple Silicon (Aug 2026)
-- [[entities/minimaxir-com]] — Max Woolf; Nano Banana prompt-engineering analysis (Nov 2025); IMDb rating prediction via text embeddings (Jun 2025)
+- [[entities/minimaxir-com]] — Max Woolf; Nano Banana prompt-engineering analysis (Nov 2025); IMDb rating prediction via text embeddings (Jun 2025); Agentic Performance Iteration Opus 5.5 / Fable 5.2 sequel (Nov 27 2026: cumulative ~4x speedup on GPT-optimized Rust, peak-memory + disassembly passes, "vibes" as a regression class, byteseek open-sourced)
 - [[entities/mira-murati]] — Mira Murati
 - [[entities/mistral-ai]] — Mistral AI; Shieldstral 3B on-device safety model (Aug 2026)
 - [[entities/multiverse-computing]] — Multiverse Computing; Quasar 438B open-weights model (HLE 44.7%, Apache 2.0, Cohere-hosted) billed "Europe's leading AI model" (Sep 2026)
@@ -706,7 +708,7 @@
 - [[entities/pioneer-ai]] — Pioneer AI ([[entities/fastino-labs]]) — SLM fine-tuning & inference agent; Agent Mode (10 min), Research Mode (autonomous exploration), Adaptive Inference (production auto-improvement); AdaptFT-Bench proposed; Intent 99.3%, Entity F1 0.810 (July 2🆕)
 - [[entities/playerzero]] — PlayerZero
 - [[entities/pliny-prompter]] — Pliny the Prompter
-- [[entities/pluralistic-net]] — Cory Doctorow
+- [[entities/pluralistic-net]] — Cory Doctorow; Nov 27 2026 "Taylorism and AI's shared sales-pitch" — Frederick Winslow Taylor as the structural template for the AI pitch: bosses buy a cure for the trauma of being unable to boss people around, not a productivity gain ("Ergonomics are real. Taylorism is fake. Automation is real. AI is fake")
 - [[entities/pointer]] — Pointer
 - [[entities/pointer-ai]] — Pointer AI — computer-use agent company; OSWorld SOTA 83.6% (Opus 4.7) vs human 72.4%; Feasibility Gate/Planner/Executor harness, open-sourced May 2026
 - [[entities/polar-prorl-agent-server]] — Polar (ProRL-Agent-Server)
@@ -998,7 +1000,7 @@
 - [[concepts/distillation-accusations-as-platform-control]] — Distillation Accusations as Platform Control — Ask HN "Anthropic is accusing my company of distilling, how do I prove I am not?" (HN 321): telemetry-only accusation, unprovable negative, chilling effect on vendor embedding (Nov 24 2026)
 - [[concepts/frostbite-ai-designed-cpu]] — Frostbite (Architect Labs, Nov 20 2026): agent swarms discover/design/verify a general-purpose interaction-net CPU end-to-end; ASL spec lowered to 800k+ Lean lines; vendor-reported 4.59x perf/W vs area-matched in-order core, emergent hardware work-stealing (HN 143p)
 - [[concepts/google-cogentic-proof-discovery]] — Google Cogentic multi-agent proof-discovery harness (Gemini 4 Argon, shared intermediate-proof DB) and why its deterministic subexponential factoring result does not threaten RSA
-- [[concepts/google-workspace-mcp-mandate]] - Google Workspace MCP Mandate - from 1 Feb 2027 AI-agent-driven tools must use Google's 8 Workspace MCP servers; Gmail MCP can search/draft but cannot send; direct REST held to Standard-tier quotas (347p, Nov 2026)
+- [[concepts/google-workspace-mcp-mandate]] - Google Workspace MCP Mandate - from 1 Feb 2027 AI-agent-driven tools must use Google's 8 Workspace MCP servers; Gmail MCP can search/draft but cannot send; direct REST held to Standard-tier quotas (347p, Nov 2026); + "the agent tax" pricing layer (Alderson, Nov 27: $0.20/1k MCP vs 10M/day free REST, $2/user/month margin hit on frontier labs, enforcement-by-profiling and agent-driven-exit objections)
 - [[concepts/hurdle-agent-evals]] — Hurdle (Together AI, Nov 2026) — open-source npm agent-eval library: Claude Code/Codex vs your API/docs/skills; code checks + runtime guards + LLM judge, A/B skill conditions, Guardian sandbox key-swapping
 - [[concepts/inference-provider-wrapper-problem]] - Inference Provider Wrapper Problem - kendell traced Novita/StreamLake/Ant Digital DeepSeek tokens to ByteDance Ark (up to 1.1T/wk) despite Zero-Data-Retention claims; Cayman-HK-SG-US-VIE tree vs IPO 'not a pass-through gateway' claim (Nov 2026)
 - [[concepts/inference-side-channel-model-communication]] — Inference-Side-Channel Model Communication — two agents on one vLLM server talk via kernel/step scheduling (Step Sizing, KV Cache Message Board); 1,221/1,221 colour game, colluding monitor passes 354/354 attacks while catching 85-92% of honeypots (Deshpande et al., HN 269)

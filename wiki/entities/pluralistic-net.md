@@ -2,7 +2,7 @@
 title: Cory Doctorow
 type: entity
 created: 2026-04-09
-updated: 2026-05-27
+updated: 2026-11-28
 tags:
   - person
   - blogger
@@ -13,7 +13,8 @@ aliases:
 - pluralistic.net
 - cory doctorow
 - doctorow
-sources: []
+sources:
+  - raw/articles/pluralistic.net--2026-11-27-taylor-made--a5e282a9.md
 ---
 
 # Cory Doctorow
@@ -129,6 +130,20 @@ Doctorow's proposed solution:
 Doctorow publishes **all content under CC BY 4.0**, encouraging republication by anyone, including commercial outlets. Wired republished his enshittification essay. This is intentional: spread ideas widely, retain message integrity, refuse platform dependency.
 
 His **Memex Method** — maintaining 50,000+ public notes in a searchable database — serves as both personal knowledge management and public intellectual work. Notes are intentionally readable by others, enforcing rigor and enabling others to build on his ideas.
+
+### Taylorism as the Template for the AI Sales Pitch (Nov 27, 2026)
+
+Doctorow's most explicit statement yet of *why* AI sells to management, and the one his earlier AI posts ("I will fucking piledrive you if you mention AI again", "AI is fake / automation is real") were always pointing at. The move is to make **Frederick Winslow Taylor** the structural precedent rather than a passing analogy:
+
+- **Taylor the con-artist, not the scientist.** The richest, most powerful men of a century ago paid eye-popping fees to have "unqualified young men in 'scientist' drag (lab coats, clipboards, stopwatches)" choreograph their factory floors. The "scientists" **refused to speak to the workers they observed** — never asking why a motion was made — because a piston or a gear does not get consulted. Their recommendations were, in Doctorow's terms, *bullshit*: impossible quotas plus choreography that caused early fatigue and injury; morale plunged and labor unrest surged wherever they went. "These 'scientists' were fucking idiots."
+- **Why rational owners bought it: the boss's paradox.** The titans built firms too large to keep individual tabs on, which made them *vulnerable to their own lowest-paid workers* — anyone could slack, unionize, or sabotage "safe in the knowledge that they were part of a vast cohort that could neither be tractably surveilled nor controlled." Since "the quest for wealth and power is, above everything else, the quest for **impunity**," Taylor's pitch — a workforce "literally reduced to machine-parts," visibly cowed — sold on psychology, not on ROI. Hence the double meaning he labels **Taylorism(1)** (timing, surveilling, scoring workers) versus **Taylorism(2)** (fleecing bosses terrified of their workforce's independence) — the same two-layer structure as pandemic-era bossware.
+- **The AI pitch is Taylorism(2) recycled.** "In case you have any doubt, yes, this is a post about AI." The modern boss is "a financial engineer, possibly with a law degree," expert in balance-sheet manipulation and shareholder relations, who "doesn't know how to *do* anything" and whose grand plans always end in ego-shattering collisions with skilled workers telling him the idea is impossible, illegal or stupid. The AI salesman offers a replacement workforce of "literal mechanical slaves": fire 90% of staff, and terrify the remainder into never sassing back. This explains the standing puzzle of *why managers who demand a business case for everything swoon for an AI pitchman* — the proposition is not profitability, it is "easing the psychological trauma of being the boss but not being able to boss people around. That's an unbeatable proposition. **No one will ever lose money by betting on the insecurities of America's business tyrants.**"
+- **The engineering caveat, which is where his AI critique actually lives.** "Ergonomics are real. Taylorism is fake. Automation is real. AI is fake." Statistical extrapolation tools *can* produce productivity gains exactly as ergonomic job design can — but the gains are **contingent on workers having a say in deployment and a veto over demands that don't work for them**, and on integration not ratcheting up pace of work (someone has to catch the machine's mistakes). Doctorow's sharpest technical line: LLM outputs are "as close to being correct as is statistically possible, while still being wrong" — statistically optimal error, which is still error, and which an un-empowered workforce cannot absorb.
+- **"The purpose of a system is what it does."** He declines to adjudicate whether Taylor believed his own nonsense, treating true believers and cynics as "an unbeatable partnership." Same discipline applies to AI vendors: the honest believer and the grifter are functionally interchangeable because the system's output is insecure bosses, worse-working labour, and weakened firms.
+
+Wiki relevance: this is the **management-psychology explanation** for enterprise AI adoption that complements the incentive/structural explanations elsewhere — [[concepts/ai-slop]] and [[concepts/ai-generated-language-readability]] (production-side quality collapse), [[concepts/agent-economics]] and [[concepts/google-workspace-mcp-mandate]] (who actually pays), and Doctorow's own "AI & Understaffing" section above. It supplies the missing actor in most of this wiki's adoption analyses: the *insecure boss* as the actual buyer, distinct from the worker as user and the firm as beneficiary.
+
+Source: [[raw/articles/pluralistic.net--2026-11-27-taylor-made--a5e282a9.md]]
 
 ## Key Quotes
 

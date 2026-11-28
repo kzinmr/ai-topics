@@ -1,6 +1,40 @@
 # Wiki Log
 
 _Log of all wiki changes. Newest entries at top._
+## [2026-11-28 10:00 UTC] blog-ingest | 29 scanned / 20 fetched / 14 script-saved + 3 recovered / 2 new entities, 5 pages updated
+
+Run 20261128T100029Z. Checkpoint `blogs_scanned=0` anomaly again (known, see blogwatcher-db skill); `total_new=29`, `articles.total=20` fetch cap.
+
+### Unsupervised `unsaved_articles` recovery (3 of 6)
+
+Called `blog_ingest.persist_blog_articles` directly on the recoverable subset (plain `python3` resolved httpx/bs4/readability; no venv needed):
+- RECOVERED `dwarkesh.com/p/daniel-kokotajlo-ege-erdil` (695 lines, Substack transcript scrapable in one shot)
+- RECOVERED `construction-physics.com/p/the-invention-algorithm` (152 lines)
+- RECOVERED `simonwillison.net/2026/Nov/27/datasette-mcp/` MANUALLY — readability returns <100 chars because the page is a 10-line "beat" (title + one sentence), so it trips the min-length guard despite being scrapeable. curl'd the HTML and hand-wrote the raw with frontmatter matching the datasette-charts sibling. Checkpoint patched in BOTH latest.json and the run archive; `supplemental.extra_saved` records all three.
+- STILL UNSAVED (3, all paywall/gated, correctly abandoned): FT via daringfireball (OpenAI countersues Apple), Bloomberg via daringfireball (Nvidia Blackwell serials / Alice Huang / Megaspeed), LWN security updates (no AI relevance).
+
+### Wiki edits
+
+- NEW `entities/daniel-kokotajlo.md` — AI Futures Project / *AI 2027*; >50% human-expert-surpassing AI before 2029, SI in 2027, pause-then-treaty.
+- NEW `entities/ege-erdil.md` — GDM / *AI 2040*; ~20% same, median 2040 full automation, misalignment-throttles-RSI. Carries an explicit confidence note (single-source page; bio fields flagged for verification).
+- `concepts/ai-rd-acceleration-doubling.md` — new section: Kokotajlo × Erdil on Dwarkesh, credence table, 3 cross-ideological agreements, nice-as-crux, methodological caution.
+- `entities/dwarkesh-patel.md` — author-perspective section on the same episode (what it shows about Patel as institution); dual-placement per the Nov 25 pattern.
+- `concepts/recursive-self-improvement.md` — Related += kokotajlo + erdil.
+- `concepts/google-workspace-mcp-mandate.md` — NEW "the pricing layer: the agent tax" section from Alderson Nov 27 (REST-vs-MCP allowance table, $2/user/month margin argument, enforcement-by-profiling + agent-driven-exit objections, reframing note that mandate and tariff are one instrument). Frontmatter sources += raw.
+- `entities/pluralistic-net.md` — NEW Core Ideas subsection "Taylorism as the Template for the AI Sales Pitch"; frontmatter was stale (updated 2026-05-27, `sources: []`) -> fixed both.
+- `entities/minimaxir-com.md` — NEW section: agentic performance iteration Opus 5.5/Fable 5.2 sequel (~4x cumulative on GPT-optimized Rust, 374µs word cloud, disassembly pass, "vibes" regression class, byteseek OSS release).
+- `entities/simon-willison.md` — Nov 27 Recent Notes bullet: datasette-charts 0.4a0 (Opus 5.5 as adversarial first-party consumer of his own plugin hook) + datasette-mcp 0.4.
+
+### Skips (verified via AI-term grep, per Nov 25 practice)
+
+- `construction-physics.com/p/the-invention-algorithm` — raw SAVED, no wiki page: TRIZ / Kauffman NK model / morphological analysis / technological-concept history. Zero LLM-agent content; it is philosophy-of-technology. Left to blog-triage archival. (Not a missed AI story: Boyden's tiling-tree and TRIZ would only earn a page if a later source ties them to agentic discovery, e.g. the Frostbite/AlphaProof line at [[concepts/frostbite-ai-designed-cpu]].)
+- `dfarq.homeip.net` x3 (Babbage, Microsoft trademark 1976, Tandy 2000) — computing history, no AI content.
+- `shkspr.mobi` WiFi CO alarm review; `johndcook.com` x2 (graph theory, proof-by-example counterexamples); `devblogs.microsoft.com/oldnewthing` WinRT marshaling; `blog.miguelgrinberg.com` spam bots (bot-defense, not agent-defense); `berthub.eu` Dutch Fieldlab (Dutch-language, gov IT). All left to blog-triage.
+- `pluralistic.net` taylor-made — INGESTED this run (unlike prior runs' tangential-hits skips): grep gave only 2 AI-term hits but the post's thesis is explicitly about AI adoption ("In case you have any doubt, yes, this is a post about AI"), so raw grep count was misleading. Lesson: for Doctorow link-posts, check for the explicit "post about AI" marker before skipping on grep count alone.
+
+### Index
+
+4 entries updated (martin-alderson, minimaxir-com, google-workspace-mcp-mandate, pluralistic-net), 2 new (daniel-kokotajlo, ege-erdil). Wikilink pre-commit check run over touched files: no dangling links attributable to this run (`concepts/intelligence-explosion` is pre-existing breakage from other pipelines, not added here).
 
 ## [2026-11-27 22:30 UTC] x-accounts-scan | 2 new posts (11/84 accounts, budget 12), 1 entity updated
 

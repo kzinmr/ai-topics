@@ -15,6 +15,7 @@ tags:
 confidence: medium
 sources:
   - raw/articles/2026-11-26_techstackups_google-workspace-mcp-mandate.md
+  - raw/articles/martinalderson.com--posts-the-agent-tax-has-arrived--43aa3aee.md
 ---
 
 # Google Workspace MCP Mandate
@@ -38,6 +39,29 @@ The Gmail MCP server's tool list covers search, read threads, create drafts, and
 - **Ecosystem effect.** This is the first major platform to make MCP a *compliance boundary* rather than an optional integration format: MCP becomes the only sanctioned agent door, and the platform decides which agent affordances exist behind it. Same shape as `concepts/distillation-accusations-as-platform-control` — a technical standard pressed into platform-control service.
 - **Integration fatigue is real.** HN reports the opposite of the vendor story: MCP honeymoon ending, agents stuck on buggy integrations, and enough friction to push users off Google services entirely.
 - **Claude connector carve-out.** One HN commenter notes Anthropic's Gmail connector already has more features including sending, so the mandate may not bind parties with existing partner agreements — consistent with the "partner access" gate.
+
+## The pricing layer: "the agent tax" (Martin Alderson, Nov 27, 2026)
+
+The mandate's companion — and, in Alderson's framing, its real point. He calls this "the first major product that's attempting to tax agentic use cases," and gives the concept its name: **the agent tax** — *"The same data, from the same account, costs effectively nothing when an app reads it and $0.20 per thousand when an agent does. You're not paying for a new feature or more compute. You're paying because of **what** is doing the asking."*
+
+**The asymmetry he extracts from Google's pricing page** (the numbers are the contribution; the motive is commentary):
+
+| | Legacy REST API | MCP |
+|---|---|---|
+| Free allowance | **6,000 quota units/min per *user*** (~100 email reads/min/user), project cap 20,000/min; paid tier adds a **10M email reads/day** free allowance | **5,000 calls/day per *Cloud project*** (grouped across all access), no paid-tier free allowance |
+| Above free | quota request, historically uncharged | ~**$0.20 per 1,000 requests** (≈$0.20/1,000 emails read), applied retroactively including the first 5,000 |
+
+So: 20,000 emails/min free as an app, 5,000 emails/day free as an agent. Alderson: this puts Google's old Google Maps pricing changes "to shame in scale."
+
+**His two drivers.** (1) *Margin warfare on the frontier labs.* Google has "fumbled agentic workflows so badly" that MCP usage via OpenAI/Claude connectors is presumably hyperbolic; at ~10,000 MCP requests/user/month the cost to a lab is **$2/user/month against a $20 subscription**, on top of compute, right as these companies face public-market scrutiny. Labs must either eat it (margins, worst possible quarter), cap usage (bad UX, pushes users to Gemini, which has no such caps), or pass it through. He reads it as deliberately thrown "banana skins" in Anthropic's and OpenAI's way, aimed at large AI companies rather than solo developers. (2) *A search-fragility narrative.* Search still grew 12% last quarter but missed by >$1.5bn; the revenue here is "small fry next to search," but it gives Google an investor story — **if agents replace humans clicking around our products, we can charge the agents instead.**
+
+**Why it may not stick — the enforcement and exit problems.** Enforcement is the first doubt: Google cannot tell an agent from a script except by **behavioural profiling of which APIs get called**, which "seems to be quite difficult." Exit is the bigger one. Alderson's structural objection is that an agent tax only works on customers who cannot leave, and agents are precisely what makes leaving cheap — "You can just point an agent at SaaS product A with a browser tab connected and ask it to migrate data to product B," often by enumerating internal APIs to bulk-download and transform. His fallback for a target that refuses to play: have the agent pull a CSV and query that locally instead. He therefore splits the market: at **enterprise** the tax is plausible (nobody should "vibecode a Salesforce replacement"); in **B2C and smaller-tier B2B** it is a churn accelerant, especially for legacy SaaS whose MCP support is already poor and which is "at risk of being completely forgotten about." Cloudflare's CEO publicly said he was tempted to start a Gmail competitor off the back of it.
+
+**Follow-the-leader test.** If it works, expect every genuine system-of-record — he names Salesforce, Atlassian, Intuit — to try the same within a year; the trap is being *confident* you are a system of record while agents eat your workflows. His own hedge, worth keeping attached to any citation of this page: "Honestly I don't know if this sticks… If it doesn't, I wouldn't be surprised if the pricing looks very different by the time billing starts in April."
+
+**How this reframes the mandate.** The Nov 24 ToS clause and the Nov 27 pricing are one mechanism read two ways: the mandate makes MCP the only *sanctioned* agent door, and the pricing makes the *unsanctioned* REST door expensive. The compliance boundary and the tariff are the same instrument — which is why the "behavioural profiling" enforcement question above is load-bearing: without it, the pricing is only a menu and the mandate is only a suggestion. See also [[concepts/agent-economics]] and Alderson's related margin analysis at [[entities/martin-alderson]].
+
+Source: [[raw/articles/martinalderson.com--posts-the-agent-tax-has-arrived--43aa3aee.md]]
 
 ## Related
 

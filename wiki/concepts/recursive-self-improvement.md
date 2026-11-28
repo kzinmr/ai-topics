@@ -481,6 +481,8 @@ Source: [[raw/articles/dwarkesh.com--p-rsiobjections--5cc573df.md]]
 - [[entities/lilian-weng]] — Author of the comprehensive RSI-through-harness survey
 - [[entities/dwarkesh-patel]] — Author of the Nov 14 2026 "avalanche" essay; median 2028 for human-matching automated AI researchers
 - [[entities/ryan-greenblatt]] — Chief Scientist at Redwood Research; debated RSI plausibility with Dwarkesh Patel (Aug 2026, median 2031 for automating AI R&D)
+- [[entities/daniel-kokotajlo]] — AI Futures Project; >50% for human-expert-surpassing AI before 2029, superintelligence in 2027
+- [[entities/ege-erdil]] — Google DeepMind / *AI 2040*; ~20% for the same, median 2040 for full automation; argues misalignment itself throttles RSI
 - [[concepts/agi-declaration-controversy-2026]] — The Sept 2026 AGI wave reframed RSI as a visible industry
 - [[entities/jan-leike]] — Anthropic agentic-safety lead; 'AI research automation is the big thing coming'
 

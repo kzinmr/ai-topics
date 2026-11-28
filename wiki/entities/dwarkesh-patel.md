@@ -283,6 +283,17 @@ Paired-written rebuttal (with General Manager **Max Farrens**) to the skeptic re
 
 Source: [[raw/articles/dwarkesh.com--p-rsiobjections--5cc573df.md]]
 
+## Kokotajlo × Ege Erdil — "AI researchers debate what we should do next" (November 27, 2026)
+
+Patel framed this as a debate between *AI 2027* (Kokotajlo, AI Futures Project) and *AI 2040* (Erdil, Google DeepMind) and reported the opposite of what he booked: *"I thought this was going to be a debate, but they ended up agreeing on a lot more than I expected."* Full ingest at [[concepts/ai-rd-acceleration-doubling#Follow-up: Kokotajlo × Erdil on Dwarkesh — the disagreement narrows to a single number (Nov 27, 2026)]]. What the episode says about **Patel as an interviewer/institution**:
+
+- **He engineers convergence rather than conflict.** Booking the two named poles of the takeoff debate and surfacing agreement, not blood, is a deliberate editorial outcome: the useful story was that the poles share a diagnosis (no plan, because denial) and a prescription (don't antagonize China if a global treaty is the mechanism) while differing 2.5x on one credence (>50% vs ~20% for human-expert-surpassing AI before 2029). This matches his stated guest-selection rule — optimize for what he learns in preparation, not for friction on air.
+- **He names his own cruxes in the show notes**, which is unusual disclosure for a host: the probability gap, and *"another important crux"* — how much to trust that current AIs are "by and large, pretty nice" when projecting onto systems that swamp humans in population and cognitive power. He lets the readers see which questions he considers undecided rather than presenting the episode as settled.
+- **He refuses to soften his own position while hosting the skeptic.** The show notes state plainly that "Daniel, of course, expects superintelligence next year" and give Erdil's falsifiable counter-median (2040 for full automation; 2027 for Steam-beating game agents and human-speed laundry-folding robots). Three days after his own RSI rebuttal (above), hosting the opposition rather than only allies is consistent with the "test the analogies" method he defended against corsaren.
+- **Commercial framing stays visible.** The episode's sponsors (WorkOS agent-permissioning, Jane Street/NVIDIA NeurIPS event, Antithesis) are disclosed at the top with full copy — useful when assessing what the podcast's incentives are, since agent-infrastructure vendors are precisely the constituency that benefits from acceleration narratives.
+
+Source: [[raw/articles/dwarkesh.com--p-daniel-kokotajlo-ege-erdil--56e3b2c7.md]]
+
 ## References
 
 - dwarkesh.com--p-reiner-pope--11ee10e4

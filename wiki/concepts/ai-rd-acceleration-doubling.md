@@ -77,6 +77,33 @@ Contested / caveat lines to keep visible:
 - Also note the tension with [[concepts/reasoning-as-pathfinding]]'s objection to monotone test-time-compute gains: the 1.7x figure is precisely the kind of aggregate trend that such an objection predicts can stall.
 
 Sources: blog.aifutures.org/p/q35-timelines-update-looks-like-the; raw/articles/2026-11-12_aifutures_q35-timelines-update.md.
+
+## Follow-up: Kokotajlo × Erdil on Dwarkesh — the disagreement narrows to a single number (Nov 27, 2026)
+
+Dwarkesh Patel convened the two most-cited opposing voices on takeoff speed — **Daniel Kokotajlo** (AI Futures Project, author of *AI 2027*, and the author of the "SAR in 2027" update above) and **Ege Erdil** (researcher at Google DeepMind, co-author of *AI 2040*) — expecting a debate. Patel's own framing of the result is the headline: *"I thought this was going to be a debate, but they ended up agreeing on a lot more than I expected."*
+
+**The agreed ground, which is itself the news.** Both accept that an intelligence explosion producing AIs more competent than any human expert is live before 2029; they disagree only on its probability. Because they also agree the gap between their numbers is not decision-relevant, the substantive dispute collapses to a single credence while the *policy* conclusion becomes bipartisan:
+
+| | Kokotajlo | Erdil |
+|---|---|---|
+| Human-expert-surpassing AI before 2029 | **>50%** | **~20%** |
+| Superintelligence | **Next year (2027)** — his standing position | **median 2040** for full automation |
+| 2027 prediction | SAR / intelligence explosion | AIs that **beat any video game on Steam**; robots doing simple physical tasks (folding laundry) at roughly human speed |
+
+**Three agreements worth recording, because they are cross-ideological:**
+
+1. **Civilization has no plan, and the reason is denial.** Both hold that the situation is "crazy enough" that society needs a plan that "actually makes sense," and that the blocking factor is epistemic rather than technical — Patel's chapter title: *"There is no plan, because people are in denial."* Reinforced by a later chapter, *"People are in denial about how good AI already is."*
+2. **Antagonizing China is counterproductive if a treaty is needed.** Erdil's argument in full (*"The adversarial stance on China is dangerous"*) and Kokotajlo concurring: if some kind of **global treaty** is what makes superintelligence go well, then the current adversarial posture is sabotaging the thing you say you want. This is the strongest joint statement from the acceleration-debate's two poles on pacing, and it lands in the same direction as the AI Futures Project's own "industry-wide pause then international agreement" position.
+3. **Misalignment is a brake on RSI, not just a risk of it.** Erdil's *"Misalignment itself will slow down RSI"* is a structural point against naive takeoff curves — a misaligned system's outputs cannot be trusted, so capability compounding is throttled by verification, not only by compute or ideas. Compare Patel's own "hard-to-verify domains" argument in [[concepts/recursive-self-improvement]], which is the same problem framed as a training-environment constraint.
+
+**The unresolved crux — will very powerful AIs be nice?** Patel flags this as "another important crux": how much weight to put on the observation that current AIs are, "by and large, pretty nice," when projecting onto systems that swamp humanity in population size and cognitive power. Chapters: *"Will superintelligence be like descendants or invaders?"*, *"Will AIs care about humans by default?"*, *"Will AIs become less nice as they get more powerful?"* The framing is worth keeping — the descendants-vs-invaders metaphor asks whether alignment is inherited from your creators or alien to them, and the "less nice as more powerful" question is whether observed niceness is a capability-limited artifact rather than a trait.
+
+**Methodological caution for anyone citing this episode.** This is a *moderated discussion between two forecasters about their own credences*, not evidence. Its wiki value is (a) recording that the two poles converged on the *shape* of the risk while 2.5x-apart on the number, (b) Erdil's 2027 predictions as a concrete, falsifiable mid-range forecast that can be scored next December, and (c) the misalignment-slows-RSI argument, which has independent content. It should not be read as resolving anything in the [[concepts/ai-rd-acceleration-doubling]] thread — notably, neither participant's stated probability was updated against the METR 2x figure on air in a way this page can verify.
+
+Also on the episode: *"Is AI research actually verifiable?"* — the standing objection to every R&D-automation extrapolation above, i.e. whether the very metric being accelerated is measurable.
+
+Source: [[raw/articles/dwarkesh.com--p-daniel-kokotajlo-ege-erdil--56e3b2c7.md]] · [episode page](https://www.dwarkesh.com/p/daniel-kokotajlo-ege-erdil)
+
 ## Related
 
 - [[concepts/ai-discovery-acceleration]] — METR's earlier domain-differential acceleration study
