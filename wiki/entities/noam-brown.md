@@ -206,6 +206,19 @@ This aligns with the industry-wide [[concepts/inference#the-inference-inflection
 - Often draws parallels between **game-playing AI and real-world applications**
 - Maintains connections to the **competitive programming community** through IOI coaching
 
+## 2026-11: "Drop out" remarks and games-to-reasoning thesis
+
+At the "No Limit" poker-bot tournament hosted by Sequoia Capital, Citadel Securities, and OpenAI
+(Nov 2026, reported by The Decoder), Brown argued AI has entered a **"very steep rate of
+progress"** and told talented students they should consider **dropping out** to build during it —
+the latest in the 2026 cohort of elite-researcher dropout exhortations (cf. Karpathy, Sutton).
+Substance-wise the talk recycled his decade-of-games thesis: game theory's core rational-opponent
+assumption **fails in practice**, which is why poker AIs had to learn *thinking before acting*
+(iterated best-response, self-play refinement) — and the same lesson, he says, underlies why LLMs
+need explicit deliberation (o1-style reasoning) rather than one-shot generation. His trajectory
+(poker → Diplomacy → reasoning models) makes him the strongest public advocate for the
+games→reasoning lineage inside OpenAI.
+
 ## Related
 
 - [[concepts/tuomas-sandholm]] — PhD advisor; co-developer of Libratus and Pluribus
@@ -221,5 +234,6 @@ This aligns with the industry-wide [[concepts/inference#the-inference-inflection
 - "Superhuman AI for Multiplayer Poker" (Science 2019)
 - "Human-Level Play in the Game of Diplomacy" (Science 2022)
 - o1 System Card (OpenAI 2024)
+- "No Limit" poker-bot tournament talk coverage (The Decoder, Nov 27 2026, paywalled free-tier extract): raw/articles/2026-11-27_the-decoder_noam-brown-drop-out-ai-progress.md
 - MIT Technology Review "35 Innovators Under 35" (2019)
 - IJCAI Marvin Minsky Medal (2018)

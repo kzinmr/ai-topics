@@ -29,6 +29,22 @@ devnull.land (26 Nov, HN 379 pts) recommends **llama-cpp-rdna-boosts** for AMD G
 
 The general pattern he describes - "an explosion in the number of bespoke inference engines" (Strata, Basalt, RustingStrata, etc.) - is not about llama.cpp/SGLang/vLLM being bad, but about them being **generalist** engines optimized for no particular hardware. The new forks share four traits: they target a specific model/hardware subset, they are **vibe-coded end-to-end with a frontier model**, they chase raw token-generation speed, and LLM-assisted development lets small authors move faster than the generalist engines' release cadence. Same economic logic as the AI-assisted personal-infrastructure wave (`concepts/ai-assisted-self-hosting-renaissance`) and as `concepts/cli-over-mcp-pattern`-style "small focused tool beats general platform" arguments - with the usual caveat that a single-user benchmark on one card is not evidence of general superiority. Raw: `raw/articles/2026-11-26_devnull-land_amd-specific-llama-cpp-fork.md`.
 
+## 2026-11-28: the bespoke-fork debate, two weeks on
+
+The Nov 26 devnull.land post (above) sharpened into a recurring split in the local-inference
+community. The bespoke engines it praised for speed (Strata et al.) are now criticized for
+**optimizing how the model thinks, not just how it runs** — the standout example being Strata's
+preference for polling MoE experts already resident in VRAM even when the router would normally
+route to experts paged out to system RAM/disk. That is a distribution shift dressed up as a speed
+optimization: tokens get faster, but the model is no longer the model the authors benchmarked. The
+author's own recommendation, **llama-cpp-rdna-boosts** (stew675), is positioned as the
+antithesis: a minimal, transparent AMD/RDNA patchset continually re-applied against a *pinned*
+upstream llama.cpp commit, shipped as pre-built ROCm container images, with the 35→55 tok/s
+generation and 700→1300 tok/s prefill gains coming from genuine kernel-level work rather than
+routing shortcuts. The case is a concrete instance of [[concepts/dynamic-residual-routing|architectural
+tweaks vs engineering speedups]] — and of why "tok/s" alone is not a valid quality metric for
+vibe-coded forks. (Raw already saved: `raw/articles/2026-11-26_devnull-land_amd-specific-llama-cpp-fork.md`.)
+
 ## Related Pages
 
 - [[concepts/local-llm/_index|Local LLM hub]]

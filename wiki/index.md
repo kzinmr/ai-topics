@@ -988,7 +988,7 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2411 pages)
+## Concepts (2412 pages)
 - [[concepts/ai-assisted-self-hosting-renaissance]] - AI-Assisted Self-Hosting Renaissance - Jan-Lukas Else: coding agents on Git-hosted Docker Compose/NixOS/bootc config revive hobbyist self-hosting; HN split that the AI-built attack surface raises the ops barrier (767p, Nov 2026)
 - [[concepts/ai-research-automation]] — AI research automation — agents accelerating idea implementation, experiments and paper-writing; VLDB/SIGMOD submission flood (5,000+/yr), sentence-level-vs-paper-level writing failure, raise-the-bar prescription (Thomas Neumann, Nov 2026)
 
@@ -1978,6 +1978,7 @@
 - [[concepts/dspy-architecture]] — DSPy Architecture — Three Abstractions
 - [[concepts/dspy-modules]] — DSPy Modules Reference
 - [[concepts/dspy-optimization]] — Dspy Optimization
+- [[concepts/dynamic-residual-routing]] — DeepCrossAttention (Google, ICML 2025 blogged Nov 27, HN 416): depth-wise cross-attention + learned per-token layer routing; same quality up to 3x faster, <0.2% params, retrofit-friendly; consolidates DCA/AttnRes(Hyper-Connections)/Inkling-2 'dynamic residual routing' lineage
 - [[concepts/model-routing]] — Prompt-based model routing with DSPy + Jev (Breunig, Oct 2026)
 - [[concepts/provable-inference]] — Anthropic provable inference: cryptographic attestation of which weights answered; weight commitment + seed verification, 90-100x overhead, greedy/short-context only (HN 238p, Nov 4 2026)
 - [[concepts/dspy-rlm]] — Recursive Language Model — DSPy module for programmatic exploration of large contexts via a sandboxed Python REPL
