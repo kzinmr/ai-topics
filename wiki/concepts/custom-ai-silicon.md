@@ -1,7 +1,7 @@
 ---
 title: Custom AI Silicon
 created: 2026-05-27
-updated: 2026-10-24
+updated: 2026-11-28
 type: concept
 tags:
   - concept
@@ -20,6 +20,7 @@ sources:
   - raw/articles/2026-05-27_amd-mi355x-mlperf-inference-v6.md
   - raw/newsletters/2026-08-06-google-shakeup-hassabis-moves-up-google-s-research-legends-walk-out.md
   - raw/articles/2026-10-23_semianalysis_amazons-trainium-takes-a-strike-at-the-training-king.md
+  - raw/newsletters/2026-11-27-semianalysis-trainium3-inferencex-full-body.md
 ---
 
 # Custom AI Silicon
@@ -199,6 +200,25 @@ SemiAnalysis's engineering team ran **Trainium3 racks in production for several 
 - **Verdict**: "great" experience and the right direction — but explicitly "nowhere close to CUDA maturity". [[entities/anthropic|Anthropic]] already runs production inference and RL rollouts on Trainium2/Trainium3. See [[entities/anthropic#Trainium3 Cracks Training (SemiAnalysis, Oct 23, 2026)]] for the Anthropic-side framing.
 
 This narrows the "research only happens on CUDA" moat from the AWS side, complementing Anthropic's own chip program above. (Source: raw/articles/2026-10-23_semianalysis_amazons-trainium-takes-a-strike-at-the-training-king.md)
+
+## Trainium3 Wins on Inference Economics (SemiAnalysis, November 2026)
+
+Seven months after the training-side assessment, SemiAnalysis published a cycle-level **inference** microarchitecture deep dive ("AWS Challenger: Trainium3 Inference and Microarchitecture Deep Dive", 2026-11-27), built on **UBenchX**, their first-principles microbenchmark suite. Trainium 3 and TPUs are now live on InferenceX, and Trainium3 PDS + vLLM beats every accelerator except Vera Rubin across the entire perf-$/TCO vs p90-interactivity curve.
+
+**Inference economics (AgentX agentic replay, 3-year rental prices, Z.ai list token pricing, 60% fleet utilization):**
+
+- At p90 interactivity of **135 tok/s/user** (typical OpenRouter speed), **Trainium3 + vLLM yields a 73.5% gross margin vs runner-up GB300 + SGLang at 53%**.
+- Achieved with **144 GB HBM per chip — half GB300's per-GPU capacity** — a direct vindication of the **Short King thesis** ("Long Live the Short King: Why 4-hi HBM Wins"): extra HBM capacity must pay for itself in throughput at the target latency.
+- Decode (memory-bound) is where Trainium3 trades blows: **4.9 TB/s HBM per chip vs GB300's 8.0 TB/s** (61% of the bandwidth at ~30% of the TCO). Prefill (compute-bound) still lags on p90 TTFT: Trainium3 has only **17% of Blackwell Ultra's theoretical FP4 flops (2,517 vs 15,000 TFLOPS)**.
+
+**Microarchitecture (UBenchX cycle-level measurements):**
+
+- Unlike NVIDIA's GPU lineage (pixel-shading heritage with tensor/tile units bolted on generation by generation — Tensor Cores on Volta, TMA on Hopper, Tensor Memory on Blackwell), Trainium is **built ground-up for ML with tiles as a first-class primitive**.
+- **DGE (Descriptor Generation Engines)** — the equivalent of NVIDIA's TMA and AMD MI455X's TDM — let Trainium reach **peak HBM bandwidth utilization at small message sizes**, which NVIDIA GPUs cannot do. Hardware DGE matches static-descriptor mode above 256 KiB; at 64 KiB it still hits 65%/78% (load/store) utilization.
+- Topology: a chip has **8 NeuronCore-v4s, each pair sharing one HBM stack** (Logical NeuronCore, default LNC=2); a node is 16 chips. **Prefill nodes pipeline** the model into 16 chip-stages with all tensor/expert parallelism kept on-chip (MoE all-to-all never leaves the chip); **decode spreads one model copy across all 128 NeuronCores as separate EP ranks** (LNC=1), unlike NVIDIA where each GPU is its own rank. Nested collective groups (half-chip → tray → node) keep dense/shared-expert exchanges off the switch.
+- **Profiler moat**: SemiAnalysis calls the Trainium Neuron profiler "by far the industry leader / SOTA", explicitly loved by Anthropic's performance engineers (head of performance: Trainium profiling is "way better" than NVIDIA's) — consistent with the October training-side verdict on Neuron Explorer.
+
+This flips the historical framing — Trainium was "inference-strong, training-weak" — into a chip now credible on **both** sides, with inference margins as the wedge. See [[concepts/ai-benchmarks/agentx-inferencex]] for the benchmark it runs on, and [[concepts/trnrt-trainium-inference-engine]] for the third-party open serving engine on Trainium2. (Source: raw/newsletters/2026-11-27-semianalysis-trainium3-inferencex-full-body.md)
 
 ## Implications
 

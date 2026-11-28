@@ -1,21 +1,9 @@
 {
-  "archived_at": "2026-11-28T10:35:39.814416+00:00",
+  "archived_at": "2026-11-28T10:54:03.734885+00:00",
   "triage_run_id": "20261128T101929Z",
   "source": "newsletter",
   "summary_ja": "2026-11-28 newsletter-triage（run 20261128T101929Z / 対象2誌）。SemiAnalysis「AWS Challenger: Trainium3 Inference and Microarchitecture Deep Dive」は newsletter.semianalysis.com を直接 curl して全文（89段落）を復元し durable raw として保存。Take 1件（★★★★☆）で Trainium3+vLLM が GB300 を上回る利益率 73.5%、HBM 144GB（Short King）、FP4 が Blackwell Ultra の 17%、DGE による小メッセージでのピーク HBM 帯域、Anthropic が高評価する Neuron profiler など、concepts/custom-ai-silicon.md と concepts/ai-benchmarks/agentx-inferencex.md のいずれにも未収録の一次計測数据を提供。参照1件（InferenceX ダッシュボード / GitHub を AgentX ページの sources へ）。もう1誌「Nvidia halts AI server shipments to Southeast Asia」は beehiiv トラック URL 全20本が 403（トークン期限切れ・実測確認）かつ inbox summary 不在のため、件名レベルで既存輸出規制ページと照合して skip。Substack UI チェーンは batch skip。",
   "decisions": [
-    {
-      "item_id": "<20261127155500.3.82dc72f5217e00bb@mg-d0.substack.com>-14",
-      "source": "newsletter",
-      "source_name": "AWS Challenger: Trainium3 Inference and Microarchitecture Deep Dive",
-      "title": "InferenceX leaderboard page (open.substack restack-comment)",
-      "url": "https://inferencex.semianalysis.com/infx/inference/glm-5-3",
-      "raw_path": "/opt/data/ai-topics/wiki/raw/newsletters/2026-11-27-aws-challenger-trainium3-inference-and-microarchitecture-deep-dive.md",
-      "recommended_action": "reference",
-      "reason_ja": "*** 本文内の InferenceX 公開ダッシュボード（GLM-5.3 ランタイム計測）と GitHub リポジトリ SemiAnalysisAI/InferenceX は、既存 concepts/ai-benchmarks/agentx-inferencex.md の sources に追加する一次データソース。単独ページ化は不要（take 1 の本文更新に付随）。",
-      "candidate_wiki_path": "concepts/ai-benchmarks/agentx-inferencex.md",
-      "body_excerpt": "# Newsletter Digest - 2026-11-27\n**Subject:** AWS Challenger: Trainium3 Inference and Microarchitecture Deep Dive\n**Collected:** 2026-11-28T10:18:49.731869+00:00\n**Articles linked:** 20\n## 1. Link\n- **URL:** https://substack.com/redirect/2/eyJlIjoiaHR0cHM6Ly9uZXdzbGV0dGVyLnNlbWlhbmFseXNpcy5jb20vc3Vi"
-    },
     {
       "item_id": "<20261127155500.3.82dc72f5217e00bb@mg-d0.substack.com>-3",
       "source": "newsletter",

@@ -1,6 +1,5 @@
-# Wiki Log
+## [2026-11-28 10:45 UTC] newsletter-wiki-ingest | run 20261128T101929Z | SemiAnalysis Trainium3 InferenceX deep dive -> concepts/custom-ai-silicon.md (new "Trainium3 Wins on Inference Economics" section: 73.5% margin vs GB300+SGLang 53% at p90 135 tok/s/user, 144GB HBM Short King thesis, 17% Blackwell Ultra FP4 flops, DGE peak MBU at small messages, 128-core EP-rank decode topology, Anthropic-praised Neuron profiler) + concepts/ai-benchmarks/agentx-inferencex.md (sources += InferenceX dashboard, GitHub repo, full-body raw). 22 skips archived (beehiiv 403 batch, Substack UI chains).
 
-_Log of all wiki changes. Newest entries at top._
 ## [2026-11-28 10:00 UTC] blog-ingest | 29 scanned / 20 fetched / 14 script-saved + 3 recovered / 2 new entities, 5 pages updated
 
 Run 20261128T100029Z. Checkpoint `blogs_scanned=0` anomaly again (known, see blogwatcher-db skill); `total_new=29`, `articles.total=20` fetch cap.

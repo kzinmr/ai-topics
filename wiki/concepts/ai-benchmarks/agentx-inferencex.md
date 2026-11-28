@@ -5,7 +5,7 @@ aliases:
   - agentx
   - inferencex
 created: 2026-08-24
-updated: 2026-08-24
+updated: 2026-11-28
 tags:
   - benchmark
   - llm-inference
@@ -19,6 +19,9 @@ tags:
 sources:
   - raw/newsletters/2026-08-24-agentx-inferencexv3-does-cuda-moat-hold-up-in-agentic-inferencing.md
   - https://newsletter.semianalysis.com/p/agentx-inferencexv3-does-cuda-moat
+  - https://inferencex.semianalysis.com/infx/inference/glm-5-3
+  - https://github.com/SemiAnalysisAI/InferenceX
+  - raw/newsletters/2026-11-27-semianalysis-trainium3-inferencex-full-body.md
 related:
   - entities/semianalysis
   - concepts/kv-cache
@@ -65,6 +68,7 @@ The most consequential result is not the leaderboard but the **50–70+ upstream
 ## See Also
 
 - [[entities/semianalysis]] — the publishing firm and its InferenceX lineage
+- [[concepts/custom-ai-silicon]] — Trainium3/TPU now live on InferenceX; Trainium3+vLLM tops the perf-$/TCO frontier (Nov 2026)
 - [[concepts/ai-benchmarks/nanogpt-speedrun]] — a complementary agentic-optimization leaderboard (Prime Intellect)
 - [[concepts/kv-cache]] / [[concepts/mooncake]] — the KV-cache offload/transfer stack AgentX stresses
 - [[concepts/cuda-moat]] — the software moat AgentX is used to test
