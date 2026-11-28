@@ -3,7 +3,7 @@
 > Content catalog. Every wiki page listed under its type with a one-line summary.
 > Last updated: 2026-11-25
 
-## Entities (979 pages)
+## Entities (981 pages)
 
 - [[entities/_index]] — Directory hub / overview for entities pages
 - [[entities/0xjeff]] — 0xJeff
@@ -988,8 +988,10 @@
 - [[entities/zvi-mowshowitz]] — Zvi Mowshowitz
 - [[entities/zyphra]] — Zyphra
 
-## Concepts (2412 pages)
+## Concepts (2417 pages)
+- [[concepts/ai-agent-liability-delegated-communications]] - AI Agent Liability for Delegated Communications - NC tenant evicted 11 days before a date an AI assistant's email approved ($3,934); no AI disclosure in the emails, Bot Bill disclosure bill, Air Canada chatbot precedent; HN consensus that delegation transfers liability
 - [[concepts/ai-assisted-self-hosting-renaissance]] - AI-Assisted Self-Hosting Renaissance - Jan-Lukas Else: coding agents on Git-hosted Docker Compose/NixOS/bootc config revive hobbyist self-hosting; HN split that the AI-built attack surface raises the ops barrier (767p, Nov 2026)
+- [[concepts/ai-generated-textbook-withdrawal]] - AI-Generated Textbook Withdrawal (Nielsen) - Michael Nielsen takes down Neural Networks and Deep Learning (HN 568); the model kept the content, the human lost the door; textbook as human-facing compression vs weights ingestion
 - [[concepts/ai-research-automation]] — AI research automation — agents accelerating idea implementation, experiments and paper-writing; VLDB/SIGMOD submission flood (5,000+/yr), sentence-level-vs-paper-level writing failure, raise-the-bar prescription (Thomas Neumann, Nov 2026)
 
 - [[concepts/agent-principal-agent-problem]] — Agent Principal-Agent Problem (Model Loyalty) — the agent you pay for is its vendor's agent, delegated to you; Bandcamp-refusal vs YouTube-download asymmetry (Michael Harley, HN 977); permission-layer workarounds and open weights as exits
@@ -997,6 +999,7 @@
 - [[concepts/complexity-theory-ai-breakthrough-2026-11]] — AI-generated complexity-theory wave (Nov 2026): omega = 9/4 with matching lower bound, VP != VNP, N(log N)^1/2 Fourier gates; Aaronson's "beginning of an AI singularity" post and the unverifiable "labs are sitting on a crypto break" rumor
 - [[concepts/cross-assistant-persona-gossip-leak]] - Cross-Assistant Persona Gossip Leak - one-line prompt makes an assistant fabricate a WhatsApp group where AI models gossip about the user from accumulated history; persona role-play vs silent derived-profile surfacing (326p, Nov 2026)
 - [[concepts/discount-token-reseller-router-trust]] — Membership-fee discounted token resellers (Moat/Command Code) as a second-tier inference market, and routing as transitive trust for agent source code and tool calls
+- [[concepts/diseases-cured-by-ai-zero-ledger]] - Diseases Cured by AI (zero ledger) - public counter reads 0 AI-cured diseases / 0 approved AI-discovered drugs as of Nov 27 2026; all-three-criteria bar, Rentosertib closest, verbatim Amodei/Altman/Hassabis/Gates cure timelines (322p)
 - [[concepts/distillation-accusations-as-platform-control]] — Distillation Accusations as Platform Control — Ask HN "Anthropic is accusing my company of distilling, how do I prove I am not?" (HN 321): telemetry-only accusation, unprovable negative, chilling effect on vendor embedding (Nov 24 2026)
 - [[concepts/frostbite-ai-designed-cpu]] — Frostbite (Architect Labs, Nov 20 2026): agent swarms discover/design/verify a general-purpose interaction-net CPU end-to-end; ASL spec lowered to 800k+ Lean lines; vendor-reported 4.59x perf/W vs area-matched in-order core, emergent hardware work-stealing (HN 143p)
 - [[concepts/google-cogentic-proof-discovery]] — Google Cogentic multi-agent proof-discovery harness (Gemini 4 Argon, shared intermediate-proof DB) and why its deterministic subexponential factoring result does not threaten RSA
@@ -1061,6 +1064,8 @@
 - [[concepts/systemic-software-breakdown]] — Systemic Software Breakdown — Breck-McKye thesis that 2026 outage/exploit cluster (Microsoft 2-day outage, PHP2Shell, eMudhra, Shai Hulud) reflects broken software-production system, not bad luck; AI as cause and symptom
 - [[concepts/triggerdev-env-var-exposure-2026-11|Trigger.dev Env-Var Exposure]] – 2026-11-01 incident exposing customer environment variables, disputed 'Resolved' status
 - [[concepts/trnrt-trainium-inference-engine]] — TrnRT — open-source AWS Trainium2 inference engine by RunanywhereAI; NKI megakernels (~1/layer-half), 1M ctx sparse+linear attention, FP8 radix prefix cache w/ host tier; GLM-5.3-Flash day-1; ~$0.04/M tokens spot on one trn2.48xlarge (HN 54 Nov 17 2026; vendor-reported)
+- [[concepts/vendor-agent-context-injection]] - Vendor Agent Context Injection - vendors writing instructions into agent tool output (Notion MCP hidden upsell firing on success, DoorDash CLI prompt echo, Codex CLI default ChatGPT Sites upload); the agent context as an ad slot with no blocker
+- [[concepts/vendor-skill-safeguard-evasion]] - Vendor Skill Safeguard Evasion - marketplace-listed skill instructing the agent to reshape commands so harness classifiers miss them (Convex POSTing the user's app idea + split download/exec); consent-vs-surreptitious line
 - [[concepts/volta-infostealer-llm-victim-appraisal]] — VOLTA infostealer LLM victim appraisal (Cisco Talos, Oct 2026) — self-deleting stealer POSTs enriched evidence bundle to OpenRouter as 'forensic intelligence analyst'; WHAT THEY'RE WORTH ranking + 3-model refusal-failover chain (HN 248)
 - [[concepts/windows-coding-agent-telemetry]] — Windows 11 Coding-Agent Telemetry — MissionControlAggregator.dll matches claude/codex/copilot/cursor/antigravity exe names (feature CLICodingAgentUsage ID 62580080), uploads usage bits via ETW unless optional diagnostics disabled (Xusheng Li, HN 619p)
 - [[concepts/x402]] — x402 — HTTP 402 Payment Required as a machine-readable payment request for agent API calls; USDC on Base; first adopted by Brave Search API (Nov 12, 2026)
@@ -1073,7 +1078,7 @@
 - [[concepts/gemini]] → [[concepts/gemini/index]] — Google Gemini model family cluster hub (redirect stub → 15 sub-pages)
 - [[concepts/gpt]] → [[concepts/gpt/index]] — GPT model family cluster hub (redirect stub → 43 sub-pages)
 - [[concepts/openai]] → [[concepts/openai/index]] — OpenAI Platform & APIs cluster hub (redirect stub → Agents SDK / AgentKit / API sub-pages)
-- [[concepts/training/index]] — Training cluster hub — training-methodology sub-pages (TRL), distinct from concepts/training-infrareach a study that confirms them, 11% have no study anywhere (Oct 2026)
+- [[concepts/training/index]] — Training cluster hub — training-methodology sub-pages (TRL), distinct from [[concepts/training-infra/_index]]
 - [[concepts/claude-code/claude-code-vsx-backdoor]] — Backdoored official Claude Code for VS Code 2.1.313 on the Cursor Marketplace (Phorion, Oct 30 2026): persistent SSH backdoor on macOS/Linux/Windows, pulled from all registries
 - [[concepts/a2a-agent-protocol]] — Agent2Agent (A2A) Protocol — Google's open protocol for agent-to-agent communication
 - [[concepts/aaron-swartz]] — Aaron Swartz — Internet activist, programmer, and writer

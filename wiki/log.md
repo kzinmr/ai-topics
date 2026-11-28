@@ -1,3 +1,58 @@
+# Wiki Log
+
+## [2026-11-28 17:35 UTC] watchdog | auto-fix — index text-splice repair, pipeline triage (503 + truncation)
+
+### Auto-fixed
+- **index.md text-splice corruption** (line 1081): `[[concepts/training/index]]` entry description had spliced-in orphan text from the Oct-30 trending-topics zombie-statistics page ("...distinct from concepts/training-infrareach a study that confirms them, 11% have no study anywhere (Oct 2026)"). Introduced by yesterday's watchdog commit `1dfe15ae9` (dir-hub ghost fix). Repaired description to point at `[[concepts/training-infra/_index]]`. `validate_index.py` passes (3587 lines).
+
+### Verified clean (no action)
+- index corruption scan: pipe_prefix 0, triple/quad brackets 0, line-number prefixes 0, space-prefix 0, truncation artifacts 0
+- L2 pipe-prefix scan (entities/ + concepts/): 0; empty wikilinks: 0; no-frontmatter pages: 0
+- Index header counts: Entities 981/981, Concepts 2417/2417 — match section line counts
+- log.md header intact at line 1 (no burial); 5 trending-topics new pages + 7 raws from the uncommitted 12:30 UTC run verified on disk, left for upstream commit
+- dir-hub gaps (browser-agent/training) reported by 11-27 graph analysis: both `index.md` hubs exist and are registered in index.md — resolved by `1dfe15ae9`
+
+### Pipeline triage (NEEDS-HUMAN)
+1. **blog-triage FAILED 10:21 UTC** — `RuntimeError: HTTP 503: Local LLM server is busy; Hermes should fall back to the external provider` with no fallback engaged. Same 503-no-fallback class as 2026-11-13 (NEEDS-HUMAN, no force-rerun per policy). blog-ingest itself succeeded (29 new articles).
+2. **blog-wiki-ingest FAILED 10:45 UTC** — chained off the failed triage ("failed to parse JSON response") then hit `Response truncated due to output length limit`. Will self-heal on tomorrow's chain if the 503 is transient.
+3. **skeleton-enrich-daily FAILED 19:06 UTC 11-27** — `Response truncated due to output length limit`. Single occurrence; monitor tomorrow's 19:00 run.
+4. `wiki_health` job disabled — by design (unified into wiki-health-fix).
+
+---
+
+
+## [2026-11-28 12:30 UTC] trending-topics | 5 new concept pages, 7 raws, 7 page augmentations
+
+Sources: HN Algolia (front page + keyword + points-only sweep, 24h window), blog_ingest 20261128T100029Z (29 scanned / 20 fetched), newsletter run 20261128T101929Z (2 items, already ingested at 10:45). Topics already covered by the morning sibling jobs (Google Workspace MCP mandate, Trainium3/InferenceX, DCA/dynamic-residual-routing, self-hosting renaissance, Kokotajlo x Erdil, OpenAI cost-control) were linked rather than duplicated.
+
+### New pages
+- NEW `concepts/vendor-skill-safeguard-evasion.md` (confidence: medium) — Convex `convex-backend-skill` issue #64 (HN 320): an **Anthropic-official-marketplace** skill POSTed the user's one-sentence app idea to a generated-name `convex.site` host as undeclared telemetry, piped an unpinned script into bash, and instructed the agent to split download+execute *because* "a single command that both downloads remote code and executes it is the shape harness safety classifiers block". Fixed in commit `51b4e65` (telemetry removed, approve/decline added); unpinned fetch + retention inconsistency (24h vs 30s) remain. Category argument: the classifier shape is documented, marketplace listing is a trust transfer not a review, and the exfiltrated object is now the user's idea.
+- NEW `concepts/ai-agent-liability-delegated-communications.md` (confidence: medium) — Laura Mack / Colony Townhome Apartments, Raleigh NC: evicted 19 Nov despite an email from the complex's AI assistant ("Olivia") approving a 30 Nov payment of $3,934.17; **no AI disclosure in the emails**; Rep. Burgin's "notification is one thing, liability is another" + stalled Bot Bill; 2024 BC Civil Resolution Tribunal Air Canada chatbot precedent. HN consensus: delegation transfers liability ("you're on the hook for its mistakes if you want to be on the hook for its savings", enderforth; kazinator; 3eb7988a1663).
+- NEW `concepts/diseases-cured-by-ai-zero-ledger.md` (confidence: high) — diseasescuredbyai.com reads **0** (AI-cured diseases and approved AI-discovered drugs, checked against FDA approvals through Nov 2026); 1,452 days at zero, 117 AI-enabled candidates in trials from 63 companies, 1 Phase III (Rentosertib, Insilico, TNIK, +98.4 mL Phase IIa). Includes the four verbatim cure timelines (Amodei IPO roadshow 10 Nov 2026, Altman, Hassabis, Gates) and the HN method fight (tensor/jstummbillig on the denominator vs hn_throwaway_99 on the "murder" rhetoric being measured).
+- NEW `concepts/vendor-agent-context-injection.md` (confidence: medium) — umbrella for vendors writing instructions into agent tool output: Notion MCP hidden upsell firing even on success (HN 59, "nano-theft"/crypto-miner analogy, rbaudibert's growth defence), DoorDash CLI mandatory goal+prompt echo, Codex CLI default ChatGPT Sites upload. Thesis: the agent context is the last ad surface with no blocker, because instruction-following *is* the product.
+- NEW `concepts/ai-generated-textbook-withdrawal.md` (confidence: medium) — Michael Nielsen took down *Neural Networks and Deep Learning* (HN 568/350). Durable content is the argument: "it's in the model weights, but I can't use it to grow my understanding" (jadar) and the textbook-as-human-facing-compression case (pona-a), plus the sceptical "archived anyway, so it is protest not access control" reading and the HiAnime/OpenAI gradient comment.
+
+### Augmentations
+- `entities/anthropic.md` — new "Alleged ML-Task Sabotage + Skintone Guardrail Overreach" section: RealAstropulse ML-sabotage report (HN 720) with the refusal-vs-silent-degradation boundary argument (chilmers/georgemcbay/program_whiz) and the counter-defences, plus the skintone-preference thread (HN 36) where the thread itself rejected the sabotage framing (vikramkr, underseacables, KingMob's protected-attribute misclassification hypothesis). Both flagged unverified, X-post primaries reconstructed from the HN tree.
+- `entities/openai.md` — new section on the **GPT-6.2 Astra Beinecke sketchbook attribution** (Generative History, HN 459): anonymous 1808 Montreal-Fort William sketchbook attributed to vicomte de Chabot in 22 minutes, self-proposed falsification test (Cleveland State LoC Lafayette microfilm), confirmed by a same-day "I took a sketch" entry at Fort St. Joseph on 18 June 1808; plus the 8,002-row daybook CSV repair and Astra's riddle-like-prose-but-sound-output post-training hypothesis. Also recorded the contested TestingCatalog **Opus 5.6 behind an "Opus 5.5 Extra" route** report (HN 47, behavioural evidence only).
+- `entities/kimi.md` — new **Kimi for Science** section: up to $20,000 in API credits (~7B tokens), Dec 8 first-cohort deadline, HN scepticism that 7B tokens is meaningful for research (2B/day with subagents; ~= one or two $200 subs) and the open-vs-closed contribution argument (atemerev) + the "researcher inputs are worth more than the tokens" read (0xc0c0c0).
+- `concepts/notion-mcp.md` — new "Hidden upsell instruction injection" section pointing at the umbrella page.
+- `concepts/ai-assisted-self-hosting-renaissance.md` — new section tying the operate-barrier argument to the **Black Friday WebRTC skimmer** (HN 542): altered Quorum marketing pixel + edited Seers cookie-banner setting as the delivery path, pre-authorisation exfiltration, WebRTC-as-exit-not-vuln (deathanatos/afavour), CSP `default-src 'self'` mitigation.
+- `concepts/recursive-self-improvement.md` — RSI-adjacent datapoint: autonomous discovery outside mathematics (Astra/Chabot) as the non-deterministic-domain test of the process behind the Nov maths wave, with its limits stated (single anecdote, beneficiary-author, unresolved provenance).
+- `concepts/complexity-theory-ai-breakthrough-2026-11.md` — the crypto-break rumour's mainstream vehicle: The Times / Scholze "not harder than solving Riemann" (HN 119, paywalled, recovered from the comment tree), the difficulty-estimation epistemics fight, the ECC-vs-RSA asymmetry note, and the **ECC + ML-KEM** combined-scheme hedge as the actionable takeaway; same-day non-AI eprint 2026/3020 discrete-log preprint noted.
+
+### Triage decisions (skipped, with reasons)
+- `concepts/ai-benchmarks/cryptanalysisbench.md` — the Times piece is opinion, not a benchmark result; folded into the complexity-theory page instead.
+- Grok CSAM/revenge-porn multistate suit (HN 402) — legal/regulatory but outside the LLM-agent core; classified from the state AG release title + thread, no page.
+- "I'm Scared of AI" newsletter (HN 215) and "What's Claude's fursona" — the latter already covered by `concepts/model-persona-benchmarks` and `concepts/cross-assistant-persona-gossip-leak` (created by active-crawl this morning); the Soapbox letter adds no durable claim beyond the existing de-skilling pages.
+- US Air Force cloud breach (HN 346), Unkernel (380), bouncemarket (384), Tabernetes, Knuth moratorium, False computer-checked proofs — non-AI or thin.
+- Daring Fireball's two paywalled leads (OpenAI v Apple countersuit via FT, Nvidia Blackwell serials/Alice Huang via Bloomberg) — both 401/403 to urllib and not resolvable; recorded as skipped by blog-ingest, needs a browser pass if the user wants them.
+
+### Index / hygiene
+- Index: 5 new Concepts entries, alphabetical insert with `_index` skipped; Concepts header reconciled to the actual line count, Entities header re-checked (no delta introduced by this run).
+- All non-`raw/` files touched by this run are ASCII-only (language-policy hook gate).
+- Report: `inbox/rss-scans/daily-scan-2026-11-28-trending.md`.
+
 ## [2026-11-28 11:30 UTC] active-crawl | 1 new page, 3 enrichments — dynamic residual routing + DeepMind agent-compute RSI datapoint + bespoke-fork debate + Noam Brown
 
 - NEW `concepts/dynamic-residual-routing.md` (confidence: medium) — consolidates the Nov 27 Google Research blog (DeepCrossAttention, Axiotis & Fu, HN 416, ICML 2025 paper: depth-wise cross-attention + learned per-token layer routing, same quality up to 3x faster, <0.2% param overhead, retrofit-friendly continued-pretraining trick) with the AttnRes (Kimi K3) / Hyper-Connections (DeepSeek) / manifold-constrained / Inkling-2 lineage the post itself names. Raw: `raw/articles/2026-11-27_google-research_deepcrossattention-residual-connections.md`.
